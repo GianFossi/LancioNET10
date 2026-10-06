@@ -1,0 +1,49 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\Lancio.NET\BIN\AiutoBSDD.chm
+Contents file=AiutoBSDD.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=Yes
+Full text search stop list file=..\..\stop.stp
+Index file=Index.hhk
+Language=0x410 Italiano (Italia)
+Title=Guida di BSDD
+
+[WINDOWS]
+Aiuto="Guida di BSDD","AiutoBSDD.hhc","Index.hhk","Panoramica.htm","Panoramica.htm",,,,,0x23520,,0x304e,[105,58,809,474],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+ZickErrori.htm
+Fonda.htm
+Saddles.htm
+Zick.htm
+ZickDatiProg.htm
+ZickDimensioni.htm
+ZickErr352nodiam.htm
+ZickErr352nofile.htm
+ZickErr352noncons.htm
+ZickErr352nospess.htm
+Carichi.htm
+ErrBadSerial.htm
+Terzogrado.htm
+Interfaccia.htm
+NormeSV.htm
+DatiGenerali.htm
+CarBocch.htm
+CarichiDati.htm
+SelleDatiProg.htm
+
+[ALIAS]
+IDH_ZICK_PD352_NODIAM=ZickErr352nodiam.htm
+IDH_ZICK_PD352_NOFILE=ZickErr352nofile.htm
+IDH_ZICK_PD352_NONCONS=ZickErr352noncons.htm
+IDH_ZICK_PD352_NOSpess=ZickErr352nospess.htm
+
+[MAP]
+#include header.h
+
+[INFOTYPES]
+

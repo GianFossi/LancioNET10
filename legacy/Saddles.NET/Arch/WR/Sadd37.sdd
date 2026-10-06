@@ -1,0 +1,32 @@
+Factors for B{\sub 11}/2 < A{\sub 1} {{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} R{\sub M1}/2 < B{\sub 11} :\tab - K{\sub 31}\tab \tab |####.00000|
+Factors for B{\sub 11} < A{\sub 1} {{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} R{\sub M1}/2 :\tab - K{\sub 31}\tab \tab |####.00000|
+                            \tab - K{\sub 41}\tab \tab |####.00000|
+Factor for A{\sub 1} > R{\sub M1}/2 :\tab - K{\sub 31}\tab \tab |####.00000|
+Shear force\tab S{\sub 1}\tab N\tab |#######.00|
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Tangential shearing stress}
+- in the shell\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1} =K{\sub 31}Q{\sub 1}/(R{\sub M1}T{\sub 1})\tab N/mm{\super 2}\tab |######.00|
+- in the head \tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}=K{\sub 41}Q{\sub 1}/(R{\sub ME1}T{\sub E1})\tab N/mm{\super 2}\tab |######.00|
+- in the shell\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1} =K{\sub 31}S{\sub 1}/(R{\sub M1}T{\sub 1})\tab N/mm{\super 2}\tab |######.00|
+Factors for B{\sub 12}/2 < A{\sub 2} {{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} R{\sub M2}/2 < B{\sub 12} :\tab - K{\sub 32}\tab \tab |####.00000|
+Factors for B{\sub 12} < A{\sub 2} {{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} R{\sub M2}/2 :\tab - K{\sub 32}\tab \tab |####.00000|
+Auxiliary factor :\tab - k{\sub 2}\tab \tab |####.00000|
+Shear force\tab S{\sub 2}\tab N\tab |#######.00|
+Shear stress\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2} \tab N/mm{\super 2}\tab |######.00|
+Allowable for shear\tab 0.8 (f or f{\sub 1}) \tab N/mm{\super 2}\tab |######.00|
+- in the shell\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2} =K{\sub 32}S{\sub 1}/(R{\sub M2}T{\sub 2})  \tab N/mm{\super 2}\tab |######.00|
+---------------------- WARNING --------------------------------
+Tangential shearing stresses limit exceeded on shell         
+Tangential shearing stresses limit exceeded on head          
+Shell allowable tangential stress : {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S1}\tab N/mm{\super 2}\tab |######.00|
+\tab (smallest of  0.8*f{\sub 1} and 0.06*E{\sub 1}*T{\sub 1}/R{\sub M1})
+Head allowable tangential stress : {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub H1} \tab N/mm{\super 2}\tab |######.00|
+\tab (given by  1.25*f{\sub H1}-f{\sub T1})
+Shell allowable tangential stress : {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S2}\tab N/mm{\super 2}\tab |######.00|
+\tab (smallest of  0.8*f{\sub 2} and 0.06*E{\sub 2}*T{\sub 2}/R{\sub M2})
+Head allowable tangential stress : {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub H2} \tab N/mm{\super 2}\tab |######.00|
+\tab (given by  1.25*f{\sub H2}-{\sub T2})
+                   \tab - K{\sub 42}\tab \tab |####.00000|
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Shear stress in the cylinder}
+{\ul Left saddle}
+{\ul Right saddle}
+

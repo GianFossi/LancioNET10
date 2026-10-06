@@ -1,0 +1,46 @@
+* Questo file definisce la combinazione delle condizioni di carico per il programma BSDD
+* Le righe che iniziano con un asterisco costituiscono delle righe di commento
+* Le righe seguenti definiscono numero e nome delle condizioni di carico elementari
+* Le condizioni elemetari relative ai carichi trasmessi dalle tubazioni devono
+* avere una denominazione che comincia con 'NOZZLES-'
+7
+UNIT
+OPERATING
+FULL OF WATER
+WIND
+BUNDLE EXTRACTION
+NOZZLES-WEIGHT
+NOZZLES-OPERATING
+1,2,3,4,0,0,5,6,7,0,0
+* Seguono le condizioni di carico per l'analisi del mantello
+2
+OPERATING
+HYDROTEST
+0,1,0,1,0,0,0
+0,0,1,0,0,0,0
+* Seguono le condizioni di carico per l'analisi delle selle
+4
+OPERATING+WIND
+HYDROTEST
+BUNDLE EXTRACTION
+ERECTION
+0,1,0,1,0,0,1
+0,0,1,0,0,1,0
+0,0,0,0,1,0,0
+1,0,0,0,0,0,0
+* Seguono le condizioni di carico per l'analisi delle fondazioni
+4
+OPERATING+WIND
+HYDROTEST
+BUNDLE EXTRACTION
+ERECTION
+0,1,0,1,0,0,1
+0,0,1,0,0,1,0
+0,0,0,0,1,0,0
+1,0,0,0,0,0,0
+* Segue la lista standard dei bocchelli
+4
+NOZZLE T1,0,500.
+NOZZLE T2,0,1500.
+NOZZLE S1,5000.,500.
+NOZZLE S2,5000.,1500.

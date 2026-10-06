@@ -1,0 +1,54 @@
+  (1)\par
+  (7)\par
+  (2)\par
+  (8)\par
+  (3)\par
+  (9)\par
+ (12)\par
+ (18)\par
+ (13)\par
+ (19)\par
+ (14)\par
+ (20)\par
+ (23)\par
+ (24)\par
+ (25)\par
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  membrane [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  bending  [M{\sub L}] .
+\par
+  4. LOCAL STRESSES DUE TO EXT.LOADS - STRESS COMPONENTS
+      --- A. STRESSES IN THE SHELL AT THE NOZZLE\par
+      --- B. STRESSES IN THE SHELL AT PAD EDGE\par
+      --- B. STRESSES IN THE NOZZLE AT THE SHELL\par
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  membrane [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  bending  [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  membrane [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  bending  [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  membrane [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}  bending  [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  membrane [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  bending  [P]  .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  membrane [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  bending  [M{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  membrane [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}  bending  [M{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  shear     [M{\sub T}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  shear     [V{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  shear     [V{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [M{\sub T}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [V{\sub c}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [V{\sub L}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [V ] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [V{\sub 2}] .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}            [M{\sub T}] .
+

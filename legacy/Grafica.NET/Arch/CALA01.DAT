@@ -1,0 +1,35 @@
+Tipo
+Diametro interno maggiore [mm]
+Diametro interno minore   [mm]
+Spessore                  [mm]
+Spessore di uno strato    [mm]
+N° di strati              [--]
+Raggio interno di raccordo
+Colletto                  [mm]
+Lungh. rinforzo colletto  [mm]
+Spess. rinforzo colletto  [mm]
+Sezione retta anelli rinf.[mm2]
+Sezione retta tiranti     [mm2]
+Lunghezza efficace tiranti[mm]
+Spessore mantello         [mm]
+Lungh. libera mantello    [mm]
+N° onde                   [--]
+Denominazione
+Materiale dilatatore
+Materiale rinforzo collare
+Materiale anelli
+Materiale bulloni
+Materiale mantello
+Monostrato raccordato           .
+Monostrato flangiato            .
+Multistrato senza anelli        .
+Multistrato con anelli integrali.
+Multistrato con anelli bullonati.
+Monostrato racc. con spessori # .
+Rigidezza fornita manualmente
+Dilatatori
+Tipo dilatatore
+Diametro esterno anelli [mm]
+Diametro interno anelli [mm]
+Rinforzi
+

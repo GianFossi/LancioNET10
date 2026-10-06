@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="at1_1">
+		<value>Verra' ora generata la RM tubi ad U,|che verra' conservata su disco per  |una stampa in tempi successivi (se  |cosi' e' stato impostato nel menu   |'Opzioni'                           |</value>
+	</data>
+	<data name="at1_2">
+		<value> File dati. (8 chr massimi  senza caratteri speciali)| (Per input da file : F3     ed inserire solo il nome | file.)</value>
+	</data>
+	<data name="at1_3">
+		<value> Lasciare 0 se sconosciuto. Inserendo un valore viene| utilizzato l'OTL  max/min   (vedi indice OTL).       | L'ottimizzazione richiede  un tempo minore, purche il| diametro  sia sufficiente  a  contenere  i tubi dati.</value>
+	</data>
+	<data name="at1_4">
+		<value> Inserendo il diametro del bocchello d'ingresso viene| tenuta una distanza pari a d/4 tra la mezzeria  arco | ed eventuale piatto d'urto</value>
+	</data>
+	<data name="at1_5">
+		<value> Inserendo il diametro del  bocchello d' uscita viene| tenuta una distanza  pari a d/6 tra la mezzeria arco | e il diametro esterno della prima fila di tubi.</value>
+	</data>
+	<data name="at1_6">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco ed eventuale piatto  d'urto,| tale che RhoV2&lt;=RhoV2bocch.,e comunque inferiore a 4000|   (OMETTERE SE Portata Ingresso=0)</value>
+	</data>
+	<data name="at1_7">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco ed eventuale piatto  d'urto,| tale che RhoV2&lt;=RhoV2bocch.,e comunque inferiore a 4000|   (OMETTERE SE Rho Ingresso=0)</value>
+	</data>
+	<data name="at1_8">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco e il diametro esterno della| prima fila tubi, tale che RhoV2&lt;=RhoV2(bocchello)  |  (OMETTERE SE Portata Uscita=0)</value>
+	</data>
+	<data name="at1_9">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco e il diametro esterno della| prima fila tubi, tale che RhoV2&lt;=RhoV2(bocchello)  |  (OMETTERE SE Rho Uscita=0)</value>
+	</data>
+	<data name="at1_10">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco ed eventuale piatto d'urto,| pari a tale valore.           (Non tiene conto di din/4)</value>
+	</data>
+	<data name="at1_11">
+		<value> Inserendo il valore verra' tenuta una  distanza, tra| la mezzeria dell'arco e il diametro esterno della| prima fila pari a tale valore.(Non tiene conto di dout/6)                                                     | Inserendo  un valore codificato (vedi oltre) si con-| trolla la disposizione dei tubi.                    |</value>
+	</data>
+	<data name="at1_12">
+		<value> Simmetria orizzontale</value>
+	</data>
+	<data name="at1_13">
+		<value> Simm.orizz. con tubo su asse vert.</value>
+	</data>
+	<data name="at1_14">
+		<value> Simm.orizz. con tubo fuori asse</value>
+	</data>
+	<data name="at1_15">
+		<value> Ottimizzaz. con tubo su asse vert.</value>
+	</data>
+	<data name="at1_16">
+		<value> Ottimizzaz. con tubo fuori asse</value>
+	</data>
+	<data name="at1_17">
+		<value>Controllo calcolo</value>
+	</data>
+	<data name="at1_18">
+		<value>No further help</value>
+	</data>
+	<data name="at1_19">
+		<value> Non inserendo alcun valore verranno allocati i tubi| in funzione del Di dato.</value>
+	</data>
+	<data name="at1_20">
+		<value> triangolare a base orizzontale</value>
+	</data>
+	<data name="at1_21">
+		<value> triangolare a base verticale</value>
+	</data>
+	<data name="at1_22">
+		<value> quadro ruotato</value>
+	</data>
+	<data name="at1_23">
+		<value> quadro</value>
+	</data>
+	<data name="at1_24">
+		<value>Tipo passo</value>
+	</data>
+	<data name="at1_25">
+		<value>  1 passo (no tubi ad U)</value>
+	</data>
+	<data name="at1_26">
+		<value>  2 passi</value>
+	</data>
+	<data name="at1_27">
+		<value>  3 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_28">
+		<value>  4 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_29">
+		<value>  4 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_30">
+		<value>  4 passi</value>
+	</data>
+	<data name="at1_31">
+		<value>  6 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_32">
+		<value>  6 passi</value>
+	</data>
+	<data name="at1_33">
+		<value>  8 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_34">
+		<value>  8 passi</value>
+	</data>
+	<data name="at1_35">
+		<value> 10 passi (no tubi ad U)</value>
+	</data>
+	<data name="at1_36">
+		<value>Passaggi</value>
+	</data>
+	<data name="at1_37">
+		<value> Serve esclusivamente  per  la  verifica  del  piatto| d'urto.</value>
+	</data>
+	<data name="at1_38">
+		<value> Serve esclusivamente  per  la  verifica  del  piatto| d'urto.</value>
+	</data>
+	<data name="at1_39">
+		<value> Serve per entrare nella tabella TEMA|della massima lunghezza non supportata.                    </value>
+	</data>
+	<data name="at1_40">
+		<value> Con  tubi mandrinati mantiene 2 mm tra tubo e cava.| Con tubi saldati mantiene 5 mm tra tubo e cava.</value>
+	</data>
+	<data name="at1_41">
+		<value> Inserendo 0 viene assunto un raggio pari a 2 volte il| diametro del tubo.</value>
+	</data>
+	<data name="at1_42">
+		<value> Inserendo 0 esegue iteraz. con valori di delta-OTL  | pari a 12.5/25/50 mm.     Inserendo un valore assume| tale valore come delta-OTL.</value>
+	</data>
+	<data name="at1_43">
+		<value> Inserendo 0 si assume una larghezza cava di 13 mm</value>
+	</data>
+	<data name="at1_44">
+		<value> Nessun controllo                 </value>
+	</data>
+	<data name="at1_45">
+		<value> Fila su mezzeria/tubo al centro</value>
+	</data>
+	<data name="at1_46">
+		<value> Fila su mezzeria/tubo f. centro</value>
+	</data>
+	<data name="at1_47">
+		<value> File a cavallo della mezzeria    </value>
+	</data>
+	<data name="at1_48">
+		<value> Anulari           --non pi usato--</value>
+	</data>
+	<data name="at1_49">
+		<value> Tipo diaframmi</value>
+	</data>
+	<data name="at1_50">
+		<value> Inserendo 1 visualizza solo il profilo settori| con archi.</value>
+	</data>
+	<data name="at1_51">
+		<value> Help non disponibile</value>
+	</data>
+	<data name="at1_52">
+		<value>Il raggio minimo di curvatura calcolato |(</value>
+	</data>
+	<data name="at1_53">
+		<value>) risulta diverso dal raggio|minimo impostato (</value>
+	</data>
+	<data name="at1_54">
+		<value>). Devo  |usare il valore calcolato ?</value>
+	</data>
+	<data name="at1_55">
+		<value>Calcolato</value>
+	</data>
+	<data name="at1_56">
+		<value>Impostato</value>
+	</data>
+	<data name="at1_57">
+		<value>X#####.#  Y#####.#  R#####.### ###.## P####.### S####.###  scala ?  |</value>
+	</data>
+	<data name="at1_58">
+		<value>X#####.#  Y#####.#  R#####.### ###.##   |</value>
+	</data>
+	<data name="at1_59">
+		<value>X#####.#   Y#####.#   H#####.#   L#####.# |</value>
+	</data>
+	<data name="at1_60">
+		<value>Inserimento identificazione lavoro</value>
+	</data>
+	<data name="at1_61">
+		<value> Clickando su alcuni dei campi della | finestra sottostante si ottiene| una lista dei valori possibili. Cio' | vale in particolare per i materiali.|</value>
+	</data>
+	<data name="at1_62">
+		<value>Vuoi passare al calcolo della tracciatura?|Se decidi di si (questa e' in effetti la  |procedura standard), dopo il ritorno al   |presente menu si procede, normalmente,   |selezionando il menuitem 'Fine'           |</value>
+	</data>
+	<data name="at1_63">
+		<value>Vuoi caric --- NON USATO --- risultati di |un precedente calcolo della tracciatura su|questa commessa?                          |N.B.: Questa operazione puo' portare a   |risultati errati se si intende cambiare   |qualche dato di input.                   |</value>
+	</data>
+	<data name="at1_64">
+		<value> Questa procedura deve essere| obbligatoriamente terminata</value>
+	</data>
+	<data name="at1_65">
+		<value> Non e' previsto un menu | per questo valore. |</value>
+	</data>
+	<data name="at1_66">
+		<value> Effettua------------ non usato  -------------------a materiali tubi ad U|(file .ADU)|</value>
+	</data>
+	<data name="at1_67">
+		<value> Non  stato possibile rigenerare i grezzi | relativi al fascio tubiero</value>
+	</data>
+	<data name="at1_68">
+		<value> I dati di input sono|incongruenti o incompleti.</value>
+	</data>
+	<data name="at1_69">
+		<value> Soluzione non trovata.| Iterazioni effettuate:</value>
+	</data>
+	<data name="at1_70">
+		<value>    &lt;- Valore</value>
+	</data>
+	<data name="at1_71">
+		<value> Ferroso</value>
+	</data>
+	<data name="at1_72">
+		<value> Non ferroso</value>
+	</data>
+	<data name="at1_73">
+		<value> Nessuna</value>
+	</data>
+	<data name="at1_74">
+		<value> In alto</value>
+	</data>
+	<data name="at1_75">
+		<value> In basso</value>
+	</data>
+	<data name="at1_76">
+		<value> In alto e in basso</value>
+	</data>
+	<data name="at1_77">
+		<value> Saldato</value>
+	</data>
+	<data name="at1_78">
+		<value> Mandrinato</value>
+	</data>
+	<data name="at1_79">
+		<value> Saldato+mandrinato</value>
+	</data>
+	<data name="at1_80">
+		<value> Saldato+mandrinato leggero</value>
+	</data>
+	<data name="at1_81">
+		<value> Mandrinato</value>
+	</data>
+	<data name="at1_82">
+		<value> Orizzontale</value>
+	</data>
+	<data name="at1_83">
+		<value> Verticale</value>
+	</data>
+	<data name="at1_84">
+		<value> Average wall</value>
+	</data>
+	<data name="at1_85">
+		<value> Minimum wall</value>
+	</data>
+	<data name="at1_86">
+		<value> Teste fisse</value>
+	</data>
+	<data name="at1_87">
+		<value> Testa flottante</value>
+	</data>
+	<data name="at1_88">
+		<value> Tubi ad U</value>
+	</data>
+	<data name="at1_89">
+		<value> NO</value>
+	</data>
+	<data name="at1_90">
+		<value> SI</value>
+	</data>
+	<data name="at1_91">
+		<value> Tubi a U 'a fontana'</value>
+	</data>
+	<data name="at1_92">
+		<value>Single</value>
+	</data>
+	<data name="at1_93">
+		<value>NTW</value>
+	</data>
+	<data name="at1_94">
+		<value>Double segmental</value>
+	</data>
+	<data name="at1_95">
+		<value>Triple segmental</value>
+	</data>
+	<data name="at1_96">
+		<value>Anulari</value>
+	</data>
+	<data name="at1_97">
+		<value>Support</value>
+	</data>
+	<data name="at1_98">
+		<value>OTL minimo</value>
+	</data>
+	<data name="at1_99">
+		<value>OTL massimo</value>
+	</data>
+	<data name="at1_100">
+		<value>Fornire la distanza minima da rispettare| tra gli assi delle file a cavallo dei setti.|Se non fornito il programma calcola una| distanza standard.</value>
+	</data>
+	<data name="at1_101">
+		<value>L'OTL massimo è quello determinato dal |diametro del mantello. L'OTL minimo è determinato|dal numero di tubi richiesti, ove questi|non riempiano il mantello.</value>
+	</data>
+	<data name="at1_102">
+		<value>Se selezionato, la fila di forcelle a raggio più stretto|sarà posizionata diagonalmente.</value>
+	</data>
+	<data name="at1_103">
+		<value>Questo valore sarà normalmente zero.| Tuttavia 1 mm può essere accettabile.</value>
+	</data>
+	<data name="at1_104">
+		<value>Si consiglia un valore pari, o di poco inferiore| alla differenza passo-diametro</value>
+	</data>
+	<data name="at1_105">
+		<value>Per fasci non IBW inserire 360°. |Altrimenti inserire l'ampiezza dell'angolo|lasciato vuoto durante la prima fase.|(Normalmente tra 90 e 180°</value>
+	</data>
+	<data name="at1_106">
+		<value>Per fasci IBW inserire l'anomalia media (da 0° a 360°) del settore|dall'ampiezza definita al punto precedente.</value>
+	</data>
+	<data name="at1_107">
+		<value>Commessa (MAX 6 caratteri) </value>
+	</data>
+	<data name="at1_108">
+		<value>Diametro interno mantello     [mm]</value>
+	</data>
+	<data name="at1_109">
+		<value>D.I. bocchello d'ingresso     [mm]</value>
+	</data>
+	<data name="at1_110">
+		<value>D.I. Bocchello d'uscita       [mm]</value>
+	</data>
+	<data name="at1_111">
+		<value>Densità in ingresso        [kg/m3]</value>
+	</data>
+	<data name="at1_112">
+		<value>Portata in ingresso        [kg/hr]</value>
+	</data>
+	<data name="at1_113">
+		<value>Densità in uscita         [kg/m3]</value>
+	</data>
+	<data name="at1_114">
+		<value>Portata  uscita            [kg/hr]</value>
+	</data>
+	<data name="at1_115">
+		<value>Zona libera ingresso          [mm]</value>
+	</data>
+	<data name="at1_116">
+		<value>Zona libera uscita            [mm]</value>
+	</data>
+	<data name="at1_117">
+		<value>Numero di tubi  </value>
+	</data>
+	<data name="at1_118">
+		<value>Tipo di passo</value>
+	</data>
+	<data name="at1_119">
+		<value>Tipo di tracciatura</value>
+	</data>
+	<data name="at1_120">
+		<value>Tipo di fascio</value>
+	</data>
+	<data name="at1_121">
+		<value>D.E. Tubo scambiatore   </value>
+	</data>
+	<data name="at1_122">
+		<value>Passo tubi scambiatori        [mm]</value>
+	</data>
+	<data name="at1_123">
+		<value>Passo dei diaframmi           [mm]</value>
+	</data>
+	<data name="at1_124">
+		<value>Passo primo diaframma         [mm]</value>
+	</data>
+	<data name="at1_125">
+		<value>Materiale tubi</value>
+	</data>
+	<data name="at1_126">
+		<value>Giunto tubo piastra </value>
+	</data>
+	<data name="at1_127">
+		<value>Raggio tubi a U (0 = STD)     [mm]</value>
+	</data>
+	<data name="at1_128">
+		<value>Passo iterazioni (0 = STD)    [mm]</value>
+	</data>
+	<data name="at1_129">
+		<value>Larghezza di cava            [mm]</value>
+	</data>
+	<data name="at1_130">
+		<value>Spessore dei tubi            [mm]</value>
+	</data>
+	<data name="at1_131">
+		<value>Spessore dei tubi           [BWG] </value>
+	</data>
+	<data name="at1_132">
+		<value>Lunghezza dei tubi           [mm] </value>
+	</data>
+	<data name="at1_133">
+		<value>Tipo tolleranza spessore tubi</value>
+	</data>
+	<data name="at1_134">
+		<value>Giunto tubo piastra     </value>
+	</data>
+	<data name="at1_135">
+		<value>Fattore di riduzione    </value>
+	</data>
+	<data name="at1_136">
+		<value>Taglio diafr. (neg. se area)  [%]</value>
+	</data>
+	<data name="at1_137">
+		<value>Angolo di taglio </value>
+	</data>
+	<data name="at1_138">
+		<value>Tipo di diaframmi   </value>
+	</data>
+	<data name="at1_139">
+		<value>Piatto d'urto?</value>
+	</data>
+	<data name="at1_140">
+		<value>Eventuale diam. int. corona  [mm]</value>
+	</data>
+	<data name="at1_141">
+		<value>Numero di sealing strips   </value>
+	</data>
+	<data name="at1_142">
+		<value>Numero di rod runners  </value>
+	</data>
+	<data name="at1_143">
+		<value>Tacche</value>
+	</data>
+	<data name="at1_144">
+		<value>Distanza file su setto orizz.[mm]</value>
+	</data>
+	<data name="at1_145">
+		<value>Distanza file su setto vert. [mm]</value>
+	</data>
+	<data name="at1_146">
+		<value>Calcolo OTL</value>
+	</data>
+	<data name="at1_147">
+		<value>Numero passaggi lato mantello</value>
+	</data>
+	<data name="at1_148">
+		<value>Diam.int. corona interna [mm]</value>
+	</data>
+	<data name="at1_149">
+		<value>Passo tubi corona interna [mm]</value>
+	</data>
+	<data name="at1_150">
+		<value>Diam. esterno corona interna [mm]</value>
+	</data>
+	<data name="at1_151">
+		<value>Controllo fila mezzeria</value>
+	</data>
+	<data name="at1_152">
+		<value>Fila centrale storta</value>
+	</data>
+	<data name="at1_153">
+		<value>Interferenza ammessa   [mm]</value>
+	</data>
+	<data name="at1_154">
+		<value>Gioco nelle chiome   [mm]</value>
+	</data>
+	<data name="at1_155">
+		<value>Varco libero per RX  [°]</value>
+	</data>
+	<data name="at1_156">
+		<value>Anomalia vardo     [°]</value>
+	</data>
+	<data name="at1_157">
+		<value>Curve su piano verticale</value>
+	</data>
+	<data name="at1_158">
+		<value>Non è stato definito il numero di commessa.|Fornirlo tramite loperazione 'Salva con nome ...'</value>
+	</data>
+	<data name="at1_159">
+		<value>D.Int.   #####.#</value>
+	</data>
+	<data name="at1_160">
+		<value>O.T.L.   #####.#</value>
+	</data>
+	<data name="at1_161">
+		<value>D.Int.   #####.#</value>
+	</data>
+	<data name="at1_162">
+		<value>OTL int. #####.#</value>
+	</data>
+	<data name="at1_163">
+		<value>I.T.L.   #####.#</value>
+	</data>
+	<data name="at1_164">
+		<value>ITL int. #####.#</value>
+	</data>
+	<data name="at1_165">
+		<value>N° fori #####</value>
+	</data>
+	<data name="at1_166">
+		<value>altz. ingr. ####.#</value>
+	</data>
+	<data name="at1_167">
+		<value>altz. usc. ####.#</value>
+	</data>
+	<data name="at1_168">
+		<value>d_.su setto O ####.#</value>
+	</data>
+	<data name="at1_169">
+		<value>d_.su setto V ####.#</value>
+	</data>
+	<data name="at1_170">
+		<value>q_. da CL####.#</value>
+	</data>
+	<data name="at1_171">
+		<value>q_. 1a fila ####.#</value>
+	</data>
+	<data name="at1_172">
+		<value>Nf.ext. ####</value>
+	</data>
+	<data name="at1_173">
+		<value>Nf.int. ####</value>
+	</data>
+	<data name="at1_174">
+		<value>    N.tubi #0000</value>
+	</data>
+	<data name="at1_175">
+		<value>N.tubi #0000 #0000</value>
+	</data>
+	<data name="at1_176">
+		<value>Perimetro ###### mm</value>
+	</data>
+	<data name="at1_177">
+		<value>Area  #.###E+00 mm2</value>
+	</data>
+	<data name="at1_178">
+		<value>D.Equiv.  ###### mm</value>
+	</data>
+	<data name="at1_179">
+		<value>Nessuna informazione disponibile</value>
+	</data>
+	<data name="at1_180">
+		<value>Il diametro interno era inferiore a ####.#|Accettare la proposta o inserire un valore maggiore.</value>
+	</data>
+	<data name="at1_181">
+		<value>pad</value>
+	</data>
+	<data name="at1_182">
+		<value>al diametro interno del mantello</value>
+	</data>
+	<data name="at1_183">
+		<value>al diametro del bocchello in ingresso o in uscita</value>
+	</data>
+	<data name="at1_184">
+		<value>alla densità o alla velocità del fluido in ingresso</value>
+	</data>
+	<data name="at1_185">
+		<value>alla densità o alla velocità del fluido in uscita</value>
+	</data>
+	<data name="at1_186">
+		<value>alla zona libera in ingresso o in uscita</value>
+	</data>
+	<data name="at1_187">
+		<value>al numero di tubi</value>
+	</data>
+	<data name="at1_188">
+		<value>al numero di passi fascio, al tipo di passo tubi o al tipo di fascio</value>
+	</data>
+	<data name="at1_189">
+		<value>al passo diaframmi o al materiale dei tubi</value>
+	</data>
+	<data name="at1_190">
+		<value>al raggio minimo di curvatura dei tubi ad U</value>
+	</data>
+	<data name="at1_191">
+		<value>alla largezza della cava setti partitori</value>
+	</data>
+	<data name="at1_192">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_193">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_194">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_195">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_196">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_197">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_198">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_199">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_200">
+		<value>(da compilare)</value>
+	</data>
+	<data name="at1_201">
+		<value>pad</value>
+	</data>
+	<data name="at1_202">
+		<value>pad</value>
+	</data>
+	<data name="at1_203">
+		<value>pad</value>
+	</data>
+	<data name="at1_204">
+		<value>pad</value>
+	</data>
+	<data name="at1_205">
+		<value>pad</value>
+	</data>
+	<data name="at1_206">
+		<value>pad</value>
+	</data>
+	<data name="at1_207">
+		<value>Diam.int. corona esterna [mm]</value>
+	</data>
+	<data name="at1_208">
+		<value>Passo tubi corona esterna [mm]</value>
+	</data>
+	<data name="at1_209">
+		<value>Eventuale d.int. corona [mm]</value>
+	</data>
+	<data name="at1_210">
+		<value>L'OTL è diventato negativo all'iterazione n° </value>
+	</data>
+	<data name="at1_211">
+		<value>Apparecchio</value>
+	</data>
+	<data name="at1_212">
+		<value>con vapor belt</value>
+	</data>
+</root>

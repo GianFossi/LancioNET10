@@ -1,0 +1,49 @@
+T
+B
+0       Mechanical Standards TEMA Class "RCB"  Heat Exchangers - Fixed/Floating T.Sheets\par
+i     Floating Tubesheet Exchanger with an externally sealed floating head (Fig. &.1 (b))_\par
+0                                        TEMA type P\par
+B
+0                                  ---INPUT DATA---\par
+B
+M001  T.Sheet A Id: \                      \  TubeSheet material \                   \_\par
+N     Type of exhanger:\                   \  Fixed T.S.Support:\                    \_\par
+l                                             Floating T.S.type:\                    \_\par
+M005  T.Sheet B Id: \                      \  TubeSheet material \                   \_\par
+B
+6021022  Ins. Diameter of Shell A  #####.   [mm]   Ins.Diameter of Channel  A  #####.   [mm]_\par
+6023024  Shell thickness        A  #####.   [mm]   Channel thickness        A  #####.   [mm]_\par
+6017018  Shell side corrosion   A  ###.##   [mm]   Channel side corrosion   A  ###.##   [mm]_\par
+6292293  Sh.side gsk mean dia.  A  #####.   [mm]   Ch.side gsk mean dia     A  #####.   [mm]_\par
+6020034  Fixed T.S.  Grooves Depth  ####.#  [mm]   Fixed T.S.  Nom.Thickness    ####.#  [mm]_\par
+1545  Fixed T.S. Circumferential Grooves Tootal Depth                        ####.#  [mm]_\par
+9010011  Equivalent Diam for shear #####.#  [mm]   Tube spacing  \          \    ###.## [mm]_\par
+6027028  Outside diameter of tubes   ###.## [mm]   Tube thickness                 ##.## [mm]_\par
+1761                                            Tube corrosion                 ##.## [mm]_\par
+6313312  Channel Thickness      B  #####.   [mm]   Ins.Diameter of Channel  B  #####.   [mm]_\par
+6264265  Shell side corrosion   B  ###.##   [mm]   Channel side corrosion   B  ###.##   [mm]_\par
+6263262  Float T.S.  Grooves Depth  ####.#  [mm]   Float T.S.  Nom.Thickness    ####.#  [mm]_\par
+1552  Floating T.S. Circumferential Grooves Total Depth                      ####.#  [mm]_\par
+e     Tube expansion depth     #####.#  [&]_\par
+O     Type of tube-to-T.S. joint    \                            \_\par
+R     Factors according App.A       fr: #.##  fe: \  \  fy: \  \_\par
+1039  Equivalent Unsupported Buckling Lenght of Tubes                       #####.## [mm]_\par
+t     Design under vacuum:    shell-side \ \    tube-side                            \ \_\par
+r000  Applicable design rules:{_\b &}
+B
+0         Notes:\par
+0         1)    Null values could indicate unsignificant quantities in the actual context.\par
+0         2)    'A' indicates fixed end, 'B' indicates floating end.\par
+S         3)    The equivalent diameter for shear has been calculated on the actual\par
+S               tube layout, according to RCB-7.133\par
+B
+c         Load Cond. nb. ##: \                      \_\par
+B                                                     
+0                             SOURCES FOR PHYSICAL DATA\par
+B
+0                   Elastic Modulus                       Thermal Expansion\par
+n001  TubeSheet : \                                    \\                                    \_\par
+n002  Shell     : \                                    \\                                    \_\par
+n006  Channel   : \                                    \\                                    \_\par
+n003  Tubes     : \                                    \\                                    \_\par
+Fine

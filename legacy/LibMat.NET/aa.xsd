@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="aa" targetNamespace="http://www.tempuri.org/aa.xsd" xmlns:mstns="http://www.tempuri.org/aa.xsd" xmlns="http://www.tempuri.org/aa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="aa" msdata:IsDataSet="true" msdata:Locale="it-IT">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ListaMat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlfaCod" type="xs:short" minOccurs="0" />
+              <xs:element name="AlloyUNS" type="xs:string" minOccurs="0" />
+              <xs:element name="Caract1" type="xs:int" minOccurs="0" />
+              <xs:element name="Caract2" type="xs:int" minOccurs="0" />
+              <xs:element name="Caract3" type="xs:int" minOccurs="0" />
+              <xs:element name="Caract4" type="xs:int" minOccurs="0" />
+              <xs:element name="CAT" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassCondTemp" type="xs:string" minOccurs="0" />
+              <xs:element name="Classe" type="xs:short" minOccurs="0" />
+              <xs:element name="CMT" type="xs:string" minOccurs="0" />
+              <xs:element name="Composiz" type="xs:string" minOccurs="0" />
+              <xs:element name="ConducTer" type="xs:short" minOccurs="0" />
+              <xs:element name="CT" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="ElasCod" type="xs:short" minOccurs="0" />
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Ind" type="xs:short" minOccurs="0" />
+              <xs:element name="Mat" type="xs:string" minOccurs="0" />
+              <xs:element name="MatGroup" type="xs:short" minOccurs="0" />
+              <xs:element name="matId" type="xs:string" minOccurs="0" />
+              <xs:element name="NomeComm" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes2" type="xs:string" minOccurs="0" />
+              <xs:element name="Obsoleto" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ordinamento" type="xs:float" minOccurs="0" />
+              <xs:element name="P1A" type="xs:string" minOccurs="0" />
+              <xs:element name="P1B" type="xs:string" minOccurs="0" />
+              <xs:element name="P2A" type="xs:string" minOccurs="0" />
+              <xs:element name="P2B" type="xs:string" minOccurs="0" />
+              <xs:element name="P3" type="xs:string" minOccurs="0" />
+              <xs:element name="P4" type="xs:string" minOccurs="0" />
+              <xs:element name="Product" type="xs:string" minOccurs="0" />
+              <xs:element name="PSP" type="xs:float" minOccurs="0" />
+              <xs:element name="PU" type="xs:string" minOccurs="0" />
+              <xs:element name="PU2" type="xs:string" minOccurs="0" />
+              <xs:element name="PY1" type="xs:string" minOccurs="0" />
+              <xs:element name="PY3" type="xs:string" minOccurs="0" />
+              <xs:element name="R1A" type="xs:string" minOccurs="0" />
+              <xs:element name="R1B" type="xs:string" minOccurs="0" />
+              <xs:element name="R2A" type="xs:string" minOccurs="0" />
+              <xs:element name="R2B" type="xs:string" minOccurs="0" />
+              <xs:element name="R3" type="xs:string" minOccurs="0" />
+              <xs:element name="R4" type="xs:string" minOccurs="0" />
+              <xs:element name="RU" type="xs:string" minOccurs="0" />
+              <xs:element name="RU2" type="xs:string" minOccurs="0" />
+              <xs:element name="RY1" type="xs:string" minOccurs="0" />
+              <xs:element name="RY3" type="xs:string" minOccurs="0" />
+              <xs:element name="SizeThk" type="xs:string" minOccurs="0" />
+              <xs:element name="Spec" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="Volta" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListaMat" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

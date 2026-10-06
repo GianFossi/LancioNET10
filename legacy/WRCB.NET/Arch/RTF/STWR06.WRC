@@ -1,0 +1,28 @@
+\par
+          {{_\field{_\*_\fldinst SYMBOL 109 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}=(R{_\sub m}/T)     =###.###_\par
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}=.875(r{_\sub o}/R{_\sub m})=###.###_\par
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (P) =###.###
+=> FIG.3C   => N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(P/R{\sub m})    =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (P) =###.###
+=> FIG.1C-1 => M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/P         =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (Mc)=###.###
+=> FIG.3A   => N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(Mc/R{\sub m}{\super 2}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}})=
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (Mc)=###.###
+=> FIG.1A   => M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(Mc/R{\sub m}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}) =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (ML)=###.###
+=> FIG.3B   => N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(ML/R{\sub m}{\super 2}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}})=
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (ML)=###.###
+=> FIG.1B-1 => M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(ML/R{\sub m}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}) =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Nx (P) =###.###
+=> FIG.4C   => N{\sub x}/(P/R{\sub m})    =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Mx (P) =###.###
+=> FIG.2C-1 => M{\sub x}/P         =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Nx (Mc)=###.###
+=> FIG.4A   => N{\sub x}/(M{\sub c}/R{\sub m}{\super 2}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}) =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Mx (Mc)=###.###
+=> FIG.2A   => M{\sub x}/(Mc/R{\sub m}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}) =
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Nx (ML)=###.###
+=> FIG.4B   => N{\sub x}/(M{\sub L}/R{\sub m}{\super 2}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}})=
+          {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} for Mx (ML)=###.###
+=> FIG.2B-1 => M{\sub x}/(M{\sub L}/R{\sub m}{{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}) =
+

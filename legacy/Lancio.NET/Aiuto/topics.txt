@@ -1,0 +1,9 @@
+.topic 2006
+Viene qui riportato il risultato della scelta effettuata per quella delle quattro aree per la quale il corrispondente pulsante è premuto.
+
+.topic 2007
+Dopo avere scelto l'area da modificare premendo il pulsante corrispondente, usare questa casella per selezionare il nuovo drive desiderato.
+
+.topic 2008
+Dopo avere scelto l'area da modificare premendo il pulsante corrispondente, nonché il drive desiderato tramite la casella soprastante, usare questa casella per selezionare il nuovo percorso desiderato.
+

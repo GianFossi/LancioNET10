@@ -1,0 +1,10 @@
+#include "header.h"
+
+STRINGTABLE
+BEGIN
+    IDH_AVV_PRESERVA,"Esiste già una distinta per questo item.|Vuoi ugualmente procedere con la modifica richiesta ?"
+    IDH_ERR_NOWMF,"Non è stato trovato il file contenente il disegno|d'assieme del prototipo.|(&)" 
+    IDH_ERR_NOPROTO,"Il prototipo dichiarato non esiste"
+    IDH_ERR_NODS,"Il data sheet non è stato compilato, o|comunque non è stato approvato.|Vuoi procedere comunque?"
+    IDH_PROTO_AGGCREA,"Il prototipo & esiste già. Vuoi aggiornarlo?|(La risposta raccomandata è 'No', nel qual caso|verrà creato un nuovo prototipo.)"
+END

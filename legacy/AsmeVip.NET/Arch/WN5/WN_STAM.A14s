@@ -1,0 +1,224 @@
+c       õ{{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ~{{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       œ{{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ?{{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       |{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       @{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+1      º\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+S      º_\tab \                        \
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                             \ Rev.\  \ (Date: \       \) *
+V      º_\par             \                                              \
+1      º\par             ================================================
+1      º\par                               APPENDIX 2 & 14
+1      º\par  RULES FOR INTEGRAL FLAT HEADS WITH LARGE CENTRALLY-LOCATED OPENINGS
+Y      º_\par            \                                             \
+1      º\par             ===============================================
+G      º_\par HEAD   IDENTIFICATION : &
+H      º_\par HEAD   MATERIAL       : &
+Z      º_\par LOADING CONDITION     : &
+1      º\par
+1      º\par                                INPUT DATA
+1      º\par                                ==========
+1      º\par
+1      º\par NOTES :1 - Input of geometric dimensions in [ mm ].
+1      º\par        2 - Displayed values in [ in ] are fixed by conversion factors.
+1      º\par        3 - Subscript n refers to the opening-side, subscript s to the shell-side.  
+1      º\par
+J001   º_\par _\pard _\s18_\qj_\widctlpar_\tx2268_\tx4820_\tx5812 P     =########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab \    \ pressure
+J002   º_\par Tem   =########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab \    \ temperature
+a182   º_\par MDMT &=########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Min Des Met Temp \      \
+a183   º_\par MDMT &=########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Min Des Met Temp \      \
+a184   º_\par pMDMT&=########.##_\tab [MPa]     #######.####_\tab [psi]_\tab Concurrent Press \      \
+a185   º_\par pMDMT&=########.##_\tab [MPa]     #######.####_\tab [psi]_\tab Concurrent Press \      \
+A003   º_\par B{_\sub n}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Inside opening diameter
+A004   º_\par B{_\sub s}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Inside shell diameter
+A005   º_\par g{_\sub 0n}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Nominal thk. hub at small end
+A006   º_\par g{_\sub 1n}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Nominal thk. hub back of head  
+A007   º_\par g{_\sub 0s}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Nominal thk. hub at small end
+A008   º_\par g{_\sub 1s}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Nominal thk. hub back of head
+A009   º_\par t     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Head thickness
+A010   º_\par h{_\sub n}     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Hub length
+A011   º_\par h{_\sub s}     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Hub length
+A012   º_\par C{_\sub 0}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Corrosion allowance
+A022   º_\par S{_\sub fa}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for head at room
+A023   º_\par S{_\sub fo}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for head at temp.
+A045   º_\par M{_\sub 1}    = #.####^^^^_\tab [N.mm]   ##########_\tab [lb.in]_\tab Moment from TS bolts in operating
+A046   º_\par M{_\sub 2}    = #.####^^^^_\tab [N.mm]   ##########_\tab [lb.in]_\tab Moment from TS bolts at seating
+1      º\par
+1      º\par                               OUTPUT  DATA
+1      º\par                               ============
+1      º\par
+1      º\par                           {\b Flange parameters (App.2) opening-side} 
+1      º\par \pard \s18\qj\widctlpar\tx1616\tx2977\tx3544\tb5557\tx5670\tx7088\tx8675
+B047+03ºh{_\sub d}  = ####.##_\tab mm ##.####_\tab in_\tab R+_\'bd(g{_\sub 1}-C{_\sub 0})_\tab H{_\sub d}=#########_\tab N  #########.#_\tab lb
+B048+03º_\par h{_\sub t}  = ####.##_\tab mm ##.####_\tab in_\tab _\'bd(R+g{_\sub 1}+h{_\sub g}-C{_\sub 0})_\tab H{_\sub t}=#########_\tab N  #########.#_\tab lb
+E061   º_\par _\pard _\s18_\qj_\widctlpar_\tx1616_\tx2977_\tx3544_\tb6804_\tx6946_\tx7371 _\tab _\tab _\tab _\tab T = #####.####
+C054+08º_\par K   =#####.##_\tab -_\tab _\tab (B{\sub s}+2g{\sub0n})/(B{\sub n}+2C{_\sub 0})_\tab U = ######.####
+D055+08º_\par h{_\sub 0}  =#####.##_\tab mm######.##_\tab in_\tab @_\{(B{\sub n}+2C{_\sub 0}).(g{_\sub 0}-C{_\sub 0})_\}_\tab Y = ######.####
+C056-15º_\par h/h{_\sub 0}=#####.##_\tab -_\tab _\tab _\tab Z = ######.####
+E065   º_\par _\tab _\tab _\tab _\tab f= ######.####
+D058+08º_\par d   =#.##^^^^\tab mm{_\super 3}#.##^^^^_\tab in{_\super 3}_\tab (U/V).h{_\sub 0}.(g{_\sub 0}-C{_\sub 0}){_\super 2}_\tab F = ######.####
+D059+08º_\par e   =##.####_\tab 1/mm #.#####_\tab 1/in_\tab F/h{_\sub 0}_\tab V = ######.####
+E060   º_\par L   =###.###_\tab -_\tab _\tab (t.e+1)/T+(t{_\super 3}/d)
+1      º\par \pard \s18\qj\widctlpar\tx2268\tx4820\tx5812                           {\b Flange parameters (App.2) shell-side}
+E038   º_\par _\pard _\s18_\qj_\widctlpar_\tx1616_\tx2977_\tx3544_\tb6804_\tx6946_\tx7371 _\tab _\tab _\tab _\tab T = ######.####
+C054+08º_\par K   =#####.##_\tab -_\tab _\tab (B{\sub s}+2g{\sub0n})/(B{\sub n}+2C{_\sub 0})_\tab U = ######.####
+D053+09º_\par h{_\sub 0}  =#####.##_\tab mm######.##_\tab in_\tab @_\{(B{\sub n}+2C{_\sub 0}).(g{_\sub 0}-C{_\sub 0})_\}_\tab Y = ######.####
+C057-16º_\par h/h{_\sub 0}=#####.##_\tab -_\tab _\tab _\tab Z = ######.####
+E042   º_\par _\tab _\tab _\tab _\tab f= ######.####
+D035+08º_\par d   =#.##^^^^\tab mm{_\super 3}#.##^^^^_\tab in{_\super 3}_\tab (U/V).h{_\sub 0}.(g{_\sub 0}-C{_\sub 0}){_\super 2}_\tab F = ######.####
+D036+08º_\par e   =##.####_\tab 1/mm #.#####_\tab 1/in_\tab F/h{_\sub 0}_\tab V = ######.####
+E037   º_\par L   =###.###_\tab -_\tab _\tab (t.e+1)/T+(t{_\super 3}/d)
+1       \par \pard \s18\qj\widctlpar\tx2268\tx4820\tx5812 \par
+1      º\par   -Head calculation page 1 of 2  
+1      º\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+S      º_\tab \                        \
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+1      º\par
+1      º\par                               OUTPUT  DATA
+1      º\par                               ============
+1      º\par NOTES :
+1      º\par     3 - Calculation performed by using values in Imperial Units.
+1      º\par     4 - Displayed values in International System Units are fixed by conversion factors.
+1      º\par \par \pard\plain \s18\qj\nowidctlpar\widctlpar\tx1701\tx3260\tx3969\tx6804\adjustright \f2\fs18\lang1040   
+A068   º_\par M{_\sub d}  =#.###^^^^_\tab N.mm#########_\tab lb.in _\tab h{_\sub d}H{_\sub d}
+A069   º_\par M{_\sub t}  =#.###^^^^_\tab N.mm#########_\tab lb.in _\tab h{_\sub t}H{_\sub t}
+A173   º_\par M{_\sub TS} =#.###^^^^_\tab N.mm#########_\tab lb.in _\tab (see tubesheet calculation)
+A074   º_\par M{_\sub 0}  =#.###^^^^_\tab N.mm#########_\tab lb.in _\tab M{_\sub d}+M{_\sub t}+M{_\sub TS}
+A092   º_\par M   =#########_\tab N   #########_\tab lb _\tab M{_\sub 0}/(B{_\sub n}+2C{_\sub 0})
+A070   º_\par ?{_\sub H}{\super *}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi _\tab (fM)/[L(g{_\sub 1n}-C{_\sub 0})_\'b2]
+A071   º_\par ?{_\sub R}{\super *}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab [(1,33.t.e+1).M]/(L.t_\'b2)
+A072   º_\par ?{_\sub T}{\super *}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab (Y.M/t_\'b2)-Z.?{_\sub R}{\super *}
+A073   º_\par (E{{_\field{_\*_\fldinst SYMBOL 113 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}){_\super *} =######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab 0,91(g{\sub 1n}/g{\sub 0n}){\super 2}B{\sub 1}.V.?{_\sub H}{\super *}/(f.h{\sub 0})
+A075   º_\par M{_\sub H}  = #.###^^^^_\tab N.mm#########_\tab lb.in _\tab 
+1      º{\pard\plain \s18\qj\nowidctlpar\widctlpar\tx1701\tx3260\tx3969\tx6804\adjustright \f2\fs18\lang1040 {\object\objemb\objw2160\objh820\objscalex109\objscaley109{\*\objclass Equation.3}
+1      º{\*\objdata 01050000020000000b0000004571756174696f6e2e33000000000000000000000e0000
+1      ºd0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900060000000000000000000000010000000100000000000000001000000200000001000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºfffffffffffffffffdffffff04000000feffffff05000000fefffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffff0200000002ce020000000000c000000000000046000000000000000000000000207e
+1      º184c2efcbc0103000000400200000000000001004f006c00650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000201ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+1      º0000000000000000000000001400000000000000010043006f006d0070004f0062006a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120002010100000003000000ffffffff0000000000000000000000000000000000000000000000000000
+1      º0000000000000000000001000000660000000000000003004f0062006a0049006e0066006f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000201ffffffff04000000ffffffff000000000000000000000000000000000000000000000000
+1      º000000000000000000000000030000000400000000000000feffffff02000000fefffffffeffffff05000000060000000700000008000000feffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff010000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100feff030a0000ffffffff02ce020000000000c0000000000000461700
+1      º00004d6963726f736f6674204571756174696f6e20332e30000c0000004453204571756174696f6e000b0000004571756174696f6e2e3300f439b271000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000
+1      º0000000000000000000000000000000000000000000000000000000000000000000000001c000000020001d80801000000000000146f4900706349000000000003010103000a01030e00000102822800128345000284b80302822900030f00000b110102822a000000000a01030e0000010288310002822e000288370002
+1      º88340012836800030f01000b0102883000128373000011000a12835600000112836700030f01000b0102883000128373000011000a030f00000b11010288330000000a12834200030f01000b010288310000110000000a02862b00030e00000102822800128345000284b80302822900030f00000b110102822a00000000
+1      º0a0112834d00030f01000b010288300000110000000a028228000288310002862b001283460012834500710075006100740069006f006e0020004e00610074006900760065000000000000000000000000000000000000000000000000000000000000000000000020000200ffffffffffffffffffffffff000000000000
+1      º0000000000000000000000000000000000000000000000000000000000000400000024010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000
+1      º00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000740002822f0012836800030f01000b0102883000128373000011000a0282290000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001050000050000000d0000004d45544146494c455049435400e20e00005afaffff1c0400000800e20ea6050000
+1      º0100090000030a0200000400150000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000050000000b0200000000050000000c022005800d1200000026060f001a00ffffffff000010000000c0ffffffaaffffff400d0000ca0400000b0000002606
+1      º0f000c004d617468547970650000900109000000fa02000008000000000000002200040000002d0100000500000014025a0360000500000013025a0360040500000014025a0358050500000013025a03ec0709000000fa02000010000000000000002200040000002d010100050000001402c0014000050000001302c001
+1      º250d15000000fb0200ff0000000000009001000000000402001054696d6573204e657720526f6d616e005400040000002d01020008000000320a9a03b90c01000000290008000000320a9a03460b01000000680008000000320a9a03ca0a010000002f0008000000320a9a03bf0902000000467408000000320a9a036408
+1      º01000000310008000000320a9a031c0801000000280008000000320a6404e305010000004d0008000000320af502f30601000000290008000000320af502d30501000000450008000000320af5026f0501000000280008000000320a9604b80201000000420008000000320a9604e80001000000670008000000320ae902
+1      º8d0301000000560008000000320ae9022b0201000000680008000000320ae902240102000000373408000000320ae902e400010000002e0008000000320ae902640001000000310008000000320a5b01030701000000290008000000320a5b01e30501000000450008000000320a5b017f0501000000280015000000fb02
+1      º40ff0000000000009001000000000402001054696d6573204e657720526f6d616e000600040000002d01030004000000f001020008000000320ada03420c01000000730008000000320ada03e10b01000000300008000000320aa404e50601000000300008000000320a82025707010000002a0008000000320ad6046203
+1      º01000000310008000000320a1c04430201000000330008000000320ad604e10101000000730008000000320ad604800101000000300008000000320a2903270301000000730008000000320a2903c60201000000300008000000320ae8006707010000002a0010000000fb0200ff00000000000090010000000200020010
+1      º53796d626f6c0000040000002d01020004000000f001030008000000320a9a03fd08010000002b0008000000320af5026f0601000000710008000000320a9a039604010000002b0008000000320a5b017f060100000071000a00000026060f000a00ffffffff01000000000010000000fb021400090000000000bc020000
+1      º00000102022253797374656d006e040000002d01030004000000f0010200030000000000}{\result {\dn50 {\pict{\*\picprop\shplid1026{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}
+1      º{\sp{\sn fillColor}{\sv 268435473}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fHitTestFill}{\sv 1}}{\sp{\sn fillShape}{\sv 1}}{\sp{\sn fillUseRect}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 0}}{\sp{\sn fLine}{\sv 0}}}
+1      º\picscalex109\picscaley109\piccropl0\piccropr0\piccropt0\piccropb0\picw3810\pich1446\picwgoal2160\pichgoal820\wmetafile8\bliptag-1713924191\blipupi34{\*\blipuid 99d797a1d2ce9adbf04a766364abb612}
+1      º0100090000030a0200000400150000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000
+1      º050000000b0200000000050000000c022005800d1200000026060f001a00ffffffff000010000000c0ffffffaaffffff400d0000ca0400000b00000026060f00
+1      º0c004d617468547970650000900109000000fa02000008000000000000002200040000002d0100000500000014025a0360000500000013025a03600405000000
+1      º14025a0358050500000013025a03ec0709000000fa02000010000000000000002200040000002d010100050000001402c0014000050000001302c001250d1500
+1      º0000fb0200ff0000000000009001000000000402001054696d6573204e657720526f6d616e005400040000002d01020008000000320a9a03b90c010000002900
+1      º08000000320a9a03460b01000000680008000000320a9a03ca0a010000002f0008000000320a9a03bf0902000000467408000000320a9a036408010000003100
+1      º08000000320a9a031c0801000000280008000000320a6404e305010000004d0008000000320af502f30601000000290008000000320af502d305010000004500
+1      º08000000320af5026f0501000000280008000000320a9604b80201000000420008000000320a9604e80001000000670008000000320ae9028d03010000005600
+1      º08000000320ae9022b0201000000680008000000320ae902240102000000373408000000320ae902e400010000002e0008000000320ae9026400010000003100
+1      º08000000320a5b01030701000000290008000000320a5b01e30501000000450008000000320a5b017f0501000000280015000000fb0240ff0000000000009001
+1      º000000000402001054696d6573204e657720526f6d616e000600040000002d01030004000000f001020008000000320ada03420c01000000730008000000320a
+1      ºda03e10b01000000300008000000320aa404e50601000000300008000000320a82025707010000002a0008000000320ad604620301000000310008000000320a
+1      º1c04430201000000330008000000320ad604e10101000000730008000000320ad604800101000000300008000000320a2903270301000000730008000000320a
+1      º2903c60201000000300008000000320ae8006707010000002a0010000000fb0200ff0000000000009001000000020002001053796d626f6c0000040000002d01
+1      º020004000000f001030008000000320a9a03fd08010000002b0008000000320af5026f0601000000710008000000320a9a039604010000002b0008000000320a
+1      º5b017f060100000071000a00000026060f000a00ffffffff01000000000010000000fb021400090000000000bc02000000000102022253797374656d006e040000002d01030004000000f0010200030000000000}}}}} 
+A052   º_\par X{_\sub 1}  = #.#######_\tab --  #.#######_\tab --    _\tab 
+1      º{\pard\plain \s18\qj\nowidctlpar\widctlpar\tx1701\tx3260\tx3969\tx6804\adjustright \f2\fs18\lang1040 {\object\objemb\objw1520\objh499\objscalex110\objscaley110{\*\objclass Equation.3}
+1      º{\*\objdata 01050000020000000b0000004571756174696f6e2e33000000000000000000000c0000
+1      ºd0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900060000000000000000000000010000000100000000000000001000000200000001000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºfffffffffffffffffdffffff04000000fefffffffefffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffff0200000002ce020000000000c000000000000046000000000000000000000000207e
+1      º184c2efcbc0103000000c00100000000000001004f006c00650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000201ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+1      º0000000000000000000000001400000000000000010043006f006d0070004f0062006a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120002010100000003000000ffffffff0000000000000000000000000000000000000000000000000000
+1      º0000000000000000000001000000660000000000000003004f0062006a0049006e0066006f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000201ffffffff04000000ffffffff000000000000000000000000000000000000000000000000
+1      º000000000000000000000000030000000400000000000000feffffff02000000fefffffffeffffff0500000006000000feffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1      ºffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff010000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100feff030a0000ffffffff02ce020000000000c0000000000000461700
+1      º00004d6963726f736f6674204571756174696f6e20332e30000c0000004453204571756174696f6e000b0000004571756174696f6e2e3300f439b271000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000
+1      º0000000000000000000000000000000000000000000000000000000000000000000000001c000000020001d88000000000000000d46e4900388449000000000003010103000a01030e00000112834d00030f01000b01028830000011000a0286122212834d00030f01000b01128348000011000a02822800028831000286
+1      º2b00128346001283740002822f0012836800030f01000b0102883000128373000011000a02822900000112834d00030f01000b01028830000011000000000000320a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000004500710075006100740069006f006e0020004e00610074006900760065000000000000000000000000000000000000000000000000000000000000000000000020000200ffffffffffffffffffffffff000000000000
+1      º000000000000000000000000000000000000000000000000000000000000040000009c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000
+1      º00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000
+1      º000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+1      º00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001050000050000000d0000004d45544146494c455049435400790a000090fcffffac0200000800790a70030000
+1      º010009000003510100000300150000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000050000000b0200000000050000000c02200380091200000026060f001a00ffffffff000010000000c0ffffffa6ffffff40090000c60200000b0000002606
+1      º0f000c004d617468547970650000b00009000000fa02000010000000000000002200040000002d010000050000001402800140000500000013028001350915000000fb0240ff0000000000009001000000000402001054696d6573204e657720526f6d616e005400040000002d01010008000000320acb02fd0401000000
+1      º300008000000320a5d01630801000000730008000000320a5d01020801000000300008000000320a5d01b50301000000480008000000320a5d01510101000000300015000000fb0200ff0000000000009001000000000402001054696d6573204e657720526f6d616e000600040000002d01020004000000f00101000800
+1      º0000320a8b020c04010000004d0008000000320a1d01c90801000000290008000000320a1d01780701000000680008000000320a1d010b07010000002f0008000000320a1d010f0602000000467408000000320a1d01a80401000000310008000000320a1d01600401000000280008000000320a1d01bd02010000004d00
+1      º08000000320a1d016000010000004d0010000000fb0200ff0000000000009001000000020002001053796d626f6c0000040000002d01010004000000f001020008000000320a1d014705010000002b0008000000320a1d01f801010000002d000a00000026060f000a00ffffffff01000000000010000000fb0214000900
+1      º00000000bc02000000000102022253797374656d006e040000002d01020004000000f00101000300000000000000}{\result {\dn22 {\pict{\*\picprop\shplid1025{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}
+1      º{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fillColor}{\sv 268435473}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fHitTestFill}{\sv 1}}
+1      º{\sp{\sn fillShape}{\sv 1}}{\sp{\sn fillUseRect}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 0}}{\sp{\sn fLine}{\sv 0}}}\picscalex110\picscaley110\piccropl0\piccropr0\piccropt0\piccropb0
+1      º\picw2681\pich880\picwgoal1520\pichgoal499\wmetafile8\bliptag229992220\blipupi-1044{\*\blipuid 0db5671cf31e2d6d952e4773c333d9a7}
+1      º010009000003510100000300150000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000
+1      º050000000b0200000000050000000c02200380091200000026060f001a00ffffffff000010000000c0ffffffa6ffffff40090000c60200000b00000026060f00
+1      º0c004d617468547970650000b00009000000fa02000010000000000000002200040000002d010000050000001402800140000500000013028001350915000000
+1      ºfb0240ff0000000000009001000000000402001054696d6573204e657720526f6d616e005400040000002d01010008000000320acb02fd040100000030000800
+1      º0000320a5d01630801000000730008000000320a5d01020801000000300008000000320a5d01b50301000000480008000000320a5d0151010100000030001500
+1      º0000fb0200ff0000000000009001000000000402001054696d6573204e657720526f6d616e000600040000002d01020004000000f001010008000000320a8b02
+1      º0c04010000004d0008000000320a1d01c90801000000290008000000320a1d01780701000000680008000000320a1d010b07010000002f0008000000320a1d01
+1      º0f0602000000467408000000320a1d01a80401000000310008000000320a1d01600401000000280008000000320a1d01bd02010000004d0008000000320a1d01
+1      º6000010000004d0010000000fb0200ff0000000000009001000000020002001053796d626f6c0000040000002d01010004000000f001020008000000320a1d01
+1      º4705010000002b0008000000320a1d01f801010000002d000a00000026060f000a00ffffffff01000000000010000000fb021400090000000000bc02000000000102022253797374656d006e040000002d01020004000000f0010100030000000000}}}}}
+1      º\par \pard \s18\qj\nowidctlpar\widctlpar\tx2268\tx4820\tx5812\adjustright {\b \tab Stresses (App. 14) opening-side} 
+K076+06º_\par ?{_\sub HS}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi _\tab (see Code)_\tab |######psi=1.5S{\sub fo}
+K077-54º_\par ?{_\sub RS}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab (see Code)_\tab |######psi=S{_\sub fo}
+K078-55º_\par ?{_\sub TS}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab (see Code)_\tab |######psi=S{_\sub fo}
+K079-56º_\par ?{_\sub mS}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab _\'bd(?{_\sub HS}+?{_\sub RS})_\tab |######psi=S{_\sub fo}
+K080-57º_\par ?{_\sub mS}' =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab _\'bd(?{_\sub HS}+?{_\sub TS})_\tab |######psi=S{_\sub fo}
+1      º_\par \pard \s18\qj\nowidctlpar\widctlpar\tx2268\tx4820\tx5812\adjustright {\b \tab Stresses (App. 14) shell-side} 
+K024+58º_\par ?{_\sub HO}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi _\tab (see Code)_\tab |######psi=1.5S{\sub fo}
+K025-02º_\par ?{_\sub RO}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab (see Code)_\tab |######psi=S{_\sub fo}
+K026-03º_\par ?{_\sub TO}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab (see Code)_\tab |######psi=S{_\sub fo}
+K027-04º_\par ?{_\sub mO}  =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab _\'bd(?{_\sub HO}+?{_\sub RO})_\tab |######psi=S{_\sub fo}
+K028-05º_\par ?{_\sub mO}' =#######.#_\tab N/mm{_\super 2}  ######_\tab psi_\tab _\'bd(?{_\sub HO}+?{_\sub TO})_\tab |######psi=S{_\sub fo}
+1      º\par
+1      º\par
+1      º\par \pard \s18\qj\widctlpar\tx2693\tx5387\tx7371 CONVERSION FACTORS: Mpa\tab =psi.0,006894757      N\tab =lb.4,448222    {\super 0}C\tab =({\super 0}F-32)/1,8
+1      º\par                     psi\tab =Mpa.145,0377439   N.mm\tab =lb.in.112,9848 {\super 0}F\tab =({\super 0}C.1,8)+32
+1      º\par                      in\tab =mm.25,4           N/mm{\super 2\tab }=psi.0,006894757
+1      º\par \pard \s18\qj\widctlpar\tx4536
+1      º\par
+1      º\par
+1      º\par
+1      º\par    -Head calculation page 2 of 2\par 
+0      º
+

@@ -1,0 +1,52 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\..\Lancio\Bin\AiutoIST.chm
+Contents file=AiutoIST.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=AiutoIST.hhk
+Language=0x409 Inglese (Stati Uniti d'America)
+Title=Guida di IST
+
+[WINDOWS]
+Aiuto="Guida di IST","AiutoIST.hhc","AiutoIST.hhk","Panoramica.htm","Introduzione.htm",,,,,0x23520,,0x304e,[182,226,852,711],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+Introduzione.htm
+Prototipi.htm
+Chiavi.htm
+ChiaviS.htm
+ErrProtoNoWMF.htm
+ErrProto.htm
+AggCrea.htm
+FinIniz.htm
+ErrNoProto.htm
+AvvPreserva.htm
+Avvisi.htm
+DataSheet.htm
+ErrNoDS.htm
+DSf3.htm
+DSf2.htm
+DSf1.htm
+
+[ALIAS]
+IDH_AVV_PRESERVA=AvvPreserva.htm
+IDH_BOT_CALCOLI=FinIniz.htm#Calcoli
+IDH_BOT_DATASHEET=FinIniz.htm#DataSheet
+IDH_BOT_DISTINTA=FinIniz.htm#Distinta
+IDH_BOT_FORMATI=FinIniz.htm#Formati
+IDH_BOT_GREZZI=FinIniz.htm#Grezzi
+IDH_CAP_INTRODUZIONE=Introduzione.htm
+IDH_ERR_NODS=ErrNoDS.htm
+IDH_ERR_NOPROTO=ErrNoProto.htm
+IDH_PROTO_AGGCREA=AggCrea.htm
+
+[MAP]
+#include header.h
+
+[INFOTYPES]
+

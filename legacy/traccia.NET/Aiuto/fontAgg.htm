@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Aggancio</Title>
+</HEAD>
+<BODY>
+<H1>Aggancio</H1>
+<P>Questa operazione consiste nel collegare uno ad uno i fori della corona esterna con i fori della zona interna.</P>
+<P>I collegamenti devono essere creati in modo che l'inserimento delle forcine, una dopo l'altra, sia possibile. I collegamenti verranno creati, uno dopo l'altro, rispettando una sequenza determinata dalla <A href="fontAgg.htm#strategia">strategia dell'aggancio</A>. La condizione da rispettare perché l'insieme dei collegamenti così generato è che l'i-esima forcina non <A href="fontAgg.htm#sorvolo">sorvoli</A> nessun foro non ancora impegnato da un collegamento precedentemente effettuato (j-esima forcina, con j minore di i).</P>
+<H2><A name="strategia">Strategia dell'aggancio</A></H2>
+<P>La <B>prima fase</B> della determinazione di una coppia di fori nella quale si impegna l'i-esima forcina consiste nel ricercare il foro della zona interna non ancora impegnato ed avente distanza massima dal centro.</P>
+<P>La <B>seconda  fase</B> prevede la ricerca del foro non impegnato della corona esterna che, accoppiato al primo foro, minimizza una determinata <B><A name="obiettivo">funzione obiettivo</A></B>.</P>
+<P>La funzione obiettivo è data dalla somma della distanza fra i due fori e dell'angolo, espresso in radianti, fra la congiungente i due fori e il raggio passante per il primo foro, moltiplicata per il <B><A href="Preferenze.htm#strategia">fattore di strategia</A></B>.</P>
+<H2><A name="insuccesso">Insuccesso dell'operazione di aggancio</A></H2>
+<P>Può accadere che l'operazione di aggancio non possa essere portata a buon fine. In tali casi il programma mostra l'avviso sotto rappresentato.</P>
+<IMG SRC="trappola.bmp">
+<P>Benché sia possibile considerare delle disposizioni di fori che non ammettono soluzioni, è probabile che nella maggior parte dei casi ciò avviene perché la <A href="fontAgg.htm#strategia">strategia</A> scelta dal programma Traccia non è la migliore possibile.</P>
+<Si hanno allora due possibilità per risolvere il problema.</P>
+<H3>Ricerca automatica di una nuova soluzione</H3>
+<P>Se si risponde 'annulla' alla domanda rappresentata nella figura precedente, il programma tornerà sui suoi passi e modificherà alcuni agganci precedentemente definiti in violazione della minimizzazione della <A href="fontAgg.htm#obiettivo">funzione obiettivo</A>. In alcuni casi il programma risulta così in grado di risolvere il problema.</P>
+<H3>Correzione manuale del bilanciamento</H3>
+<P>Si osservi nella figura sopra riportata il foro marcato con due cerchietti blu. Esso è il foro per il quale non è stato possibile trovare nessun foro della corona esterna da accoppiargli rispettando la condizione fondamentale. Si può notare che non esiste nessun foro ancora libero della corona esterna in una direzione grosso modo radiale rispetto al foro marchiato con i cerchietti blu. In effetti ci sono troppi fori nella corona esterna nella parte superiore rispetto a quelli presenti nella oarte inferiore. Si deve quindi tornare all'operazione di <A href="fontBil.htm#manuale">bilanciamento</A> e spostare alcuni fori dalla zona superiore alla zona inferiore.</P>
+<H2><A name="sorvolo">Condizione di non-sorvolo</A></H2>
+<P>La proiezione sul piano della piastra tubiera di una forcina è costituita da una figura così composta:</P>
+<li>i due cerchi in corrispondenza dei due fori corrispondenti alle due gambe della forcina
+<li>i due segmenti tangenti ad entrambi i cerchi suddetti
+<P>La condizione di non-sorvolo è rispettata se nessun foro vuoto (non ancora impegnato da un'altra forcina) interferisce con la suddetta figura per una quantità superiore all'<A href="ChiaviS.htm#Interf">interferenza ammessa</A>.</P>
+<H2>Implementazione informatica</H2>
+Vedi <A href="html/ManProAggiancia.htm">Subroutine Aggancia</A>
+</BODY>
+</HTML>

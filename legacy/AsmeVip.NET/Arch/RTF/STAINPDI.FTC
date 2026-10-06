@@ -1,0 +1,44 @@
+T
+B
+0       \par Mechanical Standards TEMA Class "RCB"  Heat Exchangers - EXPANSION BELLOWS\par
+B
+0                                     INPUT DATA\par
+0                                     ==========\par
+B
+M007Item       : \                       \            material \                   \_\par
+B
+L   Number of load conditions  ##_\par
+B
+N      Type of expansion joint: \                                                    \_\par
+B
+D  1  2Minimum internal diameter #####.   [mm]   Maximum internal Diameter   #####.   [mm]_\par
+D  3 23Knuckle inner radius (inf)#####.   [mm]   Knuckle inner radius (sup)  #####.   [mm]_\par
+D  5  6Corrosion allowance       ##.###   [mm]   Number of convolutes        #####    [--]_\par
+D 11 12Inner cylinders, thk.     #####.   [mm]   Inner cylinders, length     #####.   [mm]_\par
+D 13 14Outer cylinders, thk.     #####.   [mm]   Outer cylinders, length     #####.   [mm]_\par
+E  4Nominal thickness         #####.   [mm]_\par
+E  7Length of the end cylindrical sections                                #####.   [mm]_\par
+B
+0   Note: A null knuckle radius indicates a flanged-type flexible element\par
+B
+0   Note: The length of the cylindrical sections located between two bellow bends\par
+0         or joint corners is 1/2 of the actual length\par
+B
+0                             CALCULATED EQUIVALENT GEOMETRY\par
+0                             ==============================\par
+B
+D 15 16Minor radius         (a){_\sub  } #####.   [mm]   Major radius           (b){_\sub  } #####    [mm]_\par
+D 17 18Inner cyl thk.       (t{_\sub a}) #####.   [mm]   Outer cyl thk.         (t{_\sub b}) #####    [mm]_\par
+D 19 20Inner cyl length     (l{_\sub a}) #####.   [mm]   Outer cyl length       (l{_\sub b}) #####    [mm]_\par
+D 21 22Inner cyl length     (y{_\sub a}) #####.   [mm]   Outer cyl length       (y{_\sub b}) #####    [mm]_\par
+B
+0   Note: The above data are given in the uncorroded condition.\par
+0         They are calculated in the corroded condition too.\par
+B  
+0 15Note: If there are more than one convolute, the above data are referred to\par
+0 15      the first and last flexible elements.\par
+B
+0                                     LOADING DATA\par
+0                                     ============\par
+Fine
+

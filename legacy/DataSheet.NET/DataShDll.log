@@ -1,0 +1,1181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "DataShDll.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "DataShDll"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "DataShDll.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\DataShDll.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\apert4.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\apert4.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2056"
+                ObjectName = "cmbClasse"
+                ObjectType = "ComboBox"
+                PME = "ItemData"
+            >La proprietà di ComboBox cmbClasse.ItemData non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Command3D4"
+                ObjectType = "SSCommand"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà Apert.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà Apert.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "cmdCalcoli"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdCalcoli.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "cmdFormati"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdFormati.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "cmdGrezzi"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdGrezzi.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Distinta"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà Distinta.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataSheet"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà DataSheet.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "AggiorFBM" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SW(1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SW(4).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SW(7).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SW(i).</Issue>
+        </Section>
+        <Section Name = "AggiorLabel" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Cliente_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Cliente.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbClasse_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Preserva().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbClasse.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command3D1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Preserva().</Issue>
+        </Section>
+        <Section Name = "Command3D2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Preserva().</Issue>
+        </Section>
+        <Section Name = "Command3D4_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Preserva().</Issue>
+        </Section>
+        <Section Name = "DataSheet_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().Assieme.</Issue>
+        </Section>
+        <Section Name = "Denomin_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Denomin.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "FillBoxes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().Qta.</Issue>
+        </Section>
+        <Section Name = "FillItem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().Assieme.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento Apert.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento Apert.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento Apert.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Impianto_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Impianto.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "LargM_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento LargM.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ListDisp_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ListDisp.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "LungM_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento LungM.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Numero_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind(job.comm.indice).Qta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Numero.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Preserva" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Preserva.</Issue>
+        </Section>
+        <Section Name = "PrimoRecord" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Oggetto_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Oggetto.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Progettista_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Progettista.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Aggiorna" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().Assieme.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind().Qta.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\Datashe1.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\DataShe1.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Command3D2"
+                ObjectType = "SSCommand"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataShe1"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà DataShe1.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataShe1"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà DataShe1.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Label5"
+                ObjectType = "Label"
+                PME = "WordWrap"
+            >Label proprietà Label5.WordWrap non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Label4"
+                ObjectType = "Label"
+                PME = "WordWrap"
+            >Label proprietà Label4.WordWrap non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "ClasseTEMA_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ClasseTEMA.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ComboM_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ComboM.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ComboT_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ComboT.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Option1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ProvIdrMant_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ProvIdrMant.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ProvIdrTubi_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ProvIdrTubi.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Toller_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Toller.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\datashe2.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\DataShe2.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "cmdMater_26"
+                ObjectType = "SSCommand"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataShe2"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà DataShe2.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataShe2"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà DataShe2.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "DisplayCl" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat(1).Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat(2).Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat(3).Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat().RecupMat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat().Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat().Indmat.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\datashee.bas"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\DATASHEE1.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "PutDes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GetDes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiSh0 debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiS1 debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiS2 debbano essere inizializzati.</Issue>
+        </Section>
+        <Section Name = "FileDes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind(job.Comm.indice).File.</Issue>
+        </Section>
+        <Section Name = "CreaPrototipo" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "CondensaMDB" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind(job.Comm.indice).File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "StampaTesta" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.TestaDS.</Issue>
+        </Section>
+        <Section Name = "IniziaDoc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sSaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.IntestaGR.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind().Assieme.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.VaiInizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sClose.</Issue>
+        </Section>
+        <Section Name = "StampaMat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.TestaDS.</Issue>
+        </Section>
+        <Section Name = "StampaCampi" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.TestaDS.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.StampaNota.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Formati" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind().Qta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind(job.Comm.indice).Qta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().MakeCorners.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().RettGraf.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect(NumLam).LARG.</Issue>
+        </Section>
+        <Section Name = "SezVir" >
+            <Issue
+                Type = "Compile"
+                Number = "1056"
+            >La clausola As Variant è stata rimossa dall'istruzione ReDim f(IUNQ.Fields.Count).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto f(j).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Segno.</Issue>
+        </Section>
+        <Section Name = "ShowForm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().x.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "pctForm"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >PictureBox metodo pctForm.TextWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().RettGraf.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SubRect.x().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SubRect.x(3).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SubRect.y().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SubRect.y(3).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Spic.Sp(1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Spic.Sp().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Spic.Sp(Tipo + 1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DispoFor" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().LARG.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rect().x.</Issue>
+        </Section>
+        <Section Name = "AcqForm" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DisegnaLamiere" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "pctForm"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo pctForm.Cls non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MostraAiuto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "CheckDoc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sFullName.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\Datashee.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\DataShee.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "DataShee"
+                ObjectType = "Form"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "DataShee"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà DataShee.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "chkApproved_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento chkApproved.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "FaseM_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento FaseM.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "FaseT_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento FaseT.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "NomFluiM_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento NomFluiM.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "NomFluiT_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento NomFluiT.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Option1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "PassM_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento PassM.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento PassM.Change è stato aggiornato a PassM.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "PassT_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento PassT.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "TexImp_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento TexImp.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\frmproto.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\frmProto.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Grid1"
+                ObjectType = "Grid"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmProto"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmProto.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "CaricaDis" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Picture1.Cls non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Command3_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind(job.comm.indice).File.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.comm.Ind(job.comm.indice).File.</Issue>
+        </Section>
+        <Section Name = "RiempiGrid" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\frmtipop.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\frmTipoP.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "frmTipoP"
+                ObjectType = "Form"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTipoP"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmTipoP.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTipoP"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmTipoP.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Option1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\saldmand.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\SaldMand.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Option3D1_0"
+                ObjectType = "SSOption"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "SaldMand"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà SaldMand.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "SaldMand"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento SaldMand.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\datides4.Bas"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\DATIDES4.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pdding è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortVap è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortLiq è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\Tipi.bas"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\Monitor.cls"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\Monitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\frmForm.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\frmForm.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "pctForm"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà pctForm.AutoRedraw non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmForm"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmForm.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "optOrd_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento optOrd.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\tema.frm"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\tema.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Frame3D3"
+                ObjectType = "SSFrame"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "lblLettera_2"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "lblLettera_1"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "lblLettera_0"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTEMA"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmTEMA.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Spiega è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Figura è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice iScelta è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\Header.res"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "C:\DiscoE\Programmi\MicroSoft Visual Studio\Fbm\DataShDll\clsDataSheet.cls"
+        NewPath = "C:\Documents and Settings\GIANNI\Documenti\Visual Studio Projects\Lancio\DataSheet.NET\clsDataSheet.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Class_Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiPrg debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiSh0 debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiS1 debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DatiS2 debbano essere inizializzati.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

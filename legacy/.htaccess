@@ -1,0 +1,8 @@
+
+
+
+AuthName "Area Riservata"
+AuthType Basic
+AuthUserFile /www/HOME/it/p/r/e/presciuttini/www/./Lancio/Lancio/.htpasswd
+require valid-user
+

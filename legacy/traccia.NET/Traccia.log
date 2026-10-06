@@ -1,0 +1,2283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Traccia.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Traccia"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Traccia.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Traccia.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Monitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Monitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Tr13N.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Tr13N.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "InitDaTos" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DaTos debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SottoCarica" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Modo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Loadd" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CHIUDI" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SaveAll" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SaveInp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Exitt" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Esito.</Issue>
+        </Section>
+        <Section Name = "SuperSave" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Elimina" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ControlADU" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+        <Section Name = "qualy" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CloseTemp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\trTipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\TrTipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pad0 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pad1 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pad3 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pad4 è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Tracciatura.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Tracciatura.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice intNomi è stato cambiato da 1,1 a 0,0.</Issue>
+        </Section>
+        <Section Name = "Esegui" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Calc4SsP" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto P0.Punti().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto P0.Punti().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti(icount + 1).x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti(icount + 1).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti(1).x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p1.Punti(1).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto P0.Punti(icount + 1).x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MakeRMT" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DisTrk" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Picture1.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Tipo.</Issue>
+        </Section>
+        <Section Name = "Scrivi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto f.</Issue>
+        </Section>
+        <Section Name = "OpFin" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\OpFin.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\OpFin.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmOpFin"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmOpFin.ClipControls non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Infila.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Infila.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "AppeB1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.recB1.Utubo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto AppeB1.</Issue>
+        </Section>
+        <Section Name = "AppeB2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.recB2.Utubo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.recB2.Cd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ChiuB1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ChiuB1.</Issue>
+        </Section>
+        <Section Name = "ChiuB2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ChiuB2.</Issue>
+        </Section>
+        <Section Name = "DisegnoCAD" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GoTopB1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GoTopB1.</Issue>
+        </Section>
+        <Section Name = "GoTopB2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GoTopB2.</Issue>
+        </Section>
+        <Section Name = "Infilaggio" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ChiuB1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GoTopB1().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SkipB1(True).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ChiuB2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.Utub.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.CC.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.Utub1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Franco.CC1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GoTopB2(False).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto AppeB2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GoTopB2().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iPosMTO.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SkipB1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SkipB1.</Issue>
+        </Section>
+        <Section Name = "ControllaRMT" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.sOpen.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Traccia.Frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Traccia.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Combo2_0"
+                ObjectType = "ComboBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Combo1_0"
+                ObjectType = "ComboBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form proprietà frmTraccia.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà frmTraccia.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmTraccia.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmTraccia.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "cmdElim"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdElim.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "pctRisult"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà pctRisult.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "PictHelp"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà PictHelp.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Salva_0"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà _Salva_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Rpristina"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà Rpristina.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà Picture1.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "HelpContextID"
+            >PictureBox proprietà Picture1.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice iGr è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice nominput è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice HelpID è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdDown_MouseDown" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmdLeft_MouseDown" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmdRight_MouseDown" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmdTipPass_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "c"
+                ObjectType = "ComboBox"
+                PME = "Index"
+            >ComboBox proprietà c.Index non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmdUp_MouseDown" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento Combo1.Change è stato aggiornato a Combo1.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr().ListIndex.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Combo2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento Combo2.Change è stato aggiornato a Combo2.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Combo2_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo2.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdExit_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.App.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmTraccia.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà Picture1.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbPixels"
+            >La costante vbPixels non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbTwips"
+            >La costante vbTwips non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmTraccia.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmTraccia.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "mnuCambia_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "mnuFact_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor.Motore.Inizio.converticr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1046"
+                PME = "InputBox"
+            >Il parametro di InputBox &amp;quot;helpfile&amp;quot; non è supportato ed è stato rimosso.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1046"
+                PME = "InputBox"
+            >Il parametro di InputBox &amp;quot;context&amp;quot; non è supportato ed è stato rimosso.</Issue>
+        </Section>
+        <Section Name = "mnuToglTi_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Pagina_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job.Comm.Ind().File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Picture1_MouseMove" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawMode"
+            >PictureBox proprietà Picture1.DrawMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto CercaSS.</Issue>
+        </Section>
+        <Section Name = "Picture1_MouseUp" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Picture1.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "StatusBar1_PanelClick" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Scarica" >
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato MioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato p non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto p.Index.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Pict.Cls.</Issue>
+        </Section>
+        <Section Name = "Text2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "SecondaPagina" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "MioContr"
+                ObjectType = "Control"
+                PME = "HelpContextID"
+            >Control proprietà MioContr.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "ComboFill" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr().Clear.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr().AddItem.</Issue>
+        </Section>
+        <Section Name = "AggSecondaPagina" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr(j + j0 - 1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr().ListIndex.</Issue>
+        </Section>
+        <Section Name = "mettileva" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MettiTirante" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "TogliTirante" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "CancTir" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "IniziaPagina" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Scale"
+            >PictureBox metodo Picture1.Scale non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MettiTondo" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillColor"
+            >PictureBox proprietà Picture1.FillColor non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "CancTondo" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillColor"
+            >PictureBox proprietà Picture1.FillColor non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "InitVista" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Allerta" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MettiUrto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "SulPiatto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "TogliPiatto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MettiSS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "CercaSS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto CercaSS.</Issue>
+        </Section>
+        <Section Name = "TogliSS" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà Picture1.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbPixels"
+            >La costante vbPixels non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "PaintPicture"
+            >PictureBox metodo Picture1.PaintPicture non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "Image"
+            >PictureBox proprietà Pix.Image non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "VarType"
+            >VarType ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SpostaTondo" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillColor"
+            >PictureBox proprietà Picture1.FillColor non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "SetPopMenu" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmTraccia"
+                ObjectType = "Form"
+                PME = "PopupMenu"
+            >Form metodo frmTraccia.PopupMenu non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MultiSelezione" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Deseleziona" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Aggiutu" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MioContr().ListIndex.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\frmDatiOut.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\frmDatiOut.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "cmdOK"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "cmdCancel"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_0"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label1_0"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmEdita"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmEdita.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SSCommand1_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\frmGrid.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\frmGrid.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "object"
+                ObjectType = "MSComCtl2.UpDown"
+            >Il controllo MSComCtl2.UpDown object non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Min"
+            >VBControlExtender metodo UpDown1.Min non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Text1_KeyPress" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Min"
+            >VBControlExtender metodo UpDown1.Min non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "UpDown1_Change" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Value"
+            >VBControlExtender metodo UpDown1.Value non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2050"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Change"
+            >L'evento di VBControlExtender UpDown1.Change non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\frmGruppi.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\frmGruppi.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "object"
+                ObjectType = "MSComCtl2.UpDown"
+            >Il controllo MSComCtl2.UpDown object non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmGruppi"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmGruppi.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Valor_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Valor.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\PASSI.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\PASSI.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "PASSI"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form proprietà PASSI.AutoRedraw non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Picture1_MouseMove" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "p"
+                ObjectType = "PictureBox"
+                PME = "Index"
+            >PictureBox proprietà p.Index non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\TracciaN.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\TracciaN.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "DisRod" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillColor"
+            >PictureBox proprietà Picture1.FillColor non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "PSet"
+            >PictureBox metodo Picture1.PSet non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "DisTubi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "PSet"
+            >PictureBox metodo Picture1.PSet non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Generabu" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "PercArea" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SEALING" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PX è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PY è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "DisegnoSS" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà Pix.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "vbPixels"
+            >La costante vbPixels non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà Picture1.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbPixels"
+            >La costante vbPixels non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "PaintPicture"
+            >PictureBox metodo Picture1.PaintPicture non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "Image"
+            >PictureBox proprietà Pix.Image non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "VarType"
+            >VarType ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "ScaleTop"
+            >PictureBox proprietà Picture1.ScaleTop non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "ScaleLeft"
+            >PictureBox proprietà Picture1.ScaleLeft non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Pix.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà Pix.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pix"
+                ObjectType = "PictureBox"
+                PME = "PaintPicture"
+            >PictureBox metodo Pix.PaintPicture non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Image"
+            >PictureBox proprietà Picture1.Image non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "SubTraccia" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Picture1.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "DrawStyle"
+            >PictureBox proprietà Picture1.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "PSet"
+            >PictureBox metodo Picture1.PSet non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\InizioN.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\InizioN.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Aggancia" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor.Motore.Inizio.converticr().</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox metodo Picture1.Line non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Bilancio" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ContItera" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Mod ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CoorInMem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iTubof.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "IsEmpty"
+            >IsEmpty è stato aggiornato a IsNothing e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CalcOTL" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DistInMem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Fontana" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GenCorInt" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DaTos debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto DaTos(1).</Issue>
+        </Section>
+        <Section Name = "inizio1" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "inizio2" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "cmdTraccia"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdTraccia.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MostraAiuto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor.Motore.Inizio.converticr().</Issue>
+        </Section>
+        <Section Name = "Spostx" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Mod ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Sub110" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Mod ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "VerifInters" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti().y.</Issue>
+        </Section>
+        <Section Name = "SwapDaTos" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dummy.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto DaTos(0).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto DaTos(1).</Issue>
+        </Section>
+        <Section Name = "datiout" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "pctRisult"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo pctRisult.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "pctRisult"
+                ObjectType = "PictureBox"
+                PME = "Print"
+            >PictureBox metodo pctRisult.Print non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Riordino" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox proprietà Picture1.FillStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSSolid"
+            >La costante vbFSSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "Circle"
+            >PictureBox metodo Picture1.Circle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbFSTransparent"
+            >La costante vbFSTransparent non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Tr1313N.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Tr1313N.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CENTRO" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "INPALL" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DaTos debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto DaTos(1).</Issue>
+        </Section>
+        <Section Name = "leggi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "nuitielle" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locbu.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "nuotielle" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locbu.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "nuovi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice DaTos debbano essere inizializzati.</Issue>
+        </Section>
+        <Section Name = "RSETTO" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Scrivi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Reversebu" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\Form3D.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\Form3D.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "GeneraTubo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rgn.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Cad.cls_Doc_Obj.ModelSpace.AddRegion().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ListaVertici.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rgn().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rgn().Erase.</Issue>
+        </Section>
+        <Section Name = "cmdFile_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "cmdProcedi_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "inserisciBlocco" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Cad.cls_Utility.AngleFromXAxis.</Issue>
+        </Section>
+        <Section Name = "txtLungh_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento txtLungh.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Traccia\header.RES"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\traccia.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+</UpgradeLog>
+

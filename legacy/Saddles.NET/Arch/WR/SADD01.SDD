@@ -1,0 +1,54 @@
+\pard \s15\qj\widctlpar\tx5103\tx5670\tqr\tx7655 Design data : - pressure\tab P\tab MPa\tab |#####.000|
+              - temperature\tab \tab {\super 0}C\tab |#####.00|
+Exchanger/Vessel total weight (*)\tab P{\sub t}\tab kN\tab |#####.00|
+Concentrated weight : - on left end (*)\tab P{\sub 1}\tab kN\tab |#####.00|
+                      - on right end (*)\tab P{\sub 2}\tab kN\tab |#####.00|
+(  (*) includes the weight of the content )                
+Moment : - at left end (+ if counterclockwise)\tab M{\sub L}\tab kN.m\tab |#####.00|
+         - at right end (+ if clockwise)\tab M{\sub R}\tab kN.m\tab |#####.00|
+Closure type : - at left end                     
+               - at right end                    
+Shell material                                   
+Shell :                                                   
+- allowable stress:   away from the saddles\tab f\tab N/mm{\super 2}\tab |####.00|
+                      on left saddle\tab f{\sub 1}\tab N/mm{\super 2}\tab |####.00|
+                      on right saddle\tab f{\sub 2}\tab N/mm{\super 2}\tab |####.00|
+- Young's modulus:    away from the saddles\tab E\tab N/mm{\super 2}\tab |######.|
+                      on left saddle\tab E{\sub 1}\tab N/mm{\super 2}\tab |######.|
+                      on right saddle\tab E{\sub 2}\tab N/mm{\super 2}\tab |######.|
+Allowable stress on saddle : - left support\tab f{\sub S1}\tab N/mm{\super 2}\tab |####.00|
+                             - right support\tab f{\sub S2}\tab N/mm{\super 2}\tab |####.00|
+Left head : - allowable stress           \tab f{\sub H1}\tab N/mm{\super 2}\tab |####.00|
+            - maximum tensile stress     \tab f{\sub T1}\tab N/mm{\super 2}\tab |####.00|
+Right head : - allowable stress          \tab f{\sub H2}\tab N/mm{\super 2}\tab |####.00|
+             - maximum tensile stress    \tab f{\sub T2}\tab N/mm{\super 2}\tab |####.00|
+Shell inside diameter (*)             \tab D{\sub i}\tab mm\tab |#####.00|
+Shell thickness : - away from the saddles (*)\tab T\tab mm\tab |#####.00|
+                  - on left saddle (*)    \tab T{\sub 1}\tab mm\tab |#####.00|
+                  - on right saddle (*)   \tab T{\sub 2}\tab mm\tab |#####.00|
+ (  (*) in the corroded condition)                            
+Distance : - between saddles              \tab L{\sub D}\tab mm\tab |#####.00|
+           - from left saddle to left end  \tab A{\sub 1}\tab mm\tab |#####.00|
+           - from right saddle to right end\tab A{\sub 2}\tab mm\tab |#####.00|
+Saddle axial width : - left support        \tab B{\sub 11}\tab mm\tab |#####.00|
+                     - right support       \tab B{\sub 12}\tab mm\tab |#####.00|
+Saddle included angle : - left support\tab {\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}\tab {\super 0}\tab |#####.00|
+                        - right support\tab {\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}\tab {\super 0}\tab |#####.00|
+Saddle plate width : - left support \tab T{\sub W1}\tab mm\tab |#####.00|
+                     - right support\tab T{\sub W2}\tab mm\tab |#####.00|
+Saddle plate incl. angle : - left support \tab {\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S1}\tab {\super 0}\tab |#####.00|
+                           - right support\tab {\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S2}\tab {\super 0}\tab |#####.00|
+Saddle plate thickness : - left support \tab T{\sub K1}\tab mm\tab |#####.00|
+                         - right support\tab T{\sub K2}\tab mm\tab |#####.00|
+Saddle thickness : - left support         \tab T{\sub H1}\tab mm\tab |#####.00|
+                   - right support        \tab T{\sub H2}\tab mm\tab |#####.00|
+Saddle minimum height : - left support    \tab H{\sub G1}\tab mm\tab |#####.00|
+                        - right support   \tab H{\sub G2}\tab mm\tab |#####.00|
+Dished head thickness at left end (corroded)\tab T{\sub E1}\tab mm\tab |#####.00|
+Dished head thickness at right end (corroded)\tab T{\sub E2}\tab mm\tab |#####.00|
+x
+x
+x
+x
+x
+

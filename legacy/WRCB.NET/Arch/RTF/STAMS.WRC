@@ -1,0 +1,12 @@
+\par
+                   NOZZLE STRESSES SUMMARY\par
+                   =======================\par
+\par
+ ##)   Mark   NPS [in] Pl(sh) Pl+Pb(sh) Pl(nozzle) Pl+Pb(n) All.(Pl) All.(Pl+Pb)  & _\par
+     \       \ \    \   \   \     \   \     \   \     \   \     \   \     \   \_\par
+Load condition ##    \      \  \      \  \      \  \      \  \      \  \      \  & _\par
+ at pad edge         \      \  \      \  \      \  \      \  \      \  \      \_\par
+ ##)   Mark   NPS [in] Pl(sh) Pl+Pb(sh) Max compr. All.(c.) All.(Pl) All.(Pl+Pb)_  & \par
+Nearest nozzles  Q1: \         \ Q2: \         \ Q3: \         \ Q4: \         \_\par
+ in the nozzle wall  \      \  \      \  \      \  \      \  \      \  \      \_\par
+

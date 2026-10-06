@@ -1,0 +1,36 @@
+\par 
+                 EXPLANATORY NOTES FOR WRC107/App.G  CALCULATION\par 
+                 ===============================================\par 
+\par 
+              NOZZLE SUMMARY\par 
+\par 
+                 Calculated : YES/NO\par 
+                 -------------------\par 
+                 There may be various reasons for which a specific nozzle or attachement\par 
+              needs not to be verified. In this case the option 'NO' appears.\par 
+\par 
+                 Method for the analysis\par 
+                 -----------------------\par 
+                 The procedures available include WRC107 for spheres and cylinders,\par 
+               WRC297, and BS5500 app.G.\par 
+\par 
+                 Summation convention\par 
+                 --------------------\par 
+                 This option concerns the manner to combine the individual components of\par 
+              the stress tensors connected with the pressure load and the external loads\par 
+              in order to obtain the complete status of stress around the attachment.\par 
+                 It is possible to use the WRC107 convention with the BS5500 analysis\par 
+              method, and viceversa.\par 
+\par 
+                 Shear reduced to foot\par 
+                 ---------------------\par 
+\par 
+                 When this option is selected, the external forces and moments given\par 
+              in input are considered as applied to the nozzle end. Hence they are\par 
+              transferred autoamtically to the nozzle-to-shell junction by conside-\par 
+              ring the nozzle height as the lever arm.\par 
+\par 
+                 External loads\par 
+                 --------------\par 
+                 The used specification for standard nozzle loads, if any, is quoted.\par 
+

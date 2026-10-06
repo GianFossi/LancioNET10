@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Lancion.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Lancion"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Lancion.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\Lancion.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "0"
+        />
+    </Settings>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancion.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\Lancion.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà Form1.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà Form1.WhatsThisHelp non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento Form1.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form proprietà Form1.AutoRedraw non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento Form1.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Form1"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento Form1.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "mnuGuida_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "App"
+                ObjectType = "App"
+                PME = "Revision"
+            >App proprietà App.Revision non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Abilitazioni" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\Form2n.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\Form2n.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "cmdhelp"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text3"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Command2"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Command1"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text2"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label4"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label3"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label1"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Form2"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà Form2.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Form2"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà Form2.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Form2"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà Form2.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Text2"
+                ObjectType = "TextBox"
+                PME = "WhatsThisHelpID"
+            >TextBox proprietà Text2.WhatsThisHelpID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Form2"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento Form2.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio4.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\Lancio4.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Main" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "Printer"
+                ObjectType = "Printer"
+                PME = "Port"
+            >Printer proprietà Printer.Port non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1047"
+            >L'applicazione verrà chiusa al termine di Sub Main().</Issue>
+        </Section>
+        <Section Name = "Licenza" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.QuestoComputer.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\lanMonitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\lanMonitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CheckSystem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto App.Version.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto App.Quit.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\Tipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documenti\Visual Studio Projects\Lancio\frmPers.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\frmPers.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Picture1_1"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà _Picture1_1.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "object"
+                ObjectType = "MSComCtl2.UpDown"
+            >Il controllo MSComCtl2.UpDown object non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Picture1_0"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà _Picture1_0.ScaleMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Max"
+            >VBControlExtender metodo UpDown1.Max non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Value"
+            >VBControlExtender metodo UpDown1.Value non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "UpDown1_Change" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "UpDown1"
+                ObjectType = "VBControlExtender"
+                PME = "Value"
+            >VBControlExtender metodo UpDown1.Value non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Header.res"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Lancio.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+</UpgradeLog>
+

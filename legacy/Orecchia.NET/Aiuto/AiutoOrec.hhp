@@ -1,0 +1,20 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\Lancio.NET\Bin\AiutoOrec.chm
+Contents file=AiutoOrec.hhc
+Default Window=Guida
+Default topic=Panoramica.htm
+Display compile progress=No
+Full text search stop list file=..\..\stop.stp
+Index file=AiutoOrec.hhk
+Language=0x410 Italiano (Italia)
+
+[WINDOWS]
+Guida=,"AiutoOrec.hhc","AiutoOrec.hhk","Panoramica.htm","Panoramica.htm",,,,,0x22520,,0x3006,[474,249,1226,853],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,67 @@
+\pard \s15\qj\widctlpar\tx2835\tx7438\tqr\tx9423 Equipment total length\tab L{\sub TT}=L{\sub D}+A{\sub 1}+A{\sub 2}+2B\tab mm\tab |######.00|
+Shell outside diameter :                                 
+- away from saddles \tab D{\sub O}=D{\sub I}+2T\tab mm\tab |######.00|
+- on left saddle    \tab D{\sub O1}=D{\sub I}+2T{\sub 1}\tab mm\tab |######.00|
+- on right saddle   \tab D{\sub O2}=D{\sub I}+2T{\sub 2}\tab mm\tab |######.00|
+Shell mean radius :                                      
+- away from saddles \tab R{\sub M}=(D{\sub I}+T)/2\tab mm\tab |######.00|
+- on left saddle    \tab R{\sub M1}=(D{\sub I}+T{\sub 1})/2\tab mm\tab |######.00|
+- on right saddle   \tab R{\sub M2}=(D{\sub I}+T{\sub 2})/2\tab mm\tab |######.00|
+Dished head mean radius                                  
+- at left end       \tab R{\sub ME1}=(D{\sub I}+T{\sub E1})/2\tab mm\tab |######.00|
+- at right end      \tab R{\sub ME2}=(D{\sub I}+T{\sub E2})/2\tab mm\tab |######.00|
+Shell section modulus :                                  
+- away from saddles \tab W ={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O}{\super 4}-D{\sub I}{\super 4})/D{\sub O}\tab mm{\super 3}\tab |#########.0|
+- on left saddle    \tab W{\sub 1}={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O1}{\super 4}-D{\sub I}{\super 4})/D{\sub O1}\tab mm{\super 3}\tab |#########.0|
+- on right saddle   \tab W{\sub 2}={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O2}{\super 4}-D{\sub I}{\super 4})/D{\sub O2}\tab mm{\super 3}\tab |#########.0|
+Distributed Load  \tab Q=(P{\sub T}-P{\sub 1}-P{\sub 2})*1000/L{\sub TT}\tab N/mm\tab |######.00|
+Equipment length tangent-tangent\tab L{\sub T}=L{\sub D}+A{\sub 1}+A{\sub 2}\tab mm\tab |######.00|
+Support Reactions at saddles     :                       
+- left  \tab Q{\sub 1}=  P{\sub T}/2\tab N\tab |########.|
+- right \tab Q{\sub 2}=  P{\sub T}/2\tab N\tab |########.|
+Bending Moments at supports ( N.mm ) :
+ 
+- left  ><\WR\FIG03.SDD><\tab |####.##E+00|
+ 
+ 
+- right ><\WR\FIG04.SDD><\tab |####.##E+00|
+ 
+Shear force     :                                        
+- left  \tab S{\sub 1}=Q{\sub 1}(L{\sub T}-2A{\sub 1})/(L{\sub T}+4B/3)\tab N\tab |#######.00|
+- right \tab S{\sub 2}=Q{\sub 2}(L{\sub T}-2A{\sub 2})/(L{\sub T}+4B/3)\tab N\tab |#######.00|
+
+\pard \s15\qj\widctlpar\tx2835\tx7438\tqr\tx9423 Equipment total length\tab L{\sub T}=L{\sub D}+A{\sub 1}+A{\sub 2}\tab mm\tab |######.00|
+Shell outside diameter :                                 
+- away from saddles   \tab D{\sub O}=D{\sub I}+2*T     \tab mm\tab |######.00|
+- on left saddle      \tab D{\sub O1}=D{\sub I}+2*T{\sub 1}\tab mm\tab |######.00|
+- on right saddle     \tab D{\sub O2}=D{\sub I}+2*T{\sub 2}\tab mm\tab |######.00|
+Shell mean radius :                                      
+- away from saddles   \tab R{\sub M}=(D{\sub I}+T)/2   \tab mm\tab |######.00|
+- on left saddle      \tab R{\sub M1}=(D{\sub I}+T{\sub 1})/2\tab mm\tab |######.00|
+- on right saddle     \tab R{\sub M2}=(D{\sub I}+T{\sub 2})/2\tab mm\tab |######.00|
+Dished head mean radius                                  
+- at left end         \tab R{\sub ME1}=(D{\sub I}+T{\sub E1})/2\tab mm\tab |######.00|
+- at right end        \tab R{\sub ME2}=(D{\sub I}+T{\sub E2})/2\tab mm\tab |######.00|
+Shell section modulus :                                  
+- away from saddles \tab W ={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O}{\super 4}-D{\sub I}{\super 4})/D{\sub O}\tab mm{\super 3}\tab |#########.0|
+- on left saddle    \tab W{\sub 1}={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O1}{\super 4}-D{\sub I}{\super 4})/D{\sub O1}\tab mm{\super 3}\tab |#########.0|
+- on right saddle   \tab W{\sub 2}={{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/32*(D{\sub O2}{\super 4}-D{\sub I}{\super 4})/D{\sub O2}\tab mm{\super 3}\tab |#########.0|
+Distributed Load    \tab Q=(P{\sub T}-P{\sub 1}-P{\sub 2})*1000/L{\sub TT}\tab N/mm\tab |######.00|
+Bending Moments :
+- left  \tab M{\sub 1}=-(1000P{\sub 1}A{\sub 1}+Q*A{\sub 1}{\super 2}/2+1000000M{\sub L})\tab N.mm\tab |####.##E+00|
+- right \tab M{\sub 2}=-(1000P{\sub 2}A{\sub 2}+Q*A{\sub 2}{\super 2}/2+1000000M{\sub L})\tab N.mm\tab |####.##E+00|
+Support reactions at saddles (N) :                       
+
+- left  ><\WR\FIG01.SDD>< \tab |#######.|
+
+
+- right ><\WR\FIG02.SDD>< \tab |#######.|
+
+Shear force     :                                        
+- left saddle\tab S{\sub 1}=(greatest of S{\sub H}=P{\sub 1}+Q*A{\sub 1} and Q{\sub 1}-S{\sub H})\tab N\tab |#######.00|
+  non pi— usatoS{\sub H}=P{\sub 1}+Q*A{\sub 1} and Q{\sub 1}-S{\sub H})
+- right saddle\tab S{\sub 2}=(greatest of S{\sub H}=P{\sub 2}+Q*A{\sub 2} and Q{\sub 2}-S{\sub H})\tab N\tab |#######.00|
+  non pi— usatoS{\sub H}=P{\sub 2}+Q*A{\sub 2} and Q{\sub 2}-S{\sub H})
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Geometrical parameters}
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Loads, Forces and Moments}
+

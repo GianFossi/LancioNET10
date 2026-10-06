@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Wrcb.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Wrcb"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Wrcb.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\Wrcb.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmApert.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmApert.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Apert"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento Apert.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "mnuCalcTutti_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmGen.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmGen.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "cmdCancel_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto OK.</Issue>
+        </Section>
+        <Section Name = "cmdOK_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto OK.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\Aprileg.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\Aprileg.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Rec2Buf debbano essere inizializzati.</Issue>
+        </Section>
+        <Section Name = "ApriLeggi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TrasForm è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rec2Buf(2).</Issue>
+        </Section>
+        <Section Name = "LeggiW" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\datides4.Bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\DATIDES4.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pdding è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortVap è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortLiq è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\incWrcb.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\incWrcb.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Carichi_Renamed debbano essere inizializzati.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TLoad è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Carichi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice iB è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dist è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Load è stato cambiato da 0,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice WLoad è stato cambiato da 0,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TLoad è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ASL è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ASQ è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\Wrcb.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\Wrcb.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SopraSotto è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Lav debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice wrcN è stato cambiato da 1,0,0 a 0,0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice wrcO è stato cambiato da 1,0,0 a 0,0,0.</Issue>
+        </Section>
+        <Section Name = "Esegui" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Resultv(i, iC, iB).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SubCarichi" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+        <Section Name = "AggiornaAllow" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+        <Section Name = "PrepRapp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lstRapp.ListItems.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto objWRCB.lstRapp.ListItems.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CloseioutS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lstRapp.ListItems.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto objWRCB.lstRapp.ListItems.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Application.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sClose.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sCloseAll.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Appl.WindowState.</Issue>
+        </Section>
+        <Section Name = "VisualCap" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.VaiInizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.ASMECap.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Massimizza.</Issue>
+        </Section>
+        <Section Name = "Visualizza" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.SubstitBookM.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sOpen.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.VaiInizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.copia.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sClose.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sPaste.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sTypeParagraph.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sInsertBreak.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sStile.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sTypeText.</Issue>
+        </Section>
+        <Section Name = "TitoloDoc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto documenti().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\Wrcbbsg.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\wrcbBSG.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Neglect1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Log"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto P64.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rapp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto CxL.</Issue>
+        </Section>
+        <Section Name = "Neglect2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Rapp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Log"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto P64.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto CxL.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\Wrcbru1.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\Wrcbru1.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Valor è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "CalcNozz" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CalcwrcN" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "LeggiSfe" >
+            <Issue
+                Type = "Runtime"
+                Number = "1063"
+            >È possibile che si debba inizializzare le matrici nella struttura Rec prima di poterle utilizzare.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "LegWRC" >
+            <Issue
+                Type = "Runtime"
+                Number = "1063"
+            >È possibile che si debba inizializzare le matrici nella struttura Rec prima di poterle utilizzare.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Risultante" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Record debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ApriScrivi" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SalvaW" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ScegliCarta" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mode.</Issue>
+        </Section>
+        <Section Name = "StamSummF" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\WrcbSt.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\wrcbSt.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "LocStre1" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "StGeomCil" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\wrcMonitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\wrcMonitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\clsWrcb.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\clsWrcb.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Ridimens" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Geom debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice StressLim debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Result è stato cambiato da 1,0,0 a 0,0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Resultv è stato cambiato da 1,0,0 a 0,0,0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmCar.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmCar.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmCar"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmCar.ClipControls non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmCar"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmCar.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggTesti" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text3_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text3.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmAmm.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmAmm.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmGeom.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmGeom.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Combo1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento Combo1.Change è stato aggiornato a Combo1.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\WRCB\frmLib.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\WRCB.NET\frmLib.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmLib"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmLib.ClipControls non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command2_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "TabStrip1_MouseUp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Index.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Selected.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto T.Height.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

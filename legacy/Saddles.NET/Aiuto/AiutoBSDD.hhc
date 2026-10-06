@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Panoramica">
+		<param name="Local" value="Panoramica.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Acquisizione ed elaborazione dei carichi">
+		<param name="Local" value="Interfaccia.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati Generali">
+			<param name="Local" value="DatiGenerali.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Carichi sui bocchelli">
+			<param name="Local" value="CarBocch.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Elaborazione dei dati">
+			<param name="Local" value="CarichiDati.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Vento e terremoto">
+				<param name="Local" value="NormeSV.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calcolo dei carichi sulle fondazioni">
+			<param name="Local" value="Carichi.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tensioni locali sul mantello">
+		<param name="Local" value="Zick.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati di progetto">
+			<param name="Local" value="ZickDatiProg.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dimensioni">
+			<param name="Local" value="ZickDimensioni.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Errori ed avvisi">
+			<param name="Local" value="ZickErrori.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Diametro non specificato">
+				<param name="Local" value="ZickErr352nodiam.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Spessore non specificato">
+				<param name="Local" value="ZickErr352nospess.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="File non trovato">
+				<param name="Local" value="ZickErr352nofile.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tensione massima inaccettabile">
+				<param name="Local" value="ZickErr352noncons.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Analisi delle selle">
+		<param name="Local" value="Saddles.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati del calcolo">
+			<param name="Local" value="SelleDatiProg.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Analisi delle fondazioni">
+		<param name="Local" value="Fonda.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="L'equazione di terzo grado">
+			<param name="Local" value="Terzogrado.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori generali in esecuzione">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File illeggibile">
+			<param name="Local" value="ErrBadSerial.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

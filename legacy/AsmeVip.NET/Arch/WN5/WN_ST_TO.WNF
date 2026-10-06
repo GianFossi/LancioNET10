@@ -1,0 +1,66 @@
+c       õ{{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ~{{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       œ{{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ?{{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       |{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       @{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+1      º\pard\plain \s18\qj\widctlpar\tx4536 \f2\fs18\lang1040 
+S      º\tab FBM-HUDSON ITALIANA S.p.A.
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+1      º\par         CALCULATION OF BOLT LOAD REQUIREMENTS IN HYDRAULIC CONDITION
+1      º\par         ============================================================
+1      º\par                        ACCORDING TO FBM PRACTICE
+1      º\par                        =========================
+G      º_\par FLANGE IDENTIFICATION : &
+H      º_\par FLANGE MATERIAL       : &
+I      º_\par GASKET TYPE           : &
+L      º_\par GASKET MATERIAL       : &
+M      º_\par STUD   MATERIAL       : &
+1      º\par                                   INPUT DATA
+1      º\par                                   ==========
+1      º\par
+A001   º_\par _\pard _\s18_\qj_\widctlpar_\tx2268_\tx4820_\tx5812 P     = ########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Design pressure
+A002   º_\par T     = ########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Design temperature
+A105   º_\par P(HT) = ########.##_\tab [Mpa]    #######.####_\tab [psi]      Test   pressure
+1      º\par T(HT) =       20.00\tab [{\super 0}C]          70.0000\tab [{\super 0}F]       Test   temperature
+A005   º_\par G     = ########.##_\tab [mm]     #######.####_\tab [in]_\tab Gasket diameter
+F012   º_\par d     =       \    \_\tab [mm]           \    \_\tab [in]_\tab Bolts nominal diameter
+E013   º_\par N{_\super 0}    = ########   _\tab [--]_\tab _\tab Number of bolts
+A014   º_\par d{_\sub n}    = ########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread diameter
+A022   º_\par S{_\sub fa}   = ########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for flange at room
+A023   º_\par S{_\sub fo}   = ########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for flange at temp.
+A024   º_\par S{_\sub ba}   = ########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts  at room
+A026   º_\par N     = ########.##_\tab [mm]     #######.####_\tab [in]_\tab Gasket width
+A028   º_\par Y     = ########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Gasket min.design seating load
+A029   º_\par w     = ########.##_\tab [mm]     #######.####_\tab [in]_\tab Nubbin width
+E030   º_\par m     = ########.##_\tab [--]_\tab _\tab Gasket factor
+E031   º_\par {{_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}   = ########   _\tab [--]_\tab _\tab Type of gasket face, (see note 5)
+A032   º_\par W{_\sub mt}   = ########.# _\tab [N]      #########.# _\tab [lb]_\tab Pass Partition Gsk. seating load
+1      º\par
+1      º\par \pard \s18\qj\widctlpar\tx851\tb3969\tx4536\tb6662 \tab õ = 1  ~  b{\sub o} = N/2           õ = 5  ~   b{\sub o}  = N/4    b{\sub o}|\'bc\rdblquote  ~  b=b{\sub o}
+1      º\par \tab õ = 2  ~  b{\sub o} = (w+N)/4       õ = 6  ~   b{\sub o}  = 3N/8   b{\sub o}|\'bc\rdblquote  ~  G{\sub ef}=G
+1      º\par \tab õ = 3  ~  b{\sub o} = (w+N)/4       õ = 7  ~   b{\sub o}  = 7N/16  b{\sub o}>\'bc\rdblquote  ~  b=0,5.@b{\sub o}
+1      º\par \tab õ = 4  ~  b{\sub o} = (w+3N)/8      õ = 8  ~   b{\sub o}  = N/8    b{\sub o}>\'bc\rdblquote  ~  G{\sub ef}=G+N-2b
+1      º\par
+A035   º_\par _\pard _\s18_\qj_\widctlpar_\tx2126_\tx4536 _\par b{\sub 0}  = #######.####_\tab [mm]   #######.####_\tab [in] Basic gasket seating width
+A036   º_\par b   = #######.####_\tab [mm]   #######.####_\tab [in] Effective gasket seating width
+A037   º_\par G{\sub ef} = #######.####_\tab [mm]   #######.####_\tab [in] Diameter of gsk. load reaction
+1      º\par
+A105   º_\par Pi    = #########.##_\tab [Mpa]    #######.####_\tab [psi]      Test pressure    
+1      º\par
+B106+04º_\par _\s18_\qj_\widctlpar_\tx1616_\tx2977_\tx3544_\tb5557_\tx5670_\tx7088_\tx8675 H{_\sub pi}   =#########_\tab N########.#_\tab lb_\tab 2b(œG{_\sub ef}+l)m.P_\tab A{_\sub m1i}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B107+04º_\par H{_\sub i}  =#########_\tab N########.#_\tab lb_\tab \'bcœ.G{_\sub ef}_\'b2.P{_\sub i}_\tab A{_\sub m2i}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B108+04º_\par W{_\sub m1i}=#########_\tab N########.#_\tab lb_\tab H{_\sub i}+H{_\sub pi}_\tab _\tab A{_\sub mi}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B109-63º_\par W{_\sub m2i}=#########_\tab N########.#_\tab lb_\tab œ.b.G{_\sub ef}y+W{_\sub mt}
+W113   º_\par W{_\sub i}  =#########_\tab N########.#_\tab lb_\tab &
+1      º\par
+1      º\par \pard \s18\qj\widctlpar\tx1701\tx3260\tx3969\tx6804 Hydraulic tensioner load each bolt :
+A114   º_\par    =##########_\tab N##########_\tab lb_\tab 1.3W{\sub i}/N{_\super 0}
+E115   º_\par    =##########_\tab Kg
+1      º\par Bolt Torque moment each bolt :
+A116   º_\par    =##########_\tab Nmm##########_\tab lb.in_\tab 0.17W{\sub i}d{_\sub n}/N{_\super 0}
+E117   º_\par    =##########_\tab Kg.mm
+E118   º_\par    =##########_\tab Kg.m
+0      º
+

@@ -1,0 +1,127 @@
+c       õ{{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ~{{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       œ{{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ?{{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       |{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       @{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+1      º\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+S      º\tab FBM-HUDSON ITALIANA S.p.A.
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+V      º_\par             \                                              \
+1      º\par             ================================================
+1      º\par                               APPENDIX 2
+1      º\par                  RULES FOR BOLTED FLANGED CONNECTIONS
+1      º\par                         WITH RING TYPE GASKETS
+Y      º_\par                \                                      \
+1      º\par                ========================================
+G      º_\par FLANGE IDENTIFICATION : &
+H      º_\par FLANGE MATERIAL       : &
+I      º_\par GASKET TYPE           : &
+L      º_\par GASKET MATERIAL       : &
+M      º_\par STUD   MATERIAL       : &
+N      º_\par LAP    MATERIAL       : &
+Z      º_\par LOADING CONDITION     : &
+1      º\par
+1      º\par                                INPUT DATA
+1      º\par                                ==========
+1      º\par
+1      º\par NOTES :1 - Input of geometric dimensions in [ mm ].
+1      º\par        2 - Displayed values in [ in ] are fixed by conversion factors.
+1      º\par
+J001   º_\par _\pard _\s15_\qj_\widctlpar_\tx2348_\tx4820_\tx5812 P     =########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab \    \ pressure
+J002   º_\par Tem   =########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab \    \ temperature
+a182   º_\par MDMT &=########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Min Des Met Temp \      \
+a183   º_\par MDMT &=########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Min Des Met Temp \      \
+a184   º_\par pMDMT&=########.##_\tab [MPa]     #######.####_\tab [psi]_\tab Concurrent Press \      \
+a185   º_\par pMDMT&=########.##_\tab [MPa]     #######.####_\tab [psi]_\tab Concurrent Press \      \
+A003   º_\par A     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Outside diameter
+A004   º_\par C     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolt-Circle diameter
+A005   º_\par G     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Gasket diameter
+A006   º_\par B     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Inside nom. diameter of flange
+A009   º_\par t     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Flange thickness
+F012   º_\par d     =       \    \_\tab [mm]           \    \_\tab [in]_\tab Bolts nominal diameter
+E013   º_\par N{_\super 0}    =########   _\tab [--]_\tab _\tab Number of bolts
+A014   º_\par d{_\sub n}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts root diameter
+A015   º_\par d{_\sub f}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts hole diameter
+A016   º_\par E{_\sub min}   =########.##_\tab [mm]     #######.####_\tab [in]_\tab Min radial distance B.C./O.D.
+A017   º_\par E     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Act radial distance B.C./O.D.
+A018   º_\par R{_\sub min}   =########.##_\tab [mm]     #######.####_\tab [in]_\tab Min radial distance B.C./hub
+A019   º_\par R     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Act radial distance B.C./hub
+A020   º_\par B{_\sub Smin}  =########.##_\tab [mm]     #######.####_\tab [in]_\tab Minimum bolt spacing
+A021   º_\par B{_\sub S}    =########.##_\tab [mm]     #######.####_\tab [in]_\tab Actual  bolt spacing
+A022   º_\par S{_\sub fa}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for flange at room
+A023   º_\par S{_\sub fo}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for flange at temp.
+A024   º_\par S{_\sub ba}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts  at room
+A025   º_\par S{_\sub bo}   =########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts  at temp.
+A026   º_\par N     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Gasket width
+A028   º_\par Y     =########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Gasket min.design seating load
+A029   º_\par w     =########.##_\tab [mm]     #######.####_\tab [in]_\tab Nubbin width
+E030   º_\par m     =########.##_\tab [--]_\tab _\tab Gasket factor
+E031   º_\par {{_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}    =########   _\tab [--]_\tab _\tab Type of gasket face, (see note 5)
+A168   º_\par Y{_\sub t}   =########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Seating load for Pass.P gsk.
+A167   º_\par l{_\sub t}   =########.##_\tab [mm]     #######.####_\tab [in]_\tab Total length of Pass Partitions
+A169   º_\par b{_\sub t}   =########.##_\tab [mm]     #######.####_\tab [in]_\tab Effective width of Pass.P gsk.
+A032   º_\par W{_\sub mt}   =########.# _\tab [N]      #########.# _\tab [lb]_\tab Pass Partition Gsk. seating load
+A033   º_\par W{_\sub m1}   =########.# _\tab [N]      #########.# _\tab [lb]_\tab Imposed
+A034   º_\par W{_\sub m2}   =########.# _\tab [N]      #########.# _\tab [lb]_\tab Imposed
+1      º\par
+1      º\par   -Flange calculation page 1 of 2
+1      º\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+S      º\tab FBM-HUDSON ITALIANA S.p.A.
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+1      º\par
+1      º\par                               OUTPUT  DATA
+1      º\par                               ============
+1      º\par NOTES :
+1      º\par     3 - Calculation performed by using values in Imperial Units.
+1      º\par     4 - Displayed values in International System Units are fixed by conversion factors.
+1      º\par     5 - The procedure for evaluating b and G{\sub ef} in function of {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} follows:
+1      º\par \pard \s15\qj\widctlpar\tx851\tb3969\tx4536\tb6662 \tab õ = 1  ~  b{\sub o} = N/2           õ = 5  ~   b{\sub o}  = N/4    b{\sub o}|\'bc\rdblquote  ~  b=b{\sub o}
+1      º\par \tab õ = 2  ~  b{\sub o} = (w+N)/4       õ = 6  ~   b{\sub o}  = 3N/8   b{\sub o}|\'bc\rdblquote  ~  G{\sub ef}=G
+1      º\par \tab õ = 3  ~  b{\sub o} = (w+N)/4       õ = 7  ~   b{\sub o}  = 7N/16  b{\sub o}>\'bc\rdblquote  ~  b=0,5.@b{\sub o}
+1      º\par \tab õ = 4  ~  b{\sub o} = (w+3N)/8      õ = 8  ~   b{\sub o}  = N/8    b{\sub o}>\'bc\rdblquote  ~  G{\sub ef}=G+N-2b
+1      º\par
+A035   º_\par _\pard _\s15_\qj_\widctlpar_\tx2126_\tx4536 _\par b{\sub 0}  =######.####_\tab [mm]   #######.####_\tab [in] Basic gasket seating width
+A036   º_\par b   =######.####_\tab [mm]   #######.####_\tab [in] Effective gasket seating width
+A037   º_\par G{\sub ef} =######.####_\tab [mm]   #######.####_\tab [in] Diameter of gsk. load reaction
+1      º\par
+B038+05º_\par _\pard _\s15_\qj_\widctlpar_\tx1616_\tx2977_\tx3544_\tb5557_\tx5670_\tx7128_\tx8675 H{_\sub p}  =#########_\tab N########.#_\tab lb_\tab (2œbG{_\sub ef}+b{_\sub t}l{_\sub t})m.P_\tab A{_\sub m1}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B039+05º_\par H   =########_\tab N#######.#_\tab lb_\tab \'bcœ.G{_\sub ef}_\'b2.P_\tab A{_\sub m2}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B040+05º_\par W{_\sub m1} =########_\tab N#######.#_\tab lb_\tab H+H{_\sub p}_\tab A{_\sub m}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+B033+13º_\par W{_\sub m1} =########_\tab N#######.#_\tab lb_\tab Imposed_\tab A{_\sub b}=#########_\tab mm_\'b2 ######.##_\tab in_\'b2
+A041   º_\par W{_\sub m2} =########_\tab N#######.#_\tab lb_\tab œ.b.G{_\sub ef}y+W{_\sub mt}
+A034   º_\par W{_\sub m2} =########_\tab N#######.#_\tab lb_\tab Imposed
+W042   º_\par W   =########_\tab N#######.#_\tab lb_\tab &
+1      º\par
+B047+03º_\par h{_\sub d}  = ####.##_\tab mm ###.####_\tab in_\tab _\'bd(C-B)-C{_\sub 0})_\tab H{_\sub d}=#########_\tab N  #########.#_\tab lb
+B048+03º_\par h{_\sub t}  = ####.##_\tab mm ###.####_\tab in_\tab _\'bd(h{_\sub d}+h{_\sub g}_\tab H{_\sub t}=#########_\tab N  #########.#_\tab lb
+B049+03º_\par h{_\sub g}  = ####.##_\tab mm ###.####_\tab in_\tab _\'bd(C-G{_\sub ef})_\tab H{_\sub g}=#########_\tab N  #########.#_\tab lb
+1      º\par
+E053   º_\par _\pard _\s15_\qj_\widctlpar_\tx1616_\tx2977_\tx3544_\tx6946_\tx7371 C{_\sub f}  = ######.##_\tab -_\tab @_\{œC/_\{N_\'b0[2d{_\sub n}+(6t/m+0,5)]_\}_\}
+E054   º_\par K   =#####.##_\tab -_\tab _\tab A/B_\tab
+E063   º_\par Y   =#####.##_\tab -_\tab _\tab Fig.2-7.1_\tab
+1      º\par
+D068+03º_\par _\pard _\s15_\qj_\widctlpar_\tx1701_\tx3261_\tx3969_\tb5557_\tx5670_\tx7088_\tx9015 M{_\sub d}  = #.###^^^^_\tab N.mm#########_\tab lb.in _\tab h{_\sub d}H{_\sub d}_\tab j =#######.#      (S{_\sub fo}/S{_\sub fa})
+B069+03º_\par M{_\sub t}  = #.###^^^^_\tab N.mm########_\tab lb.in _\tab h{_\sub t}H{_\sub t}_\tab M{_\sub 0}=#.###^^^^_\tab N.mm #########.#_\tab lb.in
+B070+03º_\par M{_\sub g}  = #.###^^^^_\tab N.mm########_\tab lb.in _\tab h{_\sub g}H{_\sub g}_\tab M{_\sub w}=#.###^^^^_\tab N.mm #########.#_\tab lb.in
+1      º\par \pard \s15\qj\widctlpar\tx1701\tx3260\tx3969\tx5670\tx7088\tx9015 NOTE: M{\sub 0} and M{\sub w} have been doubled because of the ring split.
+A074   º_\par M{_\sub 1}  = #.###^^^^_\tab N.mm#########_\tab lb.in _\tab greater of M{_\sub 0} and (M{_\sub w}j)
+A075   º_\par M   = ########_\tab N   ########_\tab lb _\tab M{_\sub 1}C{_\sub f}/(B+2C{_\sub 0})
+1      º\par
+B078-55º_\par ?{_\sub T}  = ######.#_\tab N/mm{_\super 2}  #####_\tab psi_\tab (Y.M/t_\'b2)_\tab |###### psi  #######.# N/mm{_\super 2} = S{_\sub fo}
+1      º\par
+1      º\par
+1      º\par
+1      º\par
+1      º\par \pard \s15\qj\widctlpar\tx2693\tx5387\tx7371 CONVERSION FACTORS: Mpa\tab =psi.0,006894757      N\tab =lb.4,448222    {\super 0}C\tab =({\super 0}F-32)/1,8
+1      º\par                     psi\tab =Mpa.145,0377439   N.mm\tab =lb.in.112,9848 {\super 0}F\tab =({\super 0}C.1,8)+32
+1      º\par                      in\tab =mm.25,4           N/mm{\super 2\tab }=psi.0,006894757
+1      º\par \pard \s15\qj\widctlpar\tx4536
+1      º\par
+1      º\par
+1      º\par
+1      º\par    -Flange calculation page 2 of 2
+0      º
+

@@ -1,0 +1,184 @@
+T00
+\par A00
+\par \trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s18\qj\sb60\sa20\widctlpar\intbl {\f2\fs18
+CALCULATION RESULTS - Flexible element stresses   \cell }A00
+\pard \widctlpar\intbl {\f2\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30
+\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30 \cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt
+\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s18\qj\sb60\sa20\widctlpar\intbl {\f2\fs18 Load Condition\cell }A00
+\pard \s18\qc\sb60\sa20\widctlpar\intbl {\f2\fs18 \cell }A00
+{_\b_\f2_\fs18 ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell }i00
+\pard \widctlpar\intbl {\f2\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30
+\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrb\brdrs\brdrw30 \cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30 \cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrb\brdrs\brdrw30 \cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx9879
+\pard \s18\qj\sb60\sa20\widctlpar\intbl {\f2\fs18 \cell }A00
+\pard \s18\qc\sb60\sa20\widctlpar\intbl {\f2\fs18 \cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell }A00
+\pard \widctlpar\intbl {\f2\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 P}{\f5\fs16\lang2057\sub s}{\f5\fs16\lang2057 \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {[psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.# _\cell ####.#_\cell ####.#_\cell }001001K00
+\pard \widctlpar\intbl {\lang2057 \row }
+\pard \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057  }{\f5\fs16\lang2057\sub  }{\f5\fs16\lang2057                \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{\lang2057 \cell \cell \cell \cell \cell \cell \cell \cell }A00      
+\pard \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 P}{\f5\fs16\lang2057\sub t}{\f5\fs16\lang2057               \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }002002K00
+\pard \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 P}{\f5\fs16\lang2057\sub t}{\f5\fs16\lang2057 '              \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\f2\fs18 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }098097K00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 P}{\f5\fs16\lang2057\sub d}{\f5\fs16\lang2057               \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sb60\sa20\widctlpar\intbl
+{_\lang2057 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }060059K00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 Axial deformation\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [mm]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.# _\cell ####.#_\cell ####.#_\cell }006000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Bellows\tab \tab S{\sub 2}\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }008000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 \tab \tab S{\sub 3}}{\f5\fs16\lang2057 \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }009000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 \tab \tab S{\sub 3}+S{\sub 4}\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }010000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Memb. allowable\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }011000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Bend. allowable}{\f5\fs16\lang2057 \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }012000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Tangent \tab S{\sub 1}\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }013000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057     Allowable\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }014000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Collar\tab \tab S{\sub 1}'\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }015000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057     Allowable\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }016000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Rings\tab \tab S{\sub 2}'\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }017000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057     Allowable\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }018000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Fasteners\tab S{\sub 2}''\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }019000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057     Allowable\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }020000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Critical pr. (column)\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }021000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\sa40\widctlpar\intbl\tx567 \f2\fs18\lang1040 {\f5\fs16\lang2057 Critical pr. (in-plane)\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [psi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }022000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30 \cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx4437\clbrdrt\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065
+\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 S}{\f5\fs16\lang2057\sub n}{\f5\fs16\lang2057  \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [ksi]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }030000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158
+\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 N}{\f5\fs16\lang2057\super 0}{\f5\fs16\lang2057 of events\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [--]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }031000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\trowd \trgaph71\trleft-71 \clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30 \cellx3530\clbrdrt
+\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158\clbrdrt\brdrs\brdrw30 \clbrdrl
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 Condensed cycles\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [--]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 \    \_\cell \    \_\cell \    \_\cell \    \_\cell \    \_\cell \    \_\cell \    \_\cell \    \_\cell }032000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 N}
+{\f5\fs16\lang2057\super 0}{\f5\fs16\lang2057  of cycles\cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [--]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }033000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrb\brdrs\brdrw30
+\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30 \cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrb\brdrs\brdrw30 \cellx7158\clbrdrl
+\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard\plain \s18\qj\sa40\widctlpar\intbl \f2\fs18\lang1040 {\f5\fs16\lang2057 Fatigue damage   \cell }A00
+\pard \s18\qc\sa40\widctlpar\intbl {\lang2057 [--]\cell }A00
+\pard \s18\qr\sa40\widctlpar\intbl
+{_\lang2057 .#####_\cell .#####_\cell .#####_\cell .#####_\cell .#####_\cell .#####_\cell .#####_\cell .#####_\cell }034000k00
+\pard\plain \widctlpar\intbl \f2\fs18\lang1040 {\lang2057 \row }
+\pard\plain \s18\qj\widctlpar \f2\fs18\lang1040 {\lang2057 \par }
+\pard\plain \s28\widctlpar\tx4536 \f2\fs18\lang2057
+            Total fatigue damage : ###.######  _\par 037000k00                     
+            ---------------------------------------------------------------------     \par A00
+            Notes: Stress analysis performed in accordance to Appendix 26.            \par A00
+                   The specified number of events is split half-half for 'New'-'Corr'.\par A00
+                   (n-m) means combination of the load conditions n and m.            \par A00
+

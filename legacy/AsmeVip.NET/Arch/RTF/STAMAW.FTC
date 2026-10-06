@@ -1,0 +1,27 @@
+T
+B
+0       Mechanical Standards TEMA Class "RCB"  Heat Exchangers - FIXED TUBESHEET\par
+B
+0                                  CALCULATION OF MAWP's\par
+0                                  =====================\par
+B
+0   Condition              MAWP [psi]    Controlling element                  Load case\par
+0   -----------------------------------------------------------------------------------\par
+P001001  New _& Cold  shell-side:  #####.##    \                               \  ##_\par
+P001002              tube-side:   #####.##    \                               \  ##_\par
+P002001  New _& Hot   shell-side:  #####.##    \                               \  ##_\par
+P002002              tube-side:   #####.##    \                               \  ##_\par
+P003001  Corr._&Cold  shell-side:  #####.##    \                               \  ##_\par
+P003002              tube-side:   #####.##    \                               \  ##_\par
+P004001  Corr._&Hot   shell-side:  #####.##    \                               \  ##_\par
+P004002              tube-side:   #####.##    \                               \  ##_\par
+B
+B
+0     Note: In compliance with UG-98(b), the MAWP is calculated for all the load\par
+0           combinations. The last column of the table informs about the load com-\par
+0           bination having the lowest MAWP for a given status (new or corroded)\par
+0           of the equipment. Each specified load case is also assessed in a 'cold\par
+0           status', i.e. all metal temeperatures and allowables are set at room\par
+0           temperature.\par
+Fine
+

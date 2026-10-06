@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Tubi di scambio</Title>
+</HEAD>
+<BODY>
+<H1>Tubi di scambio</H1>
+<P>La 'membratura' Tubi di scambio deve essere intesa come il <B>set completo</B> dei tubi scambiatori. Di conseguenza, in ogni apparecchio si può inserire <B>una sola</B> membratura 'Tubi di scambio'. Questa è l'icona che rappresenta la membratura nel <Ahref="PannelloStruttura.htm">pannello della struttura</A>: 
+<IMG SRC="Tubi.bmp">.</P>
+<P>La finestra dei dati è costituita da due pannelli; il pannello di destra, relativo alla verifica della saldatura tubo-piastra, appare solo se il tipo di giunto è saldato di forza.
+<IMG SRC="TubiDati.bmp">
+<H2><A name="Lunghezza">Lunghezza</A></H2>
+<P>Questo dato viene utilizzato nel calcolo della pressione critica esterna. Nel caso di tubi a U è corretto quindi inserire la lunghezza totale sviluppata, anche se, per grandi valori del rapporto lunghezza diametro, il risultato diviene insensibile al valore della lunghezza.</P> 
+<H2><A name="Raggiomin">Raggio minimo di curvatura</A></H2>
+<P>Questo dato è utilizzato nell'applicazione di RCB-2.31 U-BEND REQUIREMENTS. Nel caso di tubi diritti questo valore può essere lasciato pari a zero.</P>
+<H2><A name="TipoGiunto">Tipo di giunto</A></H2>
+<P>I tipi di giunzione tubo-piastra sono quelli previsti dall'App. A, e vengono specificati al fine di calcolare lo sforzo ammissibile di trazione-compressione sul giunto tubo-piastra, in particolare ai fini delle verifiche sui carichi sui tubi dei fasci tubieri a teste fisse (vedi <A href="PTCalc.htm">calcolo delle piastre tubiere</A>):</P>
+<H3>Saldato a>=1.4t</H3>
+<H3>Saldato t<=a<1.4t</H3>
+<H3>Con saldatura di tenuta</H3>
+<H3>Brasato, esaminato 100%</H3>
+<H3>Brasato, non esam. 100%</H3>
+<H3>Mandrinato >=2 canalini</H3>
+<H3>Mandrinato con 1 canalino</H3>
+<H3>Mandrinato senza canalini</H3>
+<P>Il tipo di mandrinatura applicato contestualmente alla brasatura o alla saldatura di tenuta sarà specificato al momento del <A href="PTCalc.htm#CarGiunto">calcolo dello sforzo ammissibile sul giunto</A>.</P>
+<H2>Tracciatura</H2>
+<H3><A name="Casella">Casella di testo</A></H3>
+<P>Questa casella riporta, se esistente, il nome ed il percorso completo del file di input al programma <A href="C:\BASE\ESEGUI\BIN\Traccia.chm">Traccia</A> per l'elaborazione della tracciatura della piastra tubiera dell'apparecchio allo studio. Poiché non si può scrivere nulla in questa casella, il dato è visualizzato a scopo informativo.</P>
+<H3><A name="Riporta">Pulsante <IMG SRC="Riporta.bmp"></A></H3>
+<P>Esso permette di riportare nella finestra i dati  relativi ai tubi contenuti nel file di input al programma <A href="C:\BASE\ESEGUI\BIN\Traccia.chm">Traccia</A></P>
+<H3><A name="Richiama">Pulsante <IMG SRC="Traccia.bmp"></A></H3>
+<P>Esso permette di richiamare il programma <A href="C:\BASE\ESEGUI\BIN\Traccia.chm">Traccia</A>, allo scopo di elaborare o modificare la tracciatura.</P>
+<H2><A name="NbTipi">Number of tube types</A></H2>
+<P>Nel caso di fasci tubieri con tubi di diametro/spessore/materiale dissimili, è possibile selezionare fino a tre tipi di tipi di tubo. Per ciascuno di essi saranno eseguite separatamente le verifiche a pressione interna ed esterna. Nel caso (improbabile) di un fascio a teste fisse, bisognerà porre attenzione a specificare nel pannello dei <A href="DatiGenPT.htm#ValoriTubi">dati generali</A> della Piastra Tubiera degli opportuni dati mediati.</P>
+<H2><A name="Calcola">Calcolo</A> della saldatura secondo UW-20</H2>
+<P>Questo pulsante lancia il calcolo delle dimensioni minime ammissibili del giunto saldato secondo i parametri impostati.</P>
+<H2><A name="Forza">Forza del giunto</A></H2>
+<P>I tipi di giunto 'full strength' e 'partial strength' sono definiti in UW-20. Si può sintetizzare dicendo che la saldatura dei giunti 'full strength' è dimensionata in modo da essere almeno altrettanto resistente quanto la sezione retta del tubo in parte corrente. Il progettista può scegliere, per ragioni di fattibilità/costo, una soluzione 'partial strength' tutte le volte che non ha necessità, a fronte dei carichi reali applicati, di sfruttare tutta la resistenza del tubo.</P>
+<H2><A name="Rapporto">Rapporto di forza</A></H2>
+<P>Trattasi del rapporto tra il carico ammissibile del giunto saldato e il carico ammissibile del tubo in parte corrente. Esso sarà pari ad uno per i giunti 'full strength'. Se l'App. A è applicabile al progetto in elaborazione, il rapporto di forza non dovrebbe essere superiore a quello specificato come parametro 'fr' nella detta appendice. Questa regola non è automatizzata in AmeVip, e viene quindi lasciata sotto la responsabilità del progettista.</P>
+<H2><A name="Geometria">Geometria del giunto</A></H2>
+<P>La saldatura tubo-piastra può essere fillet, groove, o una combinazione di entrambi.</P>
+<H2><A name="AmmPiastra">Ammissibile della piastra</A></H2>
+<P>L'ammissibile del materiale della piastra tubiera viene assegnato nella finestra dei dati della stessa. Se la piastra tubiera è già stata definita prima dei tubi di scambio, il programma presenta come dato iniziale in questa casella l'ammissibile del materiale già definito. Esso può però esssere qui cambiato (senza naturalmente influenzare l'ammissibile piastra applicabile alle verifiche di quella membratura) per coprire il caso di piastre con placcatura o nastratura, nel qual caso l'ammissibile qui applicabile è quello del materiale riportato.</P>
+<H2><A name="AmmTubo">Ammissibile a trazione del tubo</A></H2>
+Il valore qui inserito può essere diverso (superiore) a quello inserito nella corrispondente casella del pannello di sinistra poiché, per tubi saldati, su può usare il valore applicabile ai tubi senza saldatura dello stesso materiale.</P>
+</BODY>
+</HTML>

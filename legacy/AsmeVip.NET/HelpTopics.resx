@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str1000">
+		<value>CapCond.htm</value>
+	</data>
+	<data name="str1072">
+		<value>AvvCodiciDiversi.htm</value>
+	</data>
+	<data name="str1150">
+		<value>AvvDilatMant.htm</value>
+	</data>
+	<data name="str1160">
+		<value>Dilatatore.htm#OptimDil</value>
+	</data>
+	<data name="str1010">
+		<value>MembrDupl.htm</value>
+	</data>
+	<data name="str1040">
+		<value>ErrMancaAmmiss.htm</value>
+	</data>
+	<data name="str1020">
+		<value>NonAsmeLib.htm</value>
+	</data>
+	<data name="str1030">
+		<value>ErrMancaFlangia.htm</value>
+	</data>
+	<data name="str1050">
+		<value>ErrMancaGuarniz.htm</value>
+	</data>
+	<data name="str1051">
+		<value>ErrMancaMantDil.htm</value>
+	</data>
+	<data name="str1071">
+		<value>ErrMancaTabMat.htm</value>
+	</data>
+	<data name="str1060">
+		<value>ErrMancaMAWP.htm</value>
+	</data>
+	<data name="str8000">
+		<value>Bocch2Forg.htm#Scarpa</value>
+	</data>
+	<data name="str8002">
+		<value>AD500.htm#TempRange</value>
+	</data>
+	<data name="str1101">
+		<value>ErrPTGuarD.htm</value>
+	</data>
+	<data name="str1100">
+		<value>ErrPTGuarN.htm</value>
+	</data>
+	<data name="str1107">
+		<value>ErrPTLegami1.htm</value>
+	</data>
+	<data name="str1108">
+		<value>ErrPTLegami2.htm</value>
+	</data>
+	<data name="str1110">
+		<value>ErrPTLegami3.htm</value>
+	</data>
+	<data name="str1111">
+		<value>ErrPTLegami3.htm</value>
+	</data>
+	<data name="str1112">
+		<value>ErrPTLegami3.htm</value>
+	</data>
+	<data name="str1109">
+		<value>ErrPTnomant.htm</value>
+	</data>
+	<data name="str1105">
+		<value>ErrNoOptim.htm</value>
+	</data>
+	<data name="str10008">
+		<value>ErrPTnotvalid.htm</value>
+	</data>
+	<data name="str1204">
+		<value>Tubi.htm#AmmPiastra</value>
+	</data>
+	<data name="str1205">
+		<value>Tubi.htm#AmmTubo</value>
+	</data>
+	<data name="str1206">
+		<value>Tubi.htm#Calcola</value>
+	</data>
+	<data name="str1202">
+		<value>Tubi.htm#Forza</value>
+	</data>
+	<data name="str1203">
+		<value>Tubi.htm#Geometria</value>
+	</data>
+	<data name="str1201">
+		<value>Tubi.htm#Rapporto</value>
+	</data>
+	<data name="str1200">
+		<value>Tubi.htm#TipoGiunto</value>
+	</data>
+	<data name="str10100">
+		<value>ErrWNconv.htm</value>
+	</data>
+	<data name="str2010">
+		<value>ProvIdr.htm</value>
+	</data>
+	<data name="str4030">
+		<value>GrFuc.htm#Disuniformita</value>
+	</data>
+	<data name="str2120">
+		<value>Rapporto.htm#FileRapporto</value>
+	</data>
+	<data name="str4020">
+		<value>GrFuc.htm#BltLoadOpt</value>
+	</data>
+	<data name="str4090">
+		<value>GrFuc.htm#Commenti</value>
+	</data>
+	<data name="str4040">
+		<value>GrFuc.htm#FrazSy</value>
+	</data>
+	<data name="str4000">
+		<value>GrFuc.htm</value>
+	</data>
+	<data name="str4140">
+		<value>GrFuc.htm#Identif</value>
+	</data>
+	<data name="str4110">
+		<value>GrFuc.htm#LapJointLoose</value>
+	</data>
+	<data name="str4130">
+		<value>GrFuc.htm#Materials</value>
+	</data>
+	<data name="str4120">
+		<value>GrFuc.htm#MemberType</value>
+	</data>
+	<data name="str4100">
+		<value>GrFuc.htm#NbOpenenings</value>
+	</data>
+	<data name="str4060">
+		<value>GrFuc.htm#Prigionieri</value>
+	</data>
+	<data name="str4080">
+		<value>GrFuc.htm#SovrGuarn</value>
+	</data>
+	<data name="str4010">
+		<value>GrFuc.htm#TipCalc</value>
+	</data>
+	<data name="str4070">
+		<value>GrFuc.htm#Torque</value>
+	</data>
+	<data name="str2110">
+		<value>Rapporto.htm#IndIntest</value>
+	</data>
+	<data name="str2040">
+		<value>DatiGenerali.htm#LoadItem</value>
+	</data>
+	<data name="str2050">
+		<value>DatiGenerali.htm#MAWPCalc</value>
+	</data>
+	<data name="str4050">
+		<value>GrFuc.htm#MembroAccopp</value>
+	</data>
+	<data name="str2100">
+		<value>DatiGenerali.htm#NbLowTemp</value>
+	</data>
+	<data name="str2012">
+		<value>DatiGenerali.htm#NonUniform</value>
+	</data>
+	<data name="str2090">
+		<value>DatiGenerali.htm#NbMemb</value>
+	</data>
+	<data name="str2000">
+		<value>NumLati.htm</value>
+	</data>
+	<data name="str2400">
+		<value>DatiPiastraPT.htm</value>
+	</data>
+	<data name="str2500">
+		<value>DatiBullPT.htm</value>
+	</data>
+	<data name="str2600">
+		<value>DatiProgettoPT.htm</value>
+	</data>
+	<data name="str2620">
+		<value>DatiProgettoPT.htm#NbLoadCond</value>
+	</data>
+	<data name="str2610">
+		<value>DatiProgettoPT.htm#PressDiff</value>
+	</data>
+	<data name="str2700">
+		<value>DatiFFPT.htm</value>
+	</data>
+	<data name="str2800">
+		<value>DatiWeldPT.htm</value>
+	</data>
+	<data name="str2900">
+		<value>DatiJointPT.htm</value>
+	</data>
+	<data name="str2320">
+		<value>DatiGenPT.htm#AutomTir</value>
+	</data>
+	<data name="str2240">
+		<value>DatiGenPT.htm#Config</value>
+	</data>
+	<data name="str2220">
+		<value>DatiGenPT.htm</value>
+	</data>
+	<data name="str2350">
+		<value>DatiGenPT.htm#DiamInt</value>
+	</data>
+	<data name="str2300">
+		<value>DatiGenPT.htm#DilatAccopp</value>
+	</data>
+	<data name="str2280">
+		<value>DatiGenPT.htm#Diverse</value>
+	</data>
+	<data name="str2330">
+		<value>DatiGenPT.htm#EsecComment</value>
+	</data>
+	<data name="str2310">
+		<value>DatiGenPT.htm#FlexEstens</value>
+	</data>
+	<data name="str2340">
+		<value>DatiGenPT.htm#FullPrint</value>
+	</data>
+	<data name="str2260">
+		<value>DatiGenPT.htm#InterrogaTubi</value>
+	</data>
+	<data name="str2290">
+		<value>DatiGenPT.htm#RappEst</value>
+	</data>
+	<data name="str2230">
+		<value>DatiGenPT.htm#TipCalc</value>
+	</data>
+	<data name="str2270">
+		<value>DatiGenPT.htm#Traccia</value>
+	</data>
+	<data name="str2250">
+		<value>DatiGenPT.htm#ValoriTubi</value>
+	</data>
+	<data name="str2140">
+		<value>Rapporto.htm#RappClear</value>
+	</data>
+	<data name="str2130">
+		<value>Rapporto.htm</value>
+	</data>
+	<data name="str2150">
+		<value>Rapporto.htm#Visualizza</value>
+	</data>
+	<data name="str2160">
+		<value>Rapporto.htm#VisTutto</value>
+	</data>
+	<data name="str2020">
+		<value>ReqRinfAp.htm</value>
+	</data>
+	<data name="str2210">
+		<value>PannelloRisultati.htm</value>
+	</data>
+	<data name="str5035">
+		<value>FinSerBull.htm#CarTeorMin</value>
+	</data>
+	<data name="str5070">
+		<value>FinSerBull.htm#fGlob</value>
+	</data>
+	<data name="str5010">
+		<value>FinSerBull.htm#Frame1</value>
+	</data>
+	<data name="str5015">
+		<value>FinSerBull.htm#Frame2</value>
+	</data>
+	<data name="str5020">
+		<value>FinSerBull.htm#Frame3</value>
+	</data>
+	<data name="str5025">
+		<value>FinSerBull.htm#Frame4</value>
+	</data>
+	<data name="str5030">
+		<value>FinSerBull.htm#Frame5</value>
+	</data>
+	<data name="str5005">
+		<value>SerrBullAut.htm#TipCalc</value>
+	</data>
+	<data name="str5065">
+		<value>FinSerBull.htm#friction</value>
+	</data>
+	<data name="str5000">
+		<value>FinSerBull.htm</value>
+	</data>
+	<data name="str5040">
+		<value>FinSerBull.htm#k1</value>
+	</data>
+	<data name="str5050">
+		<value>FinSerBull.htm#k2</value>
+	</data>
+	<data name="str5055">
+		<value>FinSerBull.htm#k3</value>
+	</data>
+	<data name="str5045">
+		<value>FinSerBull.htm#vObb</value>
+	</data>
+	<data name="str2190">
+		<value>PannelloStruttura.htm#StruttCalcola</value>
+	</data>
+	<data name="str2180">
+		<value>PannelloStruttura.htm#StruttDati</value>
+	</data>
+	<data name="str2200">
+		<value>PannelloStruttura.htm#StruttEspandi</value>
+	</data>
+	<data name="str2170">
+		<value>PannelloStruttura.htm</value>
+	</data>
+	<data name="str2080">
+		<value>DatiGenerali.htm#TestPressure</value>
+	</data>
+	<data name="str3080">
+		<value>DatiGenerali.htm#Norme</value>
+	</data>
+	<data name="str3010">
+		<value>Tubi.htm</value>
+	</data>
+	<data name="str3070">
+		<value>Tubi.htm#Lunghezza</value>
+	</data>
+	<data name="str3060">
+		<value>Tubi.htm#RaggioMin</value>
+	</data>
+	<data name="str3020">
+		<value>Tubi.htm#NbTipi</value>
+	</data>
+	<data name="str3050">
+		<value>Tubi.htm#Richiama</value>
+	</data>
+	<data name="str3040">
+		<value>Tubi.htm#Riporta</value>
+	</data>
+	<data name="str3030">
+		<value>Tubi.htm#Casella</value>
+	</data>
+	<data name="str2030">
+		<value>DatiGenerali.htm#UnitSystem</value>
+	</data>
+	<data name="str2060">
+		<value>DatiGenerali.htm#VesselDia</value>
+	</data>
+	<data name="str2070">
+		<value>DatiGenerali.htm#VesselMat</value>
+	</data>
+	<data name="str5060">
+		<value>FinSerBull.htm#vPilgrim</value>
+	</data>
+	<data name="str6105">
+		<value>CalcFlBocc.htm</value>
+	</data>
+	<data name="str6100">
+		<value>CalcApert.htm</value>
+	</data>
+	<data name="str7402">
+		<value>PTCalc.htm#Aeroplano</value>
+	</data>
+	<data name="str7014">
+		<value>PTCalc.htm#ALFAMANT</value>
+	</data>
+	<data name="str7015">
+		<value>PTCalc.htm#ALFATUBI</value>
+	</data>
+	<data name="str7278">
+		<value>PTCalc.htm#AMMANELLI</value>
+	</data>
+	<data name="str7274">
+		<value>PTCalc.htm#AMMDILAT</value>
+	</data>
+	<data name="str7012">
+		<value>PTCalc.htm#AMMMANT</value>
+	</data>
+	<data name="str7035">
+		<value>PTCalc.htm#AMMPIASTRA</value>
+	</data>
+	<data name="str7266">
+		<value>PTCalc.htm#AMMPIASTRB</value>
+	</data>
+	<data name="str7276">
+		<value>PTCalc.htm#AMMRINFCOLL</value>
+	</data>
+	<data name="str7280">
+		<value>PTCalc.htm#AMMTIRANTI</value>
+	</data>
+	<data name="str7013">
+		<value>PTCalc.htm#AMMTUBI</value>
+	</data>
+	<data name="str7285">
+		<value>PTCalc.htm#CarGiunto</value>
+	</data>
+	<data name="str7260">
+		<value>PTCalc.htm#COMPRCORR</value>
+	</data>
+	<data name="str7259">
+		<value>PTCalc.htm#COMPRNUOV</value>
+	</data>
+	<data name="str7278">
+		<value>PTCalc.htm#ELASDILAT</value>
+	</data>
+	<data name="str7008">
+		<value>PTCalc.htm#ELASMANT</value>
+	</data>
+	<data name="str7007">
+		<value>PTCalc.htm#ELASPIASTRA</value>
+	</data>
+	<data name="str7267">
+		<value>PTCalc.htm#ELASPIASTRB</value>
+	</data>
+	<data name="str7009">
+		<value>PTCalc.htm#ELASTUBI</value>
+	</data>
+	<data name="str7284">
+		<value>PTCalc.htm#Elongazione</value>
+	</data>
+	<data name="str7401">
+		<value>PTCalc.htm#EVENTI</value>
+	</data>
+	<data name="str7269">
+		<value>PTCalc.htm#MESERCIZB</value>
+	</data>
+	<data name="str7032">
+		<value>PTCalc.htm#MESERCIZIO</value>
+	</data>
+	<data name="str7277">
+		<value>PTCalc.htm#MODANELLI</value>
+	</data>
+	<data name="str7270">
+		<value>PTCalc.htm#MSERRAGGIB</value>
+	</data>
+	<data name="str7033">
+		<value>PTCalc.htm#MSERRAGGIO</value>
+	</data>
+	<data name="str7002">
+		<value>PTCalc.htm#PCASSA</value>
+	</data>
+	<data name="str7003">
+		<value>PTCalc.htm#PDIFF</value>
+	</data>
+	<data name="str7000">
+		<value>PTCalc.htm#BASE</value>
+	</data>
+	<data name="str7001">
+		<value>PTCalc.htm#PMANT</value>
+	</data>
+	<data name="str7037">
+		<value>PTCalc.htm#SDILATCORR</value>
+	</data>
+	<data name="str7036">
+		<value>PTCalc.htm#SDILATNUOV</value>
+	</data>
+	<data name="str7275">
+		<value>PTCalc.htm#SNERVDILAT</value>
+	</data>
+	<data name="str7038">
+		<value>PTCalc.htm#SNERVTUBI</value>
+	</data>
+	<data name="str7005">
+		<value>PTCalc.htm#TMANT</value>
+	</data>
+	<data name="str7004">
+		<value>PTCalc.htm#TPIASTRA</value>
+	</data>
+	<data name="str7268">
+		<value>PTCalc.htm#TPIASTRB</value>
+	</data>
+	<data name="str7006">
+		<value>PTCalc.htm#TTUBI</value>
+	</data>
+	<data name="str6000">
+		<value>GrFucCalc.htm</value>
+	</data>
+	<data name="str6001">
+		<value>GrFucPag1.htm</value>
+	</data>
+	<data name="str6002">
+		<value>GrFucPag2.htm</value>
+	</data>
+	<data name="str6003">
+		<value>GrFucPag3.htm</value>
+	</data>
+	<data name="str6009">
+		<value>GrFucPagFin.htm</value>
+	</data>
+	<data name="str6010">
+		<value>GrFucPag1.htm#SuperOtt</value>
+	</data>
+	<data name="31">
+		<value>GrFucPag3.htm#31</value>
+	</data>
+	<data name="6020">
+		<value>GrFucPag3.htm#6020</value>
+	</data>
+	<data name="6021">
+		<value>GrFucPag3.htm#6021</value>
+	</data>
+	<data name="6027">
+		<value>GrFucPag3.htm#6027</value>
+	</data>
+	<data name="str6004">
+		<value>GrFucPag4.htm</value>
+	</data>
+	<data name="str6005">
+		<value>GrfucPag5.htm</value>
+	</data>
+	<data name="str1104">
+		<value>errDiamExtPT.htm</value>
+	</data>
+	<data name="str2102">
+		<value>ErrNoCerchio.htm</value>
+	</data>
+	<data name="str2103">
+		<value>AvvPressureRating.htm</value>
+	</data>
+	<data name="str2104">
+		<value>ErrPressureRating.htm</value>
+	</data>
+	<data name="str2106">
+		<value>CalcoloConi.htm#ARinf</value>
+	</data>
+</root>

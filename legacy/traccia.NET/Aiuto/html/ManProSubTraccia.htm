@@ -1,0 +1,908 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProSubTraccia_file/filelist.xml">
+<title>Subroutine SubTraccia</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>9</o:TotalTime>
+  <o:Created>2001-01-01T13:29:00Z</o:Created>
+  <o:LastSaved>2001-01-01T13:32:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1106</o:Words>
+  <o:Characters>6308</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>52</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>7746</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine SubTraccia</h1>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>             </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                 </span>28/05/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Esegue il disegno della
+tracciatura.</p>
+<TABLE cellpadding=0 cellspacing=0>
+<TR VALIGN="top">
+<TD><A HREF="../FinestrIniziale.htm"><img src="../img/ClickMolteplici.bmp" alt="Molteplici eventi" BORDER=0></A><BR>
+<IMG SRC="../img/parchild.bmp"><img src="../img/SubTraccia.bmp" alt="Sub SubTraccia" BORDER=0><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProDiaTir.htm"><img src="../img/DiaTir.bmp" alt="Sub DiaTir" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProGenerabu.htm"><img src="../img/Generabu.bmp" alt="Sub Generabu" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProSwapDaTos.htm"><img src="../img/SwapDaTos.bmp" alt="Sub SwapDaTos" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProDisRod.htm"><img src="../img/DisRod.bmp" alt="Sub DisRod" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProDisTubi.htm"><img src="../img/DisTubi.bmp" alt="Sub DisTubi" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProinpiDIA.htm"><img src="../img/inpiDIA.bmp" alt="Sub inpiDIA" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProDisTagl.htm"><img src="../img/DisTagl.bmp" alt="Sub inpiDIA" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProAggiustaTaglio.htm"><img src="../img/AggiustaTaglio.bmp" alt="Sub AggiustaTAglio" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProDisTaglio.htm"><img src="../img/DisTaglio.bmp" alt="Sub DisTAglio" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProPercArea.htm"><img src="../img/PercArea.bmp" alt="Sub PercArea" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProDisTaglSupp.htm"><img src="../img/DisTaglSupp.bmp" alt="Sub DisTaglSupp" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProDisUrto.htm"><img src="../img/DisUrto.bmp" alt="Sub DisUrto" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProSealing.htm"><img src="../img/Sealing.bmp" alt="Sub Sealing" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProSecPun.htm"><img src="../img/SecPun.bmp" alt="Sub SecPun" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProDisegnoSS.htm"><img src="../img/DisegnoSS.bmp" alt="Sub DisegnoSS" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProapri5.htm"><img src="../img/apri5.bmp" alt="Sub apri5" BORDER=0></A></TD>
+</TR >
+</TABLE>
+
+<p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Listato</span></b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Sub
+SubTraccia(Mode As Integer)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+Mtacsu As Integer, Mtacgiu As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+CERCH As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+RXMAX As Single, RYMAX As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+Rinx1 As Single, Rinx2 As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+Riny1 As Single, Riny2 As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+pgm As Single, pgd As Single, pgs As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+rdiaf As Single, sen As Single, pgmm As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+catx As Single, CATXx As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+PGDd As Single, PGSs As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+XSU As Single, XGIU As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim
+YSU As Single, YGIU As Single, idi0 As String<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>Dim j As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>DaTos(0).kdati = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>509<span
+style="mso-spacerun: yes">   </span>If DaTos(0).dt(37) = 1 Then Mtacsu = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).dt(37) = 2 Then Mtacgiu = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).dt(37) = 3 Then Mtacgiu = 1:
+Mtacsu = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-family:"Times New Roman"'>If
+DaTos(0).ICDIA = 1 And Monitor.Motore.Inizio.AddDistinta &lt; 103 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>508<span style="mso-spacerun: yes">     
+</span>idi0 = InputBox(&quot;Nuovo diametro interno&quot;, &quot;&quot;,
+Str(DaTos(0).di1))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>If Val(idi0) &gt; 0 Then DaTos(0).di1 = Val(idi0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DaTos(0).otvec = 0: If DaTos(0).JSHELL =
+4 Then DaTos(1).otvec = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>511<span
+style="mso-spacerun: yes">   </span>Call DiaTir<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Tracciatura.LungPIP = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).ILFINAL = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>5120<span
+style="mso-spacerun: yes">     </span>If DaTos(0).JSHELL = 4 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span></span><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>DaTos(0).JSHELL = 1:
+DaTos(0).jt = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span></span><span style='font-family:
+"Times New Roman"'>Tracciatura.LungPIP = 1: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>Call Generabu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>DaTos(1).otvec = 0: DaTos(1).JSHELL = 1:<span
+style="mso-spacerun: yes">  </span>DaTos(1).jt = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>Tracciatura.LungPIP = 2: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>SwapDaTos 'SWAP DaTos(0), DaTos(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>Call Generabu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>DaTos(0).JSHELL = 4: DaTos(0).jt = 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>SwapDaTos 'SWAP DaTos(0), DaTos(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span></span><span lang=DE style='font-family:"Times New Roman";
+mso-ansi-language:DE'>DaTos(0).JSHELL = 4: DaTos(0).jt = 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span></span><span style='font-family:
+"Times New Roman"'>Tracciatura.LungPIP = 1: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>5130<span style="mso-spacerun:
+yes">        </span>Call Generabu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span>' If DaTos(0).OTC &gt; 0 Then '????? questo OTC mi
+abbatte<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span>'<span style="mso-spacerun: yes">    </span>If
+DaTos(0).otimp = 0 Then DaTos(0).otimp = DaTos(0).OTC + DaTos(0).dtubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span>'<span style="mso-spacerun: yes">   
+</span>DaTos(0).otvec = DaTos(0).OTC + DaTos(0).dtubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>'<span style="mso-spacerun: yes">    </span>Call
+nuotielle<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>' End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.Picture1.Cls<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Monitor.Routines.ctrait 0, 0.1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>6360
+If Monitor.Motore.Inizio.AddDistinta &lt; 103 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span></span><span style='font-family:"Times New Roman"'>DaTos(0).xcsi
+= 0: DaTos(0).ypsi = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">       
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>If Mode = 0 Then Call scalavi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>CERCH = 1: DaTos(0).Rtus =
+DaTos(0).rtubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">        </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If DaTos(0).Rtus
+&lt; 1 Then CERCH = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(0).Rtus &lt; 7 Then
+DaTos(0).Rtus = DaTos(0).Rtus * 0.7<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">  </span><span style="mso-spacerun:
+yes">      </span>Call DisRod(CERCH)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>6365
+If DaTos(0).JSHELL = 4 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span></span><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>DaTos(1).Rtus =
+DaTos(0).Rtus<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">            </span>DaTos(1).XSC1 = DaTos(0).XSC1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">            </span>DaTos(1).Ysc1 = DaTos(0).Ysc1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">            </span>DaTos(1).XSC2 = DaTos(0).XSC2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">            </span>DaTos(1).Ysc2 = DaTos(0).Ysc2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">            </span></span><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>DaTos(0).JSHELL =
+1:<span style="mso-spacerun: yes">  </span>DaTos(0).jt = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span></span><span style='font-family:
+"Times New Roman"'>Tracciatura.LungPIP = 1: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>6361<span style="mso-spacerun:
+yes">        </span>Call DisTubi(CERCH)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span></span><span lang=DE style='font-family:"Times New Roman";
+mso-ansi-language:DE'>SwapDaTos 'SWAP DaTos(0), DaTos(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span>DaTos(0).JSHELL = 1: DaTos(0).jt =
+1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span></span><span style='font-family:
+"Times New Roman"'>Tracciatura.LungPIP = 2: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span>Call DisTubi(CERCH)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">            </span></span><span lang=DE style='font-family:"Times New Roman";
+mso-ansi-language:DE'>DaTos(0).JSHELL = 4: DaTos(0).jt = 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span>SwapDaTos 'SWAP DaTos(0), DaTos(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span>DaTos(0).JSHELL = 4: DaTos(0).jt =
+2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span></span><span style='font-family:
+"Times New Roman"'>Tracciatura.LungPIP = 1: apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>6366<span
+style="mso-spacerun: yes">        </span>Call DisTubi(CERCH)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>If Monitor.Motore.Inizio.AddDistinta =
+103 Then Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'LINDE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>DaTos(0).OTL = DaTos(0).otvec<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>If DaTos(0).otvec &gt; DaTos(0).di1 -
+10 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span></span><span style='font-family:
+"Times New Roman"'>DaTos(0).di1 = DaTos(0).otvec + 15<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>8361<span
+style="mso-spacerun: yes">       </span>Call diadiffe(DaTos(0).Diadif)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">           </span>DaTos(0).di1 = Int(DaTos(0).otvec +
+DaTos(0).Diadif + 0.51)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>8362<span
+style="mso-spacerun: yes">       </span>Call DiaTir<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">           </span></span><span style='font-family:
+"Times New Roman"'>BEEP<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span>' &quot;Diametro interno impossibile, rifai o batti
+&lt;Enter&gt;&quot;;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">           </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>GoTo 508<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>RYMAX = DaTos(0).rr * 1.3: RXMAX =
+DaTos(0).rr * 1.15<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Rinx1 = 0: Rinx2 = 0: Riny1 = 0: Riny2 =
+0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If CERCH = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Rinx1 = DaTos(0).rr: Rinx2 =
+-DaTos(0).rr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Riny1 = DaTos(0).rr: Riny2 =
+-DaTos(0).rr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span></span><span style='font-family:"Times New Roman"'>Monitor.Routines.tratto
+RXMAX, 0, Rinx1, 0, 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto -RXMAX, 0, Rinx2, 0, 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto 0, RYMAX, 0, Riny1, 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto 0, -RYMAX, 0, Riny2, 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span></span><span lang=FR style='font-family:"Times New Roman";mso-ansi-language:
+FR'>Monitor.Routines.ctrait 0, 0.1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">     </span>pgm = 0: pgd = 2 * PI: pgs = pgd: rdiaf =
+DaTos(0).Didia / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>If Mtacsu = 1 Or Mtacgiu = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>8364<span
+style="mso-spacerun: yes">     </span>sen = 11.2 / rdiaf: pgm = asin(sen)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>sen = 10 / rdiaf:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>asin (sen)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>catx = rdiaf * Cos(pgm)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>CATXx = rdiaf * Cos(pgmm)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If Mtacsu = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>pgd = pgd - pgm: pgs = pgs + pgm<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>PGDd = 2 * PI - pgmm: PGSs = 2 * PI +
+pgmm<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span></span><span style='font-family:"Times New Roman"'>Monitor.Routines.tratto
+-10, catx, 0, rdiaf - 15, 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Monitor.Routines.tratto 0, rdiaf - 15, 10, catx, 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Monitor.Routines.arc 0, 0, rdiaf, 0, pgd
+* 180 / PI<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If 2 * PI - pgs &gt; 0.001 Then
+Monitor.Routines.arc 0, 0, rdiaf * Cos(pgs), rdiaf * Sin(pgs), (2 * PI - pgs) *
+180 / PI<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>pgd = 1.5 * PI: pgs = pgd<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If Mtacgiu = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>Monitor.Routines.tratto -10, -catx,
+0, -rdiaf + 15, 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>Monitor.Routines.tratto 0, -rdiaf +
+15, -10, -catx, 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>pgs = pgs - pgm: pgd = pgd + pgm<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>Monitor.Routines.arc 0, 0, -rdiaf, 0,
+(pgs - PI) * 180 / PI '8366<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>PGSs = 1.5 * PI - pgmm: PGDd = 1.5 *
+PI + pgmm<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Monitor.Routines.arc 0, 0, rdiaf *
+Cos(PI), rdiaf * Sin(PI), (pgs - PI) * 180 / PI<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Monitor.Routines.arc 0, 0, rdiaf *
+Cos(pgd), rdiaf * Sin(pgd), (2 * PI - pgd) * 180 / PI<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Monitor.Routines.cerc 0, 0, DaTos(0).rr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If DaTos(0).cinter &gt; 1 Then
+Monitor.Routines.cerc 0, 0, DaTos(0).cinter ': 'CALL cerchio(0, 0,
+DaTos(0).cinter)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If DaTos(0).otvec &lt;&gt; 0 Then SWAP
+DaTos(0).OTL, DaTos(0).otvec<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>DaTos(0).raotl = DaTos(0).OTL / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Monitor.Routines.cerc 0, 0,
+DaTos(0).raotl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>If DaTos(0).JSHELL = 4 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(1).cinter &gt; 1 Then
+Monitor.Routines.cerc 0, 0, DaTos(1).cinter<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(1).otvec &lt;&gt; 0 Then SWAP
+DaTos(1).OTL, DaTos(1).otvec<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Monitor.Routines.cerc 0, 0,
+DaTos(1).OTL / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span></span><span style='font-family:"Times New Roman"'>End
+If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>'-----------------disegno diaframmi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>8367 Call inpiDIA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>'---------disegno bocchelli<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>XSU = DaTos(0).dt(3) / 2: XGIU = DaTos(0).dt(4) / 2<span
+style="mso-spacerun: yes">  </span>'raggi bocchelli<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>YSU = Sqr(DaTos(0).rr ^ 2 - XSU ^ 2): YGIU = Sqr(DaTos(0).rr ^ 2 - XGIU
+^ 2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto -XSU, YSU, -XSU, (DaTos(0).rr + 20), 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto -XSU, (DaTos(0).rr + 20), XSU, (DaTos(0).rr +
+20), 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto XSU, (DaTos(0).rr + 20), XSU, YSU, 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto -XGIU, -YGIU, -XGIU, (-DaTos(0).rr - 20), 0.1, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto -XGIU, (-DaTos(0).rr - 20), XGIU, (-DaTos(0).rr
+- 20), 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Monitor.Routines.tratto XGIU, (-DaTos(0).rr - 20), XGIU, -YGIU, 0.1, 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes"> </span><span
+style="mso-spacerun: yes">    </span></span><span lang=FR style='font-family:
+"Times New Roman";mso-ansi-language:FR'>Monitor.Routines.ctrait 0, 0.1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>frmTraccia.Picture1.DrawStyle =
+vbSolid<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'---------------disegno
+sealing strips<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>8368
+Call SEALING<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>'---------------disegno tiranti<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>For j = 1 To DaTos(0).ntira<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">       
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>On Error GoTo ErrTira<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(0).td(1, j) = 0 And
+DaTos(0).td(2, j) = 0 Then GoTo 7901<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(0).td(3, j) = 0 Then
+DaTos(0).td(3, j) = Int(DaTos(0).dtubo / 2.5)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If CERCH = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>8369<span
+style="mso-spacerun: yes">       </span>frmTraccia.Picture1.Circle
+(DaTos(0).td(1, j), DaTos(0).td(2, j)), 0.5 * DaTos(0).dtubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>frmTraccia.Picture1.Circle
+(DaTos(0).td(1, j), DaTos(0).td(2, j)), DaTos(0).td(3, j) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>GoTo 7901<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>frmTraccia.Picture1.PSet
+(DaTos(0).td(1, j), DaTos(0).td(2, j))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7901
+Next j<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'--------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>ResTira:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>DaTos(0).ICDIA = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span></span><span lang=FR style='font-family:"Times New Roman";mso-ansi-language:
+FR'>Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>ErrTira:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>DaTos(0).ntira
+= 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>For j
+= 1 To 60<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>DaTos(0).td(1, j) = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span>DaTos(0).td(2, j) = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Resume
+ResTira<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

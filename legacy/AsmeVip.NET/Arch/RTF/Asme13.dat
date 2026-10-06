@@ -1,0 +1,33 @@
+\par  
+\par \pard\plain \s18\qj\widctlpar\tx4536 \f2\fs18\lang1040 Corroded Inside Radius,  large end    R{\sub g\tab }=
+\par Corroded Inside Radius,  small end    R{\sub p\tab }=
+#####.### &   #####.### &
+\par Corroded Knuckle Radius, large end    r{\sub g\tab }=
+\par Corroded Knuckle Radius, small end    r{\sub p\tab }=
+\par Ins.Radius on Base Mat., large end    R{\sub g\tab }=
+\par Ins.Radius on Base Mat., small end    R{\sub p\tab }=
+\par Knuckle Radius on Base M., large end  r{\sub p\tab }=
+\par Knuckle Radius on Base M., small end  r{\sub p\tab }=
+\par Half-apex angle                       {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\tab =
+\par Half-apex angle of the equiv.cone     {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\tab =
+\par t{\sub o} =PR{\sub g}/((SE-0.6P)*cos({{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}))   \tab =
+_\par Ratio Crown to Knuckle R: 2R{_\sub &}/(r{_\sub &}*cos({{_\field{_\*_\fldinst SYMBOL 97 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}))_\tab =
+\par Factor from Table 1-4.2              M\tab =
+\par t{\sub o}'=PLM/(2SE-0.2P)  \tab =
+\par Minimum Design Thickness               \tab =
+\par Adopted Nominal Thickness             t{\sub c\tab }=
+\par  UG-33   Design under external pressure
+\par Cone  effective thickness             t{\sub e} \tab =
+\par Cone  effective length                L{\sub e} \tab =
+\par Slenderness parameters DL/t{\sub e}, L{\sub e}/DL  \tab =
+\par A-factor per Fig. G, II-D Subpart 3  \tab =
+\par B-factor per curve 
+\par Allowable external pressure    \tab =
+#.###^^^^ &   #.###^^^^ &
+###.##### &   #####.## &
+\par  
+\par External Design Pressure             P   =
+\par Coincident Design Temperature        T   =
+\par Required thickness s{\sub r} against external pressure (calculated by iteration)\par s{\sub r} (on data for UG-33 herebelow)\tab =
+\par Minimum Corroded Thickness to UG-16(b)\tab =
+

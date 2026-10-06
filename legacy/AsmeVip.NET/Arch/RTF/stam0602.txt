@@ -1,0 +1,17 @@
+\par
+\   \         \                         \_\par               ==========================_\par        Program: \         \ Vers. \    \_\par
+              ==========================\par
+      \                                                              \_\par
+      ================================================================\par
+         Appendix AA - Rules for the design of tubesheets (A02)\par
+            AA-1 Design Rules for U-tube type TubeSheets\par
+     ===========================================================\par
+\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+      Fig.AA-1.1(d) TubeSheet doubly gasketed with extension\par
+     Fig.AA-1.1(d) TubeSheet doubly gasketed without extension\par
+            Fig.AA-1.1(a) Fully Integral contruction\par
+     Fig.AA-1.1(e) TubeSheet gasketed shell-side with extension\par
+   Fig.AA-1.1(f) TubeSheet gasketed shell-side without extension\par
+    Fig.AA-1.1(b) TubeSheet gasketed channel-side with extension\par
+  Fig.AA-1.1(c) TubeSheet gasketed channel-side without extension\par
+

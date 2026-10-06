@@ -1,0 +1,245 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProCoorXY_file/filelist.xml">
+<title>ManProCoorXY</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>13</o:TotalTime>
+  <o:Created>2000-12-21T21:17:00Z</o:Created>
+  <o:LastSaved>2000-12-21T21:17:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>515</o:Words>
+  <o:Characters>2937</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3606</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+<H1>Subroutine CoorXY</H1>
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>             </span>Leonardo Presciuttini</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                 </span>28/05/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Calcola le coordinate X e Y del
+foro della file j nella posizione nnn del record buc.</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Chiamata da: <A href="ManProDistInMem.htm">DistInMem</A>,
+CoorInMem, CalcOTL</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Parametri in ingresso:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-indent:0cm'>iDat<span style='mso-tab-count:1'>     </span>0
+zona esterna; 1 zona interna</p>
+
+<p class=MsoNormal style='text-indent:0cm'>j<span style='mso-tab-count:1'>           </span>numero
+della fila</p>
+
+<p class=MsoNormal style='text-indent:0cm'>nnn<span style='mso-tab-count:1'>      </span>posizione
+nella fila</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Parametri in uscita:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>x,y<span style='mso-tab-count:1'>       </span>coordinate<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'>iCod<span style='mso-tab-count:1'>   </span>0:
+la domanda è significativa e ammette risposta</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>1: non ci sono fori nella file j</p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='mso-tab-count:1'>            </span>2:
+la posizione specificata nella fila non esiste</p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='mso-tab-count:1'>            </span>9:
+la posizione specificata non corrisponde al foro di un tubo di scambio</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Listato</span></b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Sub
+CoorXY(iDat As Integer, j As Integer, nnn As Integer, _<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>x As Single, y As Single, iCod As
+Integer)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'-----------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Dim yj As Single, xx As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Dim cod As String, i As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If j = 0 Then iCod = 3: Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If DaTos(iDat).ntub(j) = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>iCod = 1: Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span></span><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>yj =
+DaTos(iDat).y(j)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">           </span>xx = DaTos(iDat).x(j) -
+DaTos(iDat).OPASSO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">           </span>If nnn &gt; DaTos(iDat).bu.ici Then
+iCod = 2: Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>For i = 1 To nnn<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>cod = Mid$(DaTos(iDat).bu.bu, i,
+1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>Select Case cod<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>Case &quot;9&quot;:<span
+style="mso-spacerun: yes">  </span>xx = -xx - DaTos(iDat).OPASSO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>Case Else: xx = xx +
+DaTos(iDat).OPASSO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End Select<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Next i<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>cod = Mid$(DaTos(iDat).bu.bu, nnn,
+1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Select Case cod<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>Case &quot;1&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>iCod = 0: x = xx: y = yj<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>Case Else: iCod = 9<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>End Select<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

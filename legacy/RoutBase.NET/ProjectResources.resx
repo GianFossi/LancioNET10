@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str49">
+		<value>Standard per il piping</value>
+	</data>
+	<data name="str50">
+		<value>   Scegliere lo standard in base al quale|sono calcolati lo spessore e il diametro esterno|del tubo in funzione del diametro nominale|e della schedula.</value>
+	</data>
+	<data name="str51">
+		<value>2</value>
+	</data>
+	<data name="str52">
+		<value>Standard ANSI B36.10</value>
+	</data>
+	<data name="str53">
+		<value>Standard Dalmine indefinito</value>
+	</data>
+	<data name="str60">
+		<value>Il periodo di prova del sistema Lancio (licenza d'uso temporanea) è terminato.</value>
+	</data>
+	<data name="str61">
+		<value>Risulterebbe che state utilizzando una copia illegale di Lancio.</value>
+	</data>
+	<data name="str1000">
+		<value>La risoluzione dello schermo del vostro computer è insufficiente.</value>
+	</data>
+	<data name="str1010">
+		<value>Le impostazioni internazionali sono impostate su</value>
+	</data>
+	<data name="str1020">
+		<value>Si vuole impostare il carattere di separazione decimale su '.' ?</value>
+	</data>
+	<data name="str1030">
+		<value>Problemi per il recupero di informazioni sulla stampante predefinita. L'esecuzione continua.</value>
+	</data>
+	<data name="str1040">
+		<value>Impossibile lanciare Word.|( &amp; )|Lanciarlo manualmente e riprovare.</value>
+	</data>
+	<data name="str1041">
+		<value>La versione di Word installata su questo computer (&amp;, cioè Office97) non è|aggiornata. E' comunque possibile lavorare anche la versione Office97</value>
+	</data>
+	<data name="str1050">
+		<value>Impossibile lanciare AutoCAD|( &amp; ).|L'esecuzione continua senza AutoCAD.|(Può essere utile lanciare AutoCAD manualmente, dall'esterno di|Lancio, e senza uscire da quest'ultimo).</value>
+	</data>
+	<data name="str1051">
+		<value>Questo programma richiede AutoCAD nella versione|15 (AutoCad 2000) o superiore.|La versione istallata su questo computer è &amp;.|L'esecuzione continua senza AutoCAD in linea.</value>
+	</data>
+	<data name="str2000">
+		<value>Il vostro tipo di funzionamento attuale è 'in locale'.|Avete selezionato delle cartelle di lavoro che presuppongono|l' autorizzazione al funzionamento 'in rete'.|Confermate la vostra scelta?</value>
+	</data>
+	<data name="str2001">
+		<value>In tal caso dovrete riavviare il sistema Lancio</value>
+	</data>
+	<data name="str2006">
+		<value>Sta per essere inserita tra i cammini di ricerca la directory di BRT71EFR.EXE.|Ciò avverrà tramite manipolazione dei files di sistema AUTOEXEC.BAT o AUTOEXEC.NT.</value>
+	</data>
+	<data name="str2007">
+		<value>Il vostro tipo di funzionamento attuale è 'in rete'.|Avete selezionato delle cartelle di lavoro che presuppongono|il funzionamento 'in locale'. Desiderate confermare tale funzionamento?|In caso di risposta affermativa, al prossimo accesso a Lancio|non verrà più richiesta la parola d'ordine.</value>
+	</data>
+	<data name="str10000">
+		<value>Il file di inizializzazione è assente o corrotto</value>
+	</data>
+	<data name="str10001">
+		<value>Le informazioni contenute in LANCIO.INI non sono corrette,|oppure ci sono dei problemi di rete.</value>
+	</data>
+	<data name="str10006">
+		<value>Impossibile trovare il file AUTOEXEC.BAT</value>
+	</data>
+	<data name="str10007">
+		<value>Impossibile trovare il file AUTOEXEC.NT</value>
+	</data>
+	<data name="str10020">
+		<value>A questa classe di materiali non corrisponde|nessuna registrazione di offerte.</value>
+	</data>
+	<data name="str10021">
+		<value>Si è tentato di calcolare una caratteristica|di un materiale non definito.</value>
+	</data>
+	<data name="str10022">
+		<value>Non è possibile calcolare il modulo elastico|del materiale &amp; perché ad esso|non è stata associata nessuna tabella.</value>
+	</data>
+	<data name="str10023">
+		<value>Non è possibile calcolare il modulo elastico|del materiale &amp; perché la tabella|ad esso associata non è stata riempita.</value>
+	</data>
+	<data name="str10024">
+		<value>Non è possibile calcolare il coefficiente|di dilatazione termica del materiale &amp;|perché ad esso non è stata associata|nessuna tabella.</value>
+	</data>
+	<data name="str10025">
+		<value>Non è possibile calcolare il coefficiente|di dilatazione termica del materiale &amp;|perché la tabella ad esso associata non è|stata riempita.</value>
+	</data>
+	<data name="str10026">
+		<value>Non è possibile calcolare il rating |di pressione del materiale &amp;|perché per esso non è stato specificato|nessun gruppo materiali.</value>
+	</data>
+	<data name="str10027">
+		<value>Non è possibile calcolare il rating |di pressione del materiale &amp;|perché la tabella del suo gruppo materiali|non è stata riempita.</value>
+	</data>
+	<data name="str10028">
+		<value>Non è possibile calcolare la conducibilità|termica del materiale &amp;|perché ad esso non è stata associata|nessuna tabella.</value>
+	</data>
+	<data name="str10029">
+		<value>Non è possibile calcolare il conducibilità|termica del materiale &amp;|perché la tabella ad esso associata non è|stata riempita.</value>
+	</data>
+	<data name="str10030">
+		<value>Attenzione:| Temperatura superiore ai valori |tabellari per &amp;.</value>
+	</data>
+	<data name="str10031">
+		<value>Attenzione:| Temperatura superiore ai valori |tabellari per &amp;.|Vuoi usare gli ammissibili della div.1 ?</value>
+	</data>
+	<data name="str10032">
+		<value>Attenzione:| Valori per le tensioni ammissibili|non caricati in libreria|per &amp; e|per &amp;.</value>
+	</data>
+	<data name="str10033">
+		<value>Attenzione:| Valori per lo snervamento a caldo|non caricati in libreria|per &amp; e|per &amp;.</value>
+	</data>
+	<data name="str10034">
+		<value>Errore nella subroutine 'LeggiMat':|(&amp;) &amp;|dopo la linea &amp;.</value>
+	</data>
+	<data name="str10035">
+		<value>Errore nella subroutine 'LeggiMat':|(&amp;) &amp;|dopo la linea &amp;.| Probabilmente uno o più materiali|non sono stati correttamente definiti.</value>
+	</data>
+	<data name="str10036">
+		<value>Ci sono problemi con il file LANCIO.INI.|Manca, o è corrotta, la sezione [Aggiornamenti].|Richiedere una versione aggiornata.</value>
+	</data>
+	<data name="str10050">
+		<value>Il database di aggiornamento materiali ASME richiesto non può essere trovato.</value>
+	</data>
+	<data name="str10051">
+		<value>Il database materiali da aggiornare secondo ASME non può essere trovato.</value>
+	</data>
+	<data name="str11001">
+		<value>per parametro primario</value>
+	</data>
+	<data name="str11002">
+		<value>per parametro secondario</value>
+	</data>
+	<data name="str11003">
+		<value>per prezzo al chilo</value>
+	</data>
+	<data name="str11004">
+		<value>per data</value>
+	</data>
+	<data name="str11005">
+		<value>per fornitore</value>
+	</data>
+	<data name="str11006">
+		<value>per progettista</value>
+	</data>
+	<data name="str11020">
+		<value>Offerte ordinate</value>
+	</data>
+	<data name="str11040">
+		<value>A seconda delle caratteristiche del computer usato|questa operazione può durare molti, ma molti, minuti.|Premere &lt;Cancel&gt; se si vuole terminare la compilazione del listino.||E' possibile osservare WinWord mentre lavora, e quindi|rendere attiva la sua finestra.|Interagire in qualsiasi altro modo con WinWord|porterà sicuramente ad effetti indesiderati.</value>
+	</data>
+	<data name="str11050">
+		<value>Generazione del listino prezzi (documento WinWord)</value>
+	</data>
+	<data name="str12001">
+		<value>N° Item errato In PutBasCh:</value>
+	</data>
+	<data name="str12002">
+		<value>N° Record errato In PutBasCh:</value>
+	</data>
+	<data name="str12003">
+		<value>N° Alternativa errata In PutBasCh:</value>
+	</data>
+	<data name="str12004">
+		<value>Errore in PutBasCh</value>
+	</data>
+	<data name="str12005">
+		<value>OK</value>
+	</data>
+	<data name="str12006">
+		<value>N° Item errato In DatBase:</value>
+	</data>
+	<data name="str12007">
+		<value>N° Record errato In DatBase:</value>
+	</data>
+	<data name="str12008">
+		<value>N° Alternativa errata In DatBase:</value>
+	</data>
+	<data name="str12009">
+		<value>Errore in DatBase</value>
+	</data>
+	<data name="str12010">
+		<value>OK</value>
+	</data>
+	<data name="str10037">
+		<value>Attenzione:| Temperatura superiore ai valori |tabellari per &amp; |per il calcolo della tensione di snervamento.</value>
+	</data>
+	<data name="strprox">
+		<value>x</value>
+	</data>
+	<data name="str11051">
+		<value>Generazione della stampa libreria materiali</value>
+	</data>
+	<data name="str11052">
+		<value>Materiale {0}; Numero di lamiere: y; Larghezza x Lunghezza x sp: yyyyy x yyyy x {1}; Requisiti addizionali: HIC; Tempo di fornitura yyy giorni;</value>
+	</data>
+	<data name="str11053">
+		<value>Materiale:{0} + 410;Numero di lamiere: 1; Larhezza x Lunghezza x sp: yyyy x yyyy x {1} + 4;Requisiti addizionali: NN; Tempo di fornitura 90 giorni;</value>
+	</data>
+	<data name="str11054">
+		<value>Materiale {0}; Numero di lamiere: 6; Larghezza x Lunghezza x sp: 5200 x 2600 x {1}; Requisiti addizionali: US 100%; Tempo di fornitura 120 giorni;</value>
+	</data>
+	<data name="str11055">
+		<value>Descrizione del prodotto 'tondo'</value>
+	</data>
+	<data name="str11056">
+		<value>Materiale: {0}; Numero di pezzi: 24300 (Lunghezza: 12500); Tolleranza: M/W ;tipo: SMLS; Tempo di fornitura 120 giorni; </value>
+	</data>
+	<data name="str11057">
+		<value>Descrizione del prodotto 'distanziale'</value>
+	</data>
+	<data name="str11058">
+		<value>Descrizione del prodotto 'tubo' (pipe)'</value>
+	</data>
+	<data name="str11059">
+		<value>Materiale: {0}; Numero di pezzi: 1; Diam.est.: 721,Diam.int.: 381,H: 868; REQUISITI ADDIZIONALI: Normalizzato; Tempo di fornitura 70 giorni; bocchello inclinato di 30°</value>
+	</data>
+	<data name="str11060">
+		<value>Descrizione del prodotto 'tirante'</value>
+	</data>
+	<data name="str11061">
+		<value>Descrizione del prodotto 'varie'</value>
+	</data>
+	<data name="str11062">
+		<value>Materiale:SA-533 Gr.B Cl.2; Numero di fondi: 3; ID 2710, Sp. 124; Peso Netto (cad.):  21992. Kg; Tipo calandratura: ?; Saldatura lungitudinale:Si; UT+MT su saldatura:Si; TRornitura cianfrini:Si; Tempo di fornitura ?  giorni; inclusa ricalandratura ; costo addizionale 1 tallone = 2.7 ML ; escluso materiale di consumo</value>
+	</data>
+	<data name="str11063">
+		<value>Materiale:SA-240 321; Numero di fondi: 4; ID 1600, M.A.F. 28; Colletto 60 spessore di partenza 33; Peso Netto (cad.):    840. Kg; Tipo formatura: COLD; TT: Non def.; Mat. fornito: DISK; Mat. ritornato: HEAD; Bordi grezzi</value>
+	</data>
+	<data name="str11064">
+		<value>Materiale:SA-516 Gr.70; Numero di fondi: 8; ID 2050, M.A.F. 45; Colletto-225 spessore di partenza 52; Peso Netto (cad.):   2083. Kg; Tipo formatura: HOT; TT: Non def.; Mat. fornito: 1 DISK; Mat. ritornato: 1 HEAD; Bordi grezzi</value>
+	</data>
+	<data name="TitLibmat">
+		<value>LancioNET - Libreria Materiali</value>
+	</data>
+	<data name="str2100">
+		<value>Il carattere &amp; non è consentito.</value>
+	</data>
+</root>

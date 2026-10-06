@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Teoria del serraggio bulloni</Title>
+</HEAD>
+<BODY>
+<H1>Teoria del serraggio bulloni</H1>
+<P>Il Codice impone un metodo per il calcolo del carico di progetto dei tiranti, al fine della verifica dell'accettabilità delle corrispondenti tensioni generate nei bulloni stessi e nei membri serrati. Come noto, tale metodo prevede il calcolo del carico in esercizio, W<sub>m1</sub>,e del carico di assetto guarnizione, W<sub>m2</sub>. Il carico di progetto, W, è funzione dei precedenti e della sezione retta totale istallata dei bulloni, in modo da tenere conto, in modo semplificato, del fatto che, se la sezione istallata è esuberante, può accadere che, al serraggio, i bulloni esercitino un carico superiore a quello minimo necessario per la tenuta e per l'assetto della guarnizione.</P>
+<P>Il Codice nulla dice circa il carico di serraggio bulloni per la prova idraulica. Tuttavia si può osservare che:
+<li>la procedura per il calcolo di W<sub>m1</sub> può essere correttamente applicata sostituendo alla pressione di progetto la pressione di prova idraulica;
+<li>il valore di W<sub>m2</sub> rimane inalterato in quanto non dipende dalla pressione, ma solo dalla natura della guarnizione;
+<li>un carico di progetto W in prova idraulica ottenuto applicando la procedura valida per il caso di progetto non avrebbe senso, in quanto la procedura mette in gioco il valore delle tensioni ammissibili per la bulloneria, ma tali valori non sono definiti (almeno in div.1) né per la situazione di prova idraulica, né, tanto meno, per la situazione di serraggio tiranti.</P>
+<P><A name="Fondament">E' di fondamentale importanza comprendere</A> che il Codice non pretende di valutare, tramite il carico di progetto W, il carico <B>effettivo totale</B> al quale lavora la bulloneria, bensì esso mira alla determinazione, in sicurezza, del solo <B>carico primario</B>, cioè della frazione del carico totale che fa equilibrio ai carichi dovuti alla pressione. La <B>frazione secondaria</B> del carico totale, cioè quella generata da:
+<li>il precarico introdotto al serraggio
+<li>le variazioni di carico prodotte dalle deformazioni dei membri serrati
+<li>le variazioni di carico prodotte da disuniformità di temperatura o da differenze nei coefficienti di espansione termica
+non è sottoposta (in div.1) ad alcun limite, né vengono dati metodi per la sua valutazione. La ragione di ciò è che un valore eccessivo dei carichi secondari, non può normalmente portare al collasso della barriera di contenimento della pressione, ma, tutt'al più, alla generazione di deformazioni plastiche permanenti nella bulloneria e nei membri serrati, e quindi alla perdita della tenuta stagna.</P>
+<P>Quanto sopra detto chiarisce che il carico di serraggio tiranti può essere, e normalmente deve essere, molto superiore al carico calcolato applicando la procedura W<sub>m1</sub> con il valore di pressione della prova idraulica. Tale carico è indicato in AsmeVip con <B>W<sub>m1HT</sub></B></P>
+<P><B>Il carico di serraggio W</B>, in AsmeVip, è dato da:</P>
+W=<A href="RilBull.htm">K<sub>1</sub></A><A href="GrFuc.htm#Disuniformita">K<sub>2</A></sub>W<sub>m1HT</sub></P>
+<P>Nel caso di serraggio con martinetto idraulico è necessario applicare anche il fattore K<sub>3</sub> (pari a 1.3 circa), ovvero fattore di rilassamento Pilgrim, da non confondersi con il <A href="RilBull.htm">fattore di rilassamento con apparecchio in pressione</A>.</P>
+</BODY>
+</HTML>

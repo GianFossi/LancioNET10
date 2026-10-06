@@ -1,0 +1,75 @@
+T
+B
+0      Mechanical Standards TEMA Class "RCB"  Heat Exchangers - Fixed/Floating T.Sheets\par
+i       Floating Tubesheet Exchanger with an immersed floating head (Fig. &.1 (a))_\par 
+0                     TEMA type T - Tubesheet integral with the floating head\par
+B
+0                                  ---INPUT DATA---\par
+B
+M001  T.Sheet A Id: \                      \  TubeSheet material \                   \_\par
+N     Type of exhanger:\                   \  Fixed T.S.Support:\                    \_\par
+l                                             Floating T.S.type:\                    \_\par
+M005  T.Sheet B Id: \                      \  TubeSheet material \                   \_\par
+B
+6021022  Ins. Diameter of Shell A  #####.   [mm]   Ins.Diameter of Channel  A  #####.   [mm]_\par
+6023024  Shell thickness        A  #####.   [mm]   Channel thickness        A  #####.   [mm]_\par
+6017018  Shell side corrosion   A  ###.##   [mm]   Channel side corrosion   A  ###.##   [mm]_\par
+6292293  Sh.side gsk mean dia.  A  #####.   [mm]   Ch.side gsk mean dia     A  #####.   [mm]_\par
+6020034  Fixed T.S.  Grooves Depth  ####.#  [mm]   Fixed T.S.  Nom.Thickness    ####.#  [mm]_\par
+1545  Fixed T.S. Circumferential Grooves Depth                               ####.#  [mm]_\par
+9010011  Equivalent Diam for shear #####.#  [mm]   Tube spacing  \          \    ###.## [mm]_\par
+6027028  Outside diameter of tubes   ###.## [mm]   Tube thickness                 ##.## [mm]_\par
+1761                                            Tube corrosion                 ##.## [mm]_\par
+6314312  Ins. Diameter of Shell B  #####.   [mm]   Ins.Diameter of Head     B  #####.   [mm]_\par
+1313                                            Head thickness           B  #####.   [mm]_\par
+6264265  Shell side corrosion   B  ###.##   [mm]   Channel side corrosion   B  ###.##   [mm]_\par
+6315316  Sh.side gsk mean dia.     #####.   [mm]   Ch.side gsk mean dia        #####.   [mm]_\par
+6263262  Float T.S.  Grooves Depth  ####.#  [mm]   Float T.S.  Nom.Thickness    ####.#  [mm]_\par
+r000  Applicable design rules:{_\b &}
+B
+0         Notes:\par
+0         1)    Null values could indicate unsignificant quantities in the actual context.\par
+0         2)    'A' indicates fixed end, 'B' indicates floating end.\par
+S         3)    The equivalent diameter for shear has been calculated on the actual\par
+S               tube layout, according to RCB-7.133\par
+B
+0                                    ---LOADING DATA---\par
+6001002  Shell Side Pressure       #####.# [psi]   Tube Side Pressure          #####.# [psi]_\par
+6003004  Differential Pressure     #####.# [psi]   Design Temperature          #####.# [{_\super 0}F]_\par
+t     Shell Side Vacuum            \  \          Tube Side Vacuum             \  \
+B
+B
+0                                ---CALCULATED PARAMETERS---\par
+6294295  Shell Side Effect. Dia  A #####.#  [mm]   Tube Side Effective Dia   A #####.#  [mm]_\par
+6593309  Effective diameter, G   B #####.#  [mm]   External diameter, D      B #####.#  [mm]_\par
+6045046  Factor F (uncorroded)   A  #.####  [--]   Factor F (corroded)       A  #.####  [--]_\par
+6310311  Factor F (uncorroded)   B  #.####  [--]   Factor F (corroded)       B  #.####  [--]_\par
+1271  Ligament efficiency        #.####  [--]_\par
+6035266  Allowable stress     A   #####.## [psi]   Allowable stress        B   #####.## [psi]_\par
+B
+0                                ---MINIMUM THICKNESSES---\par
+D147148  For bending, shell-s.pr.A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+D149150  For bending, tube-s.pr. A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+D151152  For bending, differ.pr. A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+D153154  For shear,   shell-s.pr.A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+D155156  For shear,   tube-s.pr. A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+D157158  For shear,   differ.pr. A #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d147148  For bending, shell-s.pr.B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d149150  For bending, tube-s.pr. B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d151152  For bending, differ.pr. B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d153154  For shear,   shell-s.pr.B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d155156  For shear,   tube-s.pr. B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+d157158  For shear,   differ.pr. B #####.#  [mm] in corroded conditions:       #####.#  [mm]_\par
+B
+0                                  ---FINAL RESULTS---\par
+B
+6159034  Min. required thickness A ####.#  [mm]   Adopted thickness           #####.#  [mm]_\par
+f159262  Min. required thickness B ####.#  [mm]   Adopted thickness           #####.#  [mm]_\par
+B
+0            MAWP  shell-side (or diff.)         MAWP tube-side\par
+Q001001001002  New  _& Cold  #####.0 [psi] ###.000 [Mpa] #####.0 [psi] ###.000 [Mpa]_\par
+Q002001002002  New  _& Hot   #####.0 [psi] ###.000 [Mpa] #####.0 [psi] ###.000 [Mpa]_\par
+Q003001003002  Corr._& Cold  #####.0 [psi] ###.000 [Mpa] #####.0 [psi] ###.000 [Mpa]_\par
+Q004001004002  Corr._& Hot   #####.0 [psi] ###.000 [Mpa] #####.0 [psi] ###.000 [Mpa]_\par
+Fine
+

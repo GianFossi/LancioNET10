@@ -1,0 +1,10 @@
+     Note sull'inserimento di piastre e fasci tubieri          
+     ================================================
+   Non è ammesso l'inserimento di più di un elemento di tipo
+'tubi di scambio'.
+   Non è neanche ammesso l'inserimento di più di un elemento
+tipo 'piastra tubiera'. Infatti, nel caso di fasci tubieri a
+tubi diritti, la seconda piastra (detta anche piastra di coda)
+viene gestita, sia nel caso di testa flottante che di teste
+fisse, insieme ai dati della piastra di testa.  
+

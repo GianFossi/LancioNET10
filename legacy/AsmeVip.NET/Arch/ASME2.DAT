@@ -1,0 +1,21 @@
+ WARNING |       LWN Size Out Off Standard Dimensions   |NOMINAL DIAMETER NOT INCLUDED IN ANSI B-16.5|
+ WARNING |        LWN Rating Out of Standard Classes    |RATING CLASS NOT INCLUDED IN ANSI B-16.5  |
+ WARNING |      Pipe Size Out Off Standard Dimensions   |NOMINAL DIAMETER NOT INCLUDED IN ASA B-36.10|
+ WARNING |      Pipe Size Out Off TEMA Std.Dimensions   |MINIMUM THICKNESS NOT INCLUDED IN TABLE 3.13|
+ WARNING |      Shell Size Out Off TEMA Std.Dimensions  |NOMINAL DIAMETER NOT INCLUDED IN TABLE 3.13|
+ WARNING |      Shell Size Out Off TEMA Std.Dimensions  |MINIMUM THICKNESS NOT INCLUDED IN TABLE 3.13|
+ WARNING |        Ellipsoidal Head with (D/2h) > 3.0    |K FACTOR of TABLE 1.4-1 NOT DEFINED    |
+ WARNING |       Torispherical Head with (r/L) < 0.06   |RULES in UG-32(j) NOT APPLICABLE      |
+ WARNING |         Torispherical Head with  L > Do      |RULES in UG-32(j) NOT APPLICABLE      |
+ WARNING |    Torispherical Head with L=Do  &  r > 0.06L|RULES in UG-32(j) NOT APPLICABLE      |
+ WARNING |    Torispherical Head with L < Do  &  r=0.06L|RULES in UG-32(j) NOT APPLICABLE      |
+  -----------------------------------------      |Nozzle Size out off limits of UG-36(b)(1)      |Appendix 1-7 shall apply                      |-----------------------------------------      |
+ ATTENZIONE |      DISCRIMINANTE EQUAZIONE 2øGRADO < 0   |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+ ATTENZIONE |   SOLUZIONI EQUAZIONE 2øGRADO ENTRAMBE < 0 |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+ ATTENZIONE |   SOLUZIONI EQUAZIONE 2øGRADO ENTRAMBE > 0 |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+ ATTENZIONE |  Non sono stati definiti i dati di progetto|per il mantello
+ ATTENZIONE |  Non sono stati definiti i dati di progetto|per il fondo
+ ATTENZIONE |  Il codice di progetto non è stato definito|correttamente. Assumiamo ASME + TEMA R
+ Hai cambiato dimensioni o tipo di uno o più bocchelli.    |E' tua responsabilità aggiornare la distinta
+ Verificare i dati di progetto.|Nel calcolo dello spessore minimo di un cilindro|è stata considerata una pressione maggiore|dell'ammissibile.
+ Verificare i dati di progetto.|Nel calcolo dello spessore minimo di una sfera|è stata considerata una pressione irragionevolmente alta.

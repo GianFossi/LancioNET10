@@ -1,0 +1,38 @@
+ M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/W             =
+ M{\sub x}/W             =
+ N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(t/W)          =
+ N{\sub x}(t/W)          =
+ M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(1,5M{\sub c}/2C{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}})   =
+ M{\sub x}/(1,5M{\sub c}/2C{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}})   =
+ N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(t/(1,5M{\sub c}/2C{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}))=
+ N{\sub x}(t/(1,5M{\sub c}/2C{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}))=
+ M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/(1,5Ml/2C{\sub x})   =
+ M{\sub x}/(1,5Ml/2C{\sub x})   =
+ N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(t/(1,5Ml/2C{\sub x}))=
+ N{\sub x}(t/(1,5Ml/2C{\sub x}))=
+                  =
+                  =
+                  =
+                  =
+  M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}2}/........    =
+  M{\sub x2}/........    =
+  N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}2}.........    =
+  N{\sub x2}.........    =
+  M{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}2}/........    =
+  M{\sub x2}/........    =
+  N{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}2}.........    =
+  N{\sub x2}.........    =
+\par
+          C{_\sub x}   [in]    =####.##    C{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} [in] =####.##
+          C{_\sub x}   [mm]    =####.##    C{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} [mm] =####.##
+          64r/t(C{_\sub x}/r){_\super 2} =####.##    L{_\sub e} [in] =#####.# (eq. shell l.th per G.2.2.1.1)_\par
+          64r/t(C{_\sub x}/r){_\super 2} =####.##    L{_\sub e} [mm] =#####.# (eq. shell l.th per G.2.2.1.1)_\par
+          2C{_\sub x}/L{_\sub e}       =####.##    2C{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}/2C{_\sub x}      =####.##_\par
+          d/D*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}(D/2Tt) =##.####    d/D = #.##    t/T   =##.#### (G.2.3.5.2)_\par
+        Results obtained from fig G.2(5) to (16):\par
+            & ##.###_\par
+            & ##.### & ##.###_\par
+            & ##.### & ##.### (&)_\par
+        Results obtained from fig 3.5.4(3) & (4):\par
+          C.T{_\sub r}/T  = ##.###_\par
+

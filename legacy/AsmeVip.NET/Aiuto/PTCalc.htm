@@ -1,0 +1,251 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Calcolo di P.T./fasci tubieri</title>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=IT link=blue vlink=blue>
+
+<div class=Section1>
+
+<h1>Calcolo di P.T./fasci tubieri</h1>
+
+<h2>Fasci tubieri a teste fisse</h2>
+
+<p>A seguito della pressione del pulsante '<a
+href="PannelloStruttura.htm#StruttCalcola">Calcola</a>' compare una finestra
+come la seguente.</p>
+
+<p class=MsoNormal><img border=0 width=608 height=529 src=PTDati1.bmp></p>
+
+<p>Dall'osservazione dell'esempio sopra riportato si può desumere che il caso
+in esame comporta due <a href="DatiProgettoPT.htm#NbLoadCond">condizioni di
+carico</a> e che il fascio non è dotato di dilatatore. Inoltre l'intestazione
+della finestra denuncia che sarà eseguito un calcolo in accordo all'App. AA del
+codice ASME.</p>
+
+<p>Per vedere i risultati del calcolo è necessario esaminare le diverse schede
+presenti nella finestra.</p>
+
+<h3><a name=BASE>Le schede Dati n</a></h3>
+
+<p>Un esempio di questa scheda è riportato all'inizio del capitolo; ne esiste
+una per ciascuna <a href="DatiProgettoPT.htm#NbLoadCond">condizione di carico</a>.
+Il tipo e la quantità dei dati visualizzati su queste schede possono variare in
+funzione della configurazione del fascio tubiero, come definita nei <a
+href="PT.htm">dati Piastra Tubiera</a>. La seguente è una lista completa.</p>
+
+<h4><a name=Condizione>Condizione</a></h4>
+
+<p>Come visto nel <a href="DatiProgettoPT.htm#NbLoadCond">capitolo sui dati di
+progetto</a>, il numero di condizioni di carico può essere al massimo di otto.
+Per ciascuna di esse si assegna qui la relativa designazione. Come già detto
+nel soprariportato riferimento, è buona prassi che la prima delle condizioni di
+carico coincida con le condizioni di progetto.</p>
+
+<h4><a name=Eventi>Numero di eventi</a></h4>
+
+<p>Il numero di eventi rappresenta il numero di volte che si prevede si
+presenti la condizione in questione durante la vita dell'apparecchio. Questo
+dato è necessario per effettuare l'analisi a fatica del dilatatore.</p>
+
+<p>Non si deve confondere il numero di eventi con il numero di cicli. I cicli
+possono essere visti come una successione di condizioni che parte da un
+determinato stato dell'apparecchio (per esempio la condizione &quot;scarico a
+temperatura ambiente&quot;) e ritorna allo stato iniziale. L'operazione di <b>codensazione
+degli eventi in macrocicli</b> è eseguita automaticamente dal programma a
+partire dai dati qui forniti.</p>
+
+<h4><a name=PMANT>Pressione lato mantello</a></h4>
+
+<h4><a name=PCASSA>Presssione lato tubi</a></h4>
+
+<h4><a name=PDIFF>Pressione differenziale</a></h4>
+
+<p>Normalmente questo dato va lasciato pari a zero. Vedi <a
+href="DatiProgettoPT.htm#CasoTesteFisse">nota</a>.</p>
+
+<h4><a name=TPIASTRA>Temperatura della piastra tubiera</a></h4>
+
+<h4><a name=TMANT>Temperatura del mantello</a></h4>
+
+<h4><a name=TTUBI>Temperatura dei tubi</a></h4>
+
+<h4><a name=AMMMANT>Tensione ammissibile nel mantello</a></h4>
+
+<h4><a name=AMMTUBI>Tensione ammissibile nei tubi</a></h4>
+
+<h4><a name=AMMPIASTRA>Tensione ammissibile nella piastra tubiera</a></h4>
+
+<h4><a name=AMMDILAT>Tensione ammissibile nel dilatatore</a></h4>
+
+<h4><a name=MSERRAGGIO>Momento al serraggio applicato alla perifieria della
+piastra tubiera</a></h4>
+
+<h4><a name=MESERCIZIO>Momento in esercizio applicato alla periferia della
+piastra tubiera</a></h4>
+
+<h4><a name=ELASMANT>Modulo elastico del mantello</a></h4>
+
+<h4><a name=ELASTUBI>Modulo elastico dei tubi</a></h4>
+
+<h4><a name=ALFAMANT>Coefficiente di dilatazione termica del mantello</a></h4>
+
+<h4><a name=ALFATUBI>Coefficiente di dilatazione termica dei tubi</a></h4>
+
+<h4><a name=ELASPIASTRA>Modulo elastico della piastra</a></h4>
+
+<h4><a name=SNERVTUBI>Limite elastico del materiale dei tubi</a></h4>
+
+<h4><a name=CarGiunto>Carico ammissibile sul giunto</a></h4>
+
+<p>Questo dato viene calcolato secondo i criteri specificati dall'App. A</p>
+
+<h4><a name=ELASDILAT>Limite elastico del materiale del dilatatore</a></h4>
+
+<h4><a name=COMPRNUOV>Ammissibile a compressione del mantello in condizioni
+nuove</a></h4>
+
+<h4><a name=COMPRCORR>Ammissibile a compressione del mantello in condizioni
+corrose</a></h4>
+
+<h4><a name=SDILATNUOV>Costante elastica del dilatatore in condizioni nuove</a></h4>
+
+<h4><a name=SDILATCORR>Costante elastica del dilatatore in condizioni corrose</a></h4>
+
+<h4><a name=TPIASTRB>Temperatura della piastra di coda</a></h4>
+
+<h4><a name=SNERVDILAT>Limite elastico del materiale del dilatatore</a></h4>
+
+<h4><a name=AMMPIASTRB>Tensione ammissibile nella piastra di coda</a></h4>
+
+<h4><a name=ELASPIASTRB>Modulo elastico della piastra di coda</a></h4>
+
+<h4><a name=MSERRAGGIB>Momento al serraggio applicato alla periferia della
+piastra tubiera di coda</a></h4>
+
+<h4><a name=MESERCIZIB>Momento in esercizio applicato alla periferia della
+piastra tubiera di coda</a></h4>
+
+<h4><a name=ELONGAZIONE>Elongazione imposta al dilatatore</a></h4>
+
+<h4><a name=AMMRINFCOLL>Tensione ammissibile nei rinforzi del collare</a></h4>
+
+<h4><a name=AMMANELLI>Tensione ammissibile negli anelli di rinforzo</a></h4>
+
+<h4><a name=MODANELLI>Modulo elastico del materiale degli anelli di rinforzo</a></h4>
+
+<h4><a name=AMMTIRANTI>Tensione ammissibile nei tiranti di chiusura degli
+anelli</a></h4>
+
+<h4><a name=MODTIRANTI>Modulo elastico del materiale dei suddetti tiranti</a></h4>
+
+<p>La maggior parte delle caselle dati è affiancata dal pulsantino <img
+border=0 width=21 height=25 src=BotOpt.bmp>, premendo il quale si lancia una
+procedura di calcolo del dato in questione a partire da altri dati disponibili
+al programma, o in base ai dati della libreria materiali. Il <a name=Aeroplano>pulsante</a>
+<img border=0 width=35 height=32 src=botAeropl.bmp>permette di lanciare
+l'aggiornamento automatico di tutti i dati: esso è quindi equivalente alla
+pressione in sequenza di tutti i pulsantini.</p>
+
+<h3>La scheda Sintesi</h3>
+
+<h3>Le schede Piastra n</h3>
+
+<h3>Le schede Mant. n</h3>
+
+<h3>Le schede Dilat. n</h3>
+
+<h2>Piastre tubiere per tubi ad U senza estensione flangiata</h2>
+
+<p>A seguito della pressione del pulsante '<a
+href="PannelloStruttura.htm#StruttCalcola">Calcola</a>' compare una finestra
+come la seguente, nella quale compaiono già i risultati del calcolo.</p>
+
+<p class=MsoNormal><img border=0 width=608 height=529 src=PTcalcUTEMA.bmp></p>
+
+<h2>Piastre tubiere per tubi ad U con estensione flangiata</h2>
+
+<p>A seguito della pressione del pulsante '<a
+href="PannelloStruttura.htm#StruttCalcola">Calcola</a>' compare una finestra
+come la seguente, nella quale compaiono già i risultati del calcolo.</p>
+
+<p class=MsoNormal><img border=0 width=531 height=229
+src="PTCalc_file/image001.jpg"></p>
+
+<p class=MsoNormal>La condizione dimensionante è determinata dal programma fra
+quelle studiate (operating shell-side, tube-side o differential, seating) e
+applicabili al caso in esame.</p>
+
+<p class=MsoNormal>Vengono quindi riportati i valori minimi richiesti per lo
+spessore a flessione (centro piastra) a taglio (in periferia) e
+dell’estensione.</p>
+
+<p class=MsoNormal>Per l’estensione vengono riportati due valori. Il primo è lo
+spessore assunto nel calcolo del momento iperstatico M* secondo RCB-7.1342. Il
+secondo, detto ASME, tiene conto della formula UG-34 (c)(2)(2) nella quale si
+ponga P=0.</p>
+
+<p class=MsoNormal>Qualora sia stata richiesta l’<a
+href="DatiGenPT.htm#EsecComment">esecuzione commentata</a> verrà prima
+presentata una serie di grafici informativi del <a href="DatiGenPT.htm#RappEst">processo
+di ottimizzazione</a> spessore piastra/spessore estensione.</p>
+
+</div>
+
+</body>
+
+</html>

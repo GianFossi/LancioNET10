@@ -1,0 +1,3053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog Upgraded = "True" >
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "RoutBase1.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "RoutBase1"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "RoutBase1.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\RoutBase1.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\About.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\About.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmProblem.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmProblem.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmProblem"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmProblem.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Label1"
+                ObjectType = "Label"
+                PME = "WordWrap"
+            >Label proprietà Label1.WordWrap non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "chkIntest_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento chkIntest.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento Combo1.Change è stato aggiornato a Combo1.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Combo1_LostFocus" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmProblem"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmProblem.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "StampaCompleta_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento StampaCompleta.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "CaricaCommessa" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Problem.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Problem.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Motore.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Motore.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Quale" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "QualeM" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Command1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Width.</Issue>
+        </Section>
+        <Section Name = "CheckQuale" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+        <Section Name = "CheckQualeM" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Command1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Strin è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Width.</Issue>
+        </Section>
+        <Section Name = "InputDati" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto UltAiuloc.</Issue>
+        </Section>
+        <Section Name = "InputDatiM" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Command1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto UltAiuloc.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto InputForms().Width.</Issue>
+        </Section>
+        <Section Name = "ProgrInizio" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2068"
+                PME = "Screen"
+            >oggetto Screen non aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto O.MousePointer.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Titolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "Avanzamento" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Avanzamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto vNewValue.</Issue>
+        </Section>
+        <Section Name = "Avanztesto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "ScegliFile" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "ProgrAmmazza" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ogg.MousePointer.</Issue>
+        </Section>
+        <Section Name = "Messaggio" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "formMess"
+                ObjectType = "Form"
+                PME = "TextWidth"
+            >Form metodo formMess.TextWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Command1 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control chm poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control id poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Label1 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "formMess"
+                ObjectType = "Form"
+                PME = "TextHeight"
+            >Form metodo formMess.TextHeight non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Picture1 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Motore poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2036"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >La proprietà di Screen Screen.MousePointer non supporta puntatori del mouse personalizzati.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2049"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "vbNormal"
+            >Impossibile determinare a quale costante aggiornare vbNormal.</Issue>
+        </Section>
+        <Section Name = "MostraAiuto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Inizio_Renamed.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "ApriDiapason" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CheckQualeF" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SF.Strin1.</Issue>
+        </Section>
+        <Section Name = "QualeF" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto SF.Strin1.</Issue>
+        </Section>
+        <Section Name = "MatFile" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Generale.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Generale.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CopyMem" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "PtrToInt" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "StartSysInfo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "EnumerateUsers" >
+            <Issue
+                Type = "ToDo"
+                Number = "1059"
+            >Il codice è stato aggiornato per l'utilizzo di System.Text.UnicodeEncoding.Unicode.GetBytes() che potrebbe non avere lo stesso comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1002"
+            >Impossibile assegnare un tipo a un altro utilizzando LSet.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Inizio.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Inizio.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "GetVersionEx" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura OSVERSIONINFO potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "GetPrivateProfileString" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "WritePrivateProfileString" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "WNetEnumResource" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "WNetGetUniversalName" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "CopyMemory" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "Immatricolazione" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.Riempi.</Issue>
+        </Section>
+        <Section Name = "SuperStampa" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lApp.Visible.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lApp.WindowState.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "AppActivate"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lApp.Application.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lApp.Quit.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.App.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sOpen.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sSaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sView.</Issue>
+        </Section>
+        <Section Name = "LanciaExcel" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ConvertiCr" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ConvertiCr.</Issue>
+        </Section>
+        <Section Name = "QuestoComputer" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto QuestoComputer.</Issue>
+        </Section>
+        <Section Name = "QuestoProgramma" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto QuestoProgramma.</Issue>
+        </Section>
+        <Section Name = "CheckDir" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Motore_Renamed.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "LanciaAutoCAD" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato frm non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "OttieniUNC" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Buffer.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice BufferEnum è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice lpNetRes è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1040"
+                PME = "VarPtr"
+            >La funzione VarPtr non è supportata.</Issue>
+        </Section>
+        <Section Name = "PointerToStringA" >
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "VbStrConv"
+                ObjectType = "VbStrConv"
+                PME = "vbUnicode"
+            >La costante vbUnicode non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "PointerToStringW" >
+            <Issue
+                Type = "ToDo"
+                Number = "1059"
+            >Il codice è stato aggiornato per l'utilizzo di System.Text.UnicodeEncoding.Unicode.GetString() che potrebbe non avere lo stesso comportamento.</Issue>
+        </Section>
+        <Section Name = "TrattaNT" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "strExtractFilenameArg" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto strExtractFilenameArg.</Issue>
+        </Section>
+        <Section Name = "FileIni" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Tasks.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Tasks.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CreateLink" >
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbLinkNone"
+            >La costante vbLinkNone non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.LinkMode.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.LinkTopic.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.LinkItem.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.LinkRequest.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbLinkAutomatic"
+            >La costante vbLinkAutomatic non è stata aggiornata.</Issue>
+        </Section>
+        <Section Name = "IdentificaTask" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.ListCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.List.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.ListIndex.</Issue>
+        </Section>
+        <Section Name = "IdentificaTaskTutti" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.ListCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.List.</Issue>
+        </Section>
+        <Section Name = "LoadTaskList" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.Clear.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.Parent.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.AddItem.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1022"
+                PME = "DoEvents"
+            >DoEvents non restituisce alcun valore.</Issue>
+        </Section>
+        <Section Name = "Uccidi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.Parent.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1022"
+                PME = "DoEvents"
+            >DoEvents non restituisce alcun valore.</Issue>
+        </Section>
+        <Section Name = "IdentificaTaskS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.ListCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ctl.List.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmQuale.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmQuale.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Picture2"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà Picture2.AutoRedraw non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmQuale"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmQuale.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "HScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "HScroll1"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar evento HScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Option1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "VScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "VScroll1"
+                ObjectType = "VScrollBar"
+                PME = "Change"
+            >VScrollBar evento VScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Carica" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >PictureBox metodo Picture1.TextWidth non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Pninput" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Strin è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "Costruisci" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture2"
+                ObjectType = "PictureBox"
+                PME = "TextHeight"
+            >PictureBox metodo Picture2.TextHeight non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture2"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >PictureBox metodo Picture2.TextWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture2"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Picture2.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture2"
+                ObjectType = "PictureBox"
+                PME = "Print"
+            >PictureBox metodo Picture2.Print non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmInput.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmInput.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "ComboFisso_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ComboFisso.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "ComboLibero_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ComboLibero.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento ComboLibero.Change è stato aggiornato a ComboLibero.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ComboLibero_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento ComboLibero.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Compile"
+                Number = "1056"
+            >La clausola As Object è stata rimossa dall'istruzione ReDim TextArr(Ninput * Ncol - 1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Text.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >PictureBox metodo Picture1.TextWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Visible.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i - 1).Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(j + i - 1).Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(j + i).Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i + j).ListCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().List.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i - 1).Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(k - 2 * Ninput + i).Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(j + i).Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i).Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i + Ncol - 1 * Ninput).Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i + Ncol - 1 * Ninput).Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Enabled.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Appearance.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().BackColor.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(Ninput - 1).Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmInput"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmInput.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "HScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i).Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(k - 1 * Ninput + i).Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "HScroll1"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar evento HScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "VScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr().Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(i - 1).Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(j + i - 1).Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto TextArr(j + i).Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "VScroll1"
+                ObjectType = "VScrollBar"
+                PME = "Change"
+            >VScrollBar evento VScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Pninput" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Strin è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Risposte è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Archivio è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Help è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmCheck.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmCheck.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Picture1"
+                ObjectType = "PictureBox"
+                PME = "TextWidth"
+            >PictureBox metodo Picture1.TextWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmCheck"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmCheck.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "HScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "HScroll1"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar evento HScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "VScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "VScroll1"
+                ObjectType = "VScrollBar"
+                PME = "Change"
+            >VScrollBar evento VScroll1.Change presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Pninput" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Strin è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Risult è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmProgress.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmProgress.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Command1_MouseMove" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmProgress"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmProgress.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\DatBase.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\DatBase.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "DatBase" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Rigenera" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DatRecbase" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "PutBasCh" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto PutBasCh.</Issue>
+        </Section>
+        <Section Name = "PutReco" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Readreco" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CVI" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "CVS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MKI" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MKS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmLavoriSciolti.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmLavoriSciolti.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmLavoriSciolti"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmLavoriSciolti.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Check1"
+                ObjectType = "CheckBox"
+                PME = "HelpContextID"
+            >CheckBox proprietà Check1.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmLavoriSciolti"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmLavoriSciolti.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmLavoriSciolti"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmLavoriSciolti.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsLinea2.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsLinea2.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "InterRettCerch" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti(1 + 2 * i - 1).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti(2 + 2 * i - 1).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti(1 + 2 * i - 1).X.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti(2 + 2 * i - 1).X.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti.Punti().X.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsPunti.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsPunti.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Trasferisci" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti().y.</Issue>
+        </Section>
+        <Section Name = "SWAP" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti().x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti().y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti(i).x.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punti(i).y.</Issue>
+        </Section>
+        <Section Name = "Copia" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto a.Punti().Copia.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsTrigon.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsTrigon.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "GetPathName" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto UCase16().</Issue>
+        </Section>
+        <Section Name = "UCase16" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto UCase16.</Issue>
+        </Section>
+        <Section Name = "CenterForm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.Left.</Issue>
+        </Section>
+        <Section Name = "FormatS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1003"
+            >ParamArray a è stato cambiato da ByRef a ByVal.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "VarType"
+            >VarType ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto a().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Formato().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SWAP" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto c.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto a.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto b.</Issue>
+        </Section>
+        <Section Name = "DisplayHelp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto f.PictHelp.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto c.Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto c.Container.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto c.Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto f.ScaleHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto f.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DuplicaTabDef" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto vecchioField.DefaultValue.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto nuovoIndex.Fields.Append.</Issue>
+        </Section>
+        <Section Name = "myVal" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "InStr"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto a.</Issue>
+        </Section>
+        <Section Name = "Formato" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Format"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto a.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "VarType"
+            >VarType ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Formato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsVec2.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsVec2.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsVec3.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsVec3.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "DirAlpha" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Solmat è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PTripl è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "DirTrav" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Comm.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Comm.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "RetrieveCom" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Nome.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SalvaCom" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ind().Assieme.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ind().File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ind().pag.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ind().Qta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\job.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\job.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Arch" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Coll().</Issue>
+        </Section>
+        <Section Name = "Rimuovi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Coll(i).</Issue>
+        </Section>
+        <Section Name = "Retrieve" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Salva" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Coll().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Scelto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GeneraNuovo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Routines.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Routines.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "coda" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.Save.</Issue>
+        </Section>
+        <Section Name = "testa" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.VaiInizio.</Issue>
+        </Section>
+        <Section Name = "ApriPri" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lAcadApp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto lAcadApp.Application.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "segmes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+        </Section>
+        <Section Name = "texts" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.AggiungiCasella.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.CurrentX.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.CurrentY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Print.</Issue>
+        </Section>
+        <Section Name = "arc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto polare().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Circle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto arc.</Issue>
+        </Section>
+        <Section Name = "ctrait" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.DrawStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.ForeColor.</Issue>
+        </Section>
+        <Section Name = "legpri" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto polare().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Circle.</Issue>
+        </Section>
+        <Section Name = "polare" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto polare.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto alx.</Issue>
+        </Section>
+        <Section Name = "ql1" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Font.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.TextWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.TextHeight.</Issue>
+        </Section>
+        <Section Name = "segm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+        </Section>
+        <Section Name = "LineaRTF" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Cod.</Issue>
+        </Section>
+        <Section Name = "texte0" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.CurrentX.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.CurrentY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Print.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Abs"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.TextWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Abs"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.TextHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "cerc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Circle.</Issue>
+        </Section>
+        <Section Name = "tratto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto StubWord.AggiungiLinea.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.DrawStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+        </Section>
+        <Section Name = "trattoBF" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.DrawStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+        </Section>
+        <Section Name = "Cerchio" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.DrawStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Circle.</Issue>
+        </Section>
+        <Section Name = "Scala" >
+            <Issue
+                Type = "Runtime"
+                Number = "206"
+            >Istruzione non convertita in Scala. Verificare il codice sorgente.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mode.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.ScaleHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Cls.</Issue>
+        </Section>
+        <Section Name = "quadrato" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.DrawStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Line.</Issue>
+        </Section>
+        <Section Name = "Dovescrivere" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto vNewValue.</Issue>
+        </Section>
+        <Section Name = "ArcDXF" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto polare().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\ValoriComm.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\ValoriComm.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmCommessa.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmCommessa.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmCommessa"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmCommessa.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Comm.Ind(job_Renamed.Comm.indice).File.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command4_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Comm.Ind().File.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmCommessa"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmCommessa.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "AggCombo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Coll(i).</Issue>
+        </Section>
+        <Section Name = "AggItem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Comm.Ind(i).Assieme.</Issue>
+        </Section>
+        <Section Name = "AggComm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Coll(i).</Issue>
+        </Section>
+        <Section Name = "AggiorItem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Comm.Ind().Assieme.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto job_Renamed.Comm.Ind().File.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Rettangolo.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Rettangolo.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "RettGraf" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto x().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto y(4).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto x(1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto y(1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto y(i).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto x(j).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto y(j).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto x(3).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto y(3).</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsPunti3.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsPunti3.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsGrafico.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsGrafico.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "DisCurva" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti().X.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti().y.</Issue>
+        </Section>
+        <Section Name = "SSetGrafico" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.Scale.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "DrawStyle"
+            >Control metodo locPic.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "vbSolid"
+            >La costante vbSolid non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.Line.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "CurrentX"
+            >Control metodo locPic.CurrentX non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.TextWidth.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "CurrentY"
+            >Control metodo locPic.CurrentY non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "Print"
+            >Control metodo locPic.Print non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.TextHeight.</Issue>
+        </Section>
+        <Section Name = "SDisCurva" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "CurrentY"
+            >Control metodo locPic.CurrentY non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.TextHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.CurrentY.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "CurrentX"
+            >Control metodo locPic.CurrentX non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "Print"
+            >Control metodo locPic.Print non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "locPic"
+                ObjectType = "Control"
+                PME = "DrawStyle"
+            >Control metodo locPic.DrawStyle non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.Line.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti().X.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti(i).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti(i + 1).X.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Curva.P.Punti(i + 1).y.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Salva" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "SavePicture"
+            >SavePicture è stato aggiornato a System.Drawing.Image.Save e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "SavePicture"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto locPic.Image.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\Grafico.Frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Grafico.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "frmGrafico"
+                ObjectType = "Form"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmGrafico"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmGrafico.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Pittura"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox proprietà Pittura.AutoRedraw non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Resize" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Pittura"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox metodo Pittura.Cls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+                ObjectType = "Form"
+                PME = "Resize"
+            >L'evento frmGrafico.Resize può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmGrafico"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmGrafico.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsCurva.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsCurva.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmMessaggio.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmMessaggio.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmMessaggio"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmMessaggio.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\clsHTMLHelp.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\clsHTMLHelp.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "HTMLHelpKeyWord" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura tagHH_AKLINK potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "HTMLHelpCallSearch" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura tagHH_FTS_QUERY potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "htmlHelpTextPopup" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura tagHH_POPUP potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "RegCreateKeyEx" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura SECURITY_ATTRIBUTES potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "FindFirstFile" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura WIN32_FIND_DATA potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "WritePrivateProfileString" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "RegSetValueEx" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "RegEnumValue" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "VerInstallFile" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "GetCursorPos" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura POINTAPI potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "MessageBoxIndirect" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura MSGBOXPARAMS potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "HHCheckRegistry" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto HHCheckRegistry.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto varRegValues.</Issue>
+        </Section>
+        <Section Name = "HHDisplayPopup" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hPopup.pt.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hPopup.rcMargins.</Issue>
+        </Section>
+        <Section Name = "HHVerifyMinConfig" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto VerHH.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto VerIE.</Issue>
+        </Section>
+        <Section Name = "GetVersionInfo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FileName.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1040"
+                PME = "VarPtr"
+            >La funzione VarPtr non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ffi.</Issue>
+        </Section>
+        <Section Name = "ValidHHFile" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "MsgBox"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FileToVerify.</Issue>
+        </Section>
+        <Section Name = "ValidPopupFile" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "MsgBox"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FileToVerify.</Issue>
+        </Section>
+        <Section Name = "EnumRegValue" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto EnumRegValue.</Issue>
+        </Section>
+        <Section Name = "GetKeyInfo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto subkeys().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto subkey_values(subkey_num).</Issue>
+        </Section>
+        <Section Name = "RegKeyID" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "HHVersion" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto varHHRegValues.</Issue>
+        </Section>
+        <Section Name = "IEVersion" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto varIERegValues.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\modSubClass.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\modSubClass.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "IEVersion" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto HH_MAX_TABS.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1063"
+            >È possibile che si debba inizializzare le matrici nella struttura kbArray prima di poterle utilizzare.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1063"
+            >È possibile che si debba inizializzare le matrici nella struttura phhWinType prima di poterle utilizzare.</Issue>
+        </Section>
+        <Section Name = "CallWindowProc" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "CopyMemory" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "SetKeyboardState" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >La struttura KeyboardBytes potrebbe richiedere attributi di marshalling da passare come argomento a questa istruzione Declare.</Issue>
+        </Section>
+        <Section Name = "HHSubclassWndProc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hHelp.hwnd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hHelp.frm.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hlpHelpInfo.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbTwips"
+            >La costante vbTwips non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto nmhHeader.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto HHN_NAVCOMPLETE.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto HHN_TRACK.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto HHN_WINDOW_CREATE.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto hHelp.lpPrevWndFunc.</Issue>
+        </Section>
+        <Section Name = "clsHHSubclass" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.hwnd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1048"
+            >Aggiungere un delegato per AddressOf HHSubclassWndProc.</Issue>
+        </Section>
+        <Section Name = "clsHHUnSubClass" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.hwnd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colHTMLHelp(i).frm.</Issue>
+        </Section>
+        <Section Name = "clsOnHelp" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "ctlControl"
+                ObjectType = "Control"
+                PME = "HelpContextID"
+            >Control proprietà ctlControl.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.hwnd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto frm.Controls.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "ctlControl"
+                ObjectType = "Control"
+                PME = "WhatsThisHelpID"
+            >Control proprietà ctlControl.WhatsThisHelpID non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Header.res"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmOpzioni.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmOpzioni.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmOpzioni"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà frmOpzioni.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmOpzioni"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmOpzioni.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "drvList"
+                ObjectType = "DriveListBox"
+                PME = "WhatsThisHelpID"
+            >DriveListBox proprietà drvList.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dirList"
+                ObjectType = "DirListBox"
+                PME = "WhatsThisHelpID"
+            >DirListBox proprietà dirList.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Text2"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà Text2.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Text3"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà Text3.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Text4"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà Text4.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Text5"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà Text5.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Direct"
+                ObjectType = "TextBox"
+                PME = "WhatsThisHelpID"
+            >TextBox proprietà Direct.WhatsThisHelpID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmOpzioni"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmOpzioni.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmOpzioni"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmOpzioni.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\AutoCAD.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\AutoCAD.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "GetEntity" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punto().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto V1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto V2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sset.Select.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sset.Item.</Issue>
+        </Section>
+        <Section Name = "GetObjectByHandle" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto X.Handle.</Issue>
+        </Section>
+        <Section Name = "PreparaXData" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(Conto).</Issue>
+        </Section>
+        <Section Name = "GetXdata" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.GetXdata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GetXdata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto XData2.</Issue>
+        </Section>
+        <Section Name = "SetXdata" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.SetXdata.</Issue>
+        </Section>
+        <Section Name = "SalvaGruppo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Temp.</Issue>
+        </Section>
+        <Section Name = "Carica_Linee" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Setta_Tipo_Linea" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Nomi_Linee().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto obj.EntityType.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto obj.Linetype.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto obj.Color.</Issue>
+        </Section>
+        <Section Name = "Zoom_Oggetto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.GetBoundingBox.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "CDbl"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Pt1().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "CDbl"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Pt2().</Issue>
+        </Section>
+        <Section Name = "Cancella" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Erase.</Issue>
+        </Section>
+        <Section Name = "Specchia" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Mirror.</Issue>
+        </Section>
+        <Section Name = "Muovi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Move.</Issue>
+        </Section>
+        <Section Name = "Get_Punto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Get_Punto.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto cls_Utility.GetPoint.</Issue>
+        </Section>
+        <Section Name = "Quota" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.startPoint.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.endPoint.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Center.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Radius.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.EntityType.</Issue>
+        </Section>
+        <Section Name = "Zoom_Finestra" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto cls_ViewPort.ZoomWindow.</Issue>
+        </Section>
+        <Section Name = "Zoom_Estensione" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto cls_ViewPort.ZoomExtents.</Issue>
+        </Section>
+        <Section Name = "ZoomAll" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto cls_ViewPort.ZoomAll.</Issue>
+        </Section>
+        <Section Name = "Apri_Disegno" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Class_Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(0).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(1).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(2).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(3).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(4).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(5).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(6).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(7).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(8).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Data(9).</Issue>
+        </Section>
+        <Section Name = "copia" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Oggetto.Copy.</Issue>
+        </Section>
+        <Section Name = "GetGruppoDalPunto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Punto().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto V1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto V2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sset.Clear.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sset.Select.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "UCase"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ent.Layer.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto XD.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GetXdata().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Split"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto XD().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "InStr"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Ent1.Handle.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmMessage.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmMessage.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmMessage"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmMessage.ClipControls non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\frmAbout.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\frmAbout.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmAbout"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmAbout.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmAbout"
+                ObjectType = "Form"
+                PME = "ScaleHeight"
+            >Form proprietà frmAbout.ScaleHeight non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2038"
+                ObjectName = "frmAbout"
+                ObjectType = "Form"
+                PME = "ScaleMode"
+            >La proprietà del form frmAbout.ScaleMode non è supportata.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmAbout"
+                ObjectType = "Form"
+                PME = "ScaleWidth"
+            >Form proprietà frmAbout.ScaleWidth non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picIcon"
+                ObjectType = "PictureBox"
+                PME = "ClipControls"
+            >PictureBox proprietà picIcon.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picIcon"
+                ObjectType = "PictureBox"
+                PME = "ScaleHeight"
+            >PictureBox proprietà picIcon.ScaleHeight non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picIcon"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox proprietà picIcon.ScaleMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picIcon"
+                ObjectType = "PictureBox"
+                PME = "ScaleWidth"
+            >PictureBox proprietà picIcon.ScaleWidth non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmAbout"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmAbout.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\RoutBase1\StringheF.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\RoutBase.NET\StringheF.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <Issue
+        Type = "Global Warning"
+        Number = "1043"
+    >L'istanza della classe è stata cambiata in public.</Issue>
+</UpgradeLog>
+

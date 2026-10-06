@@ -1,0 +1,6 @@
+\pard \s18\qj\widctlpar\tx567\tqr\tx2693\tqr\tx5103\tx5954 \f2\fs18\lang1040 \par {\b AA-1.4 Design considerations}\par\par 
+{\i AA-1.4(a)(1) Loading case 1} Tube side pressure acting only\par
+{\i AA-1.4(a)(2) Loading case 2} Shell side pressure acting only\par
+{\i AA-1.4(a)(3) Loading case 3} Tube side and shell side pressures acting simultaneously\par
+P{_\sub s}_\tab =_\tab###.#### [MPa]_\tab #######.#### [psi]_\tab Calculation pressure shell-side_\par
+P{_\sub t}_\tab =_\tab###.#### [MPa]_\tab #######.#### [psi]_\tab Calculation pressure tube-side_\par

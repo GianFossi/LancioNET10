@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Saddles.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Saddles"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Saddles.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Saddles.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "0"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Saddles.Frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\frmSaddles.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Combo2_0"
+                ObjectType = "ComboBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Combo1_0"
+                ObjectType = "ComboBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "OLE1"
+                ObjectType = "OLE"
+            >Il controllo Ole OLE1 non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "Data1"
+                ObjectType = "Data"
+            >Il controllo Data Data1 non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmSaddles"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form proprietà frmSaddles.AutoRedraw non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmSaddles"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmSaddles.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmSaddles"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmSaddles.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2065"
+                ObjectName = "OLE1"
+                ObjectType = "Ole"
+                PME = "MousePointer"
+            >Ole proprietà OLE1.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2068"
+            >oggetto Ole non aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2068"
+            >oggetto Data non aggiornato.</Issue>
+        </Section>
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Check2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check2.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbCodice_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbCodice.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdAmmiss_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MatShell.Caract().US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MatShell.Caract().Yield.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MatShell.Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "cmdStampa_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ExcelDoc.Application.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.App.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Saddles.</Issue>
+        </Section>
+        <Section Name = "Combo2_Change" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto mioContr().ListIndex.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+            >ComboBox evento Combo2.Change è stato aggiornato a Combo2.TextChanged che presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Combo2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo2.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmSaddles"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmSaddles.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmSaddles"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmSaddles.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Pagina_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "OLE1"
+                ObjectType = "Ole"
+                PME = "CreateLink"
+            >Ole metodo OLE1.CreateLink non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "OLE1"
+                ObjectType = "Ole"
+                PME = "DoVerb"
+            >Ole metodo OLE1.DoVerb non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Scarica" >
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato mioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Pict.Cls.</Issue>
+        </Section>
+        <Section Name = "CalcolaSella" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice FixSli è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "ExcelPoke" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ExcelDoc.Application.</Issue>
+        </Section>
+        <Section Name = "ExcelPeek" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ExcelDoc.Application.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto myRange.Range()._Default.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Val"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto myRange.Cells().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Saddl01.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\Saddl01.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice Sforzi_Renamed debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice kSt è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice iCondMax è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice f è stato cambiato da 1,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Sforzi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice LoadCase è stato cambiato da 1,1,1 a 0,0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xQuota è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice yQuota è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice E è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice X è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice sic è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice sig è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice si è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice sipc è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice sipb è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice sh è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Coef è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice NCond è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice iCond è stato cambiato da 0,1 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Compos è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PesoS è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice MomS è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice AmmSadd è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice AmmHead è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice AmmHeadTens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TipoChius è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SpessHead è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice GeomSadd è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice RHead è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K9 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice h è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice HSD è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice FSD è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pz è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K3 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K4 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SQ è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SQE è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TANGS è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TANGH è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ZETS è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice b2 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K5 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K6 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K6S è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice TT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice F5 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice F6 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice F6S è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice K1 è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice k2 è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice M4 è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice F3 è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice F4 è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ROUND è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice React è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Momen è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Taglio è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SALH è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "ChiudiExcel" >
+            <Issue
+                Type = "Compile"
+                Number = "2069"
+                ObjectName = "Clipboard"
+                ObjectType = "Clipboard"
+                PME = "Clear"
+            >Clipboard metodo Clipboard.Clear non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ExcelDoc.Parent.</Issue>
+        </Section>
+        <Section Name = "ControllaDati2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice FixSli è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Forze è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ControllaDati3" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice FixSli è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Forze è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "LeggiData" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "LegTabella" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "QuartaPagina" >
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+                ObjectName = "Dove"
+                ObjectType = "Control"
+                PME = "Parent"
+            >Control proprietà Dove.Parent è stato aggiornato a Dove.FindForm che presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato mioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text1.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Check1.</Issue>
+        </Section>
+        <Section Name = "SaveData" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SecondaPagina" >
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+                ObjectName = "Dove"
+                ObjectType = "Control"
+                PME = "Parent"
+            >Control proprietà Dove.Parent è stato aggiornato a Dove.FindForm che presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato mioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Combo2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.cmdMat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.cmdAmmiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.cmbCodice.</Issue>
+        </Section>
+        <Section Name = "TensAmm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto i.</Issue>
+        </Section>
+        <Section Name = "StampaSaddles" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SellaPagina" >
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+                ObjectName = "Dove"
+                ObjectType = "Control"
+                PME = "Parent"
+            >Control proprietà Dove.Parent è stato aggiornato a Dove.FindForm che presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato mioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Combo2.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text1.</Issue>
+        </Section>
+        <Section Name = "FondaPagina" >
+            <Issue
+                Type = "Runtime"
+                Number = "2074"
+                ObjectName = "Dove"
+                ObjectType = "Control"
+                PME = "Parent"
+            >Control proprietà Dove.Parent è stato aggiornato a Dove.FindForm che presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2029"
+                PME = "Unload"
+            >Il codice scaricato mioContr() non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label1.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Combo2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Label2.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Load"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Dove.Parent.Text1.</Issue>
+        </Section>
+        <Section Name = "AggRedim" >
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice AreaLav debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice SaddlesLoad debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xSupport è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice xSupport debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xSupportData è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xSupportResult è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xFondaItem è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice xFondaItem debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice xFondaData è stato cambiato da 1,0 a 0,0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1042"
+            >È possibile che singoli elementi della matrice xFondaData debbano essere inizializzati.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice FinalComment è stato cambiato da 0,1 a 0,0.</Issue>
+        </Section>
+        <Section Name = "StSaddlesCalc" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "FactSupRing" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sigma.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto sigma1.</Issue>
+        </Section>
+        <Section Name = "Calc352" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "MostraAiuto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Xfonda.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\xFonda.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CalcolaFonda" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice DoveEccede è stato cambiato da 1,0,0 a 0,0,0.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Frmsce~1.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\Frmsce~1.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmScelta"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmScelta.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmScelta"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmScelta.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "List1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto i.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento List1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\Monitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\Monitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\datides4.Bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\DATIDES4.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Pdding è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice ValorT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWM è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice SteamWT è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortVap è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice PortLiq è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tipi.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\Tipi.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Variab è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dimens è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice prezzo è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Dati è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Vertici è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Centri è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Raggi è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Corners è stato cambiato da 1 a 0.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice R è stato cambiato da 1 a 0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Saddles\HEADER.RES"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Saddles.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+</UpgradeLog>
+

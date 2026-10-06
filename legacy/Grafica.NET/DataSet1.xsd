@@ -1,0 +1,200 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Catalogo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codDiametro" type="xs:short" minOccurs="0" />
+							<xs:element name="codRating" type="xs:short" minOccurs="0" />
+							<xs:element name="codTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="codTirante" type="xs:short" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="indDiametro" type="xs:short" minOccurs="0" />
+							<xs:element name="indRating" type="xs:short" minOccurs="0" />
+							<xs:element name="indTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="indTirante" type="xs:int" minOccurs="0" />
+							<xs:element name="indValori" type="xs:int" minOccurs="0" />
+							<xs:element name="Tabella" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Diametri">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Codice" type="xs:short" minOccurs="0" />
+							<xs:element name="DiamNom" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Facings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Codice" type="xs:short" minOccurs="0" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FacValori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codDiam" type="xs:short" minOccurs="0" />
+							<xs:element name="codRating" type="xs:short" minOccurs="0" />
+							<xs:element name="codTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="H" type="xs:float" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="indDiam" type="xs:short" minOccurs="0" />
+							<xs:element name="indFacing" type="xs:short" minOccurs="0" />
+							<xs:element name="indRating" type="xs:short" minOccurs="0" />
+							<xs:element name="indTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="Re" type="xs:float" minOccurs="0" />
+							<xs:element name="Ri" type="xs:float" minOccurs="0" />
+							<xs:element name="Tabella" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Query1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Altezza" type="xs:float" minOccurs="0" />
+							<xs:element name="BC" type="xs:float" minOccurs="0" />
+							<xs:element name="Catalogo.ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="codDiametro" type="xs:short" minOccurs="0" />
+							<xs:element name="codRating" type="xs:short" minOccurs="0" />
+							<xs:element name="codTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="codTirante" type="xs:short" minOccurs="0" />
+							<xs:element name="DGradInt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamExt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamFori" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamInt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamTr" type="xs:float" minOccurs="0" />
+							<xs:element name="indDiametro" type="xs:short" minOccurs="0" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+							<xs:element name="indRating" type="xs:short" minOccurs="0" />
+							<xs:element name="indTipo" type="xs:short" minOccurs="0" />
+							<xs:element name="indTirante" type="xs:int" minOccurs="0" />
+							<xs:element name="indValori" type="xs:int" minOccurs="0" />
+							<xs:element name="Nfori" type="xs:float" minOccurs="0" />
+							<xs:element name="Pesolor" type="xs:float" minOccurs="0" />
+							<xs:element name="Pesonet" type="xs:float" minOccurs="0" />
+							<xs:element name="PesoTir" type="xs:float" minOccurs="0" />
+							<xs:element name="Puntatore" type="xs:int" minOccurs="0" />
+							<xs:element name="Raggio" type="xs:float" minOccurs="0" />
+							<xs:element name="Rgradint" type="xs:float" minOccurs="0" />
+							<xs:element name="Spess" type="xs:float" minOccurs="0" />
+							<xs:element name="SpessGrad" type="xs:float" minOccurs="0" />
+							<xs:element name="SpessTr" type="xs:float" minOccurs="0" />
+							<xs:element name="Tabella" type="xs:short" minOccurs="0" />
+							<xs:element name="Tiranti" type="xs:string" minOccurs="0" />
+							<xs:element name="V1" type="xs:float" minOccurs="0" />
+							<xs:element name="V14" type="xs:float" minOccurs="0" />
+							<xs:element name="V19" type="xs:float" minOccurs="0" />
+							<xs:element name="V20" type="xs:float" minOccurs="0" />
+							<xs:element name="Valori.ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="X" type="xs:float" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Ratings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+							<xs:element name="Rating" type="xs:string" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Tabelle">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Codice" type="xs:short" minOccurs="0" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Tipi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Codice" type="xs:short" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Valori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Altezza" type="xs:float" minOccurs="0" />
+							<xs:element name="BC" type="xs:float" minOccurs="0" />
+							<xs:element name="DGradInt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamExt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamFori" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamInt" type="xs:float" minOccurs="0" />
+							<xs:element name="DiamTr" type="xs:float" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Indice" type="xs:short" minOccurs="0" />
+							<xs:element name="Nfori" type="xs:float" minOccurs="0" />
+							<xs:element name="Pesolor" type="xs:float" minOccurs="0" />
+							<xs:element name="Pesonet" type="xs:float" minOccurs="0" />
+							<xs:element name="PesoTir" type="xs:float" minOccurs="0" />
+							<xs:element name="Puntatore" type="xs:int" minOccurs="0" />
+							<xs:element name="Raggio" type="xs:float" minOccurs="0" />
+							<xs:element name="Rgradint" type="xs:float" minOccurs="0" />
+							<xs:element name="Spess" type="xs:float" minOccurs="0" />
+							<xs:element name="SpessGrad" type="xs:float" minOccurs="0" />
+							<xs:element name="SpessTr" type="xs:float" minOccurs="0" />
+							<xs:element name="Tiranti" type="xs:string" minOccurs="0" />
+							<xs:element name="V1" type="xs:float" minOccurs="0" />
+							<xs:element name="V14" type="xs:float" minOccurs="0" />
+							<xs:element name="V19" type="xs:float" minOccurs="0" />
+							<xs:element name="V20" type="xs:float" minOccurs="0" />
+							<xs:element name="X" type="xs:float" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Catalogo" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Diametri_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Diametri" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Facings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Facings" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="FacValori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:FacValori" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Ratings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Ratings" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Tabelle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Tabelle" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Tipi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Tipi" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Valori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Valori" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

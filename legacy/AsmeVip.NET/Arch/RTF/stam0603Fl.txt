@@ -1,0 +1,22 @@
+\par
+\   \         \                         \_\par               ==========================_\par        Program: \         \ Vers. \    \_\par
+              ==========================\par
+      \                                                              \_\par
+      ================================================================\par
+         Part UHX - Rules for Shell & Tube Heat Exchangers\par
+            UHX-14 Design Rules for Floating TubeSheets\par
+      ================================================================\par
+\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+      Fig.UHX-14.2(a) TubeSheet integral with shell and channel\par
+      Fig.UHX-14.2(b) TubeSheet integral with shell, gasketed with channel,\par                   with Tubesheet extended as a flange\par 
+      Fig.UHX-14.2(c) TubeSheet integral with shell, gasketed with channel,\par                   with Tubesheet not extended as a flange\par 
+      Fig.UHX-14.2(d) TubeSheet gasketed with shell and channel\par
+      Fig.UHX-14.2(e) TubeSheet gasketed with shell, integral with channel,\par                   with Tubesheet extended as a flange\par 
+      Fig.UHX-14.2(f) TubeSheet gasketed with shell, integral with channel,\par                   with Tubesheet not extended as a flange\par 
+      Fig.UHX-14.3(a) Tubesheet Integral\par
+      Fig.UHX-14.3(b) Tubesheet Gasketed, extended as a flange\par
+      Fig.UHX-14.3(c) Tubesheet Gasketed, not extended as a flange\par
+      Fig.UHX-14.3(d) Tubesheet internally sealed\par
+			     {\b Stationary Tubesheet}\par 
+			     {\b Floating Tubesheet}\par 
+      Loading condition nb. 1\par 

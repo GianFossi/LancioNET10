@@ -1,0 +1,40 @@
+\pard\plain \s18\qj \li0\ri0\widctlpar\tx567\tqr\tx2693\tqr\tx5103\tx5954\faauto\rin0\lin0\itap0 \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\b\f2\fs18 
+_\par &.5.2 Step 2}{_\f2_\fs18 F00 
+\par \par }
+{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub s}{\f2\fs18 \tab =\tab 
+###.#### [mm}{_\super -1}{ ]_\tab ###.#### [inF02
+}{\f2\fs18\super -1}{\f2\fs18 ]\tab zero for configurations d, e, f, A,
+\par \tab \tab \tab \tab B, C, and D
+\par }{\field{\*\fldinst SYMBOL 98 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub c}{\f2\fs18 \tab =\tab 
+###.#### [mm}{_\super -1}{ ]_\tab ###.#### [inF03
+}{\f2\fs18\super -1}{\f2\fs18 ]\tab zero for configurations b, c, d, B,
+\par \tab \tab \tab \tab C, and D
+\par }
+k{\f2\fs18\sub s}{\f2\fs18 \tab =\tab 
+###.#### [N]_\tab ###.#### [lbF02
+]\tab zero for configurations d, e, f, A,
+\par \tab \tab \tab \tab B, C, and D
+\par }k{\f2\fs18\sub c}{\f2\fs18 \tab =\tab 
+###.#### [N]_\tab ###.#### [lbF03
+]\tab zero for configurations b, c, d, B,
+\par \tab \tab \tab \tab C, and D
+\par }
+{\field{\*\fldinst SYMBOL 108 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub s}{\f2\fs18 \tab =\tab 
+###.#### [MPa]_\tab ###.#### [psiF02
+]\tab zero for configurations d, e, f, A,
+\par \tab \tab \tab \tab B, C, and D
+\par }{\field{\*\fldinst SYMBOL 108 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub c}{\f2\fs18 \tab =\tab 
+###.#### [MPa]_\tab ###.#### [psiF03
+]\tab zero for configurations b, c, d, B,
+\par \tab \tab \tab \tab C, and D
+\par }
+{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub s}{\f2\fs18 \tab =\tab 
+###.#### [mm/MPa]_\tab ###.#### [in/psiF02
+]\tab zero for configurations d, e, f, A,
+\par \tab \tab \tab \tab B, C, and D
+\par }{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\f2\fs18\sub c}{\f2\fs18 \tab =\tab 
+###.#### [mm/MPa]_\tab ###.#### [in/psiF03
+]\tab zero for configurations b, c, d, B,
+\par \tab \tab \tab \tab C, and D
+\par }
+{\b\f2\fs18 \par }

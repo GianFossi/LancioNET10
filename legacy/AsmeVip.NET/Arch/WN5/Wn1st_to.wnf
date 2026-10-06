@@ -1,0 +1,29 @@
+1      º\par
+1      º\par         CALCULATION OF BOLT LOAD REQUIREMENTS IN HYDRAULIC CONDITION
+1      º\par         ============================================================
+1      º\par                        ACCORDING TO FBM PRACTICE
+1      º\par                        =========================
+1      º\par
+A001   º_\par _\pard _\s18_\qj_\widctlpar_\tx2268_\tx4820_\tx5812 P     =#########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Design pressure
+A002   º_\par T     =#########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Design temperature
+1      º\par
+A105   º_\par P(HT) =#########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Test   pressure
+1      º\par T(HT) =       20.00\tab [{\super 0}C]          70.0000\tab [{\super 0}F]\tab Test   temperature
+1      º\par
+F012   º_\par d     =       \    \_\tab [mm]           \    \_\tab [in]_\tab Bolts nominal diameter
+E013   º_\par N{_\super 0}    =#########   _\tab [--]_\tab _\tab Number of bolts
+A014   º_\par d{_\sub n}    =#########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread diameter
+A024   º_\par S{_\sub ba}   =#########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts  at room
+1      º\par
+A113   º_\par W{_\sub i}  =     #########_\tab N        ########.#_\tab lb_\tab Required total bolt load
+1      º\par
+1      º\par Hydraulic tensioner load each bolt :
+A114   º_\par    = #########.#_\tab N  #########.# lb_\tab _\tab 1.3W{\sub i}/N{_\super 0}
+A116   º_\par    = #######.###_\tab MPa#########.# psi_\tab _\tab (Bolt stress with tensioner
+1      º\par \tab \tab \tab under pressure)
+1      º\par Bolt Torque moment each bolt :
+A118   º_\par    = ########.##_\tab Kg.m########## lb.in_\tab _\tab 0.17W{\sub i}d{_\sub n}/N{_\super 0}
+1      º\par
+1      º\par    -Flange calculation pag.2a of 2\par 
+0      º
+

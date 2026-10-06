@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDH_1">
+    <value>#define PIP_TITLE           49</value>
+  </data>
+  <data name="IDH_2">
+    <value>#define PIP_HELP            50</value>
+  </data>
+  <data name="IDH_3">
+    <value>#define PIP_NINPUT          51</value>
+  </data>
+  <data name="IDH_4">
+    <value>#define PIP_BASE            52</value>
+  </data>
+  <data name="IDH_5">
+    <value>#define PIP_BASE_1          52</value>
+  </data>
+  <data name="IDH_6">
+    <value>#define PIP_BASE_2          53</value>
+  </data>
+  <data name="IDH_7">
+    <value>#define LIC_MSG1            60</value>
+  </data>
+  <data name="IDH_8">
+    <value>#define LIC_MSG2            61</value>
+  </data>
+  <data name="IDH_9">
+    <value>#define MSG_AMMISSCALDO    500</value>
+  </data>
+  <data name="IDH_10">
+    <value>#define MSG_AMMISSFREDDO   510</value>
+  </data>
+  <data name="IDH_11">
+    <value>#define MSG_YIELDCALDO     520</value>
+  </data>
+  <data name="IDH_12">
+    <value>#define MSG_YIELDFREDDO    530</value>
+  </data>
+  <data name="IDH_13">
+    <value>#define MSG_YOUNGCALDO     540</value>
+  </data>
+  <data name="IDH_14">
+    <value>#define MSG_YOUNGFREDDO    550</value>
+  </data>
+  <data name="IDH_15">
+    <value>#define MSG_ALFACALDO      560</value>
+  </data>
+  <data name="IDH_16">
+    <value>#define MSG_ALFAFREDDO     570</value>
+  </data>
+  <data name="IDH_17">
+    <value>#define IDH_SIST_RISOL           1000</value>
+  </data>
+  <data name="IDH_18">
+    <value>#define IDH_SIST_LINGUA          1010</value>
+  </data>
+  <data name="IDH_19">
+    <value>#define IDH_SIST_SEPDEC          1020</value>
+  </data>
+  <data name="IDH_20">
+    <value>#define IDH_SIST_STAMP           1030</value>
+  </data>
+  <data name="IDH_21">
+    <value>#define IDH_WORD_ASSENTE         1040</value>
+  </data>
+  <data name="IDH_22">
+    <value>#define IDH_WORD_VECCHIO         1041</value>
+  </data>
+  <data name="IDH_23">
+    <value>#define IDH_AUTOCAD_ASSENTE      1050</value>
+  </data>
+  <data name="IDH_24">
+    <value>#define IDH_AUTOCAD_VECCHIO      1051</value>
+  </data>
+  <data name="IDH_25">
+    <value>#define IDH_INIZIO_FINOPZIONI    1999</value>
+  </data>
+  <data name="IDH_26">
+    <value>#define IDH_INIZIO_CAMBIORETE    2000</value>
+  </data>
+  <data name="IDH_27">
+    <value>#define IDH_INIZIO_RISPOSTASI    2001</value>
+  </data>
+  <data name="IDH_28">
+    <value>#define IDH_INIZIO_LAVSCIOLTI    2002</value>
+  </data>
+  <data name="IDH_29">
+    <value>#define IDH_INIZIO_LAVCOMMESS    2003</value>
+  </data>
+  <data name="IDH_30">
+    <value>#define IDH_INIZIO_ESEGUIBILI    2004</value>
+  </data>
+  <data name="IDH_31">
+    <value>#define IDH_INIZIO_ARCHIVI       2005</value>
+  </data>
+  <data name="IDH_32">
+    <value>#define IDH_INIZIO_BRT           2006</value>
+  </data>
+  <data name="IDH_33">
+    <value>#define IDH_INIZIO_CAMBIORETE1   2007</value>
+  </data>
+  <data name="IDH_34">
+    <value>#define IDH_OPZIONE_LAVSCIOLTI   2010</value>
+  </data>
+  <data name="IDH_35">
+    <value>#define IDH_FINLANCIO_BOTTAFC     2500</value>
+  </data>
+  <data name="IDH_36">
+    <value>#define IDH_FINLANCIO_BOTTST      2501</value>
+  </data>
+  <data name="IDH_37">
+    <value>#define IDH_FINLANCIO_BOTTWHB     2502</value>
+  </data>
+  <data name="IDH_38">
+    <value>#define IDH_FINLANCIO_BOTTWPS     2503</value>
+  </data>
+  <data name="IDH_39">
+    <value>#define IDH_FINLANCIO_BOTTPRECONS 2504</value>
+  </data>
+  <data name="IDH_40">
+    <value>#define IDH_FINLANCIO_BOTTUTIL    2505</value>
+  </data>
+  <data name="IDH_41">
+    <value>#define IDH_FINLANCIO_BOTTGEST    2506</value>
+  </data>
+  <data name="IDH_42">
+    <value>#define IDH_LB_SCHEDA_DENOM       2550</value>
+  </data>
+  <data name="IDH_43">
+    <value>#define IDH_LB_SCHEDA_CLASSIF     2551</value>
+  </data>
+  <data name="IDH_44">
+    <value>#define IDH_LB_SCHEDA_CARACT      2552</value>
+  </data>
+  <data name="IDH_45">
+    <value>#define IDH_LB_SCHEDA_GRUPPO      2553</value>
+  </data>
+  <data name="IDH_46">
+    <value>#define IDH_LB_SCHEDA_PREZZI      2554</value>
+  </data>
+  <data name="IDH_47">
+    <value>#define IDH_LB_SCHEDA_DATICODICE  2555</value>
+  </data>
+  <data name="IDH_48">
+    <value>#define IDH_LB_SCHEDA_FONTE       2556</value>
+  </data>
+  <data name="IDH_49">
+    <value>#define IDH_LB_SCHEDA_SNERV       2557</value>
+  </data>
+  <data name="IDH_50">
+    <value>#define IDH_LB_SCHEDA_CHART       2558</value>
+  </data>
+  <data name="IDH_51">
+    <value>#define IDH_LB_SCHEDA_PNUMBER     2559</value>
+  </data>
+  <data name="IDH_52">
+    <value>#define IDH_LB_SCHEDA_MWDTRULES   2560</value>
+  </data>
+  <data name="IDH_53">
+    <value>#define IDH_LB_SCHEDA_MWDTRULES1  2561</value>
+  </data>
+  <data name="IDH_54">
+    <value>#define IDH_LB_SCHEDA_MWDTRULES2  2562</value>
+  </data>
+  <data name="IDH_55">
+    <value>#define IDH_LB_SCHEDA_MWDTRULES3  2563</value>
+  </data>
+  <data name="IDH_56">
+    <value>#define IDH_LB_SCHEDA_TABELL1     2564</value>
+  </data>
+  <data name="IDH_57">
+    <value>#define IDH_LB_SCHEDA_TABELL2     2565</value>
+  </data>
+  <data name="IDH_58">
+    <value>#define IDH_CAP_GENERALITA       8000</value>
+  </data>
+  <data name="IDH_59">
+    <value>#define IDH_PAR_G_AUTENT         8900</value>
+  </data>
+  <data name="IDH_60">
+    <value>#define IDH_CAP_BANCHEDATI       9000</value>
+  </data>
+  <data name="IDH_61">
+    <value>#define IDH_CAP_BD_MAT           9010</value>
+  </data>
+  <data name="IDH_62">
+    <value>#define IDH_CAP_BD_MAT_CLASSE    9020</value>
+  </data>
+  <data name="IDH_63">
+    <value>#define IDH_CAP_BD_MAT_SCELTA    9030</value>
+  </data>
+  <data name="IDH_64">
+    <value>#define IDH_CAP_BD_MAT_SCHEDA    9040</value>
+  </data>
+  <data name="IDH_65">
+    <value>#define IDH_CAP_BD_MAT_DATI      9050</value>
+  </data>
+  <data name="IDH_66">
+    <value>#define IDH_CAP_BD_MAT_DATIFAT   9051</value>
+  </data>
+  <data name="IDH_67">
+    <value>#define IDH_CAP_BD_MAT_DATIRIP   9052</value>
+  </data>
+  <data name="IDH_68">
+    <value>#define IDH_CAP_BD_MAT_DATIDB    9053</value>
+  </data>
+  <data name="IDH_69">
+    <value>#define IDH_ERR_LANCIOINI       10000</value>
+  </data>
+  <data name="IDH_70">
+    <value>#define IDH_ERR_CHECKDIR        10001</value>
+  </data>
+  <data name="IDH_71">
+    <value>#define IDH_ERR_AUTOEXECBAT     10006</value>
+  </data>
+  <data name="IDH_72">
+    <value>#define IDH_ERR_AUTOEXECNT      10007</value>
+  </data>
+  <data name="IDH_73">
+    <value>#define IDH_ERR_LIBMAT_NOLISTINO 10020</value>
+  </data>
+  <data name="IDH_74">
+    <value>#define IDH_ERR_LIBMAT_NOINDMAT  10021</value>
+  </data>
+  <data name="IDH_75">
+    <value>#define IDH_ERR_LIBMAT_EMODALT1  10022</value>
+  </data>
+  <data name="IDH_76">
+    <value>#define IDH_ERR_LIBMAT_EMODALT2  10023</value>
+  </data>
+  <data name="IDH_77">
+    <value>#define IDH_ERR_LIBMAT_ALFATER1  10024</value>
+  </data>
+  <data name="IDH_78">
+    <value>#define IDH_ERR_LIBMAT_ALFATER2  10025</value>
+  </data>
+  <data name="IDH_79">
+    <value>#define IDH_ERR_LIBMAT_LEGRAT1  10026</value>
+  </data>
+  <data name="IDH_80">
+    <value>#define IDH_ERR_LIBMAT_LEGRAT2  10027</value>
+  </data>
+  <data name="IDH_81">
+    <value>#define IDH_ERR_LIBMAT_CONDUC1  10028</value>
+  </data>
+  <data name="IDH_82">
+    <value>#define IDH_ERR_LIBMAT_CONDUC2  10029</value>
+  </data>
+  <data name="IDH_83">
+    <value>#define IDH_ERR_LIBMAT_NODIV1   10030</value>
+  </data>
+  <data name="IDH_84">
+    <value>#define IDH_ERR_LIBMAT_NODIV1a  10031</value>
+  </data>
+  <data name="IDH_85">
+    <value>#define IDH_ERR_LIBMAT_NOVALOR1 10032</value>
+  </data>
+  <data name="IDH_86">
+    <value>#define IDH_ERR_LIBMAT_NOVALOR2 10033</value>
+  </data>
+  <data name="IDH_87">
+    <value>#define IDH_ERR_LIBMAT_IMPREV1  10034</value>
+  </data>
+  <data name="IDH_88">
+    <value>#define IDH_ERR_LIBMAT_IMPREV2  10035</value>
+  </data>
+  <data name="IDH_89">
+    <value>#define IDH_ERR_LIBMAT_NOFILEAGG  10036</value>
+  </data>
+  <data name="IDH_90">
+    <value>#define IDH_UPASME_NODBASME       10050</value>
+  </data>
+  <data name="IDH_91">
+    <value>#define IDH_UPASME_NODBMATE       10051</value>
+  </data>
+  <data name="IDH_92">
+    <value>#define IDH_INTERNO_LISTINO1    11001</value>
+  </data>
+  <data name="IDH_93">
+    <value>#define IDH_INTERNO_LISTINO2    11002</value>
+  </data>
+  <data name="IDH_94">
+    <value>#define IDH_INTERNO_LISTINO3    11003</value>
+  </data>
+  <data name="IDH_95">
+    <value>#define IDH_INTERNO_LISTINO4    11004</value>
+  </data>
+  <data name="IDH_96">
+    <value>#define IDH_INTERNO_LISTINO5    11005</value>
+  </data>
+  <data name="IDH_97">
+    <value>#define IDH_INTERNO_LISTINO6    11006</value>
+  </data>
+  <data name="IDH_98">
+    <value>#define IDH_INTERNO_LISTINO7    11007</value>
+  </data>
+  <data name="IDH_99">
+    <value>#define IDH_INTERNO_LISTINO8    11008</value>
+  </data>
+  <data name="IDH_100">
+    <value>#define IDH_INTERNO_LISTINO9    11009</value>
+  </data>
+  <data name="IDH_101">
+    <value>#define IDH_INTERNO_TIT         11020</value>
+  </data>
+  <data name="IDH_102">
+    <value>#define IDH_LISTINO_HELP        11030</value>
+  </data>
+  <data name="IDH_103">
+    <value>#define IDH_LISTINO_MSG         11040</value>
+  </data>
+  <data name="IDH_104">
+    <value>#define IDH_LISTINO_TIT         11050</value>
+  </data>
+  <data name="IDH_105">
+    <value>#define IDH_BASE_HTRI06         12000</value>
+  </data>
+</root>

@@ -1,0 +1,291 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Grande Fucinato</title>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=IT link=blue vlink=blue>
+
+<div class=Section1>
+
+<h1>Grande Fucinato</h1>
+
+<p>Per 'Grande Fucinato' si intende uno dei seguenti:</p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Flangia </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Coperchio piano </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Coperchio con
+grande apertura secondo App.14 </p>
+
+<p>La maggior parte di queste membrature sono normalmente accoppiate fra di
+loro, o con l'estensione flangiata di una piastra tubiera, tramite un giunto
+bullonato.</p>
+
+<p class=MsoNormal>I bulloni e la guarnizione sono gestiti come attributi di
+ciascuna membratura, tuttavia il programma gestisce anche gli accoppiamenti tra
+membrature, in modo da riconoscere l'unicità dei bulloni e, eventualmente,
+della guarnizione di un giunto.</p>
+
+<p>Nel caso del presente tipo di membratura la maggior parte dei dati
+geometrici di dettaglio è fornita tramite le <a href="GrFucCalc.htm">schede</a>
+che appaiono dopo aver attivato la <a href="PannelloStruttura.htm#StruttCalcola">procedura
+di calcolo</a>. Tuttavia il modo in cui verranno presentate dette schede
+dipende dalla corretta imputazione dei seguenti dati di configurazione.</p>
+
+<p class=MsoNormal><img border=0 width=312 height=496 src=GRFucDati.bmp></p>
+
+<h2><a name=Identif>Member identification</a></h2>
+
+<p>Nome della membratura, che apparirà sul <a href="PannelloStruttura.htm">pannello
+della struttura</a>, nel rapporto di calcolo, e nelle finestre dei membri
+accoppiati (vedi <a href="#MembrAccopp">oltre</a>).</p>
+
+<h2><a name=Materials>Member material and bolt material</a></h2>
+
+<p>Tramite questi pulsanti si accede alla libreria <a
+href="../../../../../BASE/ESEGUI/BIN/Libmat.chm">Libmat</a></p>
+
+<h2><a name=MemberType>Member type</a></h2>
+
+<p>I tipi di membrature previsti sono i seguenti: </p>
+
+<h3>Loose without hub</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=Loosewithout.bmp></p>
+
+<h3>Integral</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=Integral.bmp></p>
+
+<h3>Loose with hub</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=Loosewith.bmp></p>
+
+<h3>Optional calculated as Loose</h3>
+
+<h3>Optional calculated as Integral</h3>
+
+<h3>Bolted flat cover</h3>
+
+<p>Coperchio piano imbullonato, con o senza piccole aperture</p>
+
+<h3>Flat head with large opening and inner hub</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=App14with.bmp></p>
+
+<h3>Flat head with large opening without inner hub</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=App14without.bmp></p>
+
+<h3>Reverse flange per App. 2-13</h3>
+
+<p class=MsoNormal><img border=0 width=32 height=32 src=App14without.bmp></p>
+
+<h2><a name=LapJointLoose>Lap joint loose type flange</a></h2>
+
+<h2><a name=TipCalc>Calculation type</a></h2>
+
+<p>Sono previste tre possibilità:</p>
+
+<h3>Progetto</h3>
+
+<p>Ove la geometria del fucinato non fosse ancora completamente definita,
+scegliere questa opzione, in quanto, durante la successiva fase di calcolo,
+sarà possibile utilizzare le diverse opzioni di calcolo automatico offerte del
+programma.</p>
+
+<h3>Verifica</h3>
+
+<p>Tutti i dati geometrici del fucinato, dei bulloni e della guarnizione, sono
+noti, e quindi, se non già registrati durante un passaggio di calcolo
+precedente, sono da inserire manualmente durante la successiva fase di calcolo.</p>
+
+<h3><a name=PIpiuP>Prova Idraulica + progetto</a></h3>
+
+<p>Questa possibilità si presenta solo se nella finestra dei dati generali è
+stata selezionata l'opzione '<a href="ProvIdr.htm">Calcolo in prova idraulica</a>'.
+Se viene selezionata, verrà esguito prima un calcolo nelle condizioni di prova
+idraulica, il quale sarà utilizzato per: </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Calcolare il tiro
+bulloni da specificare per il serraggio prima della prova idraulica.</p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Verificare che
+gli sforzi siano ammissibili nella flangia (ammissibile: 90% dello snervamento,
+se non altrimenti specificato) e nei bulloni (ammissibile: vedi '<a
+href="#FrazSy">Frazione Sy in prova idraulica</a>') </p>
+
+<p>Verrà poi effettuato il calcolo nelle condizioni di progetto.</p>
+
+<h2><a name=BltLoadOpt>Bolt load option</a></h2>
+
+<p>Talvolta vengono specificati dei requisiti addizionali ai requisiti minimi
+del Codice per il calcolo del carico di progetto trasmesso dai bulloni alle
+flange.</p>
+
+<p>Se ciò non ricorre, si sceglierà l'opzione <b>ASME</b></p>
+
+<p>Sono previsti dal programma due casi di requisiti addizionali: </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Full bolt </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Fluor Daniel per
+i quali si rimanda all'<a href="AppBoltLoad.htm">appendice teorica</a>.</p>
+
+<h2><a name=Disuniformita>Disuniformità tiro bulloni</a></h2>
+
+<p>Il programma AsmeVip determina il <a href="SerrBull.htm">carico di serraggio</a>
+dei bulloni. Nel far questo si tiene conto del fatto che la procedura di
+serraggio bulloni non potrà in nessun caso dare un risultato perfetto in
+termini di raggiungimento su ogni bullone del carico specificato, bensì si
+otterranno alcuni bulloni che eserciteranno un carico inferiore alla media, ed
+altri un carico superiore.</p>
+
+<p>Il <b>fattore di disuniformità</b> è definito come il rapporto tra il carico
+realizzato sul bullone più caricato ed il carico medio.</p>
+
+<p>Il valore da assumere per questo rapporto è ovviamente funzione della
+procedura operativa adottata per il serraggio; tuttavia, in mancanza di
+informazioni specifiche, si raccomandano i valori seguenti: </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  per serraggio
+tramite martinetto idraulico assiale: 1.1 </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  per serraggio
+tramite chiave dinamometrica o verricello: 1.3</p>
+
+<h2><a name=FrazSy>Frazione Sy in prova idraulica</a></h2>
+
+<p>Questo valore è rilevante nel caso di scelta dell'opzione '<a
+href="ProvIdr.htm">Calcoli in Prova Idraulica</a>', e di attivazione della
+procedura '<a href="#PIpiuP">Calcolo P.I. + Progetto</a>'.</p>
+
+<p>Esso rappresenta il rapporto tra la tensione ammessa nei tiranti durante la
+prova idraulica e il carico di snervamento. Un valore indicativo da assumere è
+0.67.</p>
+
+<p><b>Nota</b>: Nel caso di tiranti in materiale inossidabile è particolarmente
+importante eseguire il <a href="#PIpiuP">Calcolo P.I. + Progetto</a>, in quanto
+in tal caso può essere più facilmente che in altri casi la condizione di prova
+idraulica quella dimensionante per le flange e per i tiranti stessi. Se si
+segue la descritta procedura di progetto si può ragionevolmente pensare di
+ottenere una protezione sufficiente dal rischio di perdite durante la prova
+idraulica.</p>
+
+<h2><a name=MembrAccopp>Membro accoppiato</a></h2>
+
+<p>Tramite questa casella a discesa si possono creare gli opportuni
+collegamenti tra i due membri di un accoppiamento bullonato. Le caratteristiche
+dimensionali degli elementi a comune (bulloni e guarnizione) saranno così
+mantenute omogenee tra i due membri, a seguito delle possibili variazioni
+introdotte dal progettista su uno di essi.</p>
+
+<p><b>Nota</b>. Nel caso di flange che serrano una piastra tubiera è particolarmente
+importante utilizzare questa opzione del programma, in quanto l'univocità del
+tiro dei tiranti è garantita dal programma malgrado la posssibile diversità
+delle pressioni di progetto delle due flange accoppiate.</p>
+
+<h2><a name=Prigionieri>Tiranti prigionieri</a></h2>
+
+<p>La scelta di questa opzione è utile per comunicare al programma quando non
+deve essere mantenuta una distanza di rispetto tra il bulloni e lo hub della
+flangia.</p>
+
+<h2><a name=Torque>Calcolo analitico della coppia di serraggio</a></h2>
+
+<p>Se questa opzione è selezionata si otterrà un controllo totale sul calcolo
+della coppia di serraggio bulloni e/o del tiro con martinetto idraulico,
+tramite la finestra '<a href="FinSerBull.htm">Serraggio tiranti</a>' Inoltre,
+il calcolo della coppia di serraggio sarà eseguito secondo la teoria esatta, in
+funzione del coefficiente d'attrito dado/rondella e vite/madrevite.</p>
+
+<p>In caso contrario, il calcolo del tiro di serraggio sarà eseguito secondo la
+stessa teoria (vedi '<a href="SerrBull.htm">Teoria del serraggio bulloni'</a>),
+ma non si potranno modificare i parametri del calcolo. Inoltre, il calcolo
+della coppia di serraggio sarà eseguito secondo la seguente formula
+semplificata:</p>
+
+<p class=MsoNormal><img border=0 width=150 height=28 src=FormulaTorque.bmp></p>
+
+<p>dove: </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  M: coppia di
+serraggio </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  K<sub>1</sub>:
+Fattore di rilassamento </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  K<sub>2</sub>:
+Fattore di disuniformità </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  W: Carico di
+serraggio teorico minimo per la tenuta </p>
+
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  d: Diametro
+nominale del tirante</p>
+
+<p>La suddetta formula non tiene conto delle caratteristiche geometriche
+specifiche della filettatura, e quindi può essere considerata
+un'approssimazione mediamente valida per il caso di uso di <b>grasso al
+Molycote</b></p>
+
+<h2><a name=SovrGuarn>Verifica del sovraccarico guarnizione</a></h2>
+
+<h2><a name=Commenti>Esecuzione commentata</a></h2>
+
+<h2><a name=NbOpenings>Number of openings</a></h2>
+
+</div>
+
+</body>
+
+</html>

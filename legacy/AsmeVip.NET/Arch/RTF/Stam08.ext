@@ -1,0 +1,11 @@
+\par                               EXPLANATORY NOTES\par
+                               ================\par
+\par      The tubesheet can be subjected to pressure load applied both on the channel side
+\par and on the shell side. The flanged extension of the tubesheet applies on the central
+\par part of the latter a bending moment which is added to the effect of the pressure. For
+\par these reasons it is necessary to define a sign convention in order to combine cor-
+\par rectly the effects of the different load components.
+\par      The program AsmeVip defines the following sign convention:
+\par The pressures and the flange moments (or equivalent bolt pressures) are positive (ne-
+\par gative) when they have the effect to bow the tubesheet with the convex side toward the
+\par shell (channel).\par 

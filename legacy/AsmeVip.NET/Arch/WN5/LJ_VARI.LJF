@@ -1,0 +1,156 @@
+C001³{\rtf\fs20{P}}  ³ [psi]³1³09³A
+C002³{\rtf\fs20{Tem}}³ [°F] ³1³10³B
+A003³{\rtf\fs20{A}}  ³ [mm] ³1³11³C
+A004³{\rtf\fs20{C}}  ³ [mm] ³1³12³C
+A005³{\rtf\fs20{G}}  ³ [mm] ³1³13³C
+A006³{\rtf\fs20{B}}  ³ [mm] ³1³14³C
+A007³{\rtf\fs20 t{\sub s}}³ [mm] ³1³15³C
+A008³{\rtf\fs20 t{\sub l}}³ [mm] ³1³16³C
+A009³{\rtf\fs20{t}}  ³ [mm] ³1³17³C
+A010³{\rtf\fs20 d{\sub s}} ³ [mm] ³1³18³C
+A011³{\rtf\fs20 d{\sub l}} ³ [mm] ³1³19³C
+S012³{\rtf\fs20{d}}  ³ [--] ³2³09³S
+A013³{\rtf\fs20{N}}  ³ [--] ³2³10³n
+A014³{\rtf\fs20{d{\sub n}}}³ [mm] ³2³11³C
+A015³{\rtf\fs20{d{\sub f}}}³ [mm] ³2³12³C
+A016³{\rtf\fs20{E{\sub m}}}³ [mm] ³2³13³C
+A017³E  ³ [mm] ³2³14³-C
+A018³{\rtf\fs20{R{\sub m}}}³ [mm] ³2³15³C
+A019³R  ³ [mm] ³2³16³-C
+A020³{\rtf\fs20{BS{\sub m}}}³ [mm] ³2³17³C
+A021³BS ³ [mm] ³2³18³-C
+A186³Ext³ [mm] ³2³19³C
+C022³{\rtf\fs20 S{\sub fa}}³ [psi]³3³09³-A
+C023³{\rtf\fs20 S{\sub fo}}³ [psi]³3³10³-A
+C024³{\rtf\fs20 S{\sub ba}}³ [psi]³3³11³-A
+C025³{\rtf\fs20 S{\sub bo}}³ [psi]³3³12³-A
+A026³N  ³ [mm] ³3³13³C
+A027³{\rtf\fs20 N{\sub min}}³ [mm] ³3³14³-
+B028³Y  ³ [psi]³3³15³A
+A029³w  ³ [mm] ³3³16³C
+A030³m  ³ [--] ³3³17³N
+A031³{\rtf\fs20\u0966\'6a}³ [--] ³3³18³N
+B032³{\rtf\fs20 W{\sub mt}}³ [lb] ³4³09³F
+B033³{\rtf\fs20 W{\sub m1}}³ [lb] ³4³10³F
+B034³{\rtf\fs20 W{\sub m2}}³ [lb] ³4³11³F
+B182³{\rtf\fs20 M{\sub T1}}³ [°F] ³4³12³B
+B183³{\rtf\fs20 M{\sub T2}}³ [°F] ³4³13³B
+B184³{\rtf\fs20 M{\sub p1}}³ [psi]³4³14³A
+B185³{\rtf\fs20 M{\sub p2}}³ [psi]³4³15³A
+A035³{\rtf\fs20 b{\sub 0}}³ [mm] ³0³00³-C
+A036³b  ³ [mm] ³0³00³-C
+A037³{\rtf\fs20 G{\sub ef}}³ [mm] ³0³00³-C
+B038³{\rtf\fs20 H{\sub p}}³ [lb] ³5³09³-F
+B039³H  ³ [lb] ³5³10³-F
+B040³{\rtf\fs20 W{\sub m1}}³ [lb] ³5³11³-F
+B033³{\rtf\fs20 W{\sub m1}}³ [lb] ³5³12³-F
+B041³{\rtf\fs20 W{\sub m2}}³ [lb] ³5³13³-F
+B034³{\rtf\fs20 W{\sub m2}}³ [lb] ³5³14³-F
+B042³W  ³ [lb] ³5³15³-F
+A043³{\rtf\fs20 A{\sub m1}}³{\rtf\fs20 [mm{\super 2}]}³5³16³-G
+A044³{\rtf\fs20 W{\sub m2}}³{\rtf\fs20 [mm{\super 2}]}³5³17³-G
+A045³{\rtf\fs20 A{\sub m}}³{\rtf\fs20 [mm{\super 2}]}³5³18³-G
+A046³{\rtf\fs20 A{\sub b}}³{\rtf\fs20 [mm{\super 2}]}³5³19³-G
+A047³{\rtf\fs20 h{\sub d}}³ [mm] ³6³09³-C
+A048³{\rtf\fs20 h{\sub t}}³ [mm] ³6³10³-C
+A049³{\rtf\fs20 h{\sub g}}³ [mm] ³6³11³-C
+B050³{\rtf\fs20 H{\sub d}}³ [lb] ³6³12³-F
+B051³{\rtf\fs20 H{\sub t}}³ [lb] ³6³13³-F
+B052³{\rtf\fs20 H{\sub g}}³ [lb] ³6³14³-F
+B053³{\rtf\fs20 C{\sub f}}³ [--] ³6³15³-N
+B054³K  ³ [--] ³6³16³-N
+A063³Y  ³ [--] ³6³17³-N
+B068³{\rtf\fs20 M{\sub d}} ³lb.in ³7³09³-J
+B069³{\rtf\fs20 M{\sub t}} ³lb.in ³7³10³-J
+B070³{\rtf\fs20 M{\sub g}} ³lb.in ³7³11³-J
+B071³j  ³ [--] ³7³12³-N
+B072³{\rtf\fs20 M{\sub o}} ³lb.in ³7³13³-J
+B073³{\rtf\fs20 M{\sub w}} ³lb.in ³7³14³-J
+B074³{\rtf\fs20 M{\sub 0}} ³lb.in ³7³15³-J
+B075³M  ³ [lb] ³7³16³-F
+E078³{\rtf\fs20\u963\'73{\sub T}} ³ [psi]³7³17³-A
+B081³{\rtf\fs20\u963\'73{\sub l}} ³ [psi]³7³18³-A
+ÄÄÄÄÅÄÄÄÁÄÄÄÄÄÄÁÄÁÄÄ´
+ 082³Sfo.1,5        ³
+ 090³E              ³
+ 091³M              ³
+ 092³r1             ³
+ 093³r2             ³
+ 094³M/(r2-r1)      ³
+ 095³X              ³
+ 096³Y              ³
+ 097³(1.0.3)/(1-0.3)³
+ 098³r2/r1          ³
+ 099³A1             ³
+ 100³Z              ³
+ 101³Z0             ³
+ 102³B-2*co         ³
+ 103³g0-co          ³
+ 104³g1-co          ³
+ 105³Pi             ³
+ 106³Hpi            ³
+ 107³Hi             ³
+ 108³Wm1i           ³
+ 109³Wm2i           ³
+ 110³Am1i           ³
+ 111³Am2i           ³
+ 112³Ami            ³
+ 113³Wi             ³
+ 114³pilgrim N      ³
+ 115³pilgrim Kg     ³
+ 116³torque  N.mm   ³
+ 117³torque  Kg.mm  ³
+ 118³torque  Kg.m   ³
+ÄÄÄÄÅÄÄÄÂÄÄÄÄÄÄÂÄÂÄÄ´
+A119³t  ³ [mm] ³1³09³C
+A120³{\rtf\fs20 C{\sub o}}³ [mm] ³1³10³-C
+A121³{\rtf\fs20 C{\sub g}}³ [mm] ³1³11³C
+C122³{\rtf\fs20 S{\sub ca}}³ [psi]³1³12³A
+C123³{\rtf\fs20 S{\sub co}}³ [psi]³1³13³A
+C124³E  ³ [psi]³1³14³A
+A125³t' ³ [mm] ³1³16³-C
+A126³t''³ [mm] ³1³17³-C
+A127³t'''³ [mm] ³1³18³-C
+A128³{\rtf\fs20 T{\sub c}}³ [mm] ³1³19³-C
+A129³{\rtf\fs20 T{\sub p}}³ [mm] ³1³20³-C
+A130³{\rtf\fs20 T{\sub o}}³ [mm] ³2³11³-C
+A131³T  ³ [mm] ³2³14³-C
+A132³T  ³ [mm] ³2³18³-C
+A119³t  ³ [mm] ³2³20³-C
+A133³{\rtf\fs20 W{\sub m1}}³ [lb] ³0³00³-F
+A119³T  ³ [mm] ³3³09³-C
+A120³{\rtf\fs20 C{\sub o}}³ [mm] ³3³10³-C
+A121³{\rtf\fs20 C{\sub g}}³ [mm] ³3³11³-C
+A134³t  ³ [mm] ³3³12³-C
+A135³{\rtf\fs20 d{\sub i}}³ [mm] ³3³13³C
+A136³{\rtf\fs20 d{\sub e}}³ [mm] ³3³14³C
+A137³{\rtf\fs20 T{\sub n}}³ [mm] ³3³15³C
+A138³{\rtf\fs20 C{\sub n}}³ [mm] ³3³16³C
+A139³{\rtf\fs20 t{\sub n}}³ [mm] ³3³17³-C
+A140³d  ³ [mm] ³3³18³-C
+C141³{\rtf\fs20 S{\sub na}}³ [psi]³3³19³A
+C142³{\rtf\fs20 S{\sub no}}³ [psi]³3³20³A
+A126³{\rtf\fs20 t{\sub ra}}³ [mm] ³4³09³-C
+A125³{\rtf\fs20 t{\sub ro}}³ [mm] ³4³10³-C
+A143³{\rtf\fs20 t{\sub a}\rquote}³ [mm] ³4³11³-C
+A144³{\rtf\fs20 t{\sub o}\rquote}³ [mm] ³4³12³-C
+A134³t  ³ [mm] ³4³13³-C
+A145³{\rtf\fs20 A{\sub a}}³{\rtf\fs20 [mm{\super 2}]}³5³09³-G
+A146³{\rtf\fs20 A{\sub o}}³{\rtf\fs20 [mm{\super 2}]}³5³10³-G
+A147³{\rtf\fs20 t{\sub rn}}³ [mm] ³5³11³-C
+A148³h  ³ [mm] ³5³12³-C
+A149³l  ³ [mm] ³5³13³-C
+A150³H  ³ [mm] ³5³14³C
+A151³L  ³ [mm] ³5³15³C
+A152³{\rtf\fs20 j{\sub a}}³ [--] ³6³09³-N
+A153³{\rtf\fs20 j{\sub o}}³ [--] ³6³10³-N
+A154³{\rtf\fs20 A{\sub 1o}}³{\rtf\fs20 [mm{\super 2}]}³6³11³-G
+A155³{\rtf\fs20 A{\sub 2o}}³{\rtf\fs20 [mm{\super 2}]}³6³12³-G
+A156³{\rtf\fs20 A{\sub 1a}}³{\rtf\fs20 [mm{\super 2}]}³6³13³-G
+A157³{\rtf\fs20 A{\sub 2a}}³{\rtf\fs20 [mm{\super 2}]}³6³14³-G
+A158³{\rtf\fs20 A{\sub Ro}}³{\rtf\fs20 [mm{\super 2}]}³6³15³-G
+A159³{\rtf\fs20 A{\sub Ra}}³{\rtf\fs20 [mm{\super 2}]}³6³16³-G
+A160³---³------³-³--³-
+A130³g' ³ [mm] ³7³11³-C
+A131³g  ³ [mm] ³7³14³-C
+

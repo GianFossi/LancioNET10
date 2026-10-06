@@ -1,0 +1,22 @@
+       Tabella Riassuntiva Verifiche Tubi di Scambio  (EN 13445-3 8.5.2.2)        
+============================================================================
+| Dati di progetto |Verifica spessore minimo |Verifica a pressione esterna |
+|---------------------------------------------------------------------------
+_|Diametro  ##.000 _|Spessore minimo garantito_|Pr.Euler. Pm =   ##.000  Mpa _|
+_|           [mm]   _|          ###.### [mm]  _|Pr.Plast. Py =   ##.000  Mpa _|
+|                  |                         |                             |
+_|Spessore  ##.### _|Tensione ammissibile     _|    Pressione ammissibile    _|
+_|           [mm]   _|       ######.## [Mpa]  _|                             _|
+_|                  _|                         _|   Pa1 = ####.000   Mpa     _|
+_|                  _|                         _|        _|
+_|                  _|                         _|                            _|
+_|R.curvatura ##.# _|Spessore minimo calcolato_|-----------------------------_|
+_|           [mm]   _|          ###.### [mm]  _|Verifica parte curvata       _|
+|                  |                         |-----------------------------|
+_|Pr.interna ##.00 _|                         _|Spessore minimo calcolato    _|
+|           [MPa]  |                         |    prima della curvatura:   |
+_|Pr.esterna ##.00 _|                         _|                             _|
+_|           [MPa]  _|                         _|      ###.##  mm            _|
+----------------------------------------------------------------------------
+  
+

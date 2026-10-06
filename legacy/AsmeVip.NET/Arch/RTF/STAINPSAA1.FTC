@@ -1,0 +1,54 @@
+T
+B
+0         Calculation Procedure for integral tubesheets per sketch UHX-13.1(a)\par
+B
+0                                     INPUT DATA\par
+0                                     ==========\par
+B
+M001  TubeSheet Id: \                      \  TubeSheet material: \                  \_\par
+M002  Shell     Id: \                      \  Shell     material: \                  \_\par
+M003  Tubes     Id: \                      \  Tube      material: \                  \_\par
+M006  Channel   Id: \                      \  Channel   material: \                  \_\par
+M007  Shell adj.Id: \                      \  Shell adj.material: \                  \_\par 
+B
+N     Type of exchanger: \                 \  TubeSheet Support: \                   \_\par
+L     Number of load conditions  ##           TubeSheets of differing thicknesses \  \_\par
+x     Design under differential pressure:  \ \_\par
+B
+6021022  Inside Diameter of Shell  #####.   [mm]   Inside Diameter of Channel  #####.   [mm]_\par
+6023024  Shell thickness           #####.   [mm]   Channel thickness           #####.   [mm]_\par
+6017018  Shell side corrosion      ###.##   [mm]   Channel side corrosion      ###.##   [mm]_\par
+9010011  Equivalent Diam for shear #####.#  [mm]   Tube spacing  \          \    ###.## [mm]_\par
+6027028  Outside diameter of tubes   ###.## [mm]   Tube thickness                 ##.## [mm]_\par
+6029030  Number of Tubes in Shell  #####    [--]   Tube length                 #####.## [mm]_\par
+1761                                            Tube corrosion                 ##.## [mm]_\par
+6026019  Inside Dia of Expans.J.   #####    [mm]   Corrosion of Expansion J.   #####.## [mm]_\par
+6020034  TubeSheet   Grooves Depth  ####.#  [mm]   TubeSheet   Nom.Thickness    ####.#  [mm]_\par
+e     Tube expansion depth     #####.#  [&]_\par
+O     Type of tube-to-T.S. joint    \                            \_\par
+0         Note: Shell adj. is the course attached to the TS, possibly having differing thk.\par 
+V               The said course is ####.  [mm] thick and ####.  [mm] long. 
+R     Factors according App.A       fr: #.##  fe: \  \  fy: \  \_\par
+1039  Equivalent Unsupported Buckling Lenght of Tubes                       #####.## [mm]_\par
+t     Design under vacuum:    shell-side \ \    tube-side                            \ \_\par
+v     Calculation of Radial Differential Thermal Expansion at the TS required : &
+B
+0         Note: A null Inside Dia of Expans. Joint indicates the absence of the same\par
+B
+S         Note: The equivalent diameter for shear has been calculated on the actual\par
+S               tube layout, according to RCB-7.133\par
+S     \par
+s         Note: The geometry of the shell is not contemplated by RCB-7.16 (Kettle type).\par
+s               The design formulas have been amended according to FBM practice.\par
+s     \par
+c         Load Cond. nb. ##: \                      \_\par
+B                                                     
+0                             SOURCES FOR PHYSICAL DATA\par
+B
+0                   Elastic Modulus                       Thermal Expansion\par
+n001  TubeSheet : \                                    \\                                    \_\par
+n002  Shell     : \                                    \\                                    \_\par
+n006  Channel   : \                                    \\                                    \_\par
+n003  Tubes     : \                                    \\                                    \_\par
+Fine
+

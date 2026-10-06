@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str121">
+		<value>Disegno DXF del layout della piastra tubiera</value>
+	</data>
+	<data name="str122">
+		<value>Disegno 3D DWG delle chiome del fascio a fontana</value>
+	</data>
+	<data name="str123">
+		<value>Tipo di elaborazione grafica</value>
+	</data>
+	<data name="str2001">
+		<value>Il materiale dei tubi è specificato|in modo erroneo</value>
+	</data>
+	<data name="str2002">
+		<value>Il tipo di passo è specificato|in modo erroneo</value>
+	</data>
+	<data name="str2003">
+		<value>Il tipo di giunto T.Piastra è|specificato in modo erroneo</value>
+	</data>
+	<data name="str2004">
+		<value>Il numero di passi lato tubi è|specificato in modo erroneo</value>
+	</data>
+	<data name="str2005">
+		<value>Il tipo di apparecchio è|specificato in modo erroneo</value>
+	</data>
+	<data name="str2006">
+		<value>Il diametro dei bocchelli|è troppo grande</value>
+	</data>
+	<data name="str2007">
+		<value>Il diametro dei bocchelli|è superiore al diametro del mantello</value>
+	</data>
+	<data name="str2008">
+		<value>E' stata specificata la densità|in ingresso, ma non la velocità</value>
+	</data>
+	<data name="str2009">
+		<value>E' stata specificata la densità|in ingresso, ma non il diametro bocchello</value>
+	</data>
+	<data name="str2010">
+		<value>E' stata specificata la densità|in uscita, ma non la velocità</value>
+	</data>
+	<data name="str2011">
+		<value>E' stata specificata la densità|in uscita, ma non il diametro bocchello</value>
+	</data>
+	<data name="str2012">
+		<value>Il tipo di passo scelto è|incongruente con i tubi a U</value>
+	</data>
+	<data name="str2013">
+		<value>Il diametro interno del|mantello è troppo grande</value>
+	</data>
+	<data name="str2014">
+		<value>Con i tubi 'a fontana' i passi|lato tubi devono essere 2</value>
+	</data>
+	<data name="str2015">
+		<value>Non sono stati dati né il diametro| mantello né il numero di tubi</value>
+	</data>
+	<data name="str2016">
+		<value>Per il caso di tubi 'a fontana' non|sono stati dati né il diametro|esterno della corona interna né|il numero di tubi</value>
+	</data>
+	<data name="str2017">
+		<value>Il passo dei tubi non è stato|specificato correttamente</value>
+	</data>
+	<data name="str2018">
+		<value>Il diametro dei tubi non è stato|specificato</value>
+	</data>
+	<data name="str2019">
+		<value>Il diametro interno della corona esterna|deve essere maggiore del diametro|esterno della corona interna</value>
+	</data>
+	<data name="str2020">
+		<value>Siamo intrappolati alla coppia ####.|Rispondendo OK, il programma cercherà un'altra soluzione.|Rispondere Annulla se si vuole riequilibrare manualmente|i fori attorno alla circorferenza.</value>
+	</data>
+	<data name="str2021">
+		<value>Con tubi ad U a due passi le uniche opzioni|applicabili sono: 'Simmetria orizzontale con|tubo in asse' e 'Simmetria orizzontale con|tubo fuori asse'.</value>
+	</data>
+	<data name="str3000">
+		<value>Fattore di radialità della disposizione|delle forcine nei fasci a fontana.|Influenza la strategia dell'operazione di aggancio.</value>
+	</data>
+	<data name="str200">
+		<value>Sono stati cambiati i dati di progetto relativamente &amp;|in presenza di dati finali già elaborati o forniti.|Si vogliono eliminare i dati finali e ricalcolare la tracciatura da zero?|(La risposta raccomandata è si).</value>
+	</data>
+	<data name="str2022">
+		<value>Il file &amp; è illeggibile_.|Probabilmente è stato creato da una versione precedente_.|(Messaggio del sistema: &amp;)_.|Vuoi eliminarlo permanentemente?</value>
+	</data>
+	<data name="Helpfile">
+		<value>\BIN\AiutoTraccia.chm</value>
+	</data>
+	<data name="mnuEsci">
+		<value>Chiudi e ritorna</value>
+	</data>
+	<data name="DomandaChiudi1">
+		<value>Vuoi salvare il lavoro in corso ?</value>
+	</data>
+	<data name="DomandaChiudi2">
+		<value>Vuoi salvare i dati per l'elaborazione della Richiesta Materiali dei tubi di scambio?</value>
+	</data>
+</root>

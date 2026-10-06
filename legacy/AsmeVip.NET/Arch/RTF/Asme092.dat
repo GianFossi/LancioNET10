@@ -1,0 +1,13 @@
+####.#### &   ####.#### &
+\par \par Article F-6 - Special requirements for quenched and tempered ferritic steels
+_\par The material & is listed in Table AQT-1 and therefore \par the special requirements
+of this article shall apply. Here Para. AF-605 is considered.\par 
+\par AF-605 {\b Requirements for Heat Treatment After Forming}
+\par Final center line radius             R{\sub f\tab }=
+\par Plate thickness                      t\tab =
+\par % extreme fiber elongation       75t/R{\sub f\tab }=
+\par % extreme fiber elongation       50t/R{\sub f\tab }=
+\par The extreme fiber elongation is <= 5%: the piece shall be requenched and tempered\par only in case of hot forming (AF-605 (b)).\par 
+\par The extreme fiber elongation is > 5%: either case (a) or (b) shall apply:
+\par    (a) in case of cold forming the piece shall be heat treated per AF-630.1
+\par    (b) in case of hot forming the piece shall be requenched and tempered.\par 
