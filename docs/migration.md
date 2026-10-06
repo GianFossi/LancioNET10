@@ -22,6 +22,10 @@ il file è identico byte per byte. Encoding Windows-1252 dichiarato nel progetto
 In `AssemblyInfo.vb` soltanto `AssemblyVersion("1.0.*")` è diventato
 `AssemblyVersion("1.0.0.0")`: la versione dipendente dal tempo impedisce la
 compilazione deterministica moderna. Gli altri attributi restano invariati.
+Una rebuild Release ha prodotto gli stessi SHA-256 di entrambe le DLL.
+Gli spazi finali dei sorgenti copiati sono conservati per evitare diff inutili;
+il controllo whitespace segnala quindi gli stessi spazi del legacy nei nuovi
+file VB, senza conseguenze sulla build.
 L'SDK è fissato a 10.0.401 in `global.json`. Non sono necessari pacchetti NuGet
 per questo primo componente. L'installazione cloud usa `/workspace/dotnet`,
 fuori dal checkout; aggiungere tale cartella a PATH nella sessione.

@@ -13,7 +13,7 @@ OUT = ROOT / 'docs' / 'inventory'
 OUT.mkdir(parents=True, exist_ok=True)
 files = sorted(p for p in LEGACY.rglob('*') if p.is_file())
 with (OUT / 'files.csv').open('w', encoding='utf-8', newline='') as stream:
-    writer = csv.writer(stream)
+    writer = csv.writer(stream, lineterminator='\n')
     writer.writerow(['path', 'bytes', 'sha256'])
     for path in files:
         writer.writerow([path.relative_to(ROOT).as_posix(), path.stat().st_size,
