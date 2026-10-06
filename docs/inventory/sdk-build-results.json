@@ -1,0 +1,250 @@
+[
+  {
+    "project": "src/AsmeVip/AsmeVip.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/AzioniPersonalizzate/AzioniPersonalizzate.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/BreLock/BreLock.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/DataShDll/DataShDll.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/FormulaParser/FormulaParser.vbproj",
+    "exit_code": 0,
+    "error_codes": []
+  },
+  {
+    "project": "src/Grafic2/Grafic2.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/HTRI/HTRI.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Lancion/Lancion.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/LancioHTRI/LancioHTRI.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/LibMat/LibMat.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Orecchia/Orecchia.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Ppgas/Ppgas.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/RoutBase/RoutBase1.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "MSB3552"
+    ]
+  },
+  {
+    "project": "src/RoutBase2/RoutBase2.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/RoutBase3/RoutBase3.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC30002"
+    ]
+  },
+  {
+    "project": "src/RoutBase4/RoutBase4.vbproj",
+    "exit_code": 0,
+    "error_codes": []
+  },
+  {
+    "project": "src/Saddles/Saddles.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/StubW2000/StubW2000.vbproj",
+    "exit_code": 0,
+    "error_codes": []
+  },
+  {
+    "project": "src/StubW9/StubW9.vbproj",
+    "exit_code": 0,
+    "error_codes": []
+  },
+  {
+    "project": "src/SurriscDll/SurriscDll.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Tiranti/Tiranti.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/VapAcqua/VapAcqua.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Ventil/Ventil.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Wrcb/Wrcb.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Wald/Wald.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "project": "src/Traccia/Traccia.vbproj",
+    "exit_code": 1,
+    "error_codes": [
+      "BC2017"
+    ]
+  },
+  {
+    "check": "full-sdk",
+    "command": [
+      "dotnet",
+      "build",
+      "LancioNET10.Full.slnx",
+      "-c",
+      "Release",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "errors": [
+      "src/RoutBase3/clsAccessoDati.vb(7,23): error BC30002: Type 'ADODB.Connection' is not defined. [src/RoutBase3/RoutBase3.vbproj]",
+      "src/RoutBase3/clsAccessoDati.vb(60,23): error BC30002: Type 'ADODB.Connection' is not defined. [src/RoutBase3/RoutBase3.vbproj]",
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(3458,5): error MSB3552: Resource file \"ControlArrays.resx\" cannot be found. [src/RoutBase/RoutBase1.vbproj]"
+    ]
+  },
+  {
+    "check": "validated-components",
+    "command": [
+      "dotnet",
+      "build",
+      "LancioNET10.slnx",
+      "-c",
+      "Release",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 0,
+    "errors": []
+  },
+  {
+    "check": "FormulaParser.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/FormulaParser.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "errors": []
+  },
+  {
+    "check": "Access.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/Access.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "errors": []
+  },
+  {
+    "check": "Word.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/Word.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "errors": []
+  }
+]

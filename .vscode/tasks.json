@@ -5,19 +5,54 @@
       "label": "build migrated components",
       "type": "process",
       "command": "dotnet",
-      "args": ["build", "LancioNET10.slnx", "--configuration", "Debug"],
-      "options": { "cwd": "${workspaceFolder}" },
+      "args": [
+        "build",
+        "LancioNET10.slnx",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "problemMatcher": "$msCompile",
-      "group": { "kind": "build", "isDefault": true }
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "verify FormulaParser",
       "type": "process",
       "command": "dotnet",
-      "args": ["run", "--project", "tests/FormulaParser.Smoke", "--configuration", "Debug", "--no-build"],
+      "args": [
+        "run",
+        "--project",
+        "tests/FormulaParser.Smoke",
+        "--configuration",
+        "Debug",
+        "--no-build"
+      ],
       "dependsOn": "build migrated components",
-      "options": { "cwd": "${workspaceFolder}" },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "problemMatcher": []
+    },
+    {
+      "label": "build full migrated application",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "LancioNET10.Full.slnx",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile",
+      "group": "build"
     }
   ]
 }

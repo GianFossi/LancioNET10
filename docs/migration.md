@@ -2,6 +2,11 @@
 
 ## Stato corrente dopo l'importazione
 
+Intervento successivo: [conversione SDK dei 26 progetti VB](sdk-conversion.md).
+Nelle copie nuove sono eliminati i blocchi formato VS2003, pack .NET Framework
+e XML AsmeVip. LancioNET10.Full.slnx raggiunge la build del grafo, ancora bloccata
+da ADODB in RoutBase3 e ControlArrays.resx mancante in RoutBase1.
+
 Ultimo caricamento verificato: 74b259e. Vedere
 [ricontrollo delle nuove librerie](libraries-recheck.md): risolti i file
 impostazioni/dati LibMat e recuperati RoutBase2/3/4 e StubW9. LibMat raggiunge

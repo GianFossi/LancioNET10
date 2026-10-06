@@ -1,0 +1,294 @@
+[
+  {
+    "original": "legacy/AsmeVip.NET/AsmeVip.vbproj",
+    "sdk_project": "src/AsmeVip/AsmeVip.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": "not well-formed (invalid token): line 618, column 43",
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "stdole",
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/AzioniPersonalizzate/AzioniPersonalizzate.vbproj",
+    "sdk_project": "src/AzioniPersonalizzate/AzioniPersonalizzate.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "System.Configuration.Install"
+    ]
+  },
+  {
+    "original": "legacy/BreLock.NET/BreLock.vbproj",
+    "sdk_project": "src/BreLock/BreLock.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole"
+    ]
+  },
+  {
+    "original": "legacy/DataSheet.NET/DataShDll.vbproj",
+    "sdk_project": "src/DataShDll/DataShDll.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole",
+      "StdFormat",
+      "StdType"
+    ]
+  },
+  {
+    "original": "legacy/FormulaParser/FormulaParser.vbproj",
+    "sdk_project": "src/FormulaParser/FormulaParser.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/Grafica.NET/Grafic2.vbproj",
+    "sdk_project": "src/Grafic2/Grafic2.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole"
+    ]
+  },
+  {
+    "original": "legacy/HTRI.NET/HTRI.vbproj",
+    "sdk_project": "src/HTRI/HTRI.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Infralution.Licensing",
+      "AXDBLib"
+    ]
+  },
+  {
+    "original": "legacy/Lancio.NET/Lancion.vbproj",
+    "sdk_project": "src/Lancion/Lancion.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "stdole",
+      "StdType",
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/LancioHTRI/LancioHTRI.vbproj",
+    "sdk_project": "src/LancioHTRI/LancioHTRI.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "System.Deployment"
+    ]
+  },
+  {
+    "original": "legacy/LibMat.NET/LibMat.vbproj",
+    "sdk_project": "src/LibMat/LibMat.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/Orecchia.NET/Orecchia.vbproj",
+    "sdk_project": "src/Orecchia/Orecchia.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/PPgas.net/Ppgas.vbproj",
+    "sdk_project": "src/Ppgas/Ppgas.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/RoutBase.NET/RoutBase1.vbproj",
+    "sdk_project": "src/RoutBase/RoutBase1.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole",
+      "ADODB"
+    ]
+  },
+  {
+    "original": "legacy/RoutBase2.NET/RoutBase2/RoutBase2.vbproj",
+    "sdk_project": "src/RoutBase2/RoutBase2.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+    "sdk_project": "src/RoutBase3/RoutBase3.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "adodb"
+    ]
+  },
+  {
+    "original": "legacy/RoutBase4.NET/RoutBase4/RoutBase4.vbproj",
+    "sdk_project": "src/RoutBase4/RoutBase4.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/Saddles.NET/Saddles.vbproj",
+    "sdk_project": "src/Saddles/Saddles.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole"
+    ]
+  },
+  {
+    "original": "legacy/StubW2000.NET/StubW2000.vbproj",
+    "sdk_project": "src/StubW2000/StubW2000.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/StubW9.NET/StubW9.vbproj",
+    "sdk_project": "src/StubW9/StubW9.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": []
+  },
+  {
+    "original": "legacy/Surrisc.NET/SurriscDll.vbproj",
+    "sdk_project": "src/SurriscDll/SurriscDll.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "stdole"
+    ]
+  },
+  {
+    "original": "legacy/Tiranti.NET/Tiranti.vbproj",
+    "sdk_project": "src/Tiranti/Tiranti.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "stdole",
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+    "sdk_project": "src/VapAcqua/VapAcqua.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [
+      "XSteam"
+    ],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "XSteam",
+      "Microsoft.VisualBasic.Compatibility"
+    ]
+  },
+  {
+    "original": "legacy/Ventil.NET/Ventil.vbproj",
+    "sdk_project": "src/Ventil/Ventil.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "AXDBLib"
+    ]
+  },
+  {
+    "original": "legacy/WRCB.NET/Wrcb.vbproj",
+    "sdk_project": "src/Wrcb/Wrcb.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "stdole"
+    ]
+  },
+  {
+    "original": "legacy/Wald.NET/Wald.vbproj",
+    "sdk_project": "src/Wald/Wald.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "Microsoft.VisualBasic.Compatibility",
+      "Microsoft.VisualBasic.Compatibility.Data"
+    ]
+  },
+  {
+    "original": "legacy/traccia.NET/Traccia.vbproj",
+    "sdk_project": "src/Traccia/Traccia.vbproj",
+    "retained_existing_sdk": true,
+    "original_xml_error": null,
+    "unresolved_projects": [],
+    "target_framework": "net10.0-windows",
+    "unresolved_assemblies": [
+      "stdole"
+    ]
+  }
+]
