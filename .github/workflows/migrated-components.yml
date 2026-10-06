@@ -19,3 +19,5 @@ jobs:
         run: dotnet build LancioNET10.slnx -c Release --no-restore
       - name: Verify FormulaParser calculations
         run: dotnet run --project tests/FormulaParser.Smoke -c Release --no-build
+      - name: Verify Access SQL and schema planning
+        run: dotnet run --project tests/Access.Smoke -c Release --no-build

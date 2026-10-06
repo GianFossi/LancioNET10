@@ -14,20 +14,12 @@
     <OptionCompare>Binary</OptionCompare>
     <CodePage>1252</CodePage>
     <DefineConstants>Win32=True</DefineConstants>
-    <LegacyInteropDirectory Condition="'$(LegacyInteropDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/interop</LegacyInteropDirectory>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
-    <Reference Include="Interop.ADOX">
-      <HintPath>$(LegacyInteropDirectory)/Interop.ADOX.dll</HintPath>
-      <EmbedInteropTypes>false</EmbedInteropTypes>
-    </Reference>
+    <ProjectReference Include="../Lancio.Data.Access/Lancio.Data.Access.vbproj" />
     <None Update="Arch/**/*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
-  <Target Name="CheckAdoInterop" BeforeTargets="ResolveReferences">
-    <Error Condition="!Exists('$(LegacyInteropDirectory)/Interop.ADOX.dll')"
-           Text="LibMat requires a verified ADOX interop assembly. Set LegacyInteropDirectory to its directory. Other COM/project dependencies also remain to migrate." />
-  </Target>
   <Import Project="LegacySources.props" />
 </Project>

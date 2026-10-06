@@ -2,6 +2,12 @@
 
 ## Stato corrente dopo l'importazione
 
+Nuovo intervento: [adapter ADO.NET per LibMat](ado-modernization.md).
+Sostituiti i percorsi query Excel e creazione schema Access della copia migrata;
+adapter compilato e test di pianificazione passati. La build completa resta
+bloccata dalle impostazioni/sorgenti e dipendenze residue, non più dal controllo
+ADOX di LibMat. Le sezioni seguenti descrivono anche gli stati precedenti.
+
 Ultima validazione: [check completo e tentativi di build](build-check.md).
 Aggiornate le copie migrate LibMat/Orecchia con i nuovi sorgenti e gli input
 di compilazione dei manifest originali. La soluzione FormulaParser passa;

@@ -1487,33 +1487,7 @@ Friend Class frmScheda
                             File = File.Trim
                             'Dim CreateStatement As String = "CREATE TABLE " & File '& " AS (SELECT * FROM PR1P0)"
                             'Dim CreateCommand As New OleDbCommand(CreateStatement, MatBase)
-                            Dim Catlog As New ADOX.Catalog
-                            Dim TableN As New ADOX.Table
-                            Dim TableV As ADOX.Table
-                            Dim Cn As New ADODB.Connection
-                            Cn.Open(Conn & MyFile & ConnFine)
-                            Catlog.ActiveConnection = Cn
-                            'Dim rowCount As Integer = CreateCommand.ExecuteNonQuery
-                            'TableN = dsTemp.Tables(0).Clone 'duplica solo lo schema
-                            TableN.Name = File 'TableN.TableName = File
-                            TableN.ParentCatalog = Catlog
-                            TableV = Catlog.Tables("PR1P0")
-                            Dim colN As ADOX.Column
-                            Dim colV As ADOX.Column
-                            For Each colV In TableV.Columns
-                                colN = New ADOX.Column
-                                colN.Name = colV.Name
-                                colN.Type = colV.Type
-                                colN.DefinedSize = colV.DefinedSize
-                                colN.Precision = colV.Precision
-                                TableN.Columns.Append(colN)
-                            Next
-                            TableN.Columns("ID").Properties("Autoincrement").Value = True
-                            TableN.Columns("ID").Properties("Nullable").Value = False
-                            TableN.Keys.Append("PrimaryKey", , "ID")
-                            TableN.Indexes.Append("ID", "ID")
-                            Catlog.Tables.Append(TableN)
-                            Cn.Close()
+                            Dim copiedColumnCount As Integer = Lancio.Data.Access.AccessDatabase.CloneMaterialSchema(MatBase, "PR1P0", File)
                             Dim tPR1P0 As New DataTable
                             Dim cmdN As OleDbDataAdapter = New OleDbDataAdapter("SELECT * FROM PR1P0", MatBase)
                             cmdN.Fill(tPR1P0)
@@ -1523,7 +1497,7 @@ Friend Class frmScheda
                             cmdN.Fill(tFile)
                             Dim dvTableN As DataView = New DataView(tFile)
                             Dim drv As DataRowView = dvTableN.AddNew()
-                            For i = 1 To CShort(TableN.Columns.Count - 1)
+                            For i = 1 To CShort(copiedColumnCount - 1)
                                 drv(i) = tPR1P0.Rows(0)(i)
                             Next
                             drv.EndEdit()

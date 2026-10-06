@@ -1,8 +1,10 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/FormulaParser/FormulaParser.vbproj" />
+    <Project Path="src/Lancio.Data.Access/Lancio.Data.Access.vbproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/FormulaParser.Smoke/FormulaParser.Smoke.vbproj" />
+    <Project Path="tests/Access.Smoke/Access.Smoke.vbproj" />
   </Folder>
 </Solution>

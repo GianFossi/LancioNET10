@@ -697,19 +697,6 @@ Fine:
             End If
         End With
     End Function
-    Sub ConnectOutput(ByRef dbsTemp As ADOX.Catalog, ByRef strTable As String, ByRef strConnect As String, ByRef strSourceTable As String, ByRef cnConn As ADODB.Connection)
-        Dim tdfLinked As New ADOX.Table
-        ' Create a new TableDef, set its Connect and
-        ' SourceTableName properties based on the passed
-        ' arguments, and append it to the TableDefs collection.
-        Dim t As ADOX.Table = dbsTemp.Tables(strTable)
-        If Not t Is Nothing Then dbsTemp.Tables.Delete(t)
-        cnConn = New ADODB.Connection
-        cnConn.Open(strConnect)
-        'Dim cmd As OleDbDataAdapter = New OleDbDataAdapter(strTable, cnConn)
-        tdfLinked = CType(cnConn.Execute(strTable), ADOX.Table)
-        dbsTemp.Tables.Append(tdfLinked)
-    End Sub
     Public Function ApriPrezzi() As Boolean
         Dim FileMdb As String
         Dim i As Integer
@@ -727,20 +714,23 @@ Fine:
             dbsTemp.Tables(i).TableName = CStr(schemaTable.Rows(i)(2))
         Next
     End Function
-    Public Sub AggiornaXLS(ByVal Prodotto As String) 'Doc As Excel.Workbook)
-        Dim Materiali As New DataTable
-        Dim cnConn As ADODB.Connection = Nothing
-        Dim i As Integer
+    Public Sub AggiornaXLS(ByVal Prodotto As String)
+        Dim oldCursor As System.Windows.Forms.Cursor = System.Windows.Forms.Cursor.Current
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
-        ConnectOutput(CType(dbsTemp, ADOX.Catalog), Prodotto, Conn & Filexls & ConnFineExcel, Prodotto, cnConn)
-        Materiali = CType(cnConn.Execute("SELECT DISTINCT MATERIAL FROM " & Prodotto), DataTable)
-        FormPrezzi.cmbMatExc.Items.Clear()
-        For i = 0 To Materiali.Rows.Count - 1
-            FormPrezzi.cmbMatExc.Items.Add(Materiali.Rows(i)("MATERIAL"))
-        Next
-        FormPrezzi.cmbMatExc.Visible = True
-        FormPrezzi.cmbMatExc.SelectedIndex = 0
-        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+        Try
+            Using materiali As DataTable = Lancio.Data.Access.AccessDatabase.ReadDistinctMaterials(Conn & Filexls & ConnFineExcel, Prodotto)
+                FormPrezzi.cmbMatExc.Items.Clear()
+                For Each row As DataRow In materiali.Rows
+                    FormPrezzi.cmbMatExc.Items.Add(row("MATERIAL"))
+                Next
+                FormPrezzi.cmbMatExc.Visible = True
+                If FormPrezzi.cmbMatExc.Items.Count > 0 Then
+                    FormPrezzi.cmbMatExc.SelectedIndex = 0
+                End If
+            End Using
+        Finally
+            System.Windows.Forms.Cursor.Current = oldCursor
+        End Try
     End Sub
     Public Sub ParametriPrezzo(ByRef Classe As ClasseMateriale)
         ' Apriparametri(Classe)
