@@ -2,6 +2,12 @@
 
 ## Stato corrente dopo l'importazione
 
+Ultimo caricamento verificato: 74b259e. Vedere
+[ricontrollo delle nuove librerie](libraries-recheck.md): risolti i file
+impostazioni/dati LibMat e recuperati RoutBase2/3/4 e StubW9. LibMat raggiunge
+la compilazione ma restano 58 errori di dipendenze/control array. I 7 progetti
+già migrati e i 66 controlli passano; gli stati sotto sono storici.
+
 [Controllo finale](final-check.md): importato anche b0e0f43, che contiene
 WinWordControl.dll e gli interop. La soluzione dei componenti migrati compila e
 passano 66 controlli; la build completa e le integrazioni Windows restano aperte.

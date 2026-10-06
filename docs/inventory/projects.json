@@ -1,77 +1,101 @@
 {
-  "file_count": 2370,
+  "file_count": 3086,
   "extensions": {
-    "": 6,
+    "": 8,
     ".a14": 10,
     ".a14s": 1,
+    ".a14t": 1,
     ".a15": 8,
     ".adu": 4,
     ".apr": 3,
     ".blo": 2,
-    ".bmp": 248,
+    ".bmp": 285,
+    ".bre": 3,
     ".cad": 1,
-    ".cls": 1,
+    ".cls": 2,
     ".cob": 7,
-    ".config": 2,
+    ".config": 4,
     ".cop": 17,
+    ".cs": 2,
+    ".csproj": 1,
+    ".css": 2,
     ".csv": 7,
-    ".dat": 198,
+    ".dat": 217,
     ".des": 3,
-    ".dll": 21,
-    ".doc": 81,
+    ".dll": 24,
+    ".doc": 106,
+    ".dsp": 7,
+    ".dsw": 5,
     ".dxf": 2,
     ".exe": 1,
     ".ext": 12,
-    ".ftc": 201,
-    ".gif": 80,
+    ".f90": 2,
+    ".fi": 22,
+    ".for": 57,
+    ".ftc": 209,
+    ".gif": 115,
     ".gre": 1,
-    ".h": 1,
-    ".hhc": 8,
-    ".hhk": 8,
-    ".hhp": 8,
-    ".htm": 390,
+    ".h": 3,
+    ".hhc": 10,
+    ".hhk": 10,
+    ".hhp": 10,
+    ".htm": 496,
     ".hwproj": 1,
     ".hxc": 1,
     ".hxf": 1,
     ".hxk": 2,
     ".hxt": 1,
     ".ico": 2,
-    ".ini": 3,
+    ".ilk": 5,
+    ".ini": 5,
     ".inp": 2,
     ".job": 1,
-    ".jpg": 136,
+    ".jpg": 154,
     ".ljf": 43,
-    ".log": 13,
-    ".mdb": 6,
-    ".mso": 5,
+    ".log": 22,
+    ".mdb": 12,
+    ".mod": 4,
+    ".mso": 12,
+    ".myapp": 6,
+    ".new": 1,
     ".out": 1,
-    ".png": 8,
-    ".rc": 2,
-    ".resx": 130,
+    ".pdf": 1,
+    ".plg": 6,
+    ".pnd": 1,
+    ".png": 28,
+    ".rc": 3,
+    ".res": 1,
+    ".resx": 164,
     ".rev": 12,
-    ".rtf": 45,
+    ".rtf": 51,
     ".sdd": 31,
+    ".sdf": 1,
+    ".settings": 6,
     ".sez": 1,
-    ".sln": 1,
+    ".sln": 4,
+    ".snk": 1,
     ".stp": 2,
     ".suo": 1,
     ".tem": 1,
     ".trc": 2,
     ".trk": 2,
-    ".txt": 99,
-    ".user": 14,
-    ".vb": 296,
-    ".vbproj": 14,
+    ".txt": 109,
+    ".user": 23,
+    ".vb": 440,
+    ".vbproj": 26,
     ".vdproj": 1,
     ".vip": 27,
     ".vis": 1,
     ".wav": 1,
     ".wmf": 10,
-    ".wmz": 63,
+    ".wmz": 94,
     ".wnf": 20,
     ".wrc": 24,
-    ".xml": 7,
-    ".xsd": 3,
+    ".xls": 2,
+    ".xml": 18,
+    ".xsc": 4,
+    ".xsd": 5,
+    ".xss": 4,
     ".xsx": 2
   },
   "solution_projects": [
@@ -312,60 +336,7 @@
         }
       ],
       "case_differences": [],
-      "missing_files": [
-        {
-          "path": "Arch\\RTF\\Step6A.TXT",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Step6B.TXT",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Step6C.TXT",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Step7.TXT",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\STUHX1252.txt",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Tubias1.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Tubias2.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\TUBIAS3.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\TUBIAS4.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\TUBIAS5.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\TUBIAS6.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Tubiasm.ftc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\RTF\\Tubieur.ftc",
-          "build_action": "Content"
-        }
-      ]
+      "missing_files": []
     },
     {
       "path": "legacy/AzioniPersonalizzate/AzioniPersonalizzate.vbproj",
@@ -418,6 +389,114 @@
         }
       ],
       "case_differences": [],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/BreLock.NET/BreLock.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{8C2C5C84-9716-4BFF-BC35-CA559F85C572}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "BreLock",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "11",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "Mangiarotti SpA",
+        "StartWithIE": "False",
+        "RootNamespace": "BreLock",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.XML",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "stdole",
+          "Guid": "{00020430-0000-0000-C000-000000000046}",
+          "Lcid": "0",
+          "VersionMajor": "2",
+          "VersionMinor": "0",
+          "WrapperTool": "primary",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\LibMat.NET\\LibMat.vbproj",
+          "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+          "Name": "LibMat",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmApert.resX",
+          "actual_path": "legacy/BreLock.NET/frmApert.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
       "missing_files": []
     },
     {
@@ -688,6 +767,156 @@
       "missing_files": []
     },
     {
+      "path": "legacy/HTRI.NET/HTRI.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{DD0C8799-D294-438D-8D24-E271A271E8A9}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "HTRI",
+        "OutputType": "Library",
+        "StartupObject": "",
+        "AssemblyMajorVersion": "4",
+        "AssemblyMinorVersion": "0",
+        "AssemblyRevisionNumber": "23",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "FBM-Hudson Italiana SpA",
+        "RootNamespace": "HTRI",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "2.0",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Infralution.Licensing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "AutoCAD",
+          "Guid": "{851A4561-F4EC-4631-9B0C-E7DC407512C9}",
+          "VersionMajor": "1",
+          "VersionMinor": "0",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "AXDBLib",
+          "Guid": "{11A32D00-9E89-4C16-82CB-629DEBA56AE2}",
+          "VersionMajor": "1",
+          "VersionMinor": "0",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "dao",
+          "Guid": "{00025E01-0000-0000-C000-000000000046}",
+          "Lcid": "0",
+          "VersionMajor": "5",
+          "VersionMinor": "0",
+          "WrapperTool": "primary",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "..\\Grafica.NET\\Grafic2.vbproj",
+          "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
+          "Name": "Grafic2",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\LibMat.NET\\LibMat.vbproj",
+          "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+          "Name": "LibMat",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\Ventil.NET\\Ventil.vbproj",
+          "Project": "{3E7AAA1E-B601-4F2D-B984-AA359256899D}",
+          "Name": "Ventil",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\Wald.NET\\Wald.vbproj",
+          "Project": "{3421DDF7-EFBF-4683-AE38-1C524808AF73}",
+          "Name": "Wald",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\WinWordControl\\WinWordControl.csproj",
+          "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
+          "Name": "WinWordControl",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmHTRI.resX",
+          "actual_path": "legacy/HTRI.NET/frmHTRI.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmScelMat.resX",
+          "actual_path": "legacy/HTRI.NET/frmScelMat.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmStampe.resX",
+          "actual_path": "legacy/HTRI.NET/frmStampe.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "nuovoLav.resX",
+          "actual_path": "legacy/HTRI.NET/nuovoLav.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
+      "missing_files": []
+    },
+    {
       "path": "legacy/Lancio.NET/Lancion.vbproj",
       "encoding": "utf-8-sig",
       "xml_error": null,
@@ -896,6 +1125,81 @@
       ]
     },
     {
+      "path": "legacy/LancioHTRI/LancioHTRI.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{97207FC5-76A1-41F7-83F0-74CCCA34D115}",
+        "OutputType": "WinExe",
+        "StartupObject": "Sub Main",
+        "RootNamespace": "LancioHTRI",
+        "AssemblyName": "LancioHTRI",
+        "MyType": "WindowsFormsWithCustomSubMain"
+      },
+      "references": [
+        {
+          "Include": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Deployment",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Xml",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\Grafica.NET\\Grafic2.vbproj",
+          "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
+          "Name": "Grafic2",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\HTRI.NET\\HTRI.vbproj",
+          "Project": "{DD0C8799-D294-438D-8D24-E271A271E8A9}",
+          "Name": "HTRI",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\LibMat.NET\\LibMat.vbproj",
+          "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+          "Name": "LibMat",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\Ventil.NET\\Ventil.vbproj",
+          "Project": "{3E7AAA1E-B601-4F2D-B984-AA359256899D}",
+          "Name": "Ventil",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [],
+      "missing_files": []
+    },
+    {
       "path": "legacy/LibMat.NET/LibMat.vbproj",
       "encoding": "utf-8-sig",
       "xml_error": null,
@@ -1040,40 +1344,7 @@
           "build_action": "EmbeddedResource"
         }
       ],
-      "missing_files": [
-        {
-          "path": "My Project\\Settings.Designer.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Arch\\Mat200400.mdb",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\piping.new",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\Prezzi.doc",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\tabelle.mdb",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\UpDateASME.ini",
-          "build_action": "Content"
-        },
-        {
-          "path": "Arch\\WN5\\gasket.mdb",
-          "build_action": "Content"
-        },
-        {
-          "path": "My Project\\Settings.settings",
-          "build_action": "None"
-        }
-      ]
+      "missing_files": []
     },
     {
       "path": "legacy/Orecchia.NET/Orecchia.vbproj",
@@ -1163,6 +1434,107 @@
         }
       ],
       "case_differences": [],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/PPgas.net/Ppgas.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{4F2BD0E7-E215-4166-A45F-1CC99E56B433}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "Ppgas",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "9",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "FBM-Hudson",
+        "RootNamespace": "Ppgas",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.XML",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\Wald.NET\\Wald.vbproj",
+          "Project": "{3421DDF7-EFBF-4683-AE38-1C524808AF73}",
+          "Name": "Wald",
+          "Private": "False",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmApert.resX",
+          "actual_path": "legacy/PPgas.net/frmApert.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
       "missing_files": []
     },
     {
@@ -1295,6 +1667,149 @@
           "build_action": "EmbeddedResource"
         }
       ]
+    },
+    {
+      "path": "legacy/RoutBase2.NET/RoutBase2/RoutBase2.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}",
+        "OutputType": "Library",
+        "RootNamespace": "RoutBase2",
+        "AssemblyName": "RoutBase2",
+        "MyType": "Windows",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": ""
+      },
+      "references": [
+        {
+          "Include": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Xml",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "Private": "False",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{F48E382D-A289-4FB5-A707-508CBA9205A7}",
+        "OutputType": "Library",
+        "RootNamespace": "RoutBase3",
+        "AssemblyName": "RoutBase3",
+        "MyType": "Windows",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": ""
+      },
+      "references": [
+        {
+          "Include": "adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+          "Private": "False",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Xml",
+          "kind": "Reference"
+        },
+        {
+          "Include": "ADOX",
+          "Guid": "{00000600-0000-0010-8000-00AA006D2EA4}",
+          "VersionMajor": "2",
+          "VersionMinor": "8",
+          "Lcid": "0",
+          "WrapperTool": "tlbimp",
+          "Isolated": "False",
+          "Private": "False",
+          "kind": "COMReference"
+        }
+      ],
+      "case_differences": [],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/RoutBase4.NET/RoutBase4/RoutBase4.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}",
+        "OutputType": "Library",
+        "RootNamespace": "RoutBase4",
+        "AssemblyName": "RoutBase4",
+        "MyType": "Windows",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": ""
+      },
+      "references": [
+        {
+          "Include": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Xml",
+          "kind": "Reference"
+        }
+      ],
+      "case_differences": [],
+      "missing_files": []
     },
     {
       "path": "legacy/Saddles.NET/Saddles.vbproj",
@@ -1481,6 +1996,236 @@
       "missing_files": []
     },
     {
+      "path": "legacy/StubW9.NET/StubW9.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ApplicationIcon": "",
+        "AssemblyKeyContainerName": "",
+        "AssemblyName": "StubW9",
+        "AssemblyOriginatorKeyFile": "",
+        "AssemblyOriginatorKeyMode": "None",
+        "DefaultClientScript": "JScript",
+        "DefaultHTMLPageLayout": "Grid",
+        "DefaultTargetSchema": "IE50",
+        "DelaySign": "false",
+        "OutputType": "Library",
+        "OptionCompare": "Binary",
+        "OptionExplicit": "On",
+        "OptionStrict": "Off",
+        "RootNamespace": "StubW9",
+        "StartupObject": "",
+        "FileUpgradeFlags": "",
+        "MyType": "Windows",
+        "UpgradeBackupLocation": "",
+        "SignAssembly": "false",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Interop.Office, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL",
+          "kind": "Reference"
+        },
+        {
+          "Include": "Interop.Word, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "kind": "Reference"
+        }
+      ],
+      "case_differences": [],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{022700EF-E560-425C-949B-E55A3F1A7B52}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "Surrisc",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "9",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "Fbm-Hudson Italiana S.P.A.",
+        "StartWithIE": "False",
+        "RootNamespace": "Surrisc",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Interop.Word, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL",
+          "SpecificVersion": "False",
+          "HintPath": "..\\StubW9.NET\\bin\\Interop.Word.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.XML",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "Microsoft.Office.Core",
+          "Guid": "{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}",
+          "VersionMajor": "2",
+          "VersionMinor": "3",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "stdole",
+          "Guid": "{00020430-0000-0000-C000-000000000046}",
+          "Lcid": "0",
+          "VersionMajor": "2",
+          "VersionMinor": "0",
+          "WrapperTool": "primary",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "VBIDE",
+          "Guid": "{0002E157-0000-0000-C000-000000000046}",
+          "Lcid": "0",
+          "VersionMajor": "5",
+          "VersionMinor": "3",
+          "WrapperTool": "tlbimp",
+          "Private": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "Word",
+          "Guid": "{00020905-0000-0000-C000-000000000046}",
+          "VersionMajor": "8",
+          "VersionMinor": "3",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\LibMat.NET\\LibMat.vbproj",
+          "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+          "Name": "LibMat",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\PPgas.net\\Ppgas.vbproj",
+          "Project": "{4F2BD0E7-E215-4166-A45F-1CC99E56B433}",
+          "Name": "Ppgas",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\traccia.NET\\Traccia.vbproj",
+          "Project": "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}",
+          "Name": "Traccia",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\VapAcqua.NET\\VapAcqua.vbproj",
+          "Project": "{C227EF5C-19A0-45A3-980C-AA0EE776D1A8}",
+          "Name": "VapAcqua",
+          "Private": "False",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmApertDll.resX",
+          "actual_path": "legacy/Surrisc.NET/frmApertDll.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmTipo.resX",
+          "actual_path": "legacy/Surrisc.NET/frmTipo.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
+      "missing_files": []
+    },
+    {
       "path": "legacy/Tiranti.NET/Tiranti.vbproj",
       "encoding": "utf-8-sig",
       "xml_error": null,
@@ -1577,6 +2322,213 @@
       "missing_files": []
     },
     {
+      "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{C227EF5C-19A0-45A3-980C-AA0EE776D1A8}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "VapAcqua",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "9",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "FBM-Hudson",
+        "RootNamespace": "VapAcqua",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.XML",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\..\\XSteam\\XSteam\\XSteam.vbproj",
+          "Project": "{76B492A6-FC9A-417C-AF96-105277F4576D}",
+          "Name": "XSteam",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmApert.resX",
+          "actual_path": "legacy/VapAcqua.NET/frmApert.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "path": "legacy/Ventil.NET/Ventil.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{3E7AAA1E-B601-4F2D-B984-AA359256899D}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "Ventil",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "9",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "FBM-Hudson",
+        "RootNamespace": "Ventil",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "2.0",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "AutoCAD",
+          "Guid": "{851A4561-F4EC-4631-9B0C-E7DC407512C9}",
+          "VersionMajor": "1",
+          "VersionMinor": "0",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "AXDBLib",
+          "Guid": "{11A32D00-9E89-4C16-82CB-629DEBA56AE2}",
+          "VersionMajor": "1",
+          "VersionMinor": "0",
+          "Lcid": "0",
+          "WrapperTool": "primary",
+          "Isolated": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "dao",
+          "Guid": "{00025E01-0000-0000-C000-000000000046}",
+          "Lcid": "0",
+          "VersionMajor": "5",
+          "VersionMinor": "0",
+          "WrapperTool": "primary",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\WinWordControl\\WinWordControl.csproj",
+          "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
+          "Name": "WinWordControl",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmCurva.resX",
+          "actual_path": "legacy/Ventil.NET/frmCurva.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
+      "missing_files": []
+    },
+    {
       "path": "legacy/WRCB.NET/Wrcb.vbproj",
       "encoding": "utf-8-sig",
       "xml_error": null,
@@ -1665,6 +2617,120 @@
       ],
       "case_differences": [],
       "missing_files": []
+    },
+    {
+      "path": "legacy/Wald.NET/Wald.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "MyType": "Windows",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{3421DDF7-EFBF-4683-AE38-1C524808AF73}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "AssemblyName": "Wald",
+        "OutputType": "Library",
+        "AssemblyMajorVersion": "1",
+        "AssemblyMinorVersion": "1",
+        "AssemblyRevisionNumber": "9",
+        "GenerateRevisionNumber": "True",
+        "AssemblyCompanyName": "FBM-Hudson",
+        "RootNamespace": "Wald",
+        "FileUpgradeFlags": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "UpgradeBackupLocation": "",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility.Data",
+          "Name": "Microsoft.VisualBasic.Compatibility.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Core",
+          "RequiredTargetFramework": "3.5",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data.DataSetExtensions",
+          "RequiredTargetFramework": "3.5",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.XML",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Name": "RoutBase1",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Name": "StubW2000",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        }
+      ],
+      "case_differences": [
+        {
+          "path": "frmDB.resX",
+          "actual_path": "legacy/Wald.NET/frmDB.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ],
+      "missing_files": [
+        {
+          "path": "Dll\\WaldLib.dll",
+          "build_action": "Content"
+        }
+      ]
     },
     {
       "path": "legacy/traccia.NET/Traccia.vbproj",
@@ -1782,6 +2848,82 @@
       {
         "path": "legacy/AsmeVip.NET/AxUpDownArray.vb",
         "line": 6
+      },
+      {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 50
+      },
+      {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 80
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 488
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 489
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 490
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 491
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 492
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 493
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1039
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1040
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1041
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1042
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1043
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1044
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 30
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 48
       },
       {
         "path": "legacy/DataSheet.NET/DataShDll.vbproj",
@@ -2488,6 +3630,130 @@
         "line": 120
       },
       {
+        "path": "legacy/PPgas.net/Ppgas.vbproj",
+        "line": 48
+      },
+      {
+        "path": "legacy/PPgas.net/Ppgas.vbproj",
+        "line": 49
+      },
+      {
+        "path": "legacy/PPgas.net/Ppgas.vbproj",
+        "line": 72
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 124
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 125
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 126
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 127
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 128
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 129
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 130
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 131
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 132
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 133
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 134
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 135
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 136
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 137
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 256
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 257
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 258
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 259
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 260
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 261
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 262
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 263
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 264
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 268
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 273
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 274
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 275
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 276
+      },
+      {
         "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
         "line": 81
       },
@@ -2660,6 +3926,206 @@
         "line": 116
       },
       {
+        "path": "legacy/Surrisc.NET/AxUpDownArray.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 53
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 54
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 108
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 255
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 256
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 257
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 258
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 259
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 260
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 261
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 262
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 263
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 264
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 265
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 266
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 267
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 268
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 517
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 518
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 519
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 520
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 521
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 522
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 523
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 524
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 525
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 526
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 531
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 532
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 533
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 534
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 43
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 44
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 74
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 75
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 76
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 27
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 28
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 41
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 43
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 46
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 82
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 83
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 84
+      },
+      {
         "path": "legacy/Tiranti.NET/Tir1.vb",
         "line": 3
       },
@@ -2676,8 +4142,240 @@
         "line": 111
       },
       {
+        "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+        "line": 48
+      },
+      {
+        "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+        "line": 49
+      },
+      {
+        "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+        "line": 72
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 58
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 59
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 60
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 61
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 62
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 105
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 106
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 107
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 108
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 109
+      },
+      {
         "path": "legacy/WRCB.NET/AxRichTextBoxArray.vb",
         "line": 6
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 48
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 49
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 51
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 52
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 81
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 151
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 152
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 153
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 154
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 155
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 156
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 157
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 158
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 159
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 160
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 161
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 162
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 163
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 164
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 165
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 166
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 167
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 168
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 315
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 316
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 317
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 318
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 319
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 320
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 321
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 322
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 323
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 324
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 326
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 332
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 333
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 334
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 335
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 336
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 337
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 338
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 30
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 48
       },
       {
         "path": "legacy/traccia.NET/AxListViewArray.vb",
@@ -3120,6 +4818,14 @@
       {
         "path": "legacy/AsmeVip.NET/frmASME.resX",
         "line": 873
+      },
+      {
+        "path": "legacy/AsmeVip.NET/frmBL.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/AsmeVip.NET/frmBL.resx",
+        "line": 57
       },
       {
         "path": "legacy/AsmeVip.NET/frmBel.resX",
@@ -3942,6 +5648,150 @@
         "line": 324
       },
       {
+        "path": "legacy/BreLock.NET/HelpTopics.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/BreLock.NET/HelpTopics.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/BreLock.NET/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/BreLock.NET/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/BreLock.NET/ProjectResources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/BreLock.NET/ProjectResources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 488
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 489
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 490
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 491
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 492
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 493
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1039
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1040
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1041
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1042
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1043
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.Designer.vb",
+        "line": 1044
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 124
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 133
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 143
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 152
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 164
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 173
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 182
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 198
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 207
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 30
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.Designer.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/BreLock.NET/modTipi.vb",
+        "line": 44
+      },
+      {
         "path": "legacy/DataSheet.NET/DATASHEE1.vb",
         "line": 890
       },
@@ -4438,6 +6288,78 @@
         "line": 6
       },
       {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 751
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 752
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1073
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1074
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1374
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1375
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1755
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 1756
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 2434
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 2435
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 2823
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 2824
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3114
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3115
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3412
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3413
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3947
+      },
+      {
+        "path": "legacy/Grafica.NET/DataSet1.Designer.vb",
+        "line": 3948
+      },
+      {
         "path": "legacy/Grafica.NET/DataSet1.vb",
         "line": 504
       },
@@ -4532,6 +6454,14 @@
       {
         "path": "legacy/Grafica.NET/GraficMain.vb",
         "line": 3016
+      },
+      {
+        "path": "legacy/Grafica.NET/HelpTopics.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Grafica.NET/HelpTopics.resx",
+        "line": 56
       },
       {
         "path": "legacy/Grafica.NET/ProjectResources.resx",
@@ -5110,6 +7040,690 @@
         "line": 56
       },
       {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 180
+      },
+      {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 181
+      },
+      {
+        "path": "legacy/HTRI.NET/HelpTopics.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/HelpTopics.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/ProjectResources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/ProjectResources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 18
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 20
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 22
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 24
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 34
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 38
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 50
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 78
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 82
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 86
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 114
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 118
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 122
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 148
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 150
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 152
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 154
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 156
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 158
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 173
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 175
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 177
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 179
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 181
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 183
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 200
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 202
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 206
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 208
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 210
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 212
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 214
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 216
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 218
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 220
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 222
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 234
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 261
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 263
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 265
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 267
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 269
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 276
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 278
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 280
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 282
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 321
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 323
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 325
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 327
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 329
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 336
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 338
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 340
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 342
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 370
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 372
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 406
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 422
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 434
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 456
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 458
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 461
+      },
+      {
+        "path": "legacy/HTRI.NET/Tipi.vb",
+        "line": 465
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 11
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 31
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 41
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 43
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 46
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 83
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 84
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 85
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 90
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 111
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 113
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 124
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 125
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 126
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm.vb",
+        "line": 357
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 8
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 22
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 24
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 35
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 37
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 38
+      },
+      {
+        "path": "legacy/HTRI.NET/Upm2.vb",
+        "line": 51
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 124
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 132
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 141
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 149
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 157
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 177
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 197
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 219
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 240
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 260
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 269
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 278
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 287
+      },
+      {
+        "path": "legacy/HTRI.NET/frmMsg.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/frmMsg.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/frmScelMat.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/frmScelMat.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/frmScelMat.resx",
+        "line": 124
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 124
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 145
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 227
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 236
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 245
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 254
+      },
+      {
+        "path": "legacy/HTRI.NET/nuovoLav.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/nuovoLav.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 10
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 23
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 24
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 25
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 27
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 31
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 33
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 38
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 41
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 44
+      },
+      {
+        "path": "legacy/HTRI.NET/typWald.vb",
+        "line": 53
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 8
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 17
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 23
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 26
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 44
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 55
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 59
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 63
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 66
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 75
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 84
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 90
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 99
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 121
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 122
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 144
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 159
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 164
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 170
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 171
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 177
+      },
+      {
+        "path": "legacy/HTRI.NET/typbuf.vb",
+        "line": 178
+      },
+      {
         "path": "legacy/Lancio.NET/AxSSRibbonArray.vb",
         "line": 5
       },
@@ -5268,6 +7882,14 @@
       {
         "path": "legacy/Lancio.NET/frmPers.vb",
         "line": 64
+      },
+      {
+        "path": "legacy/LancioHTRI/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LancioHTRI/My Project/Resources.resx",
+        "line": 57
       },
       {
         "path": "legacy/LibMat.NET/ProjectResources.resx",
@@ -5746,6 +8368,178 @@
         "line": 190
       },
       {
+        "path": "legacy/PPgas.net/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/PPgas.net/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/PPgas.net/clsPpg.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 124
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 125
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 126
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 127
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 128
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 129
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 130
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 131
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 132
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 133
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 134
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 135
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 136
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 137
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 256
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 257
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 258
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 259
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 260
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 261
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 262
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 263
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 264
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 268
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 273
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 274
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 275
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.Designer.vb",
+        "line": 276
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 11
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 13
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 15
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 17
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 31
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 35
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 37
+      },
+      {
+        "path": "legacy/PPgas.net/modMainPpg.vb",
+        "line": 59
+      },
+      {
         "path": "legacy/RoutBase.NET/AutoCAD.vb",
         "line": 106
       },
@@ -5854,6 +8648,14 @@
         "line": 1180
       },
       {
+        "path": "legacy/RoutBase.NET/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/RoutBase.NET/My Project/Resources.resx",
+        "line": 56
+      },
+      {
         "path": "legacy/RoutBase.NET/ProjectResources.resx",
         "line": 25
       },
@@ -5908,6 +8710,10 @@
       {
         "path": "legacy/RoutBase.NET/clsTrigon.vb",
         "line": 189
+      },
+      {
+        "path": "legacy/RoutBase.NET/dsCommesse.Designer.vb",
+        "line": 392
       },
       {
         "path": "legacy/RoutBase.NET/dsCommesse.vb",
@@ -6176,6 +8982,186 @@
       {
         "path": "legacy/RoutBase.NET/modSubClass.vb",
         "line": 590
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 1110
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 1327
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 1628
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 1898
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 2139
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 2344
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 2815
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 3227
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 3481
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 3697
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 3922
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 4232
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 4567
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 4832
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 5047
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 5260
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 5561
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 5873
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 6113
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 6386
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 6634
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 6855
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 7229
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 7504
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 7752
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/Arch/Gestione/CommesseDataSet.Designer.vb",
+        "line": 8032
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/RoutBase2.NET/RoutBase2/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 13
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 154
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 275
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 379
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 468
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 498
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 500
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 502
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 504
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 506
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 565
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 692
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/ControlArrays.vb",
+        "line": 804
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/My Project/Resources.resx",
+        "line": 57
       },
       {
         "path": "legacy/Saddles.NET/AxSSFrameArray.vb",
@@ -6710,6 +9696,258 @@
         "line": 3601
       },
       {
+        "path": "legacy/Surrisc.NET/AxUpDownArray.vb",
+        "line": 5
+      },
+      {
+        "path": "legacy/Surrisc.NET/AxUpDownArray.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/Surrisc.NET/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Surrisc.NET/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 255
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 256
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 257
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 258
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 259
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 260
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 261
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 262
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 263
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 264
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 265
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 266
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 267
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 268
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 517
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 518
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 519
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 520
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 521
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 522
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 523
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 524
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 525
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 526
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 531
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 532
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 533
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.Designer.vb",
+        "line": 534
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 139
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 151
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 172
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 181
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 193
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 43
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 44
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 74
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 75
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.Designer.vb",
+        "line": 76
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 27
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 28
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 41
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.Designer.vb",
+        "line": 43
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 46
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 82
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 83
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.Designer.vb",
+        "line": 84
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.resX",
+        "line": 57
+      },
+      {
         "path": "legacy/Tiranti.NET/Tir1.resX",
         "line": 25
       },
@@ -6748,6 +9986,478 @@
       {
         "path": "legacy/Tiranti.NET/frmcoef.resX",
         "line": 56
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 58
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 59
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 60
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 61
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 62
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 105
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 106
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 107
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 108
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.Designer.vb",
+        "line": 109
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 12
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 15
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 18
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 20
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 89
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 98
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 108
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 117
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 118
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 119
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 120
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 121
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 122
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 123
+      },
+      {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 124
+      },
+      {
+        "path": "legacy/Ventil.NET/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Ventil.NET/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 25
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 33
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 53
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 57
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 61
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 79
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 81
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 83
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 85
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 87
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 89
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 104
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 106
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 108
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 110
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 112
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 114
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 131
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 133
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 137
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 139
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 141
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 143
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 145
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 147
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 149
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 151
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 153
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 165
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 192
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 194
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 196
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 198
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 200
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 207
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 209
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 211
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 213
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 252
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 254
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 256
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 258
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 260
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 267
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 269
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 271
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 273
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 301
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 303
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 337
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 353
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 365
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 388
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 391
+      },
+      {
+        "path": "legacy/Ventil.NET/Tipi.vb",
+        "line": 394
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 124
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 148
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 157
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 8
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 17
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 52
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 56
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 67
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 76
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 85
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 94
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 103
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 112
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 135
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 137
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 159
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 175
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 180
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 189
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 190
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 199
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 201
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 202
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 203
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 204
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 205
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 207
+      },
+      {
+        "path": "legacy/Ventil.NET/typbuf.vb",
+        "line": 216
       },
       {
         "path": "legacy/WRCB.NET/AxRichTextBoxArray.vb",
@@ -6936,6 +10646,306 @@
       {
         "path": "legacy/WRCB.NET/frmLib.resX",
         "line": 56
+      },
+      {
+        "path": "legacy/Wald.NET/CondCurvaDataSet.Designer.vb",
+        "line": 634
+      },
+      {
+        "path": "legacy/Wald.NET/CondCurvaDataSet.Designer.vb",
+        "line": 635
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 10
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 11
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 12
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 13
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 14
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 15
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 19
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 20
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 21
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 86
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 96
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 97
+      },
+      {
+        "path": "legacy/Wald.NET/My Project/Resources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Wald.NET/My Project/Resources.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 151
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 152
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 153
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 154
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 155
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 156
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 157
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 158
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 159
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 160
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 161
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 162
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 163
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 164
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 165
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 166
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 167
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 168
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 315
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 316
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 317
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 318
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 319
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 320
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 321
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 322
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 323
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 324
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 326
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 332
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 333
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 334
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 335
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 336
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 337
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.Designer.vb",
+        "line": 338
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/Wald.NET/frmDB.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/Wald.NET/frmDB.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 30
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 47
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.Designer.vb",
+        "line": 48
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 23
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 24
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 25
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 27
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 29
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 31
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 33
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 38
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 41
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 42
+      },
+      {
+        "path": "legacy/Wald.NET/typWald.vb",
+        "line": 44
+      },
+      {
+        "path": "legacy/WinWordControl/WinWordControl.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/WinWordControl/WinWordControl.resx",
+        "line": 55
       },
       {
         "path": "legacy/traccia.NET/AxListViewArray.vb",
@@ -7536,6 +11546,10 @@
         "line": 81
       },
       {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 67
+      },
+      {
         "path": "legacy/DataSheet.NET/DataShDll.vbproj",
         "line": 85
       },
@@ -7554,6 +11568,10 @@
       {
         "path": "legacy/Saddles.NET/Saddles.vbproj",
         "line": 85
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 79
       },
       {
         "path": "legacy/Tiranti.NET/Tiranti.vbproj",
@@ -7728,6 +11746,70 @@
       {
         "path": "legacy/RoutBase.NET/clsTrigon.vb",
         "line": 44
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+        "line": 39
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+        "line": 48
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+        "line": 95
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 8
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 10
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 11
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 12
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 16
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 21
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 36
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 45
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 59
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/clsAccessoDati.vb",
+        "line": 60
       }
     ],
     "Office": [
@@ -7764,6 +11846,14 @@
         "line": 1644
       },
       {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 74
+      },
+      {
+        "path": "legacy/BreLock.NET/BreLock.vbproj",
+        "line": 75
+      },
+      {
         "path": "legacy/DataSheet.NET/DATASHEE1.vb",
         "line": 135
       },
@@ -7786,6 +11876,22 @@
       {
         "path": "legacy/Grafica.NET/GraficMain.vb",
         "line": 7827
+      },
+      {
+        "path": "legacy/HTRI.NET/HTRI.vbproj",
+        "line": 265
+      },
+      {
+        "path": "legacy/HTRI.NET/HTRI.vbproj",
+        "line": 267
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.vb",
+        "line": 107
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.vb",
+        "line": 109
       },
       {
         "path": "legacy/Lancio.NET/ProjectResources.resx",
@@ -7812,6 +11918,22 @@
         "line": 117
       },
       {
+        "path": "legacy/LancioHTRI/clsMonitor.vb",
+        "line": 16
+      },
+      {
+        "path": "legacy/LancioHTRI/clsMonitor.vb",
+        "line": 23
+      },
+      {
+        "path": "legacy/LancioHTRI/clsMonitor.vb",
+        "line": 25
+      },
+      {
+        "path": "legacy/LancioHTRI/clsMonitor.vb",
+        "line": 28
+      },
+      {
         "path": "legacy/LibMat.NET/LibMat.vbproj",
         "line": 137
       },
@@ -7834,6 +11956,14 @@
       {
         "path": "legacy/Orecchia.NET/Orecchia.vbproj",
         "line": 106
+      },
+      {
+        "path": "legacy/PPgas.net/Ppgas.vbproj",
+        "line": 66
+      },
+      {
+        "path": "legacy/PPgas.net/Ppgas.vbproj",
+        "line": 67
       },
       {
         "path": "legacy/RoutBase.NET/Generale.vb",
@@ -8876,6 +13006,438 @@
         "line": 1045
       },
       {
+        "path": "legacy/StubW9.NET/StubW9.vbproj",
+        "line": 74
+      },
+      {
+        "path": "legacy/StubW9.NET/StubW9.vbproj",
+        "line": 75
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 3
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 5
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 7
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 8
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 9
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 84
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 87
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 92
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 95
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 121
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 157
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 179
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 337
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 360
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 384
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 412
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 700
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 761
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 766
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 767
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 788
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 789
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 791
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 792
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 899
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1049
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1053
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1062
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1063
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1067
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1108
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1113
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1115
+      },
+      {
+        "path": "legacy/StubW9.NET/clsSW9.vb",
+        "line": 1122
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 6
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1906
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1907
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1908
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1913
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1918
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1923
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1928
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1933
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1936
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1950
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1951
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1952
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1957
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1962
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1967
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1972
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 1977
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2002
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2027
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2175
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2176
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2177
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2182
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2187
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2192
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2197
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2202
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2205
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2219
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2220
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2221
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2226
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2231
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2236
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2241
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2246
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2271
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2296
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2769
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2873
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2875
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2877
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2879
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2882
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2884
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2886
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2888
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2891
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2893
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2895
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 2907
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3011
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3013
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3015
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3017
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3020
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3022
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3024
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3026
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3029
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3031
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3033
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3046
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 49
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 51
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 71
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 86
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 94
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 102
+      },
+      {
+        "path": "legacy/Surrisc.NET/SurriscDll.vbproj",
+        "line": 103
+      },
+      {
         "path": "legacy/Tiranti.NET/Tiranti.vbproj",
         "line": 114
       },
@@ -8884,8 +13446,64 @@
         "line": 203
       },
       {
+        "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+        "line": 66
+      },
+      {
+        "path": "legacy/VapAcqua.NET/VapAcqua.vbproj",
+        "line": 67
+      },
+      {
+        "path": "legacy/VapAcqua.NET/clsVapAcqua.vb",
+        "line": 15
+      },
+      {
+        "path": "legacy/VapAcqua.NET/clsVapAcqua.vb",
+        "line": 26
+      },
+      {
+        "path": "legacy/VapAcqua.NET/clsVapAcqua.vb",
+        "line": 541
+      },
+      {
+        "path": "legacy/Ventil.NET/Ventil.vbproj",
+        "line": 148
+      },
+      {
+        "path": "legacy/Ventil.NET/Ventil.vbproj",
+        "line": 150
+      },
+      {
         "path": "legacy/WRCB.NET/Wrcb.vbproj",
         "line": 109
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 1336
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 1337
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 1360
+      },
+      {
+        "path": "legacy/Wald.NET/Launch.vb",
+        "line": 1382
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 75
+      },
+      {
+        "path": "legacy/Wald.NET/Wald.vbproj",
+        "line": 76
+      },
+      {
+        "path": "legacy/WinWordControl/WinWordControl.resx",
+        "line": 100
       },
       {
         "path": "legacy/traccia.NET/Traccia.vbproj",
@@ -9008,6 +13626,46 @@
       {
         "path": "legacy/Grafica.NET/frmScelFla.vb",
         "line": 507
+      },
+      {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 212
+      },
+      {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 213
+      },
+      {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 215
+      },
+      {
+        "path": "legacy/HTRI.NET/HTRI.vbproj",
+        "line": 60
+      },
+      {
+        "path": "legacy/HTRI.NET/UpgradeSupport.vb",
+        "line": 3
+      },
+      {
+        "path": "legacy/HTRI.NET/Uptx1.vb",
+        "line": 23
+      },
+      {
+        "path": "legacy/HTRI.NET/Uptx1.vb",
+        "line": 24
+      },
+      {
+        "path": "legacy/HTRI.NET/Uptx1.vb",
+        "line": 709
+      },
+      {
+        "path": "legacy/HTRI.NET/Uptx1.vb",
+        "line": 1105
+      },
+      {
+        "path": "legacy/HTRI.NET/Uptx1.vb",
+        "line": 1106
       },
       {
         "path": "legacy/Lancio.NET/ProjectResources.resx",
@@ -9518,6 +14176,22 @@
         "line": 65
       },
       {
+        "path": "legacy/Ventil.NET/Htrifin.vb",
+        "line": 195
+      },
+      {
+        "path": "legacy/Ventil.NET/Ventil.vbproj",
+        "line": 57
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.vb",
+        "line": 14
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.vb",
+        "line": 42
+      },
+      {
         "path": "legacy/traccia.NET/InizioN.vb",
         "line": 1045
       },
@@ -9561,6 +14235,10 @@
       },
       {
         "path": "legacy/Saddles.NET/AxSSRibbonArray.vb",
+        "line": 5
+      },
+      {
+        "path": "legacy/Surrisc.NET/AxUpDownArray.vb",
         "line": 5
       },
       {
@@ -9664,6 +14342,10 @@
       {
         "path": "legacy/AsmeVip.NET/frmASME.resX",
         "line": 48
+      },
+      {
+        "path": "legacy/AsmeVip.NET/frmBL.resx",
+        "line": 49
       },
       {
         "path": "legacy/AsmeVip.NET/frmBel.resX",
@@ -9830,6 +14512,50 @@
         "line": 2457
       },
       {
+        "path": "legacy/BreLock.NET/HelpTopics.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/ProjectResources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/clsBreLoc.vb",
+        "line": 4
+      },
+      {
+        "path": "legacy/BreLock.NET/clsBreLoc.vb",
+        "line": 408
+      },
+      {
+        "path": "legacy/BreLock.NET/clsBreLoc.vb",
+        "line": 412
+      },
+      {
+        "path": "legacy/BreLock.NET/frmApert.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/frmProblem.resX",
+        "line": 49
+      },
+      {
+        "path": "legacy/BreLock.NET/modMain.vb",
+        "line": 5
+      },
+      {
+        "path": "legacy/BreLock.NET/modMain.vb",
+        "line": 166
+      },
+      {
+        "path": "legacy/BreLock.NET/modMain.vb",
+        "line": 178
+      },
+      {
         "path": "legacy/DataSheet.NET/DataShe1.resX",
         "line": 48
       },
@@ -9894,6 +14620,10 @@
         "line": 7491
       },
       {
+        "path": "legacy/Grafica.NET/HelpTopics.resx",
+        "line": 48
+      },
+      {
         "path": "legacy/Grafica.NET/LibGra.vb",
         "line": 25
       },
@@ -9904,6 +14634,10 @@
       {
         "path": "legacy/Grafica.NET/ProjectResources.resx",
         "line": 48
+      },
+      {
+        "path": "legacy/Grafica.NET/clsBL_HH.vb",
+        "line": 6
       },
       {
         "path": "legacy/Grafica.NET/frmDBSelle.resX",
@@ -9958,6 +14692,42 @@
         "line": 132
       },
       {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 1647
+      },
+      {
+        "path": "legacy/HTRI.NET/GenHTRI.vb",
+        "line": 1659
+      },
+      {
+        "path": "legacy/HTRI.NET/HelpTopics.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/ProjectResources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/frmHTRI.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/frmMsg.resX",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/frmScelMat.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/frmStampe.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/HTRI.NET/nuovoLav.resx",
+        "line": 49
+      },
+      {
         "path": "legacy/Lancio.NET/Form2n.resX",
         "line": 48
       },
@@ -9988,6 +14758,14 @@
       {
         "path": "legacy/Lancio.NET/frmPers.resX",
         "line": 48
+      },
+      {
+        "path": "legacy/LancioHTRI/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/LancioHTRI/mainLancioHTRI.vb",
+        "line": 81
       },
       {
         "path": "legacy/LibMat.NET/ProjectResources.resx",
@@ -10074,6 +14852,14 @@
         "line": 1374
       },
       {
+        "path": "legacy/PPgas.net/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/PPgas.net/frmApert.resx",
+        "line": 49
+      },
+      {
         "path": "legacy/RoutBase.NET/Comm.vb",
         "line": 48
       },
@@ -10096,6 +14882,10 @@
       {
         "path": "legacy/RoutBase.NET/Motore.vb",
         "line": 1324
+      },
+      {
+        "path": "legacy/RoutBase.NET/My Project/Resources.resx",
+        "line": 48
       },
       {
         "path": "legacy/RoutBase.NET/ProjectResources.resx",
@@ -10150,6 +14940,18 @@
         "line": 47
       },
       {
+        "path": "legacy/RoutBase2.NET/RoutBase2/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/RoutBase3.NET/RoutBase3/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/RoutBase4.NET/RoutBase4/My Project/Resources.resx",
+        "line": 49
+      },
+      {
         "path": "legacy/Saddles.NET/Frmsce~1.resX",
         "line": 48
       },
@@ -10186,6 +14988,34 @@
         "line": 48
       },
       {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 4
+      },
+      {
+        "path": "legacy/Surrisc.NET/GenSurr.vb",
+        "line": 3217
+      },
+      {
+        "path": "legacy/Surrisc.NET/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmApertDll.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmProp.resX",
+        "line": 49
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTipo.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Surrisc.NET/frmTubi.resX",
+        "line": 49
+      },
+      {
         "path": "legacy/Tiranti.NET/Serraggio.vb",
         "line": 5
       },
@@ -10204,6 +15034,18 @@
       {
         "path": "legacy/Tiranti.NET/frmcoef.resX",
         "line": 48
+      },
+      {
+        "path": "legacy/VapAcqua.NET/frmApert.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Ventil.NET/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Ventil.NET/frmCurva.resx",
+        "line": 49
       },
       {
         "path": "legacy/WRCB.NET/Aprileg.vb",
@@ -10243,6 +15085,26 @@
       },
       {
         "path": "legacy/WRCB.NET/frmLib.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/Wald.NET/My Project/Resources.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Wald.NET/frmApert.resX",
+        "line": 49
+      },
+      {
+        "path": "legacy/Wald.NET/frmDB.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/Wald.NET/frmProblem.resX",
+        "line": 49
+      },
+      {
+        "path": "legacy/WinWordControl/WinWordControl.resx",
         "line": 48
       },
       {

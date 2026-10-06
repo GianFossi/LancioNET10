@@ -1,0 +1,568 @@
+[
+  {
+    "check": "modern",
+    "command": [
+      "dotnet",
+      "build",
+      "LancioNET10.slnx",
+      "-c",
+      "Release",
+      "--nologo"
+    ],
+    "exit_code": 0,
+    "error_count": 0,
+    "first_errors": []
+  },
+  {
+    "check": "libmat",
+    "command": [
+      "dotnet",
+      "build",
+      "src/LibMat/LibMat.vbproj",
+      "-c",
+      "Release",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 83,
+    "first_errors": [
+      "src/LibMat/bwg4.vb(399,55): error BC30002: Type 'RadioButton' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(66,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(15,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(16,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]"
+    ]
+  },
+  {
+    "check": "orecchia",
+    "command": [
+      "dotnet",
+      "build",
+      "src/Orecchia/Orecchia.vbproj",
+      "-c",
+      "Release",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 83,
+    "first_errors": [
+      "src/LibMat/bwg4.vb(399,55): error BC30002: Type 'RadioButton' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(66,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(67,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(68,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]"
+    ]
+  },
+  {
+    "check": "legacy-solution",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Lancio.sln",
+      "-c",
+      "Release",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "MSBUILD : error MSB4025: The project file could not be loaded. Root element is missing."
+    ]
+  },
+  {
+    "check": "AsmeVip",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/AsmeVip.NET/AsmeVip.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/AsmeVip.NET/AsmeVip.vbproj(618,39): error MSB4025: The project file could not be loaded. An error occurred while parsing EntityName. Line 618, position 39."
+    ]
+  },
+  {
+    "check": "AzioniPersonalizzate",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/AzioniPersonalizzate/AzioniPersonalizzate.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/AzioniPersonalizzate/AzioniPersonalizzate.vbproj(1,1): error MSB4075: The project file \"legacy/AzioniPersonalizzate/AzioniPersonalizzate.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "BreLock",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/BreLock.NET/BreLock.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/BreLock.NET/BreLock.vbproj]"
+    ]
+  },
+  {
+    "check": "DataShDll",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/DataSheet.NET/DataShDll.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/DataSheet.NET/DataShDll.vbproj(1,1): error MSB4075: The project file \"legacy/DataSheet.NET/DataShDll.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "FormulaParser",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/FormulaParser/FormulaParser.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/FormulaParser/FormulaParser.vbproj(1,1): error MSB4075: The project file \"legacy/FormulaParser/FormulaParser.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "Grafic2",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Grafica.NET/Grafic2.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/Grafica.NET/Grafic2.vbproj(1,1): error MSB4075: The project file \"legacy/Grafica.NET/Grafic2.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "HTRI",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/HTRI.NET/HTRI.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/HTRI.NET/HTRI.vbproj]"
+    ]
+  },
+  {
+    "check": "Lancion",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Lancio.NET/Lancion.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/Lancio.NET/Lancion.vbproj(1,1): error MSB4075: The project file \"legacy/Lancio.NET/Lancion.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "LancioHTRI",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/LancioHTRI/LancioHTRI.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v4.0 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/LancioHTRI/LancioHTRI.vbproj]"
+    ]
+  },
+  {
+    "check": "LibMat",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/LibMat.NET/LibMat.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/LibMat.NET/LibMat.vbproj]"
+    ]
+  },
+  {
+    "check": "Orecchia",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Orecchia.NET/Orecchia.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/Orecchia.NET/Orecchia.vbproj]"
+    ]
+  },
+  {
+    "check": "Ppgas",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/PPgas.net/Ppgas.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/PPgas.net/Ppgas.vbproj]"
+    ]
+  },
+  {
+    "check": "RoutBase1",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/RoutBase.NET/RoutBase1.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/RoutBase.NET/RoutBase1.vbproj(1,1): error MSB4075: The project file \"legacy/RoutBase.NET/RoutBase1.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "RoutBase2",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/RoutBase2.NET/RoutBase2/RoutBase2.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/RoutBase2.NET/RoutBase2/RoutBase2.vbproj]"
+    ]
+  },
+  {
+    "check": "RoutBase3",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/RoutBase3.NET/RoutBase3/RoutBase3.vbproj]"
+    ]
+  },
+  {
+    "check": "RoutBase4",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/RoutBase4.NET/RoutBase4/RoutBase4.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/RoutBase4.NET/RoutBase4/RoutBase4.vbproj]"
+    ]
+  },
+  {
+    "check": "Saddles",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Saddles.NET/Saddles.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/Saddles.NET/Saddles.vbproj(1,1): error MSB4075: The project file \"legacy/Saddles.NET/Saddles.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "StubW2000",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/StubW2000.NET/StubW2000.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/StubW2000.NET/StubW2000.vbproj(1,1): error MSB4075: The project file \"legacy/StubW2000.NET/StubW2000.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "StubW9",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/StubW9.NET/StubW9.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/StubW9.NET/StubW9.vbproj]"
+    ]
+  },
+  {
+    "check": "SurriscDll",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Surrisc.NET/SurriscDll.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/Surrisc.NET/SurriscDll.vbproj]"
+    ]
+  },
+  {
+    "check": "Tiranti",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Tiranti.NET/Tiranti.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/Tiranti.NET/Tiranti.vbproj(1,1): error MSB4075: The project file \"legacy/Tiranti.NET/Tiranti.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "VapAcqua",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/VapAcqua.NET/VapAcqua.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/VapAcqua.NET/VapAcqua.vbproj]"
+    ]
+  },
+  {
+    "check": "Ventil",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Ventil.NET/Ventil.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/Ventil.NET/Ventil.vbproj]"
+    ]
+  },
+  {
+    "check": "Wrcb",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/WRCB.NET/Wrcb.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/WRCB.NET/Wrcb.vbproj(1,1): error MSB4075: The project file \"legacy/WRCB.NET/Wrcb.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "Wald",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/Wald.NET/Wald.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v3.5 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/Wald.NET/Wald.vbproj]"
+    ]
+  },
+  {
+    "check": "Traccia",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/traccia.NET/Traccia.vbproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "legacy/traccia.NET/Traccia.vbproj(1,1): error MSB4075: The project file \"legacy/traccia.NET/Traccia.vbproj\" must be opened in a version of Visual Studio IDE that supports it and converted to the latest version before it can be built by MSBuild. More info: https://aka.ms/DeprecatedProjectConversion"
+    ]
+  },
+  {
+    "check": "legacy-word-control",
+    "command": [
+      "dotnet",
+      "build",
+      "legacy/WinWordControl/WinWordControl.csproj",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 1,
+    "first_errors": [
+      "/workspace/dotnet/sdk/10.0.401/Microsoft.Common.CurrentVersion.targets(1259,5): error MSB3644: The reference assemblies for .NETFramework,Version=v4.0 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks [legacy/WinWordControl/WinWordControl.csproj]"
+    ]
+  },
+  {
+    "check": "FormulaParser.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/FormulaParser.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "error_count": 0,
+    "first_errors": []
+  },
+  {
+    "check": "Access.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/Access.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "error_count": 0,
+    "first_errors": []
+  },
+  {
+    "check": "Word.Smoke",
+    "command": [
+      "dotnet",
+      "run",
+      "--project",
+      "tests/Word.Smoke",
+      "-c",
+      "Release",
+      "--no-build"
+    ],
+    "exit_code": 0,
+    "error_count": 0,
+    "first_errors": []
+  },
+  {
+    "check": "LibMat-after-imports",
+    "command": [
+      "dotnet",
+      "build",
+      "src/LibMat/LibMat.vbproj",
+      "-c",
+      "Release",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 58,
+    "first_errors": [
+      "src/LibMat/CarattMat.vb(66,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(15,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(67,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(68,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(16,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(69,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(17,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(18,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]"
+    ]
+  },
+  {
+    "check": "Orecchia-after-imports",
+    "command": [
+      "dotnet",
+      "build",
+      "src/Orecchia/Orecchia.vbproj",
+      "-c",
+      "Release",
+      "--no-restore",
+      "--nologo"
+    ],
+    "exit_code": 1,
+    "error_count": 58,
+    "first_errors": [
+      "src/LibMat/CarattMat.vb(66,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(67,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(68,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(69,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(15,20): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(16,22): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(17,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]",
+      "src/LibMat/CarattMat.vb(18,21): error BC30002: Type 'RoutBase1.LinkListS' is not defined. [src/LibMat/LibMat.vbproj]"
+    ]
+  }
+]

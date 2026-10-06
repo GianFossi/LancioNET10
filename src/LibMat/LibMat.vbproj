@@ -16,6 +16,9 @@
     <DefineConstants>Win32=True</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
     <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
     <ProjectReference Include="../Lancio.Data.Access/Lancio.Data.Access.vbproj" />

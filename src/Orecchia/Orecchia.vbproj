@@ -17,6 +17,8 @@
     <MigrationDependencyDirectory Condition="'$(MigrationDependencyDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/dependencies</MigrationDependencyDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <Reference Include="RoutBase1">
       <HintPath>$(MigrationDependencyDirectory)/RoutBase1.dll</HintPath>
