@@ -1,6 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <AssemblyName>LibMat</AssemblyName>
     <RootNamespace>LibMat</RootNamespace>
     <OptionStrict>On</OptionStrict>
@@ -12,6 +18,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
     <Reference Include="Interop.ADOX">
       <HintPath>$(LegacyInteropDirectory)/Interop.ADOX.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
@@ -20,6 +27,7 @@
   </ItemGroup>
   <Target Name="CheckAdoInterop" BeforeTargets="ResolveReferences">
     <Error Condition="!Exists('$(LegacyInteropDirectory)/Interop.ADOX.dll')"
-           Text="ADOXSample requires a verified ADOX interop assembly. Set LegacyInteropDirectory to its directory. LibMat source is also incomplete: MaterialeNew1 and clsInitLibMat are not present in this import." />
+           Text="LibMat requires a verified ADOX interop assembly. Set LegacyInteropDirectory to its directory. Other COM/project dependencies also remain to migrate." />
   </Target>
+  <Import Project="LegacySources.props" />
 </Project>

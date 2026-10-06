@@ -12,6 +12,7 @@
     <DefineConstants>Win32=True</DefineConstants>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <MigrationDependencyDirectory Condition="'$(MigrationDependencyDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/dependencies</MigrationDependencyDirectory>
   </PropertyGroup>
@@ -20,14 +21,12 @@
     <Reference Include="RoutBase1">
       <HintPath>$(MigrationDependencyDirectory)/RoutBase1.dll</HintPath>
     </Reference>
-    <EmbeddedResource Include="InserDati_1.resX" />
-    <EmbeddedResource Include="InserDati_2.resX" />
-    <EmbeddedResource Include="InserDati_3.resX" />
     <None Update="Arch/**/*;Aiuto/**/*" CopyToOutputDirectory="PreserveNewest" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
   </ItemGroup>
   <Target Name="CheckMigrationDependencies" BeforeTargets="ResolveReferences">
     <Error Condition="!Exists('$(MigrationDependencyDirectory)/RoutBase1.dll')"
-           Text="Orecchia requires the migrated RoutBase1 assembly; set MigrationDependencyDirectory. The imported Orecchia module and clsMonitor definitions are also missing. Do not substitute empty calculation stubs." />
+           Text="Orecchia requires the migrated RoutBase1 assembly; set MigrationDependencyDirectory. StubW2000, StubW9 and the Word backend also remain to migrate." />
   </Target>
+  <Import Project="LegacySources.props" />
 </Project>

@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 
 
 
-<Assembly: AssemblyTitle("OREC")> 
-<Assembly: AssemblyDescription("Progetto delle orecchie di sollevamento")> 
+<Assembly: AssemblyTitle("Lancio")> 
+<Assembly: AssemblyDescription("Librerie materiali")> 
 <Assembly: AssemblyCompany("SSAP - Servizi e Soluzioni Aziendali Presciuttini")> 
 <Assembly: AssemblyProduct("")>
-<Assembly: AssemblyCopyright("Leonardo Presciuttini @2005")> 
+<Assembly: AssemblyCopyright("Leonardo Presciuttini @2004")> 
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 
@@ -28,7 +28,7 @@ Imports System.Runtime.InteropServices
 ' utilizzando il carattere "*" come illustrato di seguito
 
 
-<Assembly: AssemblyVersion("6.0.0.0")> 
+<Assembly: AssemblyVersion("6.36.0.0")> 
 
 
 

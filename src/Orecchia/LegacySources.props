@@ -1,0 +1,11 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsOrecchia.vb" />
+    <Compile Include="InserDati_1.vb" />
+    <Compile Include="oreMonitor.vb" />
+    <Compile Include="Var_Funz.vb" />
+    <EmbeddedResource Include="InserDati_1.resX" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+  </ItemGroup>
+</Project>

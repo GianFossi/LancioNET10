@@ -1,0 +1,51 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="bwg4.vb" />
+    <Compile Include="CarattMat.vb" />
+    <Compile Include="clsBWG.vb" />
+    <Compile Include="clsGuarn.vb" />
+    <Compile Include="clsMat.vb" />
+    <Compile Include="clsPipe.vb" />
+    <Compile Include="frmChart.vb" />
+    <Compile Include="frmDati.vb" />
+    <Compile Include="frmEliminaVecchi.vb" />
+    <Compile Include="frmGuarn.vb" />
+    <Compile Include="frmMater.vb" />
+    <Compile Include="frmNonTrovato.vb" />
+    <Compile Include="frmNote.vb" />
+    <Compile Include="frmPipe.vb" />
+    <Compile Include="frmprz.vb" />
+    <Compile Include="frmScheda.vb" />
+    <Compile Include="frmTira.vb" />
+    <Compile Include="frmTirFil.vb" />
+    <Compile Include="frmUpdate.vb" />
+    <Compile Include="frmUpDateCampi.vb" />
+    <Compile Include="GridWrap.vb" />
+    <Compile Include="InitLibMat.vb" />
+    <Compile Include="Matcom~1.vb" />
+    <Compile Include="Materi~1.vb" />
+    <Compile Include="modMain.vb" />
+    <Compile Include="Monitor.vb" />
+    <Compile Include="My Project/Settings.Designer.vb" />
+    <Compile Include="Tiranti.vb" />
+    <EmbeddedResource Include="bwg4.resX" />
+    <EmbeddedResource Include="frmChart.resx" />
+    <EmbeddedResource Include="frmDati.resX" />
+    <EmbeddedResource Include="frmEliminaVecchi.resx" />
+    <EmbeddedResource Include="frmGuarn.resX" />
+    <EmbeddedResource Include="frmMater.resx" />
+    <EmbeddedResource Include="frmNonTrovato.resx" />
+    <EmbeddedResource Include="frmNote.resX" />
+    <EmbeddedResource Include="frmPipe.resX" />
+    <EmbeddedResource Include="frmprz.resX" />
+    <EmbeddedResource Include="frmScheda.resX" />
+    <EmbeddedResource Include="frmTira.resX" />
+    <EmbeddedResource Include="frmTirFil.resX" />
+    <EmbeddedResource Include="frmUpdate.resX" />
+    <EmbeddedResource Include="frmUpDateCampi.resx" />
+    <EmbeddedResource Include="GridWrap.resx" />
+    <EmbeddedResource Include="Risorse.en.resx" />
+    <EmbeddedResource Include="Risorse.resx" />
+  </ItemGroup>
+</Project>

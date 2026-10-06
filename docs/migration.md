@@ -2,6 +2,11 @@
 
 ## Stato corrente dopo l'importazione
 
+Ultima validazione: [check completo e tentativi di build](build-check.md).
+Aggiornate le copie migrate LibMat/Orecchia con i nuovi sorgenti e gli input
+di compilazione dei manifest originali. La soluzione FormulaParser passa;
+le build LibMat/Orecchia e quelle legacy falliscono sui blocchi documentati.
+
 Ultimo controllo: importato `a7ab45c`, con i sorgenti aggiuntivi LibMat e
 Orecchia. Vedere [verifica aggiornata](latest-upload-check.md) per i file ora
 presenti e le dipendenze ancora mancanti. I conteggi sotto sono storici.
