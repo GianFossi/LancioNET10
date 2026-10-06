@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Panoramica">
+		<param name="Local" value="Panoramica.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="La finestra principale">
+		<param name="Local" value="Interfaccia.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Dati generali'">
+			<param name="Local" value="SkDatigenerali.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Mantello'">
+			<param name="Local" value="SkMantello.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Piastra Tubiera'">
+			<param name="Local" value="SkPT.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Viti Interne'">
+			<param name="Local" value="SkVitiInt.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Rings'">
+			<param name="Local" value="SkCassonetto.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Cassa'">
+			<param name="Local" value="SkCassa.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Viti esterne'">
+			<param name="Local" value="SkVitiEst.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La scheda 'Lock Ring'">
+			<param name="Local" value="SkLockRing.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Design concept of the breech-lock closure">
+		<param name="Local" value="BLconcept.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inner Screews">
+			<param name="Local" value="InnerScrews.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diaframma elastico">
+			<param name="Local" value="DiafElast.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Porzione dei filetti in presa">
+			<param name="Local" value="Presa.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Disengagement due to fabrication tolerancies">
+				<param name="Local" value="Deltatoll.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Disengagement due to mechanical flexibility">
+				<param name="Local" value="Deltam.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Disengagement due to thermal expansion">
+				<param name="Local" value="Deltat.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Messaggi durante l'esecuzione">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro guarnizione PT">
+			<param name="Local" value="WrnGuarnPT.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro guarnizione cassa">
+			<param name="Local" value="WrnGuarnCh.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ammissibile a caldo non definito">
+			<param name="Local" value="WrnAmmissCaldo.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

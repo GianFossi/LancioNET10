@@ -1,0 +1,11 @@
+#include "header.h"
+
+STRINGTABLE
+BEGIN
+    IDH_ERRFORTRAN,"Qualche dato di input potrebbe essere errato."
+    IDH_LIMITAZIONI,"Il problema proposto potrebbe non essere risolubile."
+    IDH_SPECNONIMPL,"Funzione non implementata."
+    IDH_NONACQUA,"Non essendo presente acqua, si intende che|si vuole assegnare la frazione di idrocarburi liquidi."
+    IDH_NONTXT,"Non è possibile recuperare l'output delle elaborazioni."
+    IDH_TEXTNULL,"L'output delle elaborazioni è vuoto."
+END

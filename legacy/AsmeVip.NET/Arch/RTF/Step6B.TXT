@@ -1,0 +1,13 @@
+{\f2\fs18 \par \tab \i Step 6\par }
+{\f2\fs18 \par }
+{\f2\fs18 {\field{\*\fldinst SYMBOL 114 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}
+{_\f2_\fs18 _\tab =_\tab ##.#### [--]_\tab _\tab Expansion depth ratioF01
+_\par h/p_\tab =_\tab ##.#### [--]_\tab _\tab Parameter for Curves AA-1.6.2/3F02
+\par \par Since h/p changes with respect to Step 2, E}{\f2\fs18\super *}{\f2\fs18 /E and }{\f2\fs18 {\field{\*\fldinst SYMBOL 110 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}
+{\f2\fs18\super *}{\f2\fs18  have new values:\par 
+\par E}{\f2\fs18\super *}
+{_\f2_\fs18 /E_\tab =_\tab ##.#### [--]_\tab _\tab From Tables AA-1.6.2/3F03
+\par }{\f2\fs18 {\field{\*\fldinst SYMBOL 110 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}
+{\f2\fs18\super *}
+{_\f2_\fs18 _\tab =_\tab ##.#### [--]_\tab _\tab From Tables AA-1.6.2/3F04
+\par }

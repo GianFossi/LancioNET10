@@ -1,0 +1,92 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=..\..\Lancio.NET\Bin\AiutoBre.chm
+Contents file=Brelock.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=No
+Full text search stop list file=..\..\Microsoft Visual Studio\Fbm\AsmeVip\stop.stp
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x410 Italiano (Italia)
+Title=Guida di BreLock
+
+[WINDOWS]
+Aiuto="Guida di Brelock","Brelock.hhc","Index.hhk","Panoramica.htm","Panoramica.htm",,,,,0x23520,,0x3006,[70,125,799,566],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+BLconcept.htm
+Deltam.htm
+Deltatoll.htm
+Deltat.htm
+Presa.htm
+DiafElast.htm
+SkDatigenerali.htm
+SkVitiEst.htm
+SkCassa.htm
+SkCassonetto.htm
+SkRings.htm
+SkVitiInt.htm
+SkPT.htm
+SkMantello.htm
+SkLockRing.htm
+Interfaccia.htm
+InnerScrews.htm
+WrnGuarnPT.htm
+WrnGuarnCh.htm
+WrnAmmissCaldo.htm
+
+[ALIAS]
+500=WrnGuarnCh.htm
+IDH_BASE_TAB_0=SkDatigenerali.htm
+IDH_BASE_TAB_1=SkMantello.htm
+IDH_BASE_TAB_2=SkPT.htm
+IDH_BASE_TAB_3=SkVitiInt.htm
+IDH_BASE_TAB_4=SkRings.htm
+IDH_BASE_TAB_5=SkCassonetto.htm
+IDH_BASE_TAB_6=SkCassa.htm
+IDH_BASE_TAB_7=SkVitiEst.htm
+IDH_BASE_TAB_8=SkLockRing.htm
+IDH_framCar_Design=SkVitiInt.htm#Design
+IDH_framCar_HT=SkVitiInt.htm#HT
+IDH_framCar_Opzione=SkVitiInt.htm#Opzione
+IDH_framCar_Plastic=SkVitiInt.htm#Plastic
+IDH_framCar_Seating=SkVitiInt.htm#Seating
+IDH_framCarichi=SkVitiInt.htm#framCarichi
+IDH_framGuarCh_b=SkCassa.htm#framGuarPT_b
+IDH_framGuarCh_diam=SkCassa.htm#framGuarPT_diam
+IDH_framGuarCh_Formula=SkCassa.htm#framGuarPT_Formula
+IDH_framGuarCh_largh=SkCassa.htm#framGuarPT_largh
+IDH_framGuarCh_m=SkCassa.htm#framGuarPT_m
+IDH_framGuarCh_mat=SkCassa.htm#framGuarPT_mat
+IDH_framGuarCh_nubbin=SkCassa.htm#framGuarPT_nubbin
+IDH_framGuarCh_Y=SkCassa.htm#framGuarPT_Y
+IDH_framGuarCh=SkCassa.htm#framGuarCh
+IDH_framGuarPT_b=SkMantello.htm#framGuarPT_b
+IDH_framGuarPT_diam=SkMantello.htm#framGuarPT_diam
+IDH_framGuarPT_Formula=SkMantello.htm#framGuarPT_Formula
+IDH_framGuarPT_largh=SkMantello.htm#framGuarPT_largh
+IDH_framGuarPT_m=SkMantello.htm#framGuarPT_m
+IDH_framGuarPT_mat=SkMantello.htm#framGuarPT_mat
+IDH_framGuarPT_nubbin=SkMantello.htm#framGuarPT_nubbin
+IDH_framGuarPT_Y=SkMantello.htm#framGuarPT_Y
+IDH_framGuarPT=SkMantello.htm#framGuarPT
+IDH_framViti_Area=SkVitiInt.htm#Area
+IDH_framViti_BC=SkVitiInt.htm#BC
+IDH_framViti_BS=SkVitiInt.htm#BS
+IDH_framViti_BSmin=SkVitiInt.htm#BSmin
+IDH_framViti_DiamNom=SkVitiInt.htm#DiamNom
+IDH_framViti_libTir=SkVitiInt.htm#libTir
+IDH_framViti_Numero=SkVitiInt.htm#Numero
+IDH_framViti=SkVitiInt.htm#framVitiInt
+WRN_G1OUT=WrnGuarnPT.htm
+WRN_G2OUT=WrnGuarnCh.htm
+
+[MAP]
+#include header.h
+
+[INFOTYPES]
+

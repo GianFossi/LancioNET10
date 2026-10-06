@@ -1,0 +1,10 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "AsmeLib", "AsmeLib\AsmeLib.dsp", "{A53E7CE4-7456-42E3-9D9F-0C2639CCC89B}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

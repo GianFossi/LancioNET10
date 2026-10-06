@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MRL3aTHERMO_file/filelist.xml">
+<link rel=Edit-Time-Data href="./MRL3aTHERMO_file/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Subroutine THERMO</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:Template>HTML.dot</o:Template>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>190</o:TotalTime>
+  <o:Created>2001-06-17T16:31:00Z</o:Created>
+  <o:LastSaved>2001-06-21T10:58:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>422</o:Words>
+  <o:Characters>2410</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>20</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2959</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Fortran, li.Fortran, div.Fortran
+	{mso-style-name:Fortran;
+	mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:135223772;
+	mso-list-type:hybrid;
+	mso-list-template-ids:931562884 68157441 68157443 68157445 68157441 68157443 68157445 68157441 68157443 68157445;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine THERMO</h1>
+
+<table border=0 cellspacing=0 cellpadding=0 style='mso-cellspacing:0cm;
+ mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  0cm'><a href="MRL2PROCIT.HTM"><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=115 height=18 id="_x0000_i1027"
+  src="..\img\SubPROCIT.bmp" alt="Subroutine PROCIT"></span></a><img src="..\img\space.bmp"><a href="MRL3PROCOV.HTM"><span style='text-decoration:none;text-underline:
+  none'><img border=0 src="..\img\SubPROCOV.bmp" alt="Subroutine PROCOV"></span></a><img src="..\img\space.bmp"><a href="MRL3INVERS.HTM"><span style='text-decoration:none;text-underline:
+  none'><img border=0 src="..\img\SubINVERS.bmp" alt="Subroutine INVERS"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1029" src="..\img\parmult.bmp"><img
+  border=0 width=115 height=18 id="_x0000_i1030" src="..\img\SubTHERMO.bmp"
+  alt="Subroutine THERMO"><br>
+  <img border=0 width=17 height=25 id="_x0000_i1031" src="..\img\parlower.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1032" src="..\img\parmult.bmp"><a
+  href="MRL2PENROH.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1033" src="..\img\SubPENROH.bmp"
+  alt="Subroutine PENROH"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1031" src="..\img\parlower.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1032" src="..\img\parmult.bmp"><a
+  href="MRL2PENROW.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1033" src="..\img\SubPENROW.bmp"
+  alt="Subroutine PENROW"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1031" src="..\img\parlower.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1032" src="..\img\parmult.bmp"><a
+  href="MRL2SOAVEH.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1033" src="..\img\SubSOAVEH.bmp"
+  alt="Subroutine SOAVEH"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1031" src="..\img\space.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1032" src="..\img\parchild.bmp"><a
+  href="MRL2SOAVEW.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1033" src="..\img\SubSOAVEW.bmp"
+  alt="Subroutine SOAVEW"></span></a></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Autore<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Revisioni<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Scopo<o:p></o:p></span></h2>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Calcolo delle variabili di stato della miscela e dei
+componenti in accordo alle equazioni di Soave o di Peng-Robinson.</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Argomenti<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>IEQ</p>
+
+<p class=MsoNormal>Determina il <a href="OPTION.htm#IEQ">tipo</a> di equazioni
+di stato e di equilibrio da utilizzare.</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>IM</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Determina l’<a href="OPTION.htm#IM">origine</a> delle
+correlazioni per le entalpie e le entropie ideali.</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>ISUP</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Sempre nullo (vedi anche variabile globale <a
+href="OPTION.htm#ISUP">ISUP</a>).</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>NCR</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Indica la provenienza della chiamata a THERMO:</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:71.45pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:list 71.45pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>1: PROCIT</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:71.45pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:list 71.45pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>2: PROCOV</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:71.45pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:list 71.45pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>3: INVERS</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Listato<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>C
+----------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>C<span
+style="mso-spacerun: yes">     </span>- SUBROUTINE THERMO - 69<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>C
+----------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SUBROUTINE THERMO(IEQ,IM,ISUP,NCR)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/ACRISI/ICR,ICC,ICK,KSTOP,ISTOP2,IP1,IP2<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/WATER/HWL,DTHWL,DPHWL,SWL,DTSWL,DPSWL<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/INDEX/KBDF,KE,KU,KHS,KW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>HWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DTHWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DPHWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DTSWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DPSWL=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>K1=1<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>K2=2<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(KE.NE.5) GO TO 3<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO (1,2),KBDF<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>1 K2=1<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 3<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>2 K1=2<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>3 IF(IEQ.EQ.1) CALL
+SOAVEH(K1,K2,IM,ISUP,NCR)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(IEQ.EQ.2) CALL
+PENROH(K1,K2,IM,ISUP,NCR)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(ICR.NE.0.OR.KW.EQ.0.OR.KHS.EQ.0.OR.KBDF.EQ.2)RETURN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(IEQ.EQ.1) CALL SOAVEW(IM)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(IEQ.EQ.2) CALL PENROW(IM)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>RETURN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>END<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

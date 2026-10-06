@@ -1,0 +1,49 @@
+1
+
+ - CONVERGENCE OBTAINED
+ - PROBLEM SOLVED
+1F.B.M.-Hudson Italiana SpA  -- RESULTS OF CALCULATION --Program WALD Vers.3.0
+ --------------------------------------------------------------------------------
+ PROJECT: 1                 JOB NO.D:\BAS USER: 4             DATE: 04-29-1999
+ PROBLEM: 3               
+ --------------------------------------------------------------------------------
+ CALCULATION:DEW-POINT, T GIVEN, P UNKNOWN                        (FROM CARDS)                                                       
+ TEMP:   50.00  DEG C PRESS:    29.56  KG/CM2 GAU V/F: 1.0000  MOL/MOL LH/F: 0.0000  MOL/MOL        
+        122.00  DEG F          420.51  PSI    GAU      1.0000  WT/WT         0.0000  WT/WT          
+                              2899.31  KPA    GAU
+
+
+                         |             FEED              |             VAPOUR            |         HYDROC.LIQUID         |
+ ------------------------|-------------------------------|-------------------------------|-------------------------------|
+ |NO|COMPONENT           |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR | K VALUES|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ | 1|ETHANE              |    1503.5|     50.00|   0.5000|    1503.5|     50.00|   0.5000|       0.0|      0.00|   0.3333| 1.50E+00|
+ | 2|PROPANE             |    2204.9|     50.00|   0.5000|    2204.9|     50.00|   0.5000|       0.0|      0.00|   0.6667| 7.50E-01|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ |TOTAL FLOW RATE        |    3708.4|    100.00|   1.0000|    3708.4|    100.00|   1.0000|       0.0|      0.00|   1.0000|         |
+ ------------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+
+                                                     TOTAL              TOTAL     SPECIFIC              TOTAL     SPECIFIC
+ ENTHALPY (KCAL,KCAL/KG)                           283314.            283314.        76.40                 0.        18.27
+ IDEAL ENTHALPY                                                       356095.        96.03                 0.        93.74
+ ENTROPY (KCAL/C,KCAL/KG C)                          9024.              9024.         2.43                 0.         2.22
+ IDEAL ENTROPY                                                          9941.         2.68                 0.         2.62
+
+ MOLECULAR WEIGHT                                    37.08              37.08                           39.42
+ COMPRESSIBILITY FACTOR                                                0.6489                          0.1268
+ SPECIFIC GRAVITY (T/60 DEG F)                                                                         0.3944                     
+ DENSITY (KG/M3)                                                      63.8287
+
+ PSEUDOCRITICAL TEMPERATURE (DEG K)                                   337.60                          351.46
+ PSEUDOCRITICAL PRESSURE (ATM)                                         45.05                           44.00
+
+ GAS HEAT-CAPACITY,CP (KCAL/KG C)                                      0.709
+ GAS HEAT-CAPACITY,CV (KCAL/KG C)                                      0.407
+
+ SURFACE TENSION (DYNES/CM)                                                                             1.52
+ VISCOSITY (CP)                                                      0.01151                         0.07380
+ THERMAL CONDUCTIVITY (KCAL/M HR C)                                  0.02304                         0.06113
+
+
+
+ Ideal Enthalpy-Entropy: API HBK ;Enthalpy-Entropy:   SOAVE ;K-Values:   SOAVE.                     

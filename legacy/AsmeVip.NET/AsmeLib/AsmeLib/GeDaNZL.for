@@ -1,0 +1,136 @@
+      SUBROUTINE GetDataforNozzle(NOZ,NOZ2,AllN)
+C
+C     Nuova Routine di Acquisizione dati Geometrici Bocchelli
+C     by CD  -  26/06/98
+      USE mTYPINV
+	USE DFWIN
+	implicit none
+      TYPE(NOZZLE)::NOZ
+	TYPE(NozzAd)::NOZ2
+	INTEGER*4 I,xMESS
+	CHARACTER*120 DOMANDA
+	REAL*4 AllN,TEST1
+      MATN=NOZ%MATE
+	IF(VerificandoPI==0)THEN
+      SN=NOZ%AllN
+	SNP=NOZ%AllPad
+	ELSE
+      SN=NOZ%AllNPI
+	SNP=NOZ%AllPadPI
+	ENDIF
+C
+C     CALCOLO DEL FATTORE DI RIDUZIONE (VEDI AD-551)
+C
+	FR=1
+	IF(AllN.GT.0.)THEN
+	FR=SN/AllN
+	ELSE
+      FR=SN/S
+	ENDIF
+      IF(FR.LT.0.80.AND.VerificandoPI.EQ.0)THEN
+	NOZ%Risult=-5
+	RETURN
+      ENDIF
+C
+C     CALCOLO DEL FATTORE DI RIDUZIONE PAD (VEDI AD-551)
+C
+	FRP=1
+	IF(SNP.GT.0..AND.Regola.EQ.31.OR.Regola.EQ.4)THEN
+	IF(AllN.GT.0.)THEN
+	FRP=SNP/AllN
+	ELSE
+	FRP=SNP/S
+	ENDIF
+	ELSE
+	FRP=FR
+	ENDIF
+C
+C     VERIFICA AD-550 (f)
+C
+      AlfR=NOZ%AlfaNoz
+	AlfS=NOZ%AlfaShell
+	delt=NOZ%dtAD550f
+	chkAD550f=0
+	IF(AlfR*AlfS*(AlfR-AlfS)*delt.EQ.0.)GOTO 1
+	chkAD550f=ABS((AlfR-AlfS)*delt)
+	IF(chkAD550f.GT..0008)THEN
+	NOZ%Risult=-10
+	RETURN
+	ENDIF
+1     TKN=NOZ%HX
+	IF(TKN.EQ.0.)TKN=NOZ%Spess
+      TKN=TKN/MM
+      TKN1=NOZ%Spess/MM
+	THETA=NOZ%TransitionAngle
+	LXdisp=NOZ%LXdisp/MM
+	IF(TKN.GT.TKN1.OR.Regola.EQ.2.OR.Regola.EQ.21)THEN
+	   IF(THETA.EQ.0.)THETA=45.
+	   IF(THETA.GT.45.)THEN
+	      NOZ%Risult=-6
+	      RETURN
+	   ENDIF
+	   THETA=THETA/180*GreekPI
+         XLT=NOZ%LX   !Disp-NOZ%LX-(TKN-TKN1)/TAN(THETA)*MM
+	   IF(XLT.LT.0.)THEN
+	      NOZ%Risult=-7
+	      RETURN
+	   ENDIF
+         IF(.NOT.(Regola.EQ.2.OR.Regola.EQ.21))
+     X	   LL=NOZ%LX+(TKN-TKN1)/TAN(THETA)*MM
+	ELSE
+	   LL=NOZ%LXDisp
+	   XLT=LL
+	ENDIF
+C      WRITE(*,*)'LENGTH ALONG NOZZLE FROM OUTSIDE OF SHELL'
+C      WRITE(*,*)'PLUS TRANSITION ZONE (mm)(WITH TETA <= 45ø)'
+      LL=LL/MM
+      XLT=XLT/MM
+C     Introdotta Variante per Protrusione - by CD 25/6798
+      IF (NOZ2%Protusion.GT.0.)THEN
+	   IPROT=1
+	ELSE
+	   IPROT=0
+	ENDIF
+C         WRITE(*,*) 'ENTER PROTRUDING LENGTH FROM INSIDE OF SHELL(MM)'
+      LPROT=NOZ2%Protusion
+      LPROT=LPROT/MM
+C      WRITE(*,*)'EXTERNAL CONNECTING RADIUS R2 -  NOZZLE TO SHELL(mm)'
+      R2=NOZ%r2
+      R1=NOZ%r1
+	FILLET=0
+	IF(R2.EQ.0.)THEN
+	   FILLET=NOZ2%Leg41
+	   R2=FILLET
+	ENDIF
+c      WRITE(*,*)'EFFICIENCY JOINT'
+c      READ(*,*)EN
+      EN=NOZ%EffN
+C
+C     CALCOLO DELLO SPESSORE MINIMO DEL TRONCHETTO
+C
+      TEST=PN/(SN*EN)
+      R=(D0+2.0*CORRN)*0.50
+      IF(TEST.LE.0.40)THEN
+       TX=PN*R/(SN*EN-0.50*PN)
+      ENDIF
+      IF(TEST.GT.0.40)THEN
+       TX=EXP(TEST)*R-R
+      ENDIF
+      TEST1=0.2*SQRT(RRM*(TD-C))
+      IF((D0+2.*CORRN).LT.TEST1)THEN
+C       WRITE(*,*)'SINGLE OPENING HAS A DIAMETER < 0.2*SQRT(Rm*T)'
+C       WRITE(*,*)'CIRCULAR OPENING NOT REQUIRING REINFORCEMENT'
+         IF(NOZ%Risult.NE.2.AND.NOZ%Risult.GT.-3)THEN
+	      NOZ%Risult=-2
+	      IAD540=0
+	      RETURN
+	   ELSE
+	      NOZ%Risult=0
+	   ENDIF
+      ENDIF
+      RETURN
+
+C1     FORMAT(A1)
+C2     FORMAT(A20)
+
+      END

@@ -1,0 +1,182 @@
+C ----------------------------------------------------------------------
+C     - SUBROUTINE LETBAN - 84                                        
+C ----------------------------------------------------------------------
+      SUBROUTINE LETBAN                                               
+      INCLUDE 'SELVA.FI'
+      DO 35969 LB=1,100
+      DO 35999 KB=1,4
+      IF(LB.LT.26)              NAMX(LB,KB)=NAM1(KB,LB)
+      IF(LB.GE.26.AND.LB.LT.51) NAMX(LB,KB)=NAM2(KB,LB-25)
+      IF(LB.GE.51.AND.LB.LT.76) NAMX(LB,KB)=NAM3(KB,LB-50)
+      IF(LB.GE.76)              NAMX(LB,KB)=NAM4(KB,LB-75)
+35999 CONTINUE
+35969 CONTINUE
+      DO 35 K=1,NCST
+      I=K
+      IF(I.EQ.NCST.AND.KW.NE.0) I=NCW
+      J=NCOD(I)
+      GO TO(5,1),KCRT
+    1 CONTINUE
+      TC(I)=XXTCS(J)
+      PC(I)=XXPCS(J)
+      OMEGA(I)=XXWS(J)
+      NAME(I,1)=NAMX(J,1)
+      NAME(I,2)=NAMX(J,2)
+      NAME(I,3)=NAMX(J,3)
+      NAME(I,4)=NAMX(J,4)
+      NAME(I,5)=NAMX(J,5)
+      M(I)=XXMW(J)
+      ZC(I)=XXZC(J)
+      ZRA(I)=XXZRA(J)
+      SPG(I)=XXSPG(J)
+      TD(I)=XXTD(J)
+      PD(I)=XXPD(J)
+      BP(I)=XXBP(J)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44001) NAME(I,1),NAME(I,2),NAME(I,3),NAME(I,4),NAME(I,5),
+C    *M(I),TC(I),PC(I),ZC(I),OMEGA(I),ZRA(I),SPG(I),TD(I),PD(I),BP(I)
+C44001 FORMAT(' FORMAT 1'5X,5A4/
+C     *' M        ',E15.7/
+C     *' TC       ',E15.7/
+C     *' PC       ',E15.7/
+C     *' ZC       ',E15.7/
+C     *' OMEGA    ',E15.7/
+C     *' ZRA      ',E15.7/
+C     *' SPG      ',E15.7/
+C     *' TD       ',E15.7/
+C     *' PD       ',E15.7/
+C     *' BP       ',E15.7/)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      TC(I)=TC(I)/1.8
+      PC(I)=PC(I)/14.696
+      GO TO 10
+    5 CONTINUE
+      NAME(I,1)=NAMX(J,1)
+      NAME(I,2)=NAMX(J,2)
+      NAME(I,3)=NAMX(J,3)
+      NAME(I,4)=NAMX(J,4)
+      NAME(I,5)=NAMX(J,5)
+C     WRITE(3,88721) I,(NAME(I,KB),KB=1,5)
+      M(I)=XXMW(J)
+      TC(I)=XXTC(J)
+      PC(I)=XXPC(J)
+      ZC(I)=XXZC(J)
+      OMEGA(I)=XOMEGA(J)
+      ZRA(I)=XXZRA(J)
+      SPG(I)=XXSPG(J)
+      TD(I)=XXTD(J)
+      PD(I)=XXPD(J)
+      BP(I)=XXBP(J)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44002) NAME(I,1),NAME(I,2),NAME(I,3),NAME(I,4),NAME(I,5),
+C    *M(I),TC(I),PC(I),ZC(I),OMEGA(I),ZRA(I),SPG(I),TD(I),PD(I),BP(I)
+C44002 FORMAT(' FORMAT 2'5X,5A4/
+C     *' M        ',E15.7/
+C     *' TC       ',E15.7/
+C     *' PC       ',E15.7/
+C     *' ZC       ',E15.7/
+C     *' OMEGA    ',E15.7/
+C     *' ZRA      ',E15.7/
+C     *' SPG      ',E15.7/
+C     *' TD       ',E15.7/
+C     *' PD       ',E15.7/
+C     *' BP       ',E15.7/)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   10 GO TO (20,25,30),IM
+   20 CONTINUE
+      A(I)=XXA(J)
+      B(I)=XXB(J)
+      C(I)=XXC(J)
+      D(I)=XXD(J)
+      E(I)=XXE(J)
+      AI(I)=XXAA1(J)
+      BI(I)=XXBB1(J)
+      CI(I)=XXCC1(J)
+      DI(I)=XXDD1(J)
+      EI(I)=XXEE1(J)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44003) A(I),B(I),C(I),D(I),E(I),AI(I),BI(I),CI(I),DI(I),
+C    *EI(I)
+C44003 FORMAT(' FORMAT 3'/
+C     *' A        ',E15.7/
+C     *' B        ',E15.7/
+C     *' C        ',E15.7/
+C     *' D        ',E15.7/
+C     *' E        ',E15.7/
+C     *' AI       ',E15.7/
+C     *' BI       ',E15.7/
+C     *' CI       ',E15.7/
+C     *' DI       ',E15.7/
+C     *' EI       ',E15.7/)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      GO TO 31
+   25 CONTINUE
+      A(I)=XXAA(J)
+      B(I)=XXBB(J)
+      C(I)=XXCC(J)
+      D(I)=XXDD(J)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44004) A(I),B(I),C(I),D(I)
+C44004 FORMAT(' FORMAT 4'/
+C     *' A        ',E15.7/
+C     *' B        ',E15.7/
+C     *' C        ',E15.7/
+C     *' D        ',E15.7)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      GO TO 31
+   30 CONTINUE
+      IF(T.GT.TLIM) GO TO 56006
+      A(I)=XXA1(J)
+      B(I)=XXA2(J)
+      C(I)=XXA3(J)
+      D(I)=XXA4(J)
+      GO TO 56007
+56006 CONTINUE
+      A(I)=XXB1(J)
+      B(I)=XXB2(J)
+      C(I)=XXB3(J)
+      D(I)=XXB4(J)
+56007 CONTINUE
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44005) A(I),B(I),C(I),D(I)
+C44005 FORMAT(' FORMAT 3'/
+C     *' A        ',E15.7/
+C     *' B        ',E15.7/
+C     *' C        ',E15.7/
+C     *' D        ',E15.7)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      B(I)=2*B(I)
+      C(I)=3*C(I)
+      D(I)=4*D(I)
+   31 CONTINUE
+      PARAK(I)=XXPA(J)
+      SIGMA(I)=XXSIG(J)
+      EPSUK(I)=XXESUK(J)
+      DELTA(I)=XXDEL(J)
+      VVB(I)=XXVVB(J)
+      VVT0(I)=XXVVTO(J)
+      A1CON(I)=XXCTA1(J)
+      A2CON(I)=XXCTA2(J)
+      A3CON(I)=XXCTA3(J)
+      AH(I)=XXAH(J)
+      DELH(I)=XXDELH(J)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+C     WRITE(3,44006) PARAK(I),SIGMA(I),EPSUK(I),DELTA(I),VVB(I),VVT0(I),
+C    *A1CON(I),A2CON(I),A3CON(I),AH(I),DELH(I)
+C44006 FORMAT(' FORMAT 3'/
+C     *' PARAK    ',E15.7/
+C     *' SIGMA    ',E15.7/
+C     *' EPSUK    ',E15.7/
+C     *' DELTA    ',E15.7/
+C     *' VVB      ',E15.7/
+C     *' VVT0     ',E15.7/
+C     *' A1CON    ',E15.7/
+C     *' A2CON    ',E15.7/
+C     *' A3CON    ',E15.7/
+C     *' AH       ',E15.7/
+C     *' DELH     ',E15.7)
+CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   35 CONTINUE
+      RETURN
+      END
+

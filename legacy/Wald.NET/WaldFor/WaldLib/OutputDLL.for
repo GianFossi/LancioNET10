@@ -1,0 +1,1222 @@
+C ----------------------------------------------------------------------
+C     - SUBROUTINE OUTPUT - 22
+C ----------------------------------------------------------------------
+      SUBROUTINE OUTPUT(IND,IW,ISTP)
+	INTEGER*2 IND,IW,ISTP
+C!DEC$ ATTRIBUTES DLLIMPORT::/CFIRMA/
+      INCLUDE 'GENERAL.FI'
+	INCLUDE 'TITLE.FI'
+	INCLUDE 'Ris.for'
+C      COMMON/TITLE/TIT(18),IUF,IUM,IUP,INDI,FTM,WTF,HFT,QT,SFT,AFHS(3,4)
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV,IDEBUG
+C      COMMON/STOPPA/NSTOP,NPAGE,NCALC
+C--------------------------
+	CHARACTER*26 FIRMAAZ
+	COMMON/CFIRMA/FIRMAAZ
+	TYPE(Risultati)::Ris
+	INTEGER*2 I
+C---------------------------
+	Ris%Indice=IND
+C	WRITE(IO,105)CHAR(13),CHAR(10)
+      WRITE(IO,100)FIRMAAZ
+      WRITE(IO,110) (TIT(I),I=1,4),(TIT(I),I=6,10),(TIT(I),I=12,18)
+      CALL OUTP2(IND)
+      CALL OUTP3(IW,ISTP,Ris)
+	IF(IDEBUG.GE.3)WRITE(IO,1000)
+      CALL OUTP1(ISTP)
+      NSTOP=ISTP
+      RETURN
+  100 FORMAT('1',A26,' -- RESULTS OF CALCULATION --
+     *Program WALD Vers.3.0'/' ',80('-'))
+C  105 FORMAT(2A1)
+  110 FORMAT(' PROJECT: ',4A4,1X,' JOB NO.',2A3,1X,'USER: ',3A4,2X,'DATE
+     *: ',2A4,A2/' PROBLEM: ',4A4/' ',80('-'))
+ 1000 FORMAT(T10,'333 OUTPUT 333 - Chiamo OUTP1')
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE OUTP1 - 59
+C ----------------------------------------------------------------------
+      SUBROUTINE OUTP1(ISTP)
+	INTEGER*2 ISTP
+C	CHARACTER*4 NAME
+C      COMMON/OPTION/BINAR(50,50),KIJ,IEQ,IM,ISUP,KCRT,KWRT,VL,IOPT1
+C      COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+      INCLUDE 'GENERAL.FI'
+C      COMMON/KVALUE/DTK(50),DPK(50),DXK(50,50),DYK(50,50),AK(50)
+	INCLUDE 'DETTAGLI.FI'
+C---------------------------
+      CHARACTER*100 RIGA(5)
+	INTEGER*2 IRIGA,I,J
+C---------------------------
+      IRIGA=1
+      WRITE(RIGA(IRIGA),100)
+      IRIGA=IRIGA+1
+      DO 1 I=1,NC
+      IF(AK(I).NE.0.) GO TO 5
+    1 CONTINUE
+      GO TO 20
+    5 WRITE(RIGA(IRIGA),105)
+      IRIGA=IRIGA+1
+      GO TO(10,15),IEQ
+   10 WRITE(RIGA(IRIGA),110)
+      IRIGA=IRIGA+1
+      GO TO 20
+   15 WRITE(RIGA(IRIGA),115)
+      IRIGA=IRIGA+1
+   20 GO TO(25,30),IEQ
+   25 WRITE(RIGA(IRIGA),120)
+      IRIGA=IRIGA+1
+      GO TO 35
+   30 WRITE(RIGA(IRIGA),125)
+      IRIGA=IRIGA+1
+   35 GO TO(40,45,50),IM
+   40 WRITE(RIGA(IRIGA),130)
+      IRIGA=IRIGA+1
+      GO TO 55
+   45 WRITE(RIGA(IRIGA),135)
+      IRIGA=IRIGA+1
+      GO TO 55
+   50 WRITE(RIGA(IRIGA),140)
+      IRIGA=IRIGA+1
+   55 IRIGA=IRIGA-1
+      IF(IRIGA.GT.1)THEN
+      DO 98 I=2,IRIGA
+      DO 98 J=1,100
+      IF(RIGA(I)(J:J).NE.' ') RIGA(1)(J:J)=RIGA(I)(J:J)
+   98 CONTINUE
+      ENDIF
+      WRITE(IO,99)RIGA(1)
+      IF(ISTP.GT.0)WRITE(IO,145)
+      RETURN
+C   91 FORMAT(/)
+   99 FORMAT(A100)
+  100 FORMAT(' Ideal Enthalpy-Entropy:',T35,'Enthalpy-Entropy:')
+  105 FORMAT(   T62 ,'K-Values:')
+  110 FORMAT(   T71 ,'   SOAVE.')
+  115 FORMAT(   T71 ,'PENG-ROB.')
+  120 FORMAT(   T52 ,'   SOAVE ;')
+  125 FORMAT(   T52 ,'PENG-ROB.;')
+  130 FORMAT(   T25 ,' API HBK ;')
+  135 FORMAT(   T25 ,'  R.P.S. ;')
+  140 FORMAT(   T25 ,' PROJ.44 ;')
+  145 FORMAT(/' ',20('*'),'   BEWARE: UNRELIABLE RESULTS   ',27('*'))
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE OUTP2 - 57
+C ----------------------------------------------------------------------
+      SUBROUTINE OUTP2(IND)
+	INTEGER*2 IND
+C      COMMON/OPTION/BINAR(50,50),KIJ,KEQ,IM,ISUP,KCRT,KWRT,VL,ICAL
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+C      COMMON/INDEX/KBDF,KE,KU,KHS,KW
+      INCLUDE 'GENERAL.FI'
+C---------------------------
+      CHARACTER*133 RIGA(3)
+	INTEGER*2 IRIGA,ICAL,I,J
+C---------------------------
+      IRIGA=1
+      WRITE(RIGA(IRIGA),110)
+      IRIGA=IRIGA+1
+      GO TO(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,
+     *24,25,26,27,28,29,30,31,32,33,34),IND
+    1 WRITE(RIGA(IRIGA),120)
+      IRIGA=IRIGA+1
+      GO TO 100
+    2 WRITE(RIGA(IRIGA),130)
+      IRIGA=IRIGA+1
+      GO TO 100
+    3 IF(KW.GT.2)GO TO 50
+      WRITE(RIGA(IRIGA),140)
+      IRIGA=IRIGA+1
+      GO TO 100
+   50 IF(KW.EQ.3) THEN
+        WRITE(RIGA(IRIGA),150)
+        IRIGA=IRIGA+1
+      ENDIF
+      IF(KW.EQ.4) THEN
+        WRITE(RIGA(IRIGA),160)
+        IRIGA=IRIGA+1
+      ENDIF
+      GO TO 100
+    4 WRITE(RIGA(IRIGA),170)
+      IRIGA=IRIGA+1
+      GO TO 100
+    5 WRITE(RIGA(IRIGA),180)
+      IRIGA=IRIGA+1
+      GO TO 100
+    6 IF(KW.GT.2)GO TO 52
+      WRITE(RIGA(IRIGA),190)
+      IRIGA=IRIGA+1
+      GO TO 100
+   52 IF(KW.EQ.3) THEN
+         WRITE(RIGA(IRIGA),200)
+         IRIGA=IRIGA+1
+      ENDIF
+      IF(KW.EQ.4) THEN
+         WRITE(RIGA(IRIGA),210)
+         IRIGA=IRIGA+1
+      ENDIF
+      GO TO 100
+    7 WRITE(RIGA(IRIGA),220)
+      IRIGA=IRIGA+1
+      GO TO 100
+    8 WRITE(RIGA(IRIGA),270)
+      IRIGA=IRIGA+1
+      GO TO 100
+    9 WRITE(RIGA(IRIGA),280)
+      IRIGA=IRIGA+1
+      GO TO 100
+   10 WRITE(RIGA(IRIGA),290)
+      IRIGA=IRIGA+1
+      GO TO 100
+   11 WRITE(RIGA(IRIGA),300)
+      IRIGA=IRIGA+1
+      GO TO 100
+   12 IF(KW.GT.2) GO TO 54
+      WRITE(RIGA(IRIGA),310)
+      IRIGA=IRIGA+1
+      GO TO 100
+   54 IF(KW.EQ.3) THEN
+         WRITE(RIGA(IRIGA),320)
+         IRIGA=IRIGA+1
+      ENDIF
+      IF(KW.EQ.4) THEN
+         WRITE(RIGA(IRIGA),330)
+         IRIGA=IRIGA+1
+      ENDIF
+      GO TO 100
+   13 WRITE(RIGA(IRIGA),340)
+      IRIGA=IRIGA+1
+      GO TO 100
+   14 WRITE(RIGA(IRIGA),350)
+      IRIGA=IRIGA+1
+      GO TO 100
+   15 WRITE(RIGA(IRIGA),360)
+      IRIGA=IRIGA+1
+      GO TO 100
+   16 WRITE(RIGA(IRIGA),370)
+      IRIGA=IRIGA+1
+      GO TO 100
+   17 IF(KW.GT.2) GO TO 56
+      WRITE(RIGA(IRIGA),380)
+      IRIGA=IRIGA+1
+      GO TO 100
+   56 IF(KW.EQ.3) THEN
+         WRITE(RIGA(IRIGA),390)
+         IRIGA=IRIGA+1
+      ENDIF
+      IF(KW.EQ.4) THEN
+         WRITE(RIGA(IRIGA),400)
+         IRIGA=IRIGA+1
+      ENDIF
+      GO TO 100
+   18 WRITE(RIGA(IRIGA),410)
+      IRIGA=IRIGA+1
+      GO TO 100
+   19 WRITE(RIGA(IRIGA),420)
+      IRIGA=IRIGA+1
+      GO TO 100
+   20 WRITE(RIGA(IRIGA),430)
+      IRIGA=IRIGA+1
+      GO TO 100
+   21 WRITE(RIGA(IRIGA),440)
+      IRIGA=IRIGA+1
+      GO TO 100
+   22 IF(KW.GT.2) GO TO 58
+      WRITE(RIGA(IRIGA),450)
+      IRIGA=IRIGA+1
+      GO TO 100
+   58 IF(KW.EQ.3) THEN
+         WRITE(RIGA(IRIGA),460)
+         IRIGA=IRIGA+1
+      ENDIF
+      IF(KW.EQ.4) THEN
+         WRITE(RIGA(IRIGA),470)
+         IRIGA=IRIGA+1
+      ENDIF
+      GO TO 100
+   23 WRITE(RIGA(IRIGA),480)
+      IRIGA=IRIGA+1
+      GO TO 100
+   24 WRITE(RIGA(IRIGA),490)
+      IRIGA=IRIGA+1
+      GO TO 100
+   25 WRITE(RIGA(IRIGA),500)
+      IRIGA=IRIGA+1
+      GO TO 100
+   26 WRITE(RIGA(IRIGA),510)
+      IRIGA=IRIGA+1
+      GO TO 100
+   27 WRITE(RIGA(IRIGA),520)
+      IRIGA=IRIGA+1
+      GO TO 100
+   28 WRITE(RIGA(IRIGA),530)
+      IRIGA=IRIGA+1
+      GO TO 100
+   29 WRITE(RIGA(IRIGA),540)
+      IRIGA=IRIGA+1
+      GO TO 100
+   30 WRITE(RIGA(IRIGA),550)
+      IRIGA=IRIGA+1
+      GO TO 100
+   31 WRITE(RIGA(IRIGA),560)
+      IRIGA=IRIGA+1
+      GO TO 100
+   32 WRITE(RIGA(IRIGA),570)
+      IRIGA=IRIGA+1
+      GO TO 100
+   33 WRITE(RIGA(IRIGA),580)
+      IRIGA=IRIGA+1
+      GO TO 100
+   34 WRITE(RIGA(IRIGA),590)
+      IRIGA=IRIGA+1
+  100 ICAL=ICAL+1
+      GO TO (101,102,103,104,105),ICAL
+  101 WRITE(RIGA(IRIGA),230)
+      IRIGA=IRIGA+1
+      GO TO 106
+  102 WRITE(RIGA(IRIGA),240)
+      IRIGA=IRIGA+1
+      GO TO 106
+  103 WRITE(RIGA(IRIGA),260)
+      IRIGA=IRIGA+1
+      GO TO 106
+  104 WRITE(RIGA(IRIGA),250)
+      IRIGA=IRIGA+1
+      GO TO 106
+  105 WRITE(RIGA(IRIGA),265)
+      IRIGA=IRIGA+1
+  106 ICAL=ICAL-1
+      IRIGA=IRIGA-1
+      IF(IRIGA.GT.1)THEN
+      DO 98 I=2,IRIGA
+      DO 98 J=1,133
+      IF(RIGA(I)(J:J).NE.' ') RIGA(1)(J:J)=RIGA(I)(J:J)
+   98 CONTINUE
+      ENDIF
+      WRITE(IO,99)RIGA(1)
+      RETURN
+   99 FORMAT(A133)
+  110 FORMAT(' CALCULATION: ')
+  120 FORMAT(   T14 ,'BUBBLE-POINT, T GIVEN, P UNKNOWN')                OUTP2
+  130 FORMAT(   T14 ,'DEW-POINT, T GIVEN, P UNKNOWN')                   OUTP2
+  140 FORMAT(   T14 ,'FLASH, T AND V/F RATIO GIVEN, P UNKNOWN')         OUTP2
+  150 FORMAT(   T14 ,'FLASH, T AND LW/F RATIO GIVEN, P UNKNOWN')        OUTP2
+  160 FORMAT(   T14 ,'FLASH, T AND LH/F RATIO GIVEN, P UNKNOWN')        OUTP2
+  170 FORMAT(   T14 ,'BUBBLE-POINT, P GIVEN, T UNKNOWN')                OUTP2
+  180 FORMAT(   T14 ,'DEW-POINT, P GIVEN, T UNKNOWN')                   OUTP2
+  190 FORMAT(   T14 ,'FLASH, P AND V/F RATIO GIVEN, T UNKNOWN')         OUTP2
+  200 FORMAT(   T14 ,'FLASH, P AND LW/F RATIO GIVEN, T UNKNOWN')        OUTP2
+  210 FORMAT(   T14 ,'FLASH, P AND LH/F RATIO GIVEN, T UNKNOWN')        OUTP2
+  220 FORMAT(   T14 ,'FLASH, T AND P GIVEN, V/F RATIO UNKNOWN')         OUTP2
+  230 FORMAT(   T67 ,'(FROM CARDS)')                                
+  240 FORMAT(   T67 ,'(FROM LAST CALC)')                              
+  250 FORMAT(   T67 ,'(FROM HYDROC.LIQUID)')
+  260 FORMAT(   T67 ,'(FROM VAPOUR LAST C)')
+  265 FORMAT(   T67 ,'(FROM LIQUID LAST C)')
+  270 FORMAT(   T14 ,'BUBBLE-POINT, ENTHALPY GIVEN, T AND P UNKNOWN')   OUTP2
+  280 FORMAT(   T14 ,'DEW-POINT, ENTHALPY GIVEN, T AND P UNKNOWN')      OUTP2
+  290 FORMAT(   T14 ,'FLASH, ENTHALPY AND T GIVEN, P AND V/F RATIO UNKNOOUTP2
+     *WN')
+  300 FORMAT(   T14 ,'FLASH, ENTHALPY AND P GIVEN, T AND V/F RATIO UNKNOOUTP2
+     *WN')
+  310 FORMAT(   T14 ,'FLASH, ENTHALPY AND V/F RATIO GIVEN, T AND P UNKNOOUTP2
+     *WN')
+  320 FORMAT(   T14 ,'FLASH, ENTHALPY AND LW/F RATIO GIVEN, T AND P UNKNOUTP2
+     *OWN')
+  330 FORMAT(   T14 ,'FLASH, ENTHALPY AND LH/F RATIO GIVEN, T AND P UNKNOUTP2
+     *OWN')
+  340 FORMAT(   T14 ,'BUBBLE-POINT, ENTROPY GIVEN, T AND P UNKNOWN')    OUTP2
+  350 FORMAT(   T14 ,'DEW-POINT, ENTROPY GIVEN, T AND P UNKNOWN')       OUTP2
+  360 FORMAT(   T14 ,'FLASH, ENTROPY AND T GIVEN, P AND V/F RATIO UNKNOWOUTP2
+     *N')
+  370 FORMAT(   T14 ,'FLASH, ENTROPY AND P GIVEN, T AND V/F RATIO UNKNOWOUTP2
+     *N')
+  380 FORMAT(   T14 ,'FLASH, ENTROPY AND V/F RATIO GIVEN, T AND P UNKNOWOUTP2
+     *N')
+  390 FORMAT(   T14 ,'FLASH, ENTROPY AND LW/F RATIO GIVEN, T AND P UNKNOOUTP2
+     *WN')
+  400 FORMAT(   T14 ,'FLASH, ENTROPY AND LH/F RATIO GIVEN, T AND P UNKNOOUTP2
+     *WN')
+  410 FORMAT(   T14 ,'BUBBLE-POINT, SPECIFICATION GIVEN, T AND P UNKNOWNOUTP2
+     *')
+  420 FORMAT(   T14 ,'DEW-POINT, SPECIFICATION GIVEN, T AND P UNKNOWN') OUTP2
+  430 FORMAT(   T14 ,'FLASH, SPECIFICATION AND T GIVEN, P AND V/F RATIO OUTP2
+     *UNKNOWN')
+  440 FORMAT(   T14 ,'FLASH, SPECIFICATION AND P GIVEN, T AND V/F RATIO OUTP2
+     *UNKNOWN')
+  450 FORMAT(   T14 ,'FLASH, SPECIFICATION AND V/F RATIO GIVEN, T AND P OUTP2
+     *UNKNOWN')
+  460 FORMAT(   T14 ,'FLASH, SPECIFICATION AND LW/F RATIO GIVEN, T AND POUTP2
+     * UNKNOWN')
+  470 FORMAT(   T14 ,'FLASH, SPECIFICATION AND LH/F RATIO GIVEN, T AND POUTP2
+     * UNKNOWN')
+  480 FORMAT(   T14 ,'FLASH, ENTHALPY AND SPECIFICATION GIVEN, T,P,V/F U
+     *NKNOWN')
+  490 FORMAT(   T14 ,'FLASH, ENTROPY AND SPECIFICATION GIVEN, T,P,V/F UN
+     *KNOWN')
+  520 FORMAT(   T14 ,'LIQUID, ENTHALPY AND P GIVEN, T UNKNOWN')         OUTP2
+  510 FORMAT(   T14 ,'GAS, ENTHALPY AND T GIVEN, P UNKNOWN')            OUTP2
+  500 FORMAT(   T14 ,'LIQUID, ENTHALPY AND T GIVEN, P UNKNOWN')         OUTP2
+  530 FORMAT(   T14 ,'GAS, ENTHALPY AND P GIVEN, T UNKNOWN')            OUTP2
+  540 FORMAT(   T14 ,'LIQUID, ENTROPY AND T GIVEN, P UNKNOWN')          OUTP2
+  550 FORMAT(   T14 ,'GAS, ENTROPY AND T GIVEN, P UNKNOWN')             OUTP2
+  560 FORMAT(   T14 ,'LIQUID, ENTROPY AND P GIVEN, T UNKNOWN')          OUTP2
+  570 FORMAT(   T14 ,'GAS, ENTROPY AND P GIVEN, T UNKNOWN')             OUTP2
+  580 FORMAT(   T14 ,'PROPERTIES OF LIQUID MIXTURE')                    OUTP2
+  590 FORMAT(   T14 ,'PROPERTIES OF GAS MIXTURE')                       OUTP2
+      END
+
+C ----------------------------------------------------------------------
+C     - SUBROUTINE OUTP3 - 60         
+C ----------------------------------------------------------------------
+      SUBROUTINE OUTP3(IW,ISTP,Ris)
+	INTEGER*2 IW,ISTP       
+	INCLUDE 'Ris.for'
+	TYPE(Risultati)::Ris
+C      REAL LAMDA,MU,NU,M,K
+C	CHARACTER*4 NAME
+C      COMMON/OPTION/BINAR(50,50),KIJ,KEQ,IM,ISUP,KCRT,KWRT,VL,IOPT1
+C      COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW
+C      COMMON/BANK1/M(50),TC(50),PC(50),ZC(50),OMEGA(50),BP(50)
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+C      COMMON/INDEX/KBDF,KE,KU,KHS,KW
+C      COMMON/TEMPRE/TINP,PINP,T,P
+C      COMMON/COTENS/PARAK(50),TENS
+C      COMMON/COVISG/SIGMA(50),EPSUK(50),DELTA(50),VISG
+C      COMMON/COVISL/VVB(50),VVT0(50),VISL
+C      COMMON/COTERG/A1CON(50),A2CON(50),A3CON(50),TERG
+C      COMMON/COTERL/AH(50),DELH(50),TERL
+      INCLUDE 'GENERAL.FI'
+C      COMMON/TITLE/TIT(18),IUF,IUM,IUP,INDI,FTM,WTF,HTF,QT,STF,AFHS(3,4)
+	INCLUDE 'TITLE.FI'
+C      COMMON/HFASE/HF,Q,HL,HV,DPHL,DPHV,DTHL,DTHV,DXHL(50),DYHV(50)
+C      COMMON/SFASE/SF,SL,SV,DPSL,DPSV,DTSL,DTSV,DXSL(50),DYSV(50)
+C      COMMON/KVALUE/DTK(50),DPK(50),DXK(50,50),DYK(50,50),K(50)
+C	REAL K
+C      COMMON/DENSLV/ROL,ROV,TPCL,TPCV,PPCL,PPCV,IROL
+C      COMMON/SHIDL/H0L,H0V,S0L,S0V
+C      COMMON/PROPRE/VOPARL(50),VOPARV(50),CIVUG,CIPIG,CIPI0I(50)
+	INCLUDE 'DETTAGLI.FI'
+C      COMMON/WATER/HWL,DTHWL,DPHWL,SWL,DTSWL,DPSWL
+	INCLUDE 'WATER.FI'
+	INCLUDE 'SOLUZ.FI'
+C      COMMON/MOLFR/X(50),Y(50),Z(50),ZN(50,2),SOM(2)
+C      COMMON/PARTIZ/LAMDA,MU,NU,YW
+C      REAL LAMDA,MU,NU
+C      COMMON/COMPRS/ZCR,ZV,ZL,ZW
+C     COMMON/INDICE/INMIL
+C--------------------------------
+      CHARACTER*130 RIGA(2)
+      REAL V(10),HVS,HLS,SVS,SLS,H0VS,H0LS,S0VS,S0LS,WTL,WTV,CK
+	REAL FLM,FVM,FLWM,FTP,FLP,FVP,FLWP,SUMX,SUMY,HWLS
+	REAL HVT,H0VT,HLT,H0LT,HWLT,SWLS,SVT,S0VT,SLT,S0LT,SWLT
+	REAL WMU
+	INTEGER*2 I,J,L
+      CHARACTER*4 PRES(2)
+C--------------------------------
+      DATA PRES/' GAU',' ABS'/
+      HVS=0.
+      HLS=0.
+      SVS=0.
+      SLS=0.
+      H0VS=0.
+      H0LS=0.
+      S0VS=0.
+      S0LS=0.
+      WTL=0.
+      WTV=0.
+      CK=1.
+      IF(IUM.GT.0) CK=1.8
+      CALL NORMAL(X,NC)
+      CALL NORMAL(Y,NCW)
+      DO 1 I=1,NCW
+      WTL=WTL+M(I)*X(I)
+    1 WTV=WTV+M(I)*Y(I)
+      V(1)=T-273.15
+      V(5)=T*1.8-459.67
+      IF(IUP) 5,5,10
+    5 V(2)=(P-1.)*1.033
+      V(6)=(P-1.)*14.696
+      V(9)=(P-1.)*101.325
+      GO TO 15
+   10 V(2)=P*1.033
+      V(6)=P*14.696
+      V(9)=P*101.325
+   15 V(3)=LAMDA
+      V(4)=NU
+      V(7)=LAMDA*WTV/WTF
+      V(8)=NU*WTL/WTF
+      IUP=IUP+1
+      WRITE(RIGA(1),100) PRES(IUP)
+      IF(V(2).GT.1.)THEN
+      WRITE(RIGA(2),105) (V(I),I=1,4)
+      ELSEIF(V(2).GT..001)THEN
+      WRITE(RIGA(2),106) (V(I),I=1,4)
+      ELSE
+      WRITE(RIGA(2),107) (V(I),I=1,4)
+      ENDIF
+      DO 98 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   98 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(RIGA(1),110) PRES(IUP)
+      WRITE(RIGA(2),105) (V(I),I=5,8)
+      DO 97 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   97 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(IO,115) V(9),PRES(IUP)
+      IUP=IUP-1
+      WRITE(IO,123)
+      IF(IUM) 16,16,17
+   16 WRITE(IO,125)
+      GO TO 18
+   17 WRITE(IO,127)
+   18 CONTINUE
+	Ris%Temperatura=V(1)
+	Ris%Pressione=V(2)
+C     WRITE(IO,120)
+      WRITE(IO,130)
+      FLM=FTM*NU
+      FVM=FTM*LAMDA
+      FLWM=FTM*MU
+      FTP=FTM*WTF
+      FLP=FLM*WTL
+      FVP=FVM*WTV
+      FLWP=FLWM*WTLW
+      DO 20 I=1,NCW
+      V(2)=FTM*Z(I)
+      V(1)=V(2)*M(I)                                                    KG Feed
+      V(3)=Z(I)
+      V(5)=FVM*Y(I)
+      V(4)=V(5)*M(I)
+      V(6)=Y(I)
+      V(8)=FLM*X(I)
+      V(7)=V(8)*M(I)                                                    KG HC Liq
+      V(9)=X(I)
+      V(10)=K(I)
+      IF(KWRT.LT.3) WRITE(IO,141) I,(NAME(I,J),J=1,5),(V(L),L=1,10)
+      IF(KWRT.GE.3) WRITE(IO,140) I,(NAME(I,J),J=1,5),(V(L),L=1,10)
+   20 CONTINUE
+C     WRITE(IO,120)
+      WRITE(IO,130)
+      V(1)=FTP
+      V(2)=FTM
+      V(3)=1.
+      V(4)=FVP
+      V(5)=FVM
+      V(6)=1.
+      V(7)=FLP
+      V(8)=FLM
+      V(9)=1.
+      SUMX=0.
+      SUMY=0.
+      DO 21 I=1,NCW
+      SUMX=SUMX+X(I)
+   21 SUMY=SUMY+Y(I)
+      IF(SUMY.EQ.0.) V(6)=0.
+      IF(SUMX.EQ.0.) V(9)=0.
+      IF(KWRT.LT.3) WRITE(IO,146) (V(I),I=1,9)
+      IF(KWRT.GE.3) WRITE(IO,145) (V(I),I=1,9)
+C     WRITE(IO,120)
+      WRITE(IO,135)
+      IF(IW.NE.0) WRITE(IO,150)
+      IF(KW.NE.0.AND.NCW.GT.20.AND.NCW.LT.45) WRITE(IO,400)
+      IF(KW.EQ.0.AND.NCW.GT.30.AND.NCW.LT.45) WRITE(IO,400)
+	Ris%VapMolFraction=LAMDA!V(5)/V(2)
+	Ris%VapMasFraction=LAMDA*WTV/WTF!V(4)/V(1)
+      WRITE(IO,155)
+      IF(HV.EQ.0.)GO TO 25
+      HVS=HV/WTV*CK
+   25 IF(H0V.EQ.0.) GO TO 26
+      H0VS=H0V/WTV*CK
+   26 IF(HL.EQ.0.)GO TO 30
+      HLS=HL/WTL*CK
+   30 IF(H0L.EQ.0.) GO TO 31
+      H0LS=H0L/WTL*CK
+   31 HWLS=HWL/WTLW*CK
+      HVT=HVS*FVP
+      H0VT=H0VS*FVP
+      HLT=HLS*FLP
+      H0LT=H0LS*FLP
+      HWLT=HWLS*FLWP
+c     IF(HTF) 33,32,33
+   32 HFT=HLT+HWLT+HVT
+c     GO TO 35
+c  33 HFT=HTF
+   35 HFT=HFT+QT
+      IF(SV.EQ.0.) GO TO 40
+      SVS=SV/WTV
+   40 IF(S0V.EQ.0.) GO TO 41
+      S0VS=S0V/WTV
+   41 IF(SL.EQ.0.) GO TO 45
+      SLS=SL/WTL
+   45 IF(S0L.EQ.0.) GO TO 46
+      S0LS=S0L/WTL
+   46 SWLS=SWL/WTLW
+      SVT=SVS*FVP
+      S0VT=S0VS*FVP
+      SLT=SLS*FLP
+      S0LT=S0LS*FLP
+      SWLT=SWLS*FLWP
+      IF(STF) 48,47,48
+   47 SFT=SLT+SWLT+SVT
+      GO TO 55
+   48 SFT=STF
+   55 IF(IUM) 60,60,65
+   60 WRITE(IO,170) HFT,HVT,HVS,HLT,HLS,H0VT,H0VS,H0LT,H0LS,SFT,SVT,SVS,
+     *SLT,SLS,S0VT,S0VS,S0LT,S0LS
+      GO TO 70
+   65 WRITE(IO,173) HFT,HVT,HVS,HLT,HLS,H0VT,H0VS,H0LT,H0LS,SFT,SVT,SVS,
+     *SLT,SLS,S0VT,S0VS,S0LT,S0LS
+   70 WRITE(IO,175) WTF,WTV,WTL
+C     WRITE(IO,195)
+      WRITE(IO,195) ZV,ZL
+C     WRITE(IO,230)
+      WRITE(RIGA(1),230) ROL
+      IF(IROL.NE.0) RIGA(1)(110:121)='** BEWARE **'
+      WRITE(IO,'(A130)')RIGA(1)
+      IF(IUM) 71,71,72
+   71 WRITE(IO,240) ROV
+      GO TO 73
+C  72 WRITE(IO,241)
+   72 ROV=ROV/16.018
+      WRITE(IO,241) ROV
+C     WRITE(IO,250)
+   73 WRITE(IO,250) TPCV,TPCL
+C     WRITE(IO,260)
+      WRITE(IO,260) PPCV,PPCL
+      IF(IUM)76,76,77
+C  76 WRITE(IO,450)
+   76 IF(WTV.EQ.0.)CIPIG=0.
+      IF(WTV.NE.0.)CIPIG=CIPIG/WTV
+      WRITE(IO,450)CIPIG
+C     WRITE(IO,451)
+      IF(WTV.EQ.0.)CIVUG=0.
+      IF(WTV.NE.0.)CIVUG=CIVUG/WTV
+      WRITE(IO,451)CIVUG
+      GO TO 78
+C  77 WRITE(IO,470)
+   77 IF(WTV.EQ.0.)CIPIG=0.
+      IF(WTV.NE.0.)CIPIG=CIPIG/WTV
+      WRITE(IO,470)CIPIG
+C     WRITE(IO,471)
+      IF(WTV.EQ.0.)CIVUG=0.
+      IF(WTV.NE.0.)CIVUG=CIVUG/WTV
+      WRITE(IO,471)CIVUG
+   78 WRITE(IO,410) TENS
+C     WRITE(IO,420) TENS
+      WRITE(IO,430)VISG,VISL
+C     WRITE(IO,440)VISG,VISL
+      IF(IUM) 87,87,88
+   87 WRITE(IO,480)TERG,TERL
+C     WRITE(IO,490)TERG,TERL
+      GO TO 89
+C  88 WRITE(IO,481)
+   88 TERG=TERG*.671999
+      TERL=TERL*.671999
+      WRITE(IO,481)TERG,TERL
+   89 IF(IROL.NE.0) WRITE(IO,340)
+	Ris%HAcqLiq=0
+	Ris%MolAcqLiq=0
+	Ris%MasAcqLiq=0
+      IF(KW.EQ.0)GO TO 90
+      IF(KE.EQ.5.AND.KBDF.EQ.2) GO TO 90
+      WRITE(IO,200)
+      WRITE(IO,208)
+      IF(IUM) 75,75,80
+   75 WRITE(IO,210)
+      GO TO 85
+   80 WRITE(IO,213)
+   85 WMU=MU*WTLW/WTF
+      WRITE(IO,215) FLWP,FLWM,HWLT,HWLS,SWLT,SWLS,MU,WMU
+C     WRITE(IO,205)
+	Ris%HAcqLiq=HWLS
+	Ris%MolAcqLiq=MU
+	Ris%MasAcqLiq=WMU
+      WRITE(IO,220)
+      AFHS(1,4)=FLM+FLWM
+      AFHS(2,4)=HLT+HWLT
+      AFHS(3,4)=SLT+SWLT
+      X(NCW+1)=0.
+      IF(FLM+FLWM.GT.0.AND.FLM.NE.0.) THEN
+   86 X(NCW+1)=FLWM/FLM
+      ENDIF
+   90 CONTINUE
+      AFHS(1,1)=FTM
+      AFHS(1,2)=FVM
+      AFHS(1,3)=FLM
+      AFHS(2,1)=HFT
+      AFHS(2,2)=HVT
+      AFHS(2,3)=HLT
+      AFHS(3,1)=SFT
+      AFHS(3,2)=SVT
+      AFHS(3,3)=SLT
+	NOUTP3=NOUTP3+1
+	Ris%Entalpie(1)=HFT
+	Ris%Entalpie(2)=HVT
+	Ris%Entalpie(3)=HVS
+	Ris%Entalpie(4)=HLT
+	Ris%Entalpie(5)=HLS
+	Ris%Entropie(1)=SFT
+	Ris%Entropie(2)=SVT
+	Ris%Entropie(3)=SVS
+	Ris%Entropie(4)=SLT
+	Ris%Entropie(5)=SLS
+	Ris%PesiMol(1)=WTF
+	Ris%PesiMol(2)=WTV
+	Ris%PesiMol(3)=WTL
+	Ris%Density(1)=ROV
+	Ris%Density(2)=ROL
+	Ris%TCrit(1)=TPCV
+	Ris%TCrit(2)=TPCL
+	Ris%PCrit(1)=PPCV
+	Ris%PCrit(2)=PPCL
+	Ris%CpGas=CIPIG
+	Ris%CvGas=CIVUG
+	Ris%Visco(1)=VISG
+	Ris%Visco(2)=VISL
+	Ris%Conduc(1)=TERG
+	Ris%Conduc(2)=TERL
+	Ris%kConv=KCONV
+	Ris%CompressF(1)=ZV
+	Ris%CompressF(2)=ZL
+	CALL MEMORIA(Ris)
+      RETURN
+   96 FORMAT(A100)
+  100 FORMAT(' TEMP:',T17,'DEG C',T23,'PRESS:',T40,'KG/CM2',A4,
+     *T51,'V/F:',T64,'MOL/MOL LH/F:',T86,'MOL/MOL')
+  105 FORMAT(    T7 ,F8.2,T29,F9.2,T55,F7.4,T77,F7.4)   
+  106 FORMAT(    T7 ,F8.2,T29,F9.4,T55,F7.4,T77,F7.4)
+  107 FORMAT(    T7 ,F8.2,T29,F9.6,T55,F7.4,T77,F7.4)
+  110 FORMAT(T17,'DEG F',T40,'PSI   ',A4,T64,'WT/WT',T86,'WT/WT')
+  115 FORMAT(T29,F9.2,T40,'KPA   ',A4//)
+CC120 FORMAT(1X,132(' '))
+C 120 FORMAT(1X,131('-'))
+  123 FORMAT(25X,'|',13X,'FEED',14X,'|',13X,'VAPOUR',12X,'|',9X,'HYDROC.
+     *LIQUID',9X,'|'/
+     *1X,24('-'),'|',31('-'),'|'31('-'),'|',31('-'),'|')
+  125 FORMAT(' |NO|COMPONENT',
+     *          11X,'|',3('  KGMASS  |  KGMOLS  |  MOL FR |'),' K VALUES
+     *|')
+  127 FORMAT(' |NO|COMPONENT',
+     *          11X,'|',3('    LBS   |  LBMOLS  |  MOL FR |'),' K VALUES
+     *|')
+  130 FORMAT(' |  |',20('-'),'|',3(10('-'),'|',10('-'),'|',9('-'),'|'),
+     *9('-'),'|')
+  135 FORMAT(' ----',20('-'),'|',3(10('-'),'|',10('-'),'|',9('-'),'|'),
+     *9('-'),'|')
+  140 FORMAT(' |',I2,'|',5A4,'|',3(F10.1,'|',F10.2,'|',F9.7,'|'),1PE9.2
+     *,'|')
+  141 FORMAT(' |',I2,'|',5A4,'|',3(F10.1,'|',F10.2,'|',F9.4,'|'),1PE9.2
+     *,'|')
+  145 FORMAT(' |TOTAL FLOW RATE',8X,'|',3(F10.1,'|',F10.2,'|',F9.7,'|'),
+     *9X,'|')
+  146 FORMAT(' |TOTAL FLOW RATE',8X,'|',3(F10.1,'|',F10.2,'|',F9.4,'|'),
+     *9X,'|')
+  150 FORMAT(70X,'*SEPARATE LIQUID WATER IS PRESENT*')
+  155 FORMAT(/' ',52X,'TOTAL',2(14X,'TOTAL',5X,'SPECIFIC'))
+  170 FORMAT(' ENTHALPY (KCAL,KCAL/KG)  ',14X,F18.0,2(1X,F18.0,F13.2)/
+     *' IDEAL ENTHALPY',43X,2(1X,F18.0,F13.2)/
+     *' ENTROPY (KCAL/C,KCAL/KG C)',13X,F18.0,2(1X,F18.0,F13.2)/
+     *' IDEAL ENTROPY',44X,2(1X,F18.0,F13.2))
+  173 FORMAT(' ENTHALPY (BTU,BTU/LB)    ',14X,F18.0,2(1X,F18.0,F13.2)/
+     *' IDEAL ENTHALPY',43X,2(1X,F18.0,F13.2)/
+     *' ENTROPY (BTU/F,BTU/LB F)  ',13X,F18.0,2(1X,F18.0,F13.2)/
+     *' IDEAL ENTROPY',44X,2(1X,F18.0,F13.2))
+  175 FORMAT(/' MOLECULAR WEIGHT',34X,F7.2,12X,F7.2,25X,F7.2)
+C 190 FORMAT(' ',70X,F6.4,26X,F6.4)                                     XXXX
+  195 FORMAT(' COMPRESSIBILITY FACTOR',T72,F6.4,26X,F6.4)
+  200 FORMAT(/' LIQUID WATER CHARACTERISTICS')
+CC205 FORMAT(1X,103(' '))
+C 205 FORMAT(1X,103('-'))
+  208 FORMAT(/' |',7X,'FLOW RATE',5X,'|  TOTAL AND SPECIFIC ENTHALPY  |
+     * TOTAL AND SPECIFIC ENTROPY    |   LW/F RATIO  |'/
+     *        ' |',21('-'),'|'31('-'),'|',31('-'),'|',15('-'),'|')
+  210 FORMAT(' |  KGMASS  |  KGMOLS  |',7X,'KCAL',7X,
+     *'|   KCAL/KG  |',6X,'KCAL/C',6X,'|  KCAL/KG C |MOL/MOL| WT/WT |')
+  213 FORMAT(' |    LBS   |  LBMOLS  |',7X,' BTU',7X,
+     *'|    BTU/LB  |',6X,' BTU/F',6X,'|   BTU/LB F |MOL/MOL| WT/WT |')
+  215 FORMAT(' |',F10.1,'|',F10.2,'|',2(F18.0,'|',F12.2,'|'),2(F7.4,'|')
+     *)
+  220 FORMAT(' |',2(10('-'),'|'),2(18('-'),'|',12('-'),'|'),
+     *2(7('-'),'|'))
+  230 FORMAT(' SPECIFIC GRAVITY (T/60 DEG F)',T102,F8.4)
+  240 FORMAT(' DENSITY (KG/M3)  ', T70,F8.4)
+  241 FORMAT(' DENSITY (LB/FT3) ', T70,F8.4)
+  250 FORMAT(/' PSEUDOCRITICAL TEMPERATURE (DEG K)',T45,2(25X,F7.2))
+  260 FORMAT(' PSEUDOCRITICAL PRESSURE (ATM)',T45,2(25X,F7.2))
+C 270 FORMAT(    101X,F8.4)                                             XXXXX
+C 280 FORMAT(    69X,F8.4)                                              XXXXX
+C 320 FORMAT(    45X,2(25X,F7.2))                                       XXXXX
+C 330 FORMAT(    110X,'** BEWARE **')                                   XXXXX
+  340 FORMAT(/' ** BEWARE: SPECIFIC GRAVITY IS AT LIQUID SATURATION PRES
+     *SURE')
+  400 FORMAT('1PROPERTIES  ',13X,'|',13X,'FEED',14X,'|',13X,'VAPOUR'
+     *,12X,'|',9X,'HYDROC.LIQUID',9X,'|'/
+     *1X,25('-'),'|',31('-'),'|',31('-'),'|',31('-'),'|')
+  410 FORMAT(/' SURFACE TENSION (DYNES/CM)'T102,F7.2)
+C 420 FORMAT(    102X,F7.2)                                             XXXXX
+  430 FORMAT(' VISCOSITY (CP)'T45,2(24X,F8.5))
+C 440 FORMAT(    45X,2(24X,F8.5))                                       XXXXX
+  450 FORMAT (/' GAS HEAT-CAPACITY,CP (KCAL/KG C)'T70,F7.3)
+C 460 FORMAT (    70X,F7.3)                                             XXXXX
+  451 FORMAT (' GAS HEAT-CAPACITY,CV (KCAL/KG C)'T70,F7.3)
+C 461 FORMAT (    70X,F7.3)                                             XXXXX
+  470 FORMAT (/' GAS HEAT-CAPACITY,CP (BTU/LB F)'T70,F7.3)
+  471 FORMAT (' GAS HEAT-CAPACITY,CV (BTU/LB F)'T70,F7.3)
+  480 FORMAT (' THERMAL CONDUCTIVITY (KCAL/M HR C)'T45,2(24X,F8.5))
+C 490 FORMAT (    45X,2(24X,F8.5))                                      XXXXX
+  481 FORMAT (' THERMAL CONDUCTIVITY (BTU/FT HR F)'T45,2(24X,F8.5))
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE PRINT - 26
+C ----------------------------------------------------------------------
+      SUBROUTINE PRINT(IT,TETA,TETAMN,FOB)
+	INTEGER*2 IT
+	REAL TETA,TETAMN,FOB
+C	CHARACTER*4 NAME
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+C      COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW
+C      COMMON/TEMPRE/TINP,PINP,T,P
+	INCLUDE 'GENERAL.FI'
+C      COMMON/HFASE/HF,Q,HL,HV,DPHL,DPHV,DTHL,DTHV,DXHL(50),DYHV(50)
+C      COMMON/SFASE/SF,SL,SV,DPSL,DPSV,DTSL,DTSV,DXSL(50),DYSV(50)
+	INCLUDE 'DETTAGLI.FI'
+C      COMMON/MOLFR/X(50),Y(50),Z(50),ZN(50,2),SOM(2)
+C      COMMON/PARTIZ/LAMDA,MU,NU,YW
+C      REAL LAMDA,MU,NU
+C      COMMON/COMPRS/ZCR,ZV,ZL,ZW
+	INCLUDE 'SOLUZ.FI'
+C      COMMON/FER/F(50),FI(50),SNOR,GI,ERRE,SGI,SGR
+	INCLUDE 'FER.FI'
+C      COMMON/WATER/HWL,DTHWL,DPHWL,SWL,DTSWL,DPSWL
+	INCLUDE 'WATER.FI'
+C---------------------------------
+      CHARACTER*132 RIGA(2)
+	REAL FMAX,FIMAX,GNOR,RNOR
+	INTEGER*2 NF,NFI,J,NC2,NC1
+C---------------------------------
+      IF(KWRT.EQ.0.OR.KWRT.EQ.3) RETURN
+      CALL CALMAX(F,NC,FMAX,NF)
+      CALL CALMAX(FI,NC,FIMAX,NFI)
+      GNOR=GI/SGI
+      RNOR=ERRE/SGR
+      WRITE(IO,100) IT,FOB,TETA,TETAMN,ZL,ZV
+      WRITE(IO,120) NF,FMAX,NFI,FIMAX,SNOR,GNOR,RNOR
+      IF(KWRT.EQ.1.OR.KWRT.EQ.4) RETURN
+c      WRITE(IO,149)
+      WRITE(RIGA(1),150)
+      WRITE(RIGA(2),151)HF,Q,SF,HL,HV,SL,SV
+      DO 98 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   98 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(RIGA(1),152)
+      WRITE(RIGA(2),153) SGI,SGR,HWL,SWL
+      DO 97 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   97 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(IO,130) T,P,LAMDA,NU,MU
+      NC2=0
+   10 NC1=NC2+1
+      NC2=NC1+3
+      IF(NC2.GT.NCW) NC2=NCW
+      WRITE(IO,140) (X(J),Y(J),J=NC1,NC2)
+      IF(NC2-NCW) 10,20,20
+   20 WRITE(IO,160)
+      RETURN
+   96 FORMAT(A132)
+  100 FORMAT(/' ITR.NO.',I3,6X,'OBJ.FUNCT.=',E10.3,6X,'THETA=',E10.3,6X,
+     *'THETAMIN=',E10.3,
+     *          T89 ,'ZL=',E10.3,5X,'ZV=',E10.3)                    
+  120 FORMAT(13X,'MAX.ERR: F(',I2,')=',E10.3,4X,'PHI(',I2,')=',E10.3,13X
+     *,'S=',E10.3,6X,'G=',E10.3,6X,'R=',E10.3)
+  130 FORMAT(26X,'T=',F8.2,' DEG K',6X,'P=',F7.2,' ATM',10X,'V/F=',F6.4,
+     *7X,'LH/F=',F6.4,7X,'LW/F=',F6.4)
+  140 FORMAT(8X,4(3X,2(2X,E10.4)))
+  149 FORMAT(//)
+  150 FORMAT(10X,'HF=',14X,'Q=',13X,'SF=',13X,'HL=',13X,
+     *'HV=',13X,'SL=',13X,'SV=')
+  151 FORMAT(7X,7(6X,1PE10.3))
+  152 FORMAT(10X,'SG=',13X,'SR=',30X,'HWL=',28X,'SWL=')
+  153 FORMAT(7X,2(4X,1PE12.5),2(20X,1PE12.5))
+  160 FORMAT(10X,121('-'))
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE PRINTW - 27
+C ----------------------------------------------------------------------
+      SUBROUTINE PRINTW(IT,TETA,TETAMN,FOBW)
+	INTEGER*2 IT
+	REAL TETA,TETAMN,FOBW
+C	CHARACTER*4 NAME
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+C      COMMON/TEMPRE/TINP,PINP,T,P
+C      COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW
+	INCLUDE 'GENERAL.FI'
+C      COMMON/HFASE/HF,Q,HL,HV,DPHL,DPHV,DTHL,DTHV,DXHL(50),DYHV(50)
+C      COMMON/SFASE/SF,SL,SV,DPSL,DPSV,DTSL,DTSV,DXSL(50),DYSV(50)
+	INCLUDE 'DETTAGLI.FI'
+C      COMMON/FERW/F(50),FW,FIW,GW,RW,SGW,SRW
+	INCLUDE 'FERW.FI'
+C      COMMON/WATER/HWL,DTHWL,DPHWL,SWL,DTSWL,DPSWL
+	INCLUDE 'WATER.FI'
+C      COMMON/MOLFR/X(50),Y(50),Z(50),ZN(50,2),SOM(2)
+C      COMMON/PARTIZ/LAMDA,MU,NU,YW
+C      REAL LAMDA,MU,NU
+C      COMMON/COMPRS/ZCR,ZV,ZL,ZW
+	INCLUDE 'SOLUZ.FI'
+C-----------------------------------
+      CHARACTER*132 RIGA(2)
+	REAL FMAX,GWNOR,RWNOR
+	INTEGER*2 NF,J,NC2,NC1
+C-----------------------------------
+      IF(KWRT.EQ.0.OR.KWRT.EQ.3) RETURN
+      CALL CALMAX(F,NC,FMAX,NF)
+      GWNOR=GW/SGW
+      RWNOR=RW/SRW
+      WRITE(IO,100) IT,FOBW,TETA,TETAMN,ZW,ZV
+C     WRITE(IO,110) ZW,ZV
+      WRITE(IO,120) NF,FMAX,FW,FIW,GWNOR,RWNOR
+      IF(KWRT.EQ.1.OR.KWRT.EQ.4) RETURN
+      WRITE(IO,149)
+      WRITE(RIGA(1),150)
+      WRITE(RIGA(2),151) HF,Q,SF,HL,HV,SL,SV
+      DO 98 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   98 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(RIGA(1),152)
+      WRITE(RIGA(2),153)SGW,SRW,HWL,SWL
+      DO 97 J=1,100
+      IF(RIGA(2)(J:J).NE.' ')RIGA(1)(J:J)=RIGA(2)(J:J)
+   97 CONTINUE
+      WRITE(IO,96)RIGA(1)
+      WRITE(IO,130) T,P,LAMDA,NU,MU
+      NC2=0
+    5 NC1=NC2+1
+      NC2=NC1+3
+      IF(NC2.GT.NCW) NC2=NCW
+      WRITE(IO,140) (X(J),Y(J),J=NC1,NC2)
+      IF(NC2-NCW) 5,10,10
+   10 WRITE(IO,160)
+      RETURN
+   96 FORMAT(A132)
+  100 FORMAT(/' ITR.NO.',I3,6X,'OBJ.FUNCT.=',E10.3,6X,'THETA=',E10.3,6X,
+     *'THETAMIN=',E10.3,
+     *          T90 ,'ZW=',E10.3,5X,'ZV=',E10.3)                         
+  120 FORMAT(13X,'MAX.ERR: F(',I2,')=',E10.3,9X,'FW=',E10.3,10X,'PHIW=',
+     *E10.3,5X,'GW=',E10.3, 5X,'RW=',E10.3)
+  130 FORMAT(26X,'T=',F8.2,' DEG K',6X,'P=',F7.2,' ATM',10X,'V/F=',F6.4,
+     *7X,'LH/F=',F6.4,7X,'LW/F=',F6.4)
+  140 FORMAT(8X,4(3X,2(2X,E10.4)))
+  149 FORMAT(//)
+  150 FORMAT(10X,'HF=',14X,'Q=',13X,'SF=',13X,'HL=',13X,
+     *'HV=',13X,'SL=',13X,'SV=')
+  151 FORMAT(7X,7(6X,1PE10.3))
+  152 FORMAT(9X,'SGW=',12X,'SRW=',30X,'HWL=',28X,'SWL=')
+  153 FORMAT(7X,2(4X,1PE12.5),2(20X,1PE12.5))
+  160 FORMAT(9X,124('-'))
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE INIZIO - 63
+C ----------------------------------------------------------------------
+      SUBROUTINE INIZIO
+C	CHARACTER*4 NAME
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+C      COMMON/TEMPRE/TINP,PINP,T,P
+C      COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW
+C      COMMON/INDEX/KBDF,KE,KU,KHS,KW
+	INCLUDE 'GENERAL.FI'
+C      COMMON/KVALUE/DTK(50),DPK(50),DXK(50,50),DYK(50,50),KID(50)
+	INCLUDE 'DETTAGLI.FI'
+C      COMMON/MOLFR/X(50),Y(50),Z(50),ZN(50,2),SOM(2)
+C      COMMON/PARTIZ/LAMDA,MU,NU,YW
+C      REAL LAMDA,MU,NU,KID
+	INCLUDE 'SOLUZ.FI'
+	INCLUDE 'WATER.FI'
+C--------------------------------------
+	REAL PW,DTPW,PV
+	INTEGER*2 I
+C--------------------------------------
+C     WRITE(6,'('' INIZIO,T=''E12.5)')T
+      IF(KW.EQ.0)GO TO 33
+C      TCW=647.3
+      ZW=Z(NCW)
+      IF(KU.NE.1.OR.KU.NE.4) GO TO 33
+      IF (T.LT.TCW) GO TO 33
+      IF (KBDF.NE.1) GO TO 4
+    2 WRITE(IO,100)
+      WRITE(IO,105)
+      WRITE(IO,110)
+      RETURN
+    4 IF(KE.NE.4.OR.KU.NE.1.OR.KBDF.NE.3) GO TO 33
+      GO TO(33,7,2,9),KW
+    7 IF(LAMDA.GE.ZW) GO TO 33
+      WRITE(IO,100)
+      WRITE(IO,105)
+      WRITE(IO,115)
+      WRITE(IO,110)
+      RETURN
+    9 IF(NU.NE.0.)GO TO 33
+      WRITE(IO,105)
+      WRITE(IO,120)
+      RETURN
+   33 IF(KE.EQ.5) GO TO 57
+      GO TO (10,11,12),KBDF
+   10 LAMDA=0.
+      DO 13 I=1,NC
+      X(I)=Z(I)
+   13 Y(I)=KID(I)*X(I)
+      IF(KW.NE.0) GO TO 14
+      MU=0.
+      NU=1.
+      YW=0.
+      GO TO 90
+   14 IF(T.GT.TCW) T=600.
+      CALL TENVAP(PW,DTPW,T,1,0)
+      YW=PW/P
+      MU=ZW
+      NU=1.-MU
+      GO TO 90
+   11 LAMDA=1.
+      DO 17 I=1,NC
+      Y(I)=Z(I)
+   17 X(I)=Y(I)/KID(I)
+      MU=0.
+      NU=0.
+      YW=0.
+      IF(KW.NE.0) YW=ZW
+      GO TO 90
+   12 IF(KW.NE.0) GO TO 20
+      YW=0.
+      MU=0.
+      NU=1.-LAMDA
+      DO 24 I=1,NC
+      X(I)=Z(I)/(LAMDA*KID(I)+1.-LAMDA-MU)
+   24 Y(I)=KID(I)*X(I)
+      GO TO 90
+   20 GO TO (21,22,23,43),KW
+   21 IF(T.LT.TCW) GO TO 25
+      IF(LAMDA.LE.ZW) LAMDA=0.5*(1.+ZW)
+      YW=ZW/LAMDA
+      MU=0.
+      GO TO 26
+   25 CALL TENVAP(PW,DTPW,T,1,0)
+      YW=PW/P
+      MU=ZW-YW*LAMDA
+      IF(MU.GE.0.) GO TO 26
+      MU=0.
+      YW=ZW/LAMDA
+   26 DO 27 I=1,NC
+      X(I)=Z(I)/(LAMDA*KID(I)+1.-LAMDA-MU)
+   27 Y(I)=KID(I)*X(I)
+      NU=1.-LAMDA-MU
+      GO TO 90
+   22 IF(T.LT.TCW) GO TO 29
+      IF(LAMDA.LE.ZW) T=600.
+      YW=ZW/LAMDA
+      MU=0.
+      GO TO 30
+   29 CALL TENVAP(PW,DTPW,T,1,0)
+      YW=PW/P
+      MU=ZW-YW*LAMDA
+      IF(MU.GE.0.) GO TO 30
+      MU=0.
+      YW=ZW/LAMDA
+   30 DO 31 I=1,NC
+      X(I)=Z(I)/(LAMDA*KID(I)+1.-LAMDA-MU)
+   31 Y(I)=KID(I)*X(I)
+      NU=1.-LAMDA-MU
+      GO TO 90
+   23 IF(MU.LT.ZW.AND.MU.GE.0.) GO TO 32
+      WRITE(IO,100)
+      WRITE(IO,130)
+      WRITE(IO,110)
+      RETURN
+   32 IF(T.GE.TCW) T=600.
+      CALL TENVAP(PW,DTPW,T,1,0)
+      YW=PW/P
+      LAMDA=(ZW-MU)/YW
+      NU=1.-LAMDA-MU
+      IF(NU.GT.0.)GO TO 41
+      LAMDA=(1.-MU)/2.
+      YW=(ZW-MU)/LAMDA
+      NU=1.-LAMDA-MU
+      IF(KU.EQ.1) GO TO 40
+      PV=P*YW
+      CALL TENVAP(PV,DTPW,T,2,0)
+      GO TO 39
+   40 CALL TENVAP(PW,DTPW,T,1,0)
+      P=PW/YW
+   39 CALL KIDEAL
+   41 DO 42 I=1,NC
+      X(I)=Z(I)/(LAMDA*KID(I)+NU)
+   42 Y(I)=KID(I)*X(I)
+      GO TO 90
+C	CAMBIATO LP
+C   43 IF(NU.GE.0..AND.NU.LT.(1.-ZW)) GO TO 44
+   43 IF(NU.GE.0..AND.NU.LE.(1.-ZW)) GO TO 44
+      WRITE(IO,100)
+      WRITE(IO,135)
+      WRITE(IO,110)
+      RETURN
+   44 IF(T.LT.TCW) GO TO 45
+      IF(NU) 49,49,48
+   48 MU=0.
+      LAMDA=1.-NU
+      YW=ZW/LAMDA
+      GO TO 50
+   49 T=600.
+   45 CALL TENVAP(PW,DTPW,T,1,0)
+      YW=PW/P
+      LAMDA=(1.-ZW-NU)/(1.-YW)
+      MU=1.-LAMDA-NU
+      IF(NU.GT.0..AND.MU.LT.0.) GO TO 51
+      IF(NU.EQ.0..AND.MU.LE.0.) GO TO 52
+      GO TO 50
+   51 MU=0.
+      LAMDA=1.-NU
+      YW=ZW/LAMDA
+      GO TO 53
+   52 MU=.0001
+      LAMDA=.9999
+      YW=(ZW-MU)/LAMDA
+   53 IF(KU.EQ.1) GO TO 55
+      PV=P*YW
+      CALL TENVAP(PV,DTPW,T,2,0)
+      GO TO 59
+   55 CALL TENVAP(PW,DTPW,T,1,0)
+      P=PW/YW
+   59 CALL KIDEAL
+   50 DO 56 I=1,NC
+      X(I)=Z(I)/(LAMDA*KID(I)+1.-LAMDA-MU)
+   56 Y(I)=KID(I)*X(I)
+      GO TO 90
+   57 MU=0.
+      YW=0.
+      GO TO (61,63),KBDF
+   61 LAMDA=0.
+      DO 62 I=1,NCW
+      X(I)=Z(I)
+   62 Y(I)=0.
+      IF(KW.NE.0) MU=ZW
+      GO TO 65
+   63 LAMDA=1.
+      DO 64 I=1,NCW
+      Y(I)=Z(I)
+   64 X(I)=0.
+      IF(KW.NE.0)YW=ZW
+   65 NU=1.-LAMDA-MU
+   90 IF(KW) 95,95,93
+   93 Y(NCW)=YW
+      X(NCW)=0.
+   95 CALL NORMAL(Y,NCW)
+      CALL NORMAL(X,NC)
+      RETURN
+  100 FORMAT(' - BEWARE: PROBLEM NOT SOLVED')
+  105 FORMAT(' - BEWARE: SUPERCRITICAL WATER')
+  110 FORMAT(' - BEWARE: PROBLEM WITH NO SOLUTION')
+  115 FORMAT(' - BEWARE: GIVEN VALUE FOR V/F RATIO IS IMPOSSIBLE')
+  120 FORMAT(' - BEWARE: GIVEN VALUE FOR LH/F RATIO CORRESPONDS TO A DEW
+     *-POINT')
+  130 FORMAT(' - BEWARE: GIVEN VALUE FOR LW/F RATIO IS IMPOSSIBLE')
+  135 FORMAT(' - BEWARE: GIVEN VALUE FOR LH/F RATIO IS IMPOSSIBLE')
+      END
+C ----------------------------------------------------------------------
+C     - SUBROUTINE SISLIN - 70
+C ----------------------------------------------------------------------
+      SUBROUTINE SISLIN(COEF,TN,SOLUZ,Mloc,N,RISULT)
+      REAL COEF(3,3),TN(3),SOLUZ(3)
+	INTEGER*2 Mloc,N
+	LOGICAL*2 RISULT
+C      COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV
+	INCLUDE 'GENERAL.FI'
+C------------------------------
+	INTEGER*2 LR(3),LC(3),JJJ,I,J,N1,K,IT,JT,K1,K2,KKK,I1
+      REAL  Aloc(3,4),SG
+C------------------------------
+	RISULT=.TRUE.
+      SG=1.E-20
+      N1=N+1
+      DO 15  I=1,Mloc
+      DO 15 J=1,N1
+      IF(J.GE.N1)GO TO 14
+      Aloc(I,J)=COEF(I,J)
+      GO TO 15
+   14 Aloc(I,J)=TN(I)
+   15 CONTINUE
+      DO16 I=1,Mloc
+   16 LR(I)=I
+      DO 17 J=1,N
+   17 LC(J)=J
+      K=1
+   22 T=0.
+      DO 26 I=K,Mloc
+      DO 26 J=K,Mloc
+      IF(ABS(Aloc(I,J)).LE.T) GO TO 26
+      T=ABS(Aloc(I,J))
+      IT=I
+      JT=J
+   26 CONTINUE
+      IF(T.LE.SG) GO TO 52
+      IF(JT.EQ.K) GO TO 31
+      DO 29 I=1,Mloc
+      T=Aloc(I,K)
+      Aloc(I,K)=Aloc(I,JT)
+   29 Aloc(I,JT)=T
+      J=LC(K)
+      LC(K)=LC(JT)
+      LC(JT)=J
+   31 IF(IT.EQ.K)GO TO 40
+      DO 33 J=K,N1
+      T=Aloc(K,J)
+      Aloc(K,J)=Aloc(IT,J)
+   33 Aloc(IT,J)=T
+      I=LR(K)
+      LR(K)=LR(IT)
+      LR(IT)=I
+   40 IF(K.LT.Mloc)GO TO 42
+      K=K+1
+      GO TO 52
+   42 K1=K+1
+      DO 47 I=K1,Mloc
+      T=Aloc(I,K)/Aloc(K,K)
+      DO 47 J=K1,N1
+   47 Aloc(I,J)=Aloc(I,J)-T*Aloc(K,J)
+      K=K1
+      IF(K.LE.N)GO TO 22
+   52 K2=K-1
+      K1=K2+1
+   55 IF(K.GT.Mloc)GO TO 60
+      IF(ABS(Aloc(K,N1)).LE.SG)GO TO 57
+      K2=K2+1
+      LR(K2)=LR(K)
+   57 K=K+1
+      GO TO 55
+   60 IF(K2.LT.K1)GO TO 77
+      WRITE(IO,110)
+      WRITE(IO,100) (LR(I),I=K1,K2)
+      WRITE(IO,120) ((COEF(JJJ,KKK),KKK=1,3),TN(JJJ),JJJ=1,3)
+      RISULT=.FALSE.
+	RETURN
+   77 I=K2
+   78 DO 85 J=K1,N1
+      IF(I.EQ.K2)GO TO 85
+      DO 82 K=I1,K2
+   82 Aloc(I,J)=Aloc(I,J)-Aloc(I,K)*Aloc(K,J)
+   85 Aloc(I,J)=Aloc(I,J)/Aloc(I,I)
+      JJJ=LC(I)
+      SOLUZ(JJJ)=Aloc(I,N1)
+   93 I1=I
+      I=I-1
+      IF(I.GE.1)GO TO 78
+      RETURN
+  100 FORMAT(/' - BEWARE: ARE NOT FEASIBLE WITH THE EQUATION',28I3)
+  110 FORMAT(' - BEWARE: THE SISTEM HAS NO SOLUTION')
+  120 FORMAT(///,4(1X,E12.5,5X))
+      END
+

@@ -1,0 +1,187 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C2C5C84-9716-4BFF-BC35-CA559F85C572}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>BreLock</AssemblyName>
+    <OutputType>Library</OutputType>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>1</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>11</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>True</GenerateRevisionNumber>
+    <AssemblyCompanyName>Mangiarotti SpA</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <RootNamespace>BreLock</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>BreLock.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>BreLock.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="WinWordControl">
+      <HintPath>..\DLL Extra\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsBreLoc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmApert.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modTipi.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpTopics.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpTopics.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmApert.resX">
+      <DependentUpon>frmApert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectResources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjectResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpTopics.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelpTopics.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibMat.NET\LibMat.vbproj">
+      <Project>{BFBA7621-266F-4831-8B74-A3AFBF0FE303}</Project>
+      <Name>LibMat</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase.NET\RoutBase1.vbproj">
+      <Project>{3B2389A2-3B3A-4FDE-980B-3345357EC065}</Project>
+      <Name>RoutBase1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW2000.NET\StubW2000.vbproj">
+      <Project>{CEF5E506-69FD-499F-99B3-E10767B365D4}</Project>
+      <Name>StubW2000</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW9.NET\StubW9.vbproj">
+      <Project>{D211EA20-5776-410B-9174-1817E9DD67C3}</Project>
+      <Name>StubW9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arch\BRELOCK.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arch\Brelb.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arch\DeformThrEnd.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dati\501106.BRE" />
+    <Content Include="Dati\504803.BRE" />
+    <Content Include="Dati\DS410.BRE" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

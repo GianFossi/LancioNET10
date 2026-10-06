@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Panoramica">
+		<param name="Local" value="Panoramica.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I tre tipi di funzionamento">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Funzionamento autonomo">
+			<param name="Local" value="FunzAut.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Funzionamento da ISA - Curve manuali">
+			<param name="Local" value="Manuale.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="La tabella dei dati">
+				<param name="Local" value="Tabella.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Il grafico">
+				<param name="Local" value="Grafico.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="I dati di zona">
+				<param name="Local" value="DatiZona.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Funzionamento da ISA - Curve automatiche">
+			<param name="Local" value="Autom.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="L'interfaccia utente">
+		<param name="Local" value="mainForm.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I componenti previsti">
+			<param name="Local" value="Componenti.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Curve di risc./cond.: assegnazione punti">
+			<param name="Local" value="AssegnazPunti.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Curve di risc./cond.: grafici e tabelle">
+			<param name="Local" value="TabGraf.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori durante l'esecuzione">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati Errati">
+			<param name="Local" value="ErrFortran.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Funzione non implementata">
+			<param name="Local" value="ErrSpecNonImpl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Output elaborazioni assente">
+			<param name="Local" value="ErrNonTxt.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Output elaborazioni vuoto">
+			<param name="Local" value="ErrTxtNull.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale teorico">
+		<param name="Local" value="ManTeor.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Le equazioni RKS">
+			<param name="Local" value="ManTeorRKS.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Coefficienti di interazione binaria">
+				<param name="Local" value="ManTeorRKSkij.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Le equazioni di Peng-Robinson">
+			<param name="Local" value="ManTeorPR.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Coefficienti di interazione binaria">
+				<param name="Local" value="ManTeorPRkij.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="L'acentrismo">
+			<param name="Local" value="ManTeorAcentric.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale del programmatore - Basic">
+		<param name="Local" value="ManProgBasic.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale del programmatore - FORTRAN">
+		<param name="Local" value="ManProgFORTRAN.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Moduli e routines">
+			<param name="Local" value="ManFor\MRind.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Main module">
+				<param name="Local" value="ManFor\MRSelind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SELVA">
+					<param name="Local" value="ManFor\MRSelSELVA.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROC2">
+					<param name="Local" value="ManFor\MRSelPROC2.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROC3">
+					<param name="Local" value="ManFor\MRSelPROC3.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Level1">
+				<param name="Local" value="ManFor\MRL1ind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine CONDEN">
+					<param name="Local" value="ManFor\MRL1CONDEN.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine EVAPOR">
+					<param name="Local" value="ManFor\MRL1EVAPOR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROCEL">
+					<param name="Local" value="ManFor\MRL1PROCEL.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PRCELW">
+					<param name="Local" value="ManFor\MRL1PRCELW.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROP">
+					<param name="Local" value="ManFor\MRL1PROP.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROP1">
+					<param name="Local" value="ManFor\MRL1PROP1.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SPTEST">
+					<param name="Local" value="ManFor\MRL1SPTEST.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine TENVAP">
+					<param name="Local" value="ManFor\MRL1TENVAP.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Level2">
+				<param name="Local" value="ManFor\MRL2ind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROCIN">
+					<param name="Local" value="ManFor\MRL2PROCIN.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROCIT">
+					<param name="Local" value="ManFor\MRL2PROCIT.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PENROH">
+					<param name="Local" value="ManFor\MRL2PENROH.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PENROW">
+					<param name="Local" value="ManFor\MRL2PENROW.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SOAVEH">
+					<param name="Local" value="ManFor\MRL2SOAVEH.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SOAVEW">
+					<param name="Local" value="ManFor\MRL2SOAVEW.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Level3">
+				<param name="Local" value="ManFor\MRL3ind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine CALMAX">
+					<param name="Local" value="ManFor\MRL3CALMAX.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine CRICOV">
+					<param name="Local" value="ManFor\MRL3CRICOV.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine FATNOR">
+					<param name="Local" value="ManFor\MRL3FATNOR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine FUNZER">
+					<param name="Local" value="ManFor\MRL3FUNZER.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine FUNZOB">
+					<param name="Local" value="ManFor\MRL3FUNZOB.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine INVERS">
+					<param name="Local" value="ManFor\MRL3INVERS.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine KIDEAL">
+					<param name="Local" value="ManFor\MRL3KIDEAL.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PRESAT">
+					<param name="Local" value="ManFor\MRL3PRESAT.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROCOV">
+					<param name="Local" value="ManFor\MRL3PROCOV.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SOLUZ">
+					<param name="Local" value="ManFor\MRL3SOLUZ.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Level3a">
+				<param name="Local" value="ManFor\MRL3aind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine STANDA">
+					<param name="Local" value="ManFor\MRL3aSTANDA.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine THERMO">
+					<param name="Local" value="ManFor\MRL3aTHERMO.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Proc1">
+				<param name="Local" value="ManFor\MRP1ind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PROC1">
+					<param name="Local" value="ManFor\MRP1PROC1.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Output">
+				<param name="Local" value="ManFor\MROutind.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine INIZIO">
+					<param name="Local" value="ManFor\MROutINIZIO.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine INPUT">
+					<param name="Local" value="ManFor\MRSelINPUT.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine OUTPUT">
+					<param name="Local" value="ManFor\MROutOUTPUT.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PRINT">
+					<param name="Local" value="ManFor\MROutPRINT.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PRINTW">
+					<param name="Local" value="ManFor\MROutPRINTW.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Common Blocks e variabili">
+			<param name="Local" value="ManFor\CBVind.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IND">
+				<param name="Local" value="ManFor\IND.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/ACRISI/">
+				<param name="Local" value="ManFor\cbACRISI.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/FER/">
+				<param name="Local" value="ManFor\cbFER.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/INDEX/">
+				<param name="Local" value="ManFor\cbINDEX.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/KVALUE/">
+				<param name="Local" value="ManFor\cbKVALUE.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/K00K/">
+				<param name="Local" value="ManFor\cbK00K.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/MOLFR/">
+				<param name="Local" value="ManFor\cbMOLFR.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/OPTION/">
+				<param name="Local" value="ManFor\OPTION.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="/PARTIZ/">
+				<param name="Local" value="ManFor\cbPARTIZ.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Bibliografia">
+				<param name="Local" value="Biblio.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

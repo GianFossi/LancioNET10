@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MRSelINPUT_file/filelist.xml">
+<link rel=Edit-Time-Data href="./MRSelINPUT_file/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Subroutine INPUT</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:Template>HTML.dot</o:Template>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>58</o:TotalTime>
+  <o:Created>2001-06-20T16:55:00Z</o:Created>
+  <o:LastSaved>2001-06-20T16:55:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>174</o:Words>
+  <o:Characters>993</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>1219</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Fortran, li.Fortran, div.Fortran
+	{mso-style-name:Fortran;
+	mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine INPUT</h1>
+
+<table border=0 cellspacing=0 cellpadding=0 style='mso-cellspacing:0cm;
+ mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  0cm'><a href="MRL1PROCEL.htm"><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=115 height=18 id="_x0000_i1025"
+  src="..\img\SubPROCEL.bmp" alt="Subroutine PROCEL"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1026" src="..\img\parmult.bmp"><img
+  border=0 width=115 height=18 id="_x0000_i1027" src="..\img\SubPROCIT.bmp"
+  alt="Subroutine PROCIT"><br>
+  <img border=0 width=17 height=25 id="_x0000_i1028" src="..\img\space.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1029" src="..\img\parmult.bmp"><img
+  border=0 width=115 height=18 id="_x0000_i1039" src="..\img\SubFUNZOB.bmp"
+  alt="Subroutine FUNZOB"><br>
+  <img border=0 width=17 height=25 id="_x0000_i1040" src="..\img\space.bmp"><img
+  border=0 width=17 height=25 id="_x0000_i1041" src="..\img\parmult.bmp"><a
+  href="MRL3CRICOV.HTM"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1051" src="..\img\SubCRICOV.bmp"
+  alt="Subroutine CRICOV"></span></a></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Autore<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Revisioni<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Scopo<o:p></o:p></span></h2>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Argomenti<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>IND</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Indicatore del tipo di calcolo. Vedi xxxx</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Listato<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes"> </span><span
+style="mso-spacerun: yes">     </span>END<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
