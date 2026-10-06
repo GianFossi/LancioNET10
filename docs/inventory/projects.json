@@ -1,5 +1,5 @@
 {
-  "file_count": 2298,
+  "file_count": 2300,
   "extensions": {
     "": 6,
     ".a14": 10,
@@ -61,7 +61,7 @@
     ".txt": 97,
     ".user": 12,
     ".vb": 266,
-    ".vbproj": 12,
+    ".vbproj": 14,
     ".vdproj": 1,
     ".vip": 27,
     ".vis": 1,
@@ -79,7 +79,7 @@
       "name": "LibMat",
       "path": "LibMat.NET\\LibMat.vbproj",
       "guid": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-      "present": false
+      "present": true
     },
     {
       "name": "RoutBase1",
@@ -121,7 +121,7 @@
       "name": "Orecchia",
       "path": "Orecchia.NET\\Orecchia.vbproj",
       "guid": "{C2814604-1064-462E-BC62-30CFE64BB7FF}",
-      "present": false
+      "present": true
     },
     {
       "name": "Saddles",
@@ -197,23 +197,28 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -221,47 +226,56 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "Grafic2",
           "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Wrcb",
           "Project": "{484F2386-1C0C-4D02-8579-95BBFFB50A70}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
           "AssemblyName": "Microsoft.VisualBasic.Compatibility",
-          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll"
+          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll",
+          "kind": "Reference"
         },
         {
           "Name": "Tiranti",
           "Project": "{5C78F541-5DA2-4F95-BB6E-534D77FC36C3}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Traccia",
           "Project": "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Office",
@@ -269,7 +283,8 @@
           "VersionMajor": "2",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "VBIDE",
@@ -277,7 +292,8 @@
           "VersionMajor": "5",
           "VersionMinor": "3",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "Word",
@@ -285,12 +301,14 @@
           "VersionMajor": "8",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": [
@@ -372,25 +390,30 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "System.Configuration.Install",
           "AssemblyName": "System.Configuration.Install",
-          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\System.Configuration.Install.dll"
+          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\System.Configuration.Install.dll",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -419,27 +442,33 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
-          "AssemblyName": "Microsoft.VisualBasic.Compatibility"
+          "AssemblyName": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -447,7 +476,8 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "StdFormat",
@@ -455,7 +485,8 @@
           "VersionMajor": "1",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "StdType",
@@ -463,42 +494,50 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "AsmeVip",
           "Project": "{10252E09-EE41-4A72-84DF-6744AE7D6732}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Grafic2",
           "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Traccia",
           "Project": "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -527,15 +566,18 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -564,27 +606,33 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
-          "AssemblyName": "Microsoft.VisualBasic.Compatibility"
+          "AssemblyName": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -592,37 +640,44 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Traccia",
           "Project": "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Interop.AutoCAD",
           "AssemblyName": "Interop.AutoCAD",
-          "HintPath": "obj\\Interop.AutoCAD.dll"
+          "HintPath": "obj\\Interop.AutoCAD.dll",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -651,23 +706,28 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -675,7 +735,8 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "StdType",
@@ -683,62 +744,74 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Traccia",
           "Project": "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Grafic2",
           "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
           "AssemblyName": "Microsoft.VisualBasic.Compatibility",
-          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll"
+          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll",
+          "kind": "Reference"
         },
         {
           "Name": "Tiranti",
           "Project": "{5C78F541-5DA2-4F95-BB6E-534D77FC36C3}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Saddles",
           "Project": "{02B1F169-234F-475D-A290-E0DFE6EEB402}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Wrcb",
           "Project": "{484F2386-1C0C-4D02-8579-95BBFFB50A70}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "AsmeVip",
           "Project": "{10252E09-EE41-4A72-84DF-6744AE7D6732}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Orecchia",
           "Project": "{C2814604-1064-462E-BC62-30CFE64BB7FF}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "DataShDll",
           "Project": "{82DD8826-0E9F-4394-80F1-43972171932B}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         }
       ],
       "missing_files": [
@@ -817,6 +890,464 @@
       ]
     },
     {
+      "path": "legacy/LibMat.NET/LibMat.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ApplicationIcon": "",
+        "AssemblyKeyContainerName": "",
+        "AssemblyName": "LibMat",
+        "AssemblyOriginatorKeyFile": "",
+        "AssemblyOriginatorKeyMode": "None",
+        "DefaultClientScript": "JScript",
+        "DefaultHTMLPageLayout": "Grid",
+        "DefaultTargetSchema": "IE50",
+        "DelaySign": "false",
+        "OutputType": "Library",
+        "OptionCompare": "Binary",
+        "OptionExplicit": "On",
+        "OptionStrict": "On",
+        "RootNamespace": "LibMat",
+        "StartupObject": "",
+        "FileUpgradeFlags": "",
+        "MyType": "Windows",
+        "UpgradeBackupLocation": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "ADODB",
+          "Name": "adodb",
+          "HintPath": "..\\..\\..\\..\\Programmi\\Microsoft.NET\\Primary Interop Assemblies\\adodb.dll",
+          "AssemblyFolderKey": "hklm\\primary interop assemblies",
+          "Private": "False",
+          "kind": "Reference"
+        },
+        {
+          "Include": "Microsoft.VisualBasic.Compatibility",
+          "Name": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Data",
+          "Name": "System.Data",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Xml",
+          "Name": "System.XML",
+          "kind": "Reference"
+        },
+        {
+          "Include": "ADOX",
+          "Guid": "{00000600-0000-0010-8000-00AA006D2EA4}",
+          "VersionMajor": "2",
+          "VersionMinor": "8",
+          "Lcid": "0",
+          "WrapperTool": "tlbimp",
+          "Private": "False",
+          "kind": "COMReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Name": "RoutBase1",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase2.NET\\RoutBase2\\RoutBase2.vbproj",
+          "Project": "{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}",
+          "Name": "RoutBase2",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase3.NET\\RoutBase3\\RoutBase3.vbproj",
+          "Project": "{F48E382D-A289-4FB5-A707-508CBA9205A7}",
+          "Name": "RoutBase3",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase4.NET\\RoutBase4\\RoutBase4.vbproj",
+          "Project": "{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}",
+          "Name": "RoutBase4",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Name": "StubW2000",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        }
+      ],
+      "missing_files": [
+        {
+          "path": "AssemblyInfo.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "bwg4.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "CarattMat.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "clsBWG.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "clsGuarn.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "clsMat.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "clsPipe.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmChart.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmDati.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmEliminaVecchi.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmGuarn.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmMater.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmNonTrovato.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmNote.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmPipe.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmprz.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmScheda.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmTira.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmTirFil.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmUpdate.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "frmUpDateCampi.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "GridWrap.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "InitLibMat.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "Matcom~1.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "Materi~1.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "modMain.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "Monitor.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "My Project\\Settings.Designer.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "Tiranti.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "bwg4.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmChart.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmDati.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmEliminaVecchi.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmGuarn.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmMater.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmNonTrovato.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmNote.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmPipe.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmprz.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmScheda.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmTira.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmTirFil.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmUpdate.resX",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "frmUpDateCampi.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "GridWrap.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "Risorse.en.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "Risorse.resx",
+          "build_action": "EmbeddedResource"
+        },
+        {
+          "path": "Arch\\Mat200400.mdb",
+          "build_action": "Content"
+        },
+        {
+          "path": "Arch\\piping.new",
+          "build_action": "Content"
+        },
+        {
+          "path": "Arch\\Prezzi.doc",
+          "build_action": "Content"
+        },
+        {
+          "path": "Arch\\tabelle.mdb",
+          "build_action": "Content"
+        },
+        {
+          "path": "Arch\\UpDateASME.ini",
+          "build_action": "Content"
+        },
+        {
+          "path": "Arch\\WN5\\gasket.mdb",
+          "build_action": "Content"
+        },
+        {
+          "path": "app.config",
+          "build_action": "None"
+        },
+        {
+          "path": "My Project\\Settings.settings",
+          "build_action": "None"
+        }
+      ]
+    },
+    {
+      "path": "legacy/Orecchia.NET/Orecchia.vbproj",
+      "encoding": "utf-8-sig",
+      "xml_error": null,
+      "settings": {
+        "ProjectType": "Local",
+        "ProductVersion": "8.0.50727",
+        "SchemaVersion": "2.0",
+        "ProjectGuid": "{C2814604-1064-462E-BC62-30CFE64BB7FF}",
+        "Configuration": "Debug",
+        "Platform": "AnyCPU",
+        "ApplicationIcon": "",
+        "AssemblyKeyContainerName": "",
+        "AssemblyName": "Orecchia",
+        "AssemblyOriginatorKeyFile": "",
+        "AssemblyOriginatorKeyMode": "None",
+        "DefaultClientScript": "JScript",
+        "DefaultHTMLPageLayout": "Grid",
+        "DefaultTargetSchema": "IE50",
+        "DelaySign": "false",
+        "OutputType": "Library",
+        "OptionCompare": "Binary",
+        "OptionExplicit": "On",
+        "OptionStrict": "Off",
+        "RootNamespace": "Orecchia",
+        "StartupObject": "",
+        "FileUpgradeFlags": "",
+        "MyType": "Windows",
+        "UpgradeBackupLocation": "",
+        "OldToolsVersion": "3.5",
+        "TargetFrameworkVersion": "v3.5",
+        "PreBuildEvent": "",
+        "PostBuildEvent": ""
+      },
+      "references": [
+        {
+          "Include": "System",
+          "Name": "System",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Drawing",
+          "Name": "System.Drawing",
+          "kind": "Reference"
+        },
+        {
+          "Include": "System.Windows.Forms",
+          "Name": "System.Windows.Forms",
+          "kind": "Reference"
+        },
+        {
+          "Include": "..\\LibMat.NET\\LibMat.vbproj",
+          "Name": "LibMat",
+          "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\RoutBase.NET\\RoutBase1.vbproj",
+          "Name": "RoutBase1",
+          "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW2000.NET\\StubW2000.vbproj",
+          "Name": "StubW2000",
+          "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "..\\StubW9.NET\\StubW9.vbproj",
+          "Project": "{D211EA20-5776-410B-9174-1817E9DD67C3}",
+          "Name": "StubW9",
+          "Private": "False",
+          "kind": "ProjectReference"
+        },
+        {
+          "Include": "WinWordControl",
+          "HintPath": "..\\DLL Extra\\WinWordControl.dll",
+          "kind": "Reference"
+        }
+      ],
+      "missing_files": [
+        {
+          "path": "oreMonitor.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "Var_Funz.vb",
+          "build_action": "Compile"
+        },
+        {
+          "path": "ProjectResources.resx",
+          "build_action": "EmbeddedResource"
+        }
+      ]
+    },
+    {
       "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
       "encoding": "utf-8-sig",
       "xml_error": null,
@@ -840,27 +1371,33 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
-          "AssemblyName": "Microsoft.VisualBasic.Compatibility"
+          "AssemblyName": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -868,17 +1405,20 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Interop.AutoCAD",
           "AssemblyName": "Interop.AutoCAD",
-          "HintPath": "obj\\Interop.AutoCAD.dll"
+          "HintPath": "obj\\Interop.AutoCAD.dll",
+          "kind": "Reference"
         },
         {
           "Name": "Office",
@@ -886,13 +1426,15 @@
           "VersionMajor": "2",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "adodb",
           "AssemblyName": "ADODB",
           "HintPath": "..\\..\\..\\..\\..\\..\\Programmi\\Microsoft.NET\\Primary Interop Assemblies\\adodb.dll",
-          "AssemblyFolderKey": "hklm\\primary interop assemblies"
+          "AssemblyFolderKey": "hklm\\primary interop assemblies",
+          "kind": "Reference"
         },
         {
           "Name": "ADOX",
@@ -900,7 +1442,8 @@
           "VersionMajor": "2",
           "VersionMinor": "8",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "VBIDE",
@@ -908,7 +1451,8 @@
           "VersionMajor": "5",
           "VersionMinor": "3",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "Word",
@@ -916,12 +1460,14 @@
           "VersionMajor": "8",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": [
@@ -955,27 +1501,33 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
-          "AssemblyName": "Microsoft.VisualBasic.Compatibility"
+          "AssemblyName": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -983,32 +1535,38 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "FormulaParser",
           "Project": "{922687D4-8397-4C5E-98F2-1F2171F2D0F7}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -1037,27 +1595,33 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
-          "AssemblyName": "Microsoft.VisualBasic.Compatibility"
+          "AssemblyName": "Microsoft.VisualBasic.Compatibility",
+          "kind": "Reference"
         },
         {
           "Name": "Office",
@@ -1065,7 +1629,8 @@
           "VersionMajor": "2",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "VBIDE",
@@ -1073,7 +1638,8 @@
           "VersionMajor": "5",
           "VersionMinor": "3",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "Word",
@@ -1081,12 +1647,14 @@
           "VersionMajor": "8",
           "VersionMinor": "1",
           "Lcid": "0",
-          "WrapperTool": "tlbimp"
+          "WrapperTool": "tlbimp",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -1115,23 +1683,28 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -1139,37 +1712,44 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic",
           "AssemblyName": "Microsoft.VisualBasic",
-          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.dll"
+          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.dll",
+          "kind": "Reference"
         },
         {
           "Name": "Microsoft.VisualBasic.Compatibility",
           "AssemblyName": "Microsoft.VisualBasic.Compatibility",
-          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll"
+          "HintPath": "..\\..\\..\\..\\WINDOWS\\Microsoft.NET\\Framework\\v1.1.4322\\Microsoft.VisualBasic.Compatibility.dll",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -1198,23 +1778,28 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -1222,32 +1807,38 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Grafic2",
           "Project": "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -1276,23 +1867,28 @@
       "references": [
         {
           "Name": "System",
-          "AssemblyName": "System"
+          "AssemblyName": "System",
+          "kind": "Reference"
         },
         {
           "Name": "System.Data",
-          "AssemblyName": "System.Data"
+          "AssemblyName": "System.Data",
+          "kind": "Reference"
         },
         {
           "Name": "System.Drawing",
-          "AssemblyName": "System.Drawing"
+          "AssemblyName": "System.Drawing",
+          "kind": "Reference"
         },
         {
           "Name": "System.Windows.Forms",
-          "AssemblyName": "System.Windows.Forms"
+          "AssemblyName": "System.Windows.Forms",
+          "kind": "Reference"
         },
         {
           "Name": "System.XML",
-          "AssemblyName": "System.Xml"
+          "AssemblyName": "System.Xml",
+          "kind": "Reference"
         },
         {
           "Name": "stdole",
@@ -1300,32 +1896,38 @@
           "VersionMajor": "2",
           "VersionMinor": "0",
           "Lcid": "0",
-          "WrapperTool": "primary"
+          "WrapperTool": "primary",
+          "kind": "Reference"
         },
         {
           "Name": "LibMat",
           "Project": "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "RoutBase1",
           "Project": "{3B2389A2-3B3A-4FDE-980B-3345357EC065}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "StubW2000",
           "Project": "{CEF5E506-69FD-499F-99B3-E10767B365D4}",
-          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+          "Package": "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}",
+          "kind": "Reference"
         },
         {
           "Name": "Interop.AutoCAD",
           "AssemblyName": "Interop.AutoCAD",
-          "HintPath": "bin\\Interop.AutoCAD.dll"
+          "HintPath": "bin\\Interop.AutoCAD.dll",
+          "kind": "Reference"
         },
         {
           "Name": "WinWordControl",
           "Project": "{12793C64-A87B-42AD-8058-57C9F43DBD98}",
-          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+          "Package": "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+          "kind": "Reference"
         }
       ],
       "missing_files": []
@@ -1960,6 +2562,18 @@
       {
         "path": "legacy/Lancio.NET/frmPers.vb",
         "line": 64
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 79
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 80
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 144
       },
       {
         "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
@@ -6712,6 +7326,26 @@
         "line": 58
       },
       {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 73
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 74
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 75
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 97
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 142
+      },
+      {
         "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
         "line": 111
       },
@@ -6828,6 +7462,22 @@
       {
         "path": "legacy/Lancio.NET/lanMonitor.vb",
         "line": 117
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 137
+      },
+      {
+        "path": "legacy/LibMat.NET/LibMat.vbproj",
+        "line": 138
+      },
+      {
+        "path": "legacy/Orecchia.NET/Orecchia.vbproj",
+        "line": 105
+      },
+      {
+        "path": "legacy/Orecchia.NET/Orecchia.vbproj",
+        "line": 106
       },
       {
         "path": "legacy/RoutBase.NET/Generale.vb",

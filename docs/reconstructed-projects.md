@@ -1,16 +1,51 @@
 # Progetti ricostruiti e alternativa a WinWordControl
 
+## Aggiornamento dai manifest originali allegati
+
+I due .vbproj originali sono ora conservati, senza modifiche, in
+`legacy/LibMat.NET/LibMat.vbproj` e `legacy/Orecchia.NET/Orecchia.vbproj`.
+Gli allegati .user sono stati esaminati solo come metadati locali e non sono
+stati aggiunti al checkout. I manifest hanno formato MSBuild pre-SDK e target
+.NET Framework 3.5: sono una revisione successiva alla soluzione VS2003
+inizialmente ricevuta, da non presumere identica a quel set di sorgenti.
+
+Correzioni ai progetti migrati: LibMat mantiene Option Strict On come il
+manifest originale, Orecchia mantiene Off; entrambi conservano la costante
+di compilazione Win32=True. Le opzioni dichiarate nei singoli file VB restano
+invariate. Non sono state importate le soppressioni globali degli avvisi.
+
+LibMat originale dichiara 29 file Compile e 18 EmbeddedResource che non sono
+nel caricamento corrente. I tre file VB ricevuti in LibMat.NET non figurano
+in quel manifest: restano conservati, ma non costituiscono la libreria completa.
+Orecchia originale dichiara oreMonitor.vb, Var_Funz.vb e ProjectResources.resx,
+tutti mancanti. InserDati_2/3 ricevuti non sono elencati nel manifest originale:
+sono conservati nella copia migrata, con la loro provenienza ancora da verificare.
+
+Gli elenchi completi sono in
+[LibMat-missing-files.json](inventory/LibMat-missing-files.json) e
+[Orecchia-missing-files.json](inventory/Orecchia-missing-files.json).
+LibMat riferisce anche RoutBase2, RoutBase3, RoutBase4 e StubW9, non presenti;
+Orecchia riferisce StubW9. Il report projects.json ora legge entrambi i formati
+di progetto e registra tutti i riferimenti effettivi degli originali.
+I progetti SDK ricostruiti rimangono scaffolding parziale, senza simulare queste
+dipendenze con implementazioni vuote.
+
+Entrambi gli originali riferiscono **`../DLL Extra/WinWordControl.dll`**.
+Prima di scegliere un nuovo backend, cercare quella DLL nella copia originale:
+potrebbe consentire l'analisi del componente anche senza il suo progetto sorgente.
+La DLL non va eseguita prima di verificarne provenienza e compatibilità.
+
 ## LibMat e Orecchia
 
 Creati `src/LibMat/LibMat.vbproj` e `src/Orecchia/Orecchia.vbproj` in VB.NET,
-SDK-style, target net10.0-windows e Option Strict Off. I file disponibili sono
+SDK-style, target net10.0-windows. I file disponibili sono
 copiati dalle rispettive cartelle legacy; gli originali non vengono modificati.
 Orecchia usa Windows Forms e include esplicitamente le tre risorse .resX.
 L'assembly version della copia Orecchia è fissata a 1.1.0.0 invece di 1.1.*,
 come per FormulaParser, per evitare versioni dipendenti dal tempo.
 
-I manifest originali non sono disponibili: namespace, nomi assembly e riferimenti
-sono ricostruiti dai consumatori e dai sorgenti, non confermati dall'originale.
+La prima ricostruzione precedeva l'arrivo dei manifest; l'aggiornamento sopra
+registra le impostazioni ora confermate e i riferimenti ancora da migrare.
 Questi due progetti non sono ancora inclusi nella soluzione dei componenti
 verificati e non sono pronti per l'uso applicativo.
 

@@ -45,15 +45,35 @@ for path in sorted(LEGACY.rglob('*.vbproj')):
         # Analysis only: tolerate bare ampersands without modifying the original.
         tree = ET.fromstring(re.sub(r'&(?!#\d+;|#x[0-9a-fA-F]+;|\w+;)',
                                    '&amp;', source))
+    for element in tree.iter():
+        element.tag = element.tag.split('}')[-1]
+    settings_node = tree.find('.//Settings')
+    settings = settings_node.attrib if settings_node is not None else {
+        child.tag: (child.text or '').strip()
+        for group in tree.findall('PropertyGroup') if not group.get('Condition')
+        for child in group
+    }
+    references = []
+    for element in tree.iter():
+        if element.tag in ('Reference', 'ProjectReference', 'COMReference'):
+            entry = dict(element.attrib)
+            entry.update({child.tag: (child.text or '').strip() for child in element})
+            entry['kind'] = element.tag
+            references.append(entry)
     missing = []
     for item in tree.findall('.//File'):
         rel = item.get('RelPath')
         if rel and not (path.parent / rel.replace('\\', '/')).exists():
             missing.append({'path': rel, 'build_action': item.get('BuildAction')})
+    for item in tree.iter():
+        if item.tag in ('Compile', 'EmbeddedResource', 'Content', 'None'):
+            rel = item.get('Include')
+            if rel and not (path.parent / rel.replace('\\', '/')).exists():
+                missing.append({'path': rel, 'build_action': item.tag})
     manifests.append({'path': path.relative_to(ROOT).as_posix(),
                       'encoding': encoding, 'xml_error': error,
-                      'settings': tree.find('.//Settings').attrib,
-                      'references': [e.attrib for e in tree.findall('.//Reference')],
+                      'settings': settings,
+                      'references': references,
                       'missing_files': missing})
 
 patterns = {

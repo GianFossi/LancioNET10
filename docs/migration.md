@@ -2,6 +2,12 @@
 
 ## Stato corrente dopo l'importazione
 
+Aggiornamento successivo: ricevuti e conservati i manifest originali LibMat e
+Orecchia (.NET Framework 3.5). L'inventario corrente conta 2.300 file e 14
+progetti VB; le cifre sotto descrivono l'importazione iniziale. I manifest
+identificano sorgenti e dipendenze ancora mancanti e un riferimento a
+`DLL Extra/WinWordControl.dll`. Dettagli in reconstructed-projects.md.
+
 I manifest LibMat e Orecchia sono stati ricostruiti in `src/` su richiesta,
 con copie separate dei file disponibili. Vedere
 [progetti ricostruiti e alternative Word](reconstructed-projects.md) per

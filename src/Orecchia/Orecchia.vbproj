@@ -9,6 +9,7 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <CodePage>1252</CodePage>
+    <DefineConstants>Win32=True</DefineConstants>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>

@@ -3,10 +3,11 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <AssemblyName>LibMat</AssemblyName>
     <RootNamespace>LibMat</RootNamespace>
-    <OptionStrict>Off</OptionStrict>
+    <OptionStrict>On</OptionStrict>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <CodePage>1252</CodePage>
+    <DefineConstants>Win32=True</DefineConstants>
     <LegacyInteropDirectory Condition="'$(LegacyInteropDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/interop</LegacyInteropDirectory>
   </PropertyGroup>
   <ItemGroup>
