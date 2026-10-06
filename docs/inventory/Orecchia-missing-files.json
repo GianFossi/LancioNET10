@@ -1,18 +1,1 @@
-[
-  [
-    "ProjectReference",
-    "..\\StubW9.NET\\StubW9.vbproj"
-  ],
-  [
-    "Compile",
-    "oreMonitor.vb"
-  ],
-  [
-    "Compile",
-    "Var_Funz.vb"
-  ],
-  [
-    "EmbeddedResource",
-    "ProjectResources.resx"
-  ]
-]
+[]

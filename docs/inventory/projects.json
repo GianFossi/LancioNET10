@@ -1,5 +1,5 @@
 {
-  "file_count": 2300,
+  "file_count": 2355,
   "extensions": {
     "": 6,
     ".a14": 10,
@@ -12,7 +12,7 @@
     ".cad": 1,
     ".cls": 1,
     ".cob": 7,
-    ".config": 1,
+    ".config": 2,
     ".cop": 17,
     ".csv": 7,
     ".dat": 198,
@@ -41,13 +41,13 @@
     ".job": 1,
     ".jpg": 136,
     ".ljf": 43,
-    ".log": 11,
+    ".log": 13,
     ".mdb": 6,
     ".mso": 5,
     ".out": 1,
     ".png": 8,
     ".rc": 2,
-    ".resx": 110,
+    ".resx": 130,
     ".rev": 12,
     ".rtf": 45,
     ".sdd": 31,
@@ -59,8 +59,8 @@
     ".trc": 2,
     ".trk": 2,
     ".txt": 97,
-    ".user": 12,
-    ".vb": 266,
+    ".user": 14,
+    ".vb": 296,
     ".vbproj": 14,
     ".vdproj": 1,
     ".vip": 27,
@@ -311,6 +311,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": [
         {
           "path": "Arch\\RTF\\Step6A.TXT",
@@ -416,6 +417,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -540,6 +542,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -580,6 +583,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -680,6 +684,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -814,6 +819,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": [
         {
           "path": "Bin\\AiutoBre.chm",
@@ -1022,194 +1028,22 @@
           "kind": "Reference"
         }
       ],
-      "missing_files": [
-        {
-          "path": "AssemblyInfo.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "bwg4.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "CarattMat.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "clsBWG.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "clsGuarn.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "clsMat.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "clsPipe.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmChart.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmDati.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmEliminaVecchi.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmGuarn.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmMater.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmNonTrovato.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmNote.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmPipe.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmprz.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmScheda.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmTira.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmTirFil.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmUpdate.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "frmUpDateCampi.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "GridWrap.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "InitLibMat.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Matcom~1.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Materi~1.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "modMain.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Monitor.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "My Project\\Settings.Designer.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Tiranti.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "bwg4.resX",
-          "build_action": "EmbeddedResource"
-        },
+      "case_differences": [
         {
           "path": "frmChart.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmDati.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmEliminaVecchi.resx",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmGuarn.resX",
+          "actual_path": "legacy/LibMat.NET/frmChart.resx",
           "build_action": "EmbeddedResource"
         },
         {
           "path": "frmMater.resX",
+          "actual_path": "legacy/LibMat.NET/frmMater.resx",
           "build_action": "EmbeddedResource"
-        },
+        }
+      ],
+      "missing_files": [
         {
-          "path": "frmNonTrovato.resx",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmNote.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmPipe.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmprz.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmScheda.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmTira.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmTirFil.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmUpdate.resX",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "frmUpDateCampi.resx",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "GridWrap.resx",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "Risorse.en.resx",
-          "build_action": "EmbeddedResource"
-        },
-        {
-          "path": "Risorse.resx",
-          "build_action": "EmbeddedResource"
+          "path": "My Project\\Settings.Designer.vb",
+          "build_action": "Compile"
         },
         {
           "path": "Arch\\Mat200400.mdb",
@@ -1234,10 +1068,6 @@
         {
           "path": "Arch\\WN5\\gasket.mdb",
           "build_action": "Content"
-        },
-        {
-          "path": "app.config",
-          "build_action": "None"
         },
         {
           "path": "My Project\\Settings.settings",
@@ -1332,20 +1162,8 @@
           "kind": "Reference"
         }
       ],
-      "missing_files": [
-        {
-          "path": "oreMonitor.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "Var_Funz.vb",
-          "build_action": "Compile"
-        },
-        {
-          "path": "ProjectResources.resx",
-          "build_action": "EmbeddedResource"
-        }
-      ]
+      "case_differences": [],
+      "missing_files": []
     },
     {
       "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
@@ -1470,6 +1288,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": [
         {
           "path": "ControlArrays.resx",
@@ -1569,6 +1388,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -1657,6 +1477,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -1752,6 +1573,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -1841,6 +1663,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     },
     {
@@ -1930,6 +1753,7 @@
           "kind": "Reference"
         }
       ],
+      "case_differences": [],
       "missing_files": []
     }
   ],
@@ -2574,6 +2398,94 @@
       {
         "path": "legacy/LibMat.NET/LibMat.vbproj",
         "line": 144
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 55
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 57
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 58
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 109
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 110
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 111
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 130
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 49
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 50
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 80
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 81
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 66
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 67
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 68
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 69
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 70
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 116
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 117
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 118
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 119
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 120
       },
       {
         "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
@@ -5358,8 +5270,388 @@
         "line": 64
       },
       {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 56
+      },
+      {
         "path": "legacy/LibMat.NET/aa.vb",
         "line": 650
+      },
+      {
+        "path": "legacy/LibMat.NET/bwg4.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/bwg4.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmChart.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmChart.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/LibMat.NET/frmDati.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmDati.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmEliminaVecchi.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmEliminaVecchi.resx",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.resX",
+        "line": 505
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 55
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 57
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 58
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 109
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 110
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 111
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.vb",
+        "line": 130
+      },
+      {
+        "path": "legacy/LibMat.NET/frmMater.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmMater.resx",
+        "line": 57
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNonTrovato.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNonTrovato.resx",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNote.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNote.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmPipe.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmPipe.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 487
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 553
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 583
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 613
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 643
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTirFil.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTirFil.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 49
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 50
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 80
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.vb",
+        "line": 81
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpDateCampi.resx",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpDateCampi.resx",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.resX",
+        "line": 56
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.resX",
+        "line": 154
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.resX",
+        "line": 181
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 66
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 67
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 68
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 69
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 70
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 116
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 117
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 118
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 119
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.vb",
+        "line": 120
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 25
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 57
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 124
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 144
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 165
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 186
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 195
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 588
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 589
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 590
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 591
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 592
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 593
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 594
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 595
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 596
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 597
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 598
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 599
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 600
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 601
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 767
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 768
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 769
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 770
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 771
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 772
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 773
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 774
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 775
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 776
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 777
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 778
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 779
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.vb",
+        "line": 780
       },
       {
         "path": "legacy/Orecchia.NET/InserDati_1.resX",
@@ -7346,6 +7638,62 @@
         "line": 142
       },
       {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1490
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1491
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1492
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1493
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1501
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1502
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.vb",
+        "line": 1504
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 700
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 701
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 705
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 707
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 710
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 732
+      },
+      {
+        "path": "legacy/LibMat.NET/modMain.vb",
+        "line": 735
+      },
+      {
         "path": "legacy/RoutBase.NET/RoutBase1.vbproj",
         "line": 111
       },
@@ -7470,6 +7818,14 @@
       {
         "path": "legacy/LibMat.NET/LibMat.vbproj",
         "line": 138
+      },
+      {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 134
+      },
+      {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 137
       },
       {
         "path": "legacy/Orecchia.NET/Orecchia.vbproj",
@@ -8662,6 +9018,14 @@
         "line": 143
       },
       {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 140
+      },
+      {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 143
+      },
+      {
         "path": "legacy/RoutBase.NET/AutoCAD.vb",
         "line": 74
       },
@@ -9626,6 +9990,70 @@
         "line": 48
       },
       {
+        "path": "legacy/LibMat.NET/ProjectResources.resx",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/bwg4.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmChart.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/LibMat.NET/frmDati.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmEliminaVecchi.resx",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmGuarn.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmMater.resx",
+        "line": 49
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNonTrovato.resx",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmNote.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmPipe.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmScheda.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTirFil.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmTira.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpDateCampi.resx",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmUpdate.resX",
+        "line": 48
+      },
+      {
+        "path": "legacy/LibMat.NET/frmprz.resX",
+        "line": 49
+      },
+      {
         "path": "legacy/Orecchia.NET/InserDati_1.resX",
         "line": 48
       },
@@ -9636,6 +10064,14 @@
       {
         "path": "legacy/Orecchia.NET/InserDati_3.resX",
         "line": 48
+      },
+      {
+        "path": "legacy/Orecchia.NET/Var_Funz.vb",
+        "line": 1358
+      },
+      {
+        "path": "legacy/Orecchia.NET/Var_Funz.vb",
+        "line": 1374
       },
       {
         "path": "legacy/RoutBase.NET/Comm.vb",

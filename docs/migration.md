@@ -2,6 +2,10 @@
 
 ## Stato corrente dopo l'importazione
 
+Ultimo controllo: importato `a7ab45c`, con i sorgenti aggiuntivi LibMat e
+Orecchia. Vedere [verifica aggiornata](latest-upload-check.md) per i file ora
+presenti e le dipendenze ancora mancanti. I conteggi sotto sono storici.
+
 Aggiornamento successivo: ricevuti e conservati i manifest originali LibMat e
 Orecchia (.NET Framework 3.5). L'inventario corrente conta 2.300 file e 14
 progetti VB; le cifre sotto descrivono l'importazione iniziale. I manifest

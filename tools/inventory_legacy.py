@@ -12,6 +12,10 @@ LEGACY = ROOT / 'legacy'
 OUT = ROOT / 'docs' / 'inventory'
 OUT.mkdir(parents=True, exist_ok=True)
 files = sorted(p for p in LEGACY.rglob('*') if p.is_file())
+case_index = {}
+for path in files:
+    case_index.setdefault(path.relative_to(ROOT).as_posix().casefold(), []).append(
+        path.relative_to(ROOT).as_posix())
 with (OUT / 'files.csv').open('w', encoding='utf-8', newline='') as stream:
     writer = csv.writer(stream, lineterminator='\n')
     writer.writerow(['path', 'bytes', 'sha256'])
@@ -61,19 +65,31 @@ for path in sorted(LEGACY.rglob('*.vbproj')):
             entry['kind'] = element.tag
             references.append(entry)
     missing = []
+    case_differences = []
+    def inspect_file(relative, action):
+        candidate = path.parent / relative.replace('\\', '/')
+        if candidate.exists():
+            return
+        matches = case_index.get(candidate.relative_to(ROOT).as_posix().casefold(), [])
+        if len(matches) == 1:
+            case_differences.append({'path': relative, 'actual_path': matches[0],
+                                     'build_action': action})
+        else:
+            missing.append({'path': relative, 'build_action': action})
     for item in tree.findall('.//File'):
         rel = item.get('RelPath')
-        if rel and not (path.parent / rel.replace('\\', '/')).exists():
-            missing.append({'path': rel, 'build_action': item.get('BuildAction')})
+        if rel:
+            inspect_file(rel, item.get('BuildAction'))
     for item in tree.iter():
         if item.tag in ('Compile', 'EmbeddedResource', 'Content', 'None'):
             rel = item.get('Include')
-            if rel and not (path.parent / rel.replace('\\', '/')).exists():
-                missing.append({'path': rel, 'build_action': item.tag})
+            if rel:
+                inspect_file(rel, item.tag)
     manifests.append({'path': path.relative_to(ROOT).as_posix(),
                       'encoding': encoding, 'xml_error': error,
                       'settings': settings,
                       'references': references,
+                      'case_differences': case_differences,
                       'missing_files': missing})
 
 patterns = {
