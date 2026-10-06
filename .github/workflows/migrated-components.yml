@@ -21,3 +21,5 @@ jobs:
         run: dotnet run --project tests/FormulaParser.Smoke -c Release --no-build
       - name: Verify Access SQL and schema planning
         run: dotnet run --project tests/Access.Smoke -c Release --no-build
+      - name: Verify Word session lifecycle using fake backend
+        run: dotnet run --project tests/Word.Smoke -c Release --no-build
