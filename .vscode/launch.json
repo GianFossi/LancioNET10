@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FormulaParser checks (VB)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build migrated components",
+      "program": "${workspaceFolder}/tests/FormulaParser.Smoke/bin/Debug/net10.0-windows/FormulaParser.Smoke.dll",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

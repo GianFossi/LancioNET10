@@ -1,5 +1,62 @@
 # Migrazione VB.NET verso .NET 10
 
+## Stato corrente dopo l'importazione
+
+Il commit remoto `7c5c2e4` ha aggiunto `legacy/` a main. È stato integrato
+sulla branch `migration/vb-net10-inventory` senza scrivere su main.
+I paragrafi dell'inventario iniziale sotto riportano lo stato precedente
+all'importazione; l'inventario aggiornato è in [legacy-inventory.md](legacy-inventory.md).
+
+Sono ora disponibili 2.298 file, 12 progetti VB.NET e 110 risorse .resx.
+Restano assenti LibMat, Orecchia e il progetto esterno WinWordControl.
+Non è ancora possibile compilare né avviare l'intera applicazione.
+
+### Primo componente migrato: FormulaParser
+
+`src/FormulaParser/` è una copia separata del componente originale con un
+progetto SDK-style VB.NET, target `net10.0-windows`, namespace originale e
+Option Strict On già presente nel legacy. Non usa Windows Forms e non richiede
+COM. Non sono state modificate le istruzioni di `clsFormulaParser.vb`;
+il file è identico byte per byte. Encoding Windows-1252 dichiarato nel progetto.
+
+In `AssemblyInfo.vb` soltanto `AssemblyVersion("1.0.*")` è diventato
+`AssemblyVersion("1.0.0.0")`: la versione dipendente dal tempo impedisce la
+compilazione deterministica moderna. Gli altri attributi restano invariati.
+L'SDK è fissato a 10.0.401 in `global.json`. Non sono necessari pacchetti NuGet
+per questo primo componente. L'installazione cloud usa `/workspace/dotnet`,
+fuori dal checkout; aggiungere tale cartella a PATH nella sessione.
+
+Comandi dalla radice del repository, dopo aver installato l'SDK:
+
+```sh
+dotnet restore LancioNET10.slnx
+dotnet build LancioNET10.slnx -c Release --no-restore
+dotnet run --project tests/FormulaParser.Smoke -c Release --no-build
+```
+
+La soluzione moderna include per ora solo FormulaParser e il suo eseguibile
+di verifica VB. La build pulita del parser ha tre avvisi BC42353 per percorsi
+senza Return nel codice originale; non sono stati nascosti o corretti durante
+il porting. Le build incrementali possono non ripeterli.
+
+Sono passati 22 controlli di aritmetica, precedenza, funzioni, costanti e
+separatore decimale in it-IT/en-US. I controlli esercitano calc_scan/level0
+direttamente, così gli errori arrivano al runner senza il MsgBox del wrapper
+legacy evaluate. Non coprono il wrapper, gli input invalidi o una baseline
+eseguibile .NET 1.1; non dimostrano l'equivalenza di tutti i calcoli tecnici.
+
+`.vscode/tasks.json` configura build e verifiche di questi componenti.
+`.vscode/launch.json` avvia il runner con il debugger coreclr, che richiede
+l'estensione Microsoft C# (`ms-dotnettools.csharp`); i sorgenti rimangono VB.
+La sessione interattiva del debugger non è stata provata nella macchina cloud.
+Il workflow `migrated-components.yml` esegue restore/build/verifiche su Windows:
+i comandi sono stati provati localmente su Linux per il parser, ma il workflow
+GitHub e il comportamento Windows non sono ancora stati eseguiti.
+
+Il primo componente non include una UI WinForms. Nessuna funzionalità Office,
+ActiveX, database, AutoCAD o serializzazione è stata eliminata o sostituita.
+Tali funzionalità restano nel legacy in attesa degli adapter e delle dipendenze.
+
 ## Inventario iniziale — 6 ottobre 2026
 
 Il checkout iniziale è pulito. La branch di lavoro è

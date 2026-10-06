@@ -1,0 +1,21 @@
+name: Migrated VB components
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  formula-parser:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Restore migrated components
+        run: dotnet restore LancioNET10.slnx
+      - name: Build migrated components
+        run: dotnet build LancioNET10.slnx -c Release --no-restore
+      - name: Verify FormulaParser calculations
+        run: dotnet run --project tests/FormulaParser.Smoke -c Release --no-build

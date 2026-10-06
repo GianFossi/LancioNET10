@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build migrated components",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["build", "LancioNET10.slnx", "--configuration", "Debug"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": "$msCompile",
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "verify FormulaParser",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["run", "--project", "tests/FormulaParser.Smoke", "--configuration", "Debug", "--no-build"],
+      "dependsOn": "build migrated components",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

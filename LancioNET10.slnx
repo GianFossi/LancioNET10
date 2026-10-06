@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FormulaParser/FormulaParser.vbproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FormulaParser.Smoke/FormulaParser.Smoke.vbproj" />
+  </Folder>
+</Solution>
