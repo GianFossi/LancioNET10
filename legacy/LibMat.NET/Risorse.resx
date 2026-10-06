@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="definito_localmente">
+		<value>definito localmente</value>
+	</data>
+	<data name="Helpfile">
+		<value>\BIN\Lancio.chm</value>
+	</data>
+	<data name="1000">
+		<value>Durante il calcolo del valore di B secondo ASME|per la pressione esterna si è determinato|il seguente errore:||</value>
+	</data>
+	<data name="1001">
+		<value>Il materiale non è stato definito|correttamente. Accedere alla libreria materiali tramite|il bottone posto nella maschera di input|della membratura</value>
+	</data>
+	<data name="1002">
+		<value>Il codice di calcolo non è ASME.</value>
+	</data>
+	<data name="1003">
+		<value>Il materiale &amp; non ha i dati relativi agli ammissibili|(codice ASME, unità imperiali)</value>
+	</data>
+	<data name="1004">
+		<value>La chart applicabile per il dato|materiale (&amp;) non è definita</value>
+	</data>
+	<data name="1005">
+		<value>La chart applicabile per il dato|materiale (&amp;) non è stata caricata</value>
+	</data>
+	<data name="1006">
+		<value>La temperatura di calcolo è supe-|riore al massimo della chart per|il materiale &amp;</value>
+	</data>
+	<data name="1007">
+		<value>Lo snervamento del materiale &amp; è|superiore al massimo della chart</value>
+	</data>
+	<data name="1008">
+		<value>La chart contiene dei dati non|validi (formato)</value>
+	</data>
+	<data name="1009">
+		<value>L'intestazione della chart non|è conforme al formato</value>
+	</data>
+	<data name="1010">
+		<value>Il valore del parametro geometri-|co A è inferiore al minimo|della chart</value>
+	</data>
+	<data name="1011">
+		<value>Il valore del parametro geometri-|co A è superiore al massimo|della chart</value>
+	</data>
+	<data name="1012">
+		<value>Errore codice 21            .</value>
+	</data>
+	<data name="1013">
+		<value>Parametri per il calcolo di A |non validi</value>
+	</data>
+	<data name="1014">
+		<value>Errore non previsto</value>
+	</data>
+	<data name="1015">
+		<value>Utilizzo della funzione inversa|A=f(B). B&lt;=0</value>
+	</data>
+	<data name="1016">
+		<value>Valore di A in input       [--]</value>
+	</data>
+	<data name="1017">
+		<value>Valore di B fornito a mano [psi]</value>
+	</data>
+	<data name="1018">
+		<value>10000.00</value>
+	</data>
+	<data name="1019">
+		<value>|Se si risponde OK si può continuare il calcolo|fornendo il valore manualmente.</value>
+	</data>
+</root>

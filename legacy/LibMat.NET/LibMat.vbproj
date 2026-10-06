@@ -1,0 +1,346 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFBA7621-266F-4831-8B74-A3AFBF0FE303}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>LibMat</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>LibMat</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LibMat.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LibMat.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\..\..\Programmi\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Private>False</Private>
+    </COMReference>
+    <ProjectReference Include="..\RoutBase.NET\RoutBase1.vbproj">
+      <Name>RoutBase1</Name>
+      <Project>{3B2389A2-3B3A-4FDE-980B-3345357EC065}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase2.NET\RoutBase2\RoutBase2.vbproj">
+      <Project>{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}</Project>
+      <Name>RoutBase2</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase3.NET\RoutBase3\RoutBase3.vbproj">
+      <Project>{F48E382D-A289-4FB5-A707-508CBA9205A7}</Project>
+      <Name>RoutBase3</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase4.NET\RoutBase4\RoutBase4.vbproj">
+      <Project>{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}</Project>
+      <Name>RoutBase4</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW2000.NET\StubW2000.vbproj">
+      <Name>StubW2000</Name>
+      <Project>{CEF5E506-69FD-499F-99B3-E10767B365D4}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW9.NET\StubW9.vbproj">
+      <Project>{D211EA20-5776-410B-9174-1817E9DD67C3}</Project>
+      <Name>StubW9</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="WinWordControl">
+      <HintPath>..\DLL Extra\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ADODB" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bwg4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarattMat.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsBWG.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsGuarn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMat.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPipe.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDati.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminaVecchi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNonTrovato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScheda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTira.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTirFil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpDateCampi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridWrap.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InitLibMat.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Matcom~1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Materi~1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Monitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tiranti.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="bwg4.resX">
+      <DependentUpon>bwg4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChart.resX">
+      <DependentUpon>frmChart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDati.resX">
+      <DependentUpon>frmDati.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminaVecchi.resx">
+      <DependentUpon>frmEliminaVecchi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuarn.resX">
+      <DependentUpon>frmGuarn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMater.resX">
+      <DependentUpon>frmMater.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNonTrovato.resx">
+      <DependentUpon>frmNonTrovato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNote.resX">
+      <DependentUpon>frmNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPipe.resX">
+      <DependentUpon>frmPipe.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprz.resX">
+      <DependentUpon>frmprz.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScheda.resX">
+      <DependentUpon>frmScheda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTira.resX">
+      <DependentUpon>frmTira.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTirFil.resX">
+      <DependentUpon>frmTirFil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdate.resX">
+      <DependentUpon>frmUpdate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpDateCampi.resx">
+      <DependentUpon>frmUpDateCampi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridWrap.resx">
+      <DependentUpon>GridWrap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Risorse.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Risorse.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Arch\1a.WMF" />
+    <Content Include="Arch\1b.WMF" />
+    <Content Include="Arch\1c.WMF" />
+    <Content Include="Arch\1d.WMF" />
+    <Content Include="Arch\2.WMF" />
+    <Content Include="Arch\3.WMF" />
+    <Content Include="Arch\4.WMF" />
+    <Content Include="Arch\5.WMF" />
+    <Content Include="Arch\6.WMF" />
+    <Content Include="Arch\ASMEtable.doc" />
+    <Content Include="Arch\BWG.DAT" />
+    <Content Include="Arch\BWG1.DAT" />
+    <Content Include="Arch\Mat200400.mdb" />
+    <Content Include="Arch\piping.new" />
+    <Content Include="Arch\Prezzi.doc" />
+    <Content Include="Arch\tabelle.mdb" />
+    <Content Include="Arch\UpDateASME.ini" />
+    <Content Include="Arch\WN5\gasket.mdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

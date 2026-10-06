@@ -1,0 +1,3251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "LibMat.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "LibMat"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "LibMat.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\LibMat.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\modMain.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\modMain.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "SendMessage" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >La dichiarazione di un parametro &amp;quot;As Any&amp;quot; non è supportata.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "SetInsert" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.SelLength.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.SelStart.</Issue>
+        </Section>
+        <Section Name = "Decodif" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "PutMat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat(FormMat.Count).MatCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Alfa.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Young.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().IndNote.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().CreepRange.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().AlfaT.</Issue>
+        </Section>
+        <Section Name = "TransferR" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat(FormMat.Count).MatCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Transferc" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Alfa.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Young.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).IndNote.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Group.</Issue>
+        </Section>
+        <Section Name = "TransferV" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto mm.Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto mm.Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto mm.Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto mm.Caract().AlfaT.</Issue>
+        </Section>
+        <Section Name = "Aggiornaplates" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Aggiornatubes" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaEllHeads" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaHemHeads" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaCalandr" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaForg" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaElbw" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggiornaFlan" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "ParametriPrezzo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "MaterAct" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat(FormMat.Count).MatCompos.</Issue>
+        </Section>
+        <Section Name = "StampaListino" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.ssaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.IntestLogo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.ScriviBM.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.LibMatScrivi.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Muovicella.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.LibMatDestra.</Issue>
+        </Section>
+        <Section Name = "UpdateNote" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Riscrivi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Stampe" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.sOpen.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.substitbookm.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.ssaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.Muovicella.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.Vaiinizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.SInsertBreak.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.Copia.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.sClose.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.spaste.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Documento.tastotab.</Issue>
+        </Section>
+        <Section Name = "AggEU" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Caratt~1.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\Caratt~1.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Class_Initialize" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice s è stato cambiato da 1,1 a 0,0.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Matcom~1.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\Matcom~1.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Scelta" >
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Mat poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdEdit poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdStampaListino poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdLE poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Frame3D2 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Check3D1 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Option3D2 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Check3D2 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+        </Section>
+        <Section Name = "Indmat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat().Indmat.</Issue>
+        </Section>
+        <Section Name = "testo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat().MatStr.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Materi~1.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\Materi~1.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "Scelta" >
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Mat poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Frame3D2 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Frame3D3 poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdEdit poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdStampaListino poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control cmdLE poiché si trova all'interno dello spazio dei nomi generico Form.</Issue>
+        </Section>
+        <Section Name = "Yield" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Yield.</Issue>
+        </Section>
+        <Section Name = "BValor" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "DiagnB" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Arch.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto testo.</Issue>
+        </Section>
+        <Section Name = "MostraPrezzi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!ID.</Issue>
+        </Section>
+        <Section Name = "Prezzo" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SigmaTheta" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Gruppo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+        </Section>
+        <Section Name = "SigmaAmm" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+        </Section>
+        <Section Name = "LeggiMat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().AlfaT.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().TempY.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "LegRat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "ConvertiCr" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ConvertiCr.</Issue>
+        </Section>
+        <Section Name = "RecupMat" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Alfa.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Young.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).IndNote.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().CreepRange.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).CreepRange.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().AlfaT.</Issue>
+        </Section>
+        <Section Name = "UltStrength" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().US.</Issue>
+        </Section>
+        <Section Name = "SPS" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().CreepRange.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "EmodAlt" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "Conducib" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "EmodAltNome" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "ConducNome" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "AlfaTerNome" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "AlfaTer" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Monitor_Renamed.Motore.Inizio.ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "PhysAlt" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "UpDateASME" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Bm.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Bmd(jjj).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Bmd(jj).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Bmd(1).</Issue>
+        </Section>
+        <Section Name = "SuperUpDate" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AQT" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+        </Section>
+        <Section Name = "RegoleMDMT" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "UHA51d" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Aler" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto ConvertiCr().</Issue>
+        </Section>
+        <Section Name = "EUMatGroup" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract().IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Caract(i).Codice.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Tiranti.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\Tiranti.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CercaDN" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Arch.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto DiscoT.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\clsPipe.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\clsPipe.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Cerca" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\clsGuarn.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\clsGuarn.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Cerca" >
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmTirFil.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmTirFil.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTirFil"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmTirFil.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmbxFil_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbxFil.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTirFil"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmTirFil.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmPipe.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmPipe.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmPipe"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmPipe.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "Compile"
+                Number = "1051"
+            >Tipo di dichiarazione non supportato: Matrici di stringhe di lunghezza fissa.</Issue>
+        </Section>
+        <Section Name = "cmbDN_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbDN.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdOK_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmPipe"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmPipe.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Cerca" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "AggcmbDN" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmPipe"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmPipe.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "List1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento List1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "lstSchedula_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento lstSchedula.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "lstSchedula_MouseDown" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmPipe"
+                ObjectType = "Form"
+                PME = "PopupMenu"
+            >Form metodo frmPipe.PopupMenu non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "lstSpess_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento lstSpess.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "lstSpess_MouseDown" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmPipe"
+                ObjectType = "Form"
+                PME = "PopupMenu"
+            >Form metodo frmPipe.PopupMenu non è stato aggiornato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmTira.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmTira.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTira"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmTira.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmbDN_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbDN.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbxFil_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbxFil.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmTira"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmTira.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Check" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmprz.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmprz.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmprz"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmprz.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2067"
+                ObjectName = "object"
+                ObjectType = "MSComCtl2.UpDown"
+            >Il controllo MSComCtl2.UpDown object non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "chkComp_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento chkComp.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbMatExc_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbMatExc.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdCut_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Delete.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().MoveLast.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(Index + 1).RecordCount.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmprz"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmprz.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Aggiorna" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i).Filter.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(1).RecordCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().RecordCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(ii).RecordCount.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i).RecordCount.</Issue>
+        </Section>
+        <Section Name = "RiempiCombo" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "c"
+                ObjectType = "ComboBox"
+                PME = "Index"
+            >ComboBox proprietà c.Index non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "AggTxt" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!prezzolkg.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Format"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Datarev.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Fornitore.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i + 1)!Fornitore.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Firmato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i + 1)!Firmato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!PrezzoAlt.</Issue>
+        </Section>
+        <Section Name = "AggiungiNuovo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().AddNew.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Parametro.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Parametro2.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!IdMat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Datarev.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Tipo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Update.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().LastModified.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i).Bookmark.</Issue>
+        </Section>
+        <Section Name = "UpDown1_DownClick" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().MovePrevious.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().MoveLast.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(Index + 1).BOF.</Issue>
+        </Section>
+        <Section Name = "UpDown1_UpClick" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().MoveNext.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().MoveFirst.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(Index + 1).EOF.</Issue>
+        </Section>
+        <Section Name = "AggDB" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Edit.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Fornitore.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Firmato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!Datarev.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!prezzolkg.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i + 1)!prezzolkg.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Update.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().LastModified.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i + 1).Bookmark.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!PrezzoAlt.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp(i + 1)!PrezzoAlt.</Issue>
+        </Section>
+        <Section Name = "AggScorri" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().AbsolutePosition.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().RecordCount.</Issue>
+        </Section>
+        <Section Name = "Riempi" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GoPlates" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Scelta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.TipoCompos.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "GoEll" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "GoTubes" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Scelta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GoForg" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Scelta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Mat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.TipoCompos.</Issue>
+        </Section>
+        <Section Name = "GoFlan" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Scelta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "GoElbw" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Scelta.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Aggiornatesto" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!NOTE.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "AggiornaNote" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Edit.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp()!NOTE.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto iflp().Update.</Issue>
+        </Section>
+        <Section Name = "GoHem" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "GoCal" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto FormMat().MatSolo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\clsBWG.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\clsBWG.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\FrmScheda.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmScheda.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà frmScheda.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmScheda.PaletteMode non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmScheda.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_9"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_9.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_8"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_8.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_7"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_7.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_6"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_6.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_5"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_5.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_4"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_4.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_3"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_3.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_cmbMWDTrule_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _cmbMWDTrule_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_cmbCurve_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _cmbCurve_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text2_0"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text2_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_cmbGN_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _cmbGN_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_cmbPN_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _cmbPN_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_cmbChart_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _cmbChart_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_txtUS_0"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _txtUS_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_txtSy_0"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _txtSy_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_txtFonte_0"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _txtFonte_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblMWDTrule_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblMWDTrule_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblCurve_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblCurve_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblImpactT_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblImpactT_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblGN_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblGN_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblPN_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblPN_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblChart_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblChart_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblUS_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblUS_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblSy_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblSy_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_lblFonte_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _lblFonte_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_6"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_6.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_2"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_2.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Command1"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà Command1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_5"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_5.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_4"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_4.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_3"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_3.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text1_1"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text1_1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_2"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_2.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_1"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Combo1_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Combo1_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_17"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_17.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_16"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_16.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_15"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_15.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_14"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_14.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_13"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_13.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_12"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_12.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_11"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_11.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_9"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_9.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_8"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_8.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_7"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_7.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_6"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_6.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_4"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_4.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_3"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_3.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_2"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_2.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_1"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_1.WhatsThisHelpID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Label1_0"
+                ObjectType = "Label"
+                PME = "WhatsThisHelpID"
+            >Label proprietà _Label1_0.WhatsThisHelpID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmbChart_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbChart.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbCurve_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).MWDTclause.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbCurve.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbGN_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbGN.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbMWDTrule_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbMWDTrule.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdOK_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().AlfaT.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Group.</Issue>
+        </Section>
+        <Section Name = "Codici_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Codici.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(indice + 1).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(indice + 1).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Int"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(indice + 1).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Int"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(indice + 1).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Int"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().AlfaT.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(i).Codice.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmScheda.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmScheda.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmScheda"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmScheda.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GridAm_RowColChange" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GridAm().Topcol.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GridAm(Index).Topcol.</Issue>
+        </Section>
+        <Section Name = "GridSy_RowColChange" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GridSy().Topcol.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto GridSy(Index).Topcol.</Issue>
+        </Section>
+        <Section Name = "TabStrip1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "cmbGN"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà cmbGN.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "cmbChart"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà cmbChart.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "TabStrip1_MouseUp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Index.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Selected.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Left.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Top.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto t.Height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+        </Section>
+        <Section Name = "testo_KeyDown" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Tabella.Row.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Tabella.Col.</Issue>
+        </Section>
+        <Section Name = "Text2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "txtFonte_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento txtFonte.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "txtSy_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento txtSy.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "txtUS_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(Index + 1).US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento txtUS.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "AggChart" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Codice.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).IndChart.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Group.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Left$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTrule.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTtemp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).MWDTtemp.</Issue>
+        </Section>
+        <Section Name = "AggCmbC" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Trim"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().MWDTclause.</Issue>
+        </Section>
+        <Section Name = "RiempiValori" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Temp.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Ammiss.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().TempY.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().AlfaT.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Source.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Yield.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().US.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).PNumber.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract(k).Group.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\bwg4.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\bwg4.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "BWG"
+                ObjectType = "Form"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "BWG"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà BWG.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Combo1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "BWG"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento BWG.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "List1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento List1.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "List2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento List2.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Option1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmChart.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmChart.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "dtValori"
+                ObjectType = "Adodc"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "dtTesta"
+                ObjectType = "Adodc"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dtValori"
+                ObjectType = "VBControlExtender"
+                PME = "Password"
+            >VBControlExtender metodo dtValori.Password non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dtTesta"
+                ObjectType = "VBControlExtender"
+                PME = "Password"
+            >VBControlExtender metodo dtTesta.Password non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmChart"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmChart.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().IndChart.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmDati.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmDati.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "dtValori"
+                ObjectType = "Adodc"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmDati"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà frmDati.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmDati"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà frmDati.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dtValori"
+                ObjectType = "VBControlExtender"
+                PME = "Password"
+            >VBControlExtender metodo dtValori.Password non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Command1"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà Command1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "cmdRipr"
+                ObjectType = "CommandButton"
+                PME = "HelpContextID"
+            >CommandButton proprietà cmdRipr.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmDati"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmDati.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmDati"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmDati.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmDati"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmDati.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmNote.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmNote.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dtNote"
+                ObjectType = "VBControlExtender"
+                PME = "Password"
+            >VBControlExtender metodo dtNote.Password non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "dtNote1"
+                ObjectType = "VBControlExtender"
+                PME = "Password"
+            >VBControlExtender metodo dtNote1.Password non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "DBNote_RowColChange" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "IsEmpty"
+            >IsEmpty è stato aggiornato a IsNothing e ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmNote"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmNote.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().IndNote.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto m.Caract().Codice.</Issue>
+        </Section>
+        <Section Name = "Riempi" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmNote"
+                ObjectType = "Form"
+                PME = "TextHeight"
+            >Form metodo frmNote.TextHeight non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmNote"
+                ObjectType = "Form"
+                PME = "TextWidth"
+            >Form metodo frmNote.TextWidth non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "MenuNote" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmNote"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento frmNote.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmNote"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmNote.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Desumi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\clsMat.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\clsMat.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Monitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\Monitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmUpdate.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmUpdate.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "chkScelta_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento chkScelta.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\frmGuarn.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmGuarn.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_7"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_6"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_5"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_4"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_3"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_5"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_4"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_3"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Command1"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_2"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_1"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Text1_0"
+                ObjectType = "TextBox"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_7"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_6"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_2"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_1"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2_0"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label1_1"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label1_0"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmGuarn"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmGuarn.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "cmbClass_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbClass.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmbTipo_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento cmbTipo.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmGuarn"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmGuarn.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Text1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\LibMat\Frmmater.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\frmMater.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmMater"
+                ObjectType = "Form"
+                PME = "ClipControls"
+            >Form proprietà frmMater.ClipControls non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmMater"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà frmMater.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmMater"
+                ObjectType = "Form"
+                PME = "PaletteMode"
+            >Form proprietà frmMater.PaletteMode non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "Check3D1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check3D1.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Check3D2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Check3D2.CheckStateChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "cmdEdit_Click" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "1039"
+                PME = "Load"
+            >istruzione Load non supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "cmdStampaListino_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1033"
+            >Il limite inferiore della matrice Strin è stato cambiato da 1 a 0.</Issue>
+        </Section>
+        <Section Name = "Command3_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().Classe.</Issue>
+        </Section>
+        <Section Name = "Command8_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().Indmat.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().MatStr.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmMater"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento frmMater.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "GenList" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Screen"
+                ObjectType = "Screen"
+                PME = "MousePointer"
+            >Screen proprietà Screen.MousePointer presenta un nuovo comportamento.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().Classe.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1049"
+                PME = "IsNull"
+            >Rilevato l'utilizzo di Null/IsNull().</Issue>
+        </Section>
+        <Section Name = "IndMatAct" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Mat.MatCompos.Mat().Indmat.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmMater"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form evento frmMater.Unload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "List1_ColumnClick" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "List1_KeyUp" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Option3D1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option3D1.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Option3D2_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Option3D2.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "VediClassi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MatCompos.IndAdd.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto MatCompos.Ind.</Issue>
+        </Section>
+        <Section Name = "optLE_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento optLE.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\HEADER.RES"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\LibMat.NET\ProjectResources.resX"
+        FileType = "Resource File"
+        Upgraded = "True"
+    />
+</UpgradeLog>
+
