@@ -1,0 +1,24 @@
+|===========================================================================|
+|STANDARDS OF TUBULAR EXCHANGER MANUFACTURERS ASSOCIATION - 8th Edition 1999|
+|ASME VIII div.1 Ed.1995 + A96 - Analisi secondo App.CC                     |
+|===========================================================================|
+|   Tabella Riassuntiva Tensioni Dilatatore         (*):max(nuovo,corroso)  |
+|=================|============================|============================|
+| Carico (RCB-8.6)|Scambiatore nuovo; Sm, Sb   |Scambiatore corroso; Sm, Sb |
+|=================|============================|============================|
+|1 Diff. Expansion|                            |                            |
+|2 Shell side pr. |                            |                            |
+|3 Tube side  pr. |                            |                            |
+|4 All pressures  |                            |                            |
+|5 Shell pr. + dif|                            |                            |
+|6 Tube pr.  + dif|                            |                            |
+|7 All            |                            |                            |
+|=================|=========================================================|
+| (S =        psi)|  Sez.2      Sez.3      Sez.4      Sez.5      Sez.6      |
+| CC-(1) Scmp  (*)|        < S        < S        < S        < S        < S  |
+| CC-(2) Smmp  (*)|        < S        < S        < S        < S        < S  |
+| CC-(3) Smmp+Smbp|        <kS        <kS        <kS        <kS        <kS  |
+| CC-(4) Sn    (*)|             (for all sections, see fatigue analysis)    |
+|===========================================================================|
+-1
+

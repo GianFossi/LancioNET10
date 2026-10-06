@@ -1,0 +1,27 @@
+A,Cassa flangiata con coperchio,A.BMP
+B,Cassa flangiata con fondo,B.BMP
+C,Cassa saldata e fascio estraibile,C.BMP
+N,Cassa saldata integrale col mantello,N.BMP
+D,Casse speciali per alta pressione,D.BMP
+-,Non definito,NULL.BMP
+.,.,.
+.,.,.
+.,.,.
+E,Un passo lato mantello,E.BMP
+F,Due passi lato mantello,F.BMP
+G,Split flow,G.BMP
+H,Double split flow,H.BMP
+J,Divided flow,J.BMP
+K,Kettle type reboiler,K.BMP
+X,Cross flow,X.BMP
+-,Non definito,NULL.BMP
+.,.,.
+L,Piastra fissa con cassa tipo 'A',L.BMP
+M,Piastra fissa con cassa tipo 'B',M.BMP
+N,Piastra fissa con cassa tipo 'N',NN.BMP
+P,Outside packed floating head,P.BMP
+S,Floating head with backing device,S.BMP
+T,Pull-through floating head,T.BMP
+U,U-tube bundle,U.BMP
+W,Externally sealed floating tubesheet,W.BMP
+-,Non definito,NULL.BMP

@@ -1,0 +1,33 @@
+T
+B
+0             \par Standards of the Expansion Joint Manufacturers Association\par
+B
+0                                     INPUT DATA\par
+0                                     ==========\par
+B
+M007Item       : \                       \            material \                   \_\par
+O   State of delivery :           \                                                \_\par
+B
+L   Number of load conditions  ##_\par
+B
+N      Type of expansion joint: \                                                    \_\par
+B
+D  1  2Minimum internal diameter #####.   [mm]   Maximum internal Diameter   #####.   [mm]_\par
+D  3  4Knuckle inner radius      #####.   [mm]   Nominal thickness of 1 ply  #####.   [mm]_\par
+D  5  6Corrosion allowance       #####.   [mm]   Number of convolutes        #####    [--]_\par
+D  7  8Length of the tangent (Lt)#####.   [mm]   Number of plies             #####    [--]_\par
+B
+D  9 10Length of the collar (Lc) #####.   [mm]   Thk. of the collar    (tc)  #####.   [mm]_\par
+M008Material of collar                                          \\\                   \_\par
+B
+1281Cross section of the reinforcing members                            #######.  [mm2]_\par
+M009Material of the reinforcing members                         \\\                   \_\par
+B
+6282283X-section of fasteners  #######.  [mm2]   Effective length      (Lf)  #####.   [mm]_\par
+M010Material of the fasteners                                   \\\                   \_\par
+B                                   
+B
+0                                     LOADING DATA\par
+0                                     ============\par
+Fine
+

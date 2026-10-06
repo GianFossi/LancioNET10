@@ -1,0 +1,20 @@
+  347          ,CODICE MATERIALE
+UNI 5462 C14         ,DENOMINAZIONE MATERIALE
+000-TU-000                  ,N. DOCUMENTO
+00            ,N. REVISIONE
+C:\PROGRAMMI\LANCIO\WORK\AP05501\000                         ,N. COMMESSA
+NO            ,SI= MINIMUM WALL  NO= AVERAGE
+               ,intestazione
+   300         ,passo barre
+NO            ,INOX O SPECIALE=SI  ALTRIMENTI=NO
+NO            ,TIPO PASSO A= TRI.  B=QUA.  C= TRI. RUOT.  D=Q.RUOT.  E=LIBERO
+   668.        ,INCREMENTO CHIOMA/NUMERO TUBI
+    25.4       ,PASSO
+   1  ,    0    ,NUMERO GRUPPI (BARRE OMOGENEE  1/0)
+   19.05       ,DIAMETRO ESTERNO TUBO
+    2.11       ,SPESSORE TUBO
+  6096.        ,LUNGH. RETTILINEA
+      0.       ,RAGGIO MEDIO MINIMO
+    25.4       ,INCREMENTO RAGGIO CON FILA
+quadro                       ,TIPO DI PASSO
+   0           ,NUMERO FILE

@@ -1,0 +1,25 @@
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บSTANDARDS OF TUBULAR EXCHANGER MANUFACTURES ASSOCIATION -   7th Edition 1988 บ
+บINPUT Condizioni di carico                                  1992  ADDENDA    บ
+ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บ    Progetto/Verifica Piastra Tubiera per scambiatori teste fisse.           บ
+ฬอออออออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บCondizione di carico ณ #.\                                 \ N๘ eventi ##### บ
+ฬอออออออออออออออออออออุอออัออออออออออออัอออออออออออออออออออออัอออัออออออออออออน
+บPressione lato mantello ณpsiณ   #####.## ณPressione lato cassa ณpsiณ   #####.## บ,1,2,31,70,8,8, , 
+บPressione differenziale ณpsiณ   #####.## ณTemperatura piastra  ณ ฐFณ    ####.## บ,-3,4,31,71,8,7,Quando appare su sfondo rosso il progetto ่ a pressione assoluta,Temperatura media nella zona forata della piastra in esercizio (non usata nei calcoli) 
+บTemperatura mantello ณ ฐFณ    ####.## ณTemperatura tubi     ณ ฐFณ    ####.## บ,5,6,32,71,7,7,Temperatura media di esercizio,Temperatura media di esercizio
+บAmmissibile mantello ณpsiณ  ######.## ณAmmissibile tubi     ณpsiณ  ######.## บ,12,13,30,69,9,9,Calcolata alla temperatura di progetto (vedi Altri Dati),Calcolata alla temperatura di progetto (vedi Altri Dati)
+บAmmissibile piastra  ณpsiณ  ######.## ณAmmissibile dilatat. ณpsiณ  ######.## บ,35,274,30,69,9,9,,
+บMom.flangia serraggioณl.iณ########.## ณMom.flangia esercizioณl.iณ########.## บ,33,32,28,67,11,11,Calcolato in base al carico di serraggio fornito nella finestra dei dati PT,"Se ่ zero, il momento al serraggio qui a destra ่ da intendersi come momento di progetto, calcolato in base al carico di progetto dei bulloni"
+บMod.elastico mantelloณpsiณ  ##.##^^^^ ณMod.elestico tubi    ณpsiณ  ##.##^^^^ บ,8,9,30,69,9,9,Calcolato alla temperatura di progetto,Calcolato alla temperatura di progetto
+บEsp.termica  mantelloณ1/Fณ  ##.##^^^^ ณEsp.termica  tubi    ณ1/Fณ  ##.##^^^^ บ,14,15,30,69,9,9,Calcolato alla temperatura di esercizio,Calcolato alla temperaura di esercizio
+บMod.elastico piastra ณpsiณ  ##.##^^^^ ณSnervamento  tubi    ณpsiณ  ######.## บ,7,38,30,69,9,9,Calcolato alla temperatura di progetto,Calcolato alla temperatura di progetto
+บCarico amm. giunto   ณlb ณ  ######.## ณMod.elastico dilatat.ณpsiณ  ##.##^^^^ บ,285,287,30,69,9,9,,
+บCompr.amm.mant.nuovo ณpsiณ  ######.## ณCompr.amm.m.corroso  ณpsiณ  ######.## บ,259,260,30,69,9,9,,
+บCost.el.dilat.nuovo  ณl/iณ########.## ณCost.el.dilat.corrosoณl/iณ########.## บ,36,37,28,67,11,11,,
+บTemperatura piastra Bณ ฐFณ    ###.##  ณSnervamento dilatat. ณpsiณ  ######.## บ,268,275,28,69,9,9,Temperatura media nella zona forata della piastra di coda in esercizio (non usata nei calcoli),  
+บAmmissibile piastra Bณpsiณ  ######.## ณMod.elastico piastr.Bณpsiณ  ##.##^^^^ บ,266,267,30,69,9,9,,
+บMom.flangia serr. B  ณl.iณ########.## ณMom.flangia eserc. B ณl.iณ########.## บ,270,269,28,67,11,11,Calcolato in base al carico di serraggio fornito nella finestra dei dati PT,"Se ่ zero, il momento al serraggio qui a destra ่ da intendersi come momento di progetto, calcolato in base al carico di progetto dei bulloni"
+ศอออออออออออออออออออออฯอออฯออออออออออออฯอออออออออออออออออออออฯอออฯออออออออออออผ
+

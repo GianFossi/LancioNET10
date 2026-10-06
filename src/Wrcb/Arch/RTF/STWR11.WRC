@@ -1,0 +1,23 @@
+\par
+    U = r{_\sub o}/({{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])      = ##.####_\par
+    U = c{_\sub 1}/(0.875{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T]) = ##.####_\par
+    ç = (r{_\sub m}/t)            = ##.####_\par
+    ç = c{_\sub 1}/0.875t         = ##.####_\par
+    p = (T/t)             = ##.####_\par
+    from Fig.SP-1ö10 => (N{_\sub x}*T)/P            =##########.####_\par
+    from Fig.SP-1ö10 => (M{_\sub x})/P              =##########.####_\par
+    from Fig.SM-1ö10 => (N{_\sub x}*T*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M    =##########.####_\par
+    from Fig.SM-1ö10 => (M{_\sub x}*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M      =##########.####_\par
+    from Fig.SP-1ö10 => (N{_\sub y}*T)/P            =##########.####_\par
+    from Fig.SP-1ö10 => (M{_\sub y})/P              =##########.####_\par
+    from Fig.SM-1ö10 => (N{_\sub y}*T*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M    =##########.####_\par
+    from Fig.SM-1ö10 => (M{_\sub y}*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M      =##########.####_\par
+    from Fig.SR-2    => (N{_\sub x}*T)/P            =##########.####_\par
+    from Fig.SR-2    => (M{_\sub x})/P              =##########.####_\par
+    from Fig.SR-3    => (N{_\sub x}*T*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M    =##########.####_\par
+    from Fig.SR-3    => (M{_\sub x}*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M      =##########.####_\par
+    from Fig.SR-2    => (N{_\sub y}*T)/P            =##########.####_\par
+    from Fig.SR-2    => (M{_\sub y})/P              =##########.####_\par
+    from Fig.SR-3    => (N{_\sub y}*T*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M    =##########.####_\par
+    from Fig.SR-3    => (M{_\sub y}*{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}[R{_\sub m}*T])/M      =##########.####_\par
+

@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>DataSheet</AssemblyName>
+    <RootNamespace>DataSheet</RootNamespace>
+    <OutputType>Library</OutputType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="apert4.vb" />
+    <EmbeddedResource Include="apert4.resX" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsDataSheet.vb" />
+    <Compile Include="DataShe1.vb" />
+    <EmbeddedResource Include="DataShe1.resX" />
+    <Compile Include="DataShe2.vb" />
+    <EmbeddedResource Include="DataShe2.resX" />
+    <Compile Include="DataShee.vb" />
+    <EmbeddedResource Include="DataShee.resX" />
+    <Compile Include="DATASHEE1.vb" />
+    <Compile Include="frmForm.vb" />
+    <EmbeddedResource Include="frmForm.resX" />
+    <Compile Include="frmProto.vb" />
+    <EmbeddedResource Include="frmProto.resX" />
+    <Compile Include="frmTipoP.vb" />
+    <EmbeddedResource Include="frmTipoP.resX" />
+    <EmbeddedResource Include="HelpTopics.resx" />
+    <Compile Include="Monitor.vb" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+    <Compile Include="SaldMand.vb" />
+    <EmbeddedResource Include="SaldMand.resX" />
+    <Compile Include="tema.vb" />
+    <EmbeddedResource Include="tema.resX" />
+    <Content Include="Arch/A.BMP" />
+    <Content Include="Arch/B.BMP" />
+    <Content Include="Arch/C.BMP" />
+    <Content Include="Arch/D.BMP" />
+    <Content Include="Arch/DIST04.DAT" />
+    <Content Include="Arch/E.BMP" />
+    <Content Include="Arch/F.BMP" />
+    <Content Include="Arch/G.BMP" />
+    <Content Include="Arch/H.BMP" />
+    <Content Include="Arch/J.BMP" />
+    <Content Include="Arch/K.BMP" />
+    <Content Include="Arch/L.BMP" />
+    <Content Include="Arch/M.BMP" />
+    <Content Include="Arch/NN.BMP" />
+    <Content Include="Arch/NULL.BMP" />
+    <Content Include="Arch/P.BMP" />
+    <Content Include="Arch/S.BMP" />
+    <Content Include="Arch/T.BMP" />
+    <Content Include="Arch/TEMATY.DAT" />
+    <Content Include="Arch/TIPOP0.BMP" />
+    <Content Include="Arch/TIPOP1.BMP" />
+    <Content Include="Arch/TIPOP2.BMP" />
+    <Content Include="Arch/TIPOP3.BMP" />
+    <Content Include="Arch/U.BMP" />
+    <Content Include="Arch/W.BMP" />
+    <Content Include="Arch/X.BMP" />
+    <Content Include="Work/1246.JOB" />
+    <Content Include="Work/124600.TEM" />
+    <Content Include="Work/124600/000.APR" />
+    <None Include="Work/124600/000.DES" />
+    <Content Include="Work/124600/000.SEZ" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <ProjectReference Include="../AsmeVip/AsmeVip.vbproj" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../Grafic2/Grafic2.vbproj" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../Traccia/Traccia.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole" />
+    <Reference Include="StdFormat" />
+    <Reference Include="StdType" />
+  </ItemGroup>
+</Project>

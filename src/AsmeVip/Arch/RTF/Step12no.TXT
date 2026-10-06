@@ -1,0 +1,6 @@
+\pard\plain \s18\qj \li0\ri0\widctlpar\tx567\tqr\tx2693\tqr\tx5103\tx5954\faauto\rin0\lin0\itap0 \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18 \par \tab \i Step 12
+\par }\pard \s18\qj \li0\ri0\widctlpar\tx709\tqr\tx2693\tqr\tx5103\tx5954\tqr\tx9781\faauto\rin0\lin0\itap0 {\f2\fs18\lang1040\langfe1040\langnp1040 Since }{\f2\fs18 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{
+\f2\fs18\lang1040\langfe1040\sub\langnp1040 I }{\f2\fs18 {\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1040\langfe1040\langnp1040  1.5S}{\f2\fs18\lang1040\langfe1040\sub\langnp1040 I }{
+\f2\fs18\lang1040\langfe1040\langnp1040 (S}{\f2\fs18\lang1040\langfe1040\sub\langnp1040 I}{\f2\fs18\lang1040\langfe1040\langnp1040  =
+#######.# MPa, ######.# psi), the Step 12 needs not to be executed.F01
+\par }

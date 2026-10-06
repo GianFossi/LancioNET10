@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str990">
+		<value>Il cono e' troppo grande per essere realizzato senza saldature cir-|conferenziali intermedie. Suddividere il cono in piu' tronconi.</value>
+	</data>
+	<data name="str1000">
+		<value>Non è possibile inserire dei setti se non si è inserito un fascio tubiero.</value>
+	</data>
+	<data name="str1010">
+		<value>Il tipo TEMA dell'apparecchio non è definito correttamente</value>
+	</data>
+	<data name="str1020">
+		<value>Non è possibile trovare il file TRK della traciatura.</value>
+	</data>
+	<data name="str1030">
+		<value>Lo scambiatore è ad un passo: non esistono setti partitori.</value>
+	</data>
+	<data name="str1040">
+		<value>Il tipo di tracciatura e la terza lettera del codice TEMA non sono congruenti.</value>
+	</data>
+	<data name="str1050">
+		<value>Non è stata trovata la piastra tubiera di testa.</value>
+	</data>
+	<data name="str1055">
+		<value>Non è stata trovata la piastra tubiera di coda.</value>
+	</data>
+	<data name="str1060">
+		<value>Non è stata trovata la cassa di entrata.</value>
+	</data>
+	<data name="str1061">
+		<value>Non è possibile lanciare AutoCAD.</value>
+	</data>
+	<data name="str1062">
+		<value>La versione di AutoCAD istallata sul computer è|inferiore alla versione richiesta (AutoCAD 200)</value>
+	</data>
+	<data name="str1063">
+		<value>L'operazione di creazione/aggiornamento di prototipo|non può essere eseguita in quanto non è stata|generata l'immagine dell'apparecchio.</value>
+	</data>
+	<data name="str1070">
+		<value>Non è stato possibile trovare nessuna spicchiatura compatibile|con al larghezza delle lamiere disponibili</value>
+	</data>
+	<data name="str1071">
+		<value>Il lato del quadrotto di partenza (##### mm),|per un disco di partenza D=##### mm, è superiore|alla larghezza della lamiera (##### mm).|Vuoi adottare la soluzione presaldata (Si), o vuoi adottare una soluzione a petali (No)?</value>
+	</data>
+	<data name="str1072">
+		<value>Il prototipo non è definito, o è definito in modo errato.|E' quindi necessario fornire manualmente|il numero di lati dell'apparecchio</value>
+	</data>
+	<data name="str1073">
+		<value>La banca dati dei prototipi è corrotta.|E' quindi necessario fornire manualmente|il numero di lati dell'apparecchio</value>
+	</data>
+	<data name="str2000">
+		<value>Uscita dall'alto</value>
+	</data>
+	<data name="str2001">
+		<value>Uscita dal basso</value>
+	</data>
+	<data name="str2002">
+		<value>La spicchiatura ottima risulta essere:|N. spicchi: ###, Tipo:###|Accetti (Si), o vuoi determinare tu la    |spicchiatura (No) ?</value>
+	</data>
+	<data name="str3000">
+		<value>Esiste già un prototipo per questo apparecchio.|Vuoi procedere comunque?</value>
+	</data>
+	<data name="str3051">
+		<value>Esiste già una distinta generata precedentemente. Vuoi utilizzarla? |N.B.: Se rispondi di no la distinta precedente verrà cancellata.</value>
+	</data>
+	<data name="str9000">
+		<value>Apre la finestra di visualizzaione</value>
+	</data>
+	<data name="str9001">
+		<value>Chiude la finestra di visualizzazione</value>
+	</data>
+	<data name="Helpfile">
+		<value>\BIN\AiutoPPSM.chm</value>
+	</data>
+	<data name="str1064">
+		<value>Non è stata selezionata alcuna posizione</value>
+	</data>
+	<data name="str154">
+		<value>Il collegamento di</value>
+	</data>
+	<data name="str155">
+		<value> (tipo</value>
+	</data>
+	<data name="str156">
+		<value>)| con</value>
+	</data>
+	<data name="str157">
+		<value>) non è|stato previsto. Di conseguenza</value>
+	</data>
+	<data name="str158">
+		<value>|sarà 'parcheggiato' sull'origine</value>
+	</data>
+	<data name="str151">
+		<value>Giunzione lap-joint</value>
+	</data>
+	<data name="str152">
+		<value>Giunzione set-on</value>
+	</data>
+	<data name="str153">
+		<value>Tipo di giunzione</value>
+	</data>
+	<data name="ErrOverride">
+		<value>"E' stata ricercata in Membratura la proprietà &amp; per &amp; del tipo &amp; "</value>
+	</data>
+	<data name="Helpfile">
+		<value>\Bin\AiutoISA.chm</value>
+	</data>
+</root>

@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Surrisc</AssemblyName>
+    <RootNamespace>Surrisc</RootNamespace>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsSurrisc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmApertDll.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApertDll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApertDll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProp.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmProp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipo.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmTipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTubi.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmTubi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTubi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenSurr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project/Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Proprietà.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="surMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmApertDll.resx">
+      <DependentUpon>frmApertDll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProp.resX">
+      <DependentUpon>frmProp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipo.resx">
+      <DependentUpon>frmTipo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTubi.resX">
+      <DependentUpon>frmTubi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project/Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Figure/A8.bmp" />
+    <None Include="Figure/B6.bmp" />
+    <None Include="Figure/C8.bmp" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../Ppgas/Ppgas.vbproj" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+    <ProjectReference Include="../Traccia/Traccia.vbproj" />
+    <ProjectReference Include="../VapAcqua/VapAcqua.vbproj" />
+    <Reference Include="Interop.Word">
+      <HintPath>../../legacy/DLL Extra/Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.Office.Core">
+      <HintPath>../../legacy/DLL Extra/Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole" />
+    <Reference Include="VBIDE">
+      <HintPath>../../legacy/DLL Extra/Interop.VBIDE.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Word">
+      <HintPath>../../legacy/DLL Extra/Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+</Project>

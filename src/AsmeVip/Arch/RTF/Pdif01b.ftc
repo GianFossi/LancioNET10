@@ -1,0 +1,68 @@
+T
+B
+0                                       INPUT DATA\par
+0                                       ==========\par
+B
+0   \pard \s18\qj\widctlpar\tx680\tqr\tx2977\tqr\tx5103\tx5245 \tab
+K     Load condition Nb ## :  &_\par
+B
+E001P{_\sub s}_\tab =_\tab ###.## [Mpa]_\tab ###### [psi]_\tab Shell Side Design Pressure_\par
+E002P{_\sub t}_\tab =_\tab ###.## [Mpa]_\tab ###### [psi]_\tab Tube Side Design Pressure_\par
+0   {{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub p}\tab =\tab
+G004####.## [_\'b0C]_\tab ####.## [_\'b0F]_\tab Tubesheet metal Temperature_\par
+0   {{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub s}\tab =\tab
+G005####.## [_\'b0C]_\tab ####.## [_\'b0F]_\tab Shell metal Temperature_\par
+0   {{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub t}\tab =\tab
+G006####.## [_\'b0C]_\tab ####.## [_\'b0F]_\tab Tube metal Temperature_\par
+G007E_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Tubesheet _@ temp_\par
+G008E{_\sub s}_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Shell _@ temp_\par
+G009E{_\sub t}_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Tube _@ temp_\par
+0   {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub s} \tab =\tab
+G014##.####^^^^ [_\'b0C{_\super -1}]_\tab ##.####^^^^ [_\'b0F{_\super -1}]_\tab Shell Thermal Exp.Coefficient at temp._\par
+0   {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub t}\tab =\tab
+G015##.####^^^^ [_\'b0C{_\super -1}]_\tab ##.####^^^^ [_\'b0F{_\super -1}]_\tab Tube  Thermal Exp.Coefficient at Temp._\par
+B
+2010D{_\sub L_\tab }=_\tab #####.# [mm]_\tab ###.### [in]_\tab Equivalent Diameter for Shear Stresses_\par
+2011p_\tab =_\tab #####.# [mm]_\tab  ###.### [in]_\tab Tube Spacing, center-to-center_\par
+B
+E012S{_\sub as} _\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Shell Allowable Working Stress_\par
+E013S{_\sub at}_\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Tube  Allowable Working Stress_\par
+B
+2017C{_\sub s}_\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Shell Side Corrosion_\par
+2018C{_\sub t} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tube Side Corrosion_\par
+2019C{_\sub j} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Expasion Joint Corrosion_\par
+2020C_\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tubesheet Pass Partition Grooves_\par
+B
+2022D{_\sub c} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Inside Diameter of Channel_\par
+2588D{_\sub p} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Inside Diameter of Kettle ports_\par
+2307D{_\sub k} _\tab =_\tab ####.# [mm]_\tab ###.## [in]_\tab Inside Dia of Kettle cylinder_\par
+2026D{_\sub j} _\tab =_\tab ####.# [mm]_\tab ###.## [in]_\tab Inside Dia of the Equiv. Exp. Joint_\par
+B
+2024T{_\sub c} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Channel Thickness_\par
+2586T{_\sub p} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Thickness of Kettle ports_\par
+2585T{_\sub d} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Thickness of Cones_\par
+2023T{_\sub k} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Kettle cylinder Thickness_\par
+2587L{_\sub p} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Length of Kettle ports_\par
+2584L{_\sub d} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Axial Length of Cones_\par
+2583L{_\sub k} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Kettle cylinder Length_\par
+B
+2027D{_\sub 0} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Outside Diameter of Tubes_\par
+2028T{_\sub t} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tube Thickness_\par
+1029N_\tab =_\tab ###### [--]_\tab _\tab Number of Tubes in Shell_\par
+2030L{_\sub t} _\tab =_\tab #####.# [mm]_\tab ####.### [in]_\tab Tube Length_\par
+B
+G032M{_\sub 1} _\tab =_\tab ##.####^^^^ [N.m]_\tab ##.####^^^^ [lb.in]_\tab Total Moment in Operating Cond._\par
+G033M{_\sub 2} _\tab =_\tab ##.####^^^^ [N.m]_\tab ##.####^^^^ [lb.in]_\tab Total Moment in Bolting-up Cond._\par
+B
+2034T_\tab =_\tab #####.# [mm]_\tab ###.### [in]_\tab Tubesheet Nominal Thickness_\par
+E035S_\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Tubesheet Allowable Working Stress_\par
+G036S{_\sub j} _\tab =_\tab ##.####^^^^ [N/mm] _\tab ##.####^^^^ [lb/in]_\tab Spring Rate Operating Cond._\par
+G037S{_\sub jc} _\tab =_\tab ##.####^^^^ [N/mm] _\tab ##.####^^^^ [lb/in]_\tab Spring Rate Corroded  Cond._\par
+E038S{_\sub y} _\tab =_\tab ####.## [MPa]_\tab ###### [psi]_\tab Yield Stress of Tube at _\'e9t Temp._\par
+0   k{{\field{\*\fldinst SYMBOL 215 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}l\tab =\tab
+2039####.## [mm]_\tab ##.### [in]_\tab Equiv.Unsupp.Buckling Lenght of Tubes_\par
+0   \pard \s18\qj\widctlpar\tx4536
+B
+0                   fully documented printout pag. 1 of 7\par
+Fine
+

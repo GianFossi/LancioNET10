@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Questo file viene generato automaticamente dalla Progettazione schema XML. Contiene informazioni sul layout dei componenti nell'area di progettazione.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-682" viewPortTop="0" zoom="100">
+    <Catalogo_XmlElement left="1317" top="1000" width="5291" height="7567" selected="0" zOrder="10" index="0" expanded="1" />
+    <Diametri_XmlElement left="7242" top="1000" width="5292" height="2805" selected="0" zOrder="11" index="1" expanded="1" />
+    <Facings_XmlElement left="13168" top="1000" width="5292" height="2805" selected="0" zOrder="12" index="2" expanded="1" />
+    <FacValori_XmlElement left="19094" top="1000" width="5292" height="2805" selected="0" zOrder="13" index="3" expanded="1" />
+    <Query1_XmlElement left="25020" top="1000" width="5291" height="17092" selected="0" zOrder="1" index="4" expanded="1" />
+    <Ratings_XmlElement left="30945" top="1000" width="5292" height="2805" selected="0" zOrder="2" index="5" expanded="1" />
+    <Tabelle_XmlElement left="36871" top="1000" width="5292" height="2805" selected="0" zOrder="4" index="6" expanded="1" />
+    <Tipi_XmlElement left="42797" top="1000" width="5292" height="2805" selected="0" zOrder="6" index="7" expanded="1" />
+    <Valori_XmlElement left="48723" top="1000" width="5291" height="11932" selected="0" zOrder="8" index="8" expanded="1" />
+</XSDDesignerLayout>

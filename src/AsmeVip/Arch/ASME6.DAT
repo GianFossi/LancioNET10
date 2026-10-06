@@ -1,0 +1,40 @@
+Perpendicolare all'asse, sopra .
+Perpendicolare alla gen.,sopra .
+Perpendicolare all'asse, sotto .
+Perpendicolare all'asse, fianco.
+Perpendicolare alla gen.,fianco.
+Perpendicolare all'asse        .
+Perpendicolare alla generatrice.
+standard (radiale)            .
+inclinato longitudinalmente   .
+inclinato circonferenzialmente.
+assiale centrato            .
+radiale rispetto al fondo   .
+radiale rispetto al cilindro.
+assiale decentrato          .
+YES.
+NO .
+WN  :WN/SO                             .
+WN1 :LWN/WN/SO    + pezza              .
+LWN :Standard LWN                      .
+LWN1:Forgiato autorinf. Fig.UG-40(d)(e).
+LWN2:Forgiato con scarpa Fig.UG-40(f)  .
+LWN3:Forgiato come da Fig.UG-40(i)     .
+SPC1:Speciale tipo 1                   .
+Sola:Verifica del solo rating          .
+OPEN:Solo foratura                     .
+Stub end
+ 150
+ 300
+ 400
+ 600
+ 900
+1500
+2500
+Non std
+Set-in/groove
+Set-in/fillet
+Set-on/groove
+Set-on/fillet
+UW-16.1(u)
+

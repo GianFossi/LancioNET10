@@ -1,0 +1,23 @@
+\par .
+\par Check of the junction at the large end as a line of support.
+\par Reinforcing ring provided .
+\par outside the shell:.
+\par inside the shell:.
+_\par    Rib: Offset ####. mm, Thk. ####. mm, Height ####. mm..
+\par \pard \s15\qj\tx3969 Equivalent area large  junction, AT\tab =   .
+\par Equivalent area small  junction, A{\sub T}\tab =   .
+ ##.###^^^^   [mm{_\super 2}]   ##.###^^^^    [in{_\super 2}] .
+\par Factor B from Step 1 of 1-8(b) & (c)\tab =   .
+\par Factor B from Step 1  of UG-29(a) \tab =   .
+ ####.#####    [MPa]   ######.##    [psi].
+\par Factor A from Step 5 \tab =   .
+ ##.###^^^^    [--] .
+\par Required moment of inertia,      I'{\sub s}\tab =   .
+ ##.###^^^^   [mm{_\super 4}]   ##.###^^^^    [in{_\super 4}] .
+\par Available moment of inertia,     I'\tab =   .
+\par \pard \s15\qj\tx4536 --The design is acceptable.
+\par --The design is NOT acceptable.
+\par Check of the junction at the small end as a line of support.
+_\par    Wing: Thk. ####. mm, Length ####. mm..
+_\par          Offset > 0.25*(R.t){_\super 0.5} = ####. mm: NO CHECK.
+_\par          Offset < 0.25*(R.t){_\super 0.5} = ####. mm: CHECK.

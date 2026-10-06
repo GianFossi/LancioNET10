@@ -1,0 +1,20 @@
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Stresses in the span between the saddles}
+
+Bending moment maximum algebrical value :
+    M{\sub 3}=Q.L{\sub D}/2(x-x{\super 2}/L{\sub D})+M{\sub 1}*(1-x/L{\sub D})+M{\sub 2}x/L{\sub D}\tab N.mm\tab |####.##E+00|
+                                                      at x=\tab mm\tab |######.00|
+Longitudinal stresses :                                    
+- top   \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}=P*R{\sub M}/(2T)-M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+- bottom \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}=P*R{\sub M}/(2T)+M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+Allowable stresses : - tension        f\tab N/mm{\super 2}\tab |######.00|
+                     - compression    f{\sub C}\tab N/mm{\super 2}\tab |######.00|
+------------------ WARNING ------------------------------------
+Tension stresses allowable limit exceeded                  
+Compression stresses allowable limit exceeded              
+Bending moment minimum algebrical value :
+    M{\sub 3}=Q.L{\sub D}/2(x-x{\super 2}/L{\sub D})+M{\sub 1}*(1-x/L{\sub D})+M{\sub 2}x/L{\sub D}\tab N.mm\tab |####.##E+00|
+                                                      at x=\tab mm\tab |######.00|
+Longitudinal stresses :                                    
+- top   \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}=P*R{\sub M}/(2T)-M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+- bottom\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}=P*R{\sub M}/(2T)+M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+

@@ -1,0 +1,34 @@
+\par .
+\par Opening exempted from strength calculations of welds per UW15(b)(1).
+\par \par {\b Loads to be carried by welds per UG-41(b)}.
+\par    W = (A-A{\sub 1}+2t{\sub n}.f{\sub r1}(E{\sub 1t}-F.t{\sub r})).S{\sub v}\tab =.
+\par    W = (A-A{\sub 1}).S{\sub v}\tab =.
+#########   [N]   #########  [lb].
+\par    W{\sub 11} = (A{\sub 1}+A{\sub 5}+A{\sub 41}+A{\sub 42}).S{\sub v}\tab =.
+\par    W{\sub 22} = (A{\sub 2}+A{\sub 3}+A{\sub 41}+A{\sub 43}+2t{\sub n}.t.f{\sub r1})).S{\sub v}\tab =.
+\par    W{\sub 33} = (see Fig.UG-41.1(a))\tab =.
+\par    W{\sub 22} = (A{\sub 2}+A{\sub 41}).S{\sub v}\tab =.
+_\par    Reference weld load, W{_\sub &}_\tab =.
+\par Unit stresses per UW-15(b) and UG-45(c)  .
+\par    S{\sub fs} (fillet welds in shear)\tab =.
+######### [MPa]   ######### [psi].
+\par    S{\sub gt} (groove welds in tension)\tab =.
+\par    S{\sub gs} (groove welds in shear)\tab =.
+\par    S{\sub nw} (nozzle wall in shear)\tab =.
+\par Strength of Connection Elements .
+\par    external inner fillet in shear      =.
+\par    nozzle wall in shear                =.
+\par    external outer fillet in shear      =.
+\par    groove in shear                     =.
+\par    internal inner fillet in shear      =.
+\par    internal outer fillet in shear      =.
+\par    groove in tension (nozzle/shell)    =.
+\par    groove in tension                   =.
+\par    groove in tension (nozzle/pad)      =.
+\par Check of Strength Paths .
+_\par      Path # - # :####### _+####### _+####### =######## [N] & ######  [N].
+\par           The strength of the welds is satisfactory.
+\par           The strength of the welds is not satisfactory.
+_\par      Path # - # :####### _+####### _+####### =######## [lb] & ######  [lb].
+\par    Since the available reinforcement in the shell, A{\sub 0}, is larger than the. 
+\par required reinforcement A, the strength of the attachment welds is satisfactory..

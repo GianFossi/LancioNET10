@@ -1,0 +1,24 @@
+Auxiliary factors :\tab - k{\sub 3}\tab \tab |####.00000|
+\tab - c{\sub {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}}\tab \tab |####.00000|
+Membrane stress\tab {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}{\sub tg;m}\tab N/mm{\super 2}\tab |####.00000|
+Bending stress\tab {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}{\sub tg;b}\tab N/mm{\super 2}\tab |####.00000|
+\par Allowable stress\tab 1.5(f or f{\sub 1})\tab N/mm{\super 2}\tab |####.00000|
+\par - at the horn of the reinforcing plate:
+- bottom     \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 3}=P*R{\sub M1}/(2T{\sub 1})+M{\sub 41}/(W{\sub 1}K{\sub 21}) N/mm{\super 2}\tab |######.00|
+Factors for A{\sub 2} > R{\sub M2}/2 :\tab - K{\sub 1}\tab \tab |####.00000|
+Factors for A{\sub 2} > R{\sub M2}/2 :\tab - K{\sub 12}\tab \tab |####.00000|
+Bending moment\tab M{\sub 42}=M{\sub 2}\tab N.mm\tab |####.00E+00|
+- top        \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 3}=P*R{\sub M2}/(2T{\sub 2})-M{\sub 42}/(W{\sub 2}K{\sub 12}) N/mm{\super 2}\tab |######.00|
+- bottom     \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 3}=P*R{\sub M2}/(2T{\sub 2})+M{\sub 42}/(W{\sub 2}K{\sub 22}) N/mm{\super 2}\tab |######.00|
+------------------ WARNING ------------------------------------
+Stresses allowable limit exceeded                  
+Compression stresses allowable limit exceeded              
+                         - K{\sub 22}                       |####.00000|
+Note: Since the longitudinal Stresses at saddle are tensile, the values for
+      K{\sub 11} and K{\sub 21} do not take in account the out of roundness of the shell
+      K{\sub 12} and K{\sub 22} do not take in account the out of roundness of the shell
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Local normal stress in the cylinder}
+{\ul Left saddle}
+{\ul Right saddle}
+      and therefore they have been set to unity by the user (Stoomwezen D1105).
+

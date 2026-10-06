@@ -1,0 +1,163 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Grafica</AssemblyName>
+    <RootNamespace>Grafica</RootNamespace>
+    <OutputType>Library</OutputType>
+    <OptionStrict>On</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Anello.vb" />
+    <None Include="app.config" />
+    <Compile Include="Apparecchio.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Caland1.vb" />
+    <Compile Include="CalDisc.vb" />
+    <Compile Include="Cilindro.vb" />
+    <Compile Include="clsBocch.vb" />
+    <Compile Include="clsGrezzo1.vb" />
+    <Compile Include="clsLook.vb" />
+    <Compile Include="clsNonStd.vb" />
+    <Compile Include="Cono.vb" />
+    <Compile Include="Curva.vb" />
+    <Content Include="DataSet1.xsd" />
+    <Compile Include="DataSet1.vb" />
+    <None Include="DataSet1.xsx" />
+    <Compile Include="Diaframma.vb" />
+    <Compile Include="Dilat.vb" />
+    <Compile Include="Fascio.vb" />
+    <Compile Include="Flangia.vb" />
+    <Compile Include="Flangione.vb" />
+    <Compile Include="Fondo.vb" />
+    <Compile Include="Foratura.vb" />
+    <Compile Include="FormRibsFBM.vb" />
+    <EmbeddedResource Include="FormRibsFBM.resX" />
+    <Compile Include="frmDati.vb" />
+    <EmbeddedResource Include="frmDati.resX" />
+    <Compile Include="frmDBSelle.vb" />
+    <EmbeddedResource Include="frmDBSelle.resX" />
+    <Compile Include="frmDistinta.vb" />
+    <EmbeddedResource Include="frmDistinta.resX" />
+    <Compile Include="frmFlangia.vb" />
+    <EmbeddedResource Include="frmFlangia.resX" />
+    <Compile Include="frmForature.vb" />
+    <EmbeddedResource Include="frmForature.resX" />
+    <Compile Include="frmMatDS.vb" />
+    <EmbeddedResource Include="frmMatDS.resX" />
+    <Compile Include="frmMnuMemb.vb" />
+    <EmbeddedResource Include="frmMnuMemb.resX" />
+    <Compile Include="frmMnuMemb3.vb" />
+    <EmbeddedResource Include="frmMnuMemb3.resX" />
+    <Compile Include="frmScelFla.vb" />
+    <EmbeddedResource Include="frmScelFla.resX" />
+    <Compile Include="frmShowForm.vb" />
+    <EmbeddedResource Include="frmShowForm.resX" />
+    <Compile Include="frmWMF.vb" />
+    <EmbeddedResource Include="frmWMF.resX" />
+    <Compile Include="GenMem.vb" />
+    <Compile Include="GraficMain.vb" />
+    <Compile Include="Guarniz.vb" />
+    <Compile Include="Lamiera.vb" />
+    <Compile Include="LamQuadr.vb" />
+    <Compile Include="LibGra.vb" />
+    <Compile Include="Membratura.vb" />
+    <Compile Include="modSezioni.vb" />
+    <Compile Include="Monitor.vb" />
+    <Compile Include="Origine.vb" />
+    <Compile Include="Piastrone.vb" />
+    <Compile Include="Polig.vb" />
+    <Compile Include="Posizione.vb" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+    <Compile Include="Raggrupp.vb" />
+    <Compile Include="Rectang.vb" />
+    <Compile Include="SellaMod.vb" />
+    <Compile Include="ShowForm.vb" />
+    <Compile Include="SpCollection.vb" />
+    <Compile Include="Spicchi.vb" />
+    <Compile Include="Spicchio4.vb" />
+    <Compile Include="SpicLam.vb" />
+    <Compile Include="spot.vb" />
+    <Compile Include="Striscia.vb" />
+    <Compile Include="Tirante.vb" />
+    <Compile Include="Tondo.vb" />
+    <Compile Include="Trasfco.vb" />
+    <Compile Include="Tubi.vb" />
+    <Content Include="Arch/ALGE07.DAT" />
+    <Content Include="Arch/CALA01.DAT" />
+    <Content Include="Arch/CALA02.DAT" />
+    <Content Include="Arch/CALA14.DAT" />
+    <Content Include="Arch/CALA15.DAT" />
+    <Content Include="Arch/CALA16.DAT" />
+    <Content Include="Arch/DIAF01.DAT" />
+    <Content Include="Arch/DIAF02.DAT" />
+    <Content Include="Arch/DIAF03.DAT" />
+    <Content Include="Arch/DIST02.DAT" />
+    <Content Include="Arch/FLAN09.DAT" />
+    <Content Include="Arch/Flange.mdb" />
+    <Content Include="Arch/Grezzi.mdb" />
+    <Content Include="Arch/PIAS07.DAT" />
+    <Content Include="Arch/PIAS12.DAT" />
+    <Content Include="Arch/PPSM.doc" />
+    <Content Include="Arch/Selle.mdb" />
+    <Content Include="Arch/STAM02.EXT" />
+    <Content Include="Arch/STAM08.DAT" />
+    <Content Include="Arch/STAM14.DAT" />
+    <Content Include="Arch/Suchi.mdb" />
+    <Content Include="Arch/Proto/Classi.mdb" />
+    <Content Include="Arch/Proto/A000101/100.ADU" />
+    <Content Include="Arch/Proto/A000101/100.APR" />
+    <Content Include="Arch/Proto/A000101/100.BLO" />
+    <Content Include="Arch/Proto/A000101/100.DES" />
+    <Content Include="Arch/Proto/A000101/100.GRE" />
+    <Content Include="Arch/Proto/A000101/100.INP" />
+    <Content Include="Arch/Proto/A000101/100.OUT" />
+    <Content Include="Arch/Proto/A000101/100.TRC" />
+    <Content Include="Arch/Proto/A000101/100.TRK" />
+    <Content Include="Arch/Proto/A000801/000.ADU" />
+    <Content Include="Arch/Proto/A000801/000.APR" />
+    <Content Include="Arch/Proto/A000801/000.BLO" />
+    <Content Include="Arch/Proto/A000801/000.DES" />
+    <Content Include="Arch/Proto/A000801/000.INP" />
+    <Content Include="Arch/Proto/A000801/000.TRC" />
+    <Content Include="Arch/Proto/A000801/000.TRK" />
+    <Content Include="Arch/Proto/A000801/000.wmf" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../Traccia/Traccia.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole" />
+    <Reference Include="Interop.AutoCAD">
+      <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+</Project>

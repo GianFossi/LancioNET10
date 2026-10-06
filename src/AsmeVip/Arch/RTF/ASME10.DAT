@@ -1,0 +1,44 @@
+\par
+######.00 &   ######.00 &
+\par Corroded Inside Radius               R\tab =
+\par Outside Radius                       R{\sub o}\tab =
+\par t{\sub o} =PR/(SE-0.6P)              \tab =
+\par t{\sub o} =PR{\sub o}/(SE+0.4P)      \tab =
+\par t{\sub o} =R({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z-1)\tab =
+\par t{\sub o} =R{\sub o}({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z-1)/{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z\tab =
+\par t{\sub r} =PR/(S-0.6P)               \tab =
+\par t{\sub r} =PR{\sub o}/(S+0.4P)       \tab =
+\par Z  =(S+P)/(SE-P)                     \tab =
+\par t{\sub r} =R({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z-1)\tab \tab \tab =
+\par t{\sub r} =R{\sub o}({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z-1)/{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Z\tab \tab \tab =
+\par Minimum Design Thickness             \tab =
+\par Minimum Thickness according to TEMA  \tab =
+\par Adopted Nominal Thickness            \tab =
+\par           Design under external pressure
+\par Sh.length betw.structural discon'ties\tab =
+\par Shell effective length               \tab =
+\par A-factor per Fig. G, II-D Subpart 3\tab =
+#.###^^^^ &   #.###^^^^ &
+\par B-factor per curve
+\par Allowable external pressure\tab =
+###.##### &   #####.## &
+\par Ins.Radius on Base Material          R\tab =
+\par Z  =(SE+P)/(SE-P)\tab =
+\par External Design Pressure             P\tab =
+\par Coincident Design Temperature        T\tab =
+\par Required thickness s{\sub r} against external pressure (calculated by iteration)\par s{\sub r} (on data for UG-28 herebelow)\tab =
+_\par _\par {_\b Stiffening rings provided:_\tab _\tab _\tab Nb###, equally spaced}_\par _\tab _\tab _\tab Sketch &
+\par \pard\plain \s18\qj\widctlpar\tx200\tx2000\tx2500 \f2\fs18 \tab Thickness\tab t{\sub w}\tab =######.##  [mm] ######.###  [in]
+\par \tab Height\tab h\tab =######.00  [mm] ######.000  [in]
+\par \tab Cross section\tab A{\sub s}\tab =######.00  [mm{\super 2}] ######.000  [in{\super 2}]
+\par \tab Shell eff.length\tab L{\sub s}\tab =######.00  [mm] ######.000  [in]
+\par \tab B-factor per UG-29(a) Step 1\tab B\tab =######.##  [psi] 
+\par \tab A-factor per UG-29(a) Step 2-5\tab A\tab =#.###^^^^  [--] 
+\par \par \par \par \par \par \pard\plain \s18\qj\widctlpar\tx500\tx4000\tx4500 \f2\fs18 \tab Required moment of inertia\tab I'{\sub s}\tab =#.###^^^^  [mm{\super 4}] #.###^^^^  [in{\super 4}]
+\par \tab Available moment of inertia\tab I'\tab =#.###^^^^  [mm{\super 4}] #.###^^^^  [in{\super 4}]
+\par The shell is adequately reinforced
+\par The shell is NOT adequately reinforced
+\par \tab Width\tab w\tab =######.##  [mm] ######.###  [in]
+\par \tab Thickness\tab t{\sub w1}\tab =######.##  [mm] ######.###  [in]
+_\par {_\v {_\*_\bkmkstart &}&{_\*_\bkmkend &}}
+\par Minimum Corroded Thickness to UG-16(b)\tab =

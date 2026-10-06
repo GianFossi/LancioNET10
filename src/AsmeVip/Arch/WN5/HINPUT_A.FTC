@@ -1,0 +1,23 @@
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บSTANDARDS OF TUBULAR EXCHANGER MANUFACTURES ASSOCIATION -   7th Edition 1988 บ
+บINPUT Dati del calcolo                                      1991  ERRATA     บ
+ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บ    Progetto/Verifica Piastra Tubiera per tubi a U flangiata lato cassa      บ
+ฬอออออออออออออออออออออัอออัออออออออออออัอออออออออออออออออออออัอออัออออออออออออน,0,0,1,0,0,0
+บ Descrizione         ณ   ณ   valore   ณ Descrizione         ณ   ณ   valore   บ,0,0,1,0,0,0
+ฬอออออออออออออออออออออุอออุออออออออออออุอออออออออออออออออออออุอออุออออออออออออน,0,0,1,0,0,0
+บDiam.int.  mantello  ณ mmณ   #####.## ณDiam.guarn.cassa     ณ mmณ   #####.## บ,21,293,31,70,8,8,,
+บSpessore   mantello  ณ mmณ   #####.## ณDiam. esterno estens.ณ mmณ    ####.## บ,23,308,31,71,8,7,,
+บCorrosione mantello  ณ mmณ      ##.## ณCorrosione cassa     ณ mmณ      ##.## บ,17,18,34,73,5,5,,
+บDiam.eq.foratura     ณ mmณ   #####.## ณPasso tubi           ณ mmณ      ##.## บ,10,11,31,73,8,5,,
+บDiam.esterno tubi    ณ mmณ     ###.## ณSpessore tubi        ณ mmณ     ##.### บ,27,28,33,72,6,6,,
+บPressione lato mant. ณpsiณ   #####.## ณPressione lato cassa ณpsiณ   #####.## บ,1,2,31,70,8,8,,
+บPressione differenz. ณpsiณ   #####.## ณTemperatura piastra  ณ ๘Fณ    ####.## บ,3,4,31,71,8,7,,
+บProfondit… cava settiณ mmณ     ###.## ณSpessore nominale PT ณ mmณ     ###.## บ,20,34,31,72,8,6,,
+บAmmissibile piastra  ณpsiณ  ######.## ณSpessore estensione  ณ mmณ    ####.## บ,35,288,30,71,9,7,,
+บMinDesMetTemp 1 mant.ณ ๘Fณ    ####.## ณMinDesMetTemp 1 tubi ณ ๘Fณ    ####.## บ,272,273,32,71,7,7,,
+บCoincident shel pressณpsiณ    ####.## ณCoincident tube pressณpsiณ    ####.## บ,300,302,32,71,7,7,,
+บMinDesMetTemp 2 mant.ณ ๘Fณ    ####.## ณMinDesMetTemp 2 tubi ณ ๘Fณ    ####.## บ,304,305,32,71,7,7,,
+บCoincident shel pressณpsiณ    ####.## ณCoincident tube pressณpsiณ    ####.## บ,301,303,32,71,7,7,,
+ศอออออออออออออออออออออฯอออฯออออออออออออฯอออออออออออออออออออออฯอออฯออออออออออออผ
+

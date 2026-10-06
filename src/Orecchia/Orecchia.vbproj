@@ -14,21 +14,18 @@
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
-    <MigrationDependencyDirectory Condition="'$(MigrationDependencyDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/dependencies</MigrationDependencyDirectory>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
-    <Reference Include="RoutBase1">
-      <HintPath>$(MigrationDependencyDirectory)/RoutBase1.dll</HintPath>
-    </Reference>
     <None Update="Arch/**/*;Aiuto/**/*" CopyToOutputDirectory="PreserveNewest" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
   </ItemGroup>
-  <Target Name="CheckMigrationDependencies" BeforeTargets="ResolveReferences">
-    <Error Condition="!Exists('$(MigrationDependencyDirectory)/RoutBase1.dll')"
-           Text="Orecchia requires the migrated RoutBase1 assembly; set MigrationDependencyDirectory. StubW2000, StubW9 and the Word backend also remain to migrate." />
-  </Target>
   <Import Project="LegacySources.props" />
+  <ItemGroup>
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+  </ItemGroup>
 </Project>

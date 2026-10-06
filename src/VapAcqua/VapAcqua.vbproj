@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>VapAcqua</AssemblyName>
+    <RootNamespace>VapAcqua</RootNamespace>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsVapAcqua.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmApert.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="vapMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmApert.resx">
+      <DependentUpon>frmApert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Arch/ACQPND.PND" />
+    <Content Include="Arch/PPVAP.doc" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+    <Reference Include="XSteam" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+  </ItemGroup>
+</Project>

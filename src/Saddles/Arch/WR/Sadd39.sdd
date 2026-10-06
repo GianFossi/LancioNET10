@@ -1,0 +1,33 @@
+Auxiliary factor :\tab k{\sub 5}\tab \tab |####.00000|
+Calculated max compressive stress, {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}}{\sub ax}\tab N/mm{\super 2}\tab |####.00000|
+Eulerian critical stress\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}}{\sub k}\tab N/mm{\super 2}\tab |####.00000|
+Allowable compressive stress (see D1105 5)\tab N/mm{\super 2}\tab |####.00000|
+Thickness for the shell stresses :\par \tab T{\sub T1}=T{\sub 1}\tab mm\tab |######.00|
+Thickness for the shell stresses :                           
+- at the edge of saddle            T{\sub T1}=T{\sub 1}+T{\sub K1}\tab mm\tab |######.00|
+- at the edge of saddle plate      T{\sub 1}                \tab mm\tab |######.00|
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Stresses in the heads}
+Auxiliary factors :\tab - c{\sub 1}\tab \tab |####.00000|
+\tab - c{\sub 2}\tab \tab |####.00000|
+\tab - k{\sub 2}\tab \tab |####.00000|
+\tab - k{\sub 4}\tab \tab |####.00000|
+Shear stress in the head {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}}}{\sub h}\tab N/mm{\super 2}\tab |######.00|
+Membrane stress in the head {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}}}{\sub h}\tab N/mm{\super 2}\tab |######.00|
+Allowable for shear 0.8 f{\sub e}\tab N/mm{\super 2}\tab |######.00|
+Allowable for membrane f{\sub e}\tab N/mm{\super 2}\tab |######.00|
+Allowable for membrane 1.33 f{\sub e}\tab N/mm{\super 2}\tab |######.00|
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 61}=-Q{\sub 1}/(4B{\sub 21}T{\sub T1})-3K{\sub 61}Q{\sub 1}/(2T{\sub T1}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle (L{\sub T}/R{\sub M1}< 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 61}=-Q{\sub 1}/(4B{\sub 21}T{\sub T1})-12K{\sub 61}Q{\sub 1}R{\sub M1}/(L{\sub T}T{\sub T1}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle plate (L{\sub T}/R{\sub M1}{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 6S1}=-Q{\sub 1}/(4B{\sub 21}T{\sub 1})-3K{\sub 6S1}Q{\sub 1}/(2T{\sub 1}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle plate (L{\sub T}/R{\sub M1}< 8 ) :
+Stress limits on head exceeded             
+-------------------WARNING ------------------------------------
+Compressive stress limit on shell exceeded             
+Allowable stress for {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 61} and {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 61S}  1.25*f{\sub 1}\tab N/mm{\super 2}\tab |######.00|
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Stability check of the cylinder}
+{\ul Left saddle}
+{\ul Right saddle}
+{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}'        
+

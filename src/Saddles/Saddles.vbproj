@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>prgSaddles</AssemblyName>
+    <RootNamespace>Saddles</RootNamespace>
+    <OutputType>Library</OutputType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="BSDD.vb" />
+    <Compile Include="frmFonda.vb" />
+    <EmbeddedResource Include="frmFonda.resx" />
+    <Compile Include="frmResultSaddles.vb" />
+    <EmbeddedResource Include="frmResultSaddles.resx" />
+    <Compile Include="frmSaddles.vb" />
+    <EmbeddedResource Include="frmSaddles.resX" />
+    <EmbeddedResource Include="HelpTopics.resx" />
+    <Compile Include="Monitor.vb" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+    <Compile Include="Saddl01.vb" />
+    <Compile Include="xFonda.vb" />
+    <Content Include="Arch/FoundationLoads.doc" />
+    <Content Include="Arch/FoundationLoads1.doc" />
+    <Content Include="Arch/FoundationLoads2.doc" />
+    <Content Include="Arch/FoundationLoadsT.doc" />
+    <Content Include="Arch/ROARK.DAT" />
+    <Content Include="Arch/WR/BS363B.DAT" />
+    <Content Include="Arch/WR/FIG01.SDD" />
+    <Content Include="Arch/WR/FIG02.SDD" />
+    <Content Include="Arch/WR/FIG03.SDD" />
+    <Content Include="Arch/WR/FIG04.SDD" />
+    <Content Include="Arch/WR/FIG05.SDD" />
+    <Content Include="Arch/WR/FIGC.SDD" />
+    <Content Include="Arch/WR/FIGFON.SDD" />
+    <Content Include="Arch/WR/FIGI.SDD" />
+    <Content Include="Arch/WR/NormeSisma.INI" />
+    <Content Include="Arch/WR/NormeVento.INI" />
+    <Content Include="Arch/WR/PD352.dat" />
+    <Content Include="Arch/WR/SADD01.SDD" />
+    <Content Include="Arch/WR/Sadd02.sdd" />
+    <Content Include="Arch/WR/SADD03.SDD" />
+    <Content Include="Arch/WR/SADD04.SDD" />
+    <Content Include="Arch/WR/SADD05.SDD" />
+    <Content Include="Arch/WR/SADD06.SDD" />
+    <Content Include="Arch/WR/SADD07.SDD" />
+    <Content Include="Arch/WR/SADD08.SDD" />
+    <Content Include="Arch/WR/SADD09.SDD" />
+    <Content Include="Arch/WR/SADD10.SDD" />
+    <Content Include="Arch/WR/SADD11.SDD" />
+    <Content Include="Arch/WR/sadd12.sdd" />
+    <Content Include="Arch/WR/SADD20.SDD" />
+    <Content Include="Arch/WR/Sadd31.sdd" />
+    <Content Include="Arch/WR/SADD34.SDD" />
+    <Content Include="Arch/WR/Sadd35.sdd" />
+    <Content Include="Arch/WR/SADD36.SDD" />
+    <Content Include="Arch/WR/Sadd37.sdd" />
+    <Content Include="Arch/WR/Sadd38.sdd" />
+    <Content Include="Arch/WR/Sadd39.sdd" />
+    <Content Include="Arch/WR/sadd42.sdd" />
+    <Content Include="Arch/WR/SADDLC.txt" />
+    <Content Include="Arch/WR/SADDLCsS.txt" />
+    <Content Include="Arch/WR/SADDLCsW.txt" />
+    <Content Include="Arch/WR/SADDLCsWS.txt" />
+    <Content Include="Dati/Esempio.SDD" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../FormulaParser/FormulaParser.vbproj" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole" />
+  </ItemGroup>
+</Project>

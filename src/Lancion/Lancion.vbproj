@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Lancio</AssemblyName>
+    <RootNamespace>Lancio</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <StartupObject>Lancio.GenLancio</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Form2n.vb" />
+    <EmbeddedResource Include="Form2n.resX" />
+    <Compile Include="frmPers.vb" />
+    <EmbeddedResource Include="frmPers.resX" />
+    <Compile Include="Lancio4.vb" />
+    <None Include="Lancion.ico" />
+    <Compile Include="Lancion.vb" />
+    <EmbeddedResource Include="Lancion.en.resx" />
+    <EmbeddedResource Include="Lancion.it.resx" />
+    <EmbeddedResource Include="Lancion.resX" />
+    <Compile Include="lanMonitor.vb" />
+    <Content Include="Arch/indirAzienda.bmp" />
+    <Content Include="Arch/indirDEL.bmp" />
+    <Content Include="Arch/indirFBM.bmp" />
+    <Content Include="Arch/indirGM.bmp" />
+    <Content Include="Arch/logoAzienda.bmp" />
+    <Content Include="Arch/logoDEL.bmp" />
+    <Content Include="Arch/logoFBM.bmp" />
+    <Content Include="Arch/logoFBM1.bmp" />
+    <Content Include="Arch/logoGM.bmp" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../Traccia/Traccia.vbproj" />
+    <ProjectReference Include="../Grafic2/Grafic2.vbproj" />
+    <ProjectReference Include="../Tiranti/Tiranti.vbproj" />
+    <ProjectReference Include="../Saddles/Saddles.vbproj" />
+    <ProjectReference Include="../Wrcb/Wrcb.vbproj" />
+    <ProjectReference Include="../AsmeVip/AsmeVip.vbproj" />
+    <ProjectReference Include="../Orecchia/Orecchia.vbproj" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../DataShDll/DataShDll.vbproj" />
+    <Reference Include="stdole" />
+    <Reference Include="StdType" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+  </ItemGroup>
+</Project>

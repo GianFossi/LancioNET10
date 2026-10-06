@@ -1,0 +1,97 @@
+stop1                                                                           1000
+(     '\par \page ',/5H\par ,                                                   1000
+      '     \par \par ',/                                                       1000
+      '\par \pard \s18\qj\li1134\ri4536\widctlpar\box\brdrs\brdrw30\brsp20',/   1000
+      '   CALCULATION OF ',A6,' ROTATION ',/                                    1000
+      '\par      2nd sheet : bolting-up',/                                      1000
+      '\par \pard \s18\qj\widctlpar\tx4536')                                    1000
+stop2                                                                           1000
+(       5H\par ,     5X,'Job  :    ',A24,/5H\par ,5X,'Item :  ',A24,/)          1100
+stop3                                                                           1100
+(        5H\par     /                                                           1200
+      ,5H\par ,'BOLT CIRCLE DIAMETER            [mm]    C\tab =',F10.0,/        1200
+      ,5H\par ,'EFFECTIVE BOLT LENGTH           [mm]    B{\sub l}\tab =',F10.0,/1200
+      ,5H\par ,'NUMBER OF BOLTS                         n\tab =',I10,/          1200
+      ,5H\par ,'AREA OF ONE BOLT                [mm{\super 2}]   A',            1200
+'{\sub b}\tab =',F10.0,/                                                        1200
+      ,5H\par ,'EFFECTIVE GASKET DIAMETER       [mm]    G{\sub e}\tab =',F10.2,/1200
+      ,5H\par ,'EFFECTIVE GASKET WIDTH          [mm]    b\tab =',F10.2,/        1200
+      ,5H\par ,'GASKET WIDTH,   (OD-ID)/2       [mm]    b{\sub t}\tab =',F10.2,/1200
+      ,5H\par ,'GASKET ELASTIC MODULUS         [MPa]    E',                     1200
+'{\sub g}\tab =',F10.0,/                                                        1200
+      ,5H\par ,'GASKET THICKNESS                [mm]    T{\sub g}\tab =',F10.2) 1200
+stop4                                                                           1200
+(      5H\par ,5H\par       /                                                   1250
+'       Calculated stiffnesses of flange, bolts, and gasket :',5H\par ,5H\par / 1250
+'       k{\sub F} = ',E12.5,' [N.mm/rad],',5H\par /                             1250
+'       k{\sub B} = ',E12.5,' [N/mm],',5H\par /                                 1250
+'       k{\sub G} = ',E12.5,' [N/mm],',5H\par ,5H\par /                         1250
+'       k{\sub FG}= ',E12.5,' [N/mm]. (Stiffness seen from bolts).\par \par '/  1
+'       Resulting ratio of bolt loads bolt-up/pressurized   :',5H\par ,5H\par / 1250
+'          R  = ',F15.3,'   [--]')                                              1250
+stop5                                                                           1250
+('\par \par --------------------- FINAL RESULTS ---------------------'/         1300
+      5H\par , 'INITIAL BOLT LOAD                [N]    W{\sub 0}\tab =',F10.0/ 1300
+      5H\par , 'INITIAL ',A6,' MOMENT     [N.mm/rad]    M{\sub 0}\tab =',F10.0/ 1300
+      5H\par , 'BOLT LOAD (under pressure)       [N]    W{\sub m}\tab =',F10.0/ 1300
+      5H\par , A6,   'MOMENT (under press.)   [N.mm]    M{\sub 1}\tab =',F10.0/ 1300
+      5H\par , 'GASKET LOAD (under pressure)     [N]    H{\sub G}\tab =',F10.0/ 1300
+      5H\par , 'm RESULTING FROM ASME  PROCEDURE        m\tab =',F10.2/         1300
+      5H\par , 'm OBTAINED WITH THIS PROCEDURE          m\tab =',F10.2/         1300
+      5H\par , 'INITIAL ',A6,' ROTATION     [deg]    ',/                        1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  =',    1300
+F15.3/5H\par , A6,   ' ROTATION (under pr.) [deg]    ',/                        1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1',1300
+'}  ='/F15.3,'\par ---------------------------------------------------------')  1300
+stop6                                                                           1300
+(     5H\par , '--- ASME VIII Div.1 Appendix 2 para.2-14 calculation -----'/    1301
+      5H\par , 'FACTOR                                  U\tab =',F15.5/         1301
+      5H\par , 'FACTOR                                  V\tab =',F15.5/         1301
+      5H\par , 'FACTOR   d = U/V*h{\sub 0}*g{\sub 0}{\super 2}\tab =',F15.1/    1302 
+      5H\par , 'FACTOR                                  T\tab =',F15.5/         1303
+      5H\par , 'FACTOR   L=(te+1)/T+t{\super 3}/d\tab =',F15.5)                 1301
+stop7                                                                           1301
+(     5H\par /,                                                                 1305
+      '\par --------------------- FINAL RESULTS ---------------------'/         1305
+      5H\par , 'INITIAL BOLT LOAD                [N]    W{\sub 0}\tab =',F10.0/ 1305
+      5H\par , 'INITIAL FLANGE MOMENT         [N.mm]    M{\sub 0}\tab =',F10.0/ 1305
+      5H\par , 'BOLT LOAD (under pressure)       [N]    W\tab =',F10.0/         1305
+      5H\par , 'FLANGE MOMENT (under pr.)     [N.mm]    M\tab =',F10.0/         1305
+      5H\par , 'GASKET LOAD (under press.)       [N]    H{\sub G}\tab =',F10.0/ 1305
+      5H\par , 'm RESULTING FROM ASME  PROCEDURE        m\tab =',F5.2/          1305
+      5H\par , 'm OBTAINED WITH THIS PROCEDURE          m\tab =',F5.2/          1305
+      5H\par , 'INITIAL ',A6,' ROTATION     [deg]    ',/                        1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  =',    1300
+F15.3/5H\par , A6,   ' ROTATION (under pr.) [deg]    ',/                        1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1',1300
+'}\tab ='/F10.5,                                                                1333
+      '\par ---------------------------------------------------------')         1300
+stop8                                                                           1305
+(     5H\par , 'RIGIDITY FACTOR (INTEGRAL TYPE)         K{\sub I}\tab =',F10.3/ 1310
+      5H\par , 'FLEXIBILITY FACTOR (initial)            J{\sub 0}\tab =',F10.3/ 1310
+      5H\par , 'FLEXIBILITY FACTOR (under pressure)     J\tab =',F10.3/)        1310
+stop9                                                                           1310
+(     5H\par , 'RIGIDITY FACTOR (LOOSE TYPE)            K{\sub L}\tab =',F15.2/ 1320
+      5H\par , 'FLEXIBILITY FACTOR (initial)            J{\sub 0}\tab =',F15.3/ 1320
+      5H\par , 'FLEXIBILITY FACTOR (under pressure)     J\tab =',F15.3/)        1320
+stop10                                                                          1310
+(     5H\par , '   Note: it will not be given credit to calculated ratios < 1') 1
+stop11                                                                          1250
+('\par \par --------------------- FINAL RESULTS ---------------------'/         1300
+      5H\par , 'INITIAL BOLT LOAD                [N]    W{\sub 0}\tab =',F10.0/ 1300
+      5H\par , 'INITIAL ',A6,' MOMENT     [N.mm/rad]    M{\sub 0}\tab =',F10.0/ 1300
+      5H\par , 'BOLT LOAD (under pressure)       [N]    W{\sub m}\tab =',F10.0/ 1300
+      5H\par , A6,   ' MOMENT (under press.)[N.mm/rad]  M{\sub 1}\tab =',F10.0/ 1300
+      5H\par , 'GASKET LOAD (under press.)       [N]    H{\sub G}\tab =',F10.0/ 1300
+      5H\par , 'm RESULTING FROM ASME  PROCEDURE        m\tab =',F5.2/          1300
+      5H\par , 'm OBTAINED WITH THIS PROCEDURE          m\tab =',F5.2/          1300
+      5H\par , 'INITIAL ',A6,' ROTATION        [deg]    ',/                     1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\tab =', 1300
+F10.3/5H\par , A6,   ' ROTATION (under pr.)    [deg]    ',/                     1300
+'{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1',1300
+'}1tab ='/F10.3,'\par ---------------------------------------------------------'1300 
+,'---\par \par \par \par',/                                                     1300 
+'Note.: The moment M{\sub 1} includes the equivalent effect of the pressure.',  1320
+'\par ')                                                                        1300
+stop                                                                            1320
+

@@ -1,0 +1,24 @@
+|==========================================================================|
+|STANDARDS OF EXPANSION JOINTS  MANUFACTURES ASSOCIATION - 8th Edition 1999|
+|ASME VIII div.1 Ed.1998 + A00 - Analisi secondo App.26                    |
+|==========================================================================|
+|   Tabella Riassuntiva Tensioni Dilatatore         (*) max(nuovo,corroso) |
+|=================|============================|===========================|
+| Carico (RCB-8.6)|Scambiatore nuovo, Sm Sb    |Scambiatore corroso, Sm Sb |
+|=================|============================|===========================|
+|1 Diff. Expansion|                            |                           |
+|2 Shell side pr. |                            |                           |
+|3 Tube side  pr. |                            |                           |
+|4 All pressures  |                            |                           |
+|5 Shell pr. + dif|                            |                           |
+|6 Tube pr.  + dif|                            |                           |
+|7 All            |                            |                           |
+|=================|========================================================|
+| (S =        psi)|   Onde      Collare   Rinf.Coll.  Anelli     Tiranti   |
+| 26-(1) Scmp  (*)|        < S        < S        <Sc        <Sr        <Sf |
+| 26-(2) Smmp  (*)|        < S |-------------------------------------------|
+| 26-(3) Smmp+Smbp|        <kS | Psc         >         psi                 |
+| 26-(4) Sn    (*)|            | psi         >         psi                 |
+|=================|============|===========================================|
+-1
+

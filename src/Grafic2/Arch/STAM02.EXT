@@ -1,0 +1,66 @@
+\par
+VERIFICATIONS in & _\par
+=============\par
+   FOR GASKET DATA SEE PRECEEDING SHEETS\par
+H{_\sub p}_\tab =_\tab #########.# [lb]_\tab (Recalling)_\tab Am1   =  ######.#### [in{_\super 2}]  W{_\sub m1}/S{_\sub bo}.k_\par
+H_\tab =_\tab #########.# [lb]_\tab (Recalling)_\tab Am2   =  ######.#### [in{_\super 2}]  Wm2/S{_\sub ba}.k_\par
+W{_\sub m1}_\tab =_\tab #########.# [lb]_\tab H+H{_\sub p}_\tab A{_\sub m}    =  ######.#### [in{_\super 2}]  max(A{_\sub m1};A{_\sub m2})_\par
+W{_\sub m2}_\tab =_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub b}    =  ######.#### [in{_\super 2}]  A{_\sub bl}.N{_\sub b}_\par
+H{_\sub p}_\tab =(tube-side)_\tab #########.# [lb]  (Recalling)_\tab Am1   =  ######.#### [in{_\super 2}]  W{_\sub m1}/S{_\sub bo}.k_\par
+H_\tab =( =    =  )_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub m2}   =  ######.#### [in{_\super 2}]  W{_\sub m2}/S{_\sub ba}.k_\par
+W{_\sub m1}_\tab =( =    =  )_\tab #########.# [lb]_\tab H+Hp_\tab A{_\sub m}    =  ######.#### [in{_\super 2}]  max(A{_\sub m1};A{_\sub m2})_\par
+W{_\sub m2}_\tab =( =    =  )_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub b}    =  ######.#### [in{_\super 2}]  A{_\sub bl}.N{_\sub b}_\par
+W{_\sub mt}_\tab =(tube-side)_\tab #########.# [lb]_\tab (Recalling)_\par
+H{_\sub p}_\tab =(shell-side)_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub m1}   =  ######.#### [in{_\super 2}]  W{_\sub m1}/S{_\sub bo}.k_\par
+H_\tab =( =    =   )_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub m2}   =  ######.#### [in{_\super 2}]  W{_\sub m2}/S{_\sub ba}.k_\par
+W{_\sub m1}_\tab =( =    =   )_\tab #########.# [lb]_\tab H+Hp_\tab A{_\sub m}    =  ######.#### [in{_\super 2}]  max(A{_\sub m1};A{_\sub m2})_\par
+W{_\sub m2}_\tab =(shell-side)_\tab #########.# [lb]_\tab (Recalling)_\tab A{_\sub b}    =  ######.#### [in{_\super 2}]  A{_\sub bl}.N{_\sub b}_\par
+W_\tab =_\tab #########.# [lb]_\tab A{_\sub b}.«S{_\sub ba}_\par
+W_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 189 _\_\f "Technic" _\_\s 9}{_\fldrslt_\f112_\fs18}}}(A{_\sub m}+A{_\sub b}).S{_\sub ba}_\par
+ (Max S.S./T.S.)\par
+h{_\sub G}_\tab =_\tab _\tab ######.#### [in]_\tab (C-G{_\sub ef})/2_\par
+R_\tab =_\tab _\tab ######.#### [in]_\tab (C-B{_\sub s}-T{_\sub s})/2_\par
+h{_\sub D}_\tab =_\tab _\tab ######.#### [in]_\tab R+0.5T{_\tab s}_\par
+h{_\sub T}_\tab =_\tab (T.S.)_\tab ######.#### [in]_\tab (R+T{_\sub s}+h{_\sub G})/2_\par
+h{_\sub T}_\tab =_\tab (S.S.)_\tab ######.#### [in]_\tab (R+T{_\sub s}+h{_\sub G})/2_\par
+h{_\sub M}_\tab =_\tab _\tab ######.#### [in]_\tab (C-B{_\sub s})/2_\par
+H{_\sub G}_\tab =_\tab (T.S.)_\tab #########.# [lb]_\tab W-0.785G{_\sub ef}{_\super 2}P_\par
+H{_\sub G}_\tab =_\tab (S.S.)_\tab #########.# [lb]_\tab W-0.785G{_\sub ef}{_\super 2}P{_\sub 1}_\par
+H{_\sub G}_\tab =_\tab (T.S.)_\tab #########.# [lb]_\tab W{_\sub m1}-0.785G{_\sub ef}{_\super 2}P_\par
+H{_\sub G}_\tab =_\tab (S.S.)_\tab #########.# [lb]_\tab W{_\sub m1}-0.785G{_\sub ef}{_\super 2}P{_\sub 1}_\par
+H{_\sub D}_\tab =_\tab _\tab #########.# [lb]_\tab 0.785B{_\sub s}{_\super 2}P{_\sub 1}_\par
+H{_\sub D}_\tab =_\tab _\tab #########.# [lb]_\tab 0.785{_\sub s}{_\super 2}P_\par
+H{_\sub T}_\tab =_\tab (T.S.)_\tab #########.# [lb]_\tab 0.785(G{_\sub ef}{_\super 2}-B{_\sub s}{_\super 2})P_\par
+H{_\sub T}_\tab =_\tab (S.S.)_\tab #########.# [lb]_\tab 0.785(G{_\sub ef}{_\super 2}-B{_\sub s}{_\super 2})P{_\sub 1}_\par
+H{_\sub M}_\tab =_\tab _\tab #########.# [lb]_\tab 0.785B{_\sub s}{_\super 2}P{_\sub d}_\par
+h{_\sub G}_\tab =_\tab (T.S.)_\tab ######.#### [in]_\tab (C-G{_\sub ef})/2_\par
+h{_\sub G}_\tab =_\tab (S.S.)_\tab ######.#### [in]_\tab (C-G{_\sub ef})/2_\par
+R_\tab =_\tab (T.S.)_\tab ######.#### [in]_\tab (C-B{_\sub s}-T{_\sub s})/2_\par
+R_\tab =_\tab (S.S.)_\tab ######.#### [in]_\tab (C-B{_\sub s}-T{_\sub s})/2_\par
+w_\tab =_\tab #####.## [mm]_\tab ######.#### [in]_\tab (A-G)/2 RCB-7.1342_\par
+M{_\sub 1}_\tab =_\tab _\tab #########.# [lb.in]_\tab (RCB-7.162)   (*)_\par
+M{_\sub 2}_\tab =_\tab _\tab #########.# [lb.in]_\tab (RCB-7.162)   (*)_\par
+M_\tab =_\tab _\tab #########.# [lb.in]_\tab (RCB-7.1342)  (*)_\par
+(*) scaled down by number of bolts with collars, when applicable\par
+M{_\sub 1}_\tab =_\tab _\tab #########.# [lb.in]_\tab H{_\sub G}.h{_\sub G}+H{_\sub D}.h{_\sub D}+H{_\sub T}.h{_\sub T}+H{_\sub M}.h{_\sub M}_\par
+M_\tab =_\tab _\tab #########.# [lb.in]  _\tab =M{_\sub 1} (M{_\sub 2} is zero)_\par
+M{_\sub 2}_\tab =_\tab _\tab #########.# [lb.in]_\tab h{_\sub G}W{_\sub m2}_\par
+M_\tab =_\tab _\tab #########.# [lb.in]_\tab Greater of M{_\sub 1},M{_\sub 2}_\par
+M{_\sub 1}_\tab =_\tab #########.# [N.m]_\tab #########.# [lb.in]_\tab W{_\sub m1}(C-G{_\sub &})/2_\par
+M{_\sub 2}_\tab =_\tab #########.# [N.m]_\tab #########.# [lb.in]_\tab W{_\sub m2}(C-G{_\sub &})/2_\par
+M_\tab =_\tab #########.# [N.m]_\tab #########.# [lb.in]_\tab Greatest(M{_\sub 1},M{_\sub 2})_\par
+T{_\sub ri}_\tab =_\tab #####.# [mm]_\tab ####.#### [in]_\tab Assumed extend. port. thk._\par
+M{_\super *}_\tab =_\tab #########.#  [N.m]_\tab ########.# [lb.in]_\tab
+P{_\sub b}_\tab =_\tab #######.#### [MPa]_\tab #######.# [psi]_\tab -6.2M{_\super *}/F{_\super 2}G{_\super 3} Equiv.press. RCB-7.132_\par
+P'_\tab =_\tab #######.#### [MPa]_\tab #######.# [psi]_\tab & + P{_\sub b}          Adopted pressure_\par
+   Note: P{\sub s} and P{\sub t} may differ from design pressures (see VERIFICATIONS)\par
+T{_\sub f}_\tab =_\tab #####.# [mm]_\tab #####.#### [in]_\tab FG/3{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}(P'/{{_\field{_\*_\fldinst SYMBOL 104 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}S{_\sub fo})    Bending thk._\par
+G=&{_\sub &}_\tab =_\tab #####.# [mm]_\tab #####.#### [in]_\tab Effective diameter_\par
+T{_\sub s}_\tab =_\tab #####.# [mm]_\tab #####.#### [in]_\tab 0.31D{_\sub l}*P/(1-d{_\sub o}/p)S{_\sub fo}  Shear thk._\par
+T{_\sub s}_\tab =_\tab #####.# [mm]_\tab #####.#### [in]_\tab 0.31D{_\sub l}*P/(1-d{_\sub o}/p)S{_\sub fo}  Shear thk._\par
+T{_\sub rc}_\tab =_\tab #####.# [mm]_\tab ####.#### [in]_\tab
+t{_\sub min}_\tab =_\tab #####.# [mm]_\tab ####.#### [in]_\tab Max(T{_\sub f},T{_\sub s})+C{_\sub s}+Max(C{_\sub t},G{_\sub r})_\par
+t{_\sub rmin}_\tab =_\tab #####.# [mm]_\tab ####.#### [in]_\tab T{_\sub ri}_\par
+      Note: M{\sub 1} and M{\sub 2} scaled down by the number of bolts with collars.\par
+M{_\sub 1}_\tab =_\tab _\tab #########.# [lb.in]_\tab h{_\sub G}W_\par
+

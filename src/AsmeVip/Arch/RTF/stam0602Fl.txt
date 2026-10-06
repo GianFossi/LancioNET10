@@ -1,0 +1,21 @@
+\par
+\   \         \                         \_\par               ==========================_\par        Program: \         \ Vers. \    \_\par
+              ==========================\par
+      \                                                              \_\par
+      ================================================================\par
+         Appendix AA - Rules for the design of tubesheets (A02)\par
+            AA-3 Design Rules for Fixed-Floating TubeSheets\par
+      ================================================================\par
+\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+      Fig.AA-3.1.2(a) TubeSheet integral with shell and channel\par
+      Fig.AA-3.1.2(b) TubeSheet integral with shell, gasketed with channel,\par                   with Tubesheet extended as a flange\par 
+      Fig.AA-3.1.2(c) TubeSheet integral with shell, gasketed with channel,\par                   with Tubesheet not extended as a flange\par 
+      Fig.AA-3.1.2(d) TubeSheet gasketed with shell and channel\par
+      Fig.AA-3.1.2(e) TubeSheet gasketed with shell, integral with channel,\par                   with Tubesheet extended as a flange\par 
+      Fig.AA-3.1.2(f) TubeSheet gasketed with shell, integral with channel,\par                   with Tubesheet not extended as a flange\par 
+      Fig.AA-3.1.3(a) Tubesheet Integral\par
+      Fig.AA-3.1.3(b) Tubesheet Gasketed, extended as a flange\par
+      Fig.AA-3.1.3(c) Tubesheet Gasketed, not extended as a flange\par
+      Fig.AA-3.1.3(d) Tubesheet internally sealed\par
+			     Stationary Tubesheet\par
+			     Floating Tubesheet\par

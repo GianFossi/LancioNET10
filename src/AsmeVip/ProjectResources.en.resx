@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str5001">
+		<value>$|      Usage factors (%)       |</value>
+	</data>
+	<data name="str5003">
+		<value>$| Tubesheet             |####.#|</value>
+	</data>
+	<data name="str5004">
+		<value>$| Tension in tubes      |####.#|</value>
+	</data>
+	<data name="str5005">
+		<value>$| Compression in tubes  |####.#|</value>
+	</data>
+	<data name="str5006">
+		<value>$| Tension in the shell  |####.#|</value>
+	</data>
+	<data name="str5007">
+		<value>$| Compr.on in the shell |####.#|</value>
+	</data>
+	<data name="str5008">
+		<value>$| Tube-TS joint         |####.#|</value>
+	</data>
+	<data name="str5009">
+		<value>$| Primary str. exp.joint|####.#|</value>
+	</data>
+	<data name="str5010">
+		<value>$| Fatigue expans. joint |####.#|</value>
+	</data>
+	<data name="str5011">
+		<value>$| Lateral instability   |####.#|</value>
+	</data>
+	<data name="str5012">
+		<value>$| Axial instability     |####.#|</value>
+	</data>
+	<data name="str5014">
+		<value>$| Tubesheets            |####.#|</value>
+	</data>
+	<data name="str5025">
+		<value>   to be translated:Non risulta inserito nessun elemento|che possa giocare il ruolo di &amp; |per la testa flottante.|Si desidera che venga inserito automaticamente?</value>
+	</data>
+	<data name="Split_Ring">
+		<value>split ring</value>
+	</data>
+	<data name="nota1_inserisci_elemento">
+		<value>|Nota. L'inserimento dei dati dello split ring|necessari al calcolo della piastra di coda|impone la creazione di una membratura 'Split Ring'.|Si raccomanda quindi di rispondere si.</value>
+	</data>
+	<data name="nota2_inserisci_elemento">
+		<value>|Nota. E' possibile rinunziare all'inserimento del nuovo|elemento in quanto tutti i dati necessari|al calcolo della piastra di coda|possono essere forniti nella finestra sottostante.</value>
+	</data>
+	<data name="Flangia">
+		<value>flange</value>
+	</data>
+</root>

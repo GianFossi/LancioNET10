@@ -1,0 +1,22 @@
+                      Tabella Riassuntiva Verifiche Tubi di Scambio          
+============================================================================
+| Dati di progetto |Verifica spessore minimo |Verifica a pressione esterna |
+|---------------------------------------------------------------------------   
+_|Diametro  ##.000  _|Spessore minimo garantito_|Snellezza A =  0.000000      _|
+_|           [in]   _|          ##0.### [in]   _|Fattore   B =   ######  psi  _|
+|                  |                         |                             |
+_|Spessore  #0.###  _|Tensione ammissibile     _|        Pressione critica    _|
+_|           [in]   _|       #####0.## [psi]   _|                             _|
+_|                  _|\                       \_|    Pa = ####0.##   psi      _|
+_|                  _|\                       \_|   Pa1 = ####0.##   psi      _|
+_|                  _|\                       \_|   Pa2 = ####0.##   psi      _|
+_|R.curvatura #.##  _|Spessore minimo calcolato_|-----------------------------_|
+_|           [in]   _|          ##0.### [in]   _|Verifica parte curvata       _|
+|                  |                         |-----------------------------|
+_|Pr.int. ####0.##  _|                         _|Spessore minimo calcolato    _|
+|           [psi]  |                         |    prima della curvatura:   |
+_|Pr.est. ####0.##  _|                         _|                             _|
+_|           [psi]  _|                         _|      ##.0##  in             _|
+----------------------------------------------------------------------------
+  
+

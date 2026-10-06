@@ -1,0 +1,207 @@
+T00
+\par A00
+\par \trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18
+CALCULATION RESULTS - Assumed thk: ####.# mm. & &_\cell }E00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30
+\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30 \cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt
+\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Load Condition\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 \cell }A00
+{_\b_\f11_\fs18 ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell ##_\cell }i00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30
+\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrb\brdrs\brdrw30 \cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30 \cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrb\brdrs\brdrw30 \cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 \cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell Corr.\cell N.C.\cell }A00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 J\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [--]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell}058057K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623
+\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30
+\cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 K\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [--]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell }048047K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 F}{\f11\fs18\sub q}{\f11\fs18 \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [--]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell }054053K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P}{\f11\fs18\sub d}{\f11\fs18   (RCB-7.161) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }060059K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P}{\f11\fs18\sub bt}{\f11\fs18 \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.# _\cell ####.#_\cell ####.#_\cell }062061K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P}{\f11\fs18\sub bs }{\f11\fs18  (RCB-7.162) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }064063K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P   (RCB-7.163) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }082081K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P   (RCB-7.164) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }108107K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 P   (RCB-7.165) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }134133K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 F   (RCB-7.132) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [--]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 #.##_\cell #.##_\cell #.##_\cell #.##_\cell #.##_\cell #.##_\cell #.##_\cell #.##_\cell }046045K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl
+{\f11\fs18 {\field{\*\fldinst SYMBOL 104 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+{\f11\fs18    (RCB-7.132) \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [--]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell #.####_\cell }271271K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Min.Req.Thk.(Ext)\cell }290290M00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [mm]\cell }290290M00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl 290290M00
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }290290K00
+\pard \widctlpar\intbl {\f11\fs18 \row }290290M00
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Eff.Thk.Bending  \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [mm]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }297296K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Eff.Thk.Shear    \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [mm]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }299298K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Min.Req.Thk.     \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [mm]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }162161K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd
+\trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30
+\cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Tension on shell\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }202201K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623
+\clbrdrb\brdrs\brdrw30 \cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30 \cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrb\brdrs\brdrw30
+\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\i\f11\fs18 Allowable\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\i\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\i_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }012012K00
+\pard \widctlpar\intbl {\i\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Compress. shell \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }204203K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\i\f11\fs18 Allowable\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\i\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\i_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ###### _\cell ######_\cell ######_\cell ######_\cell }260259K00
+\pard \widctlpar\intbl {\i\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30
+\cellx1914\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30 \cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt\brdrs\brdrw30 \cellx5344\clbrdrt
+\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrt
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Tension on tubes\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ######_\cell ######_\cell ###### _\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }238237K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30
+\cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrb\brdrs\brdrw30 \cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30
+\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrb\brdrs\brdrw30 \cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\i\f11\fs18 Allowable\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\i\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\i_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }013013K00
+\pard \widctlpar\intbl {\i\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\cellx7158\clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Compress. tubes \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }240239K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx6251\cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\i\f11\fs18 Allowable\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\i\f11\fs18 [psi]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\i_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }244244K00
+\pard \widctlpar\intbl {\i\f11\fs18 \row }
+\trowd
+\trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx1914\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx2623\clbrdrt\brdrs\brdrw30
+\cellx3530\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrt\brdrs\brdrw30 \cellx5344\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251\clbrdrt\brdrs\brdrw30 \cellx7158
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\f11\fs18 Joint load       \cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\f11\fs18 [lb]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }258257K00
+\pard \widctlpar\intbl {\f11\fs18 \row }
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1914\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx2623\clbrdrb\brdrs\brdrw30 \cellx3530\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx4437\clbrdrb\brdrs\brdrw30 \cellx5344\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6251
+\clbrdrb\brdrs\brdrw30 \cellx7158\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8065\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8972\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9879
+\pard \s15\qj\sb60\sa20\widctlpar\intbl {\i\f11\fs18 Allowable\cell }A00
+\pard \s15\qc\sb60\sa20\widctlpar\intbl {\i\f11\fs18 [lb]\cell }A00
+\pard \s15\qr\sb60\sa20\widctlpar\intbl
+{_\i_\f11_\fs18 ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell ######_\cell }285285K00
+\pard \widctlpar\intbl {\i\f11\fs18 \row }
+\pard \s15\qj\widctlpar {\f11\fs18 \par \par }
+\pard\plain \s28\widctlpar\tx4536 \f11\fs18\lang2057
+

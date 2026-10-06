@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>BreLock</AssemblyName>
+    <RootNamespace>BreLock</RootNamespace>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsBreLoc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmApert.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modTipi.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project/Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectResources.Designer.vb">
+      <DependentUpon>ProjectResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpTopics.Designer.vb">
+      <DependentUpon>HelpTopics.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmApert.resx">
+      <DependentUpon>frmApert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project/Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpTopics.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Arch/BRELOCK.rtf" />
+    <Content Include="Arch/Brelb.ini" />
+    <Content Include="Arch/DeformThrEnd.rtf" />
+    <Content Include="Dati/501106.BRE" />
+    <Content Include="Dati/504803.BRE" />
+    <Content Include="Dati/DS410.BRE" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole" />
+  </ItemGroup>
+</Project>

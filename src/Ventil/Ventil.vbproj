@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Ventil</AssemblyName>
+    <RootNamespace>Ventil</RootNamespace>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsTeor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsVentil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fancur.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmCurva.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmCurva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Htrifin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Monitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project/Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tipi.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typbuf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmCurva.resx">
+      <DependentUpon>frmCurva.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project/Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Arch/AerFib.mdb" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+    <Reference Include="AutoCAD">
+      <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AXDBLib" />
+    <Reference Include="dao">
+      <HintPath>../../legacy/DLL Extra/Interop.DAO.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+</Project>

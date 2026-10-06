@@ -1,0 +1,23 @@
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บSTANDARDS OF TUBULAR EXCHANGER MANUFACTURES ASSOCIATION -   7th Edition 1988 บ
+บINPUT Dati geometrici                                       1990  ERRATA     บ
+ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บ    Progetto/Verifica Piastra Tubiera per scambiatori teste fisse            บ
+ฬอออออออออออออออออออออัอออัออออออออออออัอออออออออออออออออออออัอออัออออออออออออน,0,0,1,0,0,0
+บ Descrizione         ณ   ณ   valore   ณ Descrizione         ณ   ณ   valore   บ,0,0,1,0,0,0
+ฬอออออออออออออออออออออุอออุออออออออออออุอออออออออออออออออออออุอออุออออออออออออน,0,0,1,0,0,0
+บN๘condiz. di carico  ณ --ณ      ##    ณ                     ณ   ณ            บ,261,0,34,0,2,0,,
+บDiam.int.  mantello  ณ mmณ   #####.## ณDiam.int.  cassa     ณ mmณ   #####.## บ,21,22,31,70,8,8,,
+บSpessore   mantello  ณ mmณ   #####.## ณSpessore   cassa     ณ mmณ   #####.## บ,23,24,31,70,8,8,,
+บCorrosione mant.  A  ณ mmณ      ##.## ณCorrosione cassa  A  ณ mmณ      ##.## บ,17,18,34,73,5,5,,
+บCorrosione mant.  B  ณ mmณ      ##.## ณCorrosione cassa  B  ณ mmณ      ##.## บ,264,265,34,73,5,5,,
+บDiam.eq.foratura     ณ mmณ   #####.## ณPasso tubi           ณ mmณ      ##.## บ,10,11,31,73,8,5,,
+บDiam.esterno tubi    ณ mmณ     ###.## ณSpessore tubi        ณ mmณ     ###.## บ,27,28,33,72,6,6,,
+บNumero di tubi       ณ --ณ   #####    ณLunghezza dei tubi   ณ mmณ   #####.## บ,29,30,31,70,5,8,,
+บDiam.int. dilatatore ณ mmณ   #####.## ณCorrosione dilatatoreณ mmณ   #####.## บ,26,19,31,70,8,8,,
+บLungh. libera tubi   ณ mmณ   #####.## ณDiam. esterno est.   ณ mmณ   #####.## บ,39,308,31,70,8,8,,
+บProfonditเ cava  A   ณ mmณ     ###.## ณProfonditเ cava  B   ณ mmณ     ###.## บ,20,263,33,72,6,6,,
+บSpessore nom. PT A   ณ mmณ     ###.## ณSpessore nom. PT B   ณ mmณ     ###.## บ,34,262,33,72,6,6,,
+บSpessore estens. A   ณ mmณ     ###.## ณSpessore estens. B   ณ mmณ     ###.## บ,288,289,33,72,6,6,,                   
+ศอออออออออออออออออออออฯอออฯออออออออออออฯอออออออออออออออออออออฯอออฯออออออออออออผ
+

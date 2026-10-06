@@ -1,0 +1,25 @@
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บSTANDARDS OF TUBULAR EXCHANGER MANUFACTURES ASSOCIATION -   8th Edition 1999 บ
+บINPUT Condizioni di carico                                                   บ
+ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บ    Progetto/Verifica Piastra Tubiera per scambiatori teste fisse.           บ
+ฬอออออออออออออออออออออัอออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+บCondizione di carico ณ #.\                                 \ N๘ eventi ##### บ
+ฬอออออออออออออออออออออุอออัออออออออออออัอออออออออออออออออออออัอออัออออออออออออน
+บPressione lato mantello ณpsiณ   #####.## ณPressione lato cassa ณpsiณ   #####.## บ,1,2,31,70,8,8
+บPressione differenziale ณpsiณ   #####.## ณTemperatura piastra Aณ ฐFณ    ####.## บ,-3,4,31,71,8,7
+บ                        ณ   ณ         ณTemperatura tubi     ณ ฐFณ    ####.## บ,0,0,32,71,7,7
+บ                     ณ   ณ            ณAmmissibile tubi     ณpsiณ  ######.## บ,0,0,30,69,9,9
+บAmmissibile piastra Aณpsiณ  ######.## ณ                     ณ   ณ            บ,35,274,30,0,0,0
+บMom.flangia serraggioณl.iณ########.## ณMom.flangia esercizioณl.iณ########.## บ,33,32,28,67,11,11
+บ                     ณ   ณ            ณMod.elestico tubi    ณpsiณ  ##.##^^^^ บ,0,0,30,69,9,9
+บ                     ณ   ณ            ณEsp.termica  tubi    ณ1/Fณ  ##.##^^^^ บ,0,0,30,69,9,9
+บMod.elastico piastr.Aณpsiณ  ##.##^^^^ ณSnervamento  tubi    ณpsiณ  ######.## บ,7,38,30,69,9,9
+บ                     ณ   ณ            ณ                     ณ   ณ            บ,0,0,1,0,0,0
+บ                     ณ   ณ            ณ                     ณ   ณ            บ,0,0,1,0,0,0
+บ                     ณ   ณ            ณ                     ณ   ณ            บ,0,0,1,0,0,0
+บTemperatura piastra Bณ ฐFณ    ###.##  ณSnervamento dilatat. ณpsiณ  ######.## บ,268,275,28,69,9,9
+บAmmissibile piastra Bณpsiณ  ######.## ณMod.elastico piastr.Bณpsiณ  ##.##^^^^ บ,266,267,30,69,9,9
+บMom.flangia serr. B  ณl.iณ########.## ณMom.flangia eserc. B ณl.iณ########.## บ,270,269,28,67,11,11
+ศอออออออออออออออออออออฯอออฯออออออออออออฯอออออออออออออออออออออฯอออฯออออออออออออผ
+

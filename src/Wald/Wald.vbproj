@@ -1,0 +1,121 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Wald</AssemblyName>
+    <RootNamespace>Wald</RootNamespace>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32=True</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsWald.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CondCurvaDataSet.Designer.vb">
+      <DependentUpon>CondCurvaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CondCurvaDataSet.vb">
+      <DependentUpon>CondCurvaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmApert.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDB.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProblem.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmProblem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProblem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project/Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project/Settings.Designer.vb">
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="typWald.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wldMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmApert.resX">
+      <DependentUpon>frmApert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDB.resx">
+      <DependentUpon>frmDB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProblem.resX">
+      <DependentUpon>frmProblem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project/Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Arch/CondCurva.mdb" />
+    <None Include="app.config" />
+    <Content Include="Arch/WALD.DOC" />
+    <Content Include="Dll/WaldLib.dll" />
+    <Content Include="Arch/ARCK09.DAT" />
+    <Content Include="Arch/ARCK02.DAT" />
+    <Content Include="Arch/ARCK03.DAT" />
+    <Content Include="Arch/ARCK04.DAT" />
+    <None Include="Arch/ARCK01.DAT" />
+    <Content Include="Arch/ARCK10.DAT" />
+    <None Include="CondCurvaDataSet.xsc">
+      <DependentUpon>CondCurvaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CondCurvaDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CondCurvaDataSet.xss">
+      <DependentUpon>CondCurvaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project/Settings.settings" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+  </ItemGroup>
+</Project>

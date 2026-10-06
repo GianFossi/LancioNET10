@@ -1,0 +1,55 @@
+1      º\pard\plain \s18\qj\widctlpar\tx4536 \f2\fs18\lang1040 
+S      º\tab FBM-HUDSON ITALIANA S.p.A.
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+1      º                          CALCULATION OF FLANGE SLOPE
+1      º                          ===========================
+1      º                            PROCESS EQUIPMENT DESIGN
+1      º                        LLOYD E.BROWNELL-EDWIN H. YOUNG
+1      º                       NEW YORK - JOHN WILEY & SONS, INC.
+1      º                       ==================================
+G      ºFLANGE IDENTIFICATION : &
+H      ºFLANGE MATERIAL       : &
+1      º                                  INPUT DATA
+1      º                                  ==========
+1      ºNOTES :1 - Input of geometric dimensions in [ mm ].
+A002   ºTem   = #########.## [øC]     #######.#### [øF]       Design temperature
+A003   ºA     = #########.## [mm]     #######.#### [in]       Outside diameter
+A102   ºB     = #########.## [mm]     #######.#### [in]       Inside diameter of flange
+A103   ºgo    = #########.## [mm]     #######.#### [in]       Thickness of hub at small end
+A104   ºg1    = #########.## [mm]     #######.#### [in]       Thickness of hub back of flange
+A009   ºt     = #########.## [mm]     #######.#### [in]       Flange thickness
+A010   ºh     = #########.## [mm]     #######.#### [in]       Hub length
+A090   ºE     = #########.## [N/mmı]  #########.## [psi]      Modulus of elasticity
+A091   ºMd    = #########.## [N.mm]   #########.## [lb.in]    Applied total moment
+E066   ºF     = #######.#### [--]                             see Flange calculation
+E067   ºV     = #######.#### [--]                             see Flange calculation
+1      ºæ     =      0.3     [--]                             Poisson's ratio
+A092   ºr1    = #########.## [mm]     #######.#### [in]       (B/2)
+A093   ºr2    = #########.## [mm]     #######.#### [in]       (A/2)
+1      º                                                          M
+A094   ºW1    = #########.## [N]      #########.## [lb]       ÄÄÄÄÄÄÄÄÄ
+1      º                                                       (r2-r1)
+1      º                              12ù(1-æı)ùh^4 º                              (g1-go)
+C095+01ºè     = #####.#####  [--]     ÄÄÄÄÄÄÄÄÄÄÄÄÄ ºà     = #####.#####  [--]     ÄÄÄÄÄÄÄ
+1      º                                 r1ıùgo     º                                go
+1      º                                            º                               r2
+C097+01ºá     = #####.#####  [--]     [(1+æ)/(1-æ)] ºk     = #####.#####  [--]     ÄÄÄÄ
+1      º                                                                            r1
+1      º          ÚÚ      ¿ Ú               ¿     ¿  Ú                                          ¿
+1      º          ³³ kı-1 ³ ³      Bùè      ³  W1 ³  ³           «+áù(kı/kı-1)ùln(k)            ³
+1      ºA1    = - ´³ÄÄÄÄÄÄ³ù³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³ùÄÄÄÄÃ ù³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³
+1      º          ³³áùkı+1³ ³(1+à)^3ùEùgoùhı³  4ã ³  ³     (t/go)       (1+æ)ù(kı-1)ù(t/go)^3   ³
+1      º          ÀÀ      Ù À               Ù     Ù  ³ 1 + ÄÄÄÄÄÄÄÄùF + ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄùV³
+1      º                                             À     û(B/go)         (áùkı+1)ùû(B/go)     Ù
+E099   ºA1    = #####.#####  [--]
+1      º           Ú                           ¿
+1      º           ³        Ú         ¿(1/4)   ³
+1      º           ³        ³ 3ù(1-æı)³        ³
+1      ºé     = A1ù´ (r1/h)ù³ÄÄÄÄÄÄÄÄÄ³ù(1-æ)^3Ã ùV
+1      º           ³        ³    è    ³        ³
+1      º           ³        À         Ù        ³
+1      º           À                           Ù
+C100+01ºé     = ####.#####  [rad]    ####.#####  [deg]
+0      º
+

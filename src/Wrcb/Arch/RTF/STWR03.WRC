@@ -1,0 +1,53 @@
+  (4)\par
+ (15)\par
+ (26)\par
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}              .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}x}               .
+\par
+Load Case  :&_\par
+  5. LOCAL STRESSES DUE TO EXT.LOADS - PRIMARY MEMBRANE\par
+  6. LOCAL STRESSES DUE TO EXT.LOADS - PRIMARY + SECONDARY\par
+  7. LOCAL STRESSES DUE TO EXT.PRESSURE - PRIMARY MEMBRANE\par
+  7. LOCAL STRESSES DUE TO INT.PRESSURE - PRIMARY MEMBRANE\par
+  8. LOCAL STRESSES DUE TO EXT.PRESSURE - PRIMARY + SECONDARY\par
+  8. LOCAL STRESSES DUE TO INT.PRESSURE - PRIMARY + SECONDARY\par
+  9. COMBINED STRESSES DUE TO EXT.LOADS + EXT.PRESSURE - PRIMARY MEMBRANE
+  9. COMBINED STRESSES DUE TO EXT.LOADS + INT.PRESSURE - PRIMARY MEMBRANE
+ 10. COMBINED STRESSES DUE TO EXT.LOADS + EXT.PRESSURE - PRIMARY + SECONDARY\par
+ 10. COMBINED STRESSES DUE TO EXT.LOADS + INT.PRESSURE - PRIMARY + SECONDARY\par
+ 11. FINAL COMBINED STRESS INTENSITIES - EXT.LOADS + EXT.PRESSURE\par
+ 11. FINAL COMBINED STRESS INTENSITIES - EXT.LOADS + INT.PRESSURE\par
+ 12. LOCAL COMPRESSIVE STRESSES DUE TO EXT. LOADS\par
+        (Primary)         Max.SI =
+   (Primary+Secondary)    Max.SI =
+   (Compressive Stress)   Max.   =
+\page
+(10+4)\par
+(21+15)\par
+  (26)\par
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r} radial-shell .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}x}               .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub r}              .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub z} radial-shell .
+ {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}x}               .
+  (5)\par
+ (16)\par
+  (6)\par
+ (17)\par
+ (11)\par
+ (22)\par
+ (Primary)     .
+(Prim.+Second.).
+(32/33/34)\par
+(27/28/29)\par
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub {\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}                .
+ {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub x}                .
+ (30)\par
+ (31)\par
+

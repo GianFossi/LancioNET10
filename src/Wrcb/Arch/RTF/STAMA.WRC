@@ -1,0 +1,112 @@
+\par
+EXPLANATORY NOTES FOR BS5500 AppG CALCULATION\par
+=============================================\par
+\par
+                             NOZZLE SUMMARY\par
+\par
+                   Calculated : YES/NO\par
+                   -------------------\par
+There may be various reasons for which a specific nozzle or attachement
+ needs not to be verified. In this case the option 'NO' appears.\par
+\par
+                   Method for the analysis\par
+                   -----------------------\par
+The procedures available include WRC107 for spheres and cylinders,
+ WRC297, and BS5500 app.G.\par
+\par
+                   Summation convention\par
+                   --------------------\par
+This option concerns the manner to combine the individual components of
+ the stress tensors connected with the pressure load and the external loads
+ in order to obtain the complete status of stress around the attachment.\par
+It is possible to use the WRC107 convention with the BS5500 analysis
+ method, and viceversa.\par
+\par
+                   Shear reduced to foot\par
+                   ---------------------\par
+When this option is selected, the external forces and moments given
+ in input are considered as applied to the nozzle end. Hence they are
+ transferred autoamtically to the nozzle-to-shell junction by considering
+ the nozzle height as the lever arm.\par
+\par
+                   External loads\par
+                   --------------\par
+The used specification for standard nozzle loads, if any, is quoted.\par
+\par
+                   Stress limits\par
+                   -------------\par
+If ASME is specified the local stresses are limited to 1.5 S{\sub m} (Div.2)
+ and the secondary stresses are limited to 3 S{\sub m}.
+ If BS5500 is specified, the corresponding limits (1.5f, 1.2f, 2.25f 2 f) are applied.\par
+In all cases the limit on membrane compressive stress (0.9 S{\sub y}) dictaded by BS5500, App.G is apllied.\par
+\par
+                             1. DESIGN CONDITIONS\par
+\par
+                   Shell Material Design Stress\par
+                   ----------------------------\par
+If BS550 is specified above, the following values are both printed:\par
+S{\sub m} :      Allowable according to ASME-VIII div.2\par
+f  :      Allowable calculated according to BS5500 rules\par
+These two values are used to establish the allowables for membrane
+ and membrane plus bending stresses in the shell at the nozzle and at
+ the pad edge (if any) in accordance to the code and supplementary
+ requirements specified in the contract.\par
+The obtained allowables are printed, for each nozzle and for each
+ load condition, after item 12.\par
+If ASME VIII is specified above, only S{\sub m} is displayed and utilised for the calculation of the stress limits.\par
+\par
+                             2. GEOMETRY\par
+\par \page
+                   Geometry of the Shell\par
+                   ---------------------\par
+Cones are treated as cylinders having a length equal to the generatrix
+ of the cone, and a diameter equal to the diameter on which the attachment
+ is installed, divided by the cosinus of the half apex angle.\par
+Conoids are treated as cones obtained by revolving the generatrix
+ of the conoid on which the attachment is installed.\par
+Ellipsoidal and torispherical heads are treated as hemispherical
+ heads having the same inside radius.\par
+\par
+                             3. GEOMETRIC PARAMETERS\par
+\par
+In general, the code symbols are used.\par
+For circumferential and longitudinal moments, the symbols M.2, N.2
+ are referred to the procedure G.2.3.3. When they are zero, the conditions
+ for negligeability of G.2.2.2 are met.\par
+For longitudinal moments the calculation of the stress indices is performed
+ twice, as prescribed by G.2.3.3(a), but only the highest absolute
+ resulting value is displayed, followed by a (-) or a (+), meaning if the
+ maximum value occurs on the side of the attachment toward the centerline
+ of the cylinder, or toward the cylinder end, respectively.\par
+\par
+                   INDIVIDUAL AND COMBINED STRESS COMPONENTS\par
+A form similar to the App.G's suggested working form is used.\par
+The numbers between parentheses on the right side refer to the row numbers
+ of the App.G's working form.\par
+For cylindrical shells, the local membrane stresses due to pressure
+ (item 7) are calculated according to G.2.3.5.2(b). The local membrane
+ plus bending stresses (item 8) are calculated according to G.2.3.5.2(a)
+ at the nozzle, and according to (b) at the padge edge (if any).\par
+\par
+                             NOZZLE STRESSES SUMMARY\par
+                   Factor k\par
+                   --------\par
+The factor multiplying all external load components, for which the stress limits
+ are satisfied, is given. A factor less than one indicates that excessive external
+ loads were specified.
+\par
+                   Nearest nozzles\par
+                   ---------------\par
+When this line appears, the program has been fed with a complete geometrical
+ description of the equipment, which allows to evaluate the relative
+ position of each couple of attachments installed on the same structural
+ part. The nearest nozzle in the quadrant Qn is identified, if any.\par
+ The definition of the quadrants is similar (rotate the quadrants 45{\super 0} round
+ the nozzle axis) to Fig. G.2(21b). Quadrants Q1 and Q3 are in the
+ longitudinal direction of the cylinder.\par
+The item number of the nearest nozzle is followed by two keywords:\par
+' NO  NO ' means that the influence of both radial load and moment is negligeable,
+ according to the provisions of G.2.2.2. If it is not so, the
+ corresponding stress components are added to those proper of the nozzle
+ under consideration.\par
+

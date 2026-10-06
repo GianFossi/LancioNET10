@@ -1,0 +1,77 @@
+\par .
+#########.##
+##########.##
+ NOZZLE PIPING TRANSITION\par
+   Nozzle Mat.:
+   Nozzle Mark:
+   Nozzle Size:
+   Load Case  :
+  1. DESIGN CONDITIONS\par
+    Design Pressure     .
+p{\sub o}           =
+    Design Temperature  .
+{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}            =
+    Nozz.Design Stress  .
+S{\sub n}           =
+    Stress Int.Factor   .
+k            =
+    External Loads
+ ** Dead ** ** Therm. **
+    Radial Thrust       .
+P            =
+    Circum.Moment       .
+M{\sub c}           =
+    Longit.Moment       .
+M{\sub L}           =
+    Torque Moment       .
+M{\sub T}           =
+    Circum.Shear        .
+V{\sub c}           =
+    Longit.Shear        .
+V{\sub L}           =
+    Tot.Axial Force     .
+    Tot.Shear Force     .
+V={{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}[V{\sub c}{\super 2}+V{\sub L}{\super 2}] =
+    Tot.Bending Moment  .
+M={{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}[M{\sub c}{\super 2}+M{\sub L}{\super 2}] =
+    Tot.Torque  Moment  .
+M{\sub T}           =
+  2. GEOMETRY
+    Nominal Inside Nozzle Radius                .
+r{\sub i} =
+    Nominal Nozzle Thk. (within reinf.limits)   .
+t  =
+    Nominal Nozzle Thk. (beyond reinf.limits)   .
+t{\sub 1} =
+    Nozzle height                               .
+h  =
+    Corrosion Allowance (shell)                 .
+c  =
+  3. STRESS COMPONENTS\par
+                                                           ** SECTIONS **\par
+                                                            A-A     B-B\par
+    Actual Nozzle Thk. e  =                    \     \ ######.## #####.##_\par
+    Mean Nozzle Diam.  d{_\sub m} =                    \     \ ######.## #####.##_\par
+    {\b Pressure Loads}\par
+    Circum. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} =   p{_\sub o}*r{_\sub i}/e          \     \ ######.## #####.##_\par
+    Longit. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub z} =   p{_\sub o}*r{_\sub i}{_\super 2}/(d{_\sub m}*e)    \     \ ######.## #####.##_\par
+    Radial  Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub R} = -0.5p{_\sub o}            \     \ ######.## #####.##_\par
+    Circum. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} =   p{_\sub o}*r{_\sub o}/e          \     \ ######.## #####.##_\par
+    Longit. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub z}=   p{_\sub o}*r{_\sub o}{_\super 2}/(d{_\sub m}*e)    \     \ ######.## #####.##_\par
+    Radial  Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub R}= + 0.5p{_\sub o}            \     \ ######.## #####.##_\par
+    {\b Dead Loads}\par
+    Longit. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub z} =   P/({{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}}*d{_\sub m}*e)       \     \ ######.## #####.##_\par
+    Longit. Stress     {{_\field{_\*_\fldinst SYMBOL 115 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub z} = {{_\field{_\*_\fldinst SYMBOL 177 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}} 4*M/({{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}}*d{_\sub m}{_\super 2}*e)    \     \ ######.## #####.##_\par
+    Shear   Stress     {{_\field{_\*_\fldinst SYMBOL 116 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}  =   2*M{_\sub T}/({{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}}*d{_\sub m}{_\super 2}*e)   \     \ ######.## #####.##_\par
+    Shear   Stress     {{_\field{_\*_\fldinst SYMBOL 116 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}  =   1.885*V/({{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}}*d{_\sub m}*e) \     \ ######.## #####.##_\par
+    {\b Thermal Loads}\par
+  4. STRESS INTENSITIES\par
+    General Primary Membrane      P{_\sub m}    \     \ ######.## #####.##_\par
+    Primary Membrane+Bending   P{_\sub l}+P{_\sub b}    \     \ ######.## #####.##_\par
+    Primary+Secondary       P{_\sub l}+P{_\sub b}+Q     \     \ ######.## #####.##_\par
+            Max. P{_\sub m}      = ######.## < 1.0*k*S{_\sub n} = ######.## \    \_\par
+            Max.P{_\sub} l+P{_\sub b}    = ######.## < 1.5*k*S{_\sub n} = ######.## \    \_\par
+            Max.P{_\sub} l+P{_\sub b}+Q  = ######.## < 3.0*k*S{_\sub n} = ######.## \    \_\par
+    Corrosion Allowance (nozzle)                .
+c{\sub N} =
+

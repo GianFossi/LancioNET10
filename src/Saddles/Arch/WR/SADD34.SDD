@@ -1,0 +1,23 @@
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Overall membrane stresses in the cylinder}
+
+Bending moment maximum algebrical value :
+    M{\sub 3}=Q.L{\sub D}/2(x-x{\super 2}/L{\sub D})+M{\sub 1}*(1-x/L{\sub D})+M{\sub 2}x/L{\sub D}\tab N.mm\tab |0###.00E+00|
+                                                      at x=\tab mm\tab |######.00|
+Longitudinal stresses :                                    
+- top   \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub ax;1}=P*R{\sub M}/(2T)-k.M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+- bottom\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub ax;2}=P*R{\sub M}/(2T)+k.M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+Hoop stress: \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub tg;p}=P*R{\sub M}/T\tab N/mm{\super 2}\tab |######.00|
+Von Mises equiv. stress:\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub v}\tab N/mm{\super 2}\tab |######.00|
+Allowable stresses : f or f{\sub 1}\tab N/mm{\super 2}\tab |######.00|
+------------------ WARNING ------------------------------------
+Stresses allowable limit exceeded                  
+Compression stresses allowable limit exceeded              
+Bending moment minimum algebrical value :
+    M{\sub 3}=Q.L{\sub D}/2(x-x{\super 2}/L{\sub D})+M{\sub 1}*(1-x/L{\sub D})+M{\sub 2}x/L{\sub D}\tab N.mm\tab |0###.00E+00|
+                                                      at x=\tab mm\tab |######.00|
+Longitudinal stresses :                                    
+- top   \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub ax;1}=P*R{\sub M}/(2T)-k.M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+- bottom\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub ax;2}=P*R{\sub M}/(2T)+k.M{\sub 3}/W\tab N/mm{\super 2}\tab |######.00|
+Hoop stress: \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub tg;p}=P*R{\sub M}/T\tab N/mm{\super 2}\tab |######.00|
+Von Mises equiv. stress:\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub v}\tab N/mm{\super 2}\tab |######.00|
+

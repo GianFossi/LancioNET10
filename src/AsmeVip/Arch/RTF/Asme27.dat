@@ -1,0 +1,149 @@
+\par .
+_\par & &.
+\par ------------.
+_\par {_\v {_\*_\bkmkstart &}&{_\*_\bkmkend &}}Nozzle Identification Mark    : &.
+_\par Nozzle Kind                   : &.
+_\par Disposition     &.
+_\par                 &.
+ by ###.## degrees.
+. Offset: #####.## mm.
+_\par Shell attachment configuration: &.
+_\par Construction/Weld details per Fig./Sketch &.
+     Min Code throat for weld 41   .
+_\par &.
+     Adopted leg     for weld 41   .
+     Min Code throat for weld 42   .
+     Adopted leg     for weld 42   .
+     Min Code throat for weld 43   .
+     Adopted leg     for weld 43   .
+     Min Code depth  for w.sh/nozz..
+     Adopted depth   for w.sh/nozz..
+     Min Code depth  for w.pad/nozz.
+     Adopted depth   for w.pad/nozz.
+_\par Nozzle Material Specification : &.
+_\par Low Temperature Operation. Rules: \     \, Curve &.
+_\par Low Temperature Operation. Rules: &.
+_\par xxxxxxxxxxxxxxxxxxxxxxx  \     \.
+_\par Flange Material Specification : &.
+_\par Material Group per ANSI B16.5 : &.
+\par Note: Flange to be verified per ASME VIII-div.1 App.2.
+_\par _\pard_\plain _\s18_\qj_\widctlpar_\tx4536 _\f2_\fs18_\lang1040 Nozzle Rating                           _\tab =                  ######.##  [lb].
+_\par Nominal Nozzle Size                  d{_\sub n_\tab }=                  ######.##  [in].
+_\par Inside Nominal Diameter              d _\tab =######.##  [mm]   ######.##  [in].
+_\par Outside Nominal Diameter             d{_\sub o}_\tab =######.##  [mm]   ######.##  [in].
+_\par Design Stress Value                  S{_\sub n_\tab }=######.## [MPa]   ######.## [psi].
+_\par Joint Efficiency                     E{_\sub n_\tab }=######.##  [--]   ######.##  [--].
+_\par Cladding or Weld Overlay             o{_\sub n_\tab }=######.##  [mm]   ######.##  [in].
+_\par Corrosion allowance                  c{_\sub n_\tab }=######.##  [mm]   ######.##  [in].
+_\par Ins.Radius on Base Mat.              R{_\sub n_\tab }=######.##  [mm]   ######.##  [in].
+_\par Corroded Inside Radius               R{_\sub n_\tab }=######.##  [mm]   ######.##  [in].
+_\par Outside Radius                       R{_\sub on}_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk.  t{_\sub on}=PR{_\sub n}/(S{_\sub n}E{_\sub n}-0.6P)_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk. t{_\sub on}=PR{_\sub on}/(S{_\sub n}E{_\sub n}+0.4P)_\tab =######.##  [mm]   ######.##  [in].
+_\par Z  =(S{_\sub n}E{_\sub n}+P)/(S{_\sub n}E{_\sub n}-P)                    _\tab =######.##  [--]   ######.##  [--].
+_\par Nozzle required thk.         t{_\sub on}=R{_\sub n}({{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z-1)_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk.     t{_\sub on}=R{_\sub on}({{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z-1)/ {{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk.     t{_\sub rn}=PR{_\sub n}/(S-0.6P)_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk.   t{_\sub rn}=PR{_\sub on}/(S{_\sub n}+0.4P)_\tab =######.##  [mm]   ######.##  [in].
+_\par Z  =(S{_\sub n}+P)/(S{_\sub n}-P)                        _\tab =######.##  [--]   ######.##  [--].
+_\par Nozzle required thk.         t{_\sub rn}=R{_\sub n}({{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z-1)_\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle required thk.     t{_\sub rn}=R{_\sub on}({{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z-1)/ {{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}Z_\tab =######.##  [mm]   ######.##  [in].
+_\par Reference Thickness per UG-45(b)(4) _\tab =######.##  [mm]   ######.##  [in].
+_\par Minimum Required Thickness per UG-45(a)_\tab =######.##  [mm]   ######.##  [in].
+_\par Adopted Nominal Thickness            t{_\sub n}_\tab =######.##  [mm]   ######.##  [in].
+\par Single opening not requiring reinforcement per UG-36(c)(3).
+_\par Adopted Thk in the Self-Reinf.Area   t{_\sub SR}_\tab =######.##  [mm]   ######.##  [in].
+_\par Adopted Height of S.R.A. [(UG-40(e)] L_\tab =######.##  [mm]   ######.##  [in].
+_\par Height of the S.R.A [Fig.UG-40(e-1)] t{_\sub e}_\tab =######.##  [mm]   ######.##  [in].
+_\par Height of the S.R.A [Fig.UG-40(e-2)] L{_\sub n}_\tab =######.##  [mm]   ######.##  [in].
+_\par Shell req. thk. (nozzle area,E=1)    t{_\sub r}_\tab =######.##  [mm]   ######.##  [in].
+_\par Shell Length Avail. for Reinf.       L{_\sub s}'_\tab =######.##  [mm]   ######.##  [in].
+_\par Limit of the Reinf. along the shell  L{_\sub s} _\tab =######.##  [mm]   ######.##  [in].
+_\par Nozzle Length Avail.for Reinf.       L{_\sub n}'_\tab =######.##  [mm]   ######.##  [in].
+_\par Limit of the Reinf. along the nozzle L{_\sub n}_\tab =######.##  [mm]   ######.##  [in].
+_\par Reinforcing Pad Outside Diameter     D{_\sub p}_\tab =######.##  [mm]   ######.##  [in].
+_\par Reinforcing Pad Thickness            t{_\sub e}_\tab =######.##  [mm]   ######.##  [in].
+_\par Reinforcing Area Outside Diameter    D{_\sub p}_\tab =######.##  [mm]   ######.##  [in].
+\par Appendix 1-7(a) (Large Openings) Calculation.
+_\par Required Area for internal pressure:_\par A  =d't{_\sub &}F_+2(t{_\sub &}-c{_\sub n})t{_\sub &}F(1-f{_\sub r1})     _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 1} =2(t_+t{_\sub &})(E{_\sub 1}t-Ft{_\sub &})-2t{_\sub &}(E{_\sub 1}t-Ft{_\sub &})(1-f{_\sub r1}) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 1} =2L{_\sub s}(E{_\sub 1}t-Ft{_\sub &})-2t{_\sub &}(&E{_\sub 1}t-Ft{_\sub &})(1-f{_\sub r1}) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =2(t{_\sub &}-c{_\sub n}-t{_\sub rn})(2.5t{_\sub &}_+t{_\sub e})f{_\sub r2}  _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =2L{_\sub n}(t{_\sub &}-c{_\sub &}-t{_\sub rn})f{_\sub r2} _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 41}=leg{_\sub 41}_\'b2f{_\sub r3}   _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 41}=leg{_\sub 41}_\'b2f{_\sub r2}   _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 42}=leg{_\sub 42}_\'b2f{_\sub r4}   _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 43}=leg{_\sub 43}_\'b2f{_\sub r2}   _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 5} =2(L{_\sub s}-t{_\sub n})&{_\sub &}f{_\sub r4}  _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 5} =(D{_\sub p}-d'-2t{_\sub n})&{_\sub &}f{_\sub r4}&_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 1}+A{_\sub 2}+A{_\sub 3}+A{_\sub 41}+A{_\sub 42}+A{_\sub 43}+A{_\sub 5} _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+\par          The opening is adequately compensated..
+\par          The opening is not adequately compensated..
+\par Appendix 1-7(b) (Large Openings) Calculation.
+_\par t{_\sub  }=####.# t{_\sub n}=####.# R{_\sub n}=####.# R{_\sub nm}=####.# R=####.# R{_\sub m}=####.#           [mm].
+_\par t{_\sub e}=####.# L{_\sub e}=####.# A{_\sub s}=##.###^^^^ [mm_\'b2].
+_\par Available length along the shell :  _\tab ####.# [mm]  .
+_\par Available length along the nozzle: _\tab ####.# [mm]  .
+_\par Membrane stress                      S{_\sub m}  _\tab =######.## [MPa]   ######.## [psi].
+_\par Membrane + bending stress        S{_\sub m} + S{_\sub b} _\tab =######.## [MPa]   ######.## [psi].
+_\par Allowable stress for membrane        S   _\tab =######.## [MPa]   ######.## [psi].
+_\par Allowable stress for memb.+bending  1.5S_\tab =######.## [MPa]   ######.## [psi].
+\par          Acceptable stresses. .
+\par          Stresses not acceptable. .
+_\par Maximum allowable pressure per ANSI B16.5=######.## [MPa]   ######.## [psi].
+_\par Correction factor F (UG-37(a))_\tab =######.## [ --]   ######.## [ --].
+_\par Required Area for internal pressure:_\par A  =2/3(d't{_\sub &}F+2(t{_\sub &}-c{_\sub n})t{_\sub &}F(1-f{_\sub r1}))_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =5(t{_\sub &}-c{_\sub n}-t{_\sub rn})t{_\sub &}f{_\sub r2}  _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Reinforcement Design Stress Value    S{_\sub p}_\tab =######.## [MPa]   ######.## [psi].
+_\par A{_\sub 1} =2L{_\sub s}(E{_\sub 1}t-Ft{_\sub &})-2t{_\sub &}(&E{_\sub 1}t-Ft{_\sub &})(1-f{_\sub r1}) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par                 Distance to large end: #####.## mm.
+_\par Shell ins.Radius (nozzle area,corr.) R{_\sub c}_\tab =######.##  [mm]   ######.##  [in].
+_\par Shell slope      (nozzle area)       {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}_\tab =######.##  [{_\super 0}].
+_\par Factor f{_\sub r#}_\tab =######.## [ --]   ######.## [ --].
+_\par Reinforcing Pad Outside Chord        D{_\sub p}_\tab =######.##  [mm]   ######.##  [in].
+_\par Inside Corroded Chord                d'_\tab =######.##  [mm]   ######.##  [in].
+\par Nozzle Rating    \tab = (not applicable)      .
+\par Nominal Nozzle Size                  d{\sub n\tab }= (not applicable)                .
+_\par Limit of the Reinf. perp.to v.wall   L{_\sub n}_\tab =######.##  [mm]   ######.##  [in].
+_\par X-section of bolt holes within Reinf.A{_\sub b}_\tab =######.##  [mm{_\super 2}]   ######.##  [in{_\super 2}].
+_\par A{_\sub &} =(complex shape, see dwg)_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 3} =2(t{_\sub n}-2c{_\sub n})f{_\sub r2}(h-c) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Inward protusion                     h_\tab =######.##  [mm]   ######.##  [in].
+_\par Required Area for external pressure:_\par A  =1/2(d's{_\sub r}F_+2(t{_\sub &}-c{_\sub n})s{_\sub r}F(1-f{_\sub r1}))_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Required Area for external pressure:_\par A  =1/3(d's{_\sub r}F_+2(t{_\sub &}-c{_\sub n})s{_\sub r}F(1-f{_\sub r1}))_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Integral reinforcement outside dia.  D{_\sub p}_\tab =######.##  [mm]   ######.##  [in].
+_\par Integral reinforcement thickness     t{_\sub e}_\tab =######.##  [mm]   ######.##  [in].
+_\par Corr. shell thk in the nozzle area   t_\tab =######.##  [mm]   ######.##  [in].
+_\par Required Area for external pressure:_\par A  =1/2(d'tF_+2(t{_\sub &}-c{_\sub n})tF(1-f{_\sub r1}))_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Required Area for external pressure:_\par A  =1/3(d'tF_+2(t{_\sub &}-c{_\sub n})tF(1-f{_\sub r1}))_\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+\par Note: As a requirement additional to the Code, the reinforcement area is calculated.
+\par       on the basis of 100% of the corroded thickness of the vessel.
+\par {\b Membrane stresses per Fig. 1-7-1}.
+\par {\b Bending stresses per Fig. 1-7-2}.
+_\par 16t{_\sub n}+t{_\sub e}=####.# ;16t=####.# ;a=####.# [mm] ;A{_\sub b}=##.###^^^^ [mm_\'b2]  ;I=##.###^^^^ [mm{_\super 4}].
+\par Note: The flange is not included in the section which resists bending moment.
+\par Note: The flange is partially included in the section which resists bending moment.
+\par Note: The flange is included in the section which resists bending moment.
+_\par Taper transition angle                 _\tab =######.##  [ \'b0].
+\par Note: Exempted per 1-7(b)(1)..
+\par Note: Case of large opening approaching full vessel diameter per 1-7(b)(1)(c).\par       App. 1-7(b) is not applicable. Report to U-2(g)..
+_\par Shell req. thk. (UG-37(a)(&))        t{_\sub r}_\tab =######.##  [mm]   ######.##  [in].
+_\par Factor F (UG-37) in circumf.direction    _\tab =######.##  [--].
+_\par Angle a{_\sub s} in circumferential direction    _\tab =######.##  [deg].
+_\par Inside Corroded Chord in circ.direction  _\tab =######.##  [mm]   ######.##  [in].
+\par    Note: Longitudinal stresses are dimensioning.
+\par    Note: Circumferential stresses are dimensioning.
+_\par Nozzle Identification Mark    : &.
+\par Nozzle not requiring calculation of reinforcement.
+_\par Shell req. thk. against external pr. s{_\sub r}_\tab =######.##  [mm]   ######.##  [in].
+_\par  UG-28    Thickness of shells and tubes under external pressure_\par Required thk t{_\sub er} against external pressure calculated by iteration (free length: see L{_\sub n}')_\par                                      t{_\sub er}_\tab =######.##  [mm]   ######.##  [in].
+_\par A{_\sub 1} =2(t_+t{_\sub &})(E{_\sub 1}t-Fs{_\sub &})-2t{_\sub &}(E{_\sub 1}t-Fs{_\sub &})(1-f{_\sub r1}) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 1} =2L{_\sub s}(E{_\sub 1}t-Fs{_\sub &})-2t{_\sub &}(&E{_\sub 1}t-Fs{_\sub &})(1-f{_\sub r1}) _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =2L{_\sub n}(t{_\sub &}-c{_\sub &}-t{_\sub er})f{_\sub r2} _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =2(t{_\sub &}-c{_\sub n}-t{_\sub er})(2.5t{_\sub &}_+t{_\sub e})f{_\sub r2}  _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par A{_\sub 2} =5(t{_\sub &}-c{_\sub n}-t{_\sub er})t{_\sub &}f{_\sub r2}  _\tab =######.## [mm_\'b2]   ######.## [in_\'b2].
+_\par Reference Thickness per UG-45(b)(1,2,3) _\tab =######.##  [mm]   ######.##  [in].
+_\par Min Acceptable Thickness per UG-45(b) _\tab =######.##  [mm]   ######.##  [in].
+_\par Joint Efficiency E{_\sub 1} (Nozzle may pass through Cat_.A joint)         #.##  [--].
+\par For reinforcement calculations please refer to the following sheets.
+_\par Assumed underthickness tolerance of the nozzle neck  =                  ######.##   [%].

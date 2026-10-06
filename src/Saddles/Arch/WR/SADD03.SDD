@@ -1,0 +1,22 @@
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Allowable compressive stresses on shell}
+- away from saddles\tab P{\sub YSS} = 2(S f T)/R{\sub M}\tab N/mm{\super 2}\tab |######.00|
+                   \tab P{\sub E} = 1.21(E T{\super 2})/R{\sub M}{\super 2}\tab N/mm{\super 2}\tab |######.00|
+                   \tab K =P{\sub E} /P{\sub YSS}\tab \tab |#####.000|
+                   \tab {{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\tab \tab |######.00|
+                   \tab f{\sub C} ={{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}.S.f\tab N/mm{\super 2}\tab |######.00|
+- on left saddle   \tab P{\sub YSS}{\sub 1} = 2(S f{\sub 1} T)/R{\sub M1}\tab N/mm{\super 2}\tab |######.00|
+                   \tab P{\sub E1} = 1.21(E{\sub 1} T{\sub 1}{\super 2})/R{\sub M1}{\super 2}\tab N/mm{\super 2}\tab |######.00|
+                   \tab K =P{\sub E1}/P{\sub YSS1}\tab \tab |#####.000|
+                   \tab {{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}\tab \tab |######.00|
+                   \tab f{\sub C1}={{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 1}.S.f{\sub 1}\tab N/mm{\super 2}\tab |######.00|
+- on right saddle  \tab P{\sub YSS}{\sub 2} = 2(S f{\sub 2} T)/R{\sub M2}\tab N/mm{\super 2}\tab |######.00|
+                   \tab P{\sub E2} = 1.21(E{\sub 2} T{\sub 2}{\super 2})/R{\sub M2}{\super 2}\tab N/mm{\super 2}\tab |######.00|
+                   \tab K =P{\sub E2}/P{\sub YSS2}\tab \tab |#####.000|
+                   \tab {{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}\tab \tab |######.00|
+                   \tab f{\sub C2}={{\field{\*\fldinst SYMBOL 100 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}.S.f{\sub 2}\tab N/mm{\super 2}\tab |######.00|
+Factor S (carbon steel) \tab \tab \tab |######.00|
+Factor S (austenitic stainless steel)\tab \tab \tab |######.00|
+\pard \s15\qj\widctlpar\tx2835\tx5103\tqr\tx7087\tql\tx7438\tqr\tx9423 \tab \tab \tab no pressure \tab \tab under pressure \par
+\pard \s15\qj\widctlpar\tx2835\tx7438\tqr\tx9423
+
+

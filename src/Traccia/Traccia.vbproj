@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>traccia</AssemblyName>
+    <RootNamespace>traccia</RootNamespace>
+    <OutputType>Library</OutputType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Form3D.vb" />
+    <EmbeddedResource Include="Form3D.resX" />
+    <Compile Include="frmDatiOut.vb" />
+    <EmbeddedResource Include="frmDatiOut.resX" />
+    <Compile Include="frmGridn.vb" />
+    <EmbeddedResource Include="frmGridn.resX" />
+    <Compile Include="frmGruppi.vb" />
+    <EmbeddedResource Include="frmGruppi.resX" />
+    <Compile Include="frmTracciat.vb" />
+    <EmbeddedResource Include="frmTracciat.resx" />
+    <EmbeddedResource Include="HelpTopics.resx" />
+    <Compile Include="Infila.vb" />
+    <Compile Include="InizioN.vb" />
+    <Compile Include="Monitor.vb" />
+    <Compile Include="OpFin.vb" />
+    <EmbeddedResource Include="OpFin.resX" />
+    <Compile Include="PASSI.vb" />
+    <EmbeddedResource Include="PASSI.resX" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+    <EmbeddedResource Include="TestiTraccia.resx" />
+    <Compile Include="Tr13N.vb" />
+    <Compile Include="Tracciatura.vb" />
+    <Content Include="Arch/Basetub1.adu" />
+    <Content Include="Arch/BASETUBI.ADU" />
+    <Content Include="Arch/Fontana.jpg" />
+    <Content Include="Arch/RMTU03.DAT" />
+    <Content Include="Arch/RTF/TUBU01.RTF" />
+    <Content Include="Arch/RTF/TUBU02.RTF" />
+    <Content Include="Arch/RTF/TUBUF1.RTF" />
+    <Content Include="Arch/RTF/TUBUF2.rtf" />
+    <Content Include="Arch/RTF/TUBUF3.rtf" />
+    <Content Include="Arch/RTF/TUBUFG.RTF" />
+    <Content Include="Arch/RTF/Tubuse.rtf" />
+    <Content Include="Arch/RTF/TUBUTE.RTF" />
+    <Content Include="Arch/RTF/tubutes.rtf" />
+    <Content Include="Arch/RTF/TUBUTF.RTF" />
+    <Content Include="Arch/RTF/TUBUTT.RTF" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <Reference Include="stdole" />
+    <Reference Include="Interop.AutoCAD">
+      <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+</Project>

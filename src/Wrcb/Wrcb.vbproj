@@ -1,0 +1,237 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <CodePage>1252</CodePage>
+    <AssemblyName>Wrcb</AssemblyName>
+    <RootNamespace>Wrcb</RootNamespace>
+    <OutputType>Library</OutputType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>Win32 = True</DefineConstants>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Aprileg.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsWrcb.vb" />
+    <Compile Include="frmAmm.vb" />
+    <EmbeddedResource Include="frmAmm.resX" />
+    <Compile Include="frmApert.vb" />
+    <EmbeddedResource Include="frmApert.resX" />
+    <Compile Include="frmCar.vb" />
+    <EmbeddedResource Include="frmCar.resX" />
+    <Compile Include="frmGen.vb" />
+    <EmbeddedResource Include="frmGen.resX" />
+    <Compile Include="frmGeom.vb" />
+    <EmbeddedResource Include="frmGeom.resX" />
+    <Compile Include="frmLib.vb" />
+    <EmbeddedResource Include="frmLib.resX" />
+    <EmbeddedResource Include="HelpTopics.resx" />
+    <Compile Include="incWrcb.vb" />
+    <EmbeddedResource Include="ProjectResources.resx" />
+    <Compile Include="Wrcb.vb" />
+    <Compile Include="wrcbBSG.vb" />
+    <Compile Include="Wrcbru1.vb" />
+    <Compile Include="wrcbSt.vb" />
+    <Compile Include="wrcMonitor.vb" />
+    <Content Include="Arch/HeadNotNoz.rtf" />
+    <Content Include="Arch/RTF/rtf2c1.rtf" />
+    <Content Include="Arch/RTF/rtf2c1r.rtf" />
+    <Content Include="Arch/RTF/rtf2c2.rtf" />
+    <Content Include="Arch/RTF/rtf2c2r.rtf" />
+    <Content Include="Arch/RTF/rtfcN.rtf" />
+    <Content Include="Arch/RTF/rtfd2.rtf" />
+    <Content Include="Arch/RTF/rtfDi.rtf" />
+    <Content Include="Arch/RTF/rtfdp.rtf" />
+    <Content Include="Arch/RTF/rtfLm.rtf" />
+    <Content Include="Arch/RTF/rtfr0.rtf" />
+    <Content Include="Arch/RTF/rtfr1.rtf" />
+    <Content Include="Arch/RTF/rtfri.rtf" />
+    <Content Include="Arch/RTF/rtftn.rtf" />
+    <Content Include="Arch/RTF/rtftp.rtf" />
+    <Content Include="Arch/RTF/rtftr.rtf" />
+    <Content Include="Arch/RTF/rtfts.rtf" />
+    <Content Include="Arch/RTF/STAM.WRC" />
+    <Content Include="Arch/RTF/STAMA.WRC" />
+    <Content Include="Arch/RTF/STAMB.WRC" />
+    <Content Include="Arch/RTF/STAMC.WRC" />
+    <Content Include="Arch/RTF/STAMD.WRC" />
+    <Content Include="Arch/RTF/STAMS.WRC" />
+    <Content Include="Arch/RTF/STWR01.WRC" />
+    <Content Include="Arch/RTF/STWR02.WRC" />
+    <Content Include="Arch/RTF/STWR03.WRC" />
+    <Content Include="Arch/RTF/STWR04.WRC" />
+    <Content Include="Arch/RTF/STWR05.WRC" />
+    <Content Include="Arch/RTF/STWR06.WRC" />
+    <Content Include="Arch/RTF/Stwr07.wrc" />
+    <Content Include="Arch/RTF/STWR08.WRC" />
+    <Content Include="Arch/RTF/STWR09.WRC" />
+    <Content Include="Arch/RTF/STWR10.WRC" />
+    <Content Include="Arch/RTF/STWR11.WRC" />
+    <Content Include="Arch/RTF/STWR12.WRC" />
+    <Content Include="Arch/RTF/STWR13.WRC" />
+    <Content Include="Arch/RTF/STWR14.WRC" />
+    <Content Include="Arch/RTF/STWR15.WRC" />
+    <Content Include="Arch/WR/BIJLAARD.DAT" />
+    <Content Include="Arch/WR/BIJSFERA.DAT" />
+    <Content Include="Arch/WR/BS354.DAT" />
+    <Content Include="Arch/WR/BSG01.DAT" />
+    <Content Include="Arch/WR/BSG02.DAT" />
+    <Content Include="Arch/WR/BSG03.DAT" />
+    <Content Include="Arch/WR/BSG04.DAT" />
+    <Content Include="Arch/WR/BSG05.DAT" />
+    <Content Include="Arch/WR/BSG06.DAT" />
+    <Content Include="Arch/WR/BSG07.DAT" />
+    <Content Include="Arch/WR/BSG08.DAT" />
+    <Content Include="Arch/WR/BSG09.DAT" />
+    <Content Include="Arch/WR/BSG10.DAT" />
+    <Content Include="Arch/WR/BSG11.DAT" />
+    <Content Include="Arch/WR/BSG12.DAT" />
+    <Content Include="Arch/WR/BSG13.DAT" />
+    <Content Include="Arch/WR/BSG14.DAT" />
+    <Content Include="Arch/WR/BSG15.DAT" />
+    <Content Include="Arch/WR/BSG16.DAT" />
+    <Content Include="Arch/WR/BSGA01.DAT" />
+    <Content Include="Arch/WR/BSGA02.DAT" />
+    <Content Include="Arch/WR/BSGA03.DAT" />
+    <Content Include="Arch/WR/BSGA04.DAT" />
+    <Content Include="Arch/WR/BSGA05.DAT" />
+    <Content Include="Arch/WR/BSGA06.DAT" />
+    <Content Include="Arch/WR/BSGA07.DAT" />
+    <Content Include="Arch/WR/BSGA08.DAT" />
+    <Content Include="Arch/WR/BSGA09.DAT" />
+    <Content Include="Arch/WR/BSGA10.DAT" />
+    <Content Include="Arch/WR/BSGA11.DAT" />
+    <Content Include="Arch/WR/BSGA12.DAT" />
+    <Content Include="Arch/WR/BSGA13.DAT" />
+    <Content Include="Arch/WR/BSGA14.DAT" />
+    <Content Include="Arch/WR/BSGA15.DAT" />
+    <Content Include="Arch/WR/BSGA16.DAT" />
+    <Content Include="Arch/WR/BSGB01.DAT" />
+    <Content Include="Arch/WR/BSGB02.DAT" />
+    <Content Include="Arch/WR/BSGB03.DAT" />
+    <Content Include="Arch/WR/BSGB04.DAT" />
+    <Content Include="Arch/WR/BSGB05.DAT" />
+    <Content Include="Arch/WR/BSGB06.DAT" />
+    <Content Include="Arch/WR/BSGB07.DAT" />
+    <Content Include="Arch/WR/BSGB08.DAT" />
+    <Content Include="Arch/WR/BSGB09.DAT" />
+    <Content Include="Arch/WR/BSGB10.DAT" />
+    <Content Include="Arch/WR/BSGB11.DAT" />
+    <Content Include="Arch/WR/BSGB12.DAT" />
+    <Content Include="Arch/WR/BSGB13.DAT" />
+    <Content Include="Arch/WR/BSGB14.DAT" />
+    <Content Include="Arch/WR/BSGB15.DAT" />
+    <Content Include="Arch/WR/BSGB16.DAT" />
+    <Content Include="Arch/WR/BSS25A.DAT" />
+    <Content Include="Arch/WR/BSS25AA.DAT" />
+    <Content Include="Arch/WR/BSS25B.DAT" />
+    <Content Include="Arch/WR/BSS25BB.DAT" />
+    <Content Include="Arch/WR/BSS25C.DAT" />
+    <Content Include="Arch/WR/BSS25CC.DAT" />
+    <Content Include="Arch/WR/BSS25D.DAT" />
+    <Content Include="Arch/WR/BSS25DD.DAT" />
+    <Content Include="Arch/WR/BSS29.DAT" />
+    <Content Include="Arch/WR/BSS31A.DAT" />
+    <Content Include="Arch/WR/BSS31B.DAT" />
+    <Content Include="Arch/WR/BSS31C.DAT" />
+    <Content Include="Arch/WR/BSS33A.DAT" />
+    <Content Include="Arch/WR/BSS33B.DAT" />
+    <Content Include="Arch/WR/BSS33C.DAT" />
+    <Content Include="Arch/WR/BSS35.DAT" />
+    <Content Include="Arch/WR/FIG03.DAT" />
+    <Content Include="Arch/WR/FIG04.DAT" />
+    <Content Include="Arch/WR/FIG05.DAT" />
+    <Content Include="Arch/WR/FIG06.DAT" />
+    <Content Include="Arch/WR/FIG07.DAT" />
+    <Content Include="Arch/WR/FIG08.DAT" />
+    <Content Include="Arch/WR/FIG09.DAT" />
+    <Content Include="Arch/WR/FIG10.DAT" />
+    <Content Include="Arch/WR/FIG11.DAT" />
+    <Content Include="Arch/WR/FIG12.DAT" />
+    <Content Include="Arch/WR/FIG13.DAT" />
+    <Content Include="Arch/WR/FIG14.DAT" />
+    <Content Include="Arch/WR/FIG15.DAT" />
+    <Content Include="Arch/WR/FIG16.DAT" />
+    <Content Include="Arch/WR/FIG17.DAT" />
+    <Content Include="Arch/WR/FIG18.DAT" />
+    <Content Include="Arch/WR/FIG19.DAT" />
+    <Content Include="Arch/WR/FIG20.DAT" />
+    <Content Include="Arch/WR/FIG21.DAT" />
+    <Content Include="Arch/WR/FIG22.DAT" />
+    <Content Include="Arch/WR/FIG23.DAT" />
+    <Content Include="Arch/WR/FIG24.DAT" />
+    <Content Include="Arch/WR/FIG25.DAT" />
+    <Content Include="Arch/WR/FIG26.DAT" />
+    <Content Include="Arch/WR/FIG27.DAT" />
+    <Content Include="Arch/WR/FIG28.DAT" />
+    <Content Include="Arch/WR/FIG29.DAT" />
+    <Content Include="Arch/WR/FIG30.DAT" />
+    <Content Include="Arch/WR/FIG31.DAT" />
+    <Content Include="Arch/WR/FIG32.DAT" />
+    <Content Include="Arch/WR/FIG33.DAT" />
+    <Content Include="Arch/WR/FIG34.DAT" />
+    <Content Include="Arch/WR/FIG35.DAT" />
+    <Content Include="Arch/WR/FIG36.DAT" />
+    <Content Include="Arch/WR/FIG37.DAT" />
+    <Content Include="Arch/WR/FIG38.DAT" />
+    <Content Include="Arch/WR/FIG39.DAT" />
+    <Content Include="Arch/WR/FIG40.DAT" />
+    <Content Include="Arch/WR/FIG41.DAT" />
+    <Content Include="Arch/WR/FIG42.DAT" />
+    <Content Include="Arch/WR/FIG43.DAT" />
+    <Content Include="Arch/WR/FIG44.DAT" />
+    <Content Include="Arch/WR/FIG45.DAT" />
+    <Content Include="Arch/WR/FIG46.DAT" />
+    <Content Include="Arch/WR/FIG47.DAT" />
+    <Content Include="Arch/WR/FIG48.DAT" />
+    <Content Include="Arch/WR/FIG49.DAT" />
+    <Content Include="Arch/WR/FIG50.DAT" />
+    <Content Include="Arch/WR/FIG51.DAT" />
+    <Content Include="Arch/WR/FIG52.DAT" />
+    <Content Include="Arch/WR/FIG53.DAT" />
+    <Content Include="Arch/WR/FIG54.DAT" />
+    <Content Include="Arch/WR/FIG55.DAT" />
+    <Content Include="Arch/WR/FIG56.DAT" />
+    <Content Include="Arch/WR/FIG57.DAT" />
+    <Content Include="Arch/WR/FIG58.DAT" />
+    <Content Include="Arch/WR/INDIR.DAT" />
+    <Content Include="Arch/WR/NOZZ01.CSV" />
+    <Content Include="Arch/WR/NOZZ02.CSV" />
+    <Content Include="Arch/WR/NOZZ03.CSV" />
+    <Content Include="Arch/WR/NOZZ04.CSV" />
+    <Content Include="Arch/WR/NOZZ05.CSV" />
+    <Content Include="Arch/WR/NOZZ06.CSV" />
+    <Content Include="Arch/WR/NOZZ07.CSV" />
+    <Content Include="Arch/WR/StLib.wrc" />
+    <Content Include="Arch/WR/WRCBDATA.DAT" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../Grafic2/Grafic2.vbproj" />
+    <Reference Include="stdole" />
+  </ItemGroup>
+</Project>

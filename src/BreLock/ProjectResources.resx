@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Helpfile" xml:space="preserve">
+    <value>\Bin\AiutoBre.chm</value>
+  </data>
+  <data name="stop001" xml:space="preserve">
+    <value>{0,20}\pard\plain \s18\qj\widctlpar\tx5245\tx6379\tx7088 \f2\fs18\lang1040 BREECH LOCK CLOSURE TYPE H-H HEAT EXCHANGER\par</value>
+  </data>
+  <data name="stop002" xml:space="preserve">
+    <value>{0,1}{{\b Design Data}}\par {0,1}
+Shell Side Design Temperature\tab [\'b0C]\tab T{{\sub 1}}\tab ={1,11:F}\par {0,1}
+Tube  Side Design Temperature\tab [\'b0C]\tab T{{\sub 2}}\tab ={2,11:F}\par {0,1}
+Tube Sheet Design Temperature\tab [\'b0C]\tab T\tab ={3,11:F}\par \par {0,1}
+Shell Side Design Pressure\tab [MPa]\tab p{{\sub 1}}\tab ={4,11:F}\par {0,1}
+Tube  Side Design Pressure\tab [MPa]\tab p{{\sub 2}}\tab ={5,11:F}\par \par </value>
+  </data>
+  <data name="stop003" xml:space="preserve">
+    <value>{0,20}\pard \tx5245\tx6379\tx7088 BREECH LOCK CLOSURE TYPE H-L HEAT EXCHANGER\par</value>
+  </data>
+  <data name="stop004" xml:space="preserve">
+    <value>{0,1}Differential Design Pressure\tab [MPa]\tab p{{\sub d}}\tab ={1,11:F}\par {0,1}
+Differential Shell Side Design Pressure\tab [MPa]\tab p{{\sub s}}\tab ={2,11:F}\par {0,1}
+Differential Shell Side Test   Pressure\tab [MPa]\tab p{{\sub t}}\tab ={3,11:F}\par\par {0,1}
+{{\b Shell Side Gasket Data}}\par {0,1}
+Gasket Material: {4,24}\par {0,1}
+Gasket Outside Diameter\tab [mm]\tab G{{\sub o1}}\tab ={5,11:F}\par {0,1}
+Gasket Width\tab [mm]\tab N{{\sub 1}}\tab ={6,11:F}\par {0,1}
+Nubbin Width\tab [mm]\tab w{{\sub 1}}\tab ={7,11:F}\par {0,1}
+Gasket Reaction Diameter\tab [mm]\tab G{{\sub 1}}\tab ={8,11:F}\par {0,1}
+Effective Gasket Seating\tab [mm]\tab b{{\sub 1}}\tab ={9,11:F}\par {0,1}
+Gasket Factor\tab \tab m{{\sub 1}}\tab ={10,11:F}\par {0,1}
+Gasket Seating Load\tab [MPa]\tab Y{{\sub 1}}\tab ={11,11:F}\par\par </value>
+  </data>
+  <data name="stop005" xml:space="preserve">
+    <value>{0,1}{{\b Tube Side Gasket Data}}\par {0,1}Gasket Material: {1,24}\par {0,1}
+Gasket Outside Diameter\tab [mm]\tab G{{\sub o2}}\tab ={2,11:F}\par {0,1}
+Gasket Width\tab [mm]\tab N{{\sub 2}}\tab ={3,11:F}\par {0,1}
+Nubbin Width\tab [mm]\tab w{{\sub 2}}\tab ={4,11:F}\par {0,1}
+Gasket Reaction Diameter\tab [mm]\tab G{{\sub 2}}\tab ={5,11:F}\par {0,1}
+Effective Gasket Seating\tab [mm]\tab b{{\sub 2}}\tab ={6,11:F}\par {0,1}
+Gasket Factor\tab \tab m{{\sub 2}}\tab ={7,11:F}\par {0,1}
+Gasket Seating Load\tab [MPa]\tab Y{{\sub 2}}\tab ={8,11:F}\par\par </value>
+  </data>
+  <data name="stop006" xml:space="preserve">
+    <value>{0,1}{{\b {7,1}.- SHELL BARREL}}\par {0,1}
+Shell Barrel Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 1}}\tab [MPa]\tab S{{\sub s}}\tab ={2,11:F}\par {0,1}
+Shell Barrel Int. diameter\tab [mm]\tab D{{\sub s}}\tab ={3,11:F}\par {0,1}
+Shell corrosion/clad\tab [mm]\tab c{{\sub s}}\tab ={4,11:F}\par {0,1}
+Min.Req.Thk.(base mat+cor/clad)\tab [mm]\tab t{{\sub smin}}\tab ={5,11:F}\par {0,1}
+Adopted Shell Barrel Thickness\tab [mm]\tab t{{\sub s}}\tab ={6,11:F}\par\par </value>
+  </data>
+  <data name="stop007" xml:space="preserve">
+    <value>{0,1}{{\b {7,1}.- HEMISPHERICAL HEAD}}\par {0,1}
+Hemispherical Head Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 1}}\tab [MPa]\tab S{{\sub h}}\tab ={2,11:F}\par {0,1} Hemispherical Head Int.Radius\tab [mm]\tab R{{\sub h}}\tab ={3,11:F}\par {0,1}
+Head  corrosion/clad\tab [mm]\tab c{{\sub h}}\tab ={4,11:F}\par {0,1}
+Min.Req.Thk.(bas.mat+cor/clad)\tab [mm]\tab t{{\sub hmin}}\tab ={5,11:F}\par {0,1}
+Adopted Hemisph.Head Thickness\tab [mm]\tab t{{\sub h}}\tab ={6,11:F}\par\par </value>
+  </data>
+  <data name="stop008" xml:space="preserve">
+    <value>{0,1}{{\b {1,1}.- TUBE SHEET}}\par </value>
+  </data>
+  <data name="stop009" xml:space="preserve">
+    <value>non più usata</value>
+  </data>
+  <data name="stop010" xml:space="preserve">
+    <value>{0,1}Tube Sheet Material : {1,24}\par {0,1}
+Outside Tube Diameter\tab [mm]\tab D{{\sub et}}\tab ={2,11:F}\par {0,1}
+Tube Layout Pitch\tab [mm]\tab P{{\sub trac}}\tab ={3,11:F}\par {0,1}
+Tube Pattern  1=triangular / 2=square\tab \tab \tab ={4,11:D}\par {0,1}
+Allowable Stress at Design Temp.T\tab [MPa]\tab S{{\sub p}}\tab ={5,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub op}}\tab ={6,11:F}\par {0,1}
+Tube side corrosion/clad\tab [mm]\tab c{{\sub tt}}\tab ={7,11:F}\par {0,1}
+Shell side corrosion/clad\tab [mm]\tab c{{\sub st}}\tab ={8,11:F}\par {0,1}
+Depth Groove\tab [mm]\tab G{{\sub d}}\tab ={9,11:F}\par </value>
+  </data>
+  <data name="stop011" xml:space="preserve">
+    <value>{0,1}Tubes Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T\tab [MPa]\tab S{{\sub t}}\tab ={2,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub ot}}\tab ={3,11:F}\par </value>
+  </data>
+  <data name="stop012" xml:space="preserve">
+    <value>{0,1}Min.Req.Thk.(bas.mat+cor/clad)\tab [mm]\tab t{{\sub pmin}}\tab ={1,11:F}\par {0,1}
+Adopted Tube Sheet Thickness\tab [mm]\tab t{{\sub p}}\tab ={2,11:F}\par\par </value>
+  </data>
+  <data name="stop013" xml:space="preserve">
+    <value>{0,1}{{\b {15,1}.- INTERNAL SCREWS for TUBE SHEET SET-UP}}\par {0,1}
+Screws Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub b}}\tab ={2,11:F}\par {0,1}Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub a}}\tab ={3,11:F}\par {0,1}
+Yield  Strength  at Room Temp.\tab [MPa]\tab S{{\sub y}}\tab ={4,11:F}\par {0,1}
+Allowable Stress for Hydraulic Test\tab [MPa]\tab 0.67S{{\sub y}}\tab ={5,11:F}\par\par {0,1}
+Nominal Diameter\tab {{\b {6,8} }}\tab ([mm]\tab ={7,11:F})\par {0,1}
+Bolt Circle Diameter\tab [mm]\tab C{{\sub 1}}\tab ={8,11:F}\par {0,1}
+Cross Area of one screw (threaded part)\tab [mm{{\super 2}}]\tab a{{\sub b1}}\tab ={9,11:F}\par {0,1}
+Cross Area of one screw (extension)\tab [mm{{\super 2}}]\tab a{{\sub b1}}\tab ={10,11:F}\par {0,1}
+Number of screws\tab \tab \tab n{{\sub b1}}\tab ={11,11:F}\par\par {0,1}
+Min.Req.Bolt Load (operating)\tab [N] \tab W{{\sub m1}}\tab ={12,11:F}\par {0,1}
+Min.Req.Bolt Load (gasket seating)\tab [N] \tab W{{\sub m2}}\tab ={13,11:F}\par {0,1}
+Min.Req.Bolt Load (hydraulic test)\tab [N] \tab W{{\sub mo}}\tab ={14,11:F}\par </value>
+  </data>
+  <data name="stop014" xml:space="preserve">
+    <value>{0,1}Min.Req.Bolt Area (operating)\tab [mm{{\super 2}}]\tab A{{\sub m1}}\tab ={1,11:F}\par {0,1}
+Min.Req.Bolt Area (gasket seating)\tab [mm{{\super 2}}]\tab A{{\sub m2}}\tab ={2,11:F}\par {0,1}
+Min.Req.Bolt Area (hydraulic test)\tab [mm{{\super 2}}]\tab A{{\sub mo}}\tab ={3,11:F}\par\par {0,1}
+Min.Req.Bolt Area\tab [mm{{\super 2}}]\tab A{{\sub m}}\tab ={4,11:F}\par {0,1}
+Actual  Bolt Area\tab [mm{{\super 2}}]\tab A{{\sub b}}\tab ={5,11:F}\par\par {0,1}
+Load after plastic deformation\tab [N] \tab W{{\sub pl}}\tab ={6,11:F}\par </value>
+  </data>
+  <data name="stop015" xml:space="preserve">
+    <value>{0,1}Yield  Strength  at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub yt}}\tab ={1,11:F}\par {0,1}
+Yield  Strength  at Room Temp.\tab [MPa]\tab S{{\sub y}}\tab ={2,11:F}\par\par {0,1}
+Allowable Stress for Hydraulic Test\tab [MPa]\tab 0.9S{{\sub y}}\tab ={3,11:F}\par\par {0,1}
+Int.Diameter of Split Ring\tab [mm]\tab B{{\sub 0}}\tab ={4,11:F}\par {0,1}
+Ext.Diameter of Split Ring\tab [mm]\tab A{{\sub 0}}\tab ={5,11:F}\par\par {0,1}
+Int.Diameter of Internal Ring\tab [mm]\tab B{{\sub 1}}\tab ={6,11:F}\par {0,1}
+Ext.Diameter of Internal Ring\tab [mm]\tab A{{\sub 1}}\tab ={7,11:F}\par </value>
+  </data>
+  <data name="stop016" xml:space="preserve">
+    <value>non più usato</value>
+  </data>
+  <data name="stop017" xml:space="preserve">
+    <value>{0,1}{{\b {1,1}.- EXTERNAL SCREWS &amp; PUSH BARS for THREADED LOCK RING}}\par </value>
+  </data>
+  <data name="stop018" xml:space="preserve">
+    <value>{0,1}Screws &amp; Push Bars Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub b}}\tab ={2,11:F}\par{0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub a}}\tab ={3,11:F}\par{0,1}
+Ins.Diameter of Ext.Compression Ring\tab [mm]\tab G{{\sub 3}}\tab ={4,11:F}\par\par </value>
+  </data>
+  <data name="stop019" xml:space="preserve">
+    <value>{0,1}{{\i {11,1}.1 Amount of Bolting Area Required for Int.Row of Screws &amp; Push Bars}}\par {0,1}
+Nominal Diameter\tab {{\b {1,8} }}\tab ([mm]\tab ={2,11:F})\par {0,1}
+Bolt Circle Diameter\tab [mm]\tab C{{\sub 2}}\tab ={3,11:F}\par {0,1}
+Cross Area of a Screw\tab [mm{{\super 2}}]\tab A{{\sub b2}}\tab ={4,11:F}\par {0,1}
+Diameter of Push Bars\tab [mm]\tab D{{\sub p2}}\tab ={5,11:F}\par {0,1}
+Number of Screws\tab \tab \tab n{{\sub b2}}\tab ={6,11:F}\par\par {0,1}
+Design Bolt Load (operating)\tab [N] \tab W{{\sub int}}\tab ={7,11:F}\par {0,1}
+Min.Req.Bolt Area\tab [mm{{\super 2}}]\tab A{{\sub m}}\tab ={8,11:F}\par\par {0,1}
+Actual Cross Area of Screws\tab [mm{{\super 2}}]\tab A{{\sub b2}}\tab ={9,11:F}\par {0,1}
+Actual Cross Area of Push Bars\tab [mm{{\super 2}}]\tab A{{\sub p2}}\tab ={10,11:F}\par\par </value>
+  </data>
+  <data name="stop020" xml:space="preserve">
+    <value>{0,1}{{\i {1,1}.2 Amount of Bolting Area Required for Ext.Row of Screws &amp; Push Bars}}\par </value>
+  </data>
+  <data name="stop021" xml:space="preserve">
+    <value>{0,1}{{\i {1,1}.0 Stub ACME ANSI B1.8 15/16" Thread Parameters}}\par</value>
+  </data>
+  <data name="stop022" xml:space="preserve">
+    <value>{0,1}Nominal Diameter\tab {{\b {1,8} }}\tab ([mm]\tab ={2,11:F})\par {0,1}
+Bolt Circle Diameter\tab [mm]\tab C{{\sub 3}}\tab ={3,11:F}\par {0,1}
+Cross Area of a Screw\tab [mm{{\super 2}}]\tab A{{\sub b3}}\tab ={4,11:F}\par {0,1}
+Diameter of Push Bars\tab [mm]\tab D{{\sub p3}}\tab ={5,11:F}\par {0,1}
+Adopted Number of Screws\tab \tab \tab n{{\sub b3}}\tab ={6,11:F}\par\par {0,1}
+Design Bolt Load (operating)\tab [N] \tab W{{\sub ext}}\tab ={7,11:F}\par {0,1}
+Design Bolt Load (seating)\tab [N] \tab W{{\sub m2}}\tab ={8,11:F}\par\par {0,1}
+Min.Req.Bolt Area (operating)\tab [mm{{\super 2}}]\tab A{{\sub m1}}\tab ={9,11:F}\par {0,1}
+Min.Req.Bolt Area (seating)\tab [mm{{\super 2}}]\tab A{{\sub m2}}\tab ={10,11:F}\par {0,1}
+Min.Req.Bolt Area\tab [mm{{\super 2}}]\tab A{{\sub m}}\tab ={11,11:F}\par\par {0,1}
+Actual Cross Area of Screws\tab [mm{{\super 2}}]\tab A{{\sub b3}}\tab ={12,11:F}\par {0,1}
+Actual Cross Area of Push Bars\tab [mm{{\super 2}}]\tab A{{\sub p3}}\tab ={13,11:F}\par\par </value>
+  </data>
+  <data name="stop023" xml:space="preserve">
+    <value>{0,1}{{\b {1,1}.- THREADED END CHANNEL &amp; LOCK RING}}\par </value>
+  </data>
+  <data name="stop024" xml:space="preserve">
+    <value>non più usato</value>
+  </data>
+  <data name="stop025" xml:space="preserve">
+    <value>{0,1}Threaded End Channel &amp; Lock Ring Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S\tab ={2,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub o}}\tab ={3,11:F}\par {0,1}
+Yield  Strength  at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub yt}}\tab ={4,11:F}\par {0,1}
+Yield  Strength  at Room Temp.\tab [MPa]\tab S{{\sub y}}\tab ={5,11:F}\par {0,1}
+Nominal Diameter of Screwed Lock Ring\tab [mm]\tab D{{\sub O}}\tab ={6,11:F}\par\par </value>
+  </data>
+  <data name="stop026" xml:space="preserve">
+    <value>{0,1}{{\i {1,1}.0 Stub ACME ANSI B1.8 Thread Parameters}}\par </value>
+  </data>
+  <data name="stop027" xml:space="preserve">
+    <value>{0,1}{{\i {1,1}.0 Stub ACME ANSI B1.8 Thread Parameters}}\par</value>
+  </data>
+  <data name="stop028" xml:space="preserve">
+    <value>{0,1}Nominal pitch\tab [mm]\tab p\tab ={1,11:F}\par {0,1}
+Tooth height\tab [mm]\tab h\tab ={2,11:F}\par {0,1}
+Tooth root thickness\tab [mm]\tab a\tab ={3,11:F}\par {0,1}
+Outer nominal clearance\tab [mm]\tab G{{\sub o}}\tab ={4,11:F}\par {0,1}
+Inner nominal clearance\tab [mm]\tab G{{\sub i}}\tab ={5,11:F}\par {0,1}
+Thread dia on Lock Ring (@ min.tol.)\tab [mm]\tab D\tab ={6,11:F}\par {0,1}
+Throat dia on Channel (@max.tol.)\tab [mm]\tab D{{\sub 1}}\tab ={7,11:F}\par {0,1}
+Avg. dia of the threads\tab [mm]\tab E\tab ={8,11:F}\par {0,1}
+Thread dia on Channel (@max.tol.)\tab [mm]\tab K\tab ={9,11:F}\par {0,1}
+Throat dia on Lock Ring (@min.tol.)\tab [mm]\tab K{{\sub 1}}\tab ={10,11:F}\par\par </value>
+  </data>
+  <data name="stop029" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.1 Analysis of the Threaded Lock Ring}}\par</value>
+  </data>
+  <data name="stop030" xml:space="preserve">
+    <value>{0,1}Int.Diameter of Threaded Lock Ring\tab [mm]\tab B{{\sub 2}}\tab ={1,11:F}\par {0,1}
+Ext.Diameter of Channel Flat Cover\tab [mm]\tab B{{\sub 3}}\tab ={2,11:F}\par {0,1}
+Min.Req.Lock Ring Thk (operating)\tab [mm]\tab t{{\sub 3}}\tab ={3,11:F}\par {0,1}
+Min.Req.Lock Ring Thk (gasket seating)\tab [mm]\tab T{{\sub 3}}\tab ={4,11:F}\par\par {0,1}
+Min.Req.Lock Ring Thk\tab [mm]\tab t{{\sub 3min}}\tab ={5,11:F}\par {0,1}
+Adopted Lock Ring Thk\tab [mm]\tab t{{\sub 3}}\tab ={6,11:F}\par\par {0,1}
+Lock Ring Bearing Stress (operating)\tab [MPa]\tab S{{\sub 1bear}}\tab ={7,11:F}\par {0,1}
+Allowable Bearing Stress\tab [MPa]\tab S{{\sub yt}}\tab ={8,11:F}\par\par </value>
+  </data>
+  <data name="stop031" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.2 Analysis of the Thread}}\par </value>
+  </data>
+  <data name="stop032" xml:space="preserve">
+    <value>{0,1}Number of Engaged Threads\tab \tab z\tab ={1,11:F}\par\par {0,1}
+Thread Shearing   Stress (operating)\tab [MPa]\tab S{{\sub 1shear}}\tab ={2,11:F}\par {0,1}
+Allow. Shearing   Stress     \tab [MPa]\tab 0.6S\tab ={3,11:F}\par\par {0,1}
+Thread Bending    Stress     \tab [MPa]\tab S{{\sub 1bend}}\tab ={4,11:F}\par {0,1}
+Thread Equivalent Stress     \tab [MPa]\tab S{{\sub ige1}}\tab ={5,11:F}\par {0,1}
+Allow. Equivalent Stress     \tab [MPa]\tab S\tab ={6,11:F}\par </value>
+  </data>
+  <data name="stop033" xml:space="preserve">
+    <value>{0,1}Thread Bearing    Stress     ""\tab [MPa]\tab S{{\sub 1bear}}\tab ={1,11:F}\par {0,1}
+Allow. Bearing    Stress     \tab [MPa]\tab S{{\sub yt}}\tab ={2,11:F}\par\par {0,1}
+Thread Shearing   Str. (gasket seating)\tab [MPa]\tab S{{\sub 2shear}}\tab ={3,11:F}\par {0,1}
+Allow. Shearing   Stress     \tab [MPa]\tab 0.6S{{\sub O}}\tab ={4,11:F}\par\par {0,1}
+Thread Bending    Stress     \tab [MPa]\tab S{{\sub 2bend}}\tab ={5,11:F}\par {0,1}
+Thread Equivalent Stress     \tab [MPa]\tab S{{\sub ige2}}\tab ={6,11:F}\par\par {0,1}
+Allow. Equivalent Stress     \tab [MPa]\tab S{{\sub o}}\tab ={7,11:F}\par\par {0,1}
+Thread Bearing    Stress     \tab [MPa]\tab S{{\sub 2bear}}\tab ={8,11:F}\par {0,1}
+Allow. Bearing    Stress     \tab [MPa]\tab S{{\sub y}}\tab ={9,11:F}\par\par </value>
+  </data>
+  <data name="stop034" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.3 Analysis of the Threaded End Channel}}\par </value>
+  </data>
+  <data name="stop035" xml:space="preserve">
+    <value>{0,1}Channel Threaded Length\tab [mm]\tab h{{\sub o}}\tab ={1,11:F}\par {0,1}
+Threaded End Channel Thickness\tab [mm]\tab t{{\sub o}}\tab ={2,11:F}\par {0,1}
+(*) Groove thk., section 4, see Explanatory notes\par {0,1}
+External Diameter of Channel\tab [mm]\tab D{{\sub oc}}\tab ={3,11:F}\par\par {0,1}
+Channel Long. Membrane (operating)\tab [MPa]\tab S{{\sub 1lm}}\tab ={4,11:F}\par {0,1}
+Max.Allowable Membrane\tab [MPa]\tab S\tab ={5,11:F}\par {0,1}
+Channel Long. Bending   \tab [MPa]\tab S{{\sub 1lb}}\tab ={6,11:F}\par {0,1}
+Channel Long. Combined\tab [MPa]\tab S{{\sub 1l}}\tab ={7,11:F}\par {0,1}
+Max.Allowable Combined\tab [MPa]\tab 1.5S\tab ={8,11:F}\par\par {0,1}
+Channel Long. Membrane (seating)\tab [MPa]\tab S{{\sub 2lm}}\tab ={9,11:F}\par {0,1}
+Max.Allowable Membrane\tab [MPa]\tab S{{\sub o}}\tab ={10,11:F}\par {0,1}
+Channel Long. Bending    \tab [MPa]\tab S{{\sub 2lb}}\tab ={11,11:F}\par {0,1}
+Channel Long. Combined     \tab [MPa]\tab S{{\sub 2l}}\tab ={12,11:F}\par {0,1}
+Max.Allowable Combined     \tab [MPa]\tab 1.5S{{\sub o}}\tab ={13,11:F}\par\par {0,1}</value>
+  </data>
+  <data name="stop036" xml:space="preserve">
+    <value>{0,1}{{\b {1,1:D}.- CHANNEL FLAT COVER}}\par </value>
+  </data>
+  <data name="stop037" xml:space="preserve">
+    <value>{0,1}Channel Flat Cover Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S\tab ={2,11:F}\par {0,1}
+Yield  Strength  at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub yt}}\tab ={3,11:F}\par\par </value>
+  </data>
+  <data name="stop038" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.1 Minimum Required Thickness}}\par </value>
+  </data>
+  <data name="stop039" xml:space="preserve">
+    <value>{0,1}Min.Req.Channel Flat Cover Thk\tab [mm]\tab t{{\sub fmin}}\tab ={1,11:F}\par {0,1}
+Adopted Channel Flat Cover Thk\tab [mm]\tab t{{\sub f}}\tab ={2,11:F}\par\par </value>
+  </data>
+  <data name="stop040" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.2 Analysis of the External Crown}}\par </value>
+  </data>
+  <data name="stop041" xml:space="preserve">
+    <value>{0,1}External Crown Thickness\tab [mm]\tab t{{\sub fo}}\tab ={1,11:F}\par\par {0,1}
+Ext.Crown Shearing   Str.(operating)\tab [MPa]\tab S{{\sub 1shear}}\tab ={2,11:F}\par {0,1}
+Allowable Shearing   Str.     \tab [MPa]\tab 0.6S\tab ={3,11:F}\par\par {0,1}
+Ext.Crown Bending    Str.     \tab [MPa]\tab S{{\sub 1bend}}\tab ={4,11:F}\par {0,1}
+Ext.Crown Equivalent Str.     \tab [MPa]\tab S{{\sub ige1}}\tab ={5,11:F}\par\par {0,1}
+Allowable Equivalent Str.     \tab [MPa]\tab S\tab ={6,11:F}\par\par {0,1}
+Ext.Crown Bearing    Str.     \tab [MPa]\tab S{{\sub 1bear}}\tab ={7,11:F}\par {0,1}
+Allowable Bearing    Str.     \tab [MPa]\tab S{{\sub yt}}\tab ={8,11:F}\par </value>
+  </data>
+  <data name="stop042" xml:space="preserve">
+    <value>\par {0,1}{{\i {15,1}.4 Analysis of the internal box, conical shell}}\par {0,1}
+Int. Conical Shell Material : {1,24}\par {0,1}
+Modulus of Elasticity in Design\tab [MPa]\tab E{{\sub d}}\tab ={2,11:F}\par {0,1}
+Modulus of Elasticity in Test\tab [MPa]\tab E{{\sub t}}\tab ={3,11:F}\par {0,1}
+Thickness of Conical Shell\tab [mm]\tab t\tab ={4,11:F}\par {0,1}
+Max. Mean Diam. of Cone\tab [mm]\tab D{{\sub 1}}\tab ={5,11:F}\par {0,1}
+Min. Mean Diam. of Cone\tab [mm]\tab D{{\sub 2}}\tab ={6,11:F}\par {0,1}
+Int. Diam. of Cone on Opening\tab [mm]\tab D{{\sub 3}}\tab ={7,11:F}\par {0,1}
+Allowable Stress in Design\tab [MPa]\tab S\tab ={8,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub o}}\tab ={9,11:F}\par {0,1}
+Yield stress at Room Temp.\tab [MPa]\tab S{{\sub y}}\tab ={10,11:F}\par {0,1}
+Allowable Stress in Test\tab [MPa]\tab 0.9S{{\sub y}}\tab ={11,11:F}\par {0,1}
+Open. Diam. in Conical Shell\tab [mm]\tab d\tab ={12,11:F}\par {0,1}
+Number of Openings\tab \tab \tab n\tab ={13,11:D}\par {0,1}
+Height of Cone\tab [mm]\tab h\tab ={14,11:F}\par\par </value>
+  </data>
+  <data name="stop043" xml:space="preserve">
+    <value>{0,1}Area of Cone - minimum between area on the minimum diameter\par {0,1}
+of the conical shell and area on the section with openings :\par {0,1}
+    A{{\sub c}}        = {1,11:F}  mm{{\super 2}}\par\par {0,1}
+Maximum stress in :\par\par {0,1}
+Design     :  W{{\sub pl}}/A{{\sub c}} = {2,11:F}MPa\par {0,1}
+Bolting-up :  W{{\sub m2}}/A{{\sub c}} = {3,11:F}MPa\par {0,1}
+Test       :  W{{\sub mo}}/A{{\sub c}} = {4,11:F}MPa\par\par </value>
+  </data>
+  <data name="stop044" xml:space="preserve">
+    <value>\par {0,1}{{\i {12,1}.1 Analysis of the Split Ring}}\par {0,1}
+Split Ring Thickness\tab [mm]\tab t{{\sub 1}}\tab ={1,11:F}\par {0,1}
+Split Ring Shear Str.(operating,W{{\sub pl}})\tab [MPa]\tab S{{\sub 1shear}}\tab ={2,11:F}\par {0,1}
+Allowable  Shear Str.    \tab [MPa]\tab 0.6S\tab ={3,11:F}\par\par {0,1}
+Split Ring Shear Str.(seating,W{{\sub m2}})\tab [MPa]\tab S{{\sub 2shear}}\tab ={4,11:F}\par {0,1}
+Allowable  Shear Str.    \tab [MPa]\tab 0.6S{{\sub o}}\tab ={5,11:F}\par\par {0,1}
+Split Ring Shear Str.(hydr.test,W{{\sub mo}})\tab [MPa]\tab S{{\sub oshear}}\tab ={6,11:F}\par {0,1}
+Allowable  Shear Str.    \tab [MPa]\tab 0.67S{{\sub y}}\tab ={7,11:F}\par {0,1}
+Split Ring Bearing Str.(operating)\tab [MPa]\tab S{{\sub 1bear}}\tab ={8,11:F}\par {0,1}
+Allowable  Bearing Str.    \tab [MPa]\tab S{{\sub yt}}\tab ={9,11:F}\par\par {0,1}
+Split Ring Bearing Str.(seating)\tab [MPa]\tab S{{\sub 2bear}}\tab ={10,11:F}\par {0,1}
+Allowable  Bearing Str.    \tab [MPa]\tab S{{\sub y}}\tab ={11,11:F}\par </value>
+  </data>
+  <data name="stop045" xml:space="preserve">
+    <value>{0,1}Split Ring Bearing Str.(hydr. test)\tab [MPa]\tab S{{\sub obear}}\tab ={1,11:F}\par {0,1}
+Allowable  bearing Str.    \tab [MPa]\tab S{{\sub y}}\tab ={2,11:F}\par\par{0,1}
+{{\i 5.2 Analysis of the Internal Ring}}\par {0,1}
+Min.Req.Int.Ring Thk (operating)\tab [mm]\tab t{{\sub 2}}\tab ={3,11:F}\par {0,1}
+Min.Req.Int.Ring Thk (seating)\tab [mm]\tab t{{\sub 2}}\tab ={4,11:F}\par {0,1}
+Min.Req.Int.Ring Thk (hydr. test)\tab [mm]\tab t{{\sub 2}}\tab ={5,11:F}\par {0,1}
+Min.Req.Int.Ring Thk\tab [mm]\tab t{{\sub 2min}}\tab ={6,11:F}\par {0,1}
+Adopted Int.Ring Thk\tab [mm]\tab t{{\sub 2}}\tab ={7,11:F}\par\par {0,1}
+Int. Ring Bearing Str.(operating)\tab [MPa]\tab S{{\sub 1bear}}\tab ={8,11:F}\par {0,1}
+Allowable Bearing Str.    \tab [MPa]\tab S{{\sub yt}}\tab ={9,11:F}\par\par {0,1}
+Int .Ring Bearing Str.(seating)\tab [MPa]\tab S{{\sub 2bear}}\tab ={10,11:F}\par {0,1}
+Allowable Bearing Str.    \tab [MPa]\tab S{{\sub y}}\tab ={11,11:F}\par\par {0,1}
+Int. Ring Bearing Str.(hydr. test)\tab [MPa]\tab S{{\sub obear}}\tab ={12,11:F}\par {0,1}
+Allowable Bearing Str.    \tab [MPa]\tab S{{\sub y}}\tab ={13,11:F}\par\par\par </value>
+  </data>
+  <data name="stop046" xml:space="preserve">
+    <value>{0,1}{{\b {1,1:D}.- CHANNEL BARREL}}\par </value>
+  </data>
+  <data name="stop047" xml:space="preserve">
+    <value>{0,1}Channel Barrel Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub c}}\tab ={2,11:F}\par {0,1}
+Channel Barrel Int.Radius\tab [mm]\tab R{{\sub c}}\tab ={3,11:F}\par {0,1}
+Channel Barrel corrosion/clad\tab [mm]\tab c{{\sub bc}}\tab ={4,11:F}\par </value>
+  </data>
+  <data name="stop048" xml:space="preserve">
+    <value>{0,1}Min.Req.Thk (base mat+cor/clad+groove)\tab [mm]\tab t{{\sub cmin}}\tab ={1,11:F}\par {0,1}
+Adopted Channel Thk\tab [mm]\tab t{{\sub c}}\tab ={2,11:F}\par\par </value>
+  </data>
+  <data name="stop049" xml:space="preserve">
+    <value>{0,1}{{\i {10,1}.3 Analysis of the Internal Box Flange}}\par {0,1}
+Internal Box Flange : {1,24}\par {0,1}
+Allowable Stress at Design Temp.   T{{\sub 2}}\tab [MPa]\tab S\tab ={2,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub o}}\tab ={3,11:F}\par {0,1}
+Yield Strength at Room Temp.\tab [MPa]\tab S{{\sub yo}}\tab ={4,11:F}\par\par {0,1}
+External Dia. of Flange\tab [mm]\tab D{{\sub of}}\tab ={5,11:F}\par {0,1}
+Internal Dia. of Flange\tab [mm]\tab D{{\sub if}}\tab ={6,11:F}\par\par {0,1}
+Min.Req.Flange Thk (operating,W{{\sub pl}})\tab [mm]\tab t{{\sub t}}\tab ={7,11:F}\par {0,1}
+Min.Req.Flange Thk (seating,W{{\sub m2}})\tab [mm]\tab t{{\sub t}}\tab ={8,11:F}\par {0,1}
+Min.Req.Flange Thk (hydr. test,W{{\sub mo}})\tab [mm]\tab t{{\sub t}}\tab ={9,11:F}\par\par {0,1}
+Adopted Int.Flange Thickness\tab [mm]\tab t{{\sub 2}}\tab ={9,11:F}\par </value>
+  </data>
+  <data name="stop050" xml:space="preserve">
+    <value>\par\par {0,1}NOTE The loads used for the calculation of the internal split ring,\par {0,1}
+the internal ring, internal screws and the internal box are given by:\par {0,1}
+         max(W{{\sub m1}},W{{\sub pl}}, W{{\sub m2}} + T{{\sub m2}}, W{{\sub mo}} + T{{\sub mo}}), with:\par\par {0,1}
+Additional load in oper. due to thermal exp.....[N]  W{{\sub pl}} = {1,13:F}\par {0,1}
+Additional load in seating......................[N]  T{{\sub m2}} ={2,13:F}\par {0,1}
+Additional load in hydr.test....................[N]  T{{\sub mo}} = {3,13:F}\par </value>
+  </data>
+  <data name="stop051" xml:space="preserve">
+    <value>{0,1}{{\b {9,1}.- INTERNAL RING &amp; SPLIT RING}}\par {0,1}
+Split Ring Material : {1,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S\tab ={2,11:F}\par {0,1}
+Allowable stress at Room Temp.\tab [MPa]\tab S{{\sub o}}\tab ={3,11:F}\par {0,1}
+Yield  Strength  at Design Temp.T{{\sub 2}}\tab [MPa]\tab S{{\sub yt}}\tab ={4,11:F}\par {0,1}
+Yield  Strength  at Room Temp.\tab [MPa]\tab S{{\sub y}}\tab ={5,11:F}\par\par {0,1}
+Internal Ring Material : {6,24}\par {0,1}
+Allowable Stress at Design Temp.T{{\sub 2}}\tab [MPa]\tab S\tab ={7,11:F}\par {0,1}
+Allowable Stress at Room Temp.\tab [MPa]\tab S{{\sub o}}\tab ={8,11:F}\par </value>
+  </data>
+  <data name="stop052" xml:space="preserve">
+    <value>{0,1}{{\i {1,1:D}.4 Notes}}\par </value>
+  </data>
+  <data name="stop053" xml:space="preserve">
+    <value>{0,1}The machining of the threads diameters is affected by a tolerance field\par {0,1}
+which lies entirely on the plus side for the holes and on the minus side\par </value>
+  </data>
+  <data name="stop054" xml:space="preserve">
+    <value>{0,1}for the shafts. The width of the tolerance field taken in account in the\par {0,1}
+present calculations is {{\b {1:0.0000} mm}}.\par\par </value>
+  </data>
+  <data name="stop055" xml:space="preserve">
+    <value>{0,1}The blow-up of the diameter of the channel threaded end because of the \par {0,1}
+pressure and mechanical loads produces a partial disengagement of the \par </value>
+  </data>
+  <data name="stop056" xml:space="preserve">
+    <value>{0,1}threaded coupling which is taken in account in the present calculations.\par {0,1}
+The calculated increase on the channel end radius has been {{\b {1:0.0000} mm}}\par in design conditions, and {{\b {2:##.###} mm}} in leak condition.\par \par  </value>
+  </data>
+  <data name="stop057" xml:space="preserve">
+    <value>{0,1}A transient metal temperature field, producing a further partial disengagement\par {0,1}
+of the threaded coupling has been considered. The temperature of the lock\par </value>
+  </data>
+  <data name="stop058" xml:space="preserve">
+    <value>{0,1}ring was {1:####.##}\'b0C, the temperature of the channel end was {{\b {2:##.### \'b0C}}, and\par {0,1}
+the resulting disengagement on the radius has been {{\b {3:##.### mm}}.\par\par </value>
+  </data>
+  <data name="stop059" xml:space="preserve">
+    <value>{0,1}The combination of all the effects described above gives, as a result, a \par {0,1}
+residual height of the engaged portion of the threads by {{\b {1:0.0000} mm}}\par in design conditions, and {{\b {2:0.0000} mm}} in leak condition.\par \par  </value>
+  </data>
+  <data name="stop060" xml:space="preserve">
+    <value>{0,1}{{\b Elastic diaphragm Data}}\par {0,1}
+Material : {1,24}\par {0,1}
+Elastic modulus @temp\tab [MPa]\tab E{{\sub d}}\tab ={2,11:F}\par {0,1}
+Minor thickness\tab [mm]\tab t\tab ={3,11:F}\par {0,1}
+Axial movement on int.row of screws\tab [mm]\tab y{{\sub 1}}\tab ={4,11:F}\par {0,1}
+Axial movement on ext.row of screws\tab [mm]\tab y{{\sub 2}}\tab ={5,11:F}\par {0,1}
+Raised width on int.row of screws\tab [mm]\tab l{{\sub 1}}\tab ={6,11:F}\par {0,1}
+Raised width on ext.row of screws\tab [mm]\tab l{{\sub 2}}\tab ={7,11:F}\par {0,1}
+Additional end-effect on int.row\tab [N]\tab W{{\sub a1}}\tab ={8,11:F}\par {0,1}
+Additional end-effect on ext.row\tab [N]\tab W{{\sub a2}}\tab ={9,11:F}\par {0,1}
+Bending stress on int.row of screws\tab [MPa]\tab S{{\sub bd1}}\tab ={10,11:F}\par {0,1}
+Bending stress on ext.row of screws\tab [MPa]\tab S{{\sub bd2}}\tab ={11,11:F}\par\par </value>
+  </data>
+  <data name="stop061" xml:space="preserve">
+    <value>{0,1}{{\b Calculation options}}:\par {0,1}
+Differential pressure acting on both sides of the TS\tab \tab :{1,6}\par {0,1}
+Inner thermomechanical loads treated as primary loads\tab \tab :{2,6}\par {0,1}
+Pressurisation of the threaded channel in design condition\tab \tab :{3,6}\par\par </value>
+  </data>
+  <data name="stop062" xml:space="preserve">
+    <value>{0,1}
+Maximum allowable longitudinal stress in compression (UG-23(a)/AD-340)\par\par {0,1}
+Chart: {3}\par {0,1}Factor A:   {4:0.00000}  (new)  {5:0.00000}  (corroded)\par {0,1}
+Allowable in Design \tab [MPa]\tab \tab = {1,11:F}\par {0,1}
+Allowable in Bolting-up &amp; Test\tab [MPa\tab \tab = {2,11:F}\par</value>
+  </data>
+  <data name="stop063" xml:space="preserve">
+    <value>Channel Long. Membrane (accident)\tab [MPa]\tab S{{\sub 3lm}}\tab ={1,11:F}\par {0,1}
+Max.Allowable Membrane\tab [MPa]\tab S{{\sub y}}\tab ={2,11:F}\par {0,1}
+Channel Long. Bending    \tab [MPa]\tab S{{\sub 3lb}}\tab ={3,11:F}\par {0,1}
+Channel Long. Combined     \tab [MPa]\tab S{{\sub 3l}}\tab ={4,11:F}\par {0,1}
+Max.Allowable Combined     \tab [MPa]\tab 1.35S{{\sub y}}\tab ={5,11:F}\par\par</value>
+  </data>
+  <data name="stop064" xml:space="preserve">
+    <value>Channel Long. Membrane (accident)\tab [MPa]\tab S{{\sub 3lm}}\tab ={1,11:F}\par {0,1}
+Max.Allowable Membrane\tab [MPa]\tab S\tab ={2,11:F}\par {0,1}
+Channel Long. Bending    \tab [MPa]\tab S{{\sub 3lb}}\tab ={3,11:F}\par {0,1}
+Channel Long. Combined     \tab [MPa]\tab S{{\sub 3l}}\tab ={4,11:F}\par {0,1}
+Max.Allowable Combined     \tab [MPa]\tab 1.5S\tab ={5,11:F}\par\par</value>
+  </data>
+  <data name="str00001" xml:space="preserve">
+    <value>Mantello</value>
+  </data>
+  <data name="str00002" xml:space="preserve">
+    <value>Fondo lato mantello</value>
+  </data>
+  <data name="str00003" xml:space="preserve">
+    <value>Piastra tubiera</value>
+  </data>
+  <data name="str00004" xml:space="preserve">
+    <value>Tubi</value>
+  </data>
+  <data name="str00005" xml:space="preserve">
+    <value>Cassa</value>
+  </data>
+  <data name="str00006" xml:space="preserve">
+    <value>Cassonetto</value>
+  </data>
+  <data name="str00007" xml:space="preserve">
+    <value>Flangia cassonetto</value>
+  </data>
+  <data name="str00008" xml:space="preserve">
+    <value>Anello a settori</value>
+  </data>
+  <data name="str00009" xml:space="preserve">
+    <value>Anello interno</value>
+  </data>
+  <data name="str00010" xml:space="preserve">
+    <value>Viti interne</value>
+  </data>
+  <data name="str00011" xml:space="preserve">
+    <value>Viti esterne</value>
+  </data>
+  <data name="str00012" xml:space="preserve">
+    <value>Anello di blocco</value>
+  </data>
+  <data name="str00013" xml:space="preserve">
+    <value>Tappo</value>
+  </data>
+  <data name="str00014" xml:space="preserve">
+    <value>Diaframma elastico</value>
+  </data>
+  <data name="str00015" xml:space="preserve">
+    <value>Inserto su flangia cassonetto</value>
+  </data>
+  <data name="str00100" xml:space="preserve">
+    <value>Completato il calcolo del mantello, del fondo, e della|guarnizione sotto la piastra tubiera.</value>
+  </data>
+  <data name="str00110" xml:space="preserve">
+    <value>Completato il calcolo della piastra tubiera.|Scelta della pressione di spinta in prova|idraulica per il dimensionamento delle viti esterne.</value>
+  </data>
+  <data name="str00120" xml:space="preserve">
+    <value>Completato il calcolo delle viti di spinta della PT</value>
+  </data>
+  <data name="str00130" xml:space="preserve">
+    <value>Completato il calcolo di split ring e inner ring</value>
+  </data>
+  <data name="str00140" xml:space="preserve">
+    <value>Completata la verifica del cassonetto e della sua flangia superiore</value>
+  </data>
+  <data name="str00150" xml:space="preserve">
+    <value>Calcolato lo spessore minimo della cassa e la larghezza attiva della guarnizione</value>
+  </data>
+  <data name="str00160" xml:space="preserve">
+    <value>Progetto completato delle due serie di viti di spinta</value>
+  </data>
+  <data name="str00170" xml:space="preserve">
+    <value>Completata la verifica dell'anello filettato</value>
+  </data>
+  <data name="str00500" xml:space="preserve">
+    <value>L'ammissibile in temperatura del materiale</value>
+  </data>
+  <data name="str00510" xml:space="preserve">
+    <value>L'ammissibile a temperatura ambiente del materiale</value>
+  </data>
+  <data name="str00520" xml:space="preserve">
+    <value>Lo snervamento in temperatura del materiale</value>
+  </data>
+  <data name="str00530" xml:space="preserve">
+    <value>Lo snervamento a temperatura ambiente del materiale</value>
+  </data>
+  <data name="str00540" xml:space="preserve">
+    <value>Il modulo elastico in temperatura del materiale</value>
+  </data>
+  <data name="str00550" xml:space="preserve">
+    <value>Il modulo elastico a temperatura ambiente del materiale</value>
+  </data>
+  <data name="str00560" xml:space="preserve">
+    <value>Il coefficiente di dilatazione termica in temperatura del materiale</value>
+  </data>
+  <data name="str00570" xml:space="preserve">
+    <value>Il coefficiente di dilatazione termica ambiente del materiale</value>
+  </data>
+  <data name="str00600" xml:space="preserve">
+    <value>non è stato specificato correttamente</value>
+  </data>
+  <data name="str00700" xml:space="preserve">
+    <value>Il diametro esterno specificato per la guarnizione|sotto la piastra tubiera ha un valore poco plausibile.|Vuoi aggiornarlo secondo lo standard?</value>
+  </data>
+  <data name="str00710" xml:space="preserve">
+    <value>Il diametro esterno specificato per la guarnizione|sotto il diaframma elastico ha un valore poco plausibile.|Vuoi aggiornarlo secondo lo standard?</value>
+  </data>
+  <data name="str01000" xml:space="preserve">
+    <value>Il valore impostato per il diametro esterno non è|abbastanza grande se confrontato con il diametro interno</value>
+  </data>
+  <data name="str01001" xml:space="preserve">
+    <value>Il valore impostato per il diametro esterno è eccessivo|se confrontato con il valore del diametro interno</value>
+  </data>
+  <data name="str01002" xml:space="preserve">
+    <value>Il valore impostato per il diametro interno è più piccolo
+di quello ottenuto sottraendo la sporgenza standard ({0:F} mm)
+dal diametro interno cassa  ({1:F} mm). Il valore impostato viene
+lasciato sotto la responsabilità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01003" xml:space="preserve">
+    <value>Il valore impostato per il diametro interno è più grande
+di quello ottenuto sottraendo la sporgenza standard ({0:F} mm)
+dal diametro interno cassa  ({1:F} mm). Il valore impostato viene
+lasciato sotto la responsabilità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01004" xml:space="preserve">
+    <value>Il diametro interno massimo compatibile con l'alloggiamento
+delle viti interne ed esterne è {0:F} mm. Tale valore tiene
+conto del cerchio viti intene, del diametro delle stesse, dello
+spessore dell'anello di spinta e del cerchio delle viti superiori
+esterne.
+Il valore impostato è inferiore, e quindi la soluzione non è
+ottimale; esso viene lasciato sotto la responsabilità del
+progettista, fino al ripristino delle condizioni di calcolo
+automatico della geometria.</value>
+  </data>
+  <data name="str01005" xml:space="preserve">
+    <value>Il diametro interno massimo compatibile con l'alloggiamento
+delle viti interne ed esterne è {0:F} mm. Tale valore tiene
+conto del cerchio viti intene, del diametro delle stesse, dello
+spessore dell'anello di spinta e del cerchio delle viti superiori
+esterne.
+Il valore impostato è superiore, e quindi la soluzione rischia
+di non essere fattibile; esso viene lasciato sotto la responsa-
+bilità del progettista, fino al ripristino delle condizioni di calcolo
+automatico della geometria.</value>
+  </data>
+  <data name="str01006" xml:space="preserve">
+    <value>Il diametro esterno dell'anello interno calcolato dal programma
+è {0:F} mm. Esso dipende dal tipo di cassonetto selezionato.
+Il valore impostato è inferiore, e viene lasciato sotto la respon-
+sabilità del progettista, fino al ripristino delle condizioni di calcolo
+automatico della geometria.</value>
+  </data>
+  <data name="str01007" xml:space="preserve">
+    <value>Il diametro esterno dell'anello interno calcolato dal programma
+è {0:F} mm. Esso dipende dal tipo di cassonetto selezionato.
+Il valore impostato è superiore, e viene lasciato sotto la respon-
+sabilità del progettista, fino al ripristino delle condizioni di calcolo
+automatico della geometria.</value>
+  </data>
+  <data name="str01008" xml:space="preserve">
+    <value>L'anello di spinta rischia di cadere all'interno dell'anello interno</value>
+  </data>
+  <data name="str01009" xml:space="preserve">
+    <value>L'anello di spinta rischia di interferire con le viti interne</value>
+  </data>
+  <data name="str01010" xml:space="preserve">
+    <value>Non è stata definita l'altezza del cassonetto</value>
+  </data>
+  <data name="str01011" xml:space="preserve">
+    <value>Il diametro impostato è troppo piccolo.
+Esso viene lasciato sotto la responsabi-
+lità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01012" xml:space="preserve">
+    <value>Il diametro impostato è troppo grande.
+Esso viene lasciato sotto la responsabi-
+lità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01013" xml:space="preserve">
+    <value>Il diametro esterno della parte ativa della guarnizione è troppo piccolo</value>
+  </data>
+  <data name="str01014" xml:space="preserve">
+    <value>Il diametro esterno della parte ativa della guarnizione potrebbe
+essere troppo grande.
+Infatti si crea gioco tra il diametro interno della guarnizione
+e il diametro interno del mantello.
+Può essere utile premere il pulsante 'Ricalcola lo standard'.</value>
+  </data>
+  <data name="str01015" xml:space="preserve">
+    <value>La larghezza attiva della guarnizione è troppo grande.|Bisogna cambiare il diametro esterno della parte attiva| o la larghezza dell'anello interno (se presente).
+Si suggerisce di premere il pulsante 'Ricalcola lo standard'.</value>
+  </data>
+  <data name="str01016" xml:space="preserve">
+    <value>La larghezza attiva della guarnizione potrebbe essere troppo
+piccola. Infatti si crea gioco tra il diametro interno della guarni-
+zione e il diametro interno del mantello.
+Può essere utile premere il pulsante 'Ricalcola lo standard'.</value>
+  </data>
+  <data name="str01017" xml:space="preserve">
+    <value>La larghezza dell'anello interno è troppo grande.|Bisogna cambiare il diametro esterno della parte attiva| o la larghezza della parte attiva della guarnizione.</value>
+  </data>
+  <data name="str01018" xml:space="preserve">
+    <value>La larghezza dell'anello interno potrebbe essere troppo
+piccola. Infatti si crea gioco tra il diametro interno della guarni-
+zione e il diametro interno del mantello.
+Può essere utile premere il pulsante 'Ricalcola lo standard'.</value>
+  </data>
+  <data name="str01019" xml:space="preserve">
+    <value>L'altezza del cassonetto non è definita</value>
+  </data>
+  <data name="str01020" xml:space="preserve">
+    <value>Il diametro interno della cassa è troppo piccolo</value>
+  </data>
+  <data name="str01021" xml:space="preserve">
+    <value>Questo valore supera il valore massimo consigliato.
+Tuttavia il calcolo può continuare.</value>
+  </data>
+  <data name="str01022" xml:space="preserve">
+    <value>Inserire la massima sporgenza attesa per l'anello di spinta interno|rispetto alla faccia inferiore dell'anello di blocco. Essa corrisponde|alle operazioni di serraggio in esercizio della guarnizione sotto la PT.|Il valore di default è pari a 3 mm.</value>
+  </data>
+  <data name="str01023" xml:space="preserve">
+    <value>Inserire la massima sporgenza attesa per l'anello di spinta esterno|rispetto alla faccia inferiore dell'anello di blocco. Essa corrisponde|all'operazione di serraggio della guarnizione sotto il diaframma.|Il valore di default è pari a 1 mm.</value>
+  </data>
+  <data name="str01024" xml:space="preserve">
+    <value>La spaziatura è inferiore al minimo consentito.
+Aumentare il diametro delle viti.</value>
+  </data>
+  <data name="str01025" xml:space="preserve">
+    <value>Questo valore è calcolato con fattore 1.3,
+tenendo conto del rapporto caldo/freddo
+degli ammissibili di pistra e tubi.</value>
+  </data>
+  <data name="str01026" xml:space="preserve">
+    <value>E' probabile che siano insorti problemi nell'accesso
+alla libreria 'Brelb.ini' per la variabile </value>
+  </data>
+  <data name="str01027" xml:space="preserve">
+    <value>Attendere la compilazione del rapporto</value>
+  </data>
+  <data name="str01028" xml:space="preserve">
+    <value>Un calcolo precedente ha determinato lo spessore della parte liscia
+necessario per allineare i diametri esterni della parte liscia e della
+parte filettata.
+Lo spessore così determinato risulta ora eccessivo. 
+Volete riprendere in considerazione lo spessore minimo calcolato
+per la parte liscia?
+(Risposta raccomandata: Si)</value>
+  </data>
+  <data name="str01029" xml:space="preserve">
+    <value>Non è definita la pressione di progetto lato mantello</value>
+  </data>
+  <data name="str01030" xml:space="preserve">
+    <value>Non è definita la temperatura di progetto lato mantello</value>
+  </data>
+  <data name="str01031" xml:space="preserve">
+    <value>Non è definito il diametro interno del mantello</value>
+  </data>
+  <data name="str01032" xml:space="preserve">
+    <value>Non è definito il raggio interno del fondo lato mantello</value>
+  </data>
+  <data name="str01033" xml:space="preserve">
+    <value>Non è definito il diametro della guarnizione</value>
+  </data>
+  <data name="str01034" xml:space="preserve">
+    <value>Non sono definiti i parametri m e Y della guarnizione</value>
+  </data>
+  <data name="str01035" xml:space="preserve">
+    <value>Non è definito il diametro del tubo scambiatore</value>
+  </data>
+  <data name="str01036" xml:space="preserve">
+    <value>Il passo della foratura è mal definito</value>
+  </data>
+  <data name="str01037" xml:space="preserve">
+    <value>La pressione di prova idraulica lato mantello non è definita.
+Il calcolo automatico della stessa non è stato possibile
+poiché non è definita neppure la pressione differenziale
+di progetto lato mantello (vedi scheda 'Dati Generali').</value>
+  </data>
+  <data name="str01038" xml:space="preserve">
+    <value>La pressione di prova idraulica differenziale lato mantello
+ non è definita.</value>
+  </data>
+  <data name="str01039" xml:space="preserve">
+    <value>La pressione di prova idraulica differenziale lato mantello
+è inferiore alla pressione differenziale di progetto molti-
+plicata per 1.3 e per il rapporto degli ammissibili.
+Vuoi mantenere il valore impostato?
+(Se rispondi di no il valore sarà ricalcolato
+automaticamente)</value>
+  </data>
+  <data name="str01040" xml:space="preserve">
+    <value>Non essendo definita la pressione di progetto differenziale
+(vedi scheda Dati Generali) non è possibile calcolare lo
+spessore della piastra tubiera.</value>
+  </data>
+  <data name="str01041" xml:space="preserve">
+    <value>Non è stato fornito il nome del file di dati.
+Accedere al menu Salva come ...</value>
+  </data>
+  <data name="str01042" xml:space="preserve">
+    <value>Il valore impostato per lo spessore della flangia del
+cassonetto è inferiore allo spessore minimo di calcolo
+o allo spessore minimo standard.
+Il valore impostato viene lasciato sotto la responsabi-
+lità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01043" xml:space="preserve">
+    <value>Alcune variabili geometriche (dimensioni, spessori) del problema
+sono state sottratte al procedimento di calcolo automatico.
+E' quindi necessario prestare particolare attenzione ai risultati.
+Per ripristinare completamente l'automatismo accedere al
+menu 'Azioni'.</value>
+  </data>
+  <data name="str01044" xml:space="preserve">
+    <value>Lo spessore impostato è inferiore allo spessore
+minimo di calcolo.
+Il valore impostato viene lasciato sotto la responsabi-
+lità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01045" xml:space="preserve">
+    <value>Il cerchio viti massimo compatibile con il diametro interno
+della cassa è {0:F} mm. Il valore impostato è inferiore, e
+quindi la soluzione non è ottimale.
+Il valore impostato viene lasciato sotto la responsabi-
+lità del progettista fino al ripristino delle condizioni di
+calcolo automatico della geometria.</value>
+  </data>
+  <data name="str01046" xml:space="preserve">
+    <value>Il cerchio viti massimo compatibile con il diametro interno
+della cassa è {0:F} mm. Il valore impostato è superiore, e
+quindi la soluzione non è fabbricabile.
+Il valore impostato viene lasciato sotto la responsabi-
+lità del progettista fino al ripristino delle condizioni di
+calcolo automatico della geometria.</value>
+  </data>
+  <data name="str01047" xml:space="preserve">
+    <value>E' stata scelta l'opzione 'cassonetto cilindrico in linea'.
+Il diametro di istallazione delle viti interne deve quindi
+essere uguale al diametro del cassonetto.</value>
+  </data>
+  <data name="str01048" xml:space="preserve">
+    <value>Il valore impostato per il diametro della gola è più piccolo
+di quello ottenuto aggiungendo la spalla standard ({0:F} mm)
+al diametro fondo filetto  ({1:F} mm). Il valore impostato viene
+lasciato sotto la responsabilità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str01049" xml:space="preserve">
+    <value>Il valore impostato per il diametro della gola è più grande
+di quello ottenuto aggiungendo la spalla standard ({0:F} mm)
+al diametro fondo filetto  ({1:F} mm). Il valore impostato viene
+lasciato sotto la responsabilità del progettista.
+(Vedi colore rosa di sfondo della casella di testo)</value>
+  </data>
+  <data name="str09001" xml:space="preserve">
+    <value>Questo valore può essere lasciato in bianco. In tal caso esso|verrà calcolato a partire dalla pressione differenziale di progetto|già specificata</value>
+  </data>
+  <data name="str09002" xml:space="preserve">
+    <value>Condizione di carico dimensionante:</value>
+  </data>
+  <data name="str09003" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="str09004" xml:space="preserve">
+    <value>Seating</value>
+  </data>
+  <data name="str09005" xml:space="preserve">
+    <value>Prova idraulica (parte filettata)</value>
+  </data>
+  <data name="str09006" xml:space="preserve">
+    <value>Prova idraulica (estensione)</value>
+  </data>
+  <data name="str09007" xml:space="preserve">
+    <value>E' opportuno scegliere come valore della sezione retta dell'estensione il valore minimo al di sopra del quale la condizione dimensionante non sia 'Prova idraulica (estensione)'</value>
+  </data>
+  <data name="str09008" xml:space="preserve">
+    <value>Se si sceglie l'opzione monolaterale la pressione differenziale agirà in con-
+dizioni di progetto solo dal lato tubi. Essa sarà quindi dimensionante per
+la piastra tubiera, ma non per il sistema di compressione della guarnizione
+sotto di essa. La pressione differenziale di prova idraulica lato mantello
+viene specificata nella scheda 'Piastra tubiera'.
+Se si sceglie l'opzione bilaterale, la pressione differenziale di progetto agi-
+rà su entrambi i lati, e la pressione differenziale di prova idraulica potrà
+essere determinata a partoire da essa secondo le regole di UG-99.</value>
+  </data>
+  <data name="str09009" xml:space="preserve">
+    <value>Tensioni elevate o rischio di buckling: aumentare lo spessore.</value>
+  </data>
+  <data name="str09010" xml:space="preserve">
+    <value>Design: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09011" xml:space="preserve">
+    <value>Seating: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09012" xml:space="preserve">
+    <value>Test: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09013" xml:space="preserve">
+    <value>Design: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09014" xml:space="preserve">
+    <value>Seating: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09015" xml:space="preserve">
+    <value>Test: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09016" xml:space="preserve">
+    <value>Bearing stress elevato sugli inserti sotto le viti interne:</value>
+  </data>
+  <data name="str09017" xml:space="preserve">
+    <value>Design: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09018" xml:space="preserve">
+    <value>Seating: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09019" xml:space="preserve">
+    <value>Test: {0,8:F} &gt; {1,8:F}</value>
+  </data>
+  <data name="str09020" xml:space="preserve">
+    <value>E' probabilmente necessario cambiare il materiale
+con uno a più alto snervamento.</value>
+  </data>
+</root>

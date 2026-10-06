@@ -25,4 +25,12 @@
     <None Update="Arch/**/*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <Import Project="LegacySources.props" />
+  <ItemGroup>
+    <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
+    <ProjectReference Include="../RoutBase2/RoutBase2.vbproj" />
+    <ProjectReference Include="../RoutBase3/RoutBase3.vbproj" />
+    <ProjectReference Include="../RoutBase4/RoutBase4.vbproj" />
+    <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
+  </ItemGroup>
 </Project>

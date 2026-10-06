@@ -1,0 +1,31 @@
+1      º\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+S      º_\tab \                        \
+s      º\par \tab ==========================
+T      º_\par  \  \ * \                                        \ rev.\ \ (Date: \         \) *
+V      º_\par             \                                              \
+1      º\par             ================================================
+1      º\par                               APPENDIX 2
+1      º\par                  RULES FOR BOLTED FLANGED CONNECTIONS
+1      º\par                         WITH RING TYPE GASKETS
+1      º\par                ========================================
+G      º_\par FLANGE IDENTIFICATION : &
+H      º_\par FLANGE MATERIAL       : &
+I      º_\par GASKET TYPE           : &
+L      º_\par GASKET MATERIAL       : &
+M      º_\par STUD   MATERIAL       : &
+1      º\par
+1      º\par                              CALCULATION OF MAWP
+1      º\par                              ===================
+1      º\par
+A002   º_\par    Tem   = #########.## [{_\super 0}C]     #######.#### [{_\super 0}F]       Design temperature
+1      º\par
+1      º\par Condition               MAWP         [MPa]    MAWP         [psi]    Controlling element
+1      º\par ------------            ------------------    ------------------    -------------------
+U003   º_\par Cold and new            #######.####          ##########.#          \               \
+U004   º_\par Hot  and new            #######.####          ##########.#          \               \
+U005   º_\par Cold and corroded       #######.####          ##########.#          \               \
+U006   º_\par Hot  and corroded       #######.####          ##########.#          \               \
+1      º\par
+1      º\par
+0      º
+

@@ -1,0 +1,12 @@
+B
+K   Load condition N° ## :  &_\par
+0   -----------------------------------------------------------------------------------\par
+6001002Shell Side Pressure       #####.# [psi]   Tube Side Pressure          #####.# [psi]_\par
+7004268005006Temp. [°F]: TSheet A ####.##   TSheet B ####.##   Shell  ####.##   Tube   ####.#_\par
+7007267008009E    [psi]: TSheet A ##.##^^^^ TSheet B ##.##^^^^ Shell  ##.##^^^^ Tube   ##.##^^^^_\par
+7035266012013åall [psi]: TSheet A #####.#   TSheet B #####.#   Shell  #####.#   Tube   #####.#_\par
+6014015Shell Exp. Coeff ###.###^^^^ [in/in.°F]   Tube Exp. Coeff    ###.###^^^^ [in/in.°F]_\par
+6036037Spring Rate New Cond. ##.##^^^^ [lb/in]   Spring Rate Corr. Cond. ##.##^^^^ [lb/in]_\par
+0   -----------------------------------------------------------------------------------\par
+Fine
+
