@@ -1,0 +1,165 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=..\bin\Lancio.chm
+Contents file=Lancio.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=Yes
+Full text search stop list file=..\..\stop.stp
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 Inglese (Stati Uniti)
+Title=Guida di Lancio
+
+[WINDOWS]
+Aiuto="Guida di Lancio","Lancio.hhc","Index.hhk","Panoramica.htm","Generalita.htm",,,,,0x23520,,0x304e,[63,97,1385,1050],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+Aree.htm
+Risoluzione.htm
+SepDec.htm
+Lingua.htm
+IE.htm
+Pulsanti.htm
+mnuFile.htm
+mnuCalcMecc.htm
+FunzRete.htm
+Istallazione.htm
+Word.htm
+AutoCAD.htm
+FinestrIniziale.htm
+Menu.htm
+Librtir.htm
+LibreriaMateriali.htm
+Librguarn.htm
+Librpip.htm
+LibreriaFlange.htm
+BancheDati.htm
+mnuTrac.htm
+mnuTerm.htm
+mnuMecc.htm
+Librtubi.htm
+Autenticazione.htm
+Generalita.htm
+Errori.htm
+Lancioini.htm
+AutoExexNT.htm
+AutoExecBat.htm
+ErrStampante.htm
+mnuPref.htm
+ErrLibMat.htm
+ErrLibMatNoPrezzi.htm
+OrgProgetti.htm
+MsgAmmissC.htm
+msgYoung.htm
+MsgSnervF.htm
+MsgSnervC.htm
+MsgAmmissF.htm
+msgAlfa.htm
+Checkdir.htm
+ErrLibMatNoIndMat.htm
+ErrLibMatAlfaTer2.htm
+ErrLibMatEmodAlt2.htm
+ErrLibMatAlfaTer1.htm
+ErrLibMatEmodAlt1.htm
+LibMatFinScheda.htm
+LibMatFinClasse.htm
+LibMatInterfUt.htm
+ErrLibMatLegRat2.htm
+ErrLibMatLegRat1.htm
+ErrLibMatNoDiv1.htm
+ErrLibMatNoTabelle.htm
+ISML.htm
+
+[ALIAS]
+#include ..\..\..\..\..\..\..\Documenti\EuroNorm\Alias.h
+IDH_AUTOCAD_ASSENTE=AutoCAD.htm
+IDH_AUTOCAD_VECCHIO=AutoCAD.htm
+IDH_CAP_BANCHEDATI=BancheDati.htm
+IDH_CAP_BD_MAT_CLASSE=LibreriaMateriali.htm#Classe
+IDH_CAP_BD_MAT_DATIFAT=LibreriaMateriali.htm#Fatto
+IDH_CAP_BD_MAT_DATIRIP=LibreriaMateriali.htm#Rip
+IDH_CAP_BD_MAT_DB=LibreriaMateriali.htm#DB
+IDH_CAP_BD_MAT_SCELTA=LibreriaMateriali.htm#Scelta
+IDH_CAP_BD_MAT_SCHEDA=LibreriaMateriali.htm#Scheda
+IDH_CAP_BD_MATERIALI=LibreriaMateriali.htm
+IDH_CAP_GENERALITA=Generalita.htm
+IDH_ERR_AUTOEXECBAT=AutoExecBat.htm
+IDH_ERR_AUTOEXECNT=AutoExexNT.htm
+IDH_ERR_CHECKDIR=Checkdir.htm
+IDH_ERR_LANCIOINI=Lancioini.htm
+IDH_ERR_LIBMAT_ALFATER1=ErrLibMatAlfaTer1.htm
+IDH_ERR_LIBMAT_ALFATER2=ErrLibMatAlfaTer2.htm
+IDH_ERR_LIBMAT_EMODALT1=ErrLibMatEmodAlt1.htm
+IDH_ERR_LIBMAT_EMODALT2=ErrLibMatEmodAlt2.htm
+IDH_ERR_LIBMAT_LEGRAT1=ErrLibMatLegRat1.htm
+IDH_ERR_LIBMAT_LEGRAT2=ErrLibMatLegRat2.htm
+IDH_ERR_LIBMAT_NODIV1=ErrLibMatNoDiv1.htm
+IDH_ERR_LIBMAT_NOINDMAT=ErrLibMatNoIndMat.htm
+IDH_ERR_LIBMAT_NOLISTINO=ErrLibMatNoPrezzi.htm
+IDH_ERR_LIBMAT_NOVALOR1=ErrLibMatNoTabelle.htm
+IDH_FINLANCIO_BOTTAFC=Pulsanti.htm#ISA
+IDH_FINLANCIO_BOTTGEST=Pulsanti.ftm#Gest
+IDH_FINLANCIO_BOTTPRECONS=Pulsanti.htm#PreCons
+IDH_FINLANCIO_BOTTST=Pulsanti.htm#IST
+IDH_FINLANCIO_BOTTUTIL=Pulsanti.htm#Util
+IDH_FINLANCIO_BOTTWHB=Pulsanti.htm#WHB
+IDH_FINLANCIO_BOTTWPS=Pulsanti.htm#WPS
+IDH_INIZIO_ARCHIVI=Aree.htm#Archivi
+IDH_INIZIO_BRT=Aree.htm#Brt
+IDH_INIZIO_CAMBIORETE=FunzRete.htm
+IDH_INIZIO_CAMBIORETE1=FunzRete.htm
+IDH_INIZIO_ESEGUIBILI=Aree.htm#eseguibili
+IDH_INIZIO_LAVCOMMESS=Aree.htm#lavcomm
+IDH_INIZIO_LAVSCIOLTI=Aree.htm#lavsciolti
+IDH_INIZIO_RISPOSTASI=FunzRete.htm
+IDH_LB_SCHEDA_CARACT=LibreriaMateriali.htm#CARACT
+IDH_LB_SCHEDA_CHART=LibreriaMateriali.htm#CHART
+IDH_LB_SCHEDA_CLASSIF=LibreriaMateriali.htm#CLASSIF
+IDH_LB_SCHEDA_DATICODICE=LibreriaMateriali.htm#DATICODICE
+IDH_LB_SCHEDA_DENOM=LibreriaMateriali.htm#DENOM
+IDH_LB_SCHEDA_FONTE=LibreriaMateriali.htm#FONTE
+IDH_LB_SCHEDA_GRUPPO=LibreriaMateriali.htm#GRUPPO
+IDH_LB_SCHEDA_MWDTRULES=LibreriaMateriali.htm#MWDTRULES
+IDH_LB_SCHEDA_MWDTRULES1=LibreriaMateriali.htm#MWDTRULES1
+IDH_LB_SCHEDA_MWDTRULES2=LibreriaMateriali.htm#MWDTRULES2
+IDH_LB_SCHEDA_MWDTRULES3=LibreriaMateriali.htm#MWDTRULES3
+IDH_LB_SCHEDA_PNUMBER=LibreriaMateriali.htm#PNUMBER
+IDH_LB_SCHEDA_PREZZI=LibreriaMateriali.htm#PREZZI
+IDH_LB_SCHEDA_SNERV=LibreriaMateriali.htm#SNERV
+IDH_LB_SCHEDA_TABELL1=LibreriaMateriali.htm#TABELL1
+IDH_LB_SCHEDA_TABELL2=LibreriaMateriali.htm#TABELL2
+IDH_LISTINO_HELP=LibreriaMateriali.htm#Listini
+IDH_OPZIONE_LAVSCIOLTI=Aree.htm#FinLavSciol
+IDH_PAR_G_AUTENT=Autenticazione.htm
+IDH_SIST_LINGUA=Lingua.htm
+IDH_SIST_RISOL=Risoluzione.htm
+IDH_SIST_SEPDEC=SepDec.htm
+IDH_SIST_STAMP=ErrStampante.htm
+IDH_WORD_ASSENTE=Word.htm
+IDH_WORD_VECCHIO=Word.htm
+MSG_ALFACALDO=msgAlfa.htm
+MSG_ALFAFREDDO=msgAlfa.htm
+MSG_AMMISSCALDO=MsgAmmissC.htm
+MSG_AMMISSFREDDO=MsgAmmissF.htm
+MSG_YIELDCALDO=MsgSnervC.htm
+MSG_YIELDFREDDO=MsgSnervF.htm
+MSG_YOUNGCALDO=msgYoung.htm
+MSG_YOUNGFREDDO=msgYoung.htm
+PIP_HELP=Librpip.htm
+
+[MAP]
+#include ..\..\..\..\..\..\..\Documenti\EuroNorm\header.h
+#include header.h
+
+[TEXT POPUPS]
+topics.txt
+
+[MERGE FILES]
+EuroNorm.chm
+
+[INFOTYPES]
+

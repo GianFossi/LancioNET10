@@ -1,0 +1,57 @@
+####.#### &   ####.#### &
+\par Ins.Diameter on Base Mat.            D\tab =
+\par Corroded Inside Diameter             D\tab =
+\par Ins.Depth on Base Mat.               h\tab =
+\par Corroded Inside Depth                h\tab =
+\par Ratio of Major to Minor Axis       D/2h\tab =
+\par Factor from Table 1-4.1              K\tab =
+\par t{\sub o} =PD/(2SE-0.2P)\tab =
+\par t{\sub o} =PDK/(2SE-0.2P)\tab =
+\par Ins.Crown Radius on Base Mat.        L\tab =
+\par Corroded Inside Crown Radius         L\tab =
+\par Ins.Knuckle Radius on Base Mat.      r\tab =
+\par Corroded Inside Knuckle Radius       r\tab =
+\par Ratio of Crown to Knuckle Radius     L/r\tab =
+\par Factor from Table 1-4.2              M\tab =
+\par t{\sub o} =0.885PL/(SE-0.1P)\tab =
+\par t{\sub o} =PLM/(2SE-0.2P)\tab =
+\par Ins.Radius on Base Mat.              L\tab =
+\par Corroded Inside Radius               L\tab =
+\par t{\sub o} =PL/(2SE-0.2P)\tab =
+\par Ins.Radius on Base Mat.              R\tab =
+\par Corroded Inside Radius               R\tab =
+\par Y  =2(SE+P)/(2SE-P)\tab =
+\par to =R({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Y-1)\tab =
+\par L  =K{\sub 1}*D\tab =
+\par t{\sub rh}=PL/(2S-0.2P)\tab =
+\par Y  =2(S+P)/(2S-P)\tab =
+\par t{\sub rh}=R({{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}Y-1)\tab =
+\par Minimum Design Thickness\tab =
+\par Min. Adopted Thickness After Forming\tab =
+\par  UG-33    Design under external pressure
+\par Factor K{\sub o} according to UG-33(b)\tab =
+\par Radius R{\sub o} according to UG-33(b)\tab =
+\par A-factor , .125 t/R{\sub o}\tab =
+\par Allowable external pressure, B * t/R{\sub o}\tab =
+\par
+\par Identification:
+_\par \         \ \         \
+\par -----------------------
+\par Material:
+\par Specified Min.Tensile Stress         Su  =
+\par Max.Allow.Stress / Design Temp.      St  =
+\par Max.Allow.Stress / Room Temp.        So  =
+\par Reference Stress / Room Temp.        Sr  =
+\par Design Stress Value                  S   =
+\par Joint Efficiency                     E   =
+\par Cladding or Weld Overlay             o   =
+\par Corrosion Allowance                  c   =
+#.###^^^^ &   #.###^^^^ &
+\par B-factor per curve
+\par Minimum Design Skirt thk (UG-32 (l))\tab =
+\par External Design Pressure             P   =
+\par t{\sub o} =5PL/6S\tab =
+\par Coincident Design Temperature        T   =
+\par Required thickness s{\sub r} against external pressure (calculated by iteration)\par s{\sub r} (on data for UG-33 herebelow)\tab =
+\par Minimum Corroded Thickness to UG-16(b)\tab =
+

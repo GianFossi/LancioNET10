@@ -1,0 +1,442 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Panoramica">
+		<param name="Local" value="Panoramica.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Guida in linea">
+		<param name="Local" value="Guida.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="La finestra principale">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Il menu della finestra principale">
+			<param name="Local" value="Menu.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu File">
+				<param name="Local" value="mnuFile.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu Dati">
+				<param name="Local" value="mnuDati.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu Calcola">
+				<param name="Local" value="mnuCalcola.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu Compilazione Tabelle">
+				<param name="Local" value="mnuCompTabelle.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu Preferenze">
+				<param name="Local" value="mnuPreferenze.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gli oggetti della finestra principale">
+			<param name="Local" value="Oggetti.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Il pannello della struttura">
+				<param name="Local" value="PannelloStruttura.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Il pannello del rapporto">
+				<param name="Local" value="Rapporto.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Il pannello dei risultati">
+				<param name="Local" value="PannelloRisultati.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dati Generali">
+		<param name="Local" value="DatiGenerali.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Numero di lati">
+			<param name="Local" value="NumLati.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calcoli in Prova Idraulica">
+			<param name="Local" value="ProvIdr.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rinforzo delle aperture">
+			<param name="Local" value="ReqRinfAp.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tipi di membrature">
+		<param name="Local" value="Tipi.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cilindro">
+			<param name="Local" value="Cilindro.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cono">
+			<param name="Local" value="Cono.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conoide">
+			<param name="Local" value="Conoide.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fondo">
+			<param name="Local" value="Fondo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grande Fucinato">
+			<param name="Local" value="GrFuc.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Teoria del serraggio bulloni">
+				<param name="Local" value="SerrBull.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Finestra 'Serraggio bulloni'">
+				<param name="Local" value="FinSerBull.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Esecuzione autonoma di 'Serraggio Bulloni'">
+				<param name="Local" value="SerrBullAut.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Rilassamento bulloni">
+				<param name="Local" value="RilBull.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Piastra Tubiera">
+			<param name="Local" value="PT.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati Generali">
+				<param name="Local" value="DatiGenPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati di progetto">
+				<param name="Local" value="DatiProgettoPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sulle piastre tubiere">
+				<param name="Local" value="DatiPiastraPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sul mantello">
+				<param name="Local" value="DatiShellPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sulle giunzioni flangiate">
+				<param name="Local" value="DatiJointPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sui bulloni">
+				<param name="Local" value="DatiBullPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sulle giunzioni saldate">
+				<param name="Local" value="DatiWeldPT.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dati sul fondo flottante">
+				<param name="Local" value="DatiFFPT.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tubi di Scambio">
+			<param name="Local" value="Tubi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dilatatore">
+			<param name="Local" value="Dilatatore.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Setti Partitori">
+			<param name="Local" value="DatiSetti.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aperture">
+			<param name="Local" value="DatiAperture.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Calcolo delle membrature">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cono">
+			<param name="Local" value="CalcoloConi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grande Fucinato">
+			<param name="Local" value="GrFucCalc.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pag.1 - Dati geometrici">
+				<param name="Local" value="GrFucPag1.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pag.2 - Dati sui bulloni">
+				<param name="Local" value="GrFucPag2.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pag.3 - Ammissibili e guarnizione">
+				<param name="Local" value="GrFucPag3.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pag.4 - Reazioni delle guarnizioni">
+				<param name="Local" value="GrFucPag4.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pag.5 - Risultati intermedi">
+				<param name="Local" value="GrFucPag5.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pagina finale - Tensioni risultanti">
+				<param name="Local" value="GrFucPagFin.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Calcolo del diaframma saldato">
+				<param name="Local" value="CalcDiafrSald.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Piastre tubiere">
+			<param name="Local" value="PTCalc.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="I pulsanti 'Avanti' e 'Indietro'">
+				<param name="Local" value="Avantindre.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Il pulsante con l'icona di un semaforo">
+				<param name="Local" value="Semaforo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Grafici di calcolo delle piastre con estensione">
+				<param name="Local" value="Grafici.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aperture">
+			<param name="Local" value="CalcApert.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="La flangia dei bocchelli">
+				<param name="Local" value="CalcFlBocc.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pressure-Temperature Ratings">
+				<param name="Local" value="Ratings.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aperture in div.2">
+			<param name="Local" value="CalcApert2.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Bocchelli con scarpa">
+				<param name="Local" value="Bocch2Forg.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Copia del codice ASME">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AD-400 Welded Joints">
+					<param name="Local" value="AD400.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AD-500 Openings and their reinforcement">
+					<param name="Local" value="AD500.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AD-600 Nozzles and other connections">
+					<param name="Local" value="AD600.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Appendici teoriche">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Piastre fisse di diverso spessore">
+			<param name="Local" value="AppDiffering.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La flessione nelle estensioni flangiate">
+			<param name="Local" value="AppFlessExt.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Carico di progetto bulloni">
+			<param name="Local" value="AppBoltLoad.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rilassamento del carico bulloni">
+			<param name="Local" value="AppRilass.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="EN-13445">
+			</OBJECT>
+		<OBJECT type="text/sitemap">
+			<param name="Merge" value="EuroNorm.chm::\EuroNorm.hhc">
+
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Esecuzione da PPSM">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Introduzione">
+			<param name="Local" value="IntroPPSM.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Assegnazione del lato">
+			<param name="Local" value="AssegnaLatiPPSM.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori durante l'esecuzione">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Membratura duplicata">
+			<param name="Local" value="MembrDupl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Condizioni di carico in numero eccessivo">
+			<param name="Local" value="CapCond.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impossibile trovare la libreria Asmelib.dll">
+			<param name="Local" value="NonAsmeLib.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Materiali non definiti">
+			<param name="Local" value="ErrMancaAmmiss.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Manca il materiale della membratura collegata al dilatatore">
+			<param name="Local" value="ErrMancaMantDil.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mancano le regole di progettazione a bassa temperatura">
+			<param name="Local" value="ErrMDMT1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati insufficienti per l'ottimizzazione">
+			<param name="Local" value="ErrMancaFlangia.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La guarnizione non &egrave; definita">
+			<param name="Local" value="ErrMancaGuarniz.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Larghezza guarnizione non definita">
+			<param name="Local" value="ErrPTGuarN.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro guarnizione non definito">
+			<param name="Local" value="ErrPTGuarD.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Manca la tabella delle MAWP">
+			<param name="Local" value="ErrMancaMAWP.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Il pressure rating &egrave; inferiore all'MAWP">
+			<param name="Local" value="ErrPressureRating.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Limiti insoddisfatti per le piastre tubiere">
+			<param name="Local" value="ErrPTnotvalid.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro esterno della PT non definito">
+			<param name="Local" value="errDiamExtPT.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Informazioni sui membri accoppiati alla PT corrotte">
+			<param name="Local" value="ErrPTLegami1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Membrature accoppiate alla PT non definite">
+			<param name="Local" value="ErrPTLegami2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Membrature accoppiate alla piastra tubiera flottante">
+			<param name="Local" value="ErrPTLegami3.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calcolo PT - Mantello non definito">
+			<param name="Local" value="ErrPTnomant.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calcolo di ottimizzazione impossibile">
+			<param name="Local" value="ErrNoOptim.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Assenza di convergenza MAWP per Gr.Fuc.">
+			<param name="Local" value="ErrWNconv.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cerchio tiranti minimo non trovato">
+			<param name="Local" value="ErrNoCerchio.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Avvisi durante l'esecuzione">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Limiti superati sul mantello">
+			<param name="Local" value="AvvDilatMant.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Codici diversi">
+			<param name="Local" value="AvvCodiciDiversi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Il pressure rating &egrave; inferiore alla pressione di progetto">
+			<param name="Local" value="AvvPressureRating.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Avvisi sui carichi imposti alle giunzioni bullonate">
+			<param name="Local" value="AvvCaricoImposto.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creazione di componenti ausiliari">
+			<param name="Local" value="AvvCompAusiliari.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

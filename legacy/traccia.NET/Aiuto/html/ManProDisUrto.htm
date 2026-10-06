@@ -1,0 +1,295 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProDisUrto_file/filelist.xml">
+<title>Subroutine DisUrto</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>69</o:TotalTime>
+  <o:Created>2001-01-01T22:34:00Z</o:Created>
+  <o:LastSaved>2001-01-01T22:35:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>170</o:Words>
+  <o:Characters>970</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>1191</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h2
+	{mso-style-next:Normale;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine DisUrto</h1>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>             </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                 </span>22/04/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Disegna la sezione dell’eventuale
+piatto d’urto nella pianta della tracciatura.</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:list 72.0pt'><b>Chiamata
+da:<span style='mso-tab-count:1'>          </span></b><a
+href="ManProinpiDIA.htm">Sub inpiDIA</a>.</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:list 72.0pt'><b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Listato</span></b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Sub
+DisUrto()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim YURT0 As Single, YURT1 As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim XURT As Single, XCON As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).dt(33) = 0 Or DaTos(0).idout
+= 207 And DaTos(0).URTY(1) = 0 Then Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).URTY(1) = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>If DaTos(0).iutu = 1 Then YURT0 =
+(-DaTos(0).Y(1) + DaTos(0).rtubo + 3): GoTo ava<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>YURT0 = (DaTos(0).Y(DaTos(0).kymax) +
+DaTos(0).rtubo + 3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>YURT0 = DaTos(0).URTY(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>ava:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'-------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If YURT0 &gt; DaTos(0).rr Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>If YURT0 = DaTos(0).URTY(1) Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span></span><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>YURT0 = 0.8 *
+DaTos(0).rr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">            </span>DaTos(0).URTY(1) = YURT0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">         </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>YURT0 = 0.8 * DaTos(0).rr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">  </span><span style="mso-spacerun:
+yes">       </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(0).URTY(3) = 0 Then
+DaTos(0).URTY(3) = 10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>YURT1 = YURT0 + DaTos(0).URTY(3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If
+DaTos(0).URTY(2) &lt;&gt; 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span></span><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'>XURT =
+DaTos(0).URTY(2) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">         </span>XURT = DaTos(0).hin * Tan(PI / 6) +
+DaTos(0).dt(3) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">         </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If XURT = 0 Then
+XURT = 100<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>DaTos(0).URTY(2) = XURT<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>XCON = Sqr(DaTos(0).rr * DaTos(0).rr -
+YURT0 * YURT0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If XURT + 25 &gt; XCON Then XURT = XCON
+- 25<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Monitor.Routines.trattoBF -XURT, YURT1,
+XURT, YURT0, 0.2, 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>DaTos(0).URTY(1) = YURT0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>DaTos(0).URTY(2) = 2 * XURT<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>DaTos(0).URTY(4) = DaTos(0).URTY(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'>End Sub</span><span lang=EN-GB
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

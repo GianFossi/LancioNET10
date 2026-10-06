@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Tiranti.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Tiranti"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Tiranti.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\Tiranti.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\Vari.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET\Vari.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "(Dichiarazioni)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; deve essere chiamato per inizializzare istanze di questa struttura.</Issue>
+        </Section>
+        <Section Name = "calcolo" >
+            <Issue
+                Type = "Compile"
+                Number = "1014"
+            >L'istruzione GoSub non è supportata.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Return ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "inserisci" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.VaiInizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+                PME = "Str$"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto variabile.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "VarType"
+            >VarType ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Stampa" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.sSaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto Stub.Massimizza.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\frmcoef.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET\frmcoef.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\tirMonitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET\tirMonitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\Serraggio.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET\Serraggio.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Prp" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prphydr" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prdiam" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prdiammed" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prchiave" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prarea" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prareapist" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prpassofil" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prprespist" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prsa2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prv" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prvpilgrim" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "Prtorque" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+        </Section>
+        <Section Name = "apri" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get è stato aggiornato a FileGet e ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "scrivi" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put è stato aggiornato a FilePut e ha un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Tiranti\Tir1.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Tiranti.NET\Tir1.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "cmdDone"
+                ObjectType = "CommandButton"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Labelcom1"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Tir1"
+                ObjectType = "Form"
+                PME = "HelpContextID"
+            >Form proprietà Tir1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Tir1"
+                ObjectType = "Form"
+                PME = "Moveable"
+            >Form proprietà Tir1.Moveable non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Tir1"
+                ObjectType = "Form"
+                PME = "WhatsThisHelp"
+            >Form proprietà Tir1.WhatsThisHelp non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Frame4"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Frame4.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_28"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_28.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Coeff_1"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Coeff_1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Coeff_0"
+                ObjectType = "ComboBox"
+                PME = "HelpContextID"
+            >ComboBox proprietà _Coeff_0.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_26"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_26.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Frame3"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Frame3.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_22"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_22.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_23"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_23.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_21"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_21.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Frame2"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Frame2.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_20"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_20.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_19"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_19.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_Text_18"
+                ObjectType = "TextBox"
+                PME = "HelpContextID"
+            >TextBox proprietà _Text_18.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Frame1"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Frame1.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Commento"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Commento.HelpContextID non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Labelcom1"
+                ObjectType = "Label"
+                PME = "WordWrap"
+            >Label proprietà Labelcom1.WordWrap non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "Tipocalc"
+                ObjectType = "Frame"
+                PME = "HelpContextID"
+            >Frame proprietà Tipocalc.HelpContextID non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "calcasme_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento calcasme.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Coeff_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Coeff.SelectedIndexChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Command1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv()().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv(p)(Problem.unmi).</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Tir1"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento Tir1.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Form_QueryUnload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Tir1"
+                ObjectType = "Form"
+                PME = "QueryUnload"
+            >Form evento Tir1.QueryUnload presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Labelcom1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2050"
+                ObjectName = "Labelcom1"
+                ObjectType = "Label"
+                PME = "Change"
+            >L'evento di Label Labelcom1.Change non è stato aggiornato.</Issue>
+        </Section>
+        <Section Name = "menapri_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "SysInter_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento SysInter.CheckedChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Text_Renamed.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Text_LostFocus" >
+            <Issue
+                Type = "Compile"
+                Number = "2072"
+            >Impossibile risolvere Control Name poiché si trova all'interno dello spazio dei nomi generico ActiveControl.</Issue>
+        </Section>
+        <Section Name = "converti" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colSI().</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "c"
+                ObjectType = "TextBox"
+                PME = "Index"
+            >TextBox proprietà c.Index non è stato aggiornato.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colSI(c.Tag).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colTec().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colTec(c.Tag).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colBR().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colBR(c.Tag).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv(c.Tag)(univecchio).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colConv(c.Tag)(uninuovo).</Issue>
+        </Section>
+        <Section Name = "AggText" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colPrima()().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(t)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(p)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(l)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(f)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(pamm)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(l2)(Problem.unmi).</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto colDopo(fl)(Problem.unmi).</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

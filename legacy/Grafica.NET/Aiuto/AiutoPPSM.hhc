@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduzione">
+		<param name="Local" value="Introduzione.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Panoramica">
+			<param name="Local" value="Panoramica.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lancio del programma">
+			<param name="Local" value="Lancio.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La finestra iniziale">
+			<param name="Local" value="FinestraIniziale.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La finestra dei dati">
+			<param name="Local" value="FinDati.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Le finestre secondarie e di avviso">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="La finestra delle forature">
+				<param name="Local" value="FinFori.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Avviso di congruenza con DS">
+				<param name="Local" value="FinAvvisoDS.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Elenco membrature">
+		<param name="Local" value="Membrature.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mantelli cilindrici">
+			<param name="Local" value="Cilindri.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fondi">
+			<param name="Local" value="Fondi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mantelli conici">
+			<param name="Local" value="Coni.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conoidi">
+			<param name="Local" value="Conoidi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Anelli da lamiera">
+			<param name="Local" value="Anelli.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fasci tubieri">
+			<param name="Local" value="FasciTubieri.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tubi di scambio">
+			<param name="Local" value="TubiScambio.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diaframmi">
+			<param name="Local" value="Diaframmi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tiranti fascio">
+			<param name="Local" value="TirantiFascio.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sealing Strips">
+			<param name="Local" value="SealingStrips.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rods">
+			<param name="Local" value="Rods.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bocchelli con flangia standard">
+			<param name="Local" value="BocchStd.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bocchelli non standard">
+			<param name="Local" value="BocchNonStd.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Flange principali">
+			<param name="Local" value="Flangioni.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Piastre tubiere e coperchi piani">
+			<param name="Local" value="PiasCop.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tiranteria">
+			<param name="Local" value="Tiranti.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Setti partitori">
+			<param name="Local" value="SettiP.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="La distinta materiali">
+		<param name="Local" value="Distinta.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gestione informatica della distinta">
+			<param name="Local" value="GestInformatica.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Le forature">
+			<param name="Local" value="Forature.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Stampa della distinta">
+			<param name="Local" value="StampaDistinta.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gestione dei grezzi">
+			<param name="Local" value="GestioneGrezzi.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Le spicchiature">
+				<param name="Local" value="SpicShow.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I prototipi">
+		<param name="Local" value="Prototipi.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creazione di un nuovo prototipo">
+			<param name="Local" value="BasePrototipi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aggiornamento del prototipo attivo">
+			<param name="Local" value="AggiorPrototipo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Approvazione dell'immagine">
+			<param name="Local" value="ApprovImmagine.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale del programmatore">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gli oggetti">
+			<param name="Local" value="ManOgetti.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Gli oggetti che rappresentano membrature">
+				<param name="Local" value="ManOggMemb.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="L'oggetto diaframma">
+					<param name="Local" value="ManOggDiaf.htm">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Il metodo Unsupported">
+						<param name="Local" value="ManHTML\OggDiafUnsupported.htm">
+						</OBJECT>
+				</UL>
+			</UL>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori in fase di esecuzione">
+		<param name="Local" value="Errori.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AutoCAD non istallato">
+			<param name="Local" value="NoAutoCAD.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Versione AutoCAD inadeguata">
+			<param name="Local" value="NoAutoVer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creazione prototipo rifiutata">
+			<param name="Local" value="RifiutoCreazione.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Prototipo non definito">
+			<param name="Local" value="ErrNoProto.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Banca prototipi corrotta">
+			<param name="Local" value="Err2proto.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Spicchiatura troppo larga">
+			<param name="Local" value="ErrNoLamSpic.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Quadrotto troppo largo">
+			<param name="Local" value="ErrLamQuad.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Guida a IST">
+		</OBJECT>
+	<OBJECT type="text/sitemap">
+		<param name="Merge" value="AiutoIST.chm::\AiutoIST.hhc">
+
+		</OBJECT>
+</UL>
+</BODY></HTML>

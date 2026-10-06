@@ -1,0 +1,71 @@
+T
+B
+0                                       INPUT DATA\par
+0                                       ==========\par
+0   \pard \s18\qj\widctlpar\tx680\tqr\tx2977\tqr\tx5103\tx5245 \tab
+K     Load condition Nb ## :  &_\par
+E001P{_\sub s}_\tab =_\tab ###.## [Mpa]_\tab ###### [psi]_\tab Shell Side Design Pressure_\par
+E002P{_\sub t}_\tab =_\tab ###.## [Mpa]_\tab ###### [psi]_\tab Tube Side Design Pressure_\par
+B
+0   T'\tab =\tab
+G594####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Tubesheet temperature at rim_\par
+0   T'{\sub s}\tab =\tab
+G595####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Shell temperature at rim_\par
+0   T'{\sub c}\tab =\tab
+G596####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Channel temperature at rim_\par
+B
+0   T{\sub t}\tab =\tab
+G764####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Tube Design Temperature_\par
+0   T\tab =\tab
+G747####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Tubesheet design Temperature_\par
+G777T{_\sub s}_\tab =_\tab ####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Shell Design Temperature_\par
+G322T{_\sub c}_\tab =_\tab ####.00 [_\'b0C]_\tab ####.00 [_\'b0F]_\tab Channel Design Temperature_\par
+B
+G007E_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Tubesheet _@ temp_\par
+G008E{_\sub s}_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Shell _@ temp_\par
+G009E{_\sub t}_\tab =_\tab ##.####^^^^ [Mpa]_\tab ##.####^^^^ [psi]_\tab Elastic Modulus of Tube _@ temp_\par
+B
+2376a{_\sub 0_\tab }=_\tab #####.# [mm]_\tab ###.### [in]_\tab Radius of the perforated region_\par
+2379a{_\sub s_\tab }=_\tab #####.# [mm]_\tab ###.### [in]_\tab Radial shell dimension (corroded)_\par
+2381a{_\sub c_\tab }=_\tab #####.# [mm]_\tab ###.### [in]_\tab Radial channel dimension (corroded)_\par
+2011p_\tab =_\tab #####.# [mm]_\tab  ###.### [in]_\tab Tube Spacing, center-to-center_\par
+2754A{_\sub L}_\tab =_\tab #####.# [mm{\super 2}]_\tab  ###.### [{in\super 2}]_\tab Total area of untubed lanes_\par
+B
+E035S _\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Tubesheet Allowable Working Stress_\par
+E012S{_\sub s} _\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Shell Allowable Working Stress_\par
+E013S{_\sub t}_\tab =_\tab ####.## [MPa]_\tab ####### [psi]_\tab Tube  Allowable Working Stress_\par
+B
+0   {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub s} \tab =\tab
+G014##.####^^^^ [_\'b0C{_\super -1}]_\tab ##.####^^^^ [_\'b0F{_\super -1}]_\tab Shell Thermal Exp.Coefficient at temp._\par
+0   {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}{\sub t}\tab =\tab
+G015##.####^^^^ [_\'b0C{_\super -1}]_\tab ##.####^^^^ [_\'b0F{_\super -1}]_\tab Tube  Thermal Exp.Coefficient at Temp._\par
+0   {{\field{\*\fldinst SYMBOL 97 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}'\tab =\tab
+G321##.####^^^^ [_\'b0C{_\super -1}]_\tab ##.####^^^^ [_\'b0F{_\super -1}]_\tab TubeSheet Thermal Exp.Coefficient at Temp._\par
+B
+2017C{_\sub s}_\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Shell Side Corrosion_\par
+2018C{_\sub t} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tube Side Corrosion_\par
+2020C_\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tubesheet Pass Partition Grooves_\par
+B
+2021D{_\sub s} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Inside Diameter of Shell_\par
+2022D{_\sub c} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Inside Diameter of Channel_\par
+B
+2023t{_\sub s} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Shell   Thickness_\par
+2024t{_\sub c} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Channel Thickness_\par
+B
+2027D{_\sub 0} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Outside Diameter of Tubes_\par
+2028t{_\sub t} _\tab =_\tab ####.# [mm]_\tab ##.### [in]_\tab Tube Thickness_\par
+1029N_\tab =_\tab ###### [--]_\tab _\tab Number of Tubes in Shell_\par
+2030L{_\sub t} _\tab =_\tab #####.# [mm]_\tab ####.### [in]_\tab Tube Length_\par
+B
+G032M{_\sub 1} _\tab =_\tab ##.####^^^^ [N.m]_\tab ##.####^^^^ [lb.in]_\tab Total Moment in Operating Cond._\par
+G033M{_\sub 2} _\tab =_\tab ##.####^^^^ [N.m]_\tab ##.####^^^^ [lb.in]_\tab Total Moment in Bolting-up Cond._\par
+B
+2034T_\tab =_\tab #####.# [mm]_\tab ###.### [in]_\tab Tubesheet Nominal Thickness_\par
+E038S{_\sub y} _\tab =_\tab ####.## [MPa]_\tab ###### [psi]_\tab Yield Stress of Tube at Temp._\par
+0   k{{\field{\*\fldinst SYMBOL 215 \\f "Symbol" \\s 9}{\fldrslt\f2\fs18}}}l\tab =\tab
+2039####.## [mm]_\tab ##.### [in]_\tab Equiv.Unsupp.Buckling Lenght of Tubes_\par
+0   \pard \s18\qj\widctlpar\tx4536
+B
+0                   fully documented printout sh. 1 of 8\par
+Fine
+

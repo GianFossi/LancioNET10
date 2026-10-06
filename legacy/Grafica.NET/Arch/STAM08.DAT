@@ -1,0 +1,15 @@
+                DIMENSIONI DELLE LAMIERE E PESI LORDI
+                =====================================
+                    (Numero di spicchi =
+CALOTTA CENTRALE      ##### x ##### mm                                  #####.0 Kg
+QUADRI  TIPO  0       ##### x ##### mm N° ###              #####.0 Kg #####.0 Kg
+QUADRI  TIPO #       ##### x ##### mm N° ### + ## tipo 0 #####.0 Kg #####.0 Kg
+Piedritto Reale      ##### mm
+{Scelgo tracc. tipo x / Cambia Nø spicchi / Rifai da capo}
+{         0-5         /        C          /       R      }
+{Accetto tracc. tipo 0 / Cambia Nø spicchi / Rifai da capo}
+{         0            /        C          /       R      }
+    Prova ad aumentare il numero degli spicchi.
+      (problemi larghezza formato lamiera)
+QUADRI  TIPO##       ----------(nessuna soluzione)-----------------
+

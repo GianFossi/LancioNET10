@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Avvisi carichi imposti</title>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=IT link=blue vlink=blue>
+
+<div class=Section1>
+
+<h1>Avvisi sui carichi dei tiranti delle giunzioni bullonate</h1>
+
+<h2><a name=CalcInfImposto>Carico calcolato inferiore al carico imposto</a></h2>
+
+<p class=MsoNormal>Questo avviso può apparire quando vi sono flangioni serrati
+sulla piastra tubiera, <a href="GrFuc.htm#MembrAccopp">aventi tiranti a comune</a>
+ma pressioni di progetto diverse. La risposta consigliata a questa domanda è
+‘No’. Infatti in tal modo il carico imposto sui tiranti dal membro a pressione
+di progetto maggiore verrà assunto come carico calcolato anche per il membro a
+pressione di progetto inferiore.</p>
+
+<p class=MsoNormal>Un altro caso in cui può apparire questo messaggio riguarda
+il <a href="grfuc.htm#PIpiuP">calcolo dei giunti flangiati in prova idraulica</a>.
+Infatti il carico Wm1HT in prova idraulica contribuisce alla definizione del
+carico Wm2 in esercizio.</p>
+
+<h2><a name=MembrNonCalc>Membratura accoppiata non calcolata</a></h2>
+
+<p class=MsoNormal>Se i carichi imposti della membratura accoppiata a quella in
+calcolazione risultano nulli, o se anche i carichi calcolati risultano nulli, è
+segno evidente che quella membratura deve ancora essere calcolata. Il programma,
+se l’utente darà risposta affermativa, trasferirà sulla membratura in questione
+i carichi imposti (salvo poi aumentarli, vedi sopra, se la pressione di
+progetto è maggiore per la seconda membratura) e uniformerà i dati relativi ai
+tiranti (numero diametro, e cerchio di istallazione).</p>
+
+<h2><a name=PrimoSecon>Entrambe le membrature da ricalcolare</a></h2>
+
+<p class=MsoNormal>Questa eventualità non si dovrebbe presentare in uno
+svolgimento normale dei calcoli. Esaminare i valori riportati a video per
+capire cosa sia successo. La soluzione al problema può essere quella di
+azzerare manualmente i carichi imposti e di rieseguire i calcoli.</p>
+
+<h2><a name=PrimoOrSecon>Membratura da ricalcolare</a></h2>
+
+<p class=MsoNormal>Procedere come suggerito dal programma, in quanto la
+membratura in questione riceverà i valori dei carichi imposti dalla membratura
+accoppiata.</p>
+
+</div>
+
+</body>
+
+</html>

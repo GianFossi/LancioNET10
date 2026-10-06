@@ -1,0 +1,17 @@
+\par
+\   \         \                         \_\par               ==========================_\par        Program: \         \ Vers. \    \_\par
+              ==========================\par
+      \                                                              \_\par
+      ================================================================\par
+         UHX - Rules for the shell & tube heat exchangers\par
+            UHX-12 Design Rules for U-tube TubeSheets\par
+     ===========================================================\par
+\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+      Fig.UHX-12.1(d) TubeSheet doubly gasketed with extension\par
+     Fig.UHX-12.1(d) TubeSheet doubly gasketed without extension\par
+            Fig.UHX-12.1(a) Fully Integral contruction\par
+     Fig.UHX-12.1(e) TubeSheet gasketed shell-side with extension\par
+   Fig.UHX-12.1(f) TubeSheet gasketed shell-side without extension\par
+    Fig.UHX-12.1(b) TubeSheet gasketed channel-side with extension\par
+  Fig.UHX-12.1(c) TubeSheet gasketed channel-side without extension\par
+    TubeSheet gasketed shell-side with extension and bolted inside\par        the channel. Assimilated to the case of Fig.UHX-12.1(e)\par 

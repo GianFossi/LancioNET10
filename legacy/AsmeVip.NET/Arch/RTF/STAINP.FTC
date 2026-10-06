@@ -1,0 +1,50 @@
+T
+B
+0         Mechanical Standards TEMA Class "RCB"  Heat Exchangers - FIXED TUBESHEET\par
+B
+0                                       INPUT DATA\par
+0                                       ==========\par
+B
+M001  TubeSheet A: \                       \  TubeSheet material: \                   \_\par
+M004  Channel   A: \                       \  Channel   material: \                   \_\par
+M005  TubeSheet B: \                       \  TubeSheet material: \                   \_\par
+M006  Channel   B: \                       \  Channel   material: \                   \_\par
+M002  Shell      : \                       \  Shell     material: \                   \_\par
+M003  Tubes      : \                       \  Tube      material: \                   \_\par
+B
+N     Type of exchanger: \                  \ TubeSheet Support: \                    \_\par
+L     Number of load conditions: ##           TubeSheets of differing thicknesses: \  \_\par
+x     Design under differential pressure:  \ \_\par
+B
+6021022  Inside Diameter of Shell  #####.   [mm]   Inside Diameter of Channel  #####.   [mm]_\par
+6023024  Shell thickness           #####.   [mm]   Channel thickness           #####.   [mm]_\par
+6017018  Shell side corrosion   A  ###.##   [mm]   Channel side corrosion   A  ###.##   [mm]_\par
+6264265  Shell side corrosion   B  ###.##   [mm]   Channel side corrosion   B  ###.##   [mm]_\par
+9010011  Equivalent Diam for shear #####.#  [mm]   Tube spacing  \          \    ###.## [mm]_\par
+6027028  Outside diameter of tubes   ###.## [mm]   Tube thickness                 ##.## [mm]_\par
+1761                                            Tube corrosion                 ##.## [mm]_\par
+6029030  Number of Tubes in Shell  #####    [--]   Tube length                 #####.## [mm]_\par
+6026019  Inside Dia of Expans.J.   #####    [mm]   Corrosion of Expansion J.   #####.## [mm]_\par
+6020263  TubeSheet A Grooves Depth  ####.#  [mm]   TubeSheet B Grooves Depth    ####.#  [mm]_\par
+6034262  TubeSheet A Nom.Thickness  ####.#  [mm]   TubeSheet B Nom.Thickness    ####.#  [mm]_\par
+U308309  TubeSheet A Extension Dia  ####.#  [mm]   TubeSheet B Extension Dia    ####.#  [mm]_\par
+U288289  TubeSheet A Ext.Thickness  ####.#  [mm]   TubeSheet B Ext.Thickness    ####.#  [mm]_\par
+O     Type of tube-to-T.S. joint    \                            \_\par
+1039  Equivalent Unsupported Buckling Lenght of Tubes                       #####.## [mm]_\par
+B
+0         Note: A null Inside Dia of Expans. Joint indicates the absence of the same\par
+B
+S         Note: The equivalent diameter for shear has been calculated on the actual\par
+S               tube layout, according to RCB-7.133\par
+B
+c         Load Cond. nb. ##: \                               \_\par
+B
+0                             SOURCES FOR PHYSICAL DATA\par
+B
+0                   {\b Elastic Modulus}                       {\b Thermal Expansion}\par
+m001  TubeSheet A:\                                    \_\par
+m004  TubeSheet B:\                                    \_\par
+n002  Shell     : \                                    \\                                    \_\par
+n003  Tubes     : \                                    \\                                    \_\par
+Fine
+

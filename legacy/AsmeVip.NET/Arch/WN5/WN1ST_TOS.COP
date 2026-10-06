@@ -1,0 +1,58 @@
+c       õ{{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ~{{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       œ{{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ?{{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       |{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       @{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+1      º\pard\plain \s18\qj\widctlpar\tx4536 \f2\fs18\lang1040 
+1      º\par
+1      º\par         CALCULATION OF BOLT LOAD REQUIREMENTS IN HYDRAULIC CONDITION
+1      º\par         ============================================================
+1      º\par
+N      º_\par COVER  IDENTIFICATION : &
+O      º_\par COVER  MATERIAL       : &
+I      º_\par GASKET TYPE           : &
+L      º_\par GASKET MATERIAL       : &
+M      º_\par STUD   MATERIAL       : &
+1      º\par
+x001   º_\par _\pard _\s18_\qj_\widctlpar_\tx2268_\tx4820_\tx5812 P     =#########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Design pressure
+x002   º_\par T     =#########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Design temperature
+x003   º_\par P(HT) =#########.##_\tab [Mpa]    #######.##_\tab [psi]_\tab Test   pressure
+1      º\par T(HT) =       20.00\tab [{\super 0}C]          70.00\tab [{\super 0}F]\tab Test   temperature
+y004   º_\par d     =       \    \_\tab [--]           \    \_\tab [--]_\tab Bolts nominal diameter
+z005   º_\par N    =#########   _\tab [--]_\tab _\tab Number of bolts
+x006   º_\par d{_\sub n}    =#########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread outer diameter
+x007   º_\par S{_\sub ba}   =#########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts at room
+x008   º_\par W{_\sub i}   =    #########_\tab N        ########.#_\tab lb_\tab Minimum target total load,
+1      º\par \tab \tab \tab equipment under pressure
+x009   º_\par W  =     #########_\tab N        ########.#_\tab lb_\tab W{_\sub i}/N Minimum target bolt load,
+1      º\par \tab \tab \tab equipment under pressure
+z010   º_\par K{\sub 1}   = ##.##_\tab - _\tab _\tab Relaxation factor eq. in pressure
+x011   º_\par W{_\sub m}  =     #########_\tab N        ########.#_\tab lb_\tab Minimum target bolt load, no pressure
+1      º\par
+1      º\par {\b Hydraulic tensioner load each bolt} :
+z012   º_\par K{_\sub 2}  = ##.##_\tab - _\tab _\tab Inhomogeneity factor
+x013   º_\par W{_\sub a}  =     #########_\tab N        ########.#_\tab lb_\tab K{_\sub 2}W{_\sub m} Target average bolt load
+z014   º_\par K{_\sub 3}  = ##.##_\tab - _\tab _\tab Relaxation factor under tensioner
+x015   º_\par W   = #########.#_\tab N  #########.# lb_\tab _\tab K{_\sub 3}W{_\sub a} {_\b Bolt load, tensioner in pressure}
+x016   º_\par S   = #######.###_\tab MPa#########.# psi_\tab _\tab W/A{\sub b} Bolt stress under tensioner
+x017   º_\par A   = #######.###_\tab mm{_\super 2} #########.# in{_\super 2} _\tab _\tab Tensioner cross section
+x018   º_\par P{_\sub T}  = #######.###_\tab bar #########.# psi _\tab _\tab {_\b Tensioner oil pressure to be applied}
+1      º\par
+1      º\par {\b Bolt Torque moment each bolt} :
+z019   º_\par K{_\sub 2}  =       ##.##_\tab - _\tab _\tab Inhomogeneity factor
+x020   º_\par W{_\sub a}  =     #########_\tab N        ########.#_\tab lb_\tab K{_\sub 2}W{_\sub m} Target average bolt load
+x021   º_\par p    =#########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread pitch
+x029   º_\par d{_\sub m}   = #########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread mean diameter
+x031   º_\par d{_\sub c}   = #########.##_\tab [mm]     #######.####_\tab [in]_\tab Mean dia of nut friction
+w026   º_\par f   =    ##.###_\tab - {_\b     &}_\tab Friction factor thread
+w025   º_\par f'  =    ##.###_\tab - {_\b     &}_\tab Friction factor nut/flange face
+z022   º_\par {_\field{_\*_\fldinst SYMBOL 103 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}   =###.##_\tab deg _\tab _\tab Apex thread semi-angle
+z023   º_\par {_\field{_\*_\fldinst SYMBOL 97 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}   =###.##_\tab deg = atn[p/({_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}d{_\sub m})]_\tab _\tab Thread helice inclination
+z024   º_\par {_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}   =###.##_\tab deg = atn[f/cos({_\field{_\*_\fldinst SYMBOL 103 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}})]_\tab _\tab Calculation parameter
+z027   º_\par f{_\sub G}  =###.###_\tab -   = [d{_\sub m}tan({_\field{_\*_\fldinst SYMBOL 97 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}+{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}})+f_\rquote d{_\sub c}]/(2d{_\sub m})_\tab Global torque factor
+x030   º_\par T   = ########.##_\tab N.m########## lb.in_\tab _\tab f{_\sub G}W{\sub a}d{_\sub m} {_\b Torque to be applied}
+1      º\par
+1      º\par    -Cover  calculation pag.2a of 2\par 
+0      º
+

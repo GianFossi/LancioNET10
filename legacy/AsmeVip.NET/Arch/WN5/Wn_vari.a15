@@ -1,0 +1,99 @@
+C001³{\rtf\fs20{P}}  ³ [psi]³1³09³A
+C002³{\rtf\fs20{Tem}}³ [°F] ³1³10³B
+A003³{\rtf\fs20{B{\sub n}}} ³ [mm] ³1³11³C
+A004³{\rtf\fs20{B{\sub s}}} ³ [mm] ³1³12³C
+A007³{\rtf\fs20 g{\fs12\sub 0s}}³ [mm] ³1³13³C
+A008³{\rtf\fs20 g{\fs12\sub 1s}}³ [mm] ³1³14³C
+A009³{\rtf\fs20{t}}  ³ [mm] ³1³15³C
+A011³{\rtf\fs20{h{\sub s}}} ³ [mm] ³1³16³C
+
+
+
+A012³{\rtf\fs20{c}}  ³ [mm] ³2³09³-C
+C022³{\rtf\fs20{S{\sub fa}}}³ [psi]³2³10³-A
+C023³{\rtf\fs20{S{\sub fo}}}³ [psi]³2³11³-A
+B182³{\rtf\fs20 M{\sub T1}}³ [°F] ³2³12³B
+B183³{\rtf\fs20 M{\sub T2}}³ [°F] ³2³13³B
+B184³{\rtf\fs20 M{\sub p1}}³ [psi]³2³14³A
+B185³{\rtf\fs20 M{\sub p2}}³ [psi]³2³15³A
+A047³{\rtf\fs20 h{\sub d}} ³ [mm] ³3³09³-C
+A048³{\rtf\fs20 h{\sub t}} ³ [mm] ³3³10³-C
+B050³{\rtf\fs20 H{\sub d}} ³ [lb] ³3³11³-F
+B051³{\rtf\fs20 H{\sub t}} ³ [lb] ³3³12³-F
+B054³K  ³ [--] ³3³13³-N
+A055³{\rtf\fs20 h{\sub 0n}}³ [in] ³3³14³-K
+A053³{\rtf\fs20 h{\sub 0s}}³ [in] ³3³15³-K              
+A056³{\rtf\fs20 h/h{\sub 0n}}³ [--] ³3³16³-N
+A057³{\rtf\fs20 h/h{\sub 0s}}³ [--] ³3³17³-N
+A058³d  ³{\rtf\fs20 [mm{\super 3}]}³4³09³-H
+A059³e  ³[1/mm]³4³10³-I
+A060³L  ³ [--] ³4³11³-N
+A061³T  ³ [--] ³4³12³-N
+A062³U  ³ [--] ³4³13³-N
+A063³Y  ³ [--] ³4³14³-N
+A064³Z  ³ [--] ³4³15³-N
+A065³{\rtf\fs20 F{\sub c}} ³ [--] ³4³16³-N
+A066³F  ³ [--] ³4³17³-N
+A067³V  ³ [--] ³4³18³-N
+A035³d  ³{\rtf\fs20 [mm{\super 3}]}³5³09³-H
+A036³e  ³[1/mm]³5³10³-I
+A037³L  ³ [--] ³5³11³-N
+A038³T  ³ [--] ³5³12³-N
+A039³U  ³ [--] ³5³13³-N
+A040³Y  ³ [--] ³5³14³-N
+A041³Z  ³ [--] ³5³15³-N
+A042³Fc ³ [--] ³5³16³-N
+A043³F  ³ [--] ³5³17³-N
+A044³V  ³ [--] ³5³18³-N
+B068³{\rtf\fs20 M{\sub d}} ³lb.in ³6³09³-J
+B069³{\rtf\fs20 M{\sub t}} ³lb.in ³6³10³-J
+B074³{\rtf\fs20 M{\sub 0}} ³lb.in ³6³11³-J
+B070³{\rtf\fs20\u963\'73{\sub H}*}³ [psi]³6³12³-A
+B071³{\rtf\fs20\u963\'73{\sub H}*}³ [psi]³6³13³-A
+B072³{\rtf\fs20\u963\'73{\sub H}*}³ [psi]³6³14³-A
+B073³{\rtf\fs20 E{\sub th}}³ [psi]³6³15³-A               
+B075³{\rtf\fs20 M{\sub h}} ³lb.in ³6³16³-J
+B052³{\rtf\fs20 X{\sub 1}} ³ [--] ³6³17³-N              
+D076³{\rtf\fs20\u963\'73{\sub HS}}³ [psi]³7³09³-A
+E077³{\rtf\fs20\u963\'73{\sub RS}}³ [psi]³7³10³-A
+E078³{\rtf\fs20\u963\'73{\sub TS}}³ [psi]³7³11³-A
+E079³{\rtf\fs20\u963\'73{\sub m}} ³ [psi]³7³12³-A
+E080³{\rtf\fs20\u963\'73{\sub m}\rquote}'³ [psi]³7³13³-A
+D024³{\rtf\fs20\u963\'73{\sub HO}}³ [psi]³7³14³-A
+E025³{\rtf\fs20\u963\'73{\sub RO}}³ [psi]³7³15³-A
+E026³{\rtf\fs20\u963\'73{\sub TO}}³ [psi]³7³16³-A
+E027³{\rtf\fs20\u963\'73{\sub m}} ³ [psi]³7³17³-A
+E028³{\rtf\fs20\u963\'73{\sub m}\rquote}³ [psi]³7³18³-A
+ÄÄÄÄÅÄÄÄÁÄÄÄÄÄÄÁÄÁÄÄ´
+ 082³Sfo.1,5        ³
+ 090³E              ³
+ 091³M              ³
+ 092³a nozzle       ³
+ 093³a shell        ³
+ 094³M/(r2-r1)      ³
+ 095³X              ³
+ 096³Y              ³
+ 097³(1.0.3)/(1-0.3)³
+ 098³r2/r1          ³
+ 099³A1             ³
+ 100³Z              ³
+ 101³Z0             ³
+ 102³B-2*co         ³
+ 103³g0-co          ³
+ 104³g1-co          ³
+ 105³Pi             ³
+ 106³Hpi            ³
+ 107³Hi             ³
+ 108³Wm1i           ³
+ 109³Wm2i           ³
+ 110³Am1i           ³
+ 111³Am2i           ³
+ 112³Ami            ³
+ 113³Wi             ³
+ 114³pilgrim N      ³
+ 115³pilgrim Kg     ³
+ 116³torque  N.mm   ³
+ 117³torque  Kg.mm  ³
+ 118³torque  Kg.m   ³
+ÄÄÄÄÅÄÄÄÂÄÄÄÄÄÄÂÄÂÄÄ´
+

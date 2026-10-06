@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "StubW2000.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "StubW2000"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "StubW2000.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\StubW2000.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\StubW2000\StubW2000.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\StubW2000\clsSW2000.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\StubW2000.NET\clsSW2000.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "sSaveAs" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().SaveAs.</Issue>
+        </Section>
+        <Section Name = "sClose" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().Close.</Issue>
+        </Section>
+        <Section Name = "SubstitBookM" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().Bookmarks.</Issue>
+        </Section>
+        <Section Name = "EliminaRiga" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().Bookmarks.</Issue>
+        </Section>
+        <Section Name = "EliminaRighe" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().Bookmarks.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().Range.</Issue>
+        </Section>
+        <Section Name = "IntestLogo" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "Dir"
+            >Dir ha un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Copia" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prRanges().WholeStory.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prRanges().Copy.</Issue>
+        </Section>
+        <Section Name = "VaiInizio" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto prDocs().GoTo.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\StubW2000\modMain.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\StubW2000.NET\modMain.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    />
+</UpgradeLog>
+

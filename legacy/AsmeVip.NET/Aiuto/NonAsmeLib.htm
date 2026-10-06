@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>NonAsmeLib</Title>
+</HEAD>
+<BODY>
+<H1>Impossibile trovare la libreria Asmelib.dll</H1>
+Il programma AsmeVip richiama la DLL AsmeLib.dll in due occasioni:</P>
+<li>Quando è specificato il codice ASME VIII div.2. In tal caso il calcolo dei mantelli e relative aperture è eseguito da routines che si trovano in detta libreria.
+<li>Nel calcolo del <A href="RilBull.htm">rilassamento della tensione dei bulloni</A> nel passare dalla situazione a pressione interna nulla alla piena pressione
+<li>Nel calcolo della rotazione delle flange.
+<P>La suddetta libreria è una DLL standard (non ActiveX), non è registrata nel registro di Windows, e dovrebbe essere installata nella directory di sistema (C:\WINDOWS\SYSTEM per i sistemi Windows95798)</P>
+<P><B>Soluzione del problema</B>: Copiare una versione aggiornata di Asmelib.dll nella directory di sistema</P>
+</BODY>
+</HTML>

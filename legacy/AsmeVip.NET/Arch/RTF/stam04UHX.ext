@@ -1,0 +1,14 @@
+\par
+N_\tab =_\tab ####.## [mm]_\tab ###.#### [in]_\tab Gasket width_\par
+m_\tab =_\tab _\tab ####.## [--]_\tab Gasket factor_\par
+Y_\tab =_\tab _\tab #######.#### [psi]_\tab Gasket min.design seating load_\par
+w_\tab =_\tab ##.## [mm]_\tab #.#### [in]_\tab Nubbin width_\par
+{{_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f3_\fs18}}}_\tab =_\tab _\tab ##    [--]_\tab Type of the gasketed joint_\par
+N{_\sub t}_\tab =_\tab ###.## [mm]_\tab ##.#### [in]_\tab Pass Part.Gasket width_\par
+L{_\sub t}_\tab =_\tab #####.# [mm]_\tab ####.## [in]_\tab Pass Part.Gasket length_\par
+Y{_\sub t}_\tab _\tab #######.## [psi]_\tab Pass Part.Gsk Seat.Load_\par
+W{_\sub mt}_\tab _\tab #######.#### [lb]_\tab Pass Part.Gsk Seat.Load_\par
+W{_\sub m1}_\tab =_\tab #########.##  [N]_\tab #########.## [lb]_\tab Operating bolt load_\par
+W{_\sub &}_\tab =_\tab #########.##  [N]_\tab #########.## [lb]_\tab Design bolt load per 2-5(e)(4)_\par
+W_\tab =_\tab #########.##  [N]_\tab #########.## [lb]_\tab max(W{_\sub c},W{_\sub s})_\par
+

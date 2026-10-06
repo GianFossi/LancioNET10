@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Rilassamento bulloni</Title>
+</HEAD>
+<BODY>
+<H1>Rilassamento bulloni</H1>
+<P>E' un errore piuttosto diffuso quello di ritenere che il carico della tiranteria aumenti man mano che si aumenta la pressione interna nell'apparecchio, a partire dal valore ottenuto come precarico alla fine della procedura di serraggio. In realtà, in questo caso l'intuizione induce in errore.</P>
+<P>La verità è che, sotto un'opportuna ipotesi semplificativa, il carico sulla bulloneria <B>rimane costante</B> al variare della pressione. L'ipotesi è che la rigidezza delle parti serrate sia molto superiore alla rigidezza dei bulloni. <A name="piccolo">Ciò significa che il cedimento sotto carico delle flange a livello del cerchio bulloni deve essere molto più piccolo dell'allungamento elastico dei bulloni medesimi.</A></P>
+<P>L'ipotesi semplificativa sopra esposta <B>non è</B> realizzata in molti casi pratici; ne consegue che il carico sui tiranti varia durante l'applicazione della pressione. A seconda delle caratteristiche geometriche dei membri serrati esso può anche aumentare, ma normalmente esso <B>diminuisce</B> all'aumentare della pressione. Tuttavia, le procedure di dimensionamento meccanico del Codice possono ignorare, in tutta sicurezza, questo fenomeno per le ragioni esposte nel Cap. '<A href="SerrBull.htm#Fondament">Teoria del serraggio bulloni'</A>.</P>
+<P>Questo fenomeno <B>non può</B>, viceversa, essere ignorato quando il problema è di determinare il carico di serraggio che garantisce la tenuta stagna, in quanto è evidente che se ci si limita a istallare a vuoto il carico teorico che garantisce la tenuta (il carico W<sub>m1</sub> del Codice, calcolato per la pressione di prova idraulica), e se poi accade che tale carico diminuisce, ovvero <B>si rilassa</B>, quando si applica la pressione, il solo risultato certo è una perdita in prova idraulica.</P>
+<P>Un possibile rimedio al rischio sopra esposto consiste nel sovradimensionare le flange, i coperchi, e le piastre tubiere flangiate, in modo da aumentarne la rigidezza, e quindi diminuire, per quanto detto <A href="#piccolo">sopra</A>, l'ampiezza del fenomeno di rilassamento. In ogni caso, è necessario assumere un fattore di sicurezza nella determinazione del carico di serraggio a vuoto, che, nella prassi corrente, assume la figura di un fattore forfettario e costante (dell'ordine di 1.1/1.3), ma che, con il programma AsmeVip, può essere calcolato analiticamente e caso per caso. Esso è denominato K<sub>1</sub>, <B>Fattore di rilassamento</B>.
+<P>Si è ritenuto di introdurre la <A href="AppRilass.htm">determinazione analitica di K<sub>1</sub></A> in AsmeVip, anche se non in tutti i casi la teoria soggiacente è completamente validata, poiché tale fattore presenta valori molto sparpagliati da caso a caso, e quindi l'adozione di un fattore forfettario di sicurezza:
+<li>se fatta in modo prudenziale rischia di essere indebitamente onerosa in termini di spessori flange/coperchi (ovvero rischia di produrre danneggiamenti permanenti a causa di tiri eccessivi)
+<li>se fatta senza troppi margini (caso di esperienza comuine in FBM) può produrre in molti casi sovraccosti dovuti all'aggiustaggio <I>sperimentale</I>, ovvero per tentativi successivi, del carico di serraggio, quando non addirittura più gravi problemi conducenti a interventi correttivi prima o dopo la spedizione dell'apparecchio.</P>
+</BODY>
+</HTML>

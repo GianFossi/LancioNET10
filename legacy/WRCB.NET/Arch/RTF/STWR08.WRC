@@ -1,0 +1,18 @@
+ M{\sub r}P        =
+ M{\sub r}(d/M{\sub c})   =
+ M{\sub r}(d/M{\sub l})   =
+ N{\sub r}(T/P)    =
+ N{\sub r}(T*d/M{\sub c}) =
+ N{\sub r}(T*d/M{\sub l}) =
+ M{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}/P       =
+ M{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(d/M{\sub c})   =
+ M{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(d/M{\sub l})   =
+ N{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(T/P)    =
+ N{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(T*d/M{\sub c}) =
+ N{\sub {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}(T*d/M{\sub l}) =
+\par
+          d/t          =####.##_\par
+          d/D{{_\field{_\*_\fldinst SYMBOL 214 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}(D/T)    =####.##_\par
+          T/t          =####.##_\par
+          & ##.###_\par
+

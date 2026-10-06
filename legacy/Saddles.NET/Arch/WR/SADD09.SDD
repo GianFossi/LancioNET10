@@ -1,0 +1,33 @@
+Dimension\tab B{\sub 22} = B{\sub 12}+10T{\sub 2}\tab mm\tab |####.00000|
+Angle    \tab {{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}'={{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 2}+12\tab {\super 0}\tab |####.00000|
+Ref. G.3.3.2.5.1  it results T{\sub W2}{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}B{\sub 22} and {\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S2}
+Ref. G.3.3.2.5.1  it results either T{\sub W2}<B{\sub 22} or {{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub SD2}<{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub S2}  or both
+Thickness for the shell stresses :\par \tab T{\sub T2}=T{\sub 2}\tab mm\tab |######.00|
+Thickness for the shell stresses :                           
+- at the edge of saddle            T{\sub T2}=T{\sub 2}+T{\sub K2}\tab mm\tab |######.00|
+- at the edge of saddle plate      T{\sub 2}                \tab mm\tab |######.00|
+Factor     \tab K{\sub 52} \tab \tab |###.00000|
+Factor     \tab K{\sub 62} \tab \tab |###.00000|
+Factor     \tab K{\sub 6S2}\tab \tab |###.00000|
+Allowable stress for {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 52}           f{\sub 2}\tab N/mm{\super 2}\tab |######.00|
+Stress at lowest point    {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 52}=-K{\sub 52}*Q{\sub 2}/(T{\sub T2}*B{\sub 22})\tab N/mm{\super 2}\tab |######.00|
+Stress at horn of saddle (L{\sub T}/R{\sub M2}{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62}=-Q{\sub 2}/(4B{\sub 22}T{\sub T2})-3K{\sub 62}Q{\sub 2}/(2T{\sub T2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at horn of saddle (L{\sub T}/R{\sub M2}< 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62}=-Q{\sub 2}/(4B{\sub 22}T{\sub T2})-12K{\sub 62}Q{\sub 2}R{\sub M2}/(L{\sub T}T{\sub T2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle (L{\sub T}/R{\sub M2}{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}8) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62}=-Q{\sub 2}/(4B{\sub 22}T{\sub T2})-3K{\sub 62}Q{\sub 2}/(2T{\sub T2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle (L{\sub T}/R{\sub M2}< 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62}=-Q{\sub 2}/(4B{\sub 22}T{\sub T2})-12K{\sub 62}Q{\sub 2}R{\sub M2}/(L{\sub T}T{\sub T2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle plate (L{\sub T}/R{\sub M2}{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 6S2}=-Q{\sub 2}/(4B{\sub 22}T{\sub 2})-3K{\sub 6S1}Q{\sub 2}/(2T{\sub 2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+Stress at edge of saddle plate (L{\sub T}/R{\sub M2}< 8 ) :
+\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 6S1}=-Q{\sub 2}/(4B{\sub 22}T{\sub 2})-12K{\sub 6S2}Q{\sub 2}R{\sub M2}/(L{\sub T}T{\sub 2}{\super 2})\tab N/mm{\super 2}\tab |######.00|
+-------------------WARNING ------------------------------------
+Circumferential stresses limit on shell exceeded             
+Allowable stress for {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62} and {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub 62S}\tab 1.25*f{\sub 2}   N/mm{\super 2}\tab |######.00|
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Circumferential stresses}
+{\ul Left saddle}
+{\ul Right saddle}
+{{\field{\*\fldinst SYMBOL 179 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\f11\fs18\lang1040 {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}'       
+

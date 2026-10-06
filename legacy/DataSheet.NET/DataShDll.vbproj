@@ -1,0 +1,403 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{82DD8826-0E9F-4394-80F1-43972171932B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "DataSheet"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "DataSheet"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "Win32 = True"
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "Win32 = True"
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic.Compatibility"
+                    AssemblyName = "Microsoft.VisualBasic.Compatibility"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "StdFormat"
+                    Guid = "{6B263850-900B-11D0-9484-00A0C91110ED}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "StdType"
+                    Guid = "{BEF6E001-A874-101A-8BBA-00AA00300CAB}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AsmeVip"
+                    Project = "{10252E09-EE41-4A72-84DF-6744AE7D6732}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "LibMat"
+                    Project = "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Grafic2"
+                    Project = "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "RoutBase1"
+                    Project = "{3B2389A2-3B3A-4FDE-980B-3345357EC065}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Traccia"
+                    Project = "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "StubW2000"
+                    Project = "{CEF5E506-69FD-499F-99B3-E10767B365D4}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "WinWordControl"
+                    Project = "{12793C64-A87B-42AD-8058-57C9F43DBD98}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "Microsoft.VisualBasic.Compatibility" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "apert4.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "apert4.resX"
+                    DependentUpon = "apert4.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsDataSheet.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataShe1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataShe1.resX"
+                    DependentUpon = "DataShe1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DataShe2.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataShe2.resX"
+                    DependentUpon = "DataShe2.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DataShee.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataShee.resX"
+                    DependentUpon = "DataShee.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DATASHEE1.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmForm.resX"
+                    DependentUpon = "frmForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmProto.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmProto.resX"
+                    DependentUpon = "frmProto.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmTipoP.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmTipoP.resX"
+                    DependentUpon = "frmTipoP.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "HelpTopics.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Monitor.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ProjectResources.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SaldMand.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SaldMand.resX"
+                    DependentUpon = "SaldMand.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "tema.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "tema.resX"
+                    DependentUpon = "tema.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Arch\A.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\B.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\C.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\D.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\DIST04.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\E.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\F.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\G.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\H.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\J.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\K.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\L.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\M.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\NN.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\NULL.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\P.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\S.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\T.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TEMATY.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TIPOP0.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TIPOP1.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TIPOP2.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TIPOP3.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\U.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\W.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\X.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Work\1246.JOB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Work\124600.TEM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Work\124600\000.APR"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Work\124600\000.DES"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Work\124600\000.SEZ"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

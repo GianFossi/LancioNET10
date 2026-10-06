@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Dati di Progetto Piastre Tubiere</Title>
+</HEAD>
+<BODY>
+<H1>Dati di Progetto</H1>
+<IMG SRC="PTDatiProgetto.bmp">
+<H2><A name="PressDiff">Calcolo a pressione differenziale</A></H2>
+<P>In tutti i casi <B>diversi da</B> 'fascio tubiero con teste fisse', non vi sono commenti particolari da fare. Occorre solo fare attenzione al segno della pressione differenziale. Infatti, nel caso di piastre tubiere per tubi ad U con estensione, non è la stessa cosa applicare la pressione differenziale dal lato cassa (segno +), o dal lato mantello (segno -). Il programma AsmeVip esegue entrambe le verifiche, indipendentemente dal segno del valore della pressione differenziale, che può essere diverso dalla differenza delle due pressioni di progetto, e che andrà sempre imputato senza segno.</P>
+<P><A name="CasoTesteFisse">Nel caso di <B>teste fisse</B>, non ha senso applicare la pressione differenziale da un lato, e zero dall'altro</A> (vedi RCB-7.165, "simultaneous action of both shell and tube side pressures"). Nasce quindi un problema quando il cliente specifica una pressione differenziale diversa dalla differenza fra le due pressioni di progetto. In questo caso il programma AsmeVip crea automaticamente tre casi di carico (vedi <A href="#NbLoadCond">Nb of load conditions</A>):
+<li>1) lato tubi: P<sub>t</sub>;lato mantello: P<sub>s</sub>
+<li>2) lato tubi: P<sub>t</sub>;lato mantello: P<sub>t</sub>-P<sub>d</sub>
+<li>3) lato tubi: P<sub>s</sub>-P<sub>d</sub>;lato mantello: P<sub>s</sub></P>
+<H2><A name="NbLoadCond">Nb of load conditions</A></H2>
+<P>Questo dato è presente solo nel caso di apparecchi a <B>teste fisse</B>. Oltre ai casi di funzionamento specificati dal cliente per la verifica delle dilatazioni differenziali tubi-mantello (sforzi longitudinali nei tubi e nel mantello, tensioni nelle piastre, carico sul giunto tubo-piastra, e, ove presente, verifica a fatica del dilatatore), è necessario includere una condizione di progetto, nella quale le pressioni siano quelle di progetto, gli ammissibili siano calcolati alle temperature di progetto, e le dilatazioni alle temperature di esercizio.</P> 
+</BODY>
+</HTML>

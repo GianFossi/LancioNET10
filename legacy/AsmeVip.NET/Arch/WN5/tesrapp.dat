@@ -1,0 +1,16 @@
+   Rapporto (spessore estensione)/(spessore piastra)
+   -------------------------------------------------
+
+   Il programma UTEMA è in grado di effettuare il progetto, oltre
+che la verifica, delle piastre tubiere con estensione flangiata.
+   Esistono d'altronde infinite soluzioni minimali ammissibili al
+problema di progetto, ciascuna caratterizzata da un diverso rap-
+porto tra lo spessore assunto per l'estensione e lo spessore al
+centro piastra.
+   Se si imposta il valore di tale rapporto pari a zero, il pro-
+gramma ricercherà la soluzione ottimale dal punto di vista della
+minimizzazione dello spessore nella zona centrale.
+   Se invece si imposta il rapporto ad un valore compreso tra 0,5
+e 1 allora il programma presenterà gli spessori minimi compatibili
+con il rapporto impostato.
+

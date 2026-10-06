@@ -1,0 +1,280 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProInitDaTos_file/filelist.xml">
+<title>Subroutine InitDaTos</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2000-12-17T23:16:00Z</o:Created>
+  <o:LastSaved>2000-12-17T23:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>343</o:Words>
+  <o:Characters>1957</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2403</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+<H1>Subroutine InitDaTos</H1>
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>                        </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                        </span>01/05/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoBodyTextIndent2>Inizializza la struttura di dati DaTos(0),
+popolandola dei dati di libreria costanti per tutta la durata delle
+elaborazioni.</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>In particolare inizializza la
+<A href="ManTerUnsupported.htm">tabella</A> (Tlmax) delle massime lunghezze non supportate.</p>
+<OBJECT id=hhctrl_01 type="application/x-oleobject"
+        classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+        codebase="hhctrl.ocx#Version=4,74,8875,0"
+
+>
+    <PARAM name="Command" value="Related Topics">
+    <PARAM name="Item1" value="Sub Loadd;ManProLoadd.htm">
+    <PARAM name="Item2" value="Sub Chiudi;ManProChiudi.htm">
+    <PARAM name="Item3" value="Sub Elimina;ManProElimina.htm">
+    <PARAM name="Item4" value="Metodo Esegui;ManProEsegui.htm">
+    <PARAM name="Item5" value="Metodo MakeRMT;ManProMakeRMT.htm">
+    <PARAM name="Item6" value="Evento Form_Load di frmTraccia;ManProfrmTraccia_Form_Load.htm">
+    <PARAM name="Item7" value="Evento Motore_Cambiofile di Monitor;ManProMonitor_Motore_Cambiofile.htm">
+</OBJECT>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Chiamata da: <A HREF="JavaScript:hhctrl_01.Click()">molteplici eventi</A>.</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Listato</span></b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Sub
+InitDaTos()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Dim SavCom As String, ifl As Integer, i As
+Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Dim k As Integer, Riga As String<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>If GiaInitDaTos Then Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>GiaInitDaTos = True<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>On Error Resume Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>If Asc(DaTos(0).commes) &lt; 32 Then
+DaTos(0).commes = &quot; &quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">  </span><span style="mso-spacerun:
+yes"> </span>SavCom = DaTos(0).commes<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Err.Clear<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>On Error GoTo 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>ReDim DaTos(0) As typDaTos<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>DaTos(0).alfajp(0) = PI / 6:
+DaTos(0).alfajp(1) = PI / 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>DaTos(0).alfajp(2) = PI / 2:
+DaTos(0).alfajp(3) = PI / 4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>DaTos(0).ips1 = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span>DaTos(0).radius = 1!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span>DaTos(0).commes = SavCom<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span>ifl = FreeFile<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span>Open RTrim$(Monitor.Motore.Inizio.Archdir)
++ &quot;\TRDATA.DAT&quot; For Input Shared As #ifl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>For i = 1 To 13<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Line Input #ifl, Riga<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span></span><span style='font-family:"Times New Roman"'>DaTos(0).Dtub0(i)
+= Val(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">  
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>For i = 1 To 11<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Line Input #ifl, Riga<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DaTos(0).idelt(i) = Val(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>For k = 1 To 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>For i = 1 To 13<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Line Input #ifl, Riga<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).Tlmax(i, k) = Val(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Next i<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Next k<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>Close #ifl: Close #Tracciatura.File5:
+Tracciatura.File5 = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>If Len(Tracciatura.Nomi(1, 1)) &gt; 0 Then
+If Len(Dir$(Tracciatura.Nomi(1, 1))) &gt; 0 Then Kill Tracciatura.Nomi(1, 1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>If Len(Tracciatura.Nomi(2, 1)) &gt; 0 Then
+If Len(Dir$(Tracciatura.Nomi(2, 1))) &gt; 0 Then Kill Tracciatura.Nomi(2, 1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+c       õ{{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ~{{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       œ{{\field{\*\fldinst SYMBOL 112 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       ?{{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       |{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+c       @{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}
+1      º\pard\plain \s18\qj\widctlpar\tx4536 \f2\fs18\lang1040 
+1      º\page \par
+1      º\par         CALCULATION OF BOLT LOAD REQUIREMENTS IN HYDRAULIC CONDITION
+1      º\par         ============================================================
+1      º\par                        ACCORDING TO FBM PRACTICE
+1      º\par                        =========================
+1      º\par
+N      º_\par COVER  IDENTIFICATION : &
+O      º_\par COVER  MATERIAL       : &
+I      º_\par GASKET TYPE           : &
+L      º_\par GASKET MATERIAL       : &
+M      º_\par STUD   MATERIAL       : &
+1      º\par
+A001   º_\par _\pard _\s18_\qj_\widctlpar_\tx2268_\tx4820_\tx5812 P     =#########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Design pressure
+A002   º_\par T     =#########.##_\tab [{_\super 0}C]     #######.####_\tab [{_\super 0}F]_\tab Design temperature
+1      º\par
+A105   º_\par P(HT) =#########.##_\tab [Mpa]    #######.####_\tab [psi]_\tab Test pressure
+1      º\par T(HT) =       20.00\tab [{\super 0}C]          70.0000\tab [{\super 0}F]\tab Test temperature
+1      º\par
+F012   º_\par d     =       \    \_\tab [mm]           \    \_\tab [in]_\tab Bolts nominal diameter
+E013   º_\par N{_\super 0}    =#########   _\tab [--]_\tab _\tab Number of bolts
+A014   º_\par d{_\sub n}    =#########.##_\tab [mm]     #######.####_\tab [in]_\tab Bolts thread diameter
+A024   º_\par S{_\sub ba}   =#########.##_\tab [N/mm_\'b2]  #######.####_\tab [psi]_\tab Allowable for bolts  at room
+1      º\par
+A113   º_\par W{_\sub i}  =########_\tab N########.#_\tab lb_\tab Required total bolt load
+1      º\par
+1      º\par Hydraulic tensioner load each bolt :
+A114   º_\par   =#########_\tab N##########_\tab lb_\tab 1.3W{_\sub i}/N{_\super 0}
+E115   º_\par   =#########_\tab Kg
+1      º\par Bolt Torque moment each bolt :
+A117   º_\par   =#########_\tab Nmm##########_\tab lb.in_\tab 0.17W{_\sub i}d{_\sub n}/N{_\super 0}
+E118   º_\par   =#########_\tab Kg.m
+1      º\par
+1      º\par    -Cover  calculation pag.2a of 2\par 
+0      º
+

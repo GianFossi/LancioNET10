@@ -1,0 +1,20 @@
+ |============================================================================|
+ | ASME-VIII div.1 App.AA - Rules for the design of tubesheets     98 ed. A00 |
+ |                                                                            |
+ |============================================================================|
+ |    Progetto/Verifica Piastra Tubiera \       \                             |
+ |============================================================================|
+ |   A differenza del calcolo TEMA, la presente procedura non prevede la valu-|
+ |tazione degli spessori minimi al taglio e al momento flettente sotto le     |
+ |pressioni efficaci lato tubi, lato mantello e a dilatazione differenziale.  |
+ |   Essa prevede piuttosto l'analisi delle tensioni di taglio e di flessione;|
+ |viene quindi fornito un solo valore per lo spessore minimo.                 |
+ |============================================================================|
+ |                 | OPERATING (uncorroded shell)|OPERATING (corroded shell)  |
+ |============================================================================|
+ |Spessore minimo  |                   mm        |                  mm        |
+ |============================================================================|
+ |  SPESSORE MINIMO DI CALCOLO COMPRENSIVO DI CORROSIONE            mm        |
+ |============================================================================|
+-1
+

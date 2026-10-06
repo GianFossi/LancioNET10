@@ -1,0 +1,3173 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{10252E09-EE41-4A72-84DF-6744AE7D6732}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "AsmeVip.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "AsmeVip"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "AsmeVip"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "Win32 = True"
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "Win32 = True"
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Grafic2"
+                    Project = "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "LibMat"
+                    Project = "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "RoutBase1"
+                    Project = "{3B2389A2-3B3A-4FDE-980B-3345357EC065}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "StubW2000"
+                    Project = "{CEF5E506-69FD-499F-99B3-E10767B365D4}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Wrcb"
+                    Project = "{484F2386-1C0C-4D02-8579-95BBFFB50A70}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic.Compatibility"
+                    AssemblyName = "Microsoft.VisualBasic.Compatibility"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.Compatibility.dll"
+                />
+                <Reference
+                    Name = "Tiranti"
+                    Project = "{5C78F541-5DA2-4F95-BB6E-534D77FC36C3}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Traccia"
+                    Project = "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Office"
+                    Guid = "{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}"
+                    VersionMajor = "2"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "VBIDE"
+                    Guid = "{0002E157-0000-0000-C000-000000000046}"
+                    VersionMajor = "5"
+                    VersionMinor = "3"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Word"
+                    Guid = "{00020905-0000-0000-C000-000000000046}"
+                    VersionMajor = "8"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "WinWordControl"
+                    Project = "{12793C64-A87B-42AD-8058-57C9F43DBD98}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+                <Import Namespace = "Microsoft.VisualBasic.Compatibility" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "asmeincl2.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AsmeVip.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Branches.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CalcASME.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Calcol1.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Calcoli.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CercaNome.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsValoriMAWP.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsValoriMDMT.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Collegamento.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DATIDES4.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Diaframma.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Diaframma.resX"
+                    DependentUpon = "Diaframma.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EuroNorm.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmASME.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmASME.resX"
+                    DependentUpon = "frmASME.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmBel.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmBel.resX"
+                    DependentUpon = "frmBel.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmCil.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmCil.resX"
+                    DependentUpon = "frmCil.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmCon.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmCon.resX"
+                    DependentUpon = "frmCon.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmConDoub.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmConDoub.resX"
+                    DependentUpon = "frmConDoub.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmDil.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmDil.resX"
+                    DependentUpon = "frmDil.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmFattUs.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmFattUs.en.resx"
+                    DependentUpon = "frmFattUs.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmFattUs.it.resx"
+                    DependentUpon = "frmFattUs.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmFattUs.resX"
+                    DependentUpon = "frmFattUs.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmFlanAn.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmFlanAn.resX"
+                    DependentUpon = "frmFlanAn.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmFon.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmFon.resX"
+                    DependentUpon = "frmFon.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmGen.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmGen.resX"
+                    DependentUpon = "frmGen.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmGrafic.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmGrafic.resX"
+                    DependentUpon = "frmGrafic.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmMessage.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmMessage.resX"
+                    DependentUpon = "frmMessage.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmNoz.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmNoz.resX"
+                    DependentUpon = "frmNoz.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmOptim.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmOptim.resX"
+                    DependentUpon = "frmOptim.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmPart.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmPart.resX"
+                    DependentUpon = "frmPart.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmPartAB.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmPartAB.resX"
+                    DependentUpon = "frmPartAB.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmPT.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmPT.resX"
+                    DependentUpon = "frmPT.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmRat.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmRat.resX"
+                    DependentUpon = "frmRat.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmRis.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmRis.resX"
+                    DependentUpon = "frmRis.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmStiff.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmStiff.resX"
+                    DependentUpon = "frmStiff.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmTab.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmTab.resX"
+                    DependentUpon = "frmTab.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmTub.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmTub.resX"
+                    DependentUpon = "frmTub.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "HelpTopics.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Input.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "mainASME.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "mainPT.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "mainPT.resx"
+                    DependentUpon = "mainPT.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "messag.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "messag.resX"
+                    DependentUpon = "messag.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Monitor.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Output.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ProjectResources.en.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ProjectResources.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tipi.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_AA.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_Diaf.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_Dilat.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_flan.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_FTC.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_Part.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_PT.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_Tub.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wn_UTEMA.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Arch\ASME1.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\ASME14.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\ASME17.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\ASME6.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\EUconint.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\EUcylint.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\EUcylVacuum.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\EUsfeint.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\HeadNotTec.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\OtherLoadings.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\S&T.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\T151.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\T152.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\T153.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\T154.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabDesign.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TableAA16.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabMat.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabMAWP3.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\tabmawP31.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabMDMT.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabPI.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\TabPIb.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\tabpib1.doc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\UCS66.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\UG331.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Asme09.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Asme092.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME10.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME11.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME112.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME12.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME12BS.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME12psi.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Asme13.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME19.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME21.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME22.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME23.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME24.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME242.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME25.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME26.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Asme27.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Asme28.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME29.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME30.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME302.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\ASME31.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Diafr01.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Diafr02.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\dila01.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA02.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA03.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA04.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA0452.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA0453.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA0454.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA0455.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\DILA0456.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Dila05.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Dila06.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Dila07.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Dila08.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Dila09.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\fig01.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG02.EXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG1.RTF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\fig10.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG2.RTF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG3.RTF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG4.RTF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FIG5.RTF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Fig6.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\fig7.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\fig8.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\fig9.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL01.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL01A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA32.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA3F1.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01AA3F2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full01b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL021.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL021A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL022.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL022A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA2s.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA3s.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA3sw.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02AA3w.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full02b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL031.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full032.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full033.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full03AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full03AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full03AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full041.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full042.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full043.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full04AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full04AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full04AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full04AA3RE.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL05.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full05AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full05AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full05AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\FULL061.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full062.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full063.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full06aa.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full06AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full06AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full071.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full072.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full07AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full07AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full07AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full081.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full082.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full08AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full08AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\full08AA3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full09AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full09AA02.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full09AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full10AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full10AA02.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full10AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full11AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full11AA1.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full11AA12.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Full11AA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\pass.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF01.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Pdif01a.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Pdif01b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF022.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF022A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF03.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\pdif04.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\pdif053.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF062.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PDIF072.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff01.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff01aa.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff01UHX.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff01UHXFX.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFF02.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa1.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa1d.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa2d.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa3d.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa4.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff02aa4d.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFF03.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff03A02.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff03AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff03AAf.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFF04.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff04A02.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff04AA.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff04AAf.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff05.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Ptff06.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFF22.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFFej.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\PTFFek.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SINTSTA.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD11.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD12.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD13.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD14.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD21.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD22.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD31.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\SPD41.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAA015302.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\staext.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINP.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINP2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINP2S.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINP3.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINP3E.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPD.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPDI.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPEJ.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpf.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfAA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfp.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfpAA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPFPB.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPFPB.rtf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpft.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpftAA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfti.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpftiAA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfw.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stainpfwAA2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPS.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPSAA1.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAINPSAA2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stainpu.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stainpubl.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stam01.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAM02.EXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAM03.EXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam04.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam04UHX.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam05.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam06.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam0602.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam0602Fl.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam0603.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stam0603Fl.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stam07AA.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stam08.ext"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA13.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA1302.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA1402.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA1510c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA1510s.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA15302.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\stamAA15303.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA154c.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA154c1.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA154s.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA154s1.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155a.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155a1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155b.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155b1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155c.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155c1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155d.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155d1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155e.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155e1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155f.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA155f1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Stamaa158.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA159c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA159c1.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA159s.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA159s1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA162.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA163.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351a.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351a3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351AA.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351AA3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351b.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351b3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351BB.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351CC.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351d.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351DD.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351DD3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351e.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA351f.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA353.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA355a.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA355b.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA355c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356a.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356AA.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356b.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356BB.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356CC.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356d.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356DD.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356e.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356f.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356tau.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356Tc.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356Tc3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356Tr1.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356Tr2.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA356Tr3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamAA357.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359c.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359c2.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359c3.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359s.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359s2.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAA359s3.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMAW.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamPlas.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMUHX115.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamUHX1151a.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\StamUHX1151b.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMUHX124.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STAMUHX1259.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step10.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step12.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step12no.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step13.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step13a.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step13b.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step6A.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step6B.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step6C.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Step7.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\STUHX1252.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Tubias1.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Tubias2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\TUBIAS3.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\TUBIAS4.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\TUBIAS5.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\TUBIAS6.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Tubiasm.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\RTF\Tubieur.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.A15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.rev"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\A.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Afh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Afk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Aop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Asl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.a14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.a15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\B.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Bfh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Bfk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Bop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Bsl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.A15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\C.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Cfh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Cfk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Cop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Csl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.A15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\D.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Dfh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Dfk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Dop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Dsl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.A15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\E2input_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Efh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Efk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_3.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_4.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_5.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EINPUT_B.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\EJMAGRAF.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Eop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Esl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.A15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\F2input_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Ffh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Ffk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FGASKT_a.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FGASKT_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FH_stam.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\fh_vari.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Finput_a.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Finput_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FK_stam.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\fk_vari.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Fop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Fsl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Ftipop_2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FTIPOS_2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FTIPOW_2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FTIPTF_2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\FTIPTI_2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\G.A14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\G.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\G.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\G.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\G.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Gfh.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Gfk.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\GINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\GINPUT_B.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Gop.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Gsl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\H.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\H.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\HINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\I.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\I.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\IINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\J.REV"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\JINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Lj_stam.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Lj_stamsl.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\LJ_VARI.LJF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\OP_stam.ljf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG1.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG1AA.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag1aa2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag1aa5.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG2aa.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG2aa2.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG3.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG3aa.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG4.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\PAG4aa.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag5.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag5BS.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag5EN.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Pag5SI.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Rotfl.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Rotfl0.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SINTDEJ.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SINTDIL.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SINTESI.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SintesiF.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SintesiF2.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\SINTESJ.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\STWR04.WRC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\STWR05.WRC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\TipPT.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_mawp.a14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_MAWP.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_MAWP.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_MAWP.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_ST_RO.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_ST_TO.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_ST_TOS.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam.a14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_STAM.A14s"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam.a15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam.cop"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam.rev"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam1.cob"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_STAM2.COB"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_stam2.cop"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN_UG39.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_ug39d2.cop"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_vari.a14"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_vari.a15"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_vari.rev"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn_vari.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn1st_to.cop"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Wn1st_to.wnf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN1ST_TOS.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN1ST_TOS.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN1STAM.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN2STAM.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WN3STAM.COP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WNFLAN.WNF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\WNLJ01.DAT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\XINPUT_A.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\XINPUT_B.FTC"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Xjnput_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Xknput_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WN5\Xlnput_b.ftc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WR\Rcb851.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Arch\WR\Rcb852.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\115-MC06.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\CoperchioConAperture.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm2p3p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm2p3p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm3p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm3p3.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm5.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm6p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm6p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm6p3.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm6p4.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm7p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm7p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm7p3.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\Lm7p7.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p1met.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p3.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p4.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p1p4met.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p2p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p2p1met.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p2p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p3p1.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p3p2.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dati\UHXm20p3p3.VIP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dll\AsmeLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Dll\MathAV.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\LWN1self.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\open.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3A.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3A1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3A2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3A3.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3B.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3C.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3D.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3E.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3F1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3F2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3F3.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3F4.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3G.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3H.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3I.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3J.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3K.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3L.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3M.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3N.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3O.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3P.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3Q.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3R.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3S.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3T.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3U.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\Uw3UHT181.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\Uw3UHT181d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\Uw3UHT182.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3V.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3W.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3X.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3Y.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv1\UW3Z.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD5401a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD5401b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD5401c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD5401d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101ap.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101d1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101e.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101e1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101f.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6101g.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\ad6101gp.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6121a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6121b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6121c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6121d1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6121d2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131c1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131e.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6131f.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6211a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6211b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6211c1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6211c2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\AD6211c3.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Figdiv2\open.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m10.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m11.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m13.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m3.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m4.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m5.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m6.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m7.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m8.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p4m9.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p5m1.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p5m2.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\FigEuro\F9p5m3.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\16a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\16b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\16c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\16d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\16z.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\AAa.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\AAb.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\AAc.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmPT\AAd.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmStiff\Ug30a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmStiff\UG30B.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmStiff\UG30C.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmStiff\UG30D.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmStiff\UG30E.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmTub\a.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmTub\b.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmTub\c.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmTub\d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\frmTub\UHX11p1d.jpg"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\belt.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\bocch.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\both.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Cilindro.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\cono.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Coperchio.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\DiafSald.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Dilat.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Flangione.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\FlLoose.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\fondo.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\LM.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\LT.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\PT.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Setti.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\transition.bmp"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Figure\Membrature\Tubi.bmp"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

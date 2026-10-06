@@ -1,0 +1,19 @@
+\            \,CODICE MATERIALE
+\            \,N. DOCUMENTO
+\            \,N. REVISIONE
+\                                                           \,N. COMMESSA
+\\            ,SI= MINIMUM WALL  NO= AVERAGE
+##            ,intestazione
+#####         ,passo barre
+\\            ,INOX O SPECIALE=SI  ALTRIMENTI=NO
+\\            ,TIPO PASSO A= TRI.  B=QUA.  C= TRI. RUOT.  D=Q.RUOT.  E=LIBERO
+###.###       ,DIAMETRO ESTERNO TUBO
+###.###       ,SPESSORE TUBO
+#####.        ,LUNGH. RETTILINEA
+#####.        ,INCREMENTO CHIOMA/NUMERO TUBI
+###.###       ,PASSO
+###           ,NUMERO GRUPPI
+###.###       ,RAGGIO MEDIO MINIMO
+#####.        ,LUNGHEZZA RETTILINEA
+###           ,NUMERO FILE
+

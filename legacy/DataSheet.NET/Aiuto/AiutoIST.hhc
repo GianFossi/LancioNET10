@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduzione">
+		<param name="Local" value="Introduzione.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Panoramica">
+			<param name="Local" value="Panoramica.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La finestra principale">
+			<param name="Local" value="FinIniz.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I prototipi">
+		<param name="Local" value="Prototipi.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chiavi di ricerca primarie">
+			<param name="Local" value="Chiavi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chiavi di ricerca secondarie">
+			<param name="Local" value="ChiaviS.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creazione o aggiornamento ?">
+			<param name="Local" value="AggCrea.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori in esecuzione (gestione prototipi)">
+		<param name="Local" value="ErrProto.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Non esiste il disegno del prototipo">
+			<param name="Local" value="ErrProtoNoWMF.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Prototipo inesistente">
+			<param name="Local" value="ErrNoProto.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Il Data Sheet">
+		<param name="Local" value="DataSheet.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Foglio 1">
+			<param name="Local" value="DSf1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Foglio 2">
+			<param name="Local" value="DSf2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Foglio 3">
+			<param name="Local" value="DSf3.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Avvisi durante l'esecuzione">
+		<param name="Local" value="Avvisi.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Esiste gi&agrave; una distinta. Si vuole continuare?">
+			<param name="Local" value="AvvPreserva.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Data sheet non valido. Si vuole continuare ?">
+			<param name="Local" value="ErrNoDS.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

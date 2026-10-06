@@ -1,0 +1,20 @@
+\par  .
+_\par                Junction at the large end (1-&\ \)                  .
+_\par _\pard _\s15\_qj_\tx2127_\tx4293_\tx6379_\tx8789 õShell thk.    t{_\sub s}_\tab õ#####.###     [in]_\tab õAllowable  _\tab õ ######.#      [psi]_\tab õ.
+_\par õAxial load _#1_\tab õ########.#    [lb]_\tab õAxial load _#2 _\tab õ ########.#     [lb]_\tab õ.
+_\par õLongit.eff.cone _\tab õ#.##          [--]_\tab õLongit.eff.cyl. _\tab õ #.##           [--]_\tab õ.
+_\par õP/S{_\sub s}E{_\sub 1}     _\tab õ#.######      [--]_\tab õdelta (1.&-#)_\tab õ ##.##         [deg]_\tab õ.
+_\par õReq. thk. cone  t{_\sub r}_\tab õ####.###      [in]_\tab õReq. thk. cyl. t_\tab õ ####.###       [in]_\tab õ.
+_\par _\pard _\s15\_qj_\tx4536 Required Area                            =######.## [mm{_\super 2}]   ######.## [in{_\super 2}].
+_\par Effective Area                           =######.## [mm{_\super 2}]   ######.## [in{_\super 2}].
+_\par Provided Additional Reinforcing Area     =######.## [mm{_\super 2}]   ######.## [in{_\super 2}].
+\par --The design is acceptable (knuckle not needed)--.
+\par --- The design is acceptable (knuckle needed) ---.
+\par -------- The design is NOT acceptable -----------.
+\par -- Neither knuckle nor reinforcement necessary --.
+_\par                Junction at the small end (1-&\ \)                  .
+{{\field{\*\fldinst SYMBOL 189 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}.
+_\par õk=y/S{_\sub r}E{_\sub r} _\tab õ##.###        [--]_\tab õ                _\tab õ                    _\tab õ.
+\par NOT APPLICABLE:  rigid junction  .
+\par -------- The design is acceptable --------------.
+

@@ -1,0 +1,30 @@
+\par 
+_\pard _\s18_\qj_\widctlpar_\tx567_\tqr_\tx2693_\tqr_\tx5103_\tx5954 b{_\sub o}_\tab =_\tab #######.#### [mm]_\tab #######.#### [in]_\tab Basic gasket seating width_\par 
+b_\tab =_\tab #######.#### [mm]_\tab #######.#### [in]_\tab Effective gasket seating width_\par 
+G{_\sub ef}_\tab =_\tab #######.#### [mm]_\tab #######.#### [in]_\tab Dia. of gasket load reaction_\par
+\pard \s15\qj\widctlpar\tx851\tb3969\tx4110\tb6662\tx6891 \tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 1  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b{\sub o} = N/2\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 5  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}   b{\sub o}  = N/4\tab b{\sub o}{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\'bc\'94  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b=b{\sub o}\par 
+\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 2  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b{\sub o} = (w+N)/4\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 6  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}   b{\sub o}  = 3N/8\tab b{\sub o}{{\field{\*\fldinst SYMBOL 163 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}\'bc\'94  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  G{\sub ef}=G\par
+\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 3  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b{\sub o} = (w+N)/4\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 7  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}   b{\sub o}  = 7N/16\tab b{\sub o}>\'bc\'94  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b=0,5.{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}b{\sub o}\par 
+\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 4  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  b{\sub o} = (w+3N)/8\tab {{\field{\*\fldinst SYMBOL 106 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}} = 8  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}   b{\sub o}  = N/8\tab b{\sub o}>\'bc\'94  {{\field{\*\fldinst SYMBOL 174 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}  G{\sub ef}=G+N-2b\par 
+_\pard _\s15_\qj_\widctlpar_\par _\par _\pard _\s15_\qj_\widctlpar_\tx567_\tqr_\tx2693_\tqr_\tx5103_\tb5387_\tx5670_\tx5954 H{_\sub p}_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}.2b.G{_\sub ef}.m.\\_\tab A{_\sub m1}_\tab = #######.#### [in{_\super 2}]  W{_\sub m1}/S{_\sub bo}.k_\par 
+H_\tab =_\tab #########.# [lb]_\tab {_\'bc}{{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}.G{_\sub ef}{_\super 2}.\\_\tab A{_\sub m2}_\tab = #######.#### [in{_\super 2}]  W{_\sub m2}/S{_\sub ba}.k_\par 
+W{_\sub m1}_\tab =_\tab #########.# [lb]_\tab H+H{_\sub p}_\tab A{_\sub m}_\tab =  ######.#### [in{_\super 2}]  max(A{_\sub m1},A{_\sub m2})_\par 
+W{_\sub m2}_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}.b.G{_\sub ef}.Y_\tab A{_\sub b}_\tab = #######.#### [in{_\super 2}]  A{_\sub bl}.N{_\sub b}_\par 
+W{_\sub m1}_\tab =_\tab #########.# [lb]_\tab H+H{_\sub p}+W{_\sub mt}_\tab A{_\sub m}_\tab =  ######.#### [in{_\super 2}]  max(A{_\sub m1},A{_\sub m2})_\par 
+W{_\sub m2}_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 112 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}.b.G{_\sub ef}.Y+W{_\sub mt}_\tab A{_\sub b}    = #######.#### [in{_\super 2}]  A{_\sub bl}.N{_\sub b}_\par 
+_\pard _\s15_\qj_\nowidctlpar_\widctlpar_\tx567_\tqr_\tx2693_\tqr_\tx5103_\tx5650_\adjustright W_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 189 _\_\f "Technic" _\_\s 9}{_\fldrslt_\f112_\fs18}}}A{_\sub b}.S{_\sub ba}_\par 
+_\pard _\s15_\qj_\nowidctlpar_\widctlpar_\tx567_\tqr_\tx2693_\tqr_\tx5103_\tx5650_\adjustright W_\tab =_\tab #########.# [lb]_\tab {{_\field{_\*_\fldinst SYMBOL 189 _\_\f "Technic" _\_\s 9}{_\fldrslt_\f112_\fs18}}}(A{_\sub m}+A{_\sub b}).S{_\sub ba}_\par 
+ (Max S.S./T.S.)\par 
+A{_\sub max}_\tab =_\tab ######.#### [in{_\super 2}]_\tab 2ãyN/S{_\sub ba} Bolt area for gasket crush_\par 
+h{_\sub G}_\tab =_\tab ######.#### [in]_\tab {{_\field{_\*_\fldinst SYMBOL 189 _\_\f "Technic" _\_\s 9}{_\fldrslt_\f112_\fs18}}}(C-G{_\sub ef})_\par 
+R_\tab =_\tab ######.#### [in]_\tab (C-B)/2-g{_\sub 1}_\par 
+h{_\sub D}_\tab =_\tab ######.#### [in]_\tab R+0.5g{_\sub 1}_\par 
+h{_\sub T}_\tab =_\tab ######.#### [in]_\tab (R+g{_\sub 1}+h{_\sub G})/2_\par 
+H{_\sub G}_\tab =_\tab #########.# [lb]_\tab W-H_\par 
+H{_\sub G}_\tab =_\tab #########.# [lb]_\tab W{_\sub m1}-H_\par 
+H{_\sub D}_\tab =_\tab #########.# [lb]_\tab 0.785B{_\super 2}P_\par 
+H{_\sub T}_\tab =_\tab #########.# [lb]_\tab H-H{_\sub D}_\par 
+M{_\sub 0}_\tab =_\tab #########.# [lb.in]_\tab H{_\sub G}.h{_\sub G}+H{_\sub D}.h{_\sub D}+H{_\sub T}.h{_\sub T}_\tab (operating)_\par 
+M{_\sub 0}_\tab =_\tab #########.# [lb.in]_\tab h{_\sub G}.W{_\sub m2}_\tab (seating)_\par      
+M{_\sub 0}_\tab =_\tab #########.# [lb.in]_\tab h{_\sub G}.W{_\sub m1}_\tab (operating)_\par 
+

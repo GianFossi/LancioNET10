@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Dati iniziali</Title>
+</HEAD>
+<BODY>
+<H1>Dati iniziali</H1>
+<P>I dati di un nuovo progetto vengono imputati in due colonne di controlli come le seguenti, che appaiono nell'<A href="FinestrIniziale.htm#finArea">Area grafica</A> della finestra principale quando si preme sul pulsante di comando '<A href="FinestrIniziale.htm#finLeftTop">Dati di progetto</A>'.</P>
+<P>La configurazione dei dati può variare dinamicamente in funzione dei valori via via immessi.</P>
+<H3>Colonna di sinistra</H3>
+<IMG SRC="finDatiProg1.bmp">
+<H4><A name="DiamIntMant">Diametro interno mantello</A></H4>
+<P>Si può eseguire un progetto fornendo il diametro interno del mantello, e chiedendo al programma di sistemare in esso il numero massimo possibile di tubi: in questo caso si porrà il numero dei tubi richiesto pari a zero. Oppure si può prescrivere il numero di tubi, ed  il programma determinerà il diametro del mantello che li contiene: in questo caso si porrà pari a zero il diametro del mantello. Infine si possono fornire entrambi i dati: il comportamento del programma dipenderà allora dal valore del parametro '<A href="ChiaviS.htm#CalcoloOTL">Calcolo OTL</A>'.</P>
+<H4><A name="Dbocin">Diametro interno bocchello d'ingresso</A></H4>
+<P>Ove questo valore sia specificato, il programma manterrà
+una distanza tra la mezzeria dell'arco del cerchio coincidente con il diametro interno del mantello, avente asse coincidente con l'asse del <A href="Definizioni.htm#dbocin">bocchello d'ingresso</A>, e il diametro esterno dei tubi dell'<A href="Definizioni.htm#primafi">ultima  fila</A>, pari ad un <B>sesto</B> del valore.</P>
+<P>Questo parametro apparirà nella finestra dei dati iniziali solo se la <A href="ChiaviS.htm#Zlibin">zona libera in ingresso</A> sarà posta pari a zero.</P>
+<P>Se entrambi i valori della densità e della portata sono non nulli, il valore della zona libera sarà determinato dal programma in funzione della <A href="ChiaviS.htm#densin">densità e della portata del fluido in ingresso</A>.</P>
+<H4><A name="Dbocout">Diametro interno bocchello d'uscita</A></H4>
+<P>Ove questo valore <A href="Definizioni.htm#specificato">sia specificato</A>, il programma manterrà
+una distanza tra la mezzeria dell'arco del cerchio coincidente con il diametro interno del mantello, avente asse coincidente con l'asse del <A href="Definizioni.htm#dbocout">bocchello d'uscita</A>, e il diametro esterno dei tubi della<A href="Definizioni.htm#primafi">prima  fila</A>, pari ad un <B>quarto</B> del valore.</P>
+<P>Questo parametro apparirà nella finestra dei dati iniziali solo se la <A href="ChiaviS.htm#Zlibout">zona libera in uscita</A> sarà posta pari ad un valore numerico nullo.</P>
+<P>Se entrambi i valori della densità e della prtatata sono non nulli, il valore della zona libera sarà determinato dal programma in funzione della <A href="ChiaviS.htm#densout">densità e della portata del fluido in uscita</A>.</P>
+<H4><A name="densin">Densità e portata in ingresso</A></H4>
+<P>Se diametro interno bocchello, densità e portata sono non nulli il valore della zona libera verrà calcolato come descritto nel Cap. <A href="html/ManTerZoneLib1.htm">Zone libere</A> del Manuale teorico.</P>
+<H4><A name="densout">Densità e portata in uscita</A></H4>
+<P>Se diametro interno bocchello, densità e portata sono non nulli il valore della zona libera verrà calcolato come descritto nel Cap. <A href="html/ManTerZoneLib1.htm">Zone libere</A> del Manuale teorico.</P>
+<H4><A name="Zlibin">Zona libera in ingresso</A></H4>
+<P>Questo parametro specifica la distanza da mantenere tra la mezzeria dell'arco del cerchio coincidente con il diametro interno del mantello, avente asse coincidente con l'asse del <A href="Definizioni.htm#dbocin">bocchello d'ingresso</A>, e il diametro esterno dei tubi dell'ultima  fila, (o la distanza della detta mezzeria con il piatto d'urto, se esistente).</P>
+<P>Ove non specificato (ovvero posto pari a zero), il programma manterrà una zona libera in ingresso in funzione del <A href="ChiaviS.htm#Dbocin">diametro interno del bocchello d'ingresso</A>. In tal caso il valore calcolato sarà riportato su <B>sfondo giallo</B> e non sarà direttamente modificabile. Per tornare a modificarlo direttamente bisogna nuovamente porre il <A href="ChiaviS.htm#Dbocin">diametro interno del bocchello d'ingresso</A> pari a zero.</P>
+<P>Se entrambi i valori della zona libera e del diametro del bocchello sono nulli si supporrà che l'alimentazione è ottenuta tramite un <B>belt</B>.</P>
+<H4><A name="Zlibout">Zona libera in uscita</A></H4>
+<P>Questo parametro può assumere un valore numerico o un valore standard.</P>
+<P>Nel primo caso il significato è identico a quello assunto dalla zona libera in ingresso, e si conviene che il fluido lato mantello esce dal <A href="Definizioni.htm#bocout">basso</A>.</P>
+<P>Nel secondo caso, i valori standard potranno essere:</P>
+<li>Simmetria orizzontale
+<li>Simmetria orizzontale con tubo su asse verticale
+<li>Simmetria orizzontale con tubo fuori asse
+<li>Ottimizzazione con tubo su asse verticale
+<li>Ottimizzazione con tubo fuori asse
+<H4>Dati geometrici sui tubi</H4>
+<P>Questi dati sono generalmente autoesplicativi. Tuttavia valgono le seguenti note.</P>
+<H5><A name="NumeroTubi">Numero di tubi</A></H5>
+<li>Nel caso di tubi ad U o a <A href="Definizioni.htm#fontana">fontana</A> si intende il numero di forcine
+<li>Questo dato interagisce con il <A href="ChiaviS.htm#DiamIntMant">diametro interno del mantello</A>.
+<H5><A name="TipoTracciatura">Tipo di tracciatura</A></H5>
+<P>Premendo il pulsante <img src="botPassi.bmp"> compariranno le scelte possibili.</P>
+<P>Nel caso di fasci a tubi diritti le scelte possibili sono le seguenti:</P>
+<IMG SRC="finPassiF.bmp">
+<P>Nel caso di fasci a tubi ad U le scelte possibili sono le seguenti:</P>
+<IMG SRC="finPassiU.bmp">
+<P>Nel caso di <A href="Definizioni.htm#fontana">fasci a fontana</A> la sola scelta possibile è 'due passaggi', e quindi il pulsante non sarà presente</P>
+<H5><A name="LunghTubi">Lunghezza dei tubi</A></H5>
+<P>Nel caso di tubi a U o a fontana imputare la lunghezza diritta netta (cioè al netto di eventuale sovralunghezze)</P>
+<H5><A name="CurveVert">Curve su piano verticale</A></H5>
+<H3>Colonna di destra</H3>
+<IMG SRC="finDatiProg2.bmp">
+<H4><A name="NumPassiMant">Numero di passaggi lato mantello</A></H4>
+<P>Questo dato è totalmente ininfluente nelle elaborazioni del programma TRACCIA. Esso è previsto per specificare il dato per le <A href="Panoramica.htm#altreappl">applicazioni collegate</A> al programma.</P>
+<H4><A name="TipoFascio">Tipo di fascio</A></H4>
+<P>Sono previsti i seguenti quattro tipi:</P>
+<li>tubi diritti a teste fisse
+<li>tubi diritti a testa flottante
+<li>tubi ad U
+<li><A href="Definizioni.htm#fontana">fasci disposti a fontana</A></P>
+<H4><A name="TipoPasso">Tipo di passo</A></H4>
+<H4>Dati sui diaframmi</H4>
+<P>Questi dati non hanno alcuna influenza sull'elaborazione della tracciatura, in termini di posizioni dei singoli fori. Essi possono essere forniti, se desiderato, sia perché in alcuni casi i diaframmi saranno rappresentati nel disegno della tracciatura, sia per ulteriori elaborazioni eseguite da <A href="Panoramica.htm#altreappl">altre applicazioni</A> del sistema Lancio.</P>
+<H5><A name="PassoDiaf">Passo dei diaframmi e passo del primo diaframma</A></H5>
+<H5><A name="PercTaglio">Percentuale di taglio dei diaframmi e relativo angolo di taglio</A></H5>
+<H5><A name="TipoDiaf">Tipo dei diaframmi</A></H5>
+<P>I tipi previsti sono i seguenti:</P>
+<li>Single
+<li>NTW (No Tube Window)
+<li>Double segmental
+<li>Triple segmental
+<li>Anulari
+<H4><A name="Urto">Presenza del piatto d'urto</A></H4>
+<H4><A name="MatTubi">Tipo di materiale dei tubi</A></H4>
+<P>Le possibili scelte sono 'ferroso' e 'non ferroso'.</P>
+<P>Questo dato è utilizzato per entrare nella <A href="html/ManTerUnsupported.htm">tabella TEMA</A> che fornisce la massima campata libera non supportata in funzione del diametro dei tubi e del loro materiale.</P>
+<P>Questo dato non ha alcuna influenza sulla tracciatura dell piastra tubiera.</P>
+<H4><A name="LarghCava">Larghezza della cava</A></H4>
+<H4><A name="Giunto">Giunto tubo-piastra</A></H4>
+<H4><A name="EvDiamIntCor">Diametro dell'eventuale corona interna</A></H4>
+<H4><A name="SS">Numero di sealing strips</A></H4>
+<H4><A name="Rods">Numero di rod runners</A></H4>
+<H4><A name="Tacche">Tacche</A></H4>
+<H4><A name="PassoIter">Passo iterazioni</A></H4>
+<H4><A name="CalcoloOTL">Calcolo OTL</A></H4>
+<P>Nel caso che siano specificati un <A href="ChiaviS.htm#DiamIntMant">diametro mantello</A> ed un <A href="ChiaviS.htm#NumeroTubi">numero tubi</A> entrambi diversi da zero, il comportamento del programma sarà il seguente:</P>
+<li>se si sceglie l'opzione 'OTL massimo' i tubi saranno disposti il più possibile vicino all'asse orizzontale
+<li>se si sceglie l'opzione 'OTL minimo' i tubi saranno disposti il più possibile al centro
+<H3>Colonna di destra per fasci a fontana</H3>
+<IMG SRC="finDatiProg2f.bmp">
+<H4><A name="DiamCor">Diametro interno corona esterna e diametro esterno corona interna</A></H4>
+<P>In sede di progetto questi due dati non sono ancora noti. Si dovranno fornire quindi dei dati di primo tentativo: il programma manterrà costante la differenza fra i due dati durante le iterazioni del calcolo, e cioè manterrà costante la larghezza della pista circolare tra le due corone di tubi.</P>
+<H4><A name="DiamIntCorInt">Diametro interno corona interna</A></H4>
+<P>Normalmente questo dato sarà posto pari a zero. Tuttavia, se si vuole lasciare un cerchio centrale libero da tubi, se ne può specificare qui il diametro.</P>
+<H4><A name="PassoIntExt">Passo tubi interno ed esterno</A></H4>
+<P>Nel caso di fasci a fontana è possibile specificare due valori diversi per il passo della tracciatura della corina interna e della corona esterna. Normalmente il passo della corona esterna è inferiore a quello della corona interna poiché le velocità del fluido lato mantello, di tipo sostanzialmente radiale, sono minori all'esterno (diametri grandi) piuttosto che vicino all'asse dello scambiatore.</P>
+<H4><A name="Interf">Interferenza ammessa</A></H4>
+<P>Si può ammettere che durante l'infilaggio di una forcina una sua gamba strisci con una certa interferenza (sfruttando la flessibilità del tubo) contro la curva di una forcina già inserita. Lo scopo è di tentare per questa via la risoluzione di problemi di <A href="fontAgg.htm#insuccesso">impossibilità dell'operazione di aggancio</A> dovuti al non soddisfacimento della <A href="fontAgg.htm#sorvolo">condizione di non-sorvolo</A>.</P>
+<P>E' opportuno porre in prima istanza questo valore pari a zero, e comunque non superare mai il valore di 1-2 mm.</P>
+<H4><A name="Gioco">Gioco nelle chiome</A></H4>
+<H4><A name="AngVarco">Varco libero per RX</A></H4>
+<H4><A name="AnomVarco">Anomalia varco</A></H4>
+</BODY>
+</HTML>

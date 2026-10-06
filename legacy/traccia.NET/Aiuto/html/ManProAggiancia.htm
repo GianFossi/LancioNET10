@@ -1,0 +1,1159 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProAggiancia_file/filelist.xml">
+<title>Subroutine Aggancia</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>16</o:TotalTime>
+  <o:Created>2000-12-26T14:44:00Z</o:Created>
+  <o:LastSaved>2000-12-26T14:46:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>1716</o:Words>
+  <o:Characters>9786</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>81</o:Lines>
+  <o:Paragraphs>19</o:Paragraphs>
+  <o:CharactersWithSpaces>12017</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:553393969;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2098301376 -1234296436 68157465 68157467 68157455 68157465 68157467 68157455 68157465 68157467;}
+@list l0:level1
+	{mso-level-start-at:970;
+	mso-level-text:%1;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-36.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+<H1>Subroutine Aggancia</H1>
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>             </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                 </span>28/07/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Esegue l’aggiancio dei fori della
+corona esterna con quelli della zona interna delle tracciature per fasci a
+fontana.</p>
+<p>La teoria è descritta nel Cap. <A href="..\fontAgg.htm">Aggancio</A></p>
+<p class=MsoNormal style='text-indent:0cm'><B>Albero delle chiamate</B></P>
+<TABLE cellpadding=0 cellspacing=0>
+<TR VALIGN="top">
+<TD><A HREF="FinestrIniziale.htm"><img src="../img/ClickAggancia.bmp" alt="Click sul pulsante bilancio" BORDER=0></A><BR>
+<IMG SRC="../img/parchild.bmp"><A HREF="ManProAggiancia.htm"><img src="../img/Aggancia.bmp" alt="Sub Aggancia" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProCoorInMem.htm"><img src="../img/CoorInMem.bmp" alt="Sub CoorInMem" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProapri5.htm"><img src="../img/apri5.bmp" alt="Sub apri5" BORDER=0></A><BR>    
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parlower.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProCoorXY.htm"><img src="../img/CoorXY.bmp" alt="Sub CoorXY" BORDER=0></A><BR>    
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProOrdina.htm"><img src="../img/Ordina.bmp" alt="Function Ordina" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProSorvolo.htm"><img src="../img/Sorvolo.bmp" alt="Function Sorvolo" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parmult.bmp"><A HREF="ManProVerifInters.htm"><img src="../img/VerifInters.bmp" alt="Function VerifInters" BORDER=0></A><BR>
+<IMG SRC="../img/space.bmp"><IMG SRC="../img/parchild.bmp"><A HREF="ManProapri5.htm"><img src="../img/apri5.bmp" alt="Sub apri5" BORDER=0></A></TD>
+</TR >
+</TABLE>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Listato</b>:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Sub Aggancia()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Dim ifl As Integer, Testo As String, Risp As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim Riga As String, iCMax As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim NewInd(DaTos(0).ktotal) As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim NewDist(DaTos(0).ktotal) As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span lang=FR style='font-family:
+"Times New Roman";mso-ansi-language:FR'>Dim Dir1 As Vec2, Dir2 As Vec2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">      </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Dim Form1 As
+String, Form2 As String, icoo As String<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim iCoppia As Integer, iProfond As
+Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim iCoppiaV As Integer, iC As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim Raggio As Single, iDat As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim iTubo As Integer, iTubo1 As Integer,
+iTubo2 As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim Raggiol As Single, Dist As Single,
+Distl As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim Ang As Single, Ang1 As Single, Ang2
+As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim DAng As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim indice As Integer, indcont As
+Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Dim iSorv As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>indcont = DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>If DaTos(1).ktotal &gt; indcont Then
+indcont = DaTos(1).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim PuntiD(indcont, 1) As Vec2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim Fila(indcont, 1) As Integer,
+Posizbu(indcont, 1) As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim IndT1(indcont) As Integer,
+IndT2(indcont) As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>indcont = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Screen.MousePointer = vbHourglass<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.StatusBar1.Style = sbrSimple<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Form1 = &quot;####<span
+style="mso-spacerun: yes">  </span>####.##<span style="mso-spacerun: yes"> 
+</span>####.##<span style="mso-spacerun: yes">  </span>####.##<span
+style="mso-spacerun: yes">  </span>####.##&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Form2 = &quot; ## ## ## ## ####
+####&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>690<span
+style="mso-spacerun: yes">   </span>Call <A href="ManProCoorInMem.htm">CoorInMem</A><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>icoo = RTrim$(DaTos(0).commes) +
+&quot;.COO&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>692<span
+style="mso-spacerun: yes">   </span>If Len(Dir$(icoo)) &gt; 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>GoSub Recover<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>If Not Risp = vbNo Then GoTo Esci<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.Break.Left =
+frmTraccia.cmdExit.Left<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.Break.Visible = True<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Fact = 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>584<span
+style="mso-spacerun: yes">   </span>ReDim Accoppia(DaTos(0).ktotal, 1) As
+Integer, IndT1(DaTos(0).ktotal) As Integer, IndT2(DaTos(0).ktotal) As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ReDim NewInd(DaTos(0).ktotal) As
+Integer, NewDist(DaTos(0).ktotal) As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-family:"Times New Roman"'>iCoppia
+= 0: iProfond = 0 'DaTos(0).Ntubi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>If iAgg = 0 Then GoTo FinePrematura<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span></span><span style='font-family:
+"Times New Roman"'>iCoppia = iCoppia + 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Riprendi: Raggio = -1: iDat = 1: iTubo1 =
+0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">         
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>DoEvents<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>If frmTraccia.Breckato Then GoTo
+FinePrematura<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>For iTubo = 1 To DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>If Accoppia(iTubo, iDat) = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span></span><span style='font-family:
+"Times New Roman"'>Raggiol = Sqr(PuntiD(iTubo, iDat).x ^ 2 + PuntiD(iTubo,
+iDat).y ^ 2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">               </span>If Raggiol &gt; Raggio Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                  </span>Raggio = Raggiol: iTubo1 = iTubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">               </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>If iTubo1 &gt; 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>810<span style="mso-spacerun:
+yes">          </span>Accoppia(iTubo1, iDat) = iCoppia: IndT1(iCoppia) = iTubo1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>Dist = 1E+20: iTubo2 = 0: iDat = 0: indice = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>If iCMax &gt; 0 Then Testo = &quot;Coppia
+massima&quot; + Str(iCMax) + &quot; &quot; Else Testo = &quot;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>Testo = Testo + &quot;Esamino la coppia&quot; +
+Str$(iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>frmTraccia.StatusBar1.SimpleText = Testo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>frmTraccia.StatusBar1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>For iTubo = 1 To DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If Accoppia(iTubo, iDat) = 0
+And iTubo &lt;&gt; iTubo1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Distl =
+Sqr((PuntiD(iTubo, iDat).x - PuntiD(iTubo1, 1).x) ^ 2 + (PuntiD(iTubo, iDat).y
+- PuntiD(iTubo1, 1).y) ^ 2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>Raggio = Sqr(PuntiD(iTubo1, 1).x ^ 2 +
+PuntiD(iTubo1, 1).y ^ 2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>If Abs(Raggio) &lt; TOLER Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span><span style="mso-spacerun:
+yes">                      </span></span><span style='font-family:"Times New Roman"'>Ang
+= 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                          </span>Dir1.x = PuntiD(iTubo1, 1).x / Raggio<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                          </span>Dir1.y = PuntiD(iTubo1, 1).y / Raggio<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                          </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Ang = arco(Dir1.x, Dir1.y)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span><span style="mso-spacerun:
+yes">      </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Dir2.x = (PuntiD(iTubo,
+iDat).x - PuntiD(iTubo1, 1).x) / Distl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Dir2.y = (PuntiD(iTubo,
+iDat).y - PuntiD(iTubo1, 1).y) / Distl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Ang1 = arco(Dir2.x,
+Dir2.y)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                    </span><span style="mso-spacerun:
+yes">   </span>DAng = Abs(Ang1 - Ang): If DAng &gt; PI Then DAng = 2 * PI -
+DAng<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Distl = Distl * (1 +
+Fact * DAng / 2 / PI)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>indice = indice + 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>815<span
+style="mso-spacerun: yes">                    </span>NewInd(indice) = iTubo:
+NewDist(indice) = Distl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span><span style="mso-spacerun:
+yes">       </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>If indice &gt; 0 Then indcont =
+Ordina(NewDist(), NewInd(), indice, 0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>iTubo2 = NewInd(indcont)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>If iTubo2 &gt; 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>If iCMax &gt; 0 Then Testo =
+&quot;Coppia massima&quot; + Str(iCMax) + &quot; &quot; Else Testo =
+&quot;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span></span><span style='font-family:
+"Times New Roman"'>Testo = Testo + &quot;Sorvolo la coppia&quot; +
+Str$(iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>frmTraccia.StatusBar1.SimpleText = Testo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>frmTraccia.StatusBar1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>829<span style="mso-spacerun:
+yes">                       </span>iSorv = Sorvolo(iTubo1, iTubo2, iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span><span style="mso-spacerun: yes">                 </span></span><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If
+iSorv Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                             </span>indcont =
+Ordina(NewDist(), NewInd(), indice, 0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                             </span>If indcont = 0
+Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                                </span>indcont =
+Ordina(NewDist(), NewInd(), indice, 1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span><span style="mso-spacerun:
+yes">               </span>iTubo2 = NewInd(indcont)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                                </span>GoTo 830<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                             </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>831<span
+style="mso-spacerun: yes">                          </span>iTubo2 =
+NewInd(indcont)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                             </span>GoTo 829<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                          </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>830<span
+style="mso-spacerun: yes">           </span><span style="mso-spacerun:
+yes">     </span>If iSorv Or Not VerifInters(PuntiD(iTubo2, 0), PuntiD(iTubo1,
+1)) Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'<span
+style="mso-spacerun: yes">                                      
+</span>esterno<span style="mso-spacerun: yes">             </span>interno<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>frmTraccia.Picture1.Circle
+(PuntiD(IndT1(iCoppia), 1).x, PuntiD(IndT1(iCoppia), 1).y), DaTos(0).rtubo / 2,
+QBColor(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>frmTraccia.Picture1.Circle
+(PuntiD(IndT1(iCoppia), 1).x, PuntiD(IndT1(iCoppia), 1).y), DaTos(0).rtubo *
+0.75, QBColor(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span></span><span style='font-family:
+"Times New Roman"'>iCMax = iCoppia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>FormatS &quot;non|&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>Testo = Monitor.Motore.Inizio.converticr(FormatS(LoadResString(IDH_ERR_TRAPPOLA),
+iCoppia))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman";color:red'><span style="mso-spacerun:
+yes">             </span>'Testo = &quot;Siamo intrappolati alla coppia&quot; +
+Str(iCoppia) + &quot;.&quot; + vbCrLf<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman";color:red'><span style="mso-spacerun:
+yes">             </span>'Testo = Testo + &quot;Risponendo Si, il programma
+cercherà un'altra soluzione.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman";color:red'><span style="mso-spacerun:
+yes">             </span>'Testo = Testo + &quot;Rispondere Annulla, se si vuole
+riequilibrare manualmente&quot; + vbCrLf<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman";color:red'><span style="mso-spacerun:
+yes">             </span>'Testo = Testo + &quot;i fori attorno alla
+circorferenza. (Studiare prima la mappa&quot; + vbCrLf<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman";color:red'><span style="mso-spacerun:
+yes">             </span>'Testo = Testo + &quot;per individuare in quale
+settore i fori sono sbilanciati.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>Screen.MousePointer = vbDefault<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>If MostraAiuto(IDH_ERR_TRAPPOLA, MessOKCancel +
+MessInformation + MessHelpButton, Testo, &quot;Traccia - Operazione di
+aggancio&quot;) = chiavimess.MessCancel Then GoTo FinePrematura<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">  
+</span><span style="mso-spacerun:
+yes">          </span>frmTraccia.Picture1.Circle (PuntiD(IndT1(iCoppia), 1).x,
+PuntiD(IndT1(iCoppia), 1).y), DaTos(0).rtubo / 2, frmTraccia.Picture1.BackColor<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>frmTraccia.Picture1.Circle (PuntiD(IndT1(iCoppia),
+1).x, PuntiD(IndT1(iCoppia), 1).y), DaTos(0).rtubo * 0.75,
+frmTraccia.Picture1.BackColor<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>Screen.MousePointer = vbHourglass<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>If iCMax &gt; 0 Then Testo =
+&quot;Coppia massima&quot; + Str(iCMax) + &quot; &quot; Else Testo =
+&quot;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span></span><span style='font-family:
+"Times New Roman"'>Testo = Testo + &quot;Verifico la coppia&quot; +
+Str$(iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">       
+</span><span style="mso-spacerun:
+yes">     </span>frmTraccia.StatusBar1.SimpleText = Testo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">             </span>frmTraccia.StatusBar1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                      </span>iCoppiaV = iCoppia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                      </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>If iProfond &gt; 0 Then iCoppia =
+iProfond<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                      </span>Do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                        </span></span><span
+style='font-family:"Times New Roman"'>iCoppia = iCoppia - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                        </span>If iCoppia = 1 Then GoTo FinePrematura<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>840<span
+style="mso-spacerun: yes">                     </span>If
+VerifInters(PuntiD(IndT2(iCoppia), 0), PuntiD(iTubo1, 1)) Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                           </span>If iCoppia &lt;
+iProfond Or iProfond = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                          </span><span
+style="mso-spacerun: yes">    </span>For iC = iCoppia To iCoppiaV - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                             
+</span>frmTraccia.Picture1.Line (PuntiD(IndT1(iC), 1).x, PuntiD(IndT1(iC),
+1).y)-(PuntiD(IndT2(iC), 0).x, PuntiD(IndT2(iC), 0).y),
+frmTraccia.Picture1.BackColor<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                              </span></span><span
+style='font-family:"Times New Roman"'>'<span style="mso-spacerun: yes">   
+</span><span style="mso-spacerun: yes">           </span>interno<span
+style="mso-spacerun: yes">                                           
+</span>esterno<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                                 </span>Accoppia(IndT1(iC), 1) = 0:
+IndT1(iC) = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                                 </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If iC &gt;
+iCoppia Then Accoppia(IndT2(iC), 0) = 0: IndT2(iC) = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span><span style="mso-spacerun:
+yes">               </span></span><span style='font-family:"Times New Roman"'>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span>Accoppia(IndT1(iCoppiaV), 1) = 0:
+IndT1(iCoppiaV) = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>850<span style="mso-spacerun:
+yes">                           </span>Accoppia(iTubo1, 1) = iCoppia:
+IndT1(iCoppia) = iTubo1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span>frmTraccia.Picture1.Line (PuntiD(IndT1(iCoppia),
+1).x, PuntiD(IndT1(iCoppia), 1).y)-(PuntiD(IndT2(iCoppia), 0).x,
+PuntiD(IndT2(iCoppia), 0).y), QBColor(12)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span>frmTraccia.Picture1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span>iSorv = Sorvolo(iTubo1,
+IndT2(iCoppia), iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>iProfond =
+iCoppia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                              </span>If Not iSorv
+Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                                  </span></span><span
+style='font-family:"Times New Roman"'>iCoppia = iCoppia + 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                                  </span>GoTo Riprendi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                              </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span><span style="mso-spacerun:
+yes">         </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                        </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                      </span>Loop<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                   </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                </span></span><span style='font-family:
+"Times New Roman"'>Accoppia(iTubo2, iDat) = iCoppia: IndT2(iCoppia) = iTubo2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                </span>frmTraccia.Picture1.Line (PuntiD(iTubo1, 1).x,
+PuntiD(iTubo1, 1).y)-(PuntiD(iTubo2, 0).x, PuntiD(iTubo2, 0).y), QBColor(12)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>frmTraccia.Picture1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span></span><span style='font-family:
+"Times New Roman"'>If iCoppia &lt;= DaTos(0).ktotal Then 'lavoro non finito<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                  </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>Fact = Fact - 0.25<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>If Fact &gt; -0.5 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>Call SubTraccia(0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>Call datiout(0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>GoTo 584<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>GoTo FinePrematura<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span>Exit Do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span><span style="mso-spacerun:
+yes">     </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">             </span>Exit Do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Loop<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ifl = FreeFile<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>700<span
+style="mso-spacerun: yes">   </span>Open icoo For Output As #ifl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Print #ifl, &quot;Sigla<span
+style="mso-spacerun: yes">    </span>xi<span style="mso-spacerun: yes">      
+</span>yi<span style="mso-spacerun: yes">       </span>xe<span
+style="mso-spacerun: yes">       </span>ye<span style="mso-spacerun: yes">  
+</span>f.i bu f.e bu&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>For iCoppia = 1 To DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>820<span
+style="mso-spacerun: yes">     </span><span style="mso-spacerun:
+yes">        </span>Print #ifl, FormatS(Form1, iCoppia, PuntiD(IndT1(iCoppia),
+1).x, PuntiD(IndT1(iCoppia), 1).y, PuntiD(IndT2(iCoppia), 0).x,
+PuntiD(IndT2(iCoppia), 0).y);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                </span>Print #ifl, FormatS(Form2,
+Fila(IndT1(iCoppia), 1), Posizbu(IndT1(iCoppia), 1), Fila(IndT2(iCoppia), 0),
+Posizbu(IndT2(iCoppia), 0), IndT1(iCoppia), IndT2(iCoppia))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-family:"Times New Roman"'>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span>Testo = &quot;Operazione di aggiancio terminata con successo.&quot; +
+Str$(iCoppia)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span>frmTraccia.StatusBar1.Panels(1).Text = Testo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span>frmTraccia.StatusBar1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Esci:
+Close #ifl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Screen.MousePointer = vbDefault<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.StatusBar1.Style = sbrNormal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.Break.Visible = False<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>FinePrematura:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>iAgg = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>frmTraccia.Breckato = False<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>frmTraccia.StatusBar1.Panels(1).Text =
+&quot;Non è stato possibile trovare una soluzione&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>frmTraccia.StatusBar1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>SubTraccia 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                           </span>GoTo Esci<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Recover:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span>Testo = &quot;Esiste il risultato di un calcolo precedente. Vuoi
+usarlo?&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span>Risp = MsgBox(Testo, vbYesNo)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>If Risp = vbNo Then Return<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>ifl = FreeFile<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Open icoo For Input As #ifl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Line Input #ifl, Riga<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-family:"Times New Roman"'>iCoppia
+= 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span><span style="mso-spacerun: yes"> </span>For iCoppia = 1 To
+DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Line Input #ifl, Riga<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-54.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 27.0pt 54.0pt'><![if !supportLists]><span style='font-family:
+"Times New Roman"'>970<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:"Times New Roman"'>PuntiD(IndT1(iCoppia),
+1).x = Val(Testo)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-54.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 27.0pt 54.0pt'><![if !supportLists]><span style='font-family:
+"Times New Roman"'>971<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:"Times New Roman"'>Testo =
+prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>PuntiD(IndT1(iCoppia), 1).y = Val(Testo) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>PuntiD(IndT2(iCoppia), 0).x = Val(Testo) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>PuntiD(IndT2(iCoppia), 0).y = Val(Testo) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">   
+</span><span style="mso-spacerun: yes">     </span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'>950<span style="mso-spacerun: yes">     
+</span>IndT1(iCoppia) = Val(Testo) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">        
+</span>Testo = prossimo(Riga)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'>960<span style="mso-spacerun: yes">     
+</span>IndT2(iCoppia) = Val(Testo) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">     
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Close #ifl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>For iC = 1 To DaTos(0).ktotal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>frmTraccia.Picture1.Line
+(PuntiD(IndT1(iC), 1).x, PuntiD(IndT1(iC), 1).y)-(PuntiD(IndT2(iC), 0).x,
+PuntiD(IndT2(iC), 0).y), QBColor(12)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>frmTraccia.Picture1.Refresh<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Return<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 54.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span></p>
+
+</div>
+
+</body>
+
+</html>

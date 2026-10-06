@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Libreria Materiali</Title>
+</HEAD>
+<BODY>
+<H1>Libreria materiali</H1>
+<P>Questa libreria riporta i dati meccanici e fisici di tutti i materiali ASME. Essa è concepita anche per gestire i dati dei materiali in accordo anche ad altre normative; tuttavia i dati caricati attualmente sono largamente incompleti.</P>
+<H2>Selezione del materiale</H2>
+<H3><A name="Classe">Scelta della classe</A></H2>
+<P>I materiali sono classificati in classi, come è visibile nella finestra seguente. Scegliere la classe desiderata e dare OK.</P>
+<IMG SRC="frmMatClasse.bmp">
+<P><A name="CambioClasse">Nota</A>: Qualora l'applicazione che chiama la libreria materiali avesse già definito la classe applicabile, questa finestra non apparirà, e si sarà portati immediatamente alla finestra della <A href="LibreriaMateriali.htm#Scelta">Scelta del materiale</A>. Tuttavia si potrà comunque accedere a questa finestra per cambiare la classe tramite il pulsante Classe.</P>
+<H3><A name="Scelta">Scelta del materiale</A></H2>
+<IMG SRC="frmMatScelta.bmp">
+<P>Le funzioni dei pulsanti di questa finestra sono presentate qui di seguito.</P>
+<H4>Modifica</H4>
+<IMG SRC="ScelBotModifica.bmp">
+<H4>Inserimento</H4>
+<IMG SRC="ScelBotIns.bmp">
+<H4>Eliminazione</H4>
+<IMG SRC="ScelBotElim.bmp">
+<H4>Esamina</H4>
+<IMG SRC="ScelBotEsamin.bmp">
+<H4>Tipo di visualizzazione</H4>
+<IMG SRC="ScelBotVista.bmp">
+<H4>Cambio della classe</H4>
+<IMG SRC="ScelBotClasse.bmp">
+<P>Cambio della <A href="LibreriaMateriali.htm#CambioClasse">classe</A> preselezionata, al fine di scegliere un materiale di un'altra classe.</P>
+<H4>Nessun materiale</H4>
+<IMG SRC="ScelBotNessuno.bmp">
+<P>Serve per annullare ogni selezione di materiale fatta precedentemente nell'applicazione chiamante. In altre parole si dichiara che non è definito alcun materiale nel contesto dell'applicazione chiamante.</P>
+<H3><A name="Scheda">Scheda valori</A></H3>
+<P>Questa scheda viene utilizzata per assegnare tutti i dati specifici del singolo materiale, o tramite imputazione diretta del dato, o tramite riferimento a <A href="LibreriaMateriali.htm#ModElas">dati tabellari</A> di carattere generale.</P>
+<IMG SRC="frmMatScheda.bmp">
+<H4><A name="DENOM">Denominazione</A></H4>
+<H4><A name="CLASSIF">Dati per la classificazione</H4>
+<P>Essi sono:</P>
+<li>la Categoria
+<li>il Codice Tecnico
+<li>il Codice Materiale
+<P>Questi codici sono stati previsti per l'interfacciamento con la Distinta Base e la gestione delle Richieste Materiali. Ad oggi non sono usati.</P>
+<H4><A name="CARACT">Caratteristiche fisiche</A></H4>
+<H4><A name="GRUPPO">Gruppo per il rating</A></H4>
+<H4><A name="PREZZI">Prezzi</A></H4>
+<P>Questo pulsante richiama il modulo di gestione dei <A href="LibreriaMateriali.htm#LISTINI">listini prezzi</A> di approvvigionamento.</P>
+<H4><A name="DATICODICE">Dati specifici per il codice di calcolo applicabile</A></H4>
+<P>Questo schedario, composto dal numero fisso quattro di schede, accoglie i dati del materiale che sono funzione del codice di calcolo applicabile. Quindi, per un dato materiale, sono specificabili i dati relativi ad al più quattro codici. L'uso quasi esclusivo che viene fatto di questa possibilità è quello di specificare i dati validi rispettivamente per la div.1 e per la div.2 del codice ASME-VIII.</P>
+<P>Per intitolare ad un determinato codice fra quelli previsti una scheda vuota bisogna cliccare con il pulsante destro del mouse sull'etichetta della scheda.</P>
+<H5><A name="FONTE">Fonte</A></H5>
+<H5><A name="SNERV">Snervamento e rottura a temperatura ambiente</A></H5>
+<H5><A name="CHART">Chart</A></H5>
+<H5><A name="PNUMBER">P-Number e Group Number</A></H5>
+<H5><A name="MWDTRULES">Dati per il calcolo a bassa temperatura</A></H5>
+<P>Questi dati consentono di determinare le eventuali esenzioni dalle prrove di resilienza.</P>
+<H6><A name="MWDTRULES1">Regola applicabile</A></H6>
+<P>Le regole di esenzione sono funzione della classificazione del materiale operata dal Codice ASME. Per la div.1 viene quindi specificato quale capitolo (tra UCS, UNF, UHA, o UHT) è applicabile. Per la div.2, per la quale le regole relative alle prove di resilienza sono contenute tutte nella Part AM, viene specificato a quale tabella (tra ACS-1, ANF-1, AHA-1, ABM-1, ABM-2, o AGT) appartiene il materiale in questione.</P> 
+<H6><A name="MWDTRULES2">Impact test temperature</A></H6>
+<P>Il dato da fornire è funzione del codice e della regola.</P>
+<li>div.1 - UCS-66. Nel caso di materiale per bulloneria fornire i dati contenuti in Fig.UCS-66(e), ovvero la temperatura per l'esenzione dalle prove di resilienza; nel caso di prove di resilienza imposte in ogni caso digitare 'ALL'. Per gli altri materiali, se citati nella nota Fig. UG-84.1 (c), fornire il valore di temperatura fornito dalla specifica applicabile, altrimenti digitare 'N.A.'. 
+<li>div.1 - UNF-65. Fornire i dati contenuti in UNF-65, rispettivamente per le leghe di alluminio, per quelle di rame e di nichel, e per il titanio o zirconio.
+<li>div.1 - UHA-51. Per gli acciai alto-legati fornire la temperaturta di esenzione specificata in UHA-51(d)
+<H6><A name="MWDTRULES3">Curva</A></H6>
+<P>Riportare 'A','B','C' o 'D' in accordo alla Fig. UCS-66 per la div.1 e AM-218.1 per la div.2. Nel caso della div.1, ove trattisi di bulloneria, in applicazione della nota (e), riportare 'bolts'.</P>
+<H5><A name="TABELL1">Tabella degli ammissibili</A></H5>
+<H5><A name="TABELL2">Tabella degli snervamenti</A></H5>
+<H3><A name="ModElas">Scheda dei dati tabellari</A></H3>
+<P>Questa scheda viene utilizzata per i seguenti tipi di dati, di carattere generale, forniti in tabelle a doppia entrata:</P>
+<li>Modulo elastico
+<li>Coefficiente di dilatazione termica
+<li>Conducibilità termica
+<IMG SRC="frmDatiMat.bmp">
+<H4><A name="Fatto">Pulsante "Fatto"</A></H4>
+<H4><A name="Rip">Pulsante "Ripristina"</A></H4>
+<H4><A name="DB">Matrice dei dati tabellari</A></H4>
+<H2><A name="LISTINI">Listini prezzi</A></H2>
+<P>E' possibile memorizzare in banca dati il prezzo di acquisto dei materiali base, in modo da poter elaborare più rapidamente un preventivo di vendita.</P><P>Per ogni <A href="LibreriaMateriali.htm#Classe">classe</A> di materiale, e per ogni materiale all'interno della classe, il prezzo per unità di peso sarà funzione di alcune caratteristiche geometriche del grezzo, sarà funzione del momento storico, del fornitore, e di molti altri fattori, quali i requisiti qualitativi e le quantità di acquisto. E' quindi previsto di memorizzare per ogni materiale un numero illimitato di quotazioni, che saranno classificate in base a:</P>
+<li>classe materiale
+<li>materiale
+<li>parametro primario
+<li>parametro secondario (eventuale)
+<P>La definizione dei parametri primari e secondari è una funzione della classe:</P>
+<P>AAAAA</P>
+<P>AAAAA</P>
+<P>AAAAA</P>
+<P>AAAAA</P>
+<P>La banca dati gestisce anche i costi di alcune lavorazioni esterne tipiche, quali la formatura fondi e la calandratura su forte spessore.</P>
+<H3>Introduzione di nuove registrazioni</H3>
+<H3>Cancellazione di registrazioni obsolete</H3>
+<H3><A name="Listini">Stampa dei listini</A></H3>
+</BODY>
+</HTML>

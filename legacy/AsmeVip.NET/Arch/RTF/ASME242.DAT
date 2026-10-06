@@ -1,0 +1,16 @@
+\par
+_\par          The material is &exempted from impact testing &
+_\par          HAZ zones are &exempted from impact testing &
+_\par          Welds are &exempted from production impact testing &
+_\par          HAZ zones are &exempted from production impact testing &
+_\par          Welds with filler metal are &exempted from impact testing &
+_\par Governing thickness                tg&   =
+######.## &   ######.## &
+\par Calculated min. temp. per AM-218.1     =
+\par      Metal temperature                   =
+\par      Impact tests not required since material not included in Table UHA-23
+\par           Check AM-213(c) and (d) for qualifications and production welds
+\par           Check AM-213(a) for required impact testing after thermal treatment
+\par           Minimum allowed temperature   =
+\par           {\b This material shall impact tested, as required by UHT-6.}
+\par      Specifying a C content of 0.1% or less can lead to exemption

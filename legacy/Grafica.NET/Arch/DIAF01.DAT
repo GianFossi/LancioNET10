@@ -1,0 +1,30 @@
+Single
+NTW
+Double segmental
+Triple segmental
+Anelli-Dischi
+Support
+Diametro esterno [mm]
+Classe TEMA
+Tipo diaframmi
+Sottotipo primo diafr.
+Passo diaframmi  [mm]
+Passo primo diaframma
+Spessore         [mm]
+Diametro fori    [mm]
+Numero fori
+Numero diaframmi (A)
+Numero Diaframmi (B)
+Diaframmi
+WARNING!| Lunghezza non supportata dei tubi:
+| Lunghezza max ammissibile:     
+ Valore calcolato in accordo | a RCB-4.3.                 |
+ La classe TEMA e' utilizzata per il| calcolo dello spessore minimo.|
+Classe TEMA
+Tipo Diaframmi
+ Prego determinare preliminarmente| il tipo diaframmi
+ Prego fornire preliminarmente| il diametro fori
+ Class R
+ Class C
+ Class B
+

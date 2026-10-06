@@ -1,0 +1,741 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProDisTubi_file/filelist.xml">
+<title>Subroutine DisTubi</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>33</o:TotalTime>
+  <o:Created>2001-01-01T16:11:00Z</o:Created>
+  <o:LastSaved>2001-01-01T16:11:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1092</o:Words>
+  <o:Characters>6227</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>51</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>7647</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h2
+	{mso-style-next:Normale;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine DisTubi</h1>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>             </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                 </span>22/04/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Disegna la sezione dei tubi
+scambiatori nella tracciatura.</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:list 72.0pt'><b>Chiamata
+da:<span style='mso-tab-count:1'>          </span></b><a
+href="ManProSubTraccia.htm">Sub SubTraccia</a>.</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:list 72.0pt'><b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Listato</span></b><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Sub
+DisTubi(CERCH As Integer)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim isym As Integer, kfin As Integer,
+intp As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim k As Integer, j As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim yj As Single, xfxi As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim xx As Single, IPRI As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim notl As Integer, xinx As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim ifati As Integer, i As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim iqp As Integer, xpo As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim idista As Integer, xxi As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim lApri As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span>Dim xin As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'>'-----------------disegno dei
+tubi-----------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'>1550 isym =
+1: kfin = 0: intp = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=DE style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>For j = 1 To 100: DaTos(0).ntx(j) =
+0: Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span></span><span style='font-family:"Times New Roman"'>DaTos(0).itro
+= 0: notl = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>If DaTos(0).JP &lt;&gt; 4 Then intp = 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>For k = 1 To DaTos(0).nset<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>For j = DaTos(0).inrow(k) To
+DaTos(0).iFrow(k)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span></span><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>yj = DaTos(0).Y(j)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>1555<span
+style="mso-spacerun: yes">       </span>If DaTos(0).ntub(j) = 0 And j &lt;
+DaTos(0).kymax Then j = j + 1: GoTo 1555<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If j = DaTos(0).kymax And
+DaTos(0).ntub(j) = 0 Then GoTo 7960<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span></span><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>yj = DaTos(0).Y(j)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=FR style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">           </span>xfxi = DaTos(0).xf(j): xinx =
+DaTos(0).xs(j)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'<span
+style="mso-spacerun: yes">           </span>If DaTos(0).JSHELL = 3 And
+DaTos(0).jt &lt;&gt; 2 Then kfin = -2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'LINDE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If DaTos(0).JSHELL = 3 And
+DaTos(0).iutu = 0 Then kfin = -2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If isym = -1 And DaTos(0).iutu = 1
+Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>kfin = kfin + 1:
+DaTos(0).ntx(kfin) = DaTos(0).ntub(j)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>DaTos(0).itro = DaTos(0).itro +
+1: yj = -DaTos(0).Y(j) + 2 * DaTos(0).delcl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>jpiu:<span
+style="mso-spacerun: yes">      </span>If yj + DaTos(0).rtubo &lt;
+-DaTos(0).Ysc1 Or yj - DaTos(0).rtubo &gt; DaTos(0).Ysc2 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>notl = 1: xfxi = DaTos(0).xf(j):
+xinx = DaTos(0).xs(j): j = j + 1: IPRI = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>yj = DaTos(0).Y(j): If isym = -1
+And DaTos(0).iutu = 1 Then yj = -DaTos(0).Y(j) + 2 * DaTos(0).delcl<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If j &lt; DaTos(0).kymax Then
+GoTo jpiu Else GoTo 7960<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>xx = DaTos(0).X(j): ifati = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Get #Tracciatura.File5, j,
+DaTos(0).bu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>IPRI = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>For i = 1 To DaTos(0).bu.ici<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If xx + DaTos(0).rtubo &lt; -DaTos(0).XSC1
+And DaTos(0).hsym(k) &lt;&gt; 2 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>xinx = DaTos(0).xs(j) ':
+IPRI = 1<span style="mso-spacerun: yes">         </span>???????????<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>notl = 1: iqp = Int((-xx -
+DaTos(0).XSC1) / DaTos(0).OPASSO)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span></span><span
+style='font-family:"Times New Roman"'>i = 1 + iqp: xx = xx + DaTos(0).OPASSO * iqp<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">              </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If xx - DaTos(0).rtubo &gt;
+DaTos(0).XSC2 Then notl = 1: xfxi = DaTos(0).xf(j): GoTo 7960<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If Mid$(DaTos(0).bu.bu, i, 1) =
+&quot;0&quot; And DaTos(0).cinter &gt; 1 And Monitor.Motore.Inizio.AddDistinta
+&lt; 103 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                </span>' If UBound(DaTos) = 0 Then
+PSet (xx, yj)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>GoTo 7110<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If Mid$(DaTos(0).bu.bu, i, 1) =
+&quot;0&quot; Then GoTo 7110<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7105<span
+style="mso-spacerun: yes">          </span>If Mid$(DaTos(0).bu.bu, i, 1) =
+&quot;1&quot; Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span></span><span
+style='font-family:"Times New Roman"'>xpo = xx<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">   
+</span><span style="mso-spacerun: yes">             </span>IPRI = IPRI + 1:
+idista = 0: xxi = xx<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                 </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>If IPRI = 1 Then xin = xx: DaTos(0).xs(j) = xx:<span
+style="mso-spacerun: yes">  </span>GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If DaTos(0).icin = 0 Then
+GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx = DaTos(0).xf(j) Or xx
+= DaTos(0).xs(j) Or i = DaTos(0).bu.ici Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If Mid$(DaTos(0).bu.bu, i +
+1, 1) = &quot;9&quot; Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If i &gt; 1 Then If
+Mid$(DaTos(0).bu.bu, i - 1, 1) = &quot;9&quot; Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If j = DaTos(0).inrow(k) Or j
+= DaTos(0).iFrow(k) Or (lApri = 0 And DaTos(0).ntub(j - 1) = 0) Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If j &lt; DaTos(0).kymax And
+DaTos(0).ntub(j + 1) = 0 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If DaTos(0).iutu = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>If j &gt; 1 And
+DaTos(0).ntub(j - 1) = 0 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span><span style="mso-spacerun:
+yes">                  </span>If xx &lt; 0 And Abs(xx) - Abs(xinx) &gt; -0.1
+Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>If xx &gt; 0 Then If xx -
+xfxi &gt; -0.1 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &lt; 0 And yj &lt; 0
+Then If Abs(xx) - Abs(DaTos(0).xs(j - 1)) &gt; -0.1 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &lt; 0 And yj &gt; 0
+Then If Abs(xx) - Abs(DaTos(0).xs(j + 1)) &gt; -0.1 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &gt; 0 And yj &lt; 0
+Then If xx - DaTos(0).xf(j - 1) &gt; -0.1 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &gt; 0 And yj &gt; 0
+Then If xx - DaTos(0).xf(j + 1) &gt; -0.1 Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If i &lt; DaTos(0).bu.ici - 2
+And Mid$(DaTos(0).bu.bu, i + 1, 1) = &quot;0&quot; And Mid$(DaTos(0).bu.bu, i +
+2, 1) = &quot;0&quot; Then GoTo 4499<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                </span>' If Tracciatura.Modo &lt; 103
+Then PSet (xx, yj)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span><span style="mso-spacerun:
+yes">          </span>If DaTos(0).icin = 1 Then GoTo 7101<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'4499<span
+style="mso-spacerun: yes">             </span>If xx &gt; 1 And kfin = -2 And
+DaTos(0).JSHELL = 3 And DaTos(0).jt &lt;&gt; 2 And xx - 1 &gt; DaTos(0).dxv
+Then kfin = 0: GoTo 6751<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'<span
+style="mso-spacerun: yes">                 </span>If xx &gt; 1 And kfin = -2
+And DaTos(0).JSHELL = 3 And DaTos(0).jt &lt;&gt; 2 And xx - 1 &lt; DaTos(0).dxv
+Then kfin = -1: If DaTos(0).JP = 4 Then kfin = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'LINDE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>4499<span
+style="mso-spacerun: yes">             </span>If xx &gt; 1 And kfin = -2 And
+DaTos(0).JSHELL = 3 And DaTos(0).iutu = 0 And xx - 1 &gt; DaTos(0).dxv Then
+kfin = 0: GoTo 6751<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &gt; 1 And kfin = -2
+And DaTos(0).JSHELL = 3 And DaTos(0).iutu = 0 And xx - 1 &lt; DaTos(0).dxv Then
+kfin = -1: If DaTos(0).JP = 4 Then kfin = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'6751<span
+style="mso-spacerun: yes">             </span>If xx &gt; 1 And DaTos(0).JSHELL
+= 3 And DaTos(0).jt &lt;&gt; 2 Then kfin = kfin + intp: DaTos(0).ntx(kfin) =
+DaTos(0).ntx(kfin) + 1: If DaTos(0).itro &lt; kfin Then DaTos(0).itro = kfin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>'LINDE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>6751<span
+style="mso-spacerun: yes">             </span>If xx &gt; 1 And DaTos(0).JSHELL
+= 3 And DaTos(0).iutu = 0 Then kfin = kfin + intp: DaTos(0).ntx(kfin) =
+DaTos(0).ntx(kfin) + 1: If DaTos(0).itro &lt; kfin Then DaTos(0).itro = kfin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If
+Monitor.Motore.Inizio.AddDistinta &lt; 103 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                   </span>If CERCH = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     
+</span>'frmTraccia.Picture1.Circle (xx, yj), DaTos(0).Rtus ', , , ',
+DaTos(0).radius<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span><span style="mso-spacerun:
+yes">           </span>If isym = -1 And DaTos(0).Ips2 = 1 And j =
+DaTos(0).kymax Then xx = -xx<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                      </span>Monitor.Routines.cerc
+xx, yj, DaTos(0).rtubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                      </span>If isym = -1 And
+DaTos(0).Ips2 = 1 And j = DaTos(0).kymax Then xx = -xx<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span><span style="mso-spacerun:
+yes">          </span></span><span style='font-family:"Times New Roman"'>'era
+remmataCALL cerchio(xx, yj, DaTos(0).Rtus)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                   </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                      </span>frmTraccia.Picture1.PSet
+(xx, yj)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                   </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If Mid$(DaTos(0).bu.bu, i, 1) =
+&quot;2&quot; Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>If xx &gt; 1 Then kfin = kfin
++ intp<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span></span><span
+style='font-family:"Times New Roman"'>idista = 1: GoTo 7110<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'>'<span style="mso-spacerun:
+yes">                 </span>PRODUCE UN ERRORE (almeno per tubi a U due
+passi)!!!!!!!!!!!!!!!!!!!!!!!!!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">              </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7101<span
+style="mso-spacerun: yes">          </span>If IPRI &lt;&gt; 1 Then GoTo 7110<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">  </span><span style="mso-spacerun:
+yes">            </span>If notl = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>DaTos(0).otvec = otielle(xpo,
+yj, DaTos(0).otvec, DaTos(0).dtubo)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7110<span
+style="mso-spacerun: yes">          </span>If Mid$(DaTos(0).bu.bu, i + 1, 1) =
+&quot;9&quot; Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span></span><span
+style='font-family:"Times New Roman"'>xx = -xx: i = i + 1: GoTo 7210<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">              </span></span><span lang=EN-GB style='font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>xx = xx + DaTos(0).OPASSO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7210<span
+style="mso-spacerun: yes">       </span>Next i<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If notl &lt;&gt; 1 Then xfxi = xxi:
+xinx = xin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>If notl = 0 And idista = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>DaTos(0).otvec = otielle(xpo,
+yj, DaTos(0).otvec, DaTos(0).dtubo)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7124<span
+style="mso-spacerun: yes">       </span>DaTos(0).xf(j) = xpo: xpo = 0: idista =
+0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>7960<span
+style="mso-spacerun: yes">       </span>lApri = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>Next j<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>If DaTos(0).hsym(k) = 2 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>If DaTos(0).iutu = 0 Then k = k +
+1: GoTo 8230<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>If isym = 1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">               </span>isym = -1: k = k - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>'LINDE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>'''<span style="mso-spacerun:
+yes">   </span>If Not DaTos(0).iutu = 1 And DaTos(0).jt &gt; 2 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>GoTo 8360<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>'''<span style="mso-spacerun:
+yes">   </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>'''<span style="mso-spacerun:
+yes">      </span>isym = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>'''<span style="mso-spacerun:
+yes">   </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">            </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>8230<span
+style="mso-spacerun: yes">     </span>lApri = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Next k<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>8360<span
+style="mso-spacerun: yes">   </span>If notl = 1 Then DaTos(0).otvec =
+DaTos(0).OTL<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm;tab-stops:list 72.0pt'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

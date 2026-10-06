@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduzione">
+		<param name="Local" value="Introduzione.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Panoramica">
+			<param name="Local" value="Panoramica.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La finestra principale">
+			<param name="Local" value="FinestrIniziale.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Il menu preferenze">
+			<param name="Local" value="Preferenze.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Procedura di progettazione">
+			<param name="Local" value="Procedura.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Definizioni e convenzioni">
+			<param name="Local" value="Definizioni.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I dati del progetto">
+		<param name="Local" value="Prototipi.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati generali">
+			<param name="Local" value="Chiavi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati iniziali">
+			<param name="Local" value="ChiaviS.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dati finali">
+			<param name="Local" value="AggCrea.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Progettazione dei fasci a fontana">
+		<param name="Local" value="fontGen.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bilanciamento">
+			<param name="Local" value="fontBil.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aggancio">
+			<param name="Local" value="fontAgg.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Infilaggio">
+			<param name="Local" value="fontInfil.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AutoCAD">
+			<param name="Local" value="fontAutoCAD.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sequenza">
+			<param name="Local" value="fontSeq.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale teorico">
+		<param name="Local" value="ManTer.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lunghezza tubi non supportata">
+			<param name="Local" value="html\ManTerUnsupported.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zone libere">
+			<param name="Local" value="html\ManTerZoneLib1.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale del programmatore">
+		<param name="Local" value="ManPro.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="L'oggetto Tracciatura">
+			<param name="Local" value="objTraccia.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="L'oggetto privato Monitor">
+			<param name="Local" value="html\ManProMonitor.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Moduli standard">
+			<param name="Local" value="modStandard.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo Inizio">
+				<param name="Local" value="modInizio.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Function iSector">
+					<param name="Local" value="html\ManProiSector.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Function Ordina">
+					<param name="Local" value="html\ManProOrdina.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Function Sorvolo">
+					<param name="Local" value="html\ManProSorvolo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Function VerifInters">
+					<param name="Local" value="html\ManProVerifInters.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine Aggancia">
+					<param name="Local" value="html\ManProAggiancia.htm">
+					<param name="ImageNumber" value="12">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine Bilancio">
+					<param name="Local" value="html\ManProBilancio.htm">
+					<param name="ImageNumber" value="12">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine CoorInMem">
+					<param name="Local" value="html\ManProCoorInMem.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine CoorXY">
+					<param name="Local" value="html\ManProCoorXY.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DistInMem">
+					<param name="Local" value="html\ManProDistInMem.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SwapDaTos">
+					<param name="Local" value="html\ManProSwapDaTos.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo Infila">
+				<param name="Local" value="modInfila.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo Traccia">
+				<param name="Local" value="modTraccia.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine AggiustaTaglio">
+					<param name="Local" value="html\ManProAggiustaTaglio.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine Generabu">
+					<param name="Local" value="html\ManProGenerabu.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DiaTir">
+					<param name="Local" value="html\ManProDiaTir.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Sub DisegnoSS">
+					<param name="Local" value="html\ManProDisegnoSS.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisRod">
+					<param name="Local" value="html\ManProDisRod.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisTagl">
+					<param name="Local" value="html\ManProDisTagl.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisTaglio">
+					<param name="Local" value="html\ManProDisTaglio.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisTaglSupp">
+					<param name="Local" value="html\ManProDisTaglSupp.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisTubi">
+					<param name="Local" value="html\ManProDisTubi.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine DisUrto">
+					<param name="Local" value="html\ManProDisUrto.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine inpiDIA">
+					<param name="Local" value="html\ManProinpiDIA.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine PercArea">
+					<param name="Local" value="html\ManProPercArea.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine Sealing">
+					<param name="Local" value="html\ManProSealing.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SecPun">
+					<param name="Local" value="html\ManProSecpun.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine SubTraccia">
+					<param name="Local" value="html\ManProSubTraccia.htm">
+					<param name="ImageNumber" value="12">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo Tr13">
+				<param name="Local" value="modTr13.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine apri5">
+					<param name="Local" value="html\ManProapri5.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine InitDaTos">
+					<param name="Local" value="html\ManProInitDaTos.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo Tr1313">
+				<param name="Local" value="modTr1313.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine diadiffe">
+					<param name="Local" value="html\ManProdiadiffe.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Subroutine YINOUT">
+					<param name="Local" value="html\ManProYINOUT.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modulo TrTipi">
+				<param name="Local" value="modTrTipi.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I form">
+			<param name="Local" value="Forms.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori in esecuzione">
+		<param name="Local" value="ErrProto.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Materiale tubi errato">
+			<param name="Local" value="ErrProtoNoWMF.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tipo di passo errato">
+			<param name="Local" value="ErrTipoPasso.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tipo di giunto errato">
+			<param name="Local" value="ErrTipoGiunto.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Numero di passi errato">
+			<param name="Local" value="ErrNumPassi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tipo di fascio errato">
+			<param name="Local" value="ErrTipoFascio.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro bocchelli troppo grande">
+			<param name="Local" value="ErrDiamBoc1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro bocchelli superiore al diametro mantello">
+			<param name="Local" value="ErrDiamBoc2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Densit&agrave; fluido in ingresso senza portata">
+			<param name="Local" value="ErrDens1noPort.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Densit&agrave; fluido in ingresso senza diametro bocchello">
+			<param name="Local" value="ErrDens1noDiam.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Densit&agrave; fluido in uscita senza portata">
+			<param name="Local" value="ErrDens2noPort.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Densit&agrave; fluido in uscita senza diametro bocchello">
+			<param name="Local" value="ErrDens2noDiam.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Numero passi errato per tubi ad U">
+			<param name="Local" value="ErrPassoNoU.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro mantello troppo grande">
+			<param name="Local" value="ErrDiamGrande.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Numero di passi errato per fasci a fontana">
+			<param name="Local" value="ErrPassoNoFont.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro mantello e numero tubi assenti">
+			<param name="Local" value="ErrNoDiamNoTubi.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro esterno corona interna e numero tubi assenti">
+			<param name="Local" value="ErrFontCorona.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Passo dei tubi errato">
+			<param name="Local" value="ErrPassoSbagl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Diametro tubi errato">
+			<param name="Local" value="ErrDiamTubiSbagl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dimensioni corone incongruenti">
+			<param name="Local" value="ErrCorIntCorExt.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Opzione inapplicabile per fascio ad U a due passi">
+			<param name="Local" value="ErrBadSymm.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File di dati illegibile">
+			<param name="Local" value="ErrBadSerial.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

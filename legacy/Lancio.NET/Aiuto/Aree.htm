@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Spazi</Title>
+</HEAD>
+<BODY>
+<H1>Le aree di lavoro</H1>
+<IMG SRC="Aree.bmp">
+<H2><A name="lavsciolti">Lavori sciolti</A></H2>
+<P>Spazio per l'archiviazione dei risultati delle diverse elaborazioni del sistema Lancio senza strutturazione in sottocommesse. Può essere definita dall'utente senza limitazioni (disco locale o di rete). Per impostazione predefinita è la sottodirectory DATI della directory di istallazione (C:\Programmi\Lancio).</P>
+<H2><A name="lavcomm">Lavori di commessa</A></H2>
+<P>Spazio per l'archiviazione dei risultati delle diverse elaborazioni del sistema Lancio con strutturazione in sottocommesse. Può essere definita dall'utente senza limitazioni (disco locale o di rete). Per impostazione predefinita è la sottodirectory WORK della directory di istallazione.</P>
+<P>L'organizzazione dei dati nel caso di lavori di commessa è spiegata in dettaglio in un <A href="OrgProgetti.htm">capitolo apposito</A>.
+<H2><A name="eseguibili">Eseguibili</A></H2>
+<P>Spazio dove risiedono alcuni moduli eseguibili, che, nel caso di <A href="FunzRete.htm">Funzionamento in Rete</A>, è uno spazio predefinito sul server. E' sconsigliabile cambiare le impostazioni predefinite; se si vuole ottenere un funzionanamento locale invece che un funzionamento in rete, bisogna rieseguire il programma di <A href="Istallazione.htm">istallazione</A>.
+<H2><A name="Archivi">Archivi</A></H2>
+Spazio dove risiedono dati fissi di sistema e archivi di dati condivisi aziendalmente.
+Vale lo stesso commento fatto per il punto precedente.</P>
+<H1><A name="FinLavSciol">Lavori sciolti e lavori di commessa</A></H1>
+<IMG SRC="LavSciolti.bmp">
+<P>Se si seleziona l'opzione 'lavori strutturati', il lavoro sarà archiviato nella directory definita nelle opzioni 'Aree di lavoro' come 'Lavori di commessa'. La directory avrà tante sottodirectory quante sono le sottocommesse. Si potrà accedere alle informazioni tecniche e gestionali generate anche da altre applicazioni del sistema 'Lancio'. Le commesse saranno identificate da quattro cifre e le sottocommesse da sei cifre.</P>
+<P>Se non si seleziona l'opzione, il lavoro sarà archiviato nella directory definita nelle opzioni 'Aree di lavoro' come 'Lavori sciolti'.</P>
+<H1><A name="Brt">Inizializzazione del modulo run-time per programmi compilati in QuickBasic per MS-DOS</A></H1>
+<P>Alcuni programmi del sistema Lancio sono stati sviluppati sotto MS-DOS in QuickBasic, ed hanno bisogno del run-time module BRT71EFR.EXE.</P>
+<P>Di tale run-time esistono diverse versioni; la versione utilizzata da Lancio deve essere quella compatibile con la versione del linker utilizzata per compilare gli eseguibili.</P>
+<P>La versione corretta di BRT71EFR.EXE viene installata automaticamente durante l'installazione di Lancio nella directory Programmi\Lancio\Bin, e non in una directory di sistema, al fine di non interferire con eventuali diverse installazioni di QuickBasic nel computer dell'utente.</P>
+<P>E' allora necessario inserire la suddetta directory privata nei cammini di ricerca della shell DOS che verrà aperta da Lancio.</P>
+<P>Tale operazione è eseguita in modo specifico a seconda che il computer ospite giri sotto W96/98, W-NT o W2000/Millennium Edition.</P>  
+</BODY>
+</HTML>

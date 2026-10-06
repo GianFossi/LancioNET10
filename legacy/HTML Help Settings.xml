@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HTMLHelp>
+  <Settings>
+    <Version>1</Version>
+    <HTMLHelpWorkshopCompilerPath>C:\Programmi\HTML Help Workshop\hhc.exe</HTMLHelpWorkshopCompilerPath>
+    <HTMLHelpWorkshopPath>C:\Programmi\HTML Help Workshop\hhw.exe</HTMLHelpWorkshopPath>
+    <HTMLHELPFilesLocation>E:\Programmi\MicroSoft Visual Studio\Fbm</HTMLHELPFilesLocation>
+    <HTMLHelpProjectPath>E:\Programmi\MicroSoft Visual Studio\Fbm\Lancio.hhp</HTMLHelpProjectPath>
+    <ShowLogFileAfterCompilation>False</ShowLogFileAfterCompilation>
+    <ShowCompiledHelpFileAfterCompilation>True</ShowCompiledHelpFileAfterCompilation>
+    <CompileHelpOnProjectBuild>True</CompileHelpOnProjectBuild>
+    <ProjectToMonitor>Setup</ProjectToMonitor>
+    <CompileonDebugBuild>False</CompileonDebugBuild>
+    <CompileonReleaseBuild>True</CompileonReleaseBuild>
+    <EditHTMLFilesWithVisualStudio>True</EditHTMLFilesWithVisualStudio>
+  </Settings>
+</HTMLHelp>

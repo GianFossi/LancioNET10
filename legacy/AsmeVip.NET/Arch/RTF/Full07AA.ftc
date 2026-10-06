@@ -1,0 +1,291 @@
+T
+0   \par                                      OUTPUT DATA
+0   \par                                      =========== 
+0   \par 
+0   \par {\b\f2\fs18\lang1033\langfe1040\langnp1033 AA-2.4.8 Step 8 \endash  Axial tube stress in the outermost tube row
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 {\f2\fs18\lang1033\langfe1040\langnp1033 F}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 q}{\f2\fs18\lang1033\langfe1040\langnp1033 \tab =}{\pard\plain 
+0   \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 \f2\fs18\lang1033\langfe1040\cgrid\langnp1033\langfenp1040 {\object\objemb\objw1680\objh680{\*\objclass Equation.3}{\*\objdata 01050000020000000b000000
+0   4571756174696f6e2e33000000000000000000000c0000
+0   d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900060000000000000000000000010000000100000000000000001000000200000001000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   fffffffffffffffffdffffff04000000fefffffffefffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffff0200000002ce020000000000c00000000000004600000000000000000000000000df
+0   d953c353c10103000000c00100000000000001004f006c00650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000201ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+0   0000000000000000000000001400000000000000010043006f006d0070004f0062006a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120002010100000003000000ffffffff0000000000000000000000000000000000000000000000000000
+0   0000000000000000000001000000660000000000000003004f0062006a0049006e0066006f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000201ffffffff04000000ffffffff000000000000000000000000000000000000000000000000
+0   000000000000000000000000030000000400000000000000feffffff02000000fefffffffeffffff0500000006000000feffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff010000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100feff030a0000ffffffff02ce020000000000c0000000000000461700
+0   00004d6963726f736f6674204571756174696f6e20332e30000c0000004453204571756174696f6e000b0000004571756174696f6e2e3300f439b271000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000
+0   0000000000000000000000000000000000000000000000000000000000000000000000001c0000000200c8d97800000000000000846d49008c7949000000000003010103010a01030e000001030100000112835a00030f01000b01128364000011000a02862b0012835100030f01000b01028833000011000a12835a0003
+0   0f01000b010284bd03001100000a02962800029629000012835800030f02000b01128361000001028834000000000a01028832000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000004500710075006100740069006f006e0020004e00610074006900760065000000000000000000000000000000000000000000000000000000000000000000000020000200ffffffffffffffffffffffff000000000000
+0   0000000000000000000000000000000000000000000000000000000000000400000094000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001050000050000000d0000004d45544146494c455049435400930b000051fbfffff80200000800930baf040000
+0   010009000003770100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000050000000b0200000000050000000c024004800a1200000026060f001a00ffffffff000010000000c0ffffffa4ffffff400a0000e40300000b0000002606
+0   0f000c004d617468547970650000c00010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01000008000000320ab601530001000000280010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01010004000000f001000008000000320a
+0   b601cf0701000000290009000000fa02000010000000000000002200040000002d010000050000001402600240000500000013026002310a10000000fb0280fe00000000000090010000000004020020417269616c000000040000002d01020004000000f001010008000000320aee03d20401000000320008000000320a
+0   b701420801000000580008000000320ab701fa05010000005a0008000000320ab7010e0401000000510008000000320ab701c700010000005a0010000000fb0220ff00000000000090010000000004020020417269616c000000040000002d01010004000000f001020008000000320a0b01660901000000340008000000
+0   320a17025f0901000000610008000000320a1702550501000000330008000000320a1702d60101000000640010000000fb0220ff0000000000009001000000020002001053796d626f6c0002040000002d01020004000000f001010008000000320a17020907010000006e0010000000fb0280fe00000000000090010000
+0   00020002001053796d626f6c0002040000002d01010004000000f001020008000000320ab701e402010000002b000a00000026060f000a00ffffffff01000000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01020004000000f00101000300000000000000}{\result {
+0   \f2\fs18\dn24\lang1033\langfe1040\langnp1033 {\pict{\*\picprop\shplid1025{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}
+0   {\sp{\sn fFilled}{\sv 0}}{\sp{\sn fHitTestFill}{\sv 1}}{\sp{\sn fillShape}{\sv 1}}{\sp{\sn fillUseRect}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 0}}{\sp{\sn fLine}{\sv 0}}
+0   {\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fReallyHidden}{\sv 0}}{\sp{\sn fScriptAnchor}{\sv 0}}{\sp{\sn fFakeMaster}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}\picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0
+0   \picw2963\pich1199\picwgoal1680\pichgoal680\wmetafile8\bliptag89754007\blipupi-562{\*\blipuid 055989979f2c69ff905ca35ae401c9db}010009000003770100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000
+0   050000000b0200000000050000000c024004800a1200000026060f001a00ffffffff000010000000c0ffffffa4ffffff400a0000e40300000b00000026060f00
+0   0c004d617468547970650000c00010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01000008000000320ab6015300
+0   01000000280010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01010004000000f001000008000000320ab601cf07
+0   01000000290009000000fa02000010000000000000002200040000002d010000050000001402600240000500000013026002310a10000000fb0280fe00000000
+0   000090010000000004020020417269616c000000040000002d01020004000000f001010008000000320aee03d20401000000320008000000320ab70142080100
+0   0000580008000000320ab701fa05010000005a0008000000320ab7010e0401000000510008000000320ab701c700010000005a0010000000fb0220ff00000000
+0   000090010000000004020020417269616c000000040000002d01010004000000f001020008000000320a0b01660901000000340008000000320a17025f090100
+0   0000610008000000320a1702550501000000330008000000320a1702d60101000000640010000000fb0220ff0000000000009001000000020002001053796d62
+0   6f6c0002040000002d01020004000000f001010008000000320a17020907010000006e0010000000fb0280fe0000000000009001000000020002001053796d62
+0   6f6c0002040000002d01010004000000f001020008000000320ab701e402010000002b000a00000026060f000a00ffffffff01000000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01020004000000f00101000300000000000000}}}}}{
+0   \f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t,o}{\f2\fs18\lang1033\langfe1040\langnp1033 \tab =}
+0   {\pard\plain 
+0   \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 \f2\fs18\lang1033\langfe1040\cgrid\langnp1033\langfenp1040 {\object\objemb\objw2140\objh720{\*\objclass Equation.3}{\*\objdata 01050000020000000b000000
+0   4571756174696f6e2e33000000000000000000000c0000
+0   d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900060000000000000000000000010000000100000000000000001000000200000001000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   fffffffffffffffffdffffff04000000fefffffffefffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffff0200000002ce020000000000c000000000000046000000000000000000000000c070
+0   fb53c353c10103000000000200000000000001004f006c00650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000201ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+0   0000000000000000000000001400000000000000010043006f006d0070004f0062006a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120002010100000003000000ffffffff0000000000000000000000000000000000000000000000000000
+0   0000000000000000000001000000660000000000000003004f0062006a0049006e0066006f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000201ffffffff04000000ffffffff000000000000000000000000000000000000000000000000
+0   000000000000000000000000030000000400000000000000feffffff02000000fefffffffeffffff050000000600000007000000feffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff010000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100feff030a0000ffffffff02ce020000000000c0000000000000461700
+0   00004d6963726f736f6674204571756174696f6e20332e30000c0000004453204571756174696f6e000b0000004571756174696f6e2e3300f439b271000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000
+0   0000000000000000000000000000000000000000000000000000000000000000000000001c0000000200c8d9bc00000000000000846d49008c7949000000000003010103010a01030e000001030100000112835000030f01000b01128373000011000a12837800030f01000b01128373000011000a028612221283500003
+0   0f01000b01128374000011000a12837800030f01000b0112837400001100000a0296280002962900000286122212835000030f01000b01128365000011000a12834600030f01000b0112837100001100000a0112837800030f01000b01128374000011000a0286122212837800030f01000b011283730000110000000000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000004500710075006100740069006f006e0020004e00610074006900760065000000000000000000000000000000000000000000000000000000000000000000000020000200ffffffffffffffffffffffff000000000000
+0   00000000000000000000000000000000000000000000000000000000000004000000d8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001050000050000000d0000004d45544146494c455049435400bf0e00000afbffff480300000800bf0ef6040000
+0   0100090000039f0100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000050000000b0200000000050000000c028004600d1200000026060f001a00ffffffff000010000000c0ffffffbfffffff200d00003f0400000b0000002606
+0   0f000c004d617468547970650000f00010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01000008000000320a6c01530001000000280010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01010004000000f001000008000000320a
+0   6c012c0801000000290009000000fa02000010000000000000002200040000002d010000050000001402400240000500000013024002150d10000000fb0220ff00000000000090010000000004020020417269616c000000040000002d01020004000000f001010008000000320a2e04520801000000730008000000320a
+0   2e04550501000000740008000000320acd01510c01000000710008000000320acd01ec0a01000000650008000000320acd019b0701000000740008000000320acd01390601000000740008000000320acd01270301000000730008000000320acd019f0101000000730010000000fb0280fe000000000000900100000000
+0   04020020417269616c000000040000002d01010004000000f001020008000000320ace03670701000000780008000000320ace03660401000000780008000000320a6d01790b01000000460008000000320a6d01fc0901000000500008000000320a6d01ac0601000000780008000000320a6d0145050100000050000800
+0   0000320a6d013c0201000000780008000000320a6d01af0001000000500010000000fb0280fe0000000000009001000000020002001053796d626f6c0002040000002d01020004000000f001010008000000320ace033206010000002d0008000000320a6d01e508010000002d0008000000320a6d012e04010000002d00
+0   0a00000026060f000a00ffffffff01000000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01010004000000f00102000300000000000201}{\result {\f2\fs18\dn30\lang1033\langfe1040\langnp1033 
+0   {\pict{\*\picprop\shplid1027{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fHitTestFill}{\sv 1}}{\sp{\sn fillShape}{\sv 1}}
+0   {\sp{\sn fillUseRect}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fReallyHidden}{\sv 0}}{\sp{\sn fScriptAnchor}{\sv 0}}{\sp{\sn fFakeMaster}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}
+0   \picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw3775\pich1270\picwgoal2140\pichgoal720\wmetafile8\bliptag-2068692592\blipupi-60{\*\blipuid 84b24190eaf4fde6856dd058649da319}
+0   0100090000039f0100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000
+0   050000000b0200000000050000000c028004600d1200000026060f001a00ffffffff000010000000c0ffffffbfffffff200d00003f0400000b00000026060f00
+0   0c004d617468547970650000f00010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01000008000000320a6c015300
+0   01000000280010000000fb02f6fde300000000009001000000020002001053796d626f6c0002040000002d01010004000000f001000008000000320a6c012c08
+0   01000000290009000000fa02000010000000000000002200040000002d010000050000001402400240000500000013024002150d10000000fb0220ff00000000
+0   000090010000000004020020417269616c000000040000002d01020004000000f001010008000000320a2e04520801000000730008000000320a2e0455050100
+0   0000740008000000320acd01510c01000000710008000000320acd01ec0a01000000650008000000320acd019b0701000000740008000000320acd0139060100
+0   0000740008000000320acd01270301000000730008000000320acd019f0101000000730010000000fb0280fe0000000000009001000000000402002041726961
+0   6c000000040000002d01010004000000f001020008000000320ace03670701000000780008000000320ace03660401000000780008000000320a6d01790b0100
+0   0000460008000000320a6d01fc0901000000500008000000320a6d01ac0601000000780008000000320a6d01450501000000500008000000320a6d013c020100
+0   0000780008000000320a6d01af0001000000500010000000fb0280fe0000000000009001000000020002001053796d626f6c0002040000002d01020004000000
+0   f001010008000000320ace033206010000002d0008000000320a6d01e508010000002d0008000000320a6d012e04010000002d000a00000026060f000a00ffff
+0   ffff01000000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01010004000000f00102000300000000000000}}}}}{\f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par 
+0   \par }\trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+0   \brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\pard 
+0   \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 {\f2\fs18\lang1033\langfe1040\langnp1033 Load Case\cell F}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 q}{\f2\fs18\lang1033\langfe1040\langnp1033 , new [--]
+0   \cell F}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 q}{\f2\fs18\lang1033\langfe1040\langnp1033 , corr. }{\f2\fs18\lang1040\langfe1040\langnp1040 [--]}{\i\f2\fs18\lang1040\langfe1040\langnp1040 \cell }{\f2\fs18\lang1033\langfe1040\langnp1033 
+0   {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1040\langfe1040\sub\langnp1040 t,o}{\f2\fs18\lang1040\langfe1040\langnp1040 , new [psi]\cell }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f 
+0   "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1040\langfe1040\sub\langnp1040 t,o}{\f2\fs18\lang1040\langfe1040\langnp1040 ,corr [psi]}{\i\f2\fs18\lang1040\langfe1040\langnp1040 \cell }\pard\plain 
+0   \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 \fs24\lang1040\langfe1040\cgrid\langnp1040\langfenp1040 {\f2\fs18 \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr
+0   \brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt
+0   \clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr
+0   \brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt
+0   \clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 
+0   \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 1\cell }\pard\plain \qr \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 
+6145152{##.0000\cell }{\i ##.0000\cell }
+6223230{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+0   {\f2\fs18\lang1036\langfe1040\langnp1036 \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh
+0   \brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050
+0   \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 
+0   \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 2\cell }\pard\plain \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6146153{##.0000\cell }{\i ##.0000\cell }
+6224231{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+0   {\f2\fs18\lang1036\langfe1040\langnp1036 
+0   \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+0   \brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row 
+0   }\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 3\cell }\pard\plain 
+0   \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6147154{##.0000\cell }{\i ##.0000\cell }
+6225232{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f2\fs18\lang1036\langfe1040\langnp1036 \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb
+0   \brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt
+0   \clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 
+0   \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 4\cell }\pard\plain \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6148155{##.0000\cell }{\i ##.0000 \cell }
+6226233{#####.0\cell }{\i #####.0 \cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f2\fs18\lang1036\langfe1040\langnp1036 
+0   \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+0   \brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row 
+0   }\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 5\cell }\pard\plain 
+0   \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6149156{##.0000\cell }{\i ##.0000\cell }
+6227234{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f2\fs18\lang1036\langfe1040\langnp1036 \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb
+0   \brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt
+0   \clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\pard\plain \s15\qc \li0\ri0\widctlpar\intbl\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 
+0   \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 6\cell }\pard\plain \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6150157{##.0000\cell }{\i ##.0000\cell }
+6228235{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f2\fs18\lang1036\langfe1040\langnp1036 
+0   \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+0   \brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\trowd 
+0   \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb\brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 
+0   \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 
+0   \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr
+0   \brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\pard\plain \s15\qc \li0\ri0\widctlpar\intbl
+0   \tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0 \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 7\cell }\pard\plain 
+0   \qr \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+6151158{##.0000\cell }{\i ##.0000\cell }
+6229236{#####.0\cell }{\i #####.0\cell }
+0   \pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f2\fs18\lang1036\langfe1040\langnp1036 \trowd \trgaph70\trleft720\trbrdrt\brdrs\brdrw30 \trbrdrl\brdrs\brdrw30 \trbrdrb
+0   \brdrs\brdrw30 \trbrdrr\brdrs\brdrw30 \trbrdrh\brdrs\brdrw15 \trbrdrv\brdrs\brdrw15 \trftsWidth1\trautofit1\trpaddl70\trpaddr70\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 
+0   \cltxlrtb\clftsWidth3\clwWidth1330 \cellx2050\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx3808\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 
+0   \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx5566\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw15 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx7324\clvertalt
+0   \clbrdrt\brdrs\brdrw15 \clbrdrl\brdrs\brdrw15 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cltxlrtb\clftsWidth3\clwWidth1758 \cellx9082\row }\pard\plain \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 
+0   \f4\fs20\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18\lang1036\langfe1040\langnp1036 
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx5245\faauto\rin0\lin0\itap0 {\f2\fs18\lang1033\langfe1040\langnp1033 CONDITION :\tab UNCORRODED\tab CORRODED
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 {\f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1036\langfe1040\sub\langnp1036 pos}{\f2\fs18\lang1036\langfe1040\langnp1036 /}{\f2\fs18\lang1033\langfe1040\langnp1033 
+0   {\field{\*\fldinst SYMBOL 87 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1036\langfe1040\sub\langnp1036 t}{\f2\fs18\lang1036\langfe1040\langnp1036 \tab =
+6237238_\tab #####.0_\tab #####.0_\tab }
+0   {\f2\fs18\lang1033\langfe1040\langnp1033 [psi]\tab 
+0   Maximum tension stress divided by safety factor
+0   \par S}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t\tab }{\f2\fs18\lang1033\langfe1040\langnp1033 =
+1013_\tab ######\tab \tab [psi]\tab Allowable stress for tension
+0   \par 
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 pos}{\f2\fs18\lang1033\langfe1040\langnp1033 /}{\f2\fs18\lang1033\langfe1040\langnp1033 
+0   {\field{\*\fldinst SYMBOL 87 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t}{\f2\fs18\lang1033\langfe1040\langnp1033 \tab =
+W237238_\tab ###.###_\tab ###.###
+0   \tab [MPa]\tab Maximum tension stress divided by safety factor
+0   \par S}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t\tab }{\f2\fs18\lang1033\langfe1040\langnp1033 =
+g013_\tab ###.###_\tab _\tab [MPa]_\tab Allowable stress for tension
+0   \par 
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1036\langfe1040\sub\langnp1036 neg}{\f2\fs18\lang1036\langfe1040\langnp1036 \tab =
+6239240_\tab #####.0_\tab #####.0_\tab }{
+0   \f2\fs18\lang1033\langfe1040\langnp1033 [psi]\tab Maximum compression stress
+0   \par S}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t,bk\tab }{\f2\fs18\lang1033\langfe1040\langnp1033 =
+1244_\tab ######_\tab _\tab [psi]_\tab Bukcling stress limit
+0   \par 
+0   \par }{\f2\fs18\lang1033\langfe1040\langnp1033 {\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 neg}{\f2\fs18\lang1033\langfe1040\langnp1033 \tab =
+W239240_\tab ###.###_\tab ###.###_\tab [MPa]_\tab 
+0   Maximum compression stress
+0   \par S}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 t,bk\tab }{\f2\fs18\lang1033\langfe1040\langnp1033 =
+g244_\tab ###.###_\tab _\tab [MPa]_\tab Bukcling stress limit
+0   \par 
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx709\tqr\tx2977\tqr\tx5103\tx5245\faauto\rin0\lin0\itap0 {\b\f2\fs18\lang1033\langfe1040\langnp1033 RCB-7.25 Tube-to-tubesheet joint loads--periphery of bundle
+0   \par }{\f2\fs18\lang1040\langfe1040\langnp1040 
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx709\tqr\tx2977\tqr\tx5103\tx5245\tqr\tx5670\tb5783\faauto\rin0\lin0\itap0 {\f2\fs18\lang1031\langfe1040\langnp1031 W}{\f2\fs18\lang1031\langfe1040\sub\langnp1031 j}{\f2\fs18\lang1031\langfe1040\langnp1031  \tab =
+6251252_\tab #####.0_\tab #####.0 [lb]_\tab \tab (1)
+6253254_\par _\tab =_\tab #####.0_\tab #####.0 [lb]_\tab _\tab (2)
+0   \tab }{\pard\plain \s15\qj \li0\ri0\widctlpar\tx709\tqr\tx2977\tqr\tx5103\tx5245\tqr\tx5670\tb5783\faauto\rin0\lin0\itap0 \f2\fs18\lang1031\langfe1040\cgrid\langnp1031\langfenp1040 {\object\objemb
+0   \objw2180\objh620{\*\objclass Equation.3}{\*\objdata 01050000020000000b0000004571756174696f6e2e33000000000000000000000c0000
+0   d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff0900060000000000000000000000010000000100000000000000001000000200000001000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   fffffffffffffffffdffffff04000000fefffffffefffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffff0200000002ce020000000000c0000000000000460000000000000000000000004094
+0   3e54c353c10103000000000200000000000001004f006c00650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000201ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+0   0000000000000000000000001400000000000000010043006f006d0070004f0062006a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120002010100000003000000ffffffff0000000000000000000000000000000000000000000000000000
+0   0000000000000000000001000000660000000000000003004f0062006a0049006e0066006f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000201ffffffff04000000ffffffff000000000000000000000000000000000000000000000000
+0   000000000000000000000000030000000400000000000000feffffff02000000fefffffffeffffff050000000600000007000000feffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff010000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100feff030a0000ffffffff02ce020000000000c0000000000000461700
+0   00004d6963726f736f6674204571756174696f6e20332e30000c0000004453204571756174696f6e000b0000004571756174696f6e2e3300f439b271000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000
+0   0000000000000000000000000000000000000000000000000000000000000000000000001c0000000200dbc5a800000000000000846d49008c7949000000000003010103010a010284c303030f01000b011283740002822c0012836f000011000a030e0000010284c0030001028834000000030300000112836400030f01
+0   000b01128374000011000a030f00000b11010288320000000a028612220282280012836400030f01000b01128374000011000a0286122212837400030f01000b01128374000011000a02822900030f00000b1101028832000000000a02965b0002965d000000000000000000000000000000000000000000000000000000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000004500710075006100740069006f006e0020004e00610074006900760065000000000000000000000000000000000000000000000000000000000000000000000020000200ffffffffffffffffffffffff000000000000
+0   00000000000000000000000000000000000000000000000000000000000004000000c4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000
+0   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+0   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001050000050000000d0000004d45544146494c455049435400050f0000bafbffff380300000800050f46040000
+0   010009000003970100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000050000000b0200000000050000000c02e003a00d1200000026060f001a00ffffffff000010000000c0ffffffbcffffff600d00009c0300000b0000002606
+0   0f000c004d617468547970650000c00009000000fa02000010000000000000002200040000002d01000005000000140200029d0205000000130200029c0310000000fb022cfde300000000009001000000020002001053796d626f6c0002040000002d01010008000000320a5d02e003010000005b0010000000fb022cfd
+0   e300000000009001000000020002001053796d626f6c0002040000002d01020004000000f001010008000000320a5d02200d010000005d0010000000fb0220ff00000000000090010000000004020020417269616c000000040000002d01010004000000f001020008000000320ab4016e0c01000000320008000000320a
+0   c002680b01000000740008000000320ac002eb0801000000740008000000320a92016d0501000000320008000000320ac0020f0501000000740008000000320ac002ac01010000006f0008000000320ac0027701010000002c0008000000320ac002330101000000740010000000fb0280fe000000000000900100000000
+0   04020020417269616c000000040000002d01020004000000f001010008000000320a6002e50b01000000290008000000320a6002db0a01000000740008000000320a60020a0801000000640008000000320a6002800701000000280008000000320a60022e0401000000640008000000320a8b03b7020100000034001000
+0   0000fb0280fe0000000000009001000000020002001053796d626f6c0002040000002d01010004000000f001020008000000320a6002b309010000002d0008000000320a60026a06010000002d0008000000320a7001b90201000000700008000000320a600234000100000073000a00000026060f000a00ffffffff0100
+0   0000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01020004000000f00101000300000000000100}{\result {\f2\fs18\dn24\lang1031\langfe1040\langnp1031 
+0   {\pict{\*\picprop\shplid1046{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fHitTestFill}{\sv 1}}{\sp{\sn fillShape}{\sv 1}}
+0   {\sp{\sn fillUseRect}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fReallyHidden}{\sv 0}}{\sp{\sn fScriptAnchor}{\sv 0}}{\sp{\sn fFakeMaster}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}
+0   \picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw3845\pich1094\picwgoal2180\pichgoal620\wmetafile8\bliptag-451660905\blipupi-111{\*\blipuid e51433970f3e852b91e90d45771e8dcb}
+0   010009000003970100000300120000000000050000000902000000000400000002010100050000000102ffffff00040000002e01180005000000310201000000
+0   050000000b0200000000050000000c02e003a00d1200000026060f001a00ffffffff000010000000c0ffffffbcffffff600d00009c0300000b00000026060f00
+0   0c004d617468547970650000c00009000000fa02000010000000000000002200040000002d01000005000000140200029d0205000000130200029c0310000000
+0   fb022cfde300000000009001000000020002001053796d626f6c0002040000002d01010008000000320a5d02e003010000005b0010000000fb022cfde3000000
+0   00009001000000020002001053796d626f6c0002040000002d01020004000000f001010008000000320a5d02200d010000005d0010000000fb0220ff00000000
+0   000090010000000004020020417269616c000000040000002d01010004000000f001020008000000320ab4016e0c01000000320008000000320ac002680b0100
+0   0000740008000000320ac002eb0801000000740008000000320a92016d0501000000320008000000320ac0020f0501000000740008000000320ac002ac010100
+0   00006f0008000000320ac0027701010000002c0008000000320ac002330101000000740010000000fb0280fe0000000000009001000000000402002041726961
+0   6c000000040000002d01020004000000f001010008000000320a6002e50b01000000290008000000320a6002db0a01000000740008000000320a60020a080100
+0   0000640008000000320a6002800701000000280008000000320a60022e0401000000640008000000320a8b03b70201000000340010000000fb0280fe00000000
+0   00009001000000020002001053796d626f6c0002040000002d01010004000000f001020008000000320a6002b309010000002d0008000000320a60026a060100
+0   00002d0008000000320a7001b90201000000700008000000320a600234000100000073000a00000026060f000a00ffffffff01000000000010000000fb021000070000000000bc02000000000102022253797374656d0000040000002d01020004000000f0010100030000000000}}}}}{
+0   \f2\fs18\lang1031\langfe1040\langnp1031 
+0   \par \tab }{\f2\fs18\lang1033\langfe1040\langnp1033 =
+6255256_\tab #####.0_\tab #####.0 [lb]_\tab _\tab (3)
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx709\tqr\tx2977\tqr\tx5103\tx5245\faauto\rin0\lin0\itap0 {\f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par W}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 j}{\f2\fs18\lang1033\langfe1040\langnp1033  \tab =
+6257258_\tab #####.0_\tab #####.0 [lb]_\tab  Greatest absolute value
+0   \par W}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 j}{\f2\fs18\lang1033\langfe1040\langnp1033  \tab =
+W257258_\tab #####.0_\tab #####.0 [N]_\tab 
+0   \par 
+0   \par W}{\f2\fs18\lang1033\langfe1040\sub\langnp1033 ja}{\f2\fs18\lang1033\langfe1040\langnp1033  \tab =
+1285_\tab #####.0_\tab [lb]_\tab  Allowable Code Value (App.A)
+0   \par }{\f2\fs18\lang1040\langfe1040\langnp1040 W}{\f2\fs18\lang1040\langfe1040\sub\langnp1040 ja}{\f2\fs18\lang1040\langfe1040\langnp1040  \tab =
+g285_\tab #####.0_\tab [N]_\tab 
+0   \par 
+0   \par }\pard \s15\qj \li0\ri0\widctlpar\tx680\tqr\tx2520\tqr\tx3960\tx4140\tqr\tx9923\faauto\rin0\lin0\itap0 {\f2\fs18\lang1033\langfe1040\langnp1033 
+0   \par }\pard \s15\qj \fi720\li0\ri0\nowidctlpar\tqc\tx4819\tqr\tx9638\faauto\rin0\lin0\itap0 {\f2\fs18                   fully documented printout pag. 7 of 10
+0   \par }

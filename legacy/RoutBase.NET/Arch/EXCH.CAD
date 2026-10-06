@@ -1,0 +1,16 @@
+Caratteri speciali per conversione file .dxf in .pri  e viceversa 7-11-92
+acad     strim    I primi tre caratteri sono gia' codificati.
+ø        @        Iniziare con carattere strim in 10¦ colonna.
+ñ        #        Iniziare con caratteri speciali in 7¦ riga.
+í        $
+---------------------------------------------------------------------------
+%%127    @
+%%129    $
+%%248    @
+%%241    #
+„µ^N
+%%c      $
+%%d      @
+%%C      $
+%%D      @
+

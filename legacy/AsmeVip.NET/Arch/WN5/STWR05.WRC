@@ -1,0 +1,43 @@
+\par
+       1. DESIGN CONDITIONS\par
+ Design Pressure  (+ : int.)       \    \  p{_\sub 0} =##########.##_\par
+ Radial Thrust    (+ : inward)     \    \  P  =##########.## ##########.##_\par
+ Circumferential Moment            \    \  M{_\sub c} =##########.## ##########.##_\par
+ Overturning Moment                \    \  M{_\sub c} =##########.## ##########.##_\par
+ Longitudinal Moment               \    \  M{_\sub L} =##########.## ##########.##_\par
+ Torsional Moment                  \    \  M{_\sub T} =##########.## ##########.##_\par
+ Circumferential Shear             \    \  V{_\sub c} =##########.## ##########.##_\par
+ Shear Load                        \    \  V{_\sub c} =##########.## ##########.##_\par
+ Longitudinal Shear                \    \  V{_\sub L} =##########.## ##########.##_\par
+ Design Temperature                &    {{_\field{_\*_\fldinst SYMBOL 113 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}  =##########.##_\par
+ Shell Mat.Design Stress           \    \  S{_\sub m} =##########.##_\par
+ Stress Intensity Factor           \    \  k  =##########.##_\par
+ Shell Mat.Design Stress           \    \  f  =##########.##_\par
+         (Note: Above moments have been reduced to the shell junction\par
+       2. GEOMETRY\par
+ Geometry of the Shell     : &_\par
+ Geometry of the Attachment: &/&/&_\par
+ Nominal Shell Thickness           \    \  T{_\sub v} =##########.##_\par
+ Inside Shell Radius               \    \  r{_\sub i} =##########.##_\par
+ Inside Shell Diameter             \    \  D{_\sub i} =##########.##_\par
+ Reinf.Plate Thickness             \    \  T{_\sub p} =##########.##_\par
+ Reinf.Plate Diameter              \    \  D{_\sub p} =##########.##_\par
+ Circ.Reinforcement Dim.           \    \ 2c{_\sub 1} =##########.##_\par
+ Long.Reinforcement Dim.           \    \ 2c{_\sub 2} =##########.##_\par
+ Corrosion Allowance (shell)       \    \  c  =##########.##_\par
+ Actual Total Thickness            \    \  T  =##########.##_\par
+ Mean Shell Radius                 \    \  R{_\sub m} =##########.##_\par
+ Outside Nozzle Radius             \    \  r{_\sub o} =##########.##
+ Outside Attachment Radius         \    \  r{_\sub o} =##########.##
+ Circ.Attachment Dimension         \    \ 2c{_\sub 1} =##########.##_\par
+ Long.Attachment Dimension         \    \ 2c{_\sub 2} =##########.##_\par
+ Attachment Dimension              \    \ 2c{_\sub 1} =##########.##_\par
+ Attachment Thickness              \    \  t  =##########.##_\par
+ Nozzle Thk. (within reinf.limits) \    \  t  =##########.##_\par
+ Nozzle Thk. (beyond reinf.limits) \    \  t{_\sub 1} =##########.##_\par
+ Nozzle Height                     \    \  h  =##########.##_\par
+ Cylinder Length                   \    \  L  =##########.##
+ Nozz.offset/cyl.mid-plane         \    \  d  =##########.##
+                                                Given data    Final data\par
+ Corrosion Allowance (nozzle)      \    \  c  =##########.##_\par
+

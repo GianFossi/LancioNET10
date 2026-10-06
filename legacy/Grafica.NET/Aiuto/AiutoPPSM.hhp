@@ -1,0 +1,96 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\Lancio.NET\BIN\AiutoPPSM.chm
+Contents file=AiutoPPSM.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=No
+Full text search stop list file=..\..\stop.stp
+Full-text search=Yes
+Index file=AiutoPPSM.hhk
+Language=0x410 Italiano (Italia)
+Title=Guida per il programma PPSM
+
+[WINDOWS]
+Aiuto="Guida di PPSM","AiutoPPSM.hhc","AiutoPPSM.hhk","Panoramica.htm","Introduzione.htm",,,,,0x23520,,0x304e,[130,189,808,581],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+SettiP.htm
+Membrature.htm
+GestioneGrezzi.htm
+Distinta.htm
+Prototipi.htm
+BasePrototipi.htm
+Introduzione.htm
+FinestraIniziale.htm
+NoAutoVer.htm
+NoAutoCAD.htm
+Errori.htm
+RifiutoCreazione.htm
+AggiorPrototipo.htm
+ApprovImmagine.htm
+Tiranti.htm
+BocchStd.htm
+Cilindri.htm
+Coni.htm
+Conoidi.htm
+FasciTubieri.htm
+Flangioni.htm
+Fondi.htm
+PiasCop.htm
+BocchNonStd.htm
+Lancio.htm
+StampaDistinta.htm
+Forature.htm
+Anelli.htm
+SpicShow.htm
+FinDati.htm
+ErrNoLamSpic.htm
+ErrLamQuad.htm
+ErrNoProto.htm
+Err2proto.htm
+CreaApparecchio.htm
+TubiScambio.htm
+SealingStrips.htm
+TirantiFascio.htm
+Diaframmi.htm
+Rods.htm
+ManOgetti.htm
+ManOggMemb.htm
+ManOggDiaf.htm
+ManHTML\OggDiafUnsupported.htm
+FinFori.htm
+FinAvvisoDS.htm
+GestInformatica.htm
+
+[ALIAS]
+IDH_CAP_INTRODUZIONE=Introduzione.htm
+IDH_dati_frampos_cmbCodpos=FinDati.htm#frampos_cmbCodpos
+IDH_dati_frampos_cmbFinoA=FinDati.htm#frampos_cmbFinoA
+IDH_dati_frampos_cmbLato=FinDati.htm#frampos_cmbLato
+IDH_dati_frampos_cmbPreDef=FinDati.htm#frampos_cmbPreDef
+IDH_dati_frampos_cmbSuChi=FinDati.htm#frampos_cmbSuChi
+IDH_dati_frampos=FinDati.htm#frampos
+IDH_dati=FinDati.htm
+IDH_DB_VERBOSO=GestInformatica.htm
+IDH_DS_NONCONGRUO=FinAvvisoDS.htm
+IDH_ERR_2PROTO=Err2proto.htm
+IDH_ERR_NOAUTOCAD=NoAutoCAD.htm
+IDH_ERR_NOAUTOVER=NoAutoVer.htm
+IDH_ERR_NODISEGNO=RifiutoCreazione.htm
+IDH_ERR_NOLAMQUAD=ErrLamQuad.htm
+IDH_ERR_NOLAMSPIC=ErrNoLamSpic.htm
+IDH_ERR_NOPROTO=ErrNoProto.htm
+IDH_PROTO_ESISTEGIA=BasePrototipi.htm
+IDH_SPIC_SCELTAOPT=SpicShow.htm#SpicOpt
+
+[MAP]
+#include header.h
+
+[MERGE FILES]
+AiutoIST.chm
+
+[INFOTYPES]
+

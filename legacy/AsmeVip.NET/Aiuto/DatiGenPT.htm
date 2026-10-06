@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Dati Generali Piastre Tubiere</Title>
+</HEAD>
+<BODY>
+<H1>Dati Generali Piastre Tubiere</H1>
+<P>I dati che compaiono in questo pannello possono variare in funzione del tipo di fascio tubiero selezionato nella casella a discesa 'Configuration'. Di seguito verranno elencati tutti i dati che possono comparire nelle diverse situazioni.</P>
+<IMG SRC="PTDatiGenerali.bmp">
+<H2><A name="Config">Configuration</A></H2>
+<P>Viene qui scelto il tipo di fascio/piastra tubiera, fra le sei opzioni proposte.</P>
+<H2><A name="TipCalc">Calculation type</A></H2>
+<P>Si può scegliere tra Calcoli di progetto e calcoli di verifica. Questa scelta ha scarsa influenza sullo svolgimento dei calcoli; è normalmente adeguato mantenere in ogni caso l'impostazione Calcoli di progetto.</P>
+<H2><A name="ValoriTubi">Dati relativi ai tubi scambiatori</A></H2>
+<P>I dati di questa sezione sono espressi unicamente in millimetri.</P>
+<P>Nel caso che sia stato preliminarmente inserita la membratura <A href="Tubi.htm">Tubi scambiatori</A>, è possibile richiamare in questa finestra i dati colà inseriti premendo il pulsante<A name="InterrogaTubi"><IMG SRC="InterrogaTubi.bmp"></A>.</P>
+<H3>Diametro esterno</H3>
+<H3>Passo</H3>
+<H3>Lunghezza</H3>
+<P>Si tratta della lunghezza effettiva. Il programma si incarica di sottrarre lo spessore delle piastre, quando applicabile.</P>
+<H3>Tipo di passo</H3>
+<H3>DL (RCB-7.133)</H3>
+<P>Si tratta del diametro equivalente per il calcolo dello spessore della piastra tubiera al taglio. Ove non altrimenti noto, può essere calcolato dal programma <A href="ms-its:AiutoTraccia.chm::/Panoramica.htm">Traccia</A>, richiamabile da questa finestra con il pulsante<A name="Traccia"><IMG SRC="Traccia.bmp"></A>.</P>
+<H3>Numero tubi</H3>
+<H3>Lunghezza libera tubi</H3>
+<H2><A name="Diverse">Piastre diverse?</A></H2>
+<P>Questa scelta è applicabile al caso dei fasci a teste fisse, e riguarda il caso previsto da RCB-7.166 FIXED TUBESHEETS OF DIFFERING THICKNESSES.</P>
+<H3>No</H3>
+<P>Questa è l'opzione preimpostata</P>
+<H3>Si, normale</H3>
+<P>Vi è simmetria rispetto al piano mediano perpendicolare all'asse dell'apparecchio. Quindi le piastre tubiere differiscono solo per lo spessore, le caratteristiche fisiche, e i dati di temperaura. Questo è il caso previsto dalla Nota a RCB-7.166.</P>
+<H3>Si, speciale</H3>
+<P>Le piastre possono anche differire per configurazione (flangiature o collegamenti integrali) e per la presenza dell'estensione per bullonatura. In questo caso lo step (4) di RCB-7.166 è stato emendato (vedi <A href="AppDiffering.htm">Appendice</A>).</P>
+<H2><A name="RappEst">Rapporto spessori estensione/centro piastra</A></H2>
+<P>Questo valore è richiesto nel caso di piastre tubiere per tubi ad U con estensione flangiata, calcolate secondo RCB-7.1342</P>
+<P>Il programma AsmeVip è in grado di effettuare il progetto, oltre che la verifica, delle piastre tubiere con estensione flangiata. Tuttavia bisogna notare che esistono infinite soluzioni minimali ammissibili al problema di progetto, ciascuna caratterizzata da un diverso rapporto tra lo spessore assunto per l'estensione e lo spessore al centro piastra. Se si imposta il valore di tale rapporto pari a zero, il programma ricercherà la soluzione ottimale dal punto di vista della minimizzazione dello spessore nella zona centrale. Se invece si imposta il rapporto ad un valore compreso tra 0.5 e 1, allora il programma presenterà gli spessori minimi che rispettano il rapporto impostato.</P>
+<H2><A name="DilatAccopp">Dilatatore accoppiato</A></H2>
+<P>Questo parametro è richiesto nel caso di fasci tubieri a teste fisse.</P>
+<P>Ove sia stato preliminarmente introdotto un <A href="Dilatatore.htm">dilatatore</A> nel Lato Mantello, la casella a discesa presenterà tre possibilità:</P>
+<H3>Nessun dilatatore</H3>
+<H3>Spring-rate manuale</H3>
+<P>Il calcolo del fascio tubiero sarà eseguito in funzione del valore di rigidezza fornito manualmente. Tale valore sarà fornito successivamente nelle maschere attivate dalla richiesta di esecuzione della procedura di calcolo (vedi <A href="PannelloStruttura.htm#StruttCalcola">pulsante Calcola</A>). In questo caso sarà necessario fornire anche il diametro massimo interno presunto del dilatatore (vedi <A href="#Diamint">oltre</A>).</P>
+<H3>'<I>Nome preimpostato della membratura dilatatore</I>'</H3>
+<P>Se si seleziona questa impostazione il calcolo fascio tubiero/dilatatore verrà eseguito in modo completamente integrato. Non sarà quindi necessario eseguire un calcolo separato del dilatatore. E' prevista inoltre una procedura automatizzata di ricerca delle geometrie ammissibili per il dilatatore.</P>
+<H2><A name="DiamInt">Diametro interno massimo</A></H3> 
+<P>Nel caso di fasci tubieri a teste fisse, con dilatatore definito da uno spring-rate fornito manualmente, è necessario specificare anche il diametro interno massimo dello stesso.</P>
+<P>Nel caso di dilatatori definiti esplicitamente, questo dato è incluso fra i dati geometrici del <A href="Dilatatore.htm">dilatatore</A>.</P>
+<H2><A name="FlexEstens">Calcolo della flessione nell'estensione flangiata</A></H2>
+<P>Si tratta di un requisito addizionale alle norme TEMA, consistente nel tenere conto dello stato di tensione (componente radiale) generato dal momento flettente, considerando l'estensione flangiata come una mensola, oltre che dello stato di tensione (componente circonferenziale) generato dal momento torcente, considerando l'estensione flangiata come una trave anulare (vedi <A href="AppFlessExt.htm">Appendice</A>).</P>
+<P>Normalmente questa opzione non deve essere selezionata.</P>
+<H2><A name="AutomTir">Calcolo automatico del tiro bulloni</A></H2>
+<P>Il tiro dei bulloni nell'estensione flangiata è normalmente desunto dal calcolo, preliminarmente effettuato, del flangione accoppiato. In questo caso bisogna deselezionare la presente opzione, ed i dati del calcolo risulteranno preimpostati nel <A href="DatiJointPT.htm#NonAut">pannello dei dati sulla giunzione</A>.</P>
+<H2><A name="EsecComment">Esecuzione commentata</A></H2>
+<P>Questa opzione riguarda la messaggistica rivolta al progettista durante la fase di calcolazione.</P>
+<H2><A name="FullPrint">Stampa pienamente documentata</A></H2>
+<P>Selezionare questa opzione se si desidera un rapporto che documenti passo-passo i calcoli effettuati.</P>
+</BODY>
+</HTML>

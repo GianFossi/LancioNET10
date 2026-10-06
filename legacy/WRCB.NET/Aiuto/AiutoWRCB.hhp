@@ -1,0 +1,30 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\Lancio.NET\BIN\AiutoWRCB.chm
+Contents file=Table of Contents.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=Yes
+Full text search stop list file=..\..\stop.stp
+Index file=Index.hhk
+Language=0x410 Italiano (Italia)
+Title=Guida di WRB
+
+[WINDOWS]
+Aiuto="Guida di WRCB","Table of Contents.hhc","Index.hhk","Panoramica.htm","Panoramica.htm",,,,,0x23420,,0x304e,[98,52,842,474],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+Oggetti.htm
+Menu.htm
+Standard.htm
+finGeometria.htm
+finAmmissibili.htm
+finCarichi.htm
+finGenerali.htm
+ErrLCylZero.htm
+ErrCapNonScelto.htm
+
+[INFOTYPES]
+

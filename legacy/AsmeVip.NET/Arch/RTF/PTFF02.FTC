@@ -1,0 +1,239 @@
+T00
+\par
+\par                                     LOADING DATAA00
+\par                                     ============
+\par
+\par
+\trowd \trgaph71\trleft-71
+\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30
+\cellx3283\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30
+\cellx3992\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx5410\clbrdrt\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx6828\clbrdrt\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8246\clbrdrt\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx9664
+\pard \s18\qc\sb60\sa20\intbl\tx4536 {\b Load Condition\cell }A00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 {\b \cell }A00
+_\pard _\s18_\qc_\sb60_\sa20_\intbl_\tx4536 {_\b ##_\cell ##_\cell ##_\cell ##_\cell }I00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30
+\cellx3283\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \cellx3992\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrt\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Shell-side pressure\cell
+_\pard _\s18_\qr_\sb60_\sa20_\intbl_\tx4536 MPa_\cell ####.###_\cell ####.###_\cell ####.###_\cell ####.###_\cell 001G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrb\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30
+\clbrdrb\brdrs\brdrw30 \cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\clbrdrb\brdrs\brdrw30 \cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+_\pard _\s18_\qr_\sb60_\sa20_\intbl_\tx4536 {_\i psi_\cell #####.#_\cell #####.#_\cell #####.#_\cell #####.#_\cell }001H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx6828\clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664 \pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Tube-side pressure\cell
+_\pard _\s18_\qr_\sb60_\sa20_\intbl_\tx4536 MPa_\cell ###.###_\cell ###.###_\cell ###.###_\cell ###.###_\cell 002G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\cellx3283\clbrdrl
+\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+_\pard _\s18_\qr_\sb60_\sa20_\intbl_\tx4536 {_\i psi_\cell #####.#_\cell #####.#_\cell #####.#_\cell #####.#_\cell }002H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30
+\clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrt\brdrs\brdrw30 \clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664 \pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Tube-sheet\cell Metal temp.\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 \'b0C\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell 004G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{\i \'b0F\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }004H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Young modulus\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa \cell
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 007G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }007H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Allow. stress\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+####.##_\cell ####.##_\cell ####.##_\cell ####.##_\cell 035G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx3283\clbrdrb\brdrs\brdrw30 \cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\clbrdrb\brdrs\brdrw30 \cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246
+\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ######_\cell ######_\cell ######_\cell ######_\cell }035H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Shell\cell Metal temp.\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 \'b0C\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell 005G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{\i \'b0F\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }005H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Young modulus\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 008G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }008H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Expans.coeff.\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 \'b0C{\super -1}\cell
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 014G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 {\i \'b0F}{\i\super -1}
+{_\i _\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }014H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30
+\cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Allow. stress\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+###.##_\cell ###.##_\cell ###.##_\cell ###.##_\cell 012G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr
+\brdrs\brdrw30 \cellx3283\clbrdrb\brdrs\brdrw30 \cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\clbrdrb\brdrs\brdrw30 \cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246
+\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ######_\cell ######_\cell ######_\cell ######_\cell }012H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Tubes\cell Metal temp.\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 \'b0C\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell 006G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{\i \'b0F\cell
+####.#_\cell ####.#_\cell ####.#_\cell ####.#_\cell }006H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Young modulus\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 009G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }009H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Expans.coeff.\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 \'b0C{\super -1}\cell
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 015G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 {\i \'b0F}{\i\super -1}
+{_\i _\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }015H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Allow. stress\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+###.##_\cell ###.##_\cell ###.##_\cell ###.##_\cell 013G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi_\cell ######_\cell ######_\cell ######_\cell ######_\cell }013H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \cellx1606\clbrdrl
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\cellx3992\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell Yield stress\cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536 MPa\cell
+###.##_\cell ###.##_\cell ###.##_\cell ###.##_\cell 038G00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3283\clbrdrb\brdrs\brdrw30 \cellx3992
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx5410\clbrdrb\brdrs\brdrw30 \cellx6828\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell
+\pard \s18\qr\sb60\sa20\intbl\tx4536
+{_\i psi\cell ######_\cell ######_\cell ######_\cell ######_\cell }038H00
+\pard\plain \intbl \f2\fs18\lang1040 \row
+\trowd \trgaph71\trleft-71032J00
+\clbrdrl\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrr032J00
+\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664032J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Flange moment Operating\cell 032J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 Nm\cell 032J00
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 032G00
+\pard\plain \intbl \f2\fs18\lang1040 \row 032J00
+\trowd \trgaph71\trleft-71 032J00
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrb\brdrs\brdrw30 \cellx3283 032J00
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\clbrdrb\brdrs\brdrw30 \cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrb\brdrs\brdrw30 032J00
+\clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb 032J00
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664 032J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell 032J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 {\i lb}{\i {\field{\*\fldinst SYMBOL 215 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}032J00
+{_\i in_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }032H00
+\pard\plain \intbl \f2\fs18\lang1040 \row 032J00
+\trowd \trgaph71\trleft-71 032J00
+\clbrdrl\brdrs\brdrw30 \cellx3283 032J00
+\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664 032J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Flange moment Bolting-up\cell 032J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 Nm\cell 032J00
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 033G00
+\pard\plain \intbl \f2\fs18\lang1040 \row 032J00
+\trowd \trgaph71\trleft-71 032J00
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrb\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 032J00
+\cellx3992\clbrdrb\brdrs\brdrw30 \cellx5410\clbrdrl 032J00
+\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664 032J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell 032J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 {\i lb}{\i {\field{\*\fldinst SYMBOL 215 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}032J00
+{_\i in_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }033H00
+\pard\plain \intbl \f2\fs18\lang1040 \row 032J00
+\trowd \trgaph71\trleft-71 036J00
+\clbrdrl\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrr036J00
+\brdrs\brdrw30 \cellx6828\clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664036J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Spring rate new\cell 036J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 N/mm\cell 036J00
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 036G00
+\pard\plain \intbl \f2\fs18\lang1040 \row 036J00
+\trowd \trgaph71\trleft-71036J00
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrb036J00
+\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\clbrdrb\brdrs\brdrw30 \cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrb\brdrs\brdrw30 \clbrdrr036J00
+\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664036J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell 036J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536036J00
+{_\i lb/in_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }036H00
+\pard\plain \intbl \f2\fs18\lang1040 \row 036J00
+\trowd \trgaph71\trleft-71036J00
+\clbrdrl\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30036J00
+\cellx3992\cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrr\brdrs\brdrw30 \cellx9664036J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 Spring rate corroded\cell 036J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536 N/mm\cell 036J00
+##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell 037G00
+\pard\plain \intbl \f2\fs18\lang1040 \row 036J00
+\trowd \trgaph71\trleft-71036J00
+\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \cellx1606\clbrdrb\brdrs\brdrw30 \cellx3283\clbrdrl\brdrs\brdrw30 \clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx3992\clbrdrb\brdrs\brdrw30 \cellx5410\clbrdrl\brdrs\brdrw30 \clbrdrb036J00
+\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx6828\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx8246\clbrdrb\brdrs\brdrw30 \clbrdrr\brdrs\brdrw30 \cellx9664036J00
+\pard\plain \s18\qj\sb60\sa20\intbl\tx4536 \f2\fs18\lang1040 \cell \cell 036J00
+\pard \s18\qr\sb60\sa20\intbl\tx4536036J00
+{_\i lb/in_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell ##.###^^^^_\cell }037H00
+\pard\plain \intbl \f2\fs18\lang1040 \row 036J00
+\pard\plain \s18\qj\tx4536 \f2\fs18\lang1040
+\par A00
+

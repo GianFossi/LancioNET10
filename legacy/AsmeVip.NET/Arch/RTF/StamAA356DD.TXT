@@ -1,0 +1,12 @@
+\pard\plain \s18\qj \li0\ri0\widctlpar\tx567\tqr\tx2693\tqr\tx5103\tx5954\faauto\rin0\lin0\itap0 \f2\fs18\lang2057\langfe1040\cgrid\langnp2057\langfenp1040 {\f2\fs18 
+\par }{\b\f2\fs18 A00
+& }{_\f2_\fs18 F00
+\par \par }{\i\f2\fs18 A00
+&}{_\f2_\fs18 . For tubesheet configurations a, A, and D:F00
+\par \par }\pard \s18\qj \li0\ri0\widctlpar\tx567\tqr\tx2693\tx2977\tqr\tx5103\tx5954\faauto\rin0\lin0\itap0 A00
+{\f2\fs18\lang1040\langfe1040\langnp1040 {\field{\*\fldinst SYMBOL 103 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}}{\f2\fs18\sub b}{\f2\fs18 \tab =\tab 
+#.####F01
+\tab \tab \tab zero by definition
+\par 
+\par 
+\par }

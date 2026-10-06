@@ -1,0 +1,88 @@
+\par
+T. SHEET IDENTIF.     : &_\par
+T. SHEET MATERIAL     : &_\par
+GASKET TYPE           : &_\par
+GASKET MATERIAL       : &_\par
+STUDS  MATERIAL       : &_\par
+\par                                   INPUT DATA\par
+                                  ==========\par
+_\pard _\s18_\qj_\widctlpar_\tx567_\tqr_\tx2693_\tqr_\tx5103_\tx5954 P{_\sub t}_\tab =_\tab ###.#### [MPa]_\tab #######.#### [psi]_\tab Design pressure  (tube-side)_\par
+P{_\sub s}_\tab =_\tab###.#### [MPa]_\tab #######.#### [psi]_\tab Design pressure (shell-side)_\par
+P{_\sub th}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab Hydr.t.pressure  (tube-side)_\par
+P{_\sub sh}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab Hydr.t.pressure (shell side)_\par
+P{_\sub th}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab Hydr.t.pressure (flanged side)_\par
+P{_\sub sh}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab Hydr.t.pressure (welded side)_\par
+T{_\sub p}_\tab =_\tab #####.#### [{_\super 0}C]_\tab #######.#### [{_\super 0}F]_\tab Design temperature_\par
+A{_\sub t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange outside diameter (T.S.)_\par
+A{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange outside diameter (S.S.)_\par
+A_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab T.S. outside diameter_\par
+C_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Bolt-Circle diameter_\par
+G{_\sub t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Gasket mean diameter,T.S._\par
+G{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Gasket mean diameter,S.S._\par
+D{_\sub c}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Inner Channel diameter_\par
+D{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Inner Shell diameter_\par
+g{_\sub 1t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange hub max thickness, T.S._\par
+g{_\sub 1s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange hub max thickness, S.S._\par
+g{_\sub 0t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange hub min thickness, T.S._\par
+g{_\sub 0s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Flange hub min thickness, S.S._\par
+D{_\sub I}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Welded side cyl. dia.(Corr.)_\par
+T{_\sub I}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Welded side cyl. thk.(Corr.)_\par
+B{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Mean gsk dia.(minimum on sides)_\par
+h{_\sub b}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab T. sheet thk. adopted (center)_\par
+T{_\sub r}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab T. sheet thk. adopted (ext.)_\par
+c{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Shell side corrosion_\par
+c{_\sub c}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Channel side corrosion_\par
+h{_\sub g}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Pass partition groove_\par
+d{_\sub N}_\tab =                \                 \  [--]_\tab Bolts nominal diameter_\par
+N{_\sub b}_\tab =_\tab _\tab #########    [--]_\tab Number of bolts_\par
+A{_\sub bl}_\tab =_\tab _\tab #######.#### [in{_\super 2}]_\tab Area of one bolt_\par
+Nb_\tab =_\tab _\tab #########    [--]_\tab Number of bolts with collars_\par
+B{_\sub Smin}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Minimum bolt spacing_\par
+B{_\sub S}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Actual  bolt spacing_\par
+S{_\sub fa}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab All.Des.Stress, t.sheet at room_\par
+S_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab All.Des.Stress, t.sheet at temp._\par
+S{_\sub ba}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab All.Des.Stress, bolts  at room_\par
+S{_\sub bo}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab All.Des.Stress, bolts  at temp._\par
+k_\tab =_\tab _\tab #######.#### [--]_\tab Safety factor for bolts_\par
+d{_\sub t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Tube O.D._\par
+p_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Tube pitch_\par
+D{_\sub 0}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Equiv. dia. of outer tube limit_\par
+Pitch_\tab =_\tab _\tab #########    [--]_\tab 1=square  2=triang._\par
+{{_\field{_\*_\fldinst SYMBOL 97 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}_\tab =_\tab _\tab #######.#### [--]_\tab Tube pattern factor_\par
+{{_\field{_\*_\fldinst SYMBOL 104 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}_\tab =_\tab _\tab #######.#### [--]_\tab {{_\field{_\*_\fldinst SYMBOL 104 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}=1-(0.907/(p/d{_\sub o}){_\super 2})_\par
+l{_\sub tx}_\tab =_\tab #########.## [%]_\tab _\tab Expanded length_\par
+l{_\sub tx}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Expanded length_\par
+      &channel side_\par
+      &shell side_\par
+\   \ : ## - Input of geometric dimensions in [ mm ]. - Displayed values in [ in ]_\par
+                   are fixed by conversion factors.\par
+\   \ : ## - The rule of note 2 to ASME VIII div.1, App.2-5, will be applied._\par
+\   \ : ## - The tightness of the flanged joint will be assured up to the hydraulic_\par
+             test pressure. (This is an additional requirement to the code requirements)\par
+\   \ : ## - The operating bolt load will not be allowed to be less than seating b. l._\par
+\   \ : ## - The equipment will be dimensioned under differential pressure only._\par
+                       (This is an additional requirement to the TEMA rules)\par
+\   \ : ## - The shell side may operate under vacuum._\par
+\   \ : ## - The tube side may operate under vacuum._\par
+\   \ : ## - Both tube and shell sides may operate under vacuum._\par
+U{_\sub L}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Largest center-to-center distance_\par
+t{_\sub t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Tube thickness_\par
+                      (Data for the flange \  \-side)_\par
+\   \ : ## - Calculation performed using values in SI Units. Displayed values in _\par
+                   Imperial Units are fixed by conversion factors.\par
+\   \ : ## - The gasket channel-side could be overstressed, according to VSR code._\par
+\   \ : ## - The gasket shell-side could be overstressed, according to VSR code._\par
+\   \ : ## - CAUTION: The bolt spacing could be isuffucient_\par
+\   \ : ## - CAUTION: The bolt area is insufficient for the flange channel-side_\par
+\   \ : ## - CAUTION: The bolt area is insufficient for the flange shell-side_\par
+\   \ : ## - The dimensioning load case is: \                                 \_\par
+P{_\sub d}_\tab =_\tab###.#### [MPa]_\tab #######.#### [psi]_\tab Design differential pressure_\par
+\pard\plain \s18\qj\widctlpar\tx2835 \f2\fs18\lang1040 
+t{_\sub s}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Shell thickness_\par 
+t{_\sub c}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Channel thickness_\par 
+_\par W_\tab =_\tab #########.##  [N]_\tab #########.## [lb]_\tab max(W{_\sub c},W{_\sub s})_\par 
+A{_\sub L}_\tab =_\tab #########.## [mm{_\super 2}]_\tab #######.#### [in{_\super 2}]_\tab Total area of untubed lanes_\par
+d_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Diameter of tube hole_\par
+Tubes extend through the tubesheet (Fig. UHX-11.1(b))\par 
+Tubes welded to the backside of the tubesheet (Fig. UHX-11.1(d))\par 
+c{_\sub t}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Tube corrosion_\par

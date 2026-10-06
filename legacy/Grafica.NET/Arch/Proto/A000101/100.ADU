@@ -1,0 +1,29 @@
+ 139          ,CODICE MATERIALE
+518203-TU-000 ,N. DOCUMENTO
+Rev.00        ,N. REVISIONE
+518203        ,N. COMMESSA
+SI            ,SI= MINIMUM WALL  NO= AVERAGE
+NO            ,INOX O SPECIALE=SI  ALTRIMENTI=NO
+B             ,TIPO PASSO A= TRI.  B=QUA.  C= TRI. RUOT.  D=Q.RUOT.  E=LIBERO
+25.4          ,DIAMETRO ESTERNO TUBO
+2.77          ,SPESSORE TUBO
+4620          ,LUNGH. RETTILINEA
+0             ,INCREMENTO CHIOMA
+31.85         ,PASSO
+1             ,NUMERO GRUPPI
+38.1          ,RAGGIO MEDIO MINIMO
+4620          ,LUNGHEZZA RETTILINEA
+12            ,NUMERO FILE
+30            ,1¦ FILA
+30            ,2¦ FILA
+30            ,3¦ FILA
+30            ,4¦ FILA
+28            ,5¦ FILA
+28            ,6¦ FILA
+26            ,7¦ FILA
+26            ,8¦ FILA
+24            ,9¦ FILA
+22            ,10¦ FILA
+22            ,11¦ FILA
+16            ,12¦ FILA
+

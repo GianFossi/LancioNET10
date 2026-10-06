@@ -1,0 +1,167 @@
+stop1                                                                           1000
+(     '\par (ref:Brownell-Young,EQUIPMENT DESIGN,Wiley & Sons,London',/5H\par , 1000
+      '   \par \par ',/                                                         1000
+      '\par \pard \s18\qj\li1134\ri4536\widctlpar\box\brdrs\brdrw30\brsp20',/   1000
+      '    CALCULATION OF ',A6,' ROTATION ',/                                   1000
+      '\par     1st sheet : pressurised cond.',/                                1000
+      '\par \pard \s18\qj\widctlpar\tx4536')                                    1000
+stop2                                                                           1
+(       5H\par ,     5X,'Job  :    ',A24,/5H\par ,5X,'Item :  ',A24,/)          1100
+stop3                                                                           1
+('\par \pard \s18\qj\widctlpar\tx5245 ',                                        1
+'\par FLANGE MATERIAL\tab :',A24,/                                              1
+'\par DESIGN TEMPERATURE (TEST TEMP.) [\''b0C]    T\tab =',F10.4,/              1
+'\par DESIGN PRESSURE(TEST PRES.)    [MPa]    P\tab =',F10.3,/                  1
+'\par FLANGE INSIDE DIAMETER          [mm]    B\tab =',F10.2,/                  1
+'\par FLANGE OUTSIDE DIAMETER         [mm]    A\tab =',F10.2,/                  1
+'\par FLANGE THICKNESS                [mm]    t\tab =',F10.2,/                  1
+'\par HUB MINIMUM THICKNESS           [mm]    g{\sub 0}\tab =',F10.2,/          1
+'\par HUB MAXIMUM THICKNESS           [mm]    g{\sub 1}\tab =',F10.2,/          1
+'\par HUB LENGTH                      [mm]    h\tab =',F10.2,/                  1
+'\par FLANGE ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par BOLTS  ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par POISSON''S RATIO                 [--]    ',/                              1
+'{{\field{\*\fldinst SYMBOL 110 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}',       1
+'\tab = 0.3\par TARGET BOLT LOAD UNDER PRESS.  [N]     W{\sub m}\tab =',F10.0/  1
+'\par FLANGE MOMENT UNDER PRESS.     [N.mm]   M{\sub 1}\tab =',E10.5)           1
+stop4                                                                           1
+            ('\par \pard \s18\qj\widctlpar\tx2977 '                             1
+'\par W{\sub 0}=2M{\sub 1}/(A-B)\tab =',E12.7/                                  1
+'\par g{\sub 1}/g{\sub 0}\tab =',F9.3/                                          1
+'\par h{\sub 0}='/                                                              1
+'{{\field{\*\fldinst SYMBOL 214 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}'/       1
+'(B*g{\sub 0})\tab =',F9.3/                                                     1
+'\par h/h{\sub 0}\tab =',F9.3/                                                  1
+'\par F\tab =',F9.3,' (from FIG.12.20)',/,                                      1
+'\par V\tab =',F9.3,' (from FIG.12.20)\par ')                                   1
+stop5                                                                           1
+            ('\par ',5X,                                                        1
+    '\par            (K^2)-1              B*psi             W1',/,              1
+    '\par  A1  = --------------- * -------------------- * ------ *',/,          1
+    '\par        (1+v)             (1+alpha)^3*E*go*h^2   4*3.14',/,            1
+    '\par        ----- *(K^2)+1',/,                                             1
+    '\par        (1-v)',/,                                                      1
+    '\par                        1+v      K^2',/,                               1
+    '\par                 0.5+( ----- )*( ----- )*lnK',/,                       1
+    '\par                        1-v      K^2-1',/,                             1
+    '\par      * --------------------------------------------  =',F12.6         1
+      ,/,                                                                       1
+    '\par                t/go      (1+v)*(K^2-1)*(t/go)^3',/,                   1
+    '\par            1+-------*F + ----------------------- * V',/,              1
+    '\par              SQR(B/go)               1+v',/,                          1
+    '\par                          SQR(B/go)*(-----*K^2+1)',/,                  1
+    '\par                                      1-v',//,5X,                      1
+      'Slope of the middle surface at the inner edge of the ring,theta:'        1
+      ,/,                                                                       1
+    '\par                 B      3*(1-v^2)',/,                                  1
+    '\par theta= A1*  --------*[-----------]^0.25*(1+v)^3 * V  =',F12.6         1
+      ,' (rad)',/,                                                              1
+    '\par               2*h         psi',/,                                     1
+    '\par                                                      =',F12.6         1
+      ,' (deg)',/,                                                              1
+    '\par NOTE: A1 from formula (12.56),theta from formula (12.54)')            1
+stop6                                                                           1
+('\par \pard \s18\qj\widctlpar\tx5245 ',                                        1  
+'\par FLANGE MATERIAL\tab :',A24,/                                              1
+'\par DESIGN TEMPERATURE (TEST TEMP.) [\''b0C]    T\tab =',F10.1,/              1
+'\par DESIGN PRESSURE(TEST PRES.)    [MPa]    P\tab =',F10.3,/                  1
+'\par FLANGE INSIDE DIAMETER          [mm]    B\tab =',F10.2,/                  1
+'\par FLANGE OUTSIDE DIAMETER         [mm]    A\tab =',F10.2,/                  1
+'\par FLANGE THICKNESS                [mm]    t\tab =',F10.2,/                  1
+'\par FLANGE WITHOUT HUB                         ',      /                      1
+'\par FLANGE ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par BOLTS  ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par TARGET BOLT LOAD UNDER PRESS.    [N]    W{\sub m}\tab =',F10.0/           1
+'\par FLANGE MOMENT UNDER PRESS.    [N.mm]    M{\sub 1}\tab =',E10.5)           1
+stop7                                                                           1
+            (5X,                                                                1
+      'Slope of the middle surface at the inner edge of the ring,theta:'        1
+      ,/,                                                                       1
+    '\par                 M           1   ',/,                                  1
+    '\par theta=  6 * --------- * ---------                    =',F12.6         1
+      ,' (rad)',/,                                                              1
+    '\par              ã*E*t^3     ln(A/B)          ',/,                        1
+    '\par                                                      =',F12.6         1
+      ,' (deg)')                                                                1
+stop8                                                                           1
+('\par \pard \s18\qj\widctlpar\tx5245 ',                                        1
+'\par COVER  MATERIAL\tab :',A24,/                                              1
+'\par DESIGN TEMPERATURE (TEST TEMP.) [\''b0C]    T\tab =',F10.1,/              1
+'\par DESIGN PRESSURE(TEST PRES.)[Kgf/mm{\super 2}]    P\tab =',F10.1,/         1
+'\par COVER  OUTSIDE DIAMETER         [mm]    A\tab =',F10.2,/                  1
+'\par GASKET MEAN DIAMETER            [mm]    G\tab =',F10.2,/                  1
+'\par COVER  THICKNESS                [mm]    t\tab =',F10.2,/                  1
+'\par FLANGE ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par BOLTS  ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par TARGET BOLT LOAD UNDER PRESS.    [N]    W{\sub m}\tab =',F10.0)           1
+stop9                                                                           1
+            ('\par \par ',                                                      1
+      'Slope of cover surface at the gasket diameter, '                         1
+      ,'{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}'   1
+    ':\par ')                                                                   1
+stop10                                                                          1
+     ('\tab =',F9.3,' (hub modulus)\par ')                                      1
+stop11                                                                          1
+     ('\tab =',F9.3,' (hub taper factor)\par ')                                 1
+stop12                                                                          1
+     ('\tab =',F9.3,'\par ')                                                    1
+stop13                                                                          1
+     ('\par \par A{\sub 1}\tab =',F12.6,'\par \par '/                           1
+     'Slope of flange surface at the gasket diameter:\par ')                    1
+stop14                                                                          1
+     ('\tab =',F12.6,' (rad)\par \tab =',F12.6,' (deg)\par \par '/              1
+     ' NOTE: A{\sub 1} from formula (12.56), ',                                 1
+     '{{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}',  1
+     ' from formula (12.54)\par ')                                              1
+stop15                                                                          1
+   ('\par (This formula has been derived from RCB-9.21)\par ',                  1
+    '\par {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}',1
+    ' =',F12.6,' (rad)',/,                                                      1
+    '\par {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}',1
+    ' =',F12.6,' (deg)\par ')                                                   1
+stop16                                                                          1
+('\par \pard \s18\qj\widctlpar\tx5245 ',                                        1
+'\par TUBESHEET  MATERIAL\tab :',A24,/                                          1
+'\par DESIGN TEMPERATURE (TEST TEMP.) [\''b0C]    T\tab =',F10.1,/              1
+'\par DESIGN PRESSURE(TEST PRES.)    [MPa]    P\tab =',F10.3,/                  1
+'\par TUBESH OUTSIDE DIAMETER         [mm]    A\tab =',F10.2,/                  1
+'\par BOLT CIRCLE DIAMETER            [mm]    C\tab =',F10.2,/                  1
+'\par GASKET MEAN DIAMETER            [mm]    G\tab =',F10.2,/                  1
+'\par TUBESH THICKNESS                [mm]    t\tab =',F10.2,/                  1
+'\par TUBESH EXTENSION THICKNESS      [mm]    t{\sub e}\tab =',F10.2,/          1
+'\par INTEGRAL SHELL THICKNESS        [mm]    t{\sub s}\tab =',F10.2,/          1
+'\par TUBESH ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par BOLTS  ELASTIC MODULUS         [MPa]    E\tab =',F10.0,/                  1
+'\par TARGET BOLT LOAD UNDER PRESS.    [N]    W{\sub m}\tab =',F10.0,/          1
+'\par \par Effective elastic constants, calculated with div.1 UHX-11.5',/       1
+'\par Equivalent Young''s modulus ratio[--]   E{\super *}/E\tab =',F15.4,/      1
+'\par Equivalent Poisson modulus      [--]   {\field{\*\fldinst SYMBOL 110 ',   1
+'\\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}{\super *}\tab =',F15.4)                 1
+stop17                                                                          1
+            ('\par \par ',                                                      1
+      'Slope of tubesheet surface at the gasket diameter, '                     1
+      ,'{\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}'   1
+    ':\par ')                                                                   1
+stop18                                                                          1
+            ('\par ',                                                           1
+      'with (from ASME VIII div.2, App. 4, art. 4-540): '                       1
+'\par f, thickness ratio ratio        [--]   t{\sub s}/(E{\super *}R)\tab =',   1
+F15.4,/'\par ')                                                                 1
+stop19                                                                          1
+(F15.4,'\par ')                                                                 1
+stop20                                                                          1
+   ('\par {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}',1
+    ' =',F12.6,' (rad)',/,                                                      1
+    '\par {\field{\*\fldinst SYMBOL 113 \\f "Symbol" \\s 9}{\fldrslt\f3\fs18}}',1
+    ' =',F12.6,' (deg)\par ')                                                   1
+stop21
+   ('\par K = A/G\tab =',F15.4,'\par h{\sub G} = (C-G)/2\tab =',F15.4,'\par ')  1
+stop22                                                                          1000
+(     '\par (ref:  ASME VIII-div.1 Part UHX and div.2 App.4         ',/5H\par , 1000
+      '   \par \par ',/                                                         1000
+      '\par \pard \s18\qj\li1134\ri4536\widctlpar\box\brdrs\brdrw30\brsp20',/   1000
+      '    CALCULATION OF ',A6,' ROTATION ',/                                   1000
+      '\par     1st sheet : pressurised cond.',/                                1000
+      '\par \pard \s18\qj\widctlpar\tx4536')                                    1000
+stop                                                                            1
+

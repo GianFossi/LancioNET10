@@ -1,0 +1,20 @@
+\par
+        {{_\field{_\*_\fldinst SYMBOL 109 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}  = R{_\sub m}/T  =###.###
+ to determine K{\sub c},C{\sub c},K{\sub L},C{\sub L} Coeff.)
+        {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 1} = c{_\sub 1}/R{_\sub m} =###.###
+        {{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 2} = c{_\sub 2}/R{_\sub m} =###.###
+        ({{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 1}/{{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 2})    =###.###
+        ({{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 2}/{{_\field{_\*_\fldinst SYMBOL 98 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}}{_\sub 1})    =###.###
+     & for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (P) =###.###
+     & for N{_\sub x} (P) =###.###
+     & for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (P) =###.###
+     & for M{_\sub x} (P) =###.###
+     K{_\sub c} for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (M{_\sub c})=###.###
+     K{_\sub c} for M{_\sub x} (M{_\sub c})=###.###
+     C{_\sub c} for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (M{_\sub c})=###.###
+     C{_\sub c} for N{_\sub x} (M{_\sub c})=###.###
+     K{_\sub L} for M{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (M{_\sub L})=###.###
+     K{_\sub L} for M{_\sub x} (M{_\sub L})=###.###
+     C{_\sub L} for N{_\sub {_\field{_\*_\fldinst SYMBOL 106 _\_\f "Symbol" _\_\s 9}{_\fldrslt_\f1_\fs18}}} (M{_\sub L})=###.###
+     C{_\sub L} for N{_\sub x} (M{_\sub L})=###.###
+

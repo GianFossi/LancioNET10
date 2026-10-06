@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Generalit&agrave;">
+		<param name="Local" value="Generalita.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Panoramica">
+			<param name="Local" value="Panoramica.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Istallazione">
+			<param name="Local" value="Istallazione.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="La Finestra iniziale">
+			<param name="Local" value="FinestrIniziale.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aree di lavoro">
+			<param name="Local" value="Aree.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Funzionamento in rete">
+			<param name="Local" value="FunzRete.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Autenticazione Utente">
+			<param name="Local" value="Autenticazione.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Requisiti di sistema">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internet Explorer">
+			<param name="Local" value="IE.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Risoluzione dello schermo">
+			<param name="Local" value="Risoluzione.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impostazioni internazionali">
+			<param name="Local" value="Lingua.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Separatore decimale">
+			<param name="Local" value="SepDec.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Word per Windows">
+			<param name="Local" value="Word.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AutoCAD">
+			<param name="Local" value="AutoCAD.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Il menu">
+		<param name="Local" value="Menu.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'File'">
+			<param name="Local" value="mnuFile.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'Calcoli Meccanici'">
+			<param name="Local" value="mnuCalcMecc.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'Tracciature'">
+			<param name="Local" value="mnuTrac.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'Librerie termiche'">
+			<param name="Local" value="mnuTerm.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'Librerie meccaniche'">
+			<param name="Local" value="mnuMecc.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menu 'Preferenze'">
+			<param name="Local" value="mnuPref.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I pulsanti">
+		<param name="Local" value="Pulsanti.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Le Banche dati">
+		<param name="Local" value="BancheDati.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Libreria materiali">
+			<param name="Local" value="LibreriaMateriali.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="EN-13445">
+				</OBJECT>
+			<OBJECT type="text/sitemap">
+				<param name="Merge" value="EuroNorm.chm::\EuroNorm.hhc">
+
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Errori in esecuzione">
+				<param name="Local" value="ErrLibMat.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabelle non caricate">
+					<param name="Local" value="ErrLibMatNoTabelle.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Temperatura eccessiva">
+					<param name="Local" value="ErrLibMatNoDiv1.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca ammissibile a caldo">
+					<param name="Local" value="MsgAmmissC.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca ammissibile a freddo">
+					<param name="Local" value="MsgAmmissF.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca snervamento a caldo">
+					<param name="Local" value="MsgSnervC.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca snervamento a freddo">
+					<param name="Local" value="MsgSnervF.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca modulo elastico">
+					<param name="Local" value="msgYoung.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Manca coefficiente di espansione termica">
+					<param name="Local" value="msgAlfa.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nessuna registrazione di offerte">
+					<param name="Local" value="ErrLibMatNoPrezzi.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Caratteristica di materiale indefinito">
+					<param name="Local" value="ErrLibMatNoIndMat.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella dei  moduli elastici non definita">
+					<param name="Local" value="ErrLibMatEmodAlt1.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella dei moduli elastici non compilata">
+					<param name="Local" value="ErrLibMatEmodAlt2.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella dei coefficienti di dilatazione termica non definita">
+					<param name="Local" value="ErrLibMatAlfaTer1.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella dei coefficienti di dilatazione termica non compilata">
+					<param name="Local" value="ErrLibMatAlfaTer2.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella delle pressure ratings non definita">
+					<param name="Local" value="ErrLibMatLegRat1.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tabella delle pressure ratings non compilata">
+					<param name="Local" value="ErrLibMatLegRat2.htm">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Libreria flange">
+				<param name="Local" value="LibreriaFlange.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Libreria tiranti">
+				<param name="Local" value="Librtir.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Libreria piping">
+				<param name="Local" value="Librpip.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Libreria guarnizioni">
+				<param name="Local" value="Librguarn.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Libreria tubi di scambio">
+				<param name="Local" value="Librtubi.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Organizzazione dei progetti">
+			<param name="Local" value="OrgProgetti.htm">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Errori in esecuzione">
+		<param name="Local" value="Errori.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Problemi con il file LANCIO.INI">
+			<param name="Local" value="Lancioini.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Informazioni non corrette in LANCIO.INI">
+			<param name="Local" value="Checkdir.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impossibile trovare AUTOEXEC.BAT">
+			<param name="Local" value="AutoExecBat.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impossibile trovare AUTOEXEC.NT">
+			<param name="Local" value="AutoExexNT.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Problemi con la stampante predefinita">
+			<param name="Local" value="ErrStampante.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Manuale del programmatore">
+		<param name="Local" value="ISML.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+</UL>
+</BODY></HTML>

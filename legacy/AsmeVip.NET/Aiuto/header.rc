@@ -1,0 +1,180 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "header.h"
+#include "C:\Documenti\EuroNorm\header.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+//#ifdef _WIN32
+//LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+//#pragma code_page(1252)
+//#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""header.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_CAPIENZACONDIZIONI  "Non è possibile passare al calcolo a pressione differenziale|in quanto sono già state specificate più di sei condizioni di carico."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_ELEMENTODUPLICATO   "Non sono ammessi più di un set di tubi di scambio e più di una piastra tubiera."
+    IDH_MANCAASMELIB        "Non è stato possibile trovare la libreria AsmeLib.dll"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_MANCAGEOMFLANGIA    "Non sono stati definiti alcuni dei dati necessari per il calcolo di ottimizzazione"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_MANCAAMMISS         "Non sono definiti correttamente gli ammissibili dei materiali coinvolti"
+    IDH_MANCAGUARNIZ        "La guarnizione non è correttamente definita"
+    IDH_MANCAMANTDIL        "Non è noto il materiale della membratura a cui è collegato il dilatatore"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_MANCATABMAWP        "E' necessario compilare prima la tabella delle MAWP"
+    IDH_MANCATABMAT         "E' necessario compilare prima la tabella dei materiali"
+    IDH_MANCAINDMAT         "Il materiale per il bocchello & |non è stato correttamente definito. E' impossibile continuare.|Accedere alla finestra dei dati e premere il pulsante del materiale."
+    IDH_CODICIDIVERSI       "Sono stati specificati codici di calcolo distinti|tra lato tubi e lato mantello."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_MDMT1               "Per il materiale & non sono definite le regole applicabili al progetto a bassa tempereatura."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_PT_GUAR_N           "Non è definita la larghezza della guarnizione|sul giunto flangiato della piastra tubiera."
+    IDH_PT_GUAR_D           "Non è definito il diametro medio della guarnizione|sul giunto flangiato della piastra tubiera."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_PT_AA_DIAMEXT       "Non è stato definito il diametro|esterno della piastra tubiera,|oppure è stato definito in modo incongruo."
+    IDH_PT_NOOPTIM          "Il calcolo di ottimizzazione non può essere effettuato."
+    IDH_PT_DATITUBI         "Uno o più dei dati seguenti non è correttamente definito:|passo dei tubi;|diametro dei tubi;|spessore dei tubi;|Outer Tube Limit."
+    IDH_PT_LEGAMI1          "   Le informazioni relative alle membrature cui questa|piastra tubiera è accoppiata sono inesatte.|   Vuoi procedere comunque?"
+    IDH_PT_LEGAMI2          "   Le membrature cui questa piastra tubiera è accoppiata|non sono state completamente identificate.|   Vuoi procedere comunque?"
+    IDH_PT_LEGAMI3          "La flangia del fondo flottante è stata accoppiata in modo errato."
+    IDH_PT_LEGAMI4          "La flangia del fondo flottante non è stata accoppiata ad alcuna membratura."
+    IDH_PT_LEGAMI5          "Non è stato inserito un fascio tubiero di tipo a testa flottante,|ma è stata inserita una flangia per il fondo flottante." 
+    IDH_PT_NOMANTELLO       "Non è stata definita la membratura collegata a questa|piastra tubiera lato mantello. Di conseguenza non|si possono calcolare le caratteristiche fisiche|del materiale del mantello."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_DIL_DANNOMANTELLO   "   Sono superati i limiti ammissibili nella sezione|N° 1 (mantello).|   Non necessariamente, quindi, il dilatatore è inadeguato."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_ST_NOANSIB165       "La flangia di questo bocchello appartiene allo standard &.|Si vuole procedere alla verifica secondo App.2?"
+    IDH_ST_NOWELDINGNECK    "La flangia di questo bocchello non è di tipo WN.|Si vuole procedere alla verifica secondo App.2?"
+    IDH_ST_HYDRDEPTHH       "E' stata selezionata la prova idraulica in orizzontale,|ma non è stato definito il diametro dell'apparecchio.|Fornire la profondità idrostatica in prova idraulica|in millimetri"
+    IDH_ST_HYDRDEPTHV       "E' stata selezionata la prova idraulica in verticale,|ma non è stata definita la profondità idrostatica.|della membratura &.|Fornire il valore in millimetri."
+    IDH_ST_PI1              "I valori delle pressioni di prova idraulica precedentemente registrati sono:"
+    IDH_ST_PI2              "#######.## [psi] lato mantello, e #######.## [psi] lato tubi."
+    IDH_ST_PI3              "I valori attualmente calcolati sono:"
+    IDH_ST_PI4              "Se si risponde OK i valori precedenti verranno scartati:|sarà opportuno verificare nuovamente i giunti flangiati e|ricompilare la tabella dei dati di progetto."
+    IDH_ST_PI1a             "Il valore della pressione di prova idraulica precedentemente registrato è:"
+    IDH_ST_PI2a             "#######.## [psi];  ######.### [MPa]"
+    IDH_ST_PI3a             "Il valore attualmente calcolato è:"
+    IDH_ST_PI4a             "Se si risponde OK il valore precedente verrà scartato:|sarà opportuno verificare nuovamente i giunti flangiati e|ricompilare la tabella dei dati di progetto."
+    IDH_ST_TUBESHNO         "Attenzione: uno più limiti ammissibili applicabili|al fascio tubiero non sono rispettati.||Il fattore di danno è pari a ####.## _%.|Vuoi correggere qualche dato e ripassare il calcolo?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_OP2_SCARPA          "Questo dato è ininfluente nel presente contesto."
+    IDH_OP2_SCARPA2         "Fornire il diametro esterno della scarpa, in corrispondenza della saldatura al mantello."
+    IDH_OP2_TEMPRANGE       "Fornire l'intervallo di variazione della temperatura di esercizio."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_XH_NONUNIFORM       "Il dato inserito per la temperatura di progetto|della membratura & potrebbe risultare inattivo."
+    IDH_WN_NOCONVER         "Il calcolo delle MAWP non ha raggiunto la convergenza."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_TUB_AXIAL1          "Tensione assiale primaria coincidente con pressione interna"
+    IDH_TUB_AXIAL2          "Tensione assiale prim+sec coincidente con pressione interna"
+    IDH_TUB_AXIAL3          "Tensione assiale primaria coincidente con pressione esterna"
+    IDH_TUB_AXIAL4          "Tensione assiale prim+sec coincidente con pressione esterna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDH_TUB_AXIAL5          "Fornire i carichi assiali agenti sui tubi|al fine del calcolo della tensione equivalente|(tensione tangenziale massima, ovvero criterio di Tresca)."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+EU_TESTINGGROUP1 "Testing Group 1 (z=1.00)"
+EU_TESTINGGROUP2 "Testing Group 2 (z=1.00)"
+EU_TESTINGGROUP3 "Testing Group 3 (z=0.85)"
+EU_TESTINGGROUP4 "Testing Group 4 (z=0.70)"
+EU_TESTINGGROUP5 "Unwelded part   (z=1.00)"
+END
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

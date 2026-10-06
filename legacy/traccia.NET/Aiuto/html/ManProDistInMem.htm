@@ -1,0 +1,471 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProDistInMem_file/filelist.xml">
+<title>Subroutine DistInMem</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
+  <o:Created>2000-12-21T20:51:00Z</o:Created>
+  <o:LastSaved>2000-12-21T20:51:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>554</o:Words>
+  <o:Characters>3158</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3878</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+<H1>Subroutine DistInMem</H1>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>                        </span>Leonardo Presciuttini</p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                        </span>28/05/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Crea una lista ordinata dei fori
+(caratterizzati dalle coordinate (<i>PuntiD</i>),<span style="mso-spacerun:
+yes">  </span>dal numero di fila (<i>Fila</i>), dal numero di settore (<i>Settore</i>),
+dalla distanza dal centro (<i>DistCentro</i>) e dalla posizione nel record buc
+(<i>Posizbu</i>)). Il criterio di ordinamento è in prima istanza la distanza
+dal centro decrescente. In seconda istanza, per tutti i fori aventi pari
+distanza dal centro (tolleranza di uguaglianza 0,1 mm) il criterio di
+ordinamento prevede che, ove possibile, due fori, uno successivo all’altro, non
+devono appartenere allo stesso quadrante. <span style="mso-spacerun:
+yes"> </span></p>
+
+<p class=MsoNormal style='text-indent:0cm'>Chiamata da <A href="ManProBilancio.htm">Bilancio</A>.</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Listato</b>:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Sub DistInMem()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">      
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Dim iDat As Integer, iTubo As Integer, ntubi As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Dim k As Integer, j As Integer, nnn As
+Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Dim x As Single, y As Single, iCod As
+Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Dim i As Integer, ii As Integer, iS1 As
+Integer, iS2 As Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>For iDat = 0 To 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span></span><span style='font-family:"Times New Roman"'>Tracciatura.LungPIP
+= iDat + 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">      
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>iTubo = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>For k = 1 To DaTos(iDat).nset<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>For j = DaTos(iDat).inrow(k) To
+DaTos(iDat).iFrow(k)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If j &gt; 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>Get #Tracciatura.File5, j,
+DaTos(iDat).bu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span><span style="mso-spacerun:
+yes">   </span>For nnn = 1 To DaTos(iDat).bu.ici<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                    </span>Call <A href="ManProCoorXY.htm">CoorXY</A>(iDat, j, nnn,
+x, y, iCod)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                    </span>If iCod = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>iTubo = iTubo + 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>PuntiD(iTubo, iDat).x = x<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span></span><span lang=FR style='font-family:
+"Times New Roman";mso-ansi-language:FR'>PuntiD(iTubo, iDat).y = y<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">                       </span>DistCentro(iTubo, iDat)
+= Sqr(x * x + y * y)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>Fila(iTubo, iDat) = j<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>Posizbu(iTubo, iDat) = nnn<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>Settore(iTubo, iDat) = k<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                    </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span><span style="mso-spacerun:
+yes">              </span>Next nnn<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">           </span>Next j<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Next k<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>ntubi = iTubo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>For iTubo = 1 To ntubi - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span></span><span style='font-family:
+"Times New Roman"'>Monitor.Motore.Avanzamento = (iTubo + ntubi * iDat) / 2 /
+ntubi * 0.5 * 100<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">         
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>For i = iTubo + 1 To ntubi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">  </span><span style="mso-spacerun:
+yes">            </span>If iTubo &lt;&gt; i Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>If iDat = 0 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                     </span>If DistCentro(iTubo,
+iDat) &lt; DistCentro(i, iDat) Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>ii = i: GoSub Scambia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                   </span><span style="mso-spacerun:
+yes">  </span>If DistCentro(iTubo, iDat) &lt; DistCentro(i, iDat) Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>ii = i: GoSub Scambia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                     </span></span><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                  </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>For iTubo = 1 To ntubi - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span></span><span style='font-family:
+"Times New Roman"'>Monitor.Motore.Avanzamento = (0.5 + (iTubo + ntubi * iDat) /
+2 / ntubi) * 0.3 * 100<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">         
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>For i = iTubo + 1 To ntubi<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>If Abs(DistCentro(i, iDat) -
+DistCentro(iTubo, iDat)) &lt; 0.1 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>Else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                    </span>If i &gt; iTubo + 3 Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     </span><span style="mso-spacerun:
+yes">                  </span>For j = iTubo To i - 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>iS1 =
+<A href="ManProiSector.htm">iSector</A>(PuntiD(j, iDat))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>For k = j + 1 To i<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>iS2 =
+<A href="ManProiSector.htm">iSector</A>(PuntiD(k, iDat))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>If iOkk(iS1, iS2)
+Then Exit For<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                            </span>If k &gt; j + 1
+Then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                               </span></span><span
+style='font-family:"Times New Roman"'>iTubo = k: ii = j + 1: GoSub Scambia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                            </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                       </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                    </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">         </span><span style="mso-spacerun:
+yes">        </span>iTubo = i<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">                 </span>Exit For<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">              </span>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">          </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Next<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Next iDat<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span>Tracciatura.LungPIP = 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">       </span></span><span style='font-family:"Times New Roman"'>apri5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Exit Sub<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'>Scambia:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>SWAP PuntiD(iTubo, iDat).x, PuntiD(ii,
+iDat).x<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">               </span><span style="mso-spacerun: yes">        </span></span><span
+lang=FR style='font-family:"Times New Roman";mso-ansi-language:FR'>SWAP
+PuntiD(iTubo, iDat).y, PuntiD(ii, iDat).y<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">                       </span></span><span
+style='font-family:"Times New Roman"'>SWAP DistCentro(iTubo, iDat),
+DistCentro(ii, iDat)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>SWAP Fila(iTubo, iDat), Fila(ii, iDat)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>SWAP Posizbu(iTubo, iDat), Posizbu(ii, iDat)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">                       </span>SWAP Settore(iTubo, iDat), Settore(ii, iDat)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>Return<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>End
+Sub</span></p>
+
+</div>
+
+</body>
+
+</html>

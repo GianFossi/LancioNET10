@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cicli">
+		<param name="Name" value="Calcolo di P.T./fasci tubieri">
+		<param name="Local" value="PTCalc.htm#Eventi">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cono">
+		<param name="Name" value="Cono">
+		<param name="Local" value="Cono.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="eventi">
+		<param name="Local" value="PTCalc.htm#Eventi">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fatica">
+		<param name="Local" value="PTCalc.htm#Eventi">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pressione differenziale">
+		<param name="Local" value="DatiProgettoPT.htm#PressDiff">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cilindro">
+		<param name="Name" value="Cilindro">
+		<param name="Local" value="Cilindro.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="lati (di un apparecchio)">
+		<param name="Local" value="NumLati.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dilatatore">
+		<param name="Name" value="Dilatatore">
+		<param name="Local" value="Dilatatore.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="conoide">
+		<param name="Name" value="Conoide">
+		<param name="Local" value="Conoide.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="piastre di diverso spessore">
+		<param name="Local" value="DatiGenPT.htm#Diverse">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ratings">
+		<param name="Name" value="Pressure-temperature ratings">
+		<param name="Local" value="Ratings.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="prova idraulica">
+		<param name="Name" value="Pannello dei Risultati">
+		<param name="Local" value="ProvIdr.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="flange">
+		<param name="See Also" value="flange">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dei bocchelli">
+			<param name="Name" value="Calcolo della flangia dei bocchelli">
+			<param name="Local" value="CalcFlBocc.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="principali (dati)">
+			<param name="Name" value="Grande Fucinato">
+			<param name="Local" value="GrFuc.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="principali (calcolo)">
+			<param name="Name" value="Calcolo di un Grande Fucinato">
+			<param name="Local" value="GrFucCalc.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="elementi">
+		<param name="See Also" value="elementi">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(vedi membrature)">
+			<param name="See Also" value="membrature">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="membrature">
+		<param name="See Also" value="membrature">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tipi previsti">
+			<param name="See Also" value="tipi previsti">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="diaframma saldato">
+				<param name="Name" value="Diaframma saldato">
+				<param name="Local" value="CalcDiafrSald.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cilindro">
+				<param name="Name" value="Cilindro">
+				<param name="Local" value="Cilindro.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cono">
+				<param name="Name" value="Cono">
+				<param name="Local" value="Cono.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="conoide">
+				<param name="Name" value="Conoide">
+				<param name="Local" value="Conoide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="tiranti">
+				<param name="Local" value="SerrBull.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="tubi di scambio">
+				<param name="Name" value="Tubi di scambio">
+				<param name="Local" value="Tubi.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="dilatatore">
+				<param name="Name" value="Dilatatore">
+				<param name="Local" value="Dilatatore.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="grande fucinato">
+				<param name="Name" value="Grande Fucinato">
+				<param name="Local" value="GrFuc.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inserimento">
+			<param name="Name" value="Menu Dati">
+			<param name="Local" value="mnuDati.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="norme di calcolo">
+		<param name="Name" value="Dati Generali">
+		<param name="Local" value="DatiGenerali.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Appendice AA (Piastre tubiere)">
+			<param name="Name" value="Calcolo di P.T./fasci tubieri">
+			<param name="Local" value="PTCalc.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Appendice A (giunto tubo-piastra)">
+			<param name="Name" value="Tubi di scambio">
+			<param name="Local" value="Tubi.htm#TipoGiunto">
+			<param name="URL" value="tubi.htm#TipoGiunto">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UW-20 (saldatura tubo-piastra)">
+			<param name="Name" value="Tubi di scambio">
+			<param name="Local" value="Tubi.htm#Calcola">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UG-99 (prova idraulica)">
+			<param name="Local" value="ProvIdr.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

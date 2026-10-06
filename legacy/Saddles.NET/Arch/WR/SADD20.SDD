@@ -1,0 +1,38 @@
+><\WR\FIGC.SDD><\par \par \pard \s15\qj\widctlpar\tx4835\tx7438\tqr\tx|####| Geometric dimensions :
+><\WR\FIGI.SDD><\par \par \pard \s15\qj\widctlpar\tx4835\tx7438\tqr\tx|####| Geometric dimensions :
+- saddle length     \tab L=\tab mm\tab |######.00|
+- sadlle width      \tab H=\tab mm\tab |######.00|
+- longitudinal rib thk \tab t{\sub L}=\tab mm\tab |######.00|
+- transversal ribs thk \tab t{\sub H}=\tab mm\tab |######.00|
+- rib distance \tab D
+\tab mm\tab |######.00|
+- total number of ribs \tab N=\tab \tab |##|
+Material : 
+Design stress intensity \tab f=\tab MPa\tab |######.00|
+Loads:
+- vertical force    \tab F{\sub z}=\tab N\tab |########.00|
+- shear transversal force \tab F{\sub x}=\tab N\tab |########.00|
+- shear longitudinal force \tab F{\sub y}=\tab N\tab |########.00|
+- Torque noment     \tab M{\sub z}=\tab N.m\tab |########.00|
+- Transversal moment \tab M{\sub x}=\tab N.m\tab |########.00|
+- Longitudinal moment \tab M{\sub y}=\tab N.m\tab |########.00|
+Geometric properties:
+- cross area \tab A{\sub z}=\tab mm{\super 2}\tab |######.00|
+- shear transversal area \tab A{\sub x}=\tab mm{\super 2}\tab |######.00|
+- shear longitudinal area \tab A{\sub y}=\tab mm{\super 2}\tab |######.00|
+- Torsional constant \tab J{\sub z}=\tab mm{\super 4}\tab |#.#####E+00|
+- Moment of inertia \tab I{\sub x}=\tab mm{\super 4}\tab |#.#####E+00|
+- Moment of inertia \tab I{\sub y}=\tab mm{\super 4}\tab |#.#####E+00|
+Stress components : 
+- Average normal stress\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub z}(F{\sub z})=\tab MPa\tab |######.00|
+- Bending stress \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub z}(F{\sub x})=\tab MPa\tab |######.00|
+- Bending stress \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub z}(F{\sub y})=\tab MPa\tab |######.00|
+- Shear stress for torsion\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub xy}(M{\sub z})=\tab MPa\tab |######.00|
+- Shear stress for lateral load\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub xz}(F{\sub x})=\tab MPa\tab |######.00|
+- Shear stress for lateral load\tab {{\field{\*\fldinst SYMBOL 116 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub yz}(F{\sub y})=\tab MPa\tab |######.00|
+Stress intensity :
+- Equivalent stress\tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}=\tab MPa\tab |######.00|
+- Allowable stress\tab f=\tab MPa\tab |######.00|
+  {\b acceptable stresses}
+  {\b unacceptable stresses}
+

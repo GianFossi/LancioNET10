@@ -1,0 +1,8 @@
+\par AA-1.6.2 Additional Nomenclature\par \par \par
+D{_\sub I}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Dia. of cylinder integral with TS_\parF00
+E{_\sub I}_\tab =_\tab ########.# [MPa]_\tab #######.#### [ksi]_\tab Elastic modulus of the same_\parF01
+S{_\sub I}_\tab =_\tab #####.#### [MPa]_\tab #######.#### [psi]_\tab All.Des.Stress of the same_\parF04
+t{_\sub I}_\tab =_\tab #########.## [mm]_\tab #######.#### [in]_\tab Thickness of the same_\parF00
+P{_\sub G}_\tab =_\tab ########.# [MPa]_\tab #######.#### [psi]_\tab Pressure acting on gasketed side_\parF02
+P{_\sub I}_\tab =_\tab ########.# [MPa]_\tab #######.#### [psi]_\tab Pressure acting on integral side_\parF03
+W_\tab =_\tab ########.# [kN]_\tab ##########.# [lb]_\tab Flange design bolt load_\parF02

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Dati Generali</Title>
+</HEAD>
+<BODY>
+<H1>Dati Generali</H1>
+<P>A seguito della creazione di un nuovo progetto o dell'apertura di un progetto esistente (menu 'File/Apri') appare automaticamente la finestra seguente (essa può essere richiamata in seguito tramite il menu 'Dati/Dati Generali'):</P>
+<IMG SRC="DatiGenerali.bmp">
+<H2><A name="LoadItem">Load case, Item number</A></H2>
+<P>Si tratta di dati informativi che non hanno alcuna influenza sui calcoli</P>
+<H2>Number of sides</H2>
+<P>Numero di lati dell'apparecchio. Per maggiori dettagli vedi <A href="NumLati.htm">Numero di lati</A></P>
+<H2><A name="UnitSystem">Unit system</A></H2>
+<P>Scelta del sistema di unità di misura</P>
+<H2><A name="HydrTest">Hydr. Test calculations</A></H2>
+<P>Selezionare quando si desidera eseguire le verifiche in prova idraulica. Vedi <A href="ProvIdr.htm">Calcoli in prova idraulica</A></P>
+<H2><A name="MAWPCalc">MAWP calculations</A></H2>
+<P>Se questa opzione viene selezionata, al termine del calcolo di verifica di ogni membratura e di ogni apertura viene eseguito in automatico il calcolo delle MAWP nelle quattro condizioni Cold & New, Hot & New, Cold & Corroded, Hot & Corroded. Questi valori vengono conservati a livello globale dell'apparecchio, e vengono utilizzati per compilare la <A href="mnuCompTabelle.htm#TabMAWP">tabella delle MAWP</A>, ed eventualmente calcolare il valore della pressione di prova idraulica.</P>
+<H2><A name="NonUniform">Non uniform Design Temperatures</A></H2>
+<P>Se si seleziona questa opzione sarà possibile assegnare ad ogni membratura una temperatura di progetto specifica. In caso contrario tutte le membrature di un lato erediteranno la temperatura di progetto definita per quel lato, indipendentemente dal dato specificato per ciascuna singola membratura. Le membrature appartenenti al lato intermedio erediteranno la maggiore tra la temperatura di progetto lato tubi e quella lato mantello. Tuttavia in questo caso, anche se l'opzione non è selezionata, e se si specifica manualmente una temperatura non inferiore alla minore delle temperature di progetto dei due lati, prevarrà il dato manuale.</P>
+<H2><A name="SpecialReq">Special requirements for the reinforcement of the openings</A></H2>
+Molti clienti specificano requisiti addizionali rispetto ai requisiti minimi del Codice per il progetto del rinforzo delle aperture. Per maggiori dettagli vedi <A href="ReqRinfAp.htm">Requisiti sul rinforzo delle aperture</A></P>
+<H2>Dati generali relativi ai lati</H2>
+<H3><A name="Norme">Design according to:</A></H3>
+<P>E' possibile applicare norme differenti ai due lati. Per esempio un lato può essere in div.1 e l'altro in div.2. Alle membrature di confine ('fra i due lati') dovrà essere applicata una normativa, che potrà essere quella del lato tubi o quella del lato mantello.</P>
+<P>Nel caso dei tubi scambiatori, qualora si applichino ai due lati due normative diverse, si potrà scegliere tra una regola automatica (la normativa del tubo scambiatore è sempre quella del lato tubi, indipendentemente dalla scelta effettuata per la normativa applicabile alle membrature di separazione dei lati) e l'applicazione della suddetta effettuata scelta.</P> 
+<H3><A name="VesselDia">Vessel inner diameter</A></H3>
+<P>Questo dato serve solo per l'applicazione delle norme TEMA relative agli spessori minimi. Esso è utilizzato anche nel calcolo del battente idrostatico. Il diametro effettivo di ciascuna membratura (cilindrica e non) sarà specificato nei dati relativi alla singola membratura.</P>
+<H3><A name="VesselMat">Vessel material</A></H3>
+<P>Questo dato identifica preliminarmente il tipo di materiale del vessel. Esso serve per l'applicazione di alcune norme TEMA, che dipendono dal fatto se il materiale è acciaio al C, inossidabile, o forgiato.</P>
+<H3><A name="Nblowtemp">Nb of low temperature conditions</A></H3>
+<H3><A name="TestPressure">Test pressure</A></H3>
+<H3>Relative density of contained fluid</H3>
+<H3><A name="NbMemb">Number of members</A></H3>
+<P>Si inserisce qui il numero di membrature presenti sul lato in questione. Le membrature vengono tutte inizializzate come cilindri. Sarà poi possibile trasformare la singola membratura nel <A href="Tipi.htm">tipo</A> desiderato tramite il menu 'Dati/Concerti'</P>
+</BODY>
+</HTML>

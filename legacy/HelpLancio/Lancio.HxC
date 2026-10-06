@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE HelpCollection SYSTEM "MS-Help://Hx/Resources/HelpCollection.DTD">
+<HelpCollection DTDVersion="1.0" LangId="1040" Title="Guida di Lancio" FileVersion="1.0.0.0" Copyright="Leonardo Presciuttini" Charset="0" Font="Arial" FontSize="10">
+	<CompilerOptions StopWordFile="AsmeVip\stop.stp" OutputFile="..\..\Lancio\bin\Lancio.HxS" CreateFullTextIndex="Yes" CompileResult="Hxs">
+		<IncludeFile File="Lancio.HxF"/>
+	</CompilerOptions>
+	<TOCDef File="Lancio.HxT"/>
+	<KeywordIndexDef File="Index.HxK"/>
+	<KeywordIndexDef File="NamedURLIndex.HxK"/>
+	<ItemMoniker Name="!DefaultTOC" ProgId="HxDs.HxHierarchy" InitData="Lancio"/>
+	<ItemMoniker Name="!DefaultFullTextSearch" ProgId="HxDs.HxFullTextSearch" InitData="AnyString"/>
+	<ItemMoniker Name="!DefaultKeywordIndex" ProgId="HxDs.HxIndex" InitData="K"/>
+	<ItemMoniker Name="!NamedURLIndex_index" ProgId="HxDs.HxIndex" InitData="NamedURLIndex"/>
+	<ItemMoniker Name="!DefaultContextWindowIndex" ProgId="HxDs.HxIndex" InitData="F"/>
+	<ItemMoniker Name="!DefaultNamedUrlIndex" ProgId="HxDs.HxIndex" InitData="NamedUrlIndex"/>
+	<ToolData Name="MSVHWNamespace" Value="Lancio"/><ToolData Name="MSVHWUniqueID" Value="Lancio"/></HelpCollection>

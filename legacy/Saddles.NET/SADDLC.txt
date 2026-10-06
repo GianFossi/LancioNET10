@@ -1,0 +1,57 @@
+* Questo file definisce la combinazione delle condizioni di carico per il programma BSDD
+* Le righe che iniziano con un asterisco costituiscono delle righe di commento
+* Le righe seguenti definiscono numero e nome delle condizioni di carico elementari
+11
+UNIT
+OPERATING
+FULL OF WATER
+WIND
+EARTHQUAKE X
+EARTHQUAKE Y
+BUNDLE EXTRACTION
+NOZZLES-WEIGHT
+NOZZLES-OPERATING
+NOZZLES-QUAKE X
+NOZZLES-QUAKE Y
+* Seguono le condizioni di carico per l'analisi del mantello
+2
+OPERATING
+HYDROTEST
+0,1,0,1,0,0,0,0,0,0,0
+0,0,1,0,0,0,0,0,0,0,0
+* Seguono le condizioni di carico per l'analisi delle selle
+8
+OPERATING+WIND
+HYDROTEST
+BUNDLE EXTRACTION
+ERECTION
+OPERATING+QUAKE X
+OPERATING+QUAKE Y
+OPERATING-QUAKE X
+OPERATING-QUAKE Y
+0,1,0,1,0,0,0,0,1,0,0
+0,0,1,0,0,0,0,1,0,0,0
+0,0,0,0,0,0,1,0,0,0,0
+1,0,0,0,1,0,0,0,0,0,0
+0,1,0,0,1,0,0,0,0,1,0
+0,1,0,0,0,1,0,0,0,0,1
+0,1,0,0,-1,0,0,0,0,-1,0
+0,1,0,0,0,-1,0,0,0,0,-1
+* Seguono le condizioni di carico per l'analisi delle fondazioni
+8
+OPERATING+WIND
+HYDROTEST
+BUNDLE EXTRACTION
+ERECTION
+OPERATING+QUAKE X
+OPERATING+QUAKE Y
+OPERATING-QUAKE X
+OPERATING-QUAKE Y
+0,1,0,1,0,0,0,0,1,0,0
+0,0,1,0,0,0,0,1,0,0,0
+0,0,0,0,0,0,1,0,0,0,0
+1,0,0,0,1,0,0,0,0,0,0
+0,1,0,0,1,0,0,0,0,1,0
+0,1,0,0,0,1,0,0,0,0,1
+0,1,0,0,-1,0,0,0,0,-1,0
+0,1,0,0,0,-1,0,0,0,0,-1

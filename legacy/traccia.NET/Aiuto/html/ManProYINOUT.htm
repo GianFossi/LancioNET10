@@ -1,0 +1,278 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ManProYINOUT_file/filelist.xml">
+<title>Subroutine YINOUT</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>22</o:TotalTime>
+  <o:Created>2000-12-16T23:57:00Z</o:Created>
+  <o:LastSaved>2000-12-16T23:57:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>343</o:Words>
+  <o:Characters>1957</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2403</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+<H1>Subroutine YINOUT</H1>
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Autore</b>:<span
+style='mso-tab-count:1'>                        </span></p>
+
+<p class=MsoNormal style='text-indent:0cm;tab-stops:81.0pt'><b>Data</b>:<span
+style='mso-tab-count:1'>                        </span>20/05/2000</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Scopo</b>:</p>
+
+<p class=MsoNormal style='text-indent:0cm'>Calcola l’altezza delle zone libere
+in ingresso (<span style='font-family:"Times New Roman"'>DaTos(0).yin</span>) e
+in uscita (<span style='font-family:"Times New Roman"'>DaTos(0).yout</span>) in
+funzione dei diametri, densità e portate. Per la teoria vedi il <A href="ManTerZoneLib1.htm">manuale teorico</A>.</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>Listato</b>:</p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-GB style='font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Sub YINOUT()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Dim ACCAI As Single, ATRIN As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Dim ACCAO As Single, ATROUT As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Dim ROV2IN As Single, ROV2OU As
+Single, CHECK As Single, Check1 As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Dim ACYLIN As Single, ACYLOU As Single<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span></span><span style='font-family:"Times New Roman"'>If
+DaTos(0).di1 &gt; DaTos(0).dtin Then DaTos(0).Epsilo = DaTos(0).di1 / 4 -
+Sqr(DaTos(0).di1 ^ 2 - DaTos(0).dtin ^ 2) / 4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">       
+</span>If DaTos(0).di1 &gt; DaTos(0).dtout Then DaTos(0).Epsil1 = DaTos(0).di1
+/ 4 - Sqr(DaTos(0).di1 ^ 2 - DaTos(0).dtout ^ 2) / 4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">       
+</span></span><span lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>If DaTos(0).yin &lt;&gt; 0 Then GoTo YI7<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(0).dtin &lt;&gt; 0 Then GoTo
+YI4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yin = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>GoTo YI7<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>YI4:<span
+style="mso-spacerun: yes">    </span>If DaTos(0).roin &gt; 0 And DaTos(0).win
+&gt; 0 Then GoTo YI5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ACCAI = DaTos(0).dtin / 4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yin = Int(2 *
+(DaTos(0).Epsilo + ACCAI + 9 - DaTos(0).Diadif / 2)) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>GoTo YI7<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>YI5:<span
+style="mso-spacerun: yes">    </span>ATRIN = DaTos(0).dtin ^ 2 * PI / 4 /
+1000000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span></span><span lang=DE style='font-family:
+"Times New Roman";mso-ansi-language:DE'>ROV2IN = DaTos(0).roin * 0.672 *
+(DaTos(0).win / (DaTos(0).roin * ATRIN * 3600)) ^ 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=DE
+style='font-family:"Times New Roman";mso-ansi-language:DE'><span
+style="mso-spacerun: yes">        </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>CHECK = 3000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If ROV2IN &lt; CHECK Then CHECK =
+ROV2IN<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ACYLIN = DaTos(0).win / (Sqr(CHECK /
+(DaTos(0).roin * 0.672)) * DaTos(0).roin * 3600) * 1000000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ACCAI = ACYLIN / (DaTos(0).dtin * PI)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yin = Int(2 *
+(DaTos(0).Epsilo + ACCAI + 9 - DaTos(0).Diadif / 2)) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>YI7:<span
+style="mso-spacerun: yes">    </span>If DaTos(0).yout &lt;&gt; 0 Then GoTo YI10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If DaTos(0).dtout &lt;&gt; 0 Then GoTo
+YI8<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yout = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>GoTo YI10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>YI8:<span
+style="mso-spacerun: yes">    </span>If DaTos(0).roout &gt; 0 And DaTos(0).wout
+&gt; 0 Then GoTo YI9<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ACCAO = DaTos(0).dtout / 6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yout = Int(2 *
+(DaTos(0).Epsil1 + ACCAO - DaTos(0).Diadif / 2)) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>GoTo YI10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>YI9:<span
+style="mso-spacerun: yes">    </span>ATROUT = DaTos(0).dtout ^ 2 * PI / 4 /
+1000000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ROV2OU = DaTos(0).roout * 0.672 *
+(DaTos(0).wout / (DaTos(0).roout * ATROUT * 3600)) ^ 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>Check1 = 3000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>If ROV2OU &lt; Check1 Then Check1 =
+ROV2OU<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span>ACYLOU = DaTos(0).wout / (Sqr(Check1 /
+(DaTos(0).roout * 0.672)) * DaTos(0).roout * 3600) * 1000000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span
+lang=EN-GB style='font-family:"Times New Roman";mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">        </span></span><span lang=FR style='font-family:
+"Times New Roman";mso-ansi-language:FR'>ACCAO = ACYLOU / (DaTos(0).dtout * PI)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">        </span>DaTos(0).yout = Int(2 *
+(DaTos(0).Epsil1 + ACCAO - DaTos(0).Diadif / 2)) / 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'>YI10:<span
+style="mso-spacerun: yes">   </span>If DaTos(0).yin &lt; 0 Then DaTos(0).yin =
+0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-indent:-2.0cm'><span lang=FR
+style='font-family:"Times New Roman";mso-ansi-language:FR'><span
+style="mso-spacerun: yes">        </span></span><span lang=EN-GB
+style='font-family:"Times New Roman";mso-ansi-language:EN-GB'>If DaTos(0).yout
+&lt; 0 Then DaTos(0).yout = 0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:"Times New Roman"'>End
+Sub<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

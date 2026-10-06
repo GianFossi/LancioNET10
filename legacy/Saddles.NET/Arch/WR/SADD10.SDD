@@ -1,0 +1,12 @@
+Factor    \tab K{\sub 9}\tab \tab |###.00000|
+Effective saddle height\tab H{\sub SD1}\tab mm\tab |######.00|
+\tab (limited to R{\sub M1}/3)
+Force     \tab H{\sub 1}=K{\sub 9}Q{\sub 1}\tab N\tab |######.00|
+Stress    \tab {{\field{\*\fldinst SYMBOL 115 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}}{\sub SD1}=H{\sub 1}/(S{\sub TH1}*H{\sub SD1})\tab N/mm{\super 2}\tab |###.00000|
+Allowable stress\tab f{\sub LS1}=2/3*f{\sub S1}\tab N/mm{\super 2}\tab |###.00000|
+------------------- WARNING -------------------------------------
+Allowable stress on saddle exceeded                          
+{{\field{\*\fldinst SYMBOL 183 \\f "Symbol" \\s 9}{\fldrslt\f1\fs18}}} {\b Check of saddle minimum section}
+{\ul Left saddle}
+{\ul Right saddle}
+

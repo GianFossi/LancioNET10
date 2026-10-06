@@ -1,0 +1,2153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="str1000">
+		<value>Non è possibile passare al calcolo a pressione differenziale|in quanto sono già state specificate più di sei condizioni di carico.</value>
+	</data>
+	<data name="str1010">
+		<value>Non sono ammessi più di un set di tubi di scambio e più di una piastra tubiera.</value>
+	</data>
+	<data name="str1020">
+		<value>Non è stato possibile trovare la libreria AsmeLib.dll</value>
+	</data>
+	<data name="str1030">
+		<value>Non sono stati definiti alcuni dei dati necessari per il calcolo di ottimizzazione</value>
+	</data>
+	<data name="str1040">
+		<value>Non sono definiti correttamente gli ammissibili dei materiali coinvolti</value>
+	</data>
+	<data name="str1050">
+		<value>La guarnizione non è correttamente definita</value>
+	</data>
+	<data name="str1051">
+		<value>Non è noto il materiale della membratura a cui è collegato il dilatatore</value>
+	</data>
+	<data name="str1060">
+		<value>E' necessario compilare prima la tabella delle MAWP</value>
+	</data>
+	<data name="str1070">
+		<value>E' necessario compilare prima la tabella dei materiali</value>
+	</data>
+	<data name="str1071">
+		<value>Il materiale per il bocchello &amp; |non è stato correttamente definito. E' impossibile continuare.|Accedere alla finestra dei dati e premere il pulsante del materiale.</value>
+	</data>
+	<data name="str1072">
+		<value>Sono stati specificati codici di calcolo distinti|tra lato tubi e lato mantello.</value>
+	</data>
+	<data name="str1080">
+		<value>Per il materiale &amp; non sono definite le regole applicabili al progetto a bassa tempereatura.</value>
+	</data>
+	<data name="str1100">
+		<value>Non è definita la larghezza della guarnizione|sul giunto flangiato della piastra tubiera.</value>
+	</data>
+	<data name="str1101">
+		<value>Non è definito il diametro medio della guarnizione|sul giunto flangiato della piastra tubiera.</value>
+	</data>
+	<data name="str1104">
+		<value>Non è stato definito il diametro|esterno della piastra tubiera,|oppure è stato definito in modo incongruo.</value>
+	</data>
+	<data name="str1105">
+		<value>Il calcolo di ottimizzazione non può essere effettuato.</value>
+	</data>
+	<data name="str1106">
+		<value>Uno o più dei dati seguenti non è correttamente definito:|passo dei tubi;|diametro dei tubi;|spessore dei tubi;|Outer Tube Limit.</value>
+	</data>
+	<data name="str1107">
+		<value>   Le informazioni relative alle membrature cui questa|piastra tubiera è accoppiata sono inesatte.|   Vuoi procedere comunque?</value>
+	</data>
+	<data name="str1108">
+		<value>   Le membrature cui questa piastra tubiera è accoppiata|non sono state completamente identificate.|   Vuoi procedere comunque?</value>
+	</data>
+	<data name="str1109">
+		<value>Non è stata definita la membratura collegata a questa|piastra tubiera lato mantello. Di conseguenza non|si possono calcolare le caratteristiche fisiche|del materiale del mantello.</value>
+	</data>
+	<data name="str1110">
+		<value>La flangia del fondo flottante è stata accoppiata in modo errato.</value>
+	</data>
+	<data name="str1111">
+		<value>La flangia del fondo flottante non è stata accoppiata ad alcuna membratura.</value>
+	</data>
+	<data name="str1112">
+		<value>Non è stato inserito un fascio tubiero di tipo a testa flottante,|ma è stata inserita una flangia per il fondo flottante.</value>
+	</data>
+	<data name="str1150">
+		<value>   Sono superati i limiti ammissibili nella sezione|N° 1 (mantello).|   Non necessariamente, quindi, il dilatatore è inadeguato.</value>
+	</data>
+	<data name="str2012">
+		<value>Il dato inserito per la temperatura di progetto|della membratura &amp; potrebbe risultare inattivo.</value>
+	</data>
+	<data name="str3100">
+		<value>Tensione assiale primaria coincidente con pressione interna</value>
+	</data>
+	<data name="str3101">
+		<value>Tensione assiale prim+sec coincidente con pressione interna</value>
+	</data>
+	<data name="str3102">
+		<value>Tensione assiale primaria coincidente con pressione esterna</value>
+	</data>
+	<data name="str3103">
+		<value>Tensione assiale prim+sec coincidente con pressione esterna</value>
+	</data>
+	<data name="str3104">
+		<value>Fornire i carichi assiali agenti sui tubi|al fine del calcolo della tensione equivalente|(tensione tangenziale massima, ovvero criterio di Tresca).</value>
+	</data>
+	<data name="str8000">
+		<value>Questo dato è ininfluente nel presente contesto.</value>
+	</data>
+	<data name="str8001">
+		<value>Fornire il diametro esterno della scarpa, in corrispondenza della saldatura al mantello.</value>
+	</data>
+	<data name="str8002">
+		<value>Fornire l'intervallo di variazione della temperatura di esercizio.</value>
+	</data>
+	<data name="str10000">
+		<value>La flangia di questo bocchello appartiene allo standard &amp;.|Si vuole procedere alla verifica secondo App.2?</value>
+	</data>
+	<data name="str10001">
+		<value>La flangia di questo bocchello non è di tipo WN.|Si vuole procedere alla verifica secondo App.2?</value>
+	</data>
+	<data name="str10002">
+		<value>E' stata selezionata la prova idraulica in orizzontale,|ma non è stato definito il diametro dell'apparecchio.|Fornire la profondità idrostatica in prova idraulica|in millimetri</value>
+	</data>
+	<data name="str10003">
+		<value>E' stata selezionata la prova idraulica in verticale,|ma non è stata definita la profondità idrostatica.|della membratura &amp;.|Fornire il valore in millimetri.</value>
+	</data>
+	<data name="str10004">
+		<value>I valori delle pressioni di prova idraulica precedentemente registrati sono:</value>
+	</data>
+	<data name="str10005">
+		<value>#######.## [MPa] lato mantello, e #######.## [MPa] lato tubi.</value>
+	</data>
+	<data name="str10006">
+		<value>I valori attualmente calcolati sono:</value>
+	</data>
+	<data name="str10007">
+		<value>Se si risponde OK i valori precedenti verranno scartati:|sarà opportuno verificare nuovamente i giunti flangiati e|ricompilare la tabella dei dati di progetto.</value>
+	</data>
+	<data name="str10008">
+		<value>Attenzione: uno più limiti ammissibili applicabili|al fascio tubiero non sono rispettati.||Il fattore di danno è pari a ####.## _%.|Vuoi correggere qualche dato e ripassare il calcolo?</value>
+	</data>
+	<data name="str10014">
+		<value>Il valore della pressione di prova idraulica precedentemente registrato è:</value>
+	</data>
+	<data name="str10015">
+		<value>#######.## [psi];  ######.### [MPa]</value>
+	</data>
+	<data name="str10016">
+		<value>Il valore attualmente calcolato è:</value>
+	</data>
+	<data name="str10017">
+		<value>Se si risponde OK il valore precedente verrà scartato:|sarà opportuno verificare nuovamente i giunti flangiati e|ricompilare la tabella dei dati di progetto.</value>
+	</data>
+	<data name="str10100">
+		<value>Il calcolo delle MAWP non ha raggiunto la convergenza.</value>
+	</data>
+	<data name="str20001">
+		<value>Testing Group 1 (z=1.00)</value>
+	</data>
+	<data name="str20002">
+		<value>Testing Group 2 (z=1.00)</value>
+	</data>
+	<data name="str20003">
+		<value>Testing Group 3 (z=0.85)</value>
+	</data>
+	<data name="str20004">
+		<value>Testing Group 4 (z=0.70)</value>
+	</data>
+	<data name="str20005">
+		<value>Unwelded part   (z=1.00)</value>
+	</data>
+	<data name="str1073">
+		<value>Il file &amp; è illeggibile_.|Probabilmente è stato creato da una versione precedente_.|(Messaggio del sistema: &amp;).|Vuoi eliminarlo permanentemente?</value>
+	</data>
+	<data name="str4001">
+		<value></value>
+	</data>
+	<data name="str4002">
+		<value></value>
+	</data>
+	<data name="str4003">
+		<value>Non è stato definito correttamente il materiale dela piastra di coda|oppure non sono stati assegnati gli ammissibili </value>
+	</data>
+	<data name="str4004">
+		<value></value>
+	</data>
+	<data name="str4005">
+		<value></value>
+	</data>
+	<data name="str4006">
+		<value>Non è stato possibile calcolare il modulo di elasticità|del materiale del mantello.</value>
+	</data>
+	<data name="str4007">
+		<value>Non è stato possibile calcolare il modulo di elasticità|del materiale dei tubi scambiatori.</value>
+	</data>
+	<data name="str4008">
+		<value></value>
+	</data>
+	<data name="str4009">
+		<value>Non è stato possibile calcolare il coefficiente di dilatazione|termica del materiale dei tubi scambiatori. </value>
+	</data>
+	<data name="str4010">
+		<value>Non è stato definito il diametro equivalente di foratura|della piastra tubiera per la verifica a taglio</value>
+	</data>
+	<data name="str4011">
+		<value>Non è stato definito il passo di foratura della piastra tubiera</value>
+	</data>
+	<data name="str4012">
+		<value>Non è stato possibile valutare la tensione ammissibile del mantello</value>
+	</data>
+	<data name="str4013">
+		<value>Non è stato possibile valutare la tensione ammissibile dei tubi scambiatori</value>
+	</data>
+	<data name="str4014">
+		<value>Non è stato possibile valutare lo snervamento dei tubi scambiatori</value>
+	</data>
+	<data name="str4015">
+		<value>Non è stato possibile valutare lo snervamento del materiale del diatatore</value>
+	</data>
+	<data name="str4016">
+		<value></value>
+	</data>
+	<data name="str4017">
+		<value></value>
+	</data>
+	<data name="str4018">
+		<value>Non è stato definito correttamente il materiale del rinforzo collare</value>
+	</data>
+	<data name="str4019">
+		<value></value>
+	</data>
+	<data name="str4020">
+		<value></value>
+	</data>
+	<data name="str4021">
+		<value>Non è stato definito il diametro interno del mantello</value>
+	</data>
+	<data name="str4022">
+		<value>Non è stato definito il diametro interno della cassa</value>
+	</data>
+	<data name="str4023">
+		<value>Non è stato definito lo spessore del mantello</value>
+	</data>
+	<data name="str4024">
+		<value>Non è stato definito lo spessore della cassa</value>
+	</data>
+	<data name="str4025">
+		<value></value>
+	</data>
+	<data name="str4026">
+		<value></value>
+	</data>
+	<data name="str4027">
+		<value>Manca il diametro dei tubi</value>
+	</data>
+	<data name="str4028">
+		<value>Manca lo spessore dei tubi</value>
+	</data>
+	<data name="str4029">
+		<value>Manca il numero di tubi</value>
+	</data>
+	<data name="str4030">
+		<value>Manca la lunghezza di scambio dei tubi</value>
+	</data>
+	<data name="str4031">
+		<value>Il materiale dei tiranti non è stato definito correttamente</value>
+	</data>
+	<data name="str4032">
+		<value>Il Bolt Circle non è stato definito correttamente</value>
+	</data>
+	<data name="str4033">
+		<value>Il materiale della piastra tubiera di coda non è stato definito correttamente</value>
+	</data>
+	<data name="str4034">
+		<value>Il modulo elastico del dilatatore non è definito</value>
+	</data>
+	<data name="str4035">
+		<value></value>
+	</data>
+	<data name="str4036">
+		<value></value>
+	</data>
+	<data name="str4037">
+		<value></value>
+	</data>
+	<data name="str4038">
+		<value></value>
+	</data>
+	<data name="str4039">
+		<value>Non è stata definita la lunghezza libera di inflessione dei tubi</value>
+	</data>
+	<data name="str4040">
+		<value></value>
+	</data>
+	<data name="str4041">
+		<value></value>
+	</data>
+	<data name="str4042">
+		<value></value>
+	</data>
+	<data name="str4043">
+		<value></value>
+	</data>
+	<data name="str4044">
+		<value></value>
+	</data>
+	<data name="str4045">
+		<value></value>
+	</data>
+	<data name="str4046">
+		<value></value>
+	</data>
+	<data name="str4047">
+		<value></value>
+	</data>
+	<data name="str4048">
+		<value></value>
+	</data>
+	<data name="str4049">
+		<value></value>
+	</data>
+	<data name="str4050">
+		<value></value>
+	</data>
+	<data name="str4051">
+		<value></value>
+	</data>
+	<data name="str4052">
+		<value></value>
+	</data>
+	<data name="str4053">
+		<value></value>
+	</data>
+	<data name="str4054">
+		<value></value>
+	</data>
+	<data name="str4055">
+		<value></value>
+	</data>
+	<data name="str4056">
+		<value></value>
+	</data>
+	<data name="str4057">
+		<value></value>
+	</data>
+	<data name="str4058">
+		<value></value>
+	</data>
+	<data name="str4059">
+		<value></value>
+	</data>
+	<data name="str4060">
+		<value></value>
+	</data>
+	<data name="str4061">
+		<value></value>
+	</data>
+	<data name="str4062">
+		<value></value>
+	</data>
+	<data name="str4063">
+		<value></value>
+	</data>
+	<data name="str4064">
+		<value></value>
+	</data>
+	<data name="str4065">
+		<value></value>
+	</data>
+	<data name="str4066">
+		<value></value>
+	</data>
+	<data name="str4067">
+		<value></value>
+	</data>
+	<data name="str4068">
+		<value></value>
+	</data>
+	<data name="str4069">
+		<value></value>
+	</data>
+	<data name="str4070">
+		<value></value>
+	</data>
+	<data name="str4071">
+		<value></value>
+	</data>
+	<data name="str4072">
+		<value></value>
+	</data>
+	<data name="str4073">
+		<value></value>
+	</data>
+	<data name="str4074">
+		<value></value>
+	</data>
+	<data name="str4075">
+		<value></value>
+	</data>
+	<data name="str4076">
+		<value></value>
+	</data>
+	<data name="str4077">
+		<value></value>
+	</data>
+	<data name="str4078">
+		<value></value>
+	</data>
+	<data name="str4079">
+		<value></value>
+	</data>
+	<data name="str4080">
+		<value></value>
+	</data>
+	<data name="str4081">
+		<value></value>
+	</data>
+	<data name="str4082">
+		<value></value>
+	</data>
+	<data name="str4083">
+		<value></value>
+	</data>
+	<data name="str4084">
+		<value></value>
+	</data>
+	<data name="str4085">
+		<value></value>
+	</data>
+	<data name="str4086">
+		<value></value>
+	</data>
+	<data name="str4087">
+		<value></value>
+	</data>
+	<data name="str4088">
+		<value></value>
+	</data>
+	<data name="str4089">
+		<value></value>
+	</data>
+	<data name="str4090">
+		<value></value>
+	</data>
+	<data name="str4091">
+		<value></value>
+	</data>
+	<data name="str4092">
+		<value></value>
+	</data>
+	<data name="str4093">
+		<value></value>
+	</data>
+	<data name="str4094">
+		<value></value>
+	</data>
+	<data name="str4095">
+		<value></value>
+	</data>
+	<data name="str4096">
+		<value></value>
+	</data>
+	<data name="str4097">
+		<value></value>
+	</data>
+	<data name="str4098">
+		<value></value>
+	</data>
+	<data name="str4099">
+		<value></value>
+	</data>
+	<data name="str4100">
+		<value>La piastra tubiera è flangiata, ma non è|definito il diametro esterno dell'estensione</value>
+	</data>
+	<data name="str4101">
+		<value>Non sono definite le caratteristiche fisiche della seconda piastra tubiera</value>
+	</data>
+	<data name="str4102">
+		<value>Qualche caratteristica del materiale della|piastra tubiera di coda non è definita </value>
+	</data>
+	<data name="str4103">
+		<value></value>
+	</data>
+	<data name="str4104">
+		<value></value>
+	</data>
+	<data name="str4105">
+		<value></value>
+	</data>
+	<data name="str4106">
+		<value></value>
+	</data>
+	<data name="str4107">
+		<value></value>
+	</data>
+	<data name="str4108">
+		<value></value>
+	</data>
+	<data name="str4109">
+		<value></value>
+	</data>
+	<data name="str4110">
+		<value></value>
+	</data>
+	<data name="str4111">
+		<value></value>
+	</data>
+	<data name="str4112">
+		<value></value>
+	</data>
+	<data name="str4113">
+		<value></value>
+	</data>
+	<data name="str4114">
+		<value></value>
+	</data>
+	<data name="str4115">
+		<value></value>
+	</data>
+	<data name="str4116">
+		<value></value>
+	</data>
+	<data name="str4117">
+		<value></value>
+	</data>
+	<data name="str4118">
+		<value></value>
+	</data>
+	<data name="str4119">
+		<value></value>
+	</data>
+	<data name="str4120">
+		<value></value>
+	</data>
+	<data name="str4121">
+		<value></value>
+	</data>
+	<data name="str4122">
+		<value></value>
+	</data>
+	<data name="str4123">
+		<value></value>
+	</data>
+	<data name="str4124">
+		<value></value>
+	</data>
+	<data name="str4125">
+		<value></value>
+	</data>
+	<data name="str4126">
+		<value></value>
+	</data>
+	<data name="str4127">
+		<value></value>
+	</data>
+	<data name="str4128">
+		<value></value>
+	</data>
+	<data name="str4129">
+		<value></value>
+	</data>
+	<data name="str4130">
+		<value></value>
+	</data>
+	<data name="str4131">
+		<value></value>
+	</data>
+	<data name="str4132">
+		<value></value>
+	</data>
+	<data name="str4133">
+		<value></value>
+	</data>
+	<data name="str4134">
+		<value></value>
+	</data>
+	<data name="str4135">
+		<value></value>
+	</data>
+	<data name="str4136">
+		<value></value>
+	</data>
+	<data name="str4137">
+		<value></value>
+	</data>
+	<data name="str4138">
+		<value></value>
+	</data>
+	<data name="str4139">
+		<value></value>
+	</data>
+	<data name="str4140">
+		<value></value>
+	</data>
+	<data name="str4141">
+		<value></value>
+	</data>
+	<data name="str4142">
+		<value></value>
+	</data>
+	<data name="str4143">
+		<value></value>
+	</data>
+	<data name="str4144">
+		<value></value>
+	</data>
+	<data name="str4145">
+		<value></value>
+	</data>
+	<data name="str4146">
+		<value></value>
+	</data>
+	<data name="str4147">
+		<value></value>
+	</data>
+	<data name="str4148">
+		<value></value>
+	</data>
+	<data name="str4149">
+		<value></value>
+	</data>
+	<data name="str4150">
+		<value></value>
+	</data>
+	<data name="str4151">
+		<value></value>
+	</data>
+	<data name="str4152">
+		<value></value>
+	</data>
+	<data name="str4153">
+		<value></value>
+	</data>
+	<data name="str4154">
+		<value></value>
+	</data>
+	<data name="str4155">
+		<value></value>
+	</data>
+	<data name="str4156">
+		<value></value>
+	</data>
+	<data name="str4157">
+		<value></value>
+	</data>
+	<data name="str4158">
+		<value></value>
+	</data>
+	<data name="str4159">
+		<value></value>
+	</data>
+	<data name="str4160">
+		<value></value>
+	</data>
+	<data name="str4161">
+		<value></value>
+	</data>
+	<data name="str4162">
+		<value></value>
+	</data>
+	<data name="str4163">
+		<value></value>
+	</data>
+	<data name="str4164">
+		<value></value>
+	</data>
+	<data name="str4165">
+		<value></value>
+	</data>
+	<data name="str4166">
+		<value></value>
+	</data>
+	<data name="str4167">
+		<value></value>
+	</data>
+	<data name="str4168">
+		<value></value>
+	</data>
+	<data name="str4169">
+		<value></value>
+	</data>
+	<data name="str4170">
+		<value></value>
+	</data>
+	<data name="str4171">
+		<value></value>
+	</data>
+	<data name="str4172">
+		<value></value>
+	</data>
+	<data name="str4173">
+		<value></value>
+	</data>
+	<data name="str4174">
+		<value></value>
+	</data>
+	<data name="str4175">
+		<value></value>
+	</data>
+	<data name="str4176">
+		<value></value>
+	</data>
+	<data name="str4177">
+		<value></value>
+	</data>
+	<data name="str4178">
+		<value></value>
+	</data>
+	<data name="str4179">
+		<value></value>
+	</data>
+	<data name="str4180">
+		<value></value>
+	</data>
+	<data name="str4181">
+		<value></value>
+	</data>
+	<data name="str4182">
+		<value></value>
+	</data>
+	<data name="str4183">
+		<value></value>
+	</data>
+	<data name="str4184">
+		<value></value>
+	</data>
+	<data name="str4185">
+		<value></value>
+	</data>
+	<data name="str4186">
+		<value></value>
+	</data>
+	<data name="str4187">
+		<value></value>
+	</data>
+	<data name="str4188">
+		<value></value>
+	</data>
+	<data name="str4189">
+		<value></value>
+	</data>
+	<data name="str4190">
+		<value></value>
+	</data>
+	<data name="str4191">
+		<value></value>
+	</data>
+	<data name="str4192">
+		<value></value>
+	</data>
+	<data name="str4193">
+		<value></value>
+	</data>
+	<data name="str4194">
+		<value></value>
+	</data>
+	<data name="str4195">
+		<value></value>
+	</data>
+	<data name="str4196">
+		<value></value>
+	</data>
+	<data name="str4197">
+		<value></value>
+	</data>
+	<data name="str4198">
+		<value></value>
+	</data>
+	<data name="str4199">
+		<value></value>
+	</data>
+	<data name="str4200">
+		<value></value>
+	</data>
+	<data name="str4201">
+		<value></value>
+	</data>
+	<data name="str4202">
+		<value></value>
+	</data>
+	<data name="str4203">
+		<value></value>
+	</data>
+	<data name="str4204">
+		<value></value>
+	</data>
+	<data name="str4205">
+		<value></value>
+	</data>
+	<data name="str4206">
+		<value></value>
+	</data>
+	<data name="str4207">
+		<value></value>
+	</data>
+	<data name="str4208">
+		<value></value>
+	</data>
+	<data name="str4209">
+		<value></value>
+	</data>
+	<data name="str4210">
+		<value></value>
+	</data>
+	<data name="str4211">
+		<value></value>
+	</data>
+	<data name="str4212">
+		<value></value>
+	</data>
+	<data name="str4213">
+		<value></value>
+	</data>
+	<data name="str4214">
+		<value></value>
+	</data>
+	<data name="str4215">
+		<value></value>
+	</data>
+	<data name="str4216">
+		<value></value>
+	</data>
+	<data name="str4217">
+		<value></value>
+	</data>
+	<data name="str4218">
+		<value></value>
+	</data>
+	<data name="str4219">
+		<value></value>
+	</data>
+	<data name="str4220">
+		<value></value>
+	</data>
+	<data name="str4221">
+		<value></value>
+	</data>
+	<data name="str4222">
+		<value></value>
+	</data>
+	<data name="str4223">
+		<value></value>
+	</data>
+	<data name="str4224">
+		<value></value>
+	</data>
+	<data name="str4225">
+		<value></value>
+	</data>
+	<data name="str4226">
+		<value></value>
+	</data>
+	<data name="str4227">
+		<value></value>
+	</data>
+	<data name="str4228">
+		<value></value>
+	</data>
+	<data name="str4229">
+		<value></value>
+	</data>
+	<data name="str4230">
+		<value></value>
+	</data>
+	<data name="str4231">
+		<value></value>
+	</data>
+	<data name="str4232">
+		<value></value>
+	</data>
+	<data name="str4233">
+		<value></value>
+	</data>
+	<data name="str4234">
+		<value></value>
+	</data>
+	<data name="str4235">
+		<value></value>
+	</data>
+	<data name="str4236">
+		<value></value>
+	</data>
+	<data name="str4237">
+		<value></value>
+	</data>
+	<data name="str4238">
+		<value></value>
+	</data>
+	<data name="str4239">
+		<value></value>
+	</data>
+	<data name="str4240">
+		<value></value>
+	</data>
+	<data name="str4241">
+		<value></value>
+	</data>
+	<data name="str4242">
+		<value></value>
+	</data>
+	<data name="str4243">
+		<value></value>
+	</data>
+	<data name="str4244">
+		<value></value>
+	</data>
+	<data name="str4245">
+		<value></value>
+	</data>
+	<data name="str4246">
+		<value></value>
+	</data>
+	<data name="str4247">
+		<value></value>
+	</data>
+	<data name="str4248">
+		<value></value>
+	</data>
+	<data name="str4249">
+		<value></value>
+	</data>
+	<data name="str4250">
+		<value></value>
+	</data>
+	<data name="str4251">
+		<value></value>
+	</data>
+	<data name="str4252">
+		<value></value>
+	</data>
+	<data name="str4253">
+		<value></value>
+	</data>
+	<data name="str4254">
+		<value></value>
+	</data>
+	<data name="str4255">
+		<value></value>
+	</data>
+	<data name="str4256">
+		<value></value>
+	</data>
+	<data name="str4257">
+		<value></value>
+	</data>
+	<data name="str4258">
+		<value></value>
+	</data>
+	<data name="str4259">
+		<value></value>
+	</data>
+	<data name="str4260">
+		<value></value>
+	</data>
+	<data name="str4261">
+		<value></value>
+	</data>
+	<data name="str4262">
+		<value>Lo spessore della piastra tubiera di coda non è definito</value>
+	</data>
+	<data name="str4263">
+		<value></value>
+	</data>
+	<data name="str4264">
+		<value></value>
+	</data>
+	<data name="str4265">
+		<value></value>
+	</data>
+	<data name="str4266">
+		<value>Non è stato possibile calcolare|le tensioni ammissibili della seconda piastra tubiera</value>
+	</data>
+	<data name="str4267">
+		<value>Non è stato possibile calcolare|il modulo di Young della seconda piastra tubiera</value>
+	</data>
+	<data name="str4268">
+		<value></value>
+	</data>
+	<data name="str4269">
+		<value></value>
+	</data>
+	<data name="str4270">
+		<value></value>
+	</data>
+	<data name="str4271">
+		<value></value>
+	</data>
+	<data name="str4272">
+		<value></value>
+	</data>
+	<data name="str4273">
+		<value></value>
+	</data>
+	<data name="str4274">
+		<value></value>
+	</data>
+	<data name="str4275">
+		<value></value>
+	</data>
+	<data name="str4276">
+		<value></value>
+	</data>
+	<data name="str4277">
+		<value></value>
+	</data>
+	<data name="str4278">
+		<value></value>
+	</data>
+	<data name="str4279">
+		<value></value>
+	</data>
+	<data name="str4280">
+		<value></value>
+	</data>
+	<data name="str4281">
+		<value></value>
+	</data>
+	<data name="str4282">
+		<value></value>
+	</data>
+	<data name="str4283">
+		<value></value>
+	</data>
+	<data name="str4284">
+		<value></value>
+	</data>
+	<data name="str4285">
+		<value></value>
+	</data>
+	<data name="str4286">
+		<value></value>
+	</data>
+	<data name="str4287">
+		<value></value>
+	</data>
+	<data name="str4288">
+		<value></value>
+	</data>
+	<data name="str4289">
+		<value></value>
+	</data>
+	<data name="str4290">
+		<value></value>
+	</data>
+	<data name="str4291">
+		<value></value>
+	</data>
+	<data name="str4292">
+		<value>Non è definito il diametro equivalente della guarnizione lato mantello</value>
+	</data>
+	<data name="str4293">
+		<value>Non è definito il diametro equivalente della guarnizione lato tubi</value>
+	</data>
+	<data name="str4294">
+		<value></value>
+	</data>
+	<data name="str4295">
+		<value></value>
+	</data>
+	<data name="str4296">
+		<value></value>
+	</data>
+	<data name="str4297">
+		<value></value>
+	</data>
+	<data name="str4298">
+		<value></value>
+	</data>
+	<data name="str4299">
+		<value></value>
+	</data>
+	<data name="str4300">
+		<value></value>
+	</data>
+	<data name="str4301">
+		<value></value>
+	</data>
+	<data name="str4302">
+		<value></value>
+	</data>
+	<data name="str4303">
+		<value></value>
+	</data>
+	<data name="str4304">
+		<value></value>
+	</data>
+	<data name="str4305">
+		<value></value>
+	</data>
+	<data name="str4306">
+		<value></value>
+	</data>
+	<data name="str4307">
+		<value></value>
+	</data>
+	<data name="str4308">
+		<value></value>
+	</data>
+	<data name="str4309">
+		<value></value>
+	</data>
+	<data name="str4310">
+		<value></value>
+	</data>
+	<data name="str4311">
+		<value></value>
+	</data>
+	<data name="str4312">
+		<value>Non è stato definito il diametro della cassa integrale alla PT di coda</value>
+	</data>
+	<data name="str4313">
+		<value>Non è stato definito lo spessore della cassa integrale alla PT di coda</value>
+	</data>
+	<data name="str4314">
+		<value>Il diametro del mantello presso la piastra di coda|oppure il diametro della cassa non è stato definito.</value>
+	</data>
+	<data name="str4315">
+		<value></value>
+	</data>
+	<data name="str4316"></data>
+	<data name="str4317"></data>
+	<data name="str4318"></data>
+	<data name="str4319"></data>
+	<data name="str4320"></data>
+	<data name="str4321"></data>
+	<data name="str4322"></data>
+	<data name="str4323"></data>
+	<data name="str4324"></data>
+	<data name="str4325"></data>
+	<data name="str4326"></data>
+	<data name="str4327"></data>
+	<data name="str4328"></data>
+	<data name="str4329"></data>
+	<data name="str4330"></data>
+	<data name="str4331"></data>
+	<data name="str4332"></data>
+	<data name="str4333"></data>
+	<data name="str4334"></data>
+	<data name="str4335"></data>
+	<data name="str4336"></data>
+	<data name="str4337"></data>
+	<data name="str4338"></data>
+	<data name="str4339"></data>
+	<data name="str4340"></data>
+	<data name="str4341"></data>
+	<data name="str4342"></data>
+	<data name="str4343"></data>
+	<data name="str4344"></data>
+	<data name="str4345"></data>
+	<data name="str4346"></data>
+	<data name="str4347"></data>
+	<data name="str4348"></data>
+	<data name="str4349"></data>
+	<data name="str4350"></data>
+	<data name="str4351"></data>
+	<data name="str4352"></data>
+	<data name="str4353"></data>
+	<data name="str4354"></data>
+	<data name="str4355"></data>
+	<data name="str4356"></data>
+	<data name="str4357"></data>
+	<data name="str4358"></data>
+	<data name="str4359"></data>
+	<data name="str4360"></data>
+	<data name="str4361"></data>
+	<data name="str4362"></data>
+	<data name="str4363"></data>
+	<data name="str4364"></data>
+	<data name="str4365"></data>
+	<data name="str4366"></data>
+	<data name="str4367"></data>
+	<data name="str4368"></data>
+	<data name="str4369"></data>
+	<data name="str4370"></data>
+	<data name="str4371"></data>
+	<data name="str4372"></data>
+	<data name="str4373"></data>
+	<data name="str4374"></data>
+	<data name="str4375"></data>
+	<data name="str4376"></data>
+	<data name="str4377"></data>
+	<data name="str4378"></data>
+	<data name="str4379"></data>
+	<data name="str4380"></data>
+	<data name="str4381"></data>
+	<data name="str4382"></data>
+	<data name="str4383"></data>
+	<data name="str4384"></data>
+	<data name="str4385"></data>
+	<data name="str4386"></data>
+	<data name="str4387"></data>
+	<data name="str4388"></data>
+	<data name="str4389"></data>
+	<data name="str4390"></data>
+	<data name="str4391"></data>
+	<data name="str4392"></data>
+	<data name="str4393"></data>
+	<data name="str4394"></data>
+	<data name="str4395"></data>
+	<data name="str4396"></data>
+	<data name="str4397"></data>
+	<data name="str4398"></data>
+	<data name="str4399"></data>
+	<data name="str4400"></data>
+	<data name="str4401"></data>
+	<data name="str4402"></data>
+	<data name="str4403"></data>
+	<data name="str4404"></data>
+	<data name="str4405"></data>
+	<data name="str4406"></data>
+	<data name="str4407"></data>
+	<data name="str4408"></data>
+	<data name="str4409"></data>
+	<data name="str4410"></data>
+	<data name="str4411"></data>
+	<data name="str4412"></data>
+	<data name="str4413"></data>
+	<data name="str4414"></data>
+	<data name="str4415"></data>
+	<data name="str4416"></data>
+	<data name="str4417"></data>
+	<data name="str4418"></data>
+	<data name="str4419"></data>
+	<data name="str4420"></data>
+	<data name="str4421"></data>
+	<data name="str4422"></data>
+	<data name="str4423"></data>
+	<data name="str4424"></data>
+	<data name="str4425"></data>
+	<data name="str4426"></data>
+	<data name="str4427"></data>
+	<data name="str4428"></data>
+	<data name="str4429"></data>
+	<data name="str4430"></data>
+	<data name="str4431"></data>
+	<data name="str4432"></data>
+	<data name="str4433"></data>
+	<data name="str4434"></data>
+	<data name="str4435"></data>
+	<data name="str4436"></data>
+	<data name="str4437"></data>
+	<data name="str4438"></data>
+	<data name="str4439"></data>
+	<data name="str4440"></data>
+	<data name="str4441"></data>
+	<data name="str4442"></data>
+	<data name="str4443"></data>
+	<data name="str4444"></data>
+	<data name="str4445"></data>
+	<data name="str4446"></data>
+	<data name="str4447"></data>
+	<data name="str4448"></data>
+	<data name="str4449"></data>
+	<data name="str4450"></data>
+	<data name="str4451"></data>
+	<data name="str4452"></data>
+	<data name="str4453"></data>
+	<data name="str4454"></data>
+	<data name="str4455"></data>
+	<data name="str4456"></data>
+	<data name="str4457"></data>
+	<data name="str4458"></data>
+	<data name="str4459"></data>
+	<data name="str4460"></data>
+	<data name="str4461"></data>
+	<data name="str4462"></data>
+	<data name="str4463"></data>
+	<data name="str4464"></data>
+	<data name="str4465"></data>
+	<data name="str4466"></data>
+	<data name="str4467"></data>
+	<data name="str4468"></data>
+	<data name="str4469"></data>
+	<data name="str4470"></data>
+	<data name="str4471"></data>
+	<data name="str4472"></data>
+	<data name="str4473"></data>
+	<data name="str4474"></data>
+	<data name="str4475"></data>
+	<data name="str4476"></data>
+	<data name="str4477"></data>
+	<data name="str4478"></data>
+	<data name="str4479"></data>
+	<data name="str4480"></data>
+	<data name="str4481"></data>
+	<data name="str4482"></data>
+	<data name="str4483"></data>
+	<data name="str4484"></data>
+	<data name="str4485"></data>
+	<data name="str4486"></data>
+	<data name="str4487"></data>
+	<data name="str4488"></data>
+	<data name="str4489"></data>
+	<data name="str4490"></data>
+	<data name="str4491"></data>
+	<data name="str4492"></data>
+	<data name="str4493"></data>
+	<data name="str4494"></data>
+	<data name="str4495"></data>
+	<data name="str4496"></data>
+	<data name="str4497"></data>
+	<data name="str4498"></data>
+	<data name="str4499"></data>
+	<data name="str4500"></data>
+	<data name="str4501"></data>
+	<data name="str4502"></data>
+	<data name="str4503"></data>
+	<data name="str4504"></data>
+	<data name="str4505"></data>
+	<data name="str4506"></data>
+	<data name="str4507"></data>
+	<data name="str4508"></data>
+	<data name="str4509"></data>
+	<data name="str4510"></data>
+	<data name="str4511"></data>
+	<data name="str4512"></data>
+	<data name="str4513"></data>
+	<data name="str4514"></data>
+	<data name="str4515"></data>
+	<data name="str4516"></data>
+	<data name="str4517"></data>
+	<data name="str4518"></data>
+	<data name="str4519"></data>
+	<data name="str4520"></data>
+	<data name="str4521"></data>
+	<data name="str4522"></data>
+	<data name="str4523"></data>
+	<data name="str4524"></data>
+	<data name="str4525"></data>
+	<data name="str4526"></data>
+	<data name="str4527"></data>
+	<data name="str4528"></data>
+	<data name="str4529"></data>
+	<data name="str4530"></data>
+	<data name="str4531"></data>
+	<data name="str4532"></data>
+	<data name="str4533"></data>
+	<data name="str4534"></data>
+	<data name="str4535"></data>
+	<data name="str4536"></data>
+	<data name="str4537"></data>
+	<data name="str4538"></data>
+	<data name="str4539"></data>
+	<data name="str4540"></data>
+	<data name="str4541"></data>
+	<data name="str4542"></data>
+	<data name="str4543"></data>
+	<data name="str4544"></data>
+	<data name="str4545"></data>
+	<data name="str4546"></data>
+	<data name="str4547"></data>
+	<data name="str4548"></data>
+	<data name="str4549"></data>
+	<data name="str4550"></data>
+	<data name="str4551"></data>
+	<data name="str4552"></data>
+	<data name="str4553"></data>
+	<data name="str4554"></data>
+	<data name="str4555"></data>
+	<data name="str4556"></data>
+	<data name="str4557"></data>
+	<data name="str4558"></data>
+	<data name="str4559"></data>
+	<data name="str4560"></data>
+	<data name="str4561"></data>
+	<data name="str4562"></data>
+	<data name="str4563"></data>
+	<data name="str4564"></data>
+	<data name="str4565"></data>
+	<data name="str4566"></data>
+	<data name="str4567"></data>
+	<data name="str4568"></data>
+	<data name="str4569"></data>
+	<data name="str4570"></data>
+	<data name="str4571"></data>
+	<data name="str4572"></data>
+	<data name="str4573"></data>
+	<data name="str4574"></data>
+	<data name="str4575"></data>
+	<data name="str4576"></data>
+	<data name="str4577"></data>
+	<data name="str4578"></data>
+	<data name="str4579"></data>
+	<data name="str4580"></data>
+	<data name="str4581"></data>
+	<data name="str4582"></data>
+	<data name="str4583"></data>
+	<data name="str4584"></data>
+	<data name="str4585"></data>
+	<data name="str4586"></data>
+	<data name="str4587"></data>
+	<data name="str4588"></data>
+	<data name="str4589"></data>
+	<data name="str4590"></data>
+	<data name="str4591"></data>
+	<data name="str4592"></data>
+	<data name="str4593"></data>
+	<data name="str4594"></data>
+	<data name="str4595"></data>
+	<data name="str4596"></data>
+	<data name="str4597"></data>
+	<data name="str4598"></data>
+	<data name="str4599"></data>
+	<data name="str4600"></data>
+	<data name="str4601"></data>
+	<data name="str4602"></data>
+	<data name="str4603"></data>
+	<data name="str4604"></data>
+	<data name="str4605"></data>
+	<data name="str4606"></data>
+	<data name="str4607"></data>
+	<data name="str4608"></data>
+	<data name="str4609"></data>
+	<data name="str4610"></data>
+	<data name="str4611"></data>
+	<data name="str4612"></data>
+	<data name="str4613"></data>
+	<data name="str4614"></data>
+	<data name="str4615"></data>
+	<data name="str4616"></data>
+	<data name="str4617"></data>
+	<data name="str4618"></data>
+	<data name="str4619"></data>
+	<data name="str4620"></data>
+	<data name="str4621"></data>
+	<data name="str4622"></data>
+	<data name="str4623"></data>
+	<data name="str4624"></data>
+	<data name="str4625"></data>
+	<data name="str4626"></data>
+	<data name="str4627"></data>
+	<data name="str4628"></data>
+	<data name="str4629"></data>
+	<data name="str4630"></data>
+	<data name="str4631"></data>
+	<data name="str4632"></data>
+	<data name="str4633"></data>
+	<data name="str4634"></data>
+	<data name="str4635"></data>
+	<data name="str4636"></data>
+	<data name="str4637"></data>
+	<data name="str4638"></data>
+	<data name="str4639"></data>
+	<data name="str4640"></data>
+	<data name="str4641"></data>
+	<data name="str4642"></data>
+	<data name="str4643"></data>
+	<data name="str4644"></data>
+	<data name="str4645"></data>
+	<data name="str4646"></data>
+	<data name="str4647"></data>
+	<data name="str4648"></data>
+	<data name="str4649"></data>
+	<data name="str4650"></data>
+	<data name="str4651"></data>
+	<data name="str4652"></data>
+	<data name="str4653"></data>
+	<data name="str4654"></data>
+	<data name="str4655"></data>
+	<data name="str4656"></data>
+	<data name="str4657"></data>
+	<data name="str4658"></data>
+	<data name="str4659"></data>
+	<data name="str4660"></data>
+	<data name="str4661"></data>
+	<data name="str4662"></data>
+	<data name="str4663"></data>
+	<data name="str4664"></data>
+	<data name="str4665"></data>
+	<data name="str4666"></data>
+	<data name="str4667"></data>
+	<data name="str4668"></data>
+	<data name="str4669"></data>
+	<data name="str4670"></data>
+	<data name="str4671"></data>
+	<data name="str4672"></data>
+	<data name="str4673"></data>
+	<data name="str4674"></data>
+	<data name="str4675"></data>
+	<data name="str4676"></data>
+	<data name="str4677"></data>
+	<data name="str4678"></data>
+	<data name="str4679"></data>
+	<data name="str4680"></data>
+	<data name="str4681"></data>
+	<data name="str4682"></data>
+	<data name="str4683"></data>
+	<data name="str4684"></data>
+	<data name="str4685"></data>
+	<data name="str4686"></data>
+	<data name="str4687"></data>
+	<data name="str4688"></data>
+	<data name="str4689"></data>
+	<data name="str4690"></data>
+	<data name="str4691"></data>
+	<data name="str4692"></data>
+	<data name="str4693"></data>
+	<data name="str4694"></data>
+	<data name="str4695"></data>
+	<data name="str4696"></data>
+	<data name="str4697"></data>
+	<data name="str4698"></data>
+	<data name="str4699"></data>
+	<data name="str4700"></data>
+	<data name="str4701"></data>
+	<data name="str4702"></data>
+	<data name="str4703"></data>
+	<data name="str4704"></data>
+	<data name="str4705"></data>
+	<data name="str4706"></data>
+	<data name="str4707"></data>
+	<data name="str4708"></data>
+	<data name="str4709"></data>
+	<data name="str4710"></data>
+	<data name="str4711"></data>
+	<data name="str4712"></data>
+	<data name="str4713"></data>
+	<data name="str4714"></data>
+	<data name="str4715"></data>
+	<data name="str4716"></data>
+	<data name="str4717"></data>
+	<data name="str4718"></data>
+	<data name="str4719"></data>
+	<data name="str4720"></data>
+	<data name="str4721"></data>
+	<data name="str4722"></data>
+	<data name="str4723"></data>
+	<data name="str4724"></data>
+	<data name="str4725"></data>
+	<data name="str4726"></data>
+	<data name="str4727"></data>
+	<data name="str4728"></data>
+	<data name="str4729"></data>
+	<data name="str4730"></data>
+	<data name="str4731"></data>
+	<data name="str4732"></data>
+	<data name="str4733"></data>
+	<data name="str4734"></data>
+	<data name="str4735"></data>
+	<data name="str4736"></data>
+	<data name="str4737"></data>
+	<data name="str4738"></data>
+	<data name="str4739"></data>
+	<data name="str4740"></data>
+	<data name="str4741"></data>
+	<data name="str4742"></data>
+	<data name="str4743"></data>
+	<data name="str4744"></data>
+	<data name="str4745"></data>
+	<data name="str4746"></data>
+	<data name="str4747"></data>
+	<data name="str4748"></data>
+	<data name="str4749"></data>
+	<data name="str4750"></data>
+	<data name="str4751"></data>
+	<data name="str4752"></data>
+	<data name="str4753"></data>
+	<data name="str4754"></data>
+	<data name="str4755"></data>
+	<data name="str4756"></data>
+	<data name="str4757"></data>
+	<data name="str4758"></data>
+	<data name="str4759"></data>
+	<data name="str4760"></data>
+	<data name="str4761"></data>
+	<data name="str4762"></data>
+	<data name="str4763"></data>
+	<data name="str4764"></data>
+	<data name="str4765"></data>
+	<data name="str4766"></data>
+	<data name="str4767"></data>
+	<data name="str4768"></data>
+	<data name="str4769"></data>
+	<data name="str4770"></data>
+	<data name="str4771"></data>
+	<data name="str4772"></data>
+	<data name="str4773"></data>
+	<data name="str4774"></data>
+	<data name="str4775"></data>
+	<data name="str4776"></data>
+	<data name="str4777"></data>
+	<data name="str4778"></data>
+	<data name="str4779"></data>
+	<data name="str4780"></data>
+	<data name="str4781"></data>
+	<data name="str4782"></data>
+	<data name="str4783"></data>
+	<data name="str4784"></data>
+	<data name="str4785"></data>
+	<data name="str4786"></data>
+	<data name="str4787"></data>
+	<data name="str4788"></data>
+	<data name="str4789"></data>
+	<data name="str4790"></data>
+	<data name="str4791"></data>
+	<data name="str4792"></data>
+	<data name="str4793"></data>
+	<data name="str4794"></data>
+	<data name="str4795"></data>
+	<data name="str4796"></data>
+	<data name="str4797"></data>
+	<data name="str4798"></data>
+	<data name="str4799"></data>
+	<data name="str4800"></data>
+	<data name="str4801"></data>
+	<data name="str4802"></data>
+	<data name="str4803"></data>
+	<data name="str4804"></data>
+	<data name="str4805"></data>
+	<data name="str4806"></data>
+	<data name="str4807"></data>
+	<data name="str4808"></data>
+	<data name="str4809"></data>
+	<data name="str4810"></data>
+	<data name="str4811"></data>
+	<data name="str4812"></data>
+	<data name="str4813"></data>
+	<data name="str4814"></data>
+	<data name="str4815"></data>
+	<data name="str4816"></data>
+	<data name="str4817"></data>
+	<data name="str4818"></data>
+	<data name="str4819"></data>
+	<data name="str4820"></data>
+	<data name="str4821"></data>
+	<data name="str4822"></data>
+	<data name="str4823"></data>
+	<data name="str4824"></data>
+	<data name="str4825"></data>
+	<data name="str4826"></data>
+	<data name="str4827"></data>
+	<data name="str4828"></data>
+	<data name="str4829"></data>
+	<data name="str4830"></data>
+	<data name="str4831"></data>
+	<data name="str4832"></data>
+	<data name="str4833"></data>
+	<data name="str4834"></data>
+	<data name="str4835"></data>
+	<data name="str4836"></data>
+	<data name="str4837"></data>
+	<data name="str4838"></data>
+	<data name="str4839"></data>
+	<data name="str4840"></data>
+	<data name="str4841"></data>
+	<data name="str4842"></data>
+	<data name="str4843"></data>
+	<data name="str4844"></data>
+	<data name="str4845"></data>
+	<data name="str4846"></data>
+	<data name="str4847"></data>
+	<data name="str4848"></data>
+	<data name="str4849"></data>
+	<data name="str4850"></data>
+	<data name="str4851"></data>
+	<data name="str4852"></data>
+	<data name="str4853"></data>
+	<data name="str4854"></data>
+	<data name="str4855"></data>
+	<data name="str4856"></data>
+	<data name="str4857"></data>
+	<data name="str4858"></data>
+	<data name="str4859"></data>
+	<data name="str4860"></data>
+	<data name="str4861"></data>
+	<data name="str4862"></data>
+	<data name="str4863"></data>
+	<data name="str4864"></data>
+	<data name="str4865"></data>
+	<data name="str4866"></data>
+	<data name="str4867"></data>
+	<data name="str4868"></data>
+	<data name="str4869"></data>
+	<data name="str4870"></data>
+	<data name="str4871"></data>
+	<data name="str4872"></data>
+	<data name="str4873"></data>
+	<data name="str4874"></data>
+	<data name="str4875"></data>
+	<data name="str4876"></data>
+	<data name="str4877"></data>
+	<data name="str4878"></data>
+	<data name="str4879"></data>
+	<data name="str4880"></data>
+	<data name="str4881"></data>
+	<data name="str4882"></data>
+	<data name="str4883"></data>
+	<data name="str4884"></data>
+	<data name="str4885"></data>
+	<data name="str4886"></data>
+	<data name="str4887"></data>
+	<data name="str4888"></data>
+	<data name="str4889"></data>
+	<data name="str4890"></data>
+	<data name="str4891"></data>
+	<data name="str4892"></data>
+	<data name="str4893"></data>
+	<data name="str4894"></data>
+	<data name="str4895"></data>
+	<data name="str4896"></data>
+	<data name="str4897"></data>
+	<data name="str4898"></data>
+	<data name="str4899"></data>
+	<data name="str4900"></data>
+	<data name="str4901"></data>
+	<data name="str4902"></data>
+	<data name="str4903"></data>
+	<data name="str4904"></data>
+	<data name="str4905"></data>
+	<data name="str4906"></data>
+	<data name="str4907"></data>
+	<data name="str4908"></data>
+	<data name="str4909"></data>
+	<data name="str4910"></data>
+	<data name="str4911"></data>
+	<data name="str4912"></data>
+	<data name="str4913"></data>
+	<data name="str4914"></data>
+	<data name="str4915"></data>
+	<data name="str4916"></data>
+	<data name="str4917"></data>
+	<data name="str4918"></data>
+	<data name="str4919"></data>
+	<data name="str4920"></data>
+	<data name="str4921"></data>
+	<data name="str4922"></data>
+	<data name="str4923"></data>
+	<data name="str4924"></data>
+	<data name="str4925"></data>
+	<data name="str4926"></data>
+	<data name="str4927"></data>
+	<data name="str4928"></data>
+	<data name="str4929"></data>
+	<data name="str4930"></data>
+	<data name="str4931"></data>
+	<data name="str4932"></data>
+	<data name="str4933"></data>
+	<data name="str4934"></data>
+	<data name="str4935"></data>
+	<data name="str4936"></data>
+	<data name="str4937"></data>
+	<data name="str4938"></data>
+	<data name="str4939"></data>
+	<data name="str4940"></data>
+	<data name="str4941"></data>
+	<data name="str4942"></data>
+	<data name="str4943"></data>
+	<data name="str4944"></data>
+	<data name="str4945"></data>
+	<data name="str4946"></data>
+	<data name="str4947"></data>
+	<data name="str4948"></data>
+	<data name="str4949"></data>
+	<data name="str4950"></data>
+	<data name="str4951"></data>
+	<data name="str4952"></data>
+	<data name="str4953"></data>
+	<data name="str4954"></data>
+	<data name="str4955"></data>
+	<data name="str4956"></data>
+	<data name="str4957"></data>
+	<data name="str4958"></data>
+	<data name="str4959"></data>
+	<data name="str4960"></data>
+	<data name="str4961"></data>
+	<data name="str4962"></data>
+	<data name="str4963"></data>
+	<data name="str4964"></data>
+	<data name="str4965"></data>
+	<data name="str4966"></data>
+	<data name="str4967"></data>
+	<data name="str4968"></data>
+	<data name="str4969"></data>
+	<data name="str4970"></data>
+	<data name="str4971"></data>
+	<data name="str4972"></data>
+	<data name="str4973"></data>
+	<data name="str4974"></data>
+	<data name="str4975"></data>
+	<data name="str4976"></data>
+	<data name="str4977"></data>
+	<data name="str4978"></data>
+	<data name="str4979"></data>
+	<data name="str4980"></data>
+	<data name="str4981"></data>
+	<data name="str4982"></data>
+	<data name="str4983"></data>
+	<data name="str4984"></data>
+	<data name="str4985"></data>
+	<data name="str4986"></data>
+	<data name="str4987"></data>
+	<data name="str4988"></data>
+	<data name="str4989"></data>
+	<data name="str4990"></data>
+	<data name="str4991"></data>
+	<data name="str4992"></data>
+	<data name="str4993"></data>
+	<data name="str4994"></data>
+	<data name="str4995"></data>
+	<data name="str4996"></data>
+	<data name="str4997"></data>
+	<data name="str4998">
+		<value>Temperatura troppo elevata.|Cambia il materiale o la temperatura.</value>
+	</data>
+	<data name="str4999">
+		<value>Si sono creati dei problemi durante il calcolo automatico|di valori relativi ai materiali. (Codice di errore ####).</value>
+	</data>
+	<data name="str4000">
+		<value>Manca un dato fondamentale nell'input.</value>
+	</data>
+	<data name="str5000">
+		<value>$|==============================|</value>
+	</data>
+	<data name="str5001">
+		<value>$|      Fattori d'uso (%)       |</value>
+	</data>
+	<data name="str5002">
+		<value>$|==============================|</value>
+	</data>
+	<data name="str5003">
+		<value>$| Piastra tubiera       |####.#|</value>
+	</data>
+	<data name="str5004">
+		<value>$| Trazione tubi         |####.#|</value>
+	</data>
+	<data name="str5005">
+		<value>$| Compressione tubi     |####.#|</value>
+	</data>
+	<data name="str5006">
+		<value>$| Trazione mantello     |####.#|</value>
+	</data>
+	<data name="str5007">
+		<value>$| Compressione mant.    |####.#|</value>
+	</data>
+	<data name="str5008">
+		<value>$| Giunto tubo-piastra   |####.#|</value>
+	</data>
+	<data name="str5009">
+		<value>$| Tensioni primarie dil.|####.#|</value>
+	</data>
+	<data name="str5010">
+		<value>$| Fatica dilatatore     |####.#|</value>
+	</data>
+	<data name="str5011">
+		<value>$| Instabilità laterale  |####.#|</value>
+	</data>
+	<data name="str5012">
+		<value>$| Instabilità assiale   |####.#|</value>
+	</data>
+	<data name="str5013">
+		<value>$|==============================|</value>
+	</data>
+	<data name="str5014">
+		<value>$| Piastre tubiere       |####.#|</value>
+	</data>
+	<data name="Helpfile">
+		<value>\BIN\AsmeVip.chm</value>
+	</data>
+	<data name="str2100">
+		<value>Il file di input scelto è stato creato con una versione obsoleta di AsmeVip e non è più recuperabile.</value>
+	</data>
+	<data name="str2101">
+		<value>Il file che è stato aperto fu creato con una versione obsoleta di AsmeVIP.| Se verrà salvato sarà convertito nel nuovo formato .NET.| Questa operazione è irreversibile. Volete procedere comunque (risposta consigliata: si) ?  </value>
+	</data>
+	<data name="str2102">
+		<value>La ricerca del cerchio minimo tiranti non è andata a buon fine.</value>
+	</data>
+	<data name="str2103">
+		<value>Il pressure rating è inferiore all'MAWP</value>
+	</data>
+	<data name="str2104">
+		<value>Il pressure rating è inferiore alla pressione di progetto</value>
+	</data>
+	<data name="str2105">
+		<value>        Errore:|La lunghezza disponibile per il rinforzo lungo il |mantello risulta inferiore allo spessore del boc- |chello. Si ricorda che tale lunghezza va sempre   |contata dal pelo interno dell'apertura.</value>
+	</data>
+	<data name="str2501">
+		<value> WARNING |       LWN Size Out Off Standard Dimensions   |NOMINAL DIAMETER NOT INCLUDED IN ANSI B-16.5|
+</value>
+	</data>
+	<data name="str2502">
+		<value> WARNING |        LWN Rating Out of Standard Classes    |RATING CLASS NOT INCLUDED IN ANSI B-16.5  |
+</value>
+	</data>
+	<data name="str2503">
+		<value> WARNING |      Pipe Size Out Off Standard Dimensions   |NOMINAL DIAMETER NOT INCLUDED IN ASA B-36.10|
+</value>
+	</data>
+	<data name="str2504">
+		<value> WARNING |      Pipe Size Out Off TEMA Std.Dimensions   |MINIMUM THICKNESS NOT INCLUDED IN TABLE 3.13|
+</value>
+	</data>
+	<data name="str2505">
+		<value> WARNING |      Shell Size Out Off TEMA Std.Dimensions  |NOMINAL DIAMETER NOT INCLUDED IN TABLE 3.13|
+</value>
+	</data>
+	<data name="str2506">
+		<value> WARNING |      Shell Size Out Off TEMA Std.Dimensions  |MINIMUM THICKNESS NOT INCLUDED IN TABLE 3.13|
+</value>
+	</data>
+	<data name="str2507">
+		<value> WARNING |        Ellipsoidal Head with (D/2h) &gt; 3.0    |K FACTOR of TABLE 1.4-1 NOT DEFINED    |
+</value>
+	</data>
+	<data name="str2508">
+		<value> WARNING |       Torispherical Head with (r/L) &lt; 0.06   |RULES in UG-32(j) NOT APPLICABLE      |
+</value>
+	</data>
+	<data name="str2509">
+		<value> WARNING |         Torispherical Head with  L &gt; Do      |RULES in UG-32(j) NOT APPLICABLE      |
+</value>
+	</data>
+	<data name="str2510">
+		<value> WARNING |    Torispherical Head with L=Do  &amp;  r &gt; 0.06L|RULES in UG-32(j) NOT APPLICABLE      |
+</value>
+	</data>
+	<data name="str2511">
+		<value> WARNING |    Torispherical Head with L &lt; Do  &amp;  r=0.06L|RULES in UG-32(j) NOT APPLICABLE      |
+</value>
+	</data>
+	<data name="str2512">
+		<value>-----------------------------------------      |Nozzle Size out off limits of UG-36(b)(1)      |Appendix 1-7 shall apply                      |-----------------------------------------      |
+</value>
+	</data>
+	<data name="str2513">
+		<value> ATTENZIONE |      DISCRIMINANTE EQUAZIONE 2øGRADO &lt; 0   |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+</value>
+	</data>
+	<data name="str2514">
+		<value> ATTENZIONE |   SOLUZIONI EQUAZIONE 2° GRADO ENTRAMBE &lt; 0 |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+</value>
+	</data>
+	<data name="str2515">
+		<value> ATTENZIONE |   SOLUZIONI EQUAZIONE 2° GRADO ENTRAMBE &gt; 0 |RICHIEDERE L'INTERVENTO DEL PROGRAMMATORE |
+</value>
+	</data>
+	<data name="str2516">
+		<value> ATTENZIONE |  Non sono stati definiti i dati di progetto|per la membratura
+</value>
+	</data>
+	<data name="str2517">
+		<value> ATTENZIONE |  Non sono stati definiti i dati di progetto|per il fondo
+</value>
+	</data>
+	<data name="str2518">
+		<value> ATTENZIONE |  Il codice di progetto non è stato definito|correttamente. Assumiamo ASME + TEMA R
+</value>
+	</data>
+	<data name="str2519">
+		<value> Hai cambiato dimensioni o tipo di uno o più bocchelli.    |E' tua responsabilità aggiornare la distinta
+</value>
+	</data>
+	<data name="str2520">
+		<value> Verificare i dati di progetto.|Nel calcolo dello spessore minimo di un cilindro|è stata considerata una pressione maggiore|dell'ammissibile.
+</value>
+	</data>
+	<data name="str2521">
+		<value> Verificare i dati di progetto.|Nel calcolo dello spessore minimo di una sfera|è stata considerata una pressione irragionevolmente alta.
+</value>
+	</data>
+	<data name="str2106">
+		<value>(solo per HelpTopics)</value>
+	</data>
+	<data name="str2107">
+		<value>Vale 1 se non c'è anello di rinforzo. Altrimenti|è pari al rapporto del prodotto SE per il materiale|del mantello sullo stesso prodotto per il materiale| del rinforzo.</value>
+	</data>
+	<data name="str2108">
+		<value>     Note sull'inserimento di piastre e fasci tubieri          |     ================================================ |   Non è ammesso l'inserimento di più di un elemento di tipo|'tubi di scambio'.|   Non è neanche ammesso l'inserimento di più di un elemento |tipo 'piastra tubiera'. Infatti, nel caso di fasci tubieri a|tubi diritti, la seconda piastra (detta anche piastra di coda)|viene gestita, sia nel caso di testa flottante che di teste|fisse, insieme ai dati della piastra di testa.  </value>
+	</data>
+	<data name="spessorecentro">
+		<value>Spessore assunto al centro:</value>
+	</data>
+	<data name="spessoreestens">
+		<value>Spessore assunto estensione:</value>
+	</data>
+	<data name="str5015">
+		<value>1.6(a)-Fondo torosf. con flangia sciolta</value>
+	</data>
+	<data name="str5016">
+		<value>1.6(a)-Fondo torosf. con flangia integrale</value>
+	</data>
+	<data name="str5017">
+		<value>1.6(b)-Calotta sferica con flangia sovrapposta</value>
+	</data>
+	<data name="str5018">
+		<value>1.6(c)-Calotta sferica con flangia integrale</value>
+	</data>
+	<data name="str5019">
+		<value>1.6(d)-Calotta sferica con flangia saldata</value>
+	</data>
+	<data name="str5020">
+		<value>noref.-Calotta conica con flangia saldata</value>
+	</data>
+	<data name="str5021">
+		<value>UHX-14.3(b)-PT flangiata</value>
+	</data>
+	<data name="str5022">
+		<value>UHX-14.3(a)-PT saldata</value>
+	</data>
+	<data name="str5023">
+		<value>UHX-14.3(c)-PT flangiata con Split Ring</value>
+	</data>
+	<data name="str5024">
+		<value>UHX-14.3(d)-PT internally sealed</value>
+	</data>
+	<data name="str5026">
+		<value>   Non risulta inserito nessun elemento|che possa giocare il ruolo di &amp; |per la testa flottante.|Si desidera che venga inserito automaticamente?</value>
+	</data>
+	<data name="Split_Ring">
+		<value>split ring</value>
+	</data>
+	<data name="nota1_inserisci_elemento">
+		<value>|Nota. L'inserimento dei dati dello split ring|necessari al calcolo della piastra di coda|impone la creazione di una membratura 'Split Ring'.|Si raccomanda quindi di rispondere si.</value>
+	</data>
+	<data name="nota2_inserisci_elemento">
+		<value>|Nota. E' possibile rinunziare all'inserimento del nuovo|elemento in quanto tutti i dati necessari|al calcolo della piastra di coda|possono essere forniti nella finestra sottostante.</value>
+	</data>
+	<data name="Flangia">
+		<value>flangia</value>
+	</data>
+	<data name="Cassa">
+		<value>cassa</value>
+	</data>
+	<data name="PIASTRA_DI_TESTA">
+		<value>PIASTRA DI TESTA</value>
+	</data>
+	<data name="PIASTRA_DI_CODA">
+		<value>PIASTRA DI CODA</value>
+	</data>
+	<data name="PIASTRA_FLOTTANTE">
+		<value>PIASTRA FLOTTANTE</value>
+	</data>
+	<data name="PIASTRA_A">
+		<value>PIASTRA A</value>
+	</data>
+	<data name="vedi_LATO_B">
+		<value>vedi lato B</value>
+	</data>
+	<data name="PIASTRA_B">
+		<value>PIASTRA B</value>
+	</data>
+	<data name="vedi_LATO_A">
+		<value>vedi LATO A</value>
+	</data>
+	<data name="str1151">
+		<value>Se si sceglie un materiale diverso, o se si|cambia qualche valore, le modifiche|avranno effetto anche per il materiale|delle seguenti membrature (o di un loro particolare):|</value>
+	</data>
+	<data name="str1152">
+		<value>.|Se invece si vuole definire un materiale specifico per la|presente membratura bisogna scegliere 'Nuovo materiale'|dal menu a discesa, e, normalmente, contrassegnarlo 'bound',|ed infine cliccare nuovamente sul pulsante per|la ricerca del materiale.</value>
+	</data>
+	<data name="str1153">
+		<value>Scelta del materiale</value>
+	</data>
+	<data name="str1154">
+		<value>Non sono stati trovati nella libreria delle flange|i dati dimensionali relativi al diametro &amp;|e al rating &amp;. Di conseguenza il calcolo secondo|App.2 non verrà effettuato</value>
+	</data>
+	<data name="str1155">
+		<value>Non sono stati trovati nella libreria delle flange|i dati dimensionali relativi al diametro &amp;|e al rating &amp;. Di conseguenza sarà necessario|inserire manualmente tutti i dati geometrici richiesti|dalle finestre di progettazione delle flange.</value>
+	</data>
+	<data name="str2150">
+		<value>Non è stato selezionato alcun capitolo</value>
+	</data>
+	<data name="str2522">
+		<value>Il fattore di rigidezza richiesto da 2-14|non è stato ottenuto per &amp;.|J, fattore in operating = &amp;|J, fattore in seating   = &amp;</value>
+	</data>
+	<data name="str2523">
+		<value>Il fattore di rigidezza richiesto da 2-14|è stato ottenuto per &amp;.|J, fattore in operating = &amp;|J, fattore in seating   = &amp;</value>
+	</data>
+</root>
