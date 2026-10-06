@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HTRI", "HTRI.vbproj", "{DD0C8799-D294-438D-8D24-E271A271E8A9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RoutBase1", "..\RoutBase.NET\RoutBase1.vbproj", "{3B2389A2-3B3A-4FDE-980B-3345357EC065}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "StubW2000", "..\StubW2000.NET\StubW2000.vbproj", "{CEF5E506-69FD-499F-99B3-E10767B365D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinWordControl", "..\WinWordControl\WinWordControl.csproj", "{12793C64-A87B-42AD-8058-57C9F43DBD98}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "StubW9", "..\StubW9.NET\StubW9.vbproj", "{D211EA20-5776-410B-9174-1817E9DD67C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Grafic2", "..\Grafica.NET\Grafic2.vbproj", "{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LibMat", "..\LibMat.NET\LibMat.vbproj", "{BFBA7621-266F-4831-8B74-A3AFBF0FE303}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RoutBase3", "..\RoutBase3.NET\RoutBase3\RoutBase3.vbproj", "{F48E382D-A289-4FB5-A707-508CBA9205A7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Traccia", "..\traccia.NET\Traccia.vbproj", "{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RoutBase2", "..\RoutBase2.NET\RoutBase2\RoutBase2.vbproj", "{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RoutBase4", "..\RoutBase4.NET\RoutBase4\RoutBase4.vbproj", "{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ventil", "..\Ventil.NET\Ventil.vbproj", "{3E7AAA1E-B601-4F2D-B984-AA359256899D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Wald", "..\Wald.NET\Wald.vbproj", "{3421DDF7-EFBF-4683-AE38-1C524808AF73}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LancioHTRI", "..\LancioHTRI\LancioHTRI.vbproj", "{97207FC5-76A1-41F7-83F0-74CCCA34D115}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BreLock", "..\BreLock.NET\BreLock.vbproj", "{8C2C5C84-9716-4BFF-BC35-CA559F85C572}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD0C8799-D294-438D-8D24-E271A271E8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0C8799-D294-438D-8D24-E271A271E8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0C8799-D294-438D-8D24-E271A271E8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0C8799-D294-438D-8D24-E271A271E8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2389A2-3B3A-4FDE-980B-3345357EC065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2389A2-3B3A-4FDE-980B-3345357EC065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2389A2-3B3A-4FDE-980B-3345357EC065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2389A2-3B3A-4FDE-980B-3345357EC065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF5E506-69FD-499F-99B3-E10767B365D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF5E506-69FD-499F-99B3-E10767B365D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF5E506-69FD-499F-99B3-E10767B365D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF5E506-69FD-499F-99B3-E10767B365D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12793C64-A87B-42AD-8058-57C9F43DBD98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12793C64-A87B-42AD-8058-57C9F43DBD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12793C64-A87B-42AD-8058-57C9F43DBD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12793C64-A87B-42AD-8058-57C9F43DBD98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D211EA20-5776-410B-9174-1817E9DD67C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D211EA20-5776-410B-9174-1817E9DD67C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D211EA20-5776-410B-9174-1817E9DD67C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D211EA20-5776-410B-9174-1817E9DD67C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBA7621-266F-4831-8B74-A3AFBF0FE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBA7621-266F-4831-8B74-A3AFBF0FE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBA7621-266F-4831-8B74-A3AFBF0FE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBA7621-266F-4831-8B74-A3AFBF0FE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48E382D-A289-4FB5-A707-508CBA9205A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48E382D-A289-4FB5-A707-508CBA9205A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48E382D-A289-4FB5-A707-508CBA9205A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48E382D-A289-4FB5-A707-508CBA9205A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB1B70F-4F09-4839-A936-CC6FA8830AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074DE7D2-CCEF-40B2-813A-C0132C12DC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7AAA1E-B601-4F2D-B984-AA359256899D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7AAA1E-B601-4F2D-B984-AA359256899D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7AAA1E-B601-4F2D-B984-AA359256899D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7AAA1E-B601-4F2D-B984-AA359256899D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3421DDF7-EFBF-4683-AE38-1C524808AF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3421DDF7-EFBF-4683-AE38-1C524808AF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3421DDF7-EFBF-4683-AE38-1C524808AF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3421DDF7-EFBF-4683-AE38-1C524808AF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97207FC5-76A1-41F7-83F0-74CCCA34D115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97207FC5-76A1-41F7-83F0-74CCCA34D115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97207FC5-76A1-41F7-83F0-74CCCA34D115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97207FC5-76A1-41F7-83F0-74CCCA34D115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2C5C84-9716-4BFF-BC35-CA559F85C572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2C5C84-9716-4BFF-BC35-CA559F85C572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2C5C84-9716-4BFF-BC35-CA559F85C572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2C5C84-9716-4BFF-BC35-CA559F85C572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

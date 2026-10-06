@@ -1,0 +1,128 @@
+1
+ - NO CONVERGENCE IN CONDEN
+   (on flash calculation, T and P given)
+ - BEWARE: DEW-POINT CALCULATION
+ - BEWARE: MAYBE HYDROCARBONS & INERTS SUPERCRITICAL
+1F.B.M.-Hudson Italiana SpA  -- RESULTS OF CALCULATION --Program MOLLHC Vers.2.0
+ --------------------------------------------------------------------------------
+ PROJECT:                   JOB NO.E:\Pro USER:               DATE: 06-22-2001
+ PROBLEM: COOLING CURVE   
+ --------------------------------------------------------------------------------
+ CALCULATION:PROPERTIES OF GAS MIXTURE                            (FROM LAST CALC)                                                   
+ TEMP:   50.00  DEG C PRESS:    80.00  KG/CM2 GAU V/F: 1.0000  MOL/MOL LH/F: 0.0000  MOL/MOL        
+        122.00  DEG F         1138.12  PSI    GAU      1.0000  WT/WT         0.0000  WT/WT          
+                              7847.05  KPA    GAU
+
+
+                         |             FEED              |             VAPOUR            |         HYDROC.LIQUID         |
+ ------------------------|-------------------------------|-------------------------------|-------------------------------|
+ |NO|COMPONENT           |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR | K VALUES|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ | 1|METHANE             |    1445.5|     90.10|   0.9010|    1445.5|     90.10|   0.9010|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 2|ETHANE              |     180.6|      6.01|   0.0601|     180.6|      6.01|   0.0601|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 3|PROPANE             |      88.3|      2.00|   0.0200|      88.3|      2.00|   0.0200|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 4|2-METHYLPROPANE     |      29.1|      0.50|   0.0050|      29.1|      0.50|   0.0050|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 5|N-BUTANE            |      58.2|      1.00|   0.0100|      58.2|      1.00|   0.0100|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 6|2-METHYLBUTANE      |       3.6|      0.05|   0.0005|       3.6|      0.05|   0.0005|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 7|N-PENTANE           |       0.7|      0.01|   0.0001|       0.7|      0.01|   0.0001|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 8|NITROGEN            |       9.3|      0.33|   0.0033|       9.3|      0.33|   0.0033|       0.0|      0.00|   0.0000| 0.00E+00|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ |TOTAL FLOW RATE        |    1815.2|    100.00|   1.0000|    1815.2|    100.00|   1.0000|       0.0|      0.00|   0.0000|         |
+ ------------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+
+                                                     TOTAL              TOTAL     SPECIFIC              TOTAL     SPECIFIC
+ ENTHALPY (KCAL,KCAL/KG)                           233373.            233373.       128.56                 0.         0.00
+ IDEAL ENTHALPY                                                       267961.       147.62                 0.         0.00
+ ENTROPY (KCAL/C,KCAL/KG C)                          5549.              5549.         3.06                 0.         0.00
+ IDEAL ENTROPY                                                          6575.         3.62                 0.         0.00
+
+ MOLECULAR WEIGHT                                    18.15              18.15                            0.00
+ COMPRESSIBILITY FACTOR                                                0.8876                          0.0000
+ SPECIFIC GRAVITY (T/60 DEG F)                                                                         0.0000                     
+ DENSITY (KG/M3)                                                      60.5027
+
+ PSEUDOCRITICAL TEMPERATURE (DEG K)                                   204.47                            0.00
+ PSEUDOCRITICAL PRESSURE (ATM)                                         45.33                            0.00
+
+ GAS HEAT-CAPACITY,CP (KCAL/KG C)                                      0.689
+ GAS HEAT-CAPACITY,CV (KCAL/KG C)                                      0.463
+
+ SURFACE TENSION (DYNES/CM)                                                                             0.00
+ VISCOSITY (CP)                                                      0.01355                         0.00000
+ THERMAL CONDUCTIVITY (KCAL/M HR C)                                  0.03723                         0.00000
+
+
+
+ Ideal Enthalpy-Entropy: API HBK ;Enthalpy-Entropy:   SOAVE ;                                       
+1F.B.M.-Hudson Italiana SpA  -- RESULTS OF CALCULATION --Program MOLLHC Vers.2.0
+ --------------------------------------------------------------------------------
+ PROJECT:                   JOB NO.E:\Pro USER:               DATE: 06-22-2001
+ PROBLEM: COOLING CURVE   
+ --------------------------------------------------------------------------------
+ CALCULATION:PROPERTIES OF GAS MIXTURE                            (FROM LAST CALC)                                                   
+ TEMP:   40.00  DEG C PRESS:    80.00  KG/CM2 GAU V/F: 1.0000  MOL/MOL LH/F: 0.0000  MOL/MOL        
+        104.00  DEG F         1138.12  PSI    GAU      1.0000  WT/WT         0.0000  WT/WT          
+                              7847.05  KPA    GAU
+
+
+                         |             FEED              |             VAPOUR            |         HYDROC.LIQUID         |
+ ------------------------|-------------------------------|-------------------------------|-------------------------------|
+ |NO|COMPONENT           |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR | K VALUES|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ | 1|METHANE             |    1445.5|     90.10|   0.9010|    1445.5|     90.10|   0.9010|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 2|ETHANE              |     180.6|      6.01|   0.0601|     180.6|      6.01|   0.0601|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 3|PROPANE             |      88.3|      2.00|   0.0200|      88.3|      2.00|   0.0200|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 4|2-METHYLPROPANE     |      29.1|      0.50|   0.0050|      29.1|      0.50|   0.0050|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 5|N-BUTANE            |      58.2|      1.00|   0.0100|      58.2|      1.00|   0.0100|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 6|2-METHYLBUTANE      |       3.6|      0.05|   0.0005|       3.6|      0.05|   0.0005|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 7|N-PENTANE           |       0.7|      0.01|   0.0001|       0.7|      0.01|   0.0001|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 8|NITROGEN            |       9.3|      0.33|   0.0033|       9.3|      0.33|   0.0033|       0.0|      0.00|   0.0000| 0.00E+00|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ |TOTAL FLOW RATE        |    1815.2|    100.00|   1.0000|    1815.2|    100.00|   1.0000|       0.0|      0.00|   0.0000|         |
+ ------------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+
+                                                     TOTAL              TOTAL     SPECIFIC              TOTAL     SPECIFIC
+ ENTHALPY (KCAL,KCAL/KG)                           220798.            220798.       121.64                 0.         0.00
+ IDEAL ENTHALPY                                                       257952.       142.10                 0.         0.00
+ ENTROPY (KCAL/C,KCAL/KG C)                          5511.              5511.         3.04                 0.         0.00
+ IDEAL ENTROPY                                                          6545.         3.61                 0.         0.00
+
+ MOLECULAR WEIGHT                                    18.15              18.15                            0.00
+ COMPRESSIBILITY FACTOR                                                0.8701                          0.0000
+ SPECIFIC GRAVITY (T/60 DEG F)                                                                         0.0000                     
+ DENSITY (KG/M3)                                                      63.6905
+
+ PSEUDOCRITICAL TEMPERATURE (DEG K)                                   204.47                            0.00
+ PSEUDOCRITICAL PRESSURE (ATM)                                         45.33                            0.00
+
+ GAS HEAT-CAPACITY,CP (KCAL/KG C)                                      0.697
+ GAS HEAT-CAPACITY,CV (KCAL/KG C)                                      0.456
+
+ SURFACE TENSION (DYNES/CM)                                                                             0.00
+ VISCOSITY (CP)                                                      0.01339                         0.00000
+ THERMAL CONDUCTIVITY (KCAL/M HR C)                                  0.03649                         0.00000
+
+
+
+ Ideal Enthalpy-Entropy: API HBK ;Enthalpy-Entropy:   SOAVE ;                                       
+1F.B.M.-Hudson Italiana SpA  -- RESULTS OF CALCULATION --Program MOLLHC Vers.2.0
+ --------------------------------------------------------------------------------
+ PROJECT:                   JOB NO.E:\Pro USER:               DATE: 06-22-2001
+ PROBLEM: COOLING CURVE   
+ --------------------------------------------------------------------------------
+ CALCULATION:PROPERTIES OF GAS MIXTURE                            (FROM LAST CALC)                                                   
+ TEMP:   30.00  DEG C PRESS:    80.00  KG/CM2 GAU V/F: 1.0000  MOL/MOL LH/F: 0.0000  MOL/MOL        
+         86.00  DEG F         1138.12  PSI    GAU      1.0000  WT/WT         0.0000  WT/WT          
+                              7847.05  KPA    GAU
+
+
+                         |             FEED              |             VAPOUR            |         HYDROC.LIQUID         |
+ ------------------------|-------------------------------|-------------------------------|-------------------------------|
+ |NO|COMPONENT           |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR |  KGMASS  |  KGMOLS  |  MOL FR | K VALUES|
+ |  |--------------------|----------|----------|---------|----------|----------|---------|----------|----------|---------|---------|
+ | 1|METHANE             |    1445.5|     90.10|   0.9010|    1445.5|     90.10|   0.9010|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 2|ETHANE              |     180.6|      6.01|   0.0601|     180.6|      6.01|   0.0601|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 3|PROPANE             |      88.3|      2.00|   0.0200|      88.3|      2.00|   0.0200|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 4|2-METHYLPROPANE     |      29.1|      0.50|   0.0050|      29.1|      0.50|   0.0050|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 5|N-BUTANE            |      58.2|      1.00|   0.0100|      58.2|      1.00|   0.0100|       0.0|      0.00|   0.0000| 0.00E+00|
+ | 6|2-METHYLBUTANE      |       3.6|      0.05|   0.0005|       3.6|      0.05|   0.0005|       0.0|      0.00|   0.0000| 0.00E+00|

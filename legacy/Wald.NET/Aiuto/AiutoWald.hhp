@@ -1,0 +1,138 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=..\..\..\Lancio\bin\AiutoWald.chm
+Contents file=AiutoWald.hhc
+Default Window=Aiuto
+Default topic=Panoramica.htm
+Display compile progress=No
+Full text search stop list file=..\AsmeVip\stop.stp
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 Inglese (Stati Uniti d'America)
+Title=Guida di Wald
+
+[WINDOWS]
+Aiuto="Guida di Wald","AiutoWald.hhc","Index.hhk","Panoramica.htm","Panoramica.htm",,,,,0x23520,,0x304e,[105,216,849,641],,,,,,,0
+
+
+[FILES]
+Panoramica.htm
+Manuale.htm
+FunzAut.htm
+Autom.htm
+Tabella.htm
+Grafico.htm
+DatiZona.htm
+ErrFortran.htm
+ErrSpecNonImpl.htm
+ErrNonAcqua.htm
+ErrNonTxt.htm
+mainForm.htm
+ErrTxtNull.htm
+ManTeor.htm
+ManProgBasic.htm
+ManProgFORTRAN.htm
+ManFor\CBVind.htm
+ManFor\OPTION.htm
+ManFor\MRind.htm
+ManFor\MRL3ind.htm
+ManFor\MRL3CRICOV.htm
+ManFor\MRL2ind.htm
+ManFor\MRL2PROCIT.htm
+ManFor\MRL3aSTANDA.htm
+ManFor\MROutPRINT.htm
+ManFor\MROutind.htm
+ManFor\MRL3FUNZOB.htm
+ManFor\MRL3FATNOR.htm
+ManFor\MRL3FUNZER.htm
+ManFor\MRL3aind.htm
+ManFor\MRL3aTHERMO.htm
+ManFor\MRL1PROCEL.htm
+ManFor\MRL3PROCOV.htm
+ManFor\MRL1ind.htm
+ManFor\MRP1ind.htm
+ManFor\MRL1EVAPOR.htm
+ManFor\MRP1PROC1.htm
+ManFor\MRL1CONDEN.htm
+ManFor\MRL3PRESAT.htm
+ManFor\MRL2PROCIN.htm
+ManFor\cbINDEX.htm
+ManFor\IND.htm
+ManFor\MRL3KIDEAL.htm
+ManFor\MROutINIZIO.htm
+ManFor\cbACRISI.htm
+ManFor\cbFER.htm
+ManFor\cbPARTIZ.htm
+ManFor\cbMOLFR.htm
+Biblio.htm
+ManTeorRKS.htm
+ManTeorPR.htm
+ManTeorRKSkij.htm
+ManTeorAcentric.htm
+ManFor\MRSelPROC3.htm
+ManFor\MRSelPROC2.htm
+ManFor\MROutOUTPUT.htm
+ManFor\MRL1PROP1.htm
+ManFor\MRL1TENVAP.htm
+ManFor\MRL1PROP.htm
+ManFor\MRSelind.htm
+ManFor\cbK00K.htm
+ManFor\MRSelSELVA.htm
+ManFor\MRSelINPUT.htm
+ManFor\MRL1PRCELW.htm
+ManFor\MRL1SPTEST.htm
+ManFor\MRL2SOAVEH.htm
+ManFor\MRL2PENROH.htm
+ManFor\MRL2SOAVEW.htm
+ManFor\MRL2PENROW.htm
+ManFor\MRL3INVERS.htm
+ManFor\cbKVALUE.htm
+ManFor\MRL3CALMAX.htm
+ManFor\MROutPRINTW.htm
+Componenti.htm
+ManTeorPRkij.htm
+AssegnazPunti.htm
+TabGraf.htm
+ManFor\MRL3SOLUZ.htm
+
+[ALIAS]
+IDH_ERRFORTRAN=ErrFortran.htm
+IDH_LIMITAZIONI=Panoramica.htm#Limitazioni
+IDH_MF_ACQUALIQ=mainForm.htm#optAcqua
+IDH_MF_ASSEGNAPUNTI=AssegnazPunti.htm
+IDH_MF_BINARY=mainForm.htm#optBinary
+IDH_MF_CONTROLITER=mainForm.htm#ControlIter
+IDH_MF_COSTCRIT=mainForm.htm#optCostCrit
+IDH_MF_DATIINIZIALI=mainForm.htm#frmDatiIniz
+IDH_MF_DI_DaCalcPrec=mainForm.htm#DaCalcPrec
+IDH_MF_DI_H=mainForm.htm#H
+IDH_MF_DI_Portata=mainForm.htm#Portata
+IDH_MF_DI_Press=mainForm.htm#Press
+IDH_MF_DI_Q=mainForm.htm#Q
+IDH_MF_DI_S=mainForm.htm#S
+IDH_MF_DI_Temp=mainForm.htm#Temp
+IDH_MF_DI_xAcqua=mainForm.htm#xAcqua
+IDH_MF_DI_xHCliq=mainForm.htm#xHCliq
+IDH_MF_DI_xVap=mainForm.htm#xVap
+IDH_MF_DIAGNOSI=mainForm.htm#diagn
+IDH_MF_ENTENTR=mainForm.htm#EntEntr
+IDH_MF_HCLIQ=mainForm.htm#optHCliq
+IDH_MF_MOLPOND=mainForm.htm#MolPond
+IDH_MF_OPTEQUIL=mainForm.htm#optEquil
+IDH_MF_PROCEDI=mainForm.htm#cmdProcedi
+IDH_MF_RAPPORTO=mainForm.htm#cmdRapporto
+IDH_MF_RELABS=mainForm.htm#optPressioni
+IDH_MF_RISAER=mainForm.htm#RisAer
+IDH_MF_RISLIQ=mainForm.htm#RisLiq
+IDH_MF_UNIMIS=mainForm.htm#optUniMis
+IDH_NONACQUA=ErrNonAcqua.htm
+IDH_NONTXT=ErrNonTxt.htm
+IDH_SPECNONIMPL=ErrSpecNonImpl.htm
+IDH_TEXTNULL=ErrTxtNull.htm
+
+[MAP]
+#include header.h
+
+[INFOTYPES]
+

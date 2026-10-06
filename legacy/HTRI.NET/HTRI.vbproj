@@ -1,0 +1,290 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD0C8799-D294-438D-8D24-E271A271E8A9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>HTRI</AssemblyName>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <AssemblyMajorVersion>4</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>23</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>True</GenerateRevisionNumber>
+    <AssemblyCompanyName>FBM-Hudson Italiana SpA</AssemblyCompanyName>
+    <RootNamespace>HTRI</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>HTRI.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>HTRI.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Licensing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <COMReference Include="AutoCAD">
+      <Guid>{851A4561-F4EC-4631-9B0C-E7DC407512C9}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXDBLib">
+      <Guid>{11A32D00-9E89-4C16-82CB-629DEBA56AE2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="dao">
+      <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsAltern.vb" />
+    <Compile Include="clsHTRI.vb" />
+    <Compile Include="clsItem.vb" />
+    <Compile Include="clsPRV.vb" />
+    <Compile Include="Dsds.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmHTRI.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmHTRI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHTRI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsg.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScelMat.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmScelMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScelMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStampe.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmStampe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStampe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="functFORTRAN.vb" />
+    <Compile Include="GenHTRI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headx1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelpTopics.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpTopics.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Hstampe.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modStruct.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Monitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="nuovoLav.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>nuovoLav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nuovoLav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperFin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFORTRAN.vb" />
+    <Compile Include="RobertFORTRAN.vb" />
+    <Compile Include="Settivu.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Testap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipi.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typbuf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typWald.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Upm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Upm2.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Upmcov.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="upmFORTRAN.vb" />
+    <Compile Include="Uptx1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="vecchiFORTRAN.vb" />
+    <EmbeddedResource Include="frmHTRI.resX">
+      <DependentUpon>frmHTRI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsg.resX">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScelMat.resX">
+      <DependentUpon>frmScelMat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStampe.resX">
+      <DependentUpon>frmStampe.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpTopics.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelpTopics.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuovoLav.resX">
+      <DependentUpon>nuovoLav.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectResources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjectResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grafica.NET\Grafic2.vbproj">
+      <Project>{E7CD1644-6158-4387-81E4-F2CC2BCC10E0}</Project>
+      <Name>Grafic2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibMat.NET\LibMat.vbproj">
+      <Project>{BFBA7621-266F-4831-8B74-A3AFBF0FE303}</Project>
+      <Name>LibMat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase.NET\RoutBase1.vbproj">
+      <Project>{3B2389A2-3B3A-4FDE-980B-3345357EC065}</Project>
+      <Name>RoutBase1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW2000.NET\StubW2000.vbproj">
+      <Project>{CEF5E506-69FD-499F-99B3-E10767B365D4}</Project>
+      <Name>StubW2000</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW9.NET\StubW9.vbproj">
+      <Project>{D211EA20-5776-410B-9174-1817E9DD67C3}</Project>
+      <Name>StubW9</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ventil.NET\Ventil.vbproj">
+      <Project>{3E7AAA1E-B601-4F2D-B984-AA359256899D}</Project>
+      <Name>Ventil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wald.NET\Wald.vbproj">
+      <Project>{3421DDF7-EFBF-4683-AE38-1C524808AF73}</Project>
+      <Name>Wald</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinWordControl\WinWordControl.csproj">
+      <Project>{12793C64-A87B-42AD-8058-57C9F43DBD98}</Project>
+      <Name>WinWordControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arch\ARCH23.DAT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arch\DATLIB.DAT" />
+    <Content Include="Arch\Testic1n.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

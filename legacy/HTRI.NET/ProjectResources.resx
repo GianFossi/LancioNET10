@@ -1,0 +1,3141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ARCH14_002" xml:space="preserve">
+    <value>ASTM A515 GR.60    |</value>
+  </data>
+  <data name="ARCH14_003" xml:space="preserve">
+    <value>ASTM A515 GR.60  K |</value>
+  </data>
+  <data name="ARCH14_004" xml:space="preserve">
+    <value>ASTM A516 GR.60    |</value>
+  </data>
+  <data name="ARCH14_005" xml:space="preserve">
+    <value>ASTM A516 GR.60  K |</value>
+  </data>
+  <data name="ARCH14_006" xml:space="preserve">
+    <value>ASTM A515 GR.70    |</value>
+  </data>
+  <data name="ARCH14_007" xml:space="preserve">
+    <value>ASTM A515 GR.70  K |</value>
+  </data>
+  <data name="ARCH14_008" xml:space="preserve">
+    <value>ASTM A516 GR.70    |</value>
+  </data>
+  <data name="ARCH14_009" xml:space="preserve">
+    <value>ASTM A516 GR.70  K |</value>
+  </data>
+  <data name="ARCH14_010" xml:space="preserve">
+    <value>ASTM A285 GR.C     |</value>
+  </data>
+  <data name="ARCH14_011" xml:space="preserve">
+    <value>ASTM A285 GR.C   K |</value>
+  </data>
+  <data name="ARCH14_012" xml:space="preserve">
+    <value>ASTM A203 GR.A     |</value>
+  </data>
+  <data name="ARCH14_013" xml:space="preserve">
+    <value>ASTM A203 GR.A   K |</value>
+  </data>
+  <data name="ARCH14_014" xml:space="preserve">
+    <value>ASTM A203 GR.B     |</value>
+  </data>
+  <data name="ARCH14_015" xml:space="preserve">
+    <value>ASTM A203 GR.B   K |</value>
+  </data>
+  <data name="ARCH14_016" xml:space="preserve">
+    <value>ASTM A203 GR.D     |</value>
+  </data>
+  <data name="ARCH14_017" xml:space="preserve">
+    <value>ASTM A203 GR.D   K |</value>
+  </data>
+  <data name="ARCH14_018" xml:space="preserve">
+    <value>ASTM A203 GR.E     |</value>
+  </data>
+  <data name="ARCH14_019" xml:space="preserve">
+    <value>ASTM A203 GR.E   K |</value>
+  </data>
+  <data name="ARCH14_020" xml:space="preserve">
+    <value>ASTM A204 GR.B     |</value>
+  </data>
+  <data name="ARCH14_021" xml:space="preserve">
+    <value>ASTM A204 GR.B   K |</value>
+  </data>
+  <data name="ARCH14_022" xml:space="preserve">
+    <value>ASTM A387 GR.5     |</value>
+  </data>
+  <data name="ARCH14_023" xml:space="preserve">
+    <value>ASTM A387 GR.5   K |</value>
+  </data>
+  <data name="ARCH14_024" xml:space="preserve">
+    <value>ASTM A240-304      |</value>
+  </data>
+  <data name="ARCH14_025" xml:space="preserve">
+    <value>ASTM A240-304L     |</value>
+  </data>
+  <data name="ARCH14_026" xml:space="preserve">
+    <value>ASTM A240-316      |</value>
+  </data>
+  <data name="ARCH14_027" xml:space="preserve">
+    <value>ASTM A240-316L     |</value>
+  </data>
+  <data name="ARCH14_028" xml:space="preserve">
+    <value>ASTM A240-321      |</value>
+  </data>
+  <data name="ARCH14_029" xml:space="preserve">
+    <value>ASTM A240-405      |</value>
+  </data>
+  <data name="ARCH14_030" xml:space="preserve">
+    <value>ASTM A240-410      |</value>
+  </data>
+  <data name="ARCH14_031" xml:space="preserve">
+    <value>ASTM B209-6061-T6  |</value>
+  </data>
+  <data name="ARCH14_032" xml:space="preserve">
+    <value>ASTM B152-122      |</value>
+  </data>
+  <data name="ARCH14_033" xml:space="preserve">
+    <value>ASTM B169-614      |</value>
+  </data>
+  <data name="ARCH14_034" xml:space="preserve">
+    <value>ASTM B171-444      |</value>
+  </data>
+  <data name="ARCH14_035" xml:space="preserve">
+    <value>ASTM B171-464      |</value>
+  </data>
+  <data name="ARCH14_036" xml:space="preserve">
+    <value>ASTM B171-614      |</value>
+  </data>
+  <data name="ARCH14_037" xml:space="preserve">
+    <value>ASTM B402-715      |</value>
+  </data>
+  <data name="ARCH14_038" xml:space="preserve">
+    <value>ASTM B402-706      |</value>
+  </data>
+  <data name="ARCH14_039" xml:space="preserve">
+    <value>ASTM B168-600      |</value>
+  </data>
+  <data name="ARCH14_040" xml:space="preserve">
+    <value>ASTM B409-800      |</value>
+  </data>
+  <data name="ARCH14_041" xml:space="preserve">
+    <value>ASTM B333-B        |</value>
+  </data>
+  <data name="ARCH14_042" xml:space="preserve">
+    <value>ASTM B265 GR.1     |</value>
+  </data>
+  <data name="ARCH14_043" xml:space="preserve">
+    <value>ASTM B265 GR.2     |</value>
+  </data>
+  <data name="ARCH14_044" xml:space="preserve">
+    <value>ASTM B127-400      |</value>
+  </data>
+  <data name="ARCH14_045" xml:space="preserve">
+    <value>ASTM B424-825      |</value>
+  </data>
+  <data name="ARCH14_046" xml:space="preserve">
+    <value>SANDVIK 3RE-60     |</value>
+  </data>
+  <data name="ARCH14_047" xml:space="preserve">
+    <value>H II DIN 17155     |</value>
+  </data>
+  <data name="ARCH14_048" xml:space="preserve">
+    <value>H II DIN 17155   K |</value>
+  </data>
+  <data name="ARCH14_049" xml:space="preserve">
+    <value>FE410-1 KW UNI5869 |</value>
+  </data>
+  <data name="ARCH14_050" xml:space="preserve">
+    <value>FE410-1 KW UNI586K |</value>
+  </data>
+  <data name="ARCH14_051" xml:space="preserve">
+    <value>FE410-2 KW UNI5869 |</value>
+  </data>
+  <data name="ARCH14_052" xml:space="preserve">
+    <value>FE410-2 KW UNI586K |</value>
+  </data>
+  <data name="ARCH14_053" xml:space="preserve">
+    <value>FE510-1 KW UNI5869 |</value>
+  </data>
+  <data name="ARCH14_054" xml:space="preserve">
+    <value>FE510-1 KW UNI586K |</value>
+  </data>
+  <data name="ARCH14_055" xml:space="preserve">
+    <value>FE510-2 KW UNI5869 |</value>
+  </data>
+  <data name="ARCH14_056" xml:space="preserve">
+    <value>FE510-2 KW UNI586K |</value>
+  </data>
+  <data name="ARCH14_057" xml:space="preserve">
+    <value>SELCO 53           |</value>
+  </data>
+  <data name="ARCH14_058" xml:space="preserve">
+    <value>SELCO 53         K |</value>
+  </data>
+  <data name="ARCH14_059" xml:space="preserve">
+    <value>SANDVIK 2RK-65     |</value>
+  </data>
+  <data name="ARCH14_060" xml:space="preserve">
+    <value>ASTM A387 GR.11    |</value>
+  </data>
+  <data name="ARCH14_061" xml:space="preserve">
+    <value>ASTM A387 GR.11  K |</value>
+  </data>
+  <data name="ARCH14_062" xml:space="preserve">
+    <value>                   |</value>
+  </data>
+  <data name="ARCH14_063" xml:space="preserve">
+    <value>A ST 45 DIN 17135K |</value>
+  </data>
+  <data name="ARCH14_064" xml:space="preserve">
+    <value>ASME SA515 GR.60   |</value>
+  </data>
+  <data name="ARCH14_065" xml:space="preserve">
+    <value>ASME SA515 GR.70 K |</value>
+  </data>
+  <data name="ARCH14_066" xml:space="preserve">
+    <value>ASME SA516 GR.60   |</value>
+  </data>
+  <data name="ARCH14_067" xml:space="preserve">
+    <value>ASME SA516 GR.70   |</value>
+  </data>
+  <data name="ARCH14_068" xml:space="preserve">
+    <value>A42CP-NFA36205     |</value>
+  </data>
+  <data name="ARCH14_069" xml:space="preserve">
+    <value>SANDVIK SAF-2205   |</value>
+  </data>
+  <data name="ARCH14_070" xml:space="preserve">
+    <value>ASME SA516 GR.70 K |</value>
+  </data>
+  <data name="ARCH14_071" xml:space="preserve">
+    <value>ASME SA240-304     |</value>
+  </data>
+  <data name="ARCH14_072" xml:space="preserve">
+    <value>ASTM B443-6625     |</value>
+  </data>
+  <data name="ARCH14_073" xml:space="preserve">
+    <value>SANICRO 28         |</value>
+  </data>
+  <data name="ARCH14_074" xml:space="preserve">
+    <value>X                  |</value>
+  </data>
+  <data name="ARCH15_002" xml:space="preserve">
+    <value>ASTM A 105</value>
+  </data>
+  <data name="ARCH15_003" xml:space="preserve">
+    <value>ASTM A 181 GR.1</value>
+  </data>
+  <data name="ARCH15_004" xml:space="preserve">
+    <value>ASTM A 181 GR.2</value>
+  </data>
+  <data name="ARCH15_005" xml:space="preserve">
+    <value>ASTM A 350-LF1</value>
+  </data>
+  <data name="ARCH15_006" xml:space="preserve">
+    <value>ASTM A 350-LF2</value>
+  </data>
+  <data name="ARCH15_007" xml:space="preserve">
+    <value>ASTM A 350-LF3</value>
+  </data>
+  <data name="ARCH15_008" xml:space="preserve">
+    <value>ASTM A 182-F1</value>
+  </data>
+  <data name="ARCH15_009" xml:space="preserve">
+    <value>ASTM A 182-F12</value>
+  </data>
+  <data name="ARCH15_010" xml:space="preserve">
+    <value>ASTM A 182-F304</value>
+  </data>
+  <data name="ARCH15_011" xml:space="preserve">
+    <value>ASTM A 182-F304L</value>
+  </data>
+  <data name="ARCH15_012" xml:space="preserve">
+    <value>ASTM A 182-F316</value>
+  </data>
+  <data name="ARCH15_013" xml:space="preserve">
+    <value>ASTM A 182-F316L</value>
+  </data>
+  <data name="ARCH15_014" xml:space="preserve">
+    <value>ASTM A 182-F321</value>
+  </data>
+  <data name="ARCH15_015" xml:space="preserve">
+    <value>ASTM B 164-400</value>
+  </data>
+  <data name="ARCH15_016" xml:space="preserve">
+    <value>ASTM B 166-600</value>
+  </data>
+  <data name="ARCH15_017" xml:space="preserve">
+    <value>ASTM B 408-800</value>
+  </data>
+  <data name="ARCH15_018" xml:space="preserve">
+    <value>ASTM B 425-825</value>
+  </data>
+  <data name="ARCH15_019" xml:space="preserve">
+    <value>ASTM B 381 GR.1</value>
+  </data>
+  <data name="ARCH15_020" xml:space="preserve">
+    <value>ASTM B 381 GR.F2</value>
+  </data>
+  <data name="ARCH15_021" xml:space="preserve">
+    <value>C 22.8 NR-350</value>
+  </data>
+  <data name="ARCH15_022" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ARCH15_023" xml:space="preserve">
+    <value>ASTM A 182-F11</value>
+  </data>
+  <data name="ARCH15_024" xml:space="preserve">
+    <value>ASME SA105</value>
+  </data>
+  <data name="ARCH15_025" xml:space="preserve">
+    <value>ASTM A 276-405</value>
+  </data>
+  <data name="ARCH15_026" xml:space="preserve">
+    <value>ASTM A576GR.1022</value>
+  </data>
+  <data name="ARCH15_027" xml:space="preserve">
+    <value>AF48N-NFM87508</value>
+  </data>
+  <data name="ARCH15_028" xml:space="preserve">
+    <value>SANDVIK SAF-2205</value>
+  </data>
+  <data name="ARCH15_029" xml:space="preserve">
+    <value>ASME SA182-F304</value>
+  </data>
+  <data name="ARCH15_030" xml:space="preserve">
+    <value>ASTM B446</value>
+  </data>
+  <data name="ARCH15_031" xml:space="preserve">
+    <value>SANICRO 28</value>
+  </data>
+  <data name="ARCH15_033" xml:space="preserve">
+    <value>DUPLEX 2500</value>
+  </data>
+  <data name="ARCH15_034" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="ARCH16_02" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="ARCH16_03" xml:space="preserve">
+    <value>ANSI 150 LB RF      |</value>
+  </data>
+  <data name="ARCH16_04" xml:space="preserve">
+    <value>ANSI 300 LB RF      |</value>
+  </data>
+  <data name="ARCH16_05" xml:space="preserve">
+    <value>ANSI 400 LB RF      |</value>
+  </data>
+  <data name="ARCH16_06" xml:space="preserve">
+    <value>ANSI 600 LB RF      |</value>
+  </data>
+  <data name="ARCH16_07" xml:space="preserve">
+    <value>ANSI 900 LB RF      |</value>
+  </data>
+  <data name="ARCH16_08" xml:space="preserve">
+    <value>ANSI 1500 LB RF     |</value>
+  </data>
+  <data name="ARCH16_09" xml:space="preserve">
+    <value>ANSI 2500 LB RF     |</value>
+  </data>
+  <data name="ARCH16_10" xml:space="preserve">
+    <value>ANSI 150 LB RTJ     |</value>
+  </data>
+  <data name="ARCH16_11" xml:space="preserve">
+    <value>ANSI 300 LB RTJ     |</value>
+  </data>
+  <data name="ARCH16_12" xml:space="preserve">
+    <value>ANSI 400 LB RTJ     |</value>
+  </data>
+  <data name="ARCH16_13" xml:space="preserve">
+    <value>ANSI 600 LB RTJ     |</value>
+  </data>
+  <data name="ARCH16_14" xml:space="preserve">
+    <value>ANSI 900 LB RTJ     |</value>
+  </data>
+  <data name="ARCH16_15" xml:space="preserve">
+    <value>ANSI 1500 LB RTJ    |</value>
+  </data>
+  <data name="ARCH16_16" xml:space="preserve">
+    <value>ANSI 2500 LB RTJ    |</value>
+  </data>
+  <data name="ARCH16_17" xml:space="preserve">
+    <value>ANSI 150 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_18" xml:space="preserve">
+    <value>ANSI 300 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_19" xml:space="preserve">
+    <value>ANSI 400 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_20" xml:space="preserve">
+    <value>ANSI 600 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_21" xml:space="preserve">
+    <value>ANSI 900 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_22" xml:space="preserve">
+    <value>ANSI 1500 RF 125 RMS|</value>
+  </data>
+  <data name="ARCH16_23" xml:space="preserve">
+    <value>ANSI 2500 RF 125 RMS|</value>
+  </data>
+  <data name="ARCH16_24" xml:space="preserve">
+    <value>ND 6                |</value>
+  </data>
+  <data name="ARCH16_25" xml:space="preserve">
+    <value>ND 10               |</value>
+  </data>
+  <data name="ARCH16_26" xml:space="preserve">
+    <value>ND 25               |</value>
+  </data>
+  <data name="ARCH16_27" xml:space="preserve">
+    <value>ND 40               |</value>
+  </data>
+  <data name="ARCH16_28" xml:space="preserve">
+    <value>ND 64               |</value>
+  </data>
+  <data name="ARCH16_29" xml:space="preserve">
+    <value>ND 100              |</value>
+  </data>
+  <data name="ARCH16_30" xml:space="preserve">
+    <value>ND 160              |</value>
+  </data>
+  <data name="ARCH16_31" xml:space="preserve">
+    <value>STUB ENDS           |</value>
+  </data>
+  <data name="ARCH16_32" xml:space="preserve">
+    <value>ND</value>
+  </data>
+  <data name="ARCH16_33" xml:space="preserve">
+    <value>ANSI 150 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_34" xml:space="preserve">
+    <value>ANSI 300 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_35" xml:space="preserve">
+    <value>ANSI 400 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_36" xml:space="preserve">
+    <value>ANSI 600 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_37" xml:space="preserve">
+    <value>ANSI 900 RF 125 RMS |</value>
+  </data>
+  <data name="ARCH16_38" xml:space="preserve">
+    <value>ANSI 1500 RF 125 RMS|</value>
+  </data>
+  <data name="ARCH16_39" xml:space="preserve">
+    <value>ANSI 2500 RF 125 RMS|</value>
+  </data>
+  <data name="ARCH16_40" xml:space="preserve">
+    <value>ND 6                |</value>
+  </data>
+  <data name="ARCH16_41" xml:space="preserve">
+    <value>ND 10               |</value>
+  </data>
+  <data name="ARCH16_42" xml:space="preserve">
+    <value>ND 25               |</value>
+  </data>
+  <data name="ARCH16_43" xml:space="preserve">
+    <value>ND 40               |</value>
+  </data>
+  <data name="ARCH16_44" xml:space="preserve">
+    <value>ND 64               |</value>
+  </data>
+  <data name="ARCH16_45" xml:space="preserve">
+    <value>ND 100              |</value>
+  </data>
+  <data name="ARCH16_47" xml:space="preserve">
+    <value>STUB ENDS           |</value>
+  </data>
+  <data name="ARCH16_48" xml:space="preserve">
+    <value>ND 16               |</value>
+  </data>
+  <data name="ARCH16_49" xml:space="preserve">
+    <value>X                   |</value>
+  </data>
+  <data name="ARCH16_56" xml:space="preserve">
+    <value>ND 160              D</value>
+  </data>
+  <data name="ARCH18_02" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="ARCH18_03" xml:space="preserve">
+    <value>HEADERS</value>
+  </data>
+  <data name="ARCH18_04" xml:space="preserve">
+    <value>HEADERS (ONE END)</value>
+  </data>
+  <data name="ARCH18_05" xml:space="preserve">
+    <value>HEADERS &amp; MOTORS</value>
+  </data>
+  <data name="ARCH18_06" xml:space="preserve">
+    <value>MOTORS</value>
+  </data>
+  <data name="ARCH18_07" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="ARCH23_002" xml:space="preserve">
+    <value>ASTM A179          |         |</value>
+  </data>
+  <data name="ARCH23_003" xml:space="preserve">
+    <value>ASTM A179        K |         |</value>
+  </data>
+  <data name="ARCH23_004" xml:space="preserve">
+    <value>ASTM A214          |         |</value>
+  </data>
+  <data name="ARCH23_005" xml:space="preserve">
+    <value>ASTM A214        K |         |</value>
+  </data>
+  <data name="ARCH23_006" xml:space="preserve">
+    <value>ASTM A210 GR.A1    |         |</value>
+  </data>
+  <data name="ARCH23_007" xml:space="preserve">
+    <value>ASTM A210 GR.A1  K |         |</value>
+  </data>
+  <data name="ARCH23_008" xml:space="preserve">
+    <value>ASTM A210 GR.C     |         |</value>
+  </data>
+  <data name="ARCH23_009" xml:space="preserve">
+    <value>ASTM A210 GR.C   K |         |</value>
+  </data>
+  <data name="ARCH23_010" xml:space="preserve">
+    <value>ASTM A334 GR.1-SML |         |</value>
+  </data>
+  <data name="ARCH23_011" xml:space="preserve">
+    <value>ASTM A334 GR.1SMLk |         |</value>
+  </data>
+  <data name="ARCH23_012" xml:space="preserve">
+    <value>ASTM A334 GR.1-ERW |         |</value>
+  </data>
+  <data name="ARCH23_013" xml:space="preserve">
+    <value>ASTM A334 GR.1ERWk |         |</value>
+  </data>
+  <data name="ARCH23_014" xml:space="preserve">
+    <value>ASTM A334 GR.3-SML |         |</value>
+  </data>
+  <data name="ARCH23_015" xml:space="preserve">
+    <value>ASTM A334 GR.3SMLk |         |</value>
+  </data>
+  <data name="ARCH23_016" xml:space="preserve">
+    <value>ASTM A334 GR.3-ERW |         |</value>
+  </data>
+  <data name="ARCH23_017" xml:space="preserve">
+    <value>ASTM A334 GR.3ERWk |         |</value>
+  </data>
+  <data name="ARCH23_018" xml:space="preserve">
+    <value>ASTM A334 GR.6-SML |         |</value>
+  </data>
+  <data name="ARCH23_019" xml:space="preserve">
+    <value>ASTM A334 GR.6SMLk |         |</value>
+  </data>
+  <data name="ARCH23_020" xml:space="preserve">
+    <value>ASTM A334 GR.6-ERW |         |</value>
+  </data>
+  <data name="ARCH23_021" xml:space="preserve">
+    <value>ASTM A334 GR.6ERWk |         |</value>
+  </data>
+  <data name="ARCH23_022" xml:space="preserve">
+    <value>ASTM A209-T1       |         |</value>
+  </data>
+  <data name="ARCH23_023" xml:space="preserve">
+    <value>ASTM A209-T1     K |         |</value>
+  </data>
+  <data name="ARCH23_024" xml:space="preserve">
+    <value>ASTM A209-T1A      |         |</value>
+  </data>
+  <data name="ARCH23_025" xml:space="preserve">
+    <value>ASTM A209-T1A    K |         |</value>
+  </data>
+  <data name="ARCH23_026" xml:space="preserve">
+    <value>ASTM A209-T1B      |         |</value>
+  </data>
+  <data name="ARCH23_027" xml:space="preserve">
+    <value>ASTM A209-T1B    K |         |</value>
+  </data>
+  <data name="ARCH23_028" xml:space="preserve">
+    <value>ASTM A213-304      |         |</value>
+  </data>
+  <data name="ARCH23_029" xml:space="preserve">
+    <value>ASTM A249-304      |         |</value>
+  </data>
+  <data name="ARCH23_030" xml:space="preserve">
+    <value>ASTM A213-304L     |         |</value>
+  </data>
+  <data name="ARCH23_031" xml:space="preserve">
+    <value>ASTM A249-304L     |         |</value>
+  </data>
+  <data name="ARCH23_032" xml:space="preserve">
+    <value>ASTM A213-316      |         |</value>
+  </data>
+  <data name="ARCH23_033" xml:space="preserve">
+    <value>ASTM A249-316      |         |</value>
+  </data>
+  <data name="ARCH23_034" xml:space="preserve">
+    <value>ASTM A213-316L     |         |</value>
+  </data>
+  <data name="ARCH23_035" xml:space="preserve">
+    <value>ASTM A249-316L     |         |</value>
+  </data>
+  <data name="ARCH23_036" xml:space="preserve">
+    <value>ASTM A213-321      |         |</value>
+  </data>
+  <data name="ARCH23_037" xml:space="preserve">
+    <value>ASTM A249-321      |         |</value>
+  </data>
+  <data name="ARCH23_038" xml:space="preserve">
+    <value>ASTM A268-405-SML  |         |</value>
+  </data>
+  <data name="ARCH23_039" xml:space="preserve">
+    <value>ASTM A268-405-ERW  |         |</value>
+  </data>
+  <data name="ARCH23_040" xml:space="preserve">
+    <value>ASTM A268-410-SML  |         |</value>
+  </data>
+  <data name="ARCH23_041" xml:space="preserve">
+    <value>ASTM A268-410-ERW  |         |</value>
+  </data>
+  <data name="ARCH23_042" xml:space="preserve">
+    <value>ASTM B234-6061-T6  |         |</value>
+  </data>
+  <data name="ARCH23_043" xml:space="preserve">
+    <value>ASTM B111-443      |         |</value>
+  </data>
+  <data name="ARCH23_044" xml:space="preserve">
+    <value>ASTM B111-608      |         |</value>
+  </data>
+  <data name="ARCH23_045" xml:space="preserve">
+    <value>ASTM B111-706      |         |</value>
+  </data>
+  <data name="ARCH23_046" xml:space="preserve">
+    <value>ASTM B111-715      |         |</value>
+  </data>
+  <data name="ARCH23_047" xml:space="preserve">
+    <value>ASTM B163-400      |         |</value>
+  </data>
+  <data name="ARCH23_048" xml:space="preserve">
+    <value>ASTM B163-825      |         |</value>
+  </data>
+  <data name="ARCH23_049" xml:space="preserve">
+    <value>ASTM B135-230      |         |</value>
+  </data>
+  <data name="ARCH23_050" xml:space="preserve">
+    <value>ASTM B338-GR.1     |         |</value>
+  </data>
+  <data name="ARCH23_051" xml:space="preserve">
+    <value>ASTM B338 GR.2     |         |</value>
+  </data>
+  <data name="ARCH23_052" xml:space="preserve">
+    <value>ST35.8-I DIN 17175 |         |</value>
+  </data>
+  <data name="ARCH23_053" xml:space="preserve">
+    <value>ST35.8-I DIN17175K |         |</value>
+  </data>
+  <data name="ARCH23_054" xml:space="preserve">
+    <value>ST35.8-II DIN17175 |         |</value>
+  </data>
+  <data name="ARCH23_055" xml:space="preserve">
+    <value>ST35.8-IIDIN17175K |         |</value>
+  </data>
+  <data name="ARCH23_056" xml:space="preserve">
+    <value>ST35.8-IIIDIN17175 |         |</value>
+  </data>
+  <data name="ARCH23_057" xml:space="preserve">
+    <value>ST35.8IIIDIN17175K |         |</value>
+  </data>
+  <data name="ARCH23_058" xml:space="preserve">
+    <value>FE 35.2 UNI 663    |         |</value>
+  </data>
+  <data name="ARCH23_059" xml:space="preserve">
+    <value>FE 35.2 UNI 663  K |         |</value>
+  </data>
+  <data name="ARCH23_060" xml:space="preserve">
+    <value>ASTM B163-600      |         |</value>
+  </data>
+  <data name="ARCH23_061" xml:space="preserve">
+    <value>SANDVIK 3RE-60     |         |</value>
+  </data>
+  <data name="ARCH23_062" xml:space="preserve">
+    <value>ST 34.2 DIN 1626   |         |</value>
+  </data>
+  <data name="ARCH23_063" xml:space="preserve">
+    <value>ST 34.2 DIN 1626 K |         |</value>
+  </data>
+  <data name="ARCH23_064" xml:space="preserve">
+    <value>ST 37.2 DIN 1626   |         |</value>
+  </data>
+  <data name="ARCH23_065" xml:space="preserve">
+    <value>ST 37.2 DIN 1626 K |         |</value>
+  </data>
+  <data name="ARCH23_066" xml:space="preserve">
+    <value>ST 42.2 DIN 1626   |         |</value>
+  </data>
+  <data name="ARCH23_067" xml:space="preserve">
+    <value>ST 42.2 DIN 1626 K |         |</value>
+  </data>
+  <data name="ARCH23_068" xml:space="preserve">
+    <value>ST 52.3 DIN 1626   |         |</value>
+  </data>
+  <data name="ARCH23_069" xml:space="preserve">
+    <value>ST 52.3 DIN 1626 K |         |</value>
+  </data>
+  <data name="ARCH23_070" xml:space="preserve">
+    <value>SANDVIK 2RK-65     |         |</value>
+  </data>
+  <data name="ARCH23_071" xml:space="preserve">
+    <value>ASTM A269-304      |         |</value>
+  </data>
+  <data name="ARCH23_072" xml:space="preserve">
+    <value>ASTM A226-ERW      |         |</value>
+  </data>
+  <data name="ARCH23_073" xml:space="preserve">
+    <value>ASTM A226-ERW    K |         |</value>
+  </data>
+  <data name="ARCH23_074" xml:space="preserve">
+    <value>ASTM A199 GR.T11   |         |</value>
+  </data>
+  <data name="ARCH23_075" xml:space="preserve">
+    <value>ASTM A192          |         |</value>
+  </data>
+  <data name="ARCH23_076" xml:space="preserve">
+    <value>ASTM B-167-SML     |         |</value>
+  </data>
+  <data name="ARCH23_077" xml:space="preserve">
+    <value>ASME A213-T5       |         |</value>
+  </data>
+  <data name="ARCH23_078" xml:space="preserve">
+    <value>ASME A213-T5     K |         |</value>
+  </data>
+  <data name="ARCH23_079" xml:space="preserve">
+    <value>C 14 UNI 5462      |         |</value>
+  </data>
+  <data name="ARCH23_080" xml:space="preserve">
+    <value>ASTM B626-ERW      |         |</value>
+  </data>
+  <data name="ARCH23_081" xml:space="preserve">
+    <value>ASTM B111-142      |         |</value>
+  </data>
+  <data name="ARCH23_082" xml:space="preserve">
+    <value>ASME SA179         |         |</value>
+  </data>
+  <data name="ARCH23_083" xml:space="preserve">
+    <value>TU42C-NFA49215     |         |</value>
+  </data>
+  <data name="ARCH23_084" xml:space="preserve">
+    <value>TUZ2CN18.10/49217  |         |</value>
+  </data>
+  <data name="ARCH23_085" xml:space="preserve">
+    <value>ASTM A268-18CR 2MO |         |</value>
+  </data>
+  <data name="ARCH23_086" xml:space="preserve">
+    <value>SANDVIK SAF-2205   |         |</value>
+  </data>
+  <data name="ARCH23_087" xml:space="preserve">
+    <value>FE 37 CS UNI 7091  |         |</value>
+  </data>
+  <data name="ARCH23_088" xml:space="preserve">
+    <value>FE 37 CS UNI 7091K |         |</value>
+  </data>
+  <data name="ARCH23_089" xml:space="preserve">
+    <value>ASTM B111-122      |         |</value>
+  </data>
+  <data name="ARCH23_090" xml:space="preserve">
+    <value>ASTM A-669         |         |</value>
+  </data>
+  <data name="ARCH23_091" xml:space="preserve">
+    <value>ASME SA214         |         |</value>
+  </data>
+  <data name="ARCH23_092" xml:space="preserve">
+    <value>ASME SA249-304     |         |</value>
+  </data>
+  <data name="ARCH23_093" xml:space="preserve">
+    <value>ASTM B444-6625     |         |</value>
+  </data>
+  <data name="ARCH23_094" xml:space="preserve">
+    <value>SANICRO 28         |         |</value>
+  </data>
+  <data name="ARCH23_095" xml:space="preserve">
+    <value>ASTM B515-800-ERW  |         |</value>
+  </data>
+  <data name="ARCH23_096" xml:space="preserve">
+    <value>X                  |         |</value>
+  </data>
+  <data name="ARCH25_02" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="ARCH25_03" xml:space="preserve">
+    <value>5 MM/M</value>
+  </data>
+  <data name="ARCH25_04" xml:space="preserve">
+    <value>10 MM/M</value>
+  </data>
+  <data name="ARCH25_05" xml:space="preserve">
+    <value>20 MM/M</value>
+  </data>
+  <data name="ARCH25_06" xml:space="preserve">
+    <value>40 MM/M</value>
+  </data>
+  <data name="ARCH25_07" xml:space="preserve">
+    <value>1/8 IN/FT</value>
+  </data>
+  <data name="ARCH25_08" xml:space="preserve">
+    <value>1/4 IN/FT</value>
+  </data>
+  <data name="ARCH25_09" xml:space="preserve">
+    <value>1/2 IN/FT</value>
+  </data>
+  <data name="ARCH25_10" xml:space="preserve">
+    <value>NOTE</value>
+  </data>
+  <data name="ARCH25_11" xml:space="preserve">
+    <value>1/16 IN/FT</value>
+  </data>
+  <data name="ARCH25_12" xml:space="preserve">
+    <value>1/5 IN/FT</value>
+  </data>
+  <data name="ARCH25_13" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Helpfile" xml:space="preserve">
+    <value>\BIN\AiutoISA.chm</value>
+  </data>
+  <data name="stop00001" xml:space="preserve">
+    <value>S P E S S O R I  P I A S T R A  T U B I E R A\par </value>
+  </data>
+  <data name="stop00002" xml:space="preserve">
+    <value>Spessori Top &amp; Bottom &amp; End MINIMI/ASSUNTO\par </value>
+  </data>
+  <data name="stop00003" xml:space="preserve">
+    <value>Spessori Flangia            MINIMI/ASSUNTO\par </value>
+  </data>
+  <data name="stop00004" xml:space="preserve">
+    <value>PASSO TIRANTI : BOLTING UP OPER. CONDITION MAX.API\par </value>
+  </data>
+  <data name="stop00005" xml:space="preserve">
+    <value>&gt; SPESSORE PIASTRA TUBIERA{0,12:F}\par </value>
+  </data>
+  <data name="stop00006" xml:space="preserve">
+    <value>&gt; SPESSORE COVER         {0,12:F}\par </value>
+  </data>
+  <data name="stop00007" xml:space="preserve">
+    <value>&gt; SPESSORE SETTI          {0,12:F}\par </value>
+  </data>
+  <data name="stop00008" xml:space="preserve">
+    <value>&gt; PASSO BULLONI           {0,12:F}\par </value>
+  </data>
+  <data name="stop00011" xml:space="preserve">
+    <value>(///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',4X,'= A I R C O O L E R S    S U M M A R Y =  DATE : ',6A1,'19',2A1,5X,'CHECK : ',A2,7X,'SHEET',I3,' OF',I3,/5X,123('*'),//,5X,'QUOTATION: ',A8 ,2X,'REV.: ',A2,10X,'CUSTOMER: ',10A2,4X,'PLANT LOCATION:  ',10A2,//,5X,123('='),/,5X,'|  I T E M',13X,'|   BARE   |   (N0.)  SIZE    |   (NO.)  SIZE    | DESIGN |  (NO.) SIZE |   (NO.)  SIZE    |  % AV |',/,5X,'|',22X,'|  SURFACE |     SECTIONS     |       BAYS',7X,'| OPERAT.|    MOTORS   |       FANS',7X,'|  FANS |',/,5X,'|',22X,'|    ',2A2,'  |',18X,'|',18X,'|   ',A2,'   |',6X,A2,5X,'|',18X,'|',7X,'|')</value>
+  </data>
+  <data name="stop00012" xml:space="preserve">
+    <value>(///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',8X,'= C O N T R O L S    S U M M A R Y =   DATE : ',6A1,'19',2A1,4X,'CHECK : ',A2,6X,'SHEET',I3,' OF',I3,/,5X,122('*'),//,5X,'QUOTATION: ',A8 ,2X,'REV.: ',A2,10X,'CUSTOMER: ',10A2,4X,'PLANT LOCATION:  ',10A2,///,5X,122('='),/,5X,'|  I T E M',13X,'|',5X,'LOUVERS    |  STEAM |  AIR RECIRCULATION |','PITCH N.PASSES|INLET NOZZL|OUT   NOZZL|  SLOPE    |',/,5X,'|',22X,'|',16X,'|  COILS |',20X,'|NUMBER OF ROWS| Nø  DIA   | Nø  DIA   |',11X,'|')</value>
+  </data>
+  <data name="stop00013" xml:space="preserve">
+    <value>(///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',11X,'= SOMMARIO REFRIGERANTI AD ARIA =  DATA : ',6A1,'19',2A1,4X,'COMPIL.: ',A2,6X,'FOGLIO',I3,' DI',I3,/,5X,123('*'),//,5X,'QUOTAZIONE: ',A8 ,2X,'REV.: ',A2,10X,'CLIENTE: ',10A2,4X,'LOCALITA IMPIANTO: ',10A2,//,5X,123('='),/,5X,'|  S I G L A',11X,'|SUPERFICIE|  (N0.)  DIMENS.  |  (NO.)  DIMENS.  | POTENZA| (NO.) POTEN |  (NO.) DIAMETRO  | % VENT|',/,5X,'|',22X,'|  LISCIA  |       FASCI      |      SEZIONI',5X,'|DI CALC.|    MOTORI   |    VENTILATORI   | AUTO. |',/,5X,'|',22X,'|    ',2A2,'  |',18X,'|',18X,'|   ',A2,'   |',6X,A2,5X,'|',18X,'|',7X,'|')</value>
+  </data>
+  <data name="stop00014" xml:space="preserve">
+    <value>(///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',4X,'= S O M M A R I O    C O N T R O L L I  = DATA : ',6A1,'19',2A1,3X,'COMPIL.: ',A2,6X,'FOGLIO',I3,' DI',I3,/,5X,122('*'),//,5X,'QUOTAZIONE: ', A8,2X,'REV.: ',A2,10X,'CLIENTE: ',10A2,4X,'LOCALITA IMPIANTO:  ',10A2,///,5X,122('='),/,5X,'|  S I G L A',11X,'|    PERSIANE    | SERPEN.|   RICIRCOLO ARIA   |','PASSO/N.PASS. |BOCCH ENTR.|BOCCH USC. | PENDENZA  |',/,5X,'|',22X,'|',16X,'| VAPORE |',20X,'|NUMERO DI FILE| Nø  DIA   | Nø  DIA   |',11X,'|')</value>
+  </data>
+  <data name="stop00015" xml:space="preserve">
+    <value>(///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA  = TABLEAU RECAPITULATIF AEROREFRIGERANTS = DATE : ',6A1,'19',2A1,5X,'SIGN.: ',A2,8X,'PAGE',I3,' DE',I3,/,5X,123('*'),//,5X,'OFFRE NO.: ', A8,2X,'REV.: ',A2,12X,'CLIENT: ',10A2,4X,'LIEU INSTALLATION: ',10A2,//,5X,123('='),/,5X,'|  A P P A R E I L     |  SURFACE |  (NO.)  DIMENS.  |  (NO.)  DIMENS.  | PUISS. | (NO.) PUISS |  (NO.) DIAMETRE  | % VENT|',/,5X,'|',22X,'|    NUE   |     FAISCEAUX    |     SECTIONS     |DE CALC.|   MOTEURS   |   VENTILATEURS   |  AUTO |',/,5X,'|',22X,'|    ',2A2,'  |',18X,'|',18X,'|   ',A2,'   |',6X,A2,5X,'|',18X,'|',7X,'|')</value>
+  </data>
+  <data name="stop00016" xml:space="preserve">
+    <value>(///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',9X,'= TABLEAU RECAPITULATIF CONTROLES = DATE : ',6A1,'19',2A1,3X,'SIGN.: ',A2,8X,'PAGE',I3,' DE',I3,/,5X,122('*'),//,5X,'OFFRE NO.: ', A8,2X,'REV.: ',A2,12X,'CLIENT: ',10A2,4X,'LIEU INSTALLATION:  ',10A2,///5X,122('='),/,5X,'|  A P P A R E I L     |   PERSIENNES   | SERPEN.|  RECIRCULATION AIR |','PAS/N.PASSAGES|BRIDE ENTR.|BRIDE SORT.|   PENTE   |',/,5X,'|',22X,'|',16X,'| VAPEUR |',20X,'|N. DE RANGEES | Nø  DIA   | Nø  DIA   |',11X,'|')</value>
+  </data>
+  <data name="stop00991" xml:space="preserve">
+    <value>{0,12:######.#####}</value>
+  </data>
+  <data name="stop00992" xml:space="preserve">
+    <value>*{0,12:########.###}</value>
+  </data>
+  <data name="stop00993" xml:space="preserve">
+    <value>{0,3}</value>
+  </data>
+  <data name="stop00994" xml:space="preserve">
+    <value>{0,18}.</value>
+  </data>
+  <data name="stop00995" xml:space="preserve">
+    <value>*{0,12:######.#####}</value>
+  </data>
+  <data name="stop01006" xml:space="preserve">
+    <value>{0,9:F}   {1,9:F}   {2,9:F}   {3,9:F}\par</value>
+  </data>
+  <data name="stop01007" xml:space="preserve">
+    <value>{0,9:F}   {1,9:F}   {2,9:F}   {3,9:F}            {4,9:F}\par </value>
+  </data>
+  <data name="stop01008" xml:space="preserve">
+    <value>{0,9:F}   {1,9:F}                      {2,9:F}\par</value>
+  </data>
+  <data name="stop01009" xml:space="preserve">
+    <value>SPESSORI COPERCHIO ASME      SPESSORI COPERCHIO H.I.\par {0,10:F}  {1,10:F}  {2,10:F}      {3,10:F}     {4,10:F}\par </value>
+  </data>
+  <data name="stop01010" xml:space="preserve">
+    <value>.               {0,9:F}       {1,9:F}       {2,9:F}\par </value>
+  </data>
+  <data name="stop01110" xml:space="preserve">
+    <value> Numero bulloni  ipotizzato/risultante {0:####.}\par {1:####}\par </value>
+  </data>
+  <data name="stop01220" xml:space="preserve">
+    <value>'(',I2,'A2,1H/,I2)'</value>
+  </data>
+  <data name="stop02001" xml:space="preserve">
+    <value>5X,'|',11A2,'|',5A2,'|',9A2,'|',9A2,'|',4A2,'|',6A2,A1,  
+ '|',9A2,'|',3A2,A1,'|'</value>
+  </data>
+  <data name="stop02002" xml:space="preserve">
+    <value>5X,'TOTAL NUMBER OF BANKS:',I3</value>
+  </data>
+  <data name="stop02010" xml:space="preserve">
+    <value>3X,I2,'| ',10A2,' |',10X,'|',18X,'|',18X,'|',
+8X,'|',13X,'|',18X,'|',7X,'|'</value>
+  </data>
+  <data name="stop02020" xml:space="preserve">
+    <value>   {0,2} |{1,20} |{2,9:######0.0} | ({3,2})
+{4,6:F}-{5,2}{6,2} | {7,14} {8,20}     |
+                  |       |</value>
+  </data>
+  <data name="stop02030" xml:space="preserve">
+    <value>   {0,2}| {1,40} |{2,9:######0.0} | ({3,3)){4,6:F}-{5,2}{6,2} | ({7,4:#0.0})
+{8,5:##0.0} -{9,2}{10,2} |{11,7:####0.0} | ({12,3}){13,6:###0.0}
+ | ({14,3}){15,3}-{16,2}\par {17,4} |{18,6} |</value>
+  </data>
+  <data name="stop02050" xml:space="preserve">
+    <value>\page </value>
+  </data>
+  <data name="stop02500" xml:space="preserve">
+    <value>5X,'|',22X,'|',10X,'| (',I3,')',F6.2,'-',2I2,' |',  
+     1        18X,'|',8X,'|',13X,'|',18X,'|',7X,'|'</value>
+  </data>
+  <data name="stop03001" xml:space="preserve">
+    <value>5X,'|',11A2,'|',8A2,'|',4A2,'|',
+     $ 10A2,'|',7A2,'|',3(5A2,'=|')</value>
+  </data>
+  <data name="stop03030" xml:space="preserve">
+    <value>5X,'| ',10A2,' |  ',6A2,'  |  ',
+     1 2A2,'  |  ',8A2,'  |',F6.2,I3,I3,'  |',
+     $ 2(I2,F7.2,'  |'),2X,A8' |'</value>
+  </data>
+  <data name="stop05001" xml:space="preserve">
+    <value> ITEM                   </value>
+  </data>
+  <data name="stop05002" xml:space="preserve">
+    <value>N° DOC. DI CALCOLO</value>
+  </data>
+  <data name="stop05003" xml:space="preserve">
+    <value>REVISIONE</value>
+  </data>
+  <data name="stop05004" xml:space="preserve">
+    <value>SERVIZIO</value>
+  </data>
+  <data name="stop05005" xml:space="preserve">
+    <value>PRESS PROG. (kg/cm2)</value>
+  </data>
+  <data name="stop05006" xml:space="preserve">
+    <value>TEMP  PROG. (°C)</value>
+  </data>
+  <data name="stop05007" xml:space="preserve">
+    <value>CORR.       (mm)</value>
+  </data>
+  <data name="stop05008" xml:space="preserve">
+    <value>TESTATA</value>
+  </data>
+  <data name="stop050117" xml:space="preserve">
+    <value>EFFIC SALD TOP-BTM</value>
+  </data>
+  <data name="stop05015" xml:space="preserve">
+    <value>PRESS PROG. (PSI)</value>
+  </data>
+  <data name="stop05016" xml:space="preserve">
+    <value>TEMP  PROG. (°F)</value>
+  </data>
+  <data name="stop05017" xml:space="preserve">
+    <value>CORR.       (inch)</value>
+  </data>
+  <data name="stop05025" xml:space="preserve">
+    <value>PRESS PROG. (kPa)</value>
+  </data>
+  <data name="stop05026" xml:space="preserve">
+    <value>TEMP  PROG. (°C)</value>
+  </data>
+  <data name="stop05027" xml:space="preserve">
+    <value>CORR.       (mm)</value>
+  </data>
+  <data name="stop05101" xml:space="preserve">
+    <value>DIAMETRO TUBI     (MM)</value>
+  </data>
+  <data name="stop05102" xml:space="preserve">
+    <value>PASSO TUBI ORIZZ. (MM)</value>
+  </data>
+  <data name="stop05103" xml:space="preserve">
+    <value>LARGHEZZA TESTATA (MM)</value>
+  </data>
+  <data name="stop05105" xml:space="preserve">
+    <value>SIGLA MATERIALE</value>
+  </data>
+  <data name="stop05106" xml:space="preserve">
+    <value>AMMISS.(TEMP.) MAT. (KG/MM2)</value>
+  </data>
+  <data name="stop05107" xml:space="preserve">
+    <value>SIGLA MAT P. TUB/TAPPI</value>
+  </data>
+  <data name="stop05108" xml:space="preserve">
+    <value>SIGLA MAT TOP / BTM.</value>
+  </data>
+  <data name="stop05109" xml:space="preserve">
+    <value>SIGLA MATERIALE END</value>
+  </data>
+  <data name="stop05110" xml:space="preserve">
+    <value>AMMISS.(TEMP.)P. TUB/TAPPI(KG/MM2)</value>
+  </data>
+  <data name="stop05111" xml:space="preserve">
+    <value>AMMISS.(TEMP.) TOP/BTM    (KG/MM2)</value>
+  </data>
+  <data name="stop05112" xml:space="preserve">
+    <value>AMMISS.(TEMP.) END        (KG/MM2)</value>
+  </data>
+  <data name="stop05113" xml:space="preserve">
+    <value>DISTANZA X</value>
+  </data>
+  <data name="stop05114" xml:space="preserve">
+    <value>SIGLA MATER SETTI</value>
+  </data>
+  <data name="stop05115" xml:space="preserve">
+    <value>AMMISS.( TEMP.) SETTI     (KGMM2)</value>
+  </data>
+  <data name="stop05116" xml:space="preserve">
+    <value>EFFIC SALD SETTI</value>
+  </data>
+  <data name="stop05117" xml:space="preserve">
+    <value>EFFIC SALD TOP-BTM</value>
+  </data>
+  <data name="stop05118" xml:space="preserve">
+    <value>EFFIC SALD     END</value>
+  </data>
+  <data name="stop05119" xml:space="preserve">
+    <value>PASSO FORI (0=NO FORI)</value>
+  </data>
+  <data name="stop05120" xml:space="preserve">
+    <value>LATO DEI FORI</value>
+  </data>
+  <data name="stop05180" xml:space="preserve">
+    <value>Testata costituita da pezzi di materiale omogeneo</value>
+  </data>
+  <data name="stop05201" xml:space="preserve">
+    <value>N° FILE CAMERA  {0}</value>
+  </data>
+  <data name="stop05204" xml:space="preserve">
+    <value>MAX SPAN VERT. PIASTRA TUB/TAPPI (MM)</value>
+  </data>
+  <data name="stop05205" xml:space="preserve">
+    <value>MAX SPAN VERT END (MM)</value>
+  </data>
+  <data name="stop05206" xml:space="preserve">
+    <value>ALTEZZA   TESTATA (MM)</value>
+  </data>
+  <data name="stop05207" xml:space="preserve">
+    <value>ALTEZZA CAMERA {0}</value>
+  </data>
+  <data name="stop05212" xml:space="preserve">
+    <value>NUMERO SETTI</value>
+  </data>
+  <data name="stop10990" xml:space="preserve">
+    <value>20A2</value>
+  </data>
+  <data name="stop10991" xml:space="preserve">
+    <value>BN,I6</value>
+  </data>
+  <data name="stop10992" xml:space="preserve">
+    <value>BN,F12.0</value>
+  </data>
+  <data name="stop11455" xml:space="preserve">
+    <value>/1H1</value>
+  </data>
+  <data name="stop11500" xml:space="preserve">
+    <value>2H1b,I2
+     a/1X,'* Program name: UPM03A  rev.7.1 (Date: Jun-04-1995) *'
+     &amp;//5X,'*** ',A20,' ***',35X,'Page',I2,' of',I2//</value>
+  </data>
+  <data name="stop11520" xml:space="preserve">
+    <value>30X,'PLUG HEADER CHECK SHEET',                              
+     &amp;/,18X,'(ASME VIII Div. 1 App.13 - 1992 Ed. + 1992 Add.)'</value>
+  </data>
+  <data name="stop11521" xml:space="preserve">
+    <value>\par\par      ENGENEER: {0,39}DATE  : {1,8}
+     \par      APPR  BY:{2,42}DOC.N°: {3,12}
+     \par      CUSTOMER: {4,36}     JOB N°:     {5,4}
+     \par      SERVICE : {6,40} ITEM  : {7,32}
+     \par      PLANT   : {8,24}                 REVIS.: {9,2}\par </value>
+  </data>
+  <data name="stop11522" xml:space="preserve">
+    <value>                    PLUG HEADER CHECK SHEET (OBROUND CROSS SECTION)
+    \par                   (ASME VIII Div. 1 App.13 - 1992 Ed. + 1992 Add.)</value>
+  </data>
+  <data name="stop11600" xml:space="preserve">
+    <value>                                * INPUT DATA *</value>
+  </data>
+  <data name="stop11602" xml:space="preserve">
+    <value>     DESIGN TEMPER (°C):{0:###0.0} ({1,####0.0} °F )  \par 
+     MAX VERT SPAN (MM) :{2:###0.0}   ({3,##0.000} inch)\par 
+     CORROS. ALLOW (MM) :{4:###0.0}   ({5,##0.000} inch)
+  VERT SPAN END (MM) :{6:###0.0}   ({7,##0.000} inch)\par 
+                                          N.{8,2}
+ STAY{9,2}  (APP. 13{10,2})</value>
+  </data>
+  <data name="stop11620" xml:space="preserve">
+    <value>5X,'TUBE &amp; PLUG PL. :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')',                             
+     &amp;/,5X,'TOP  &amp; BTM  PL. :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')',/,5X,'ENDS',8X,'PL. :',1X,   
+     &amp;10A2,3X,'MEMBRANE', 4X,':',F5.1,'        (',F7.0,')'</value>
+  </data>
+  <data name="stop11630" xml:space="preserve">
+    <value>5X,'PART &amp; STIF PL. :',1X,9A2, 5X,'MEMBRANE', 4X,':',F5.1,  
+     &amp;'        (',F7.0,')'</value>
+  </data>
+  <data name="stop11640" xml:space="preserve">
+    <value>5X,'HEADER PLATE    :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')'</value>
+  </data>
+  <data name="stop11663" xml:space="preserve">
+    <value>46X,/</value>
+  </data>
+  <data name="stop11666" xml:space="preserve">
+    <value>'END PL.(APP. 13-4.F):',F6.2,2X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11700" xml:space="preserve">
+    <value>/,5X,'HEADER THICKNESS (MM)',20X,'JOINT EFFICIENCY',        
+     &amp;/,5X,21('-'),20X,16('-'),/,5X,'TUBE &amp; PLUG PL :',F5.1,5X,          
+     &amp;'(',F6.3,' inch)',2X,                                             
+     &amp;'CORNER TOP/BTM (EW):',F5.2,/,5X,'TOP &amp;  BTM  PL :',F5.1,5X,      
+     &amp;'(',F6.3,' inch)',2X,                                              
+     &amp;'CORNER TUB/PLG (EW):',F5.2,/,5X,'ENDS',8X,'PL :',F5.1,5X,         
+     &amp;'(',F6.3,' inch)',2X,                                              
+     &amp;'ENDS',11X,'(EW):',F5.2</value>
+  </data>
+  <data name="stop11720" xml:space="preserve">
+    <value>5X,'PART &amp; STIF PL :',F5.1,5X,'(',F6.3,' inch)',2X,         
+     &amp;'PARTIT &amp; STIFF (EW):',F5.2</value>
+  </data>
+  <data name="stop11750" xml:space="preserve">
+    <value>/,5X,'TUBES PITCH  (MM):',F5.1,3X,'(',F6.3,' inch)',2X,     
+     &amp;'PLUGS PITCH (MM):',F5.1,7X,'(',F5.3,'")',
+     &amp;/,5X,'TUBES O.D.   (MM):',F5.1,3X,'(',F6.3,' inch)',2X,
+     &amp;'PLUGS DO/D1 (MM):',F5.1,'/',F5.1,' (',F5.3,'/ ',F5.3,'")'</value>
+  </data>
+  <data name="stop11751" xml:space="preserve">
+    <value>46X,'PLUGS D2/D3 (MM):',F5.1,'/',F5.1,                      
+     &amp;' (',F5.3,'/ ',F5.3,'")'</value>
+  </data>
+  <data name="stop11752" xml:space="preserve">
+    <value>46X,'PLUGS TO/T1 (MM):',F5.1,'/',F5.1,                      
+     &amp;' (',F5.3,'/ ',F5.3,'")'</value>
+  </data>
+  <data name="stop11753" xml:space="preserve">
+    <value>46X,'PLUGS T2/T3    (MM):',F5.1,'/',F5.1,                   
+     &amp;' (',F5.3,'/ ',F5.3,'")'</value>
+  </data>
+  <data name="stop11780" xml:space="preserve">
+    <value>/,29X,'* ANALYSIS RESULTS *',//,5X,                         
+     &amp;'LIGAM. EFFICIENCY',24X,                                           
+     &amp;'LIGAM. EFFICIENCY',/,5X,17('-'),24X,17('-'),/,                    
+     &amp;5X,'TUBE SHEET EM/EB :',F4.2,'/',F4.2,14X,'PLUG SHEET EM/EB :'     
+     &amp;,F5.2,'/',F5.2,/,46X,'DISTANCE X/C (MM):',F5.1,'/',F5.1,           
+     &amp;' (',F5.3,'/',F5.3,'")'</value>
+  </data>
+  <data name="stop11781" xml:space="preserve">
+    <value>///</value>
+  </data>
+  <data name="stop11800" xml:space="preserve">
+    <value>5X,37('-'),4X,43('-'),/,5X,                                 
+     &amp;'TOP &amp; BTM PLATE     :',F6.2,2X,'(',F7.1,')',3X,                   
+     &amp;'TOP&amp;BTM PLATE (Loc.',A1,'):',F6.2,6X,'(',F7.1,')',   
+     &amp;/,5X,'TUBE SHEET',10X,':',F6.2,2X,'(',F7.1,')',3X,                 
+     &amp;'TUBE SHEET    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')',
+     &amp;/,5X,'PLUG SHEET',10X,':',F6.2,2X,'(',F7.1,')',3X,                 
+     &amp;'PLUG SHEET    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11820" xml:space="preserve">
+    <value>'PARTIT &amp; STIFF      :',F6.2,2X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11821" xml:space="preserve">
+    <value>'STIFFEN(PERFORATED) :',F6.2,2X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11822" xml:space="preserve">
+    <value>84X</value>
+  </data>
+  <data name="stop11824" xml:space="preserve">
+    <value>'Top&amp;Btm plate (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11825" xml:space="preserve">
+    <value>'Tube sheet    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11826" xml:space="preserve">
+    <value>'Plug sheet    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'</value>
+  </data>
+  <data name="stop11827" xml:space="preserve">
+    <value>5X,A84</value>
+  </data>
+  <data name="stop11830" xml:space="preserve">
+    <value>/,
+     &amp;       5X,'M.A.W.P.(KG/CM2):',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT : ',A22</value>
+  </data>
+  <data name="stop11831" xml:space="preserve">
+    <value>/,
+     &amp;       5X,'M.A.W.P. (BAR)      :',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT  : ',A22</value>
+  </data>
+  <data name="stop11832" xml:space="preserve">
+    <value>/,
+     &amp;       5X,'M.A.W.P. (MPA)      :',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT  : ',A22</value>
+  </data>
+  <data name="stop11840" xml:space="preserve">
+    <value>/,
+     &amp;       1X,'M.A.W.P.(KG/CM2):',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT : ',A22</value>
+  </data>
+  <data name="stop11841" xml:space="preserve">
+    <value>/,
+     &amp;       1X,'M.A.W.P. (BAR)      :',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT  : ',A22</value>
+  </data>
+  <data name="stop11842" xml:space="preserve">
+    <value>/,
+     &amp;       1X,'M.A.W.P. (MPA)      :',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT  : ',A22</value>
+  </data>
+  <data name="stop17000" xml:space="preserve">
+    <value>/,5X,'DES. PRESS(KG/CM2):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'</value>
+  </data>
+  <data name="stop17001" xml:space="preserve">
+    <value>/,5X,'DESIGN PRESS (BAR):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'</value>
+  </data>
+  <data name="stop17002" xml:space="preserve">
+    <value>5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS (KG/MM2)'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-')</value>
+  </data>
+  <data name="stop17003" xml:space="preserve">
+    <value>5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS ( N/MM2)'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-')</value>
+  </data>
+  <data name="stop17004" xml:space="preserve">
+    <value>/,5X,'MEMBRANE STRESS    (KG/MM2)',3X,'( PSI )',4X,        
+     &amp;'MEMBRANE + BEND. STRESS(KG/MM2)',5X,'( PSI )'</value>
+  </data>
+  <data name="stop17005" xml:space="preserve">
+    <value>/,5X,'MEMBRANE STRESS     (N/MM2)',3X,'( PSI )',4X,        
+     &amp;'MEMBRANE + BEND. STRESS (N/MM2)',5X,'( PSI )'</value>
+  </data>
+  <data name="stop18000" xml:space="preserve">
+    <value>//,28X,'* INPUT DATA NOZZLE *',/</value>
+  </data>
+  <data name="stop18005" xml:space="preserve">
+    <value>5X,'NOZZLE    DIA.',5X,'THICK.    MATERIAL',6X,             
+     &amp;  'E.W.',4X,'ALLOW. STRESS',4A2</value>
+  </data>
+  <data name="stop18007" xml:space="preserve">
+    <value>/,5X,'DESIGN PRESS ',4A2,':',F6.2,                      
+     &amp;15X,'CORROSION ALLOW (MM):',F4.1</value>
+  </data>
+  <data name="stop18008" xml:space="preserve">
+    <value>5X,'DESIGN TEMPER',4X,'([C):',F6.1,//</value>
+  </data>
+  <data name="stop18010" xml:space="preserve">
+    <value>5X,6('-'),4X,4('-'),5X,6('-'),4X,8('-'),6X,4('-'),4X,21('-'
+     &amp;)</value>
+  </data>
+  <data name="stop18020" xml:space="preserve">
+    <value>5X,3A2,4X,I2,' INCH',2X,F4.1,' MM',3X,6A2,2X,F4.2,        
+     &amp;  4X,'MEMBRANE    : ',F6.1</value>
+  </data>
+  <data name="stop18030" xml:space="preserve">
+    <value>5X,'REINF.(',2A2,' SIDE) ',F5.1,' MM',3X,6A2,2X,F4.2,    
+     &amp;  4X,'MEMBRANE    : ',F6.1</value>
+  </data>
+  <data name="stop18040" xml:space="preserve">
+    <value>/,28X,'* ANALYSIS RESULTS *',/</value>
+  </data>
+  <data name="stop18050" xml:space="preserve">
+    <value>5X,3A2,' NOZZLE (',4A2,15X,'MEMBRANE STRESS ',4A2,' :',   
+     &amp;F7.2</value>
+  </data>
+  <data name="stop18060" xml:space="preserve">
+    <value>5X,'REINF  (NR',I2,1X,2A2,' SIDE)',15X,'MEMBRANE STRESS ', 
+     &amp;  4A2,' :',F7.2</value>
+  </data>
+  <data name="stop18601" xml:space="preserve">
+    <value>/,5X,'DESIGN PRESS (MPA):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'</value>
+  </data>
+  <data name="stop18602" xml:space="preserve">
+    <value>5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS  ( MPA )'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-')</value>
+  </data>
+  <data name="stop18603" xml:space="preserve">
+    <value>/,5X,'MEMBRANE STRESS     ( MPA )',3X,'( PSI )',4X,         
+     &amp;'MEMBRANE + BEND. STRESS ( MPA )',5X,'( PSI )'</value>
+  </data>
+  <data name="stop19000" xml:space="preserve">
+    <value>//,5X,17('+'),3X,'CONVERSION FACTORS',3X,17('+')</value>
+  </data>
+  <data name="stop19001" xml:space="preserve">
+    <value>/,5X,'PSI = Bar * 14.50377',6X,'PSI = N/mm2 * 145.0377',   
+     &amp;6X,'PSI = Pa * 1.450377 E-04',/,5X,'PSI = kg/cm2 * 14.22334',
+     &amp;7X,'inch= mm / 25.4',13X,'°F  = °C * 1.8 + 32'</value>
+  </data>
+  <data name="stop19002" xml:space="preserve">
+    <value>/,5X,'NOTE : CONVERSION FACTORS TAKEN FROM ASME CODE',1X,  
+     &amp;'SECT. VIII DIV.1 " SI UNITS "'</value>
+  </data>
+  <data name="stop2060" xml:space="preserve">
+    <value>     |  *****{0,14} {1,9:######0.0} | ({2,3}) {3,10} | ({4,4}) {5,10}|
+{6,7:####0.0} | ({8,3}){9,6:###0.0} | ({10,3}) {11,10} |       |</value>
+  </data>
+  <data name="stop2061" xml:space="preserve">
+    <value>     NOTES: BANK POS.:{0,2};BANK ID.:{1,4}\par\par </value>
+  </data>
+  <data name="stop50031" xml:space="preserve">
+    <value>PASSO TUBI VERT.  (MM)</value>
+  </data>
+  <data name="stop50061" xml:space="preserve">
+    <value>AMMISS.(AMB. ) MAT. (KG/MM2)</value>
+  </data>
+  <data name="stop50062" xml:space="preserve">
+    <value>LUNGH.INT.CASSA   (MM)</value>
+  </data>
+  <data name="stop50071" xml:space="preserve">
+    <value>SIGLA MAT PIASTRA TAP.</value>
+  </data>
+  <data name="stop50081" xml:space="preserve">
+    <value>SIGLA MAT TOP/BTM/END</value>
+  </data>
+  <data name="stop50091" xml:space="preserve">
+    <value>SIGLA MATERIALE COVER</value>
+  </data>
+  <data name="stop50101" xml:space="preserve">
+    <value>AMMISS.(TEMP.) PIASTRA TAP(KG/MM2)</value>
+  </data>
+  <data name="stop50102" xml:space="preserve">
+    <value>AMMISS.(AMB. ) PIASTRA TAP(KG/MM2)</value>
+  </data>
+  <data name="stop50111" xml:space="preserve">
+    <value>AMMISS.(TEMP.) TOP/BTM/END(KG/MM2)</value>
+  </data>
+  <data name="stop50112" xml:space="preserve">
+    <value>AMMISS.(AMB. ) TOP/BTM/END(KG/MM2)</value>
+  </data>
+  <data name="stop50121" xml:space="preserve">
+    <value>AMMISS.(TEMP.) COPERCHIO  (KG/MM2)</value>
+  </data>
+  <data name="stop50122" xml:space="preserve">
+    <value>AMMISS.(AMB. ) COPERCHIO  (KG/MM2)</value>
+  </data>
+  <data name="stop50207" xml:space="preserve">
+    <value>ALTEZZA CAMERA</value>
+  </data>
+  <data name="stp11662" xml:space="preserve">
+    <value>46X,'HOLE/PITCH(mm) :',F6.1,'/',F6.1,2H (,F6.1,1H/,F6.1,
+&amp;      '")'/</value>
+  </data>
+  <data name="str00001" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00002" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di eseguire un bilancio  !        |</value>
+  </data>
+  <data name="str00003" xml:space="preserve">
+    <value>Si prega di aprire un'alternativa |prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00004" xml:space="preserve">
+    <value>Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|</value>
+  </data>
+  <data name="str00005" xml:space="preserve">
+    <value>LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO....</value>
+  </data>
+  <data name="str00006" xml:space="preserve">
+    <value>SCEGLI QUELLO DA APRIRE</value>
+  </data>
+  <data name="str00007" xml:space="preserve">
+    <value>Errore irrecuperabile (CarPre)</value>
+  </data>
+  <data name="str00008" xml:space="preserve">
+    <value>Operazione fallita poiché non vi è|alcun preventivo aperto.          |</value>
+  </data>
+  <data name="str00009" xml:space="preserve">
+    <value>Operazione fallita poiché non vi è|alcun item aperto.                |</value>
+  </data>
+  <data name="str00010" xml:space="preserve">
+    <value>In questo preventivo non e'  |stato inserito ancora nessun |</value>
+  </data>
+  <data name="str00011" xml:space="preserve">
+    <value>Item. Vuoi inserirne uno ?   |</value>
+  </data>
+  <data name="str00012" xml:space="preserve">
+    <value>Il valore per 'SERPENTINO VAPORE' puo'|essere solo SI o NO.                  |</value>
+  </data>
+  <data name="str00013" xml:space="preserve">
+    <value>Vuoi copiare i dati da un altro|item per poi editarli?         |</value>
+  </data>
+  <data name="str00014" xml:space="preserve">
+    <value>Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|</value>
+  </data>
+  <data name="str00015" xml:space="preserve">
+    <value>LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO....</value>
+  </data>
+  <data name="str00016" xml:space="preserve">
+    <value>SCEGLINE UNO DA COPIARE</value>
+  </data>
+  <data name="str00017" xml:space="preserve">
+    <value>Errore. Suggerisco di controllare le | directories (menu Opzioni).|</value>
+  </data>
+  <data name="str00018" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |</value>
+  </data>
+  <data name="str00019" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di definire una alternativa!      |</value>
+  </data>
+  <data name="str00020" xml:space="preserve">
+    <value>Dichiara il tuo tipo di video||Programma ISA |</value>
+  </data>
+  <data name="str00021" xml:space="preserve">
+    <value>Copyright (c) 1989-2007 Leonardo Presciuttini|</value>
+  </data>
+  <data name="str00022" xml:space="preserve">
+    <value>|Vuoi la stampa in linea?|</value>
+  </data>
+  <data name="str00023" xml:space="preserve">
+    <value>N° dell'alternativa da editare</value>
+  </data>
+  <data name="str00024" xml:space="preserve">
+    <value>N° alternativa modello       :</value>
+  </data>
+  <data name="str00025" xml:space="preserve">
+    <value>Inserimento alternativa</value>
+  </data>
+  <data name="str00026" xml:space="preserve">
+    <value>Si prega di definire l'alternativa |di lavoro prima di definire l'even-|</value>
+  </data>
+  <data name="str00027" xml:space="preserve">
+    <value>tuale alternativa modello          |</value>
+  </data>
+  <data name="str00028" xml:space="preserve">
+    <value>Dati errati. |   L'alternativa modello non può coincidere con|</value>
+  </data>
+  <data name="str00029" xml:space="preserve">
+    <value>l'alternativa da inserire.|   I numeri di alternativa sono compresi tra 1 e 5.</value>
+  </data>
+  <data name="str00030" xml:space="preserve">
+    <value>Errore irrecuperabile (SetUpDeskTop)</value>
+  </data>
+  <data name="str00031" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di inserire i dati costr.!  |</value>
+  </data>
+  <data name="str00032" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di inserire dati costruttivi!     |</value>
+  </data>
+  <data name="str00033" xml:space="preserve">
+    <value>Si prega di aprire un'alternativa |prima di inserire dati costruttivi|</value>
+  </data>
+  <data name="str00034" xml:space="preserve">
+    <value>Dato in formato libero       |</value>
+  </data>
+  <data name="str00035" xml:space="preserve">
+    <value>Vuoi lavorare sull'item corrente  |(</value>
+  </data>
+  <data name="str00036" xml:space="preserve">
+    <value>), o vuoi cambiare item?|</value>
+  </data>
+  <data name="str00037" xml:space="preserve">
+    <value>Dato in formato F10.0        |</value>
+  </data>
+  <data name="str00038" xml:space="preserve">
+    <value>Mi rifiuto di cancellare | la distinta corrente! |</value>
+  </data>
+  <data name="str00039" xml:space="preserve">
+    <value>Esiste gia' una preventivo</value>
+  </data>
+  <data name="str00040" xml:space="preserve">
+    <value>| Cambia il nuovo o cancella il vecchio.     |</value>
+  </data>
+  <data name="str00041" xml:space="preserve">
+    <value>Vuoi utilizzare un preventivo| esistente da modificare ? |</value>
+  </data>
+  <data name="str00042" xml:space="preserve">
+    <value>Errore. La directory</value>
+  </data>
+  <data name="str00043" xml:space="preserve">
+    <value>| esiste gia'.                         |</value>
+  </data>
+  <data name="str00044" xml:space="preserve">
+    <value>Dati errati! Si suggerisce di inse-|rire i dati clickando sugli spazi  |</value>
+  </data>
+  <data name="str00045" xml:space="preserve">
+    <value>bianchi riservati ai dati.         |</value>
+  </data>
+  <data name="str00046" xml:space="preserve">
+    <value>Si prega di aprire un'alternativa|prima di tentare di eliminarla    |</value>
+  </data>
+  <data name="str00047" xml:space="preserve">
+    <value>In questo  lavoro  non   e'  |stato inserito ancora nessun |</value>
+  </data>
+  <data name="str00048" xml:space="preserve">
+    <value>Item. Vuoi inserine uno?     |</value>
+  </data>
+  <data name="str00049" xml:space="preserve">
+    <value>Questo item non possiede alcu-|na alternativa. Pertanto non  |</value>
+  </data>
+  <data name="str00050" xml:space="preserve">
+    <value>c'e' niente da calcolare      |</value>
+  </data>
+  <data name="str00051" xml:space="preserve">
+    <value>L'efficienza di legamento lato|tappi deve essere calcolata in|</value>
+  </data>
+  <data name="str00052" xml:space="preserve">
+    <value>modo standard ?               |</value>
+  </data>
+  <data name="str00053" xml:space="preserve">
+    <value>I percorsi non sono registrati |correttamente. Accedere al menu|</value>
+  </data>
+  <data name="str00054" xml:space="preserve">
+    <value>&lt;Opzioni/Percorsi&gt; (subito!)   |</value>
+  </data>
+  <data name="str00055" xml:space="preserve">
+    <value>TEXT</value>
+  </data>
+  <data name="str00056" xml:space="preserve">
+    <value>Help non disponibile</value>
+  </data>
+  <data name="str00057" xml:space="preserve">
+    <value>State lavorando in modo 'superauto-</value>
+  </data>
+  <data name="str00058" xml:space="preserve">
+    <value>matico'. Non cambiate quindi niente</value>
+  </data>
+  <data name="str00059" xml:space="preserve">
+    <value>delle opzioni sotto proposte!</value>
+  </data>
+  <data name="str00060" xml:space="preserve">
+    <value>Vuoi calcolare le proprieta' termo|dinamiche dei fluidi?             |</value>
+  </data>
+  <data name="str00061" xml:space="preserve">
+    <value>Nuova alternativa   :</value>
+  </data>
+  <data name="str00062" xml:space="preserve">
+    <value>Vecchia alternativa :</value>
+  </data>
+  <data name="str00063" xml:space="preserve">
+    <value>Nessun modello      :</value>
+  </data>
+  <data name="str00064" xml:space="preserve">
+    <value>Alternativa modello :</value>
+  </data>
+  <data name="str00065" xml:space="preserve">
+    <value>Inserire un numero compreso tra|1  e 12.                       |</value>
+  </data>
+  <data name="str00066" xml:space="preserve">
+    <value>Rispondere SI o NO. La risposta|e' ininfluente nel caso di una |sola zona.                     |</value>
+  </data>
+  <data name="str00067" xml:space="preserve">
+    <value>LAVORO CORRENTE:  | |</value>
+  </data>
+  <data name="str00068" xml:space="preserve">
+    <value>Commessa         :</value>
+  </data>
+  <data name="str00069" xml:space="preserve">
+    <value>Costruttore vent.:</value>
+  </data>
+  <data name="str00070" xml:space="preserve">
+    <value>Materiale pale   :</value>
+  </data>
+  <data name="str00071" xml:space="preserve">
+    <value>Materiale mozzo  :</value>
+  </data>
+  <data name="str00072" xml:space="preserve">
+    <value>Help non disponibile|</value>
+  </data>
+  <data name="str00073" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="str00074" xml:space="preserve">
+    <value>Vuoi importare il nuovo item da|un altro preventivo?           |</value>
+  </data>
+  <data name="str00075" xml:space="preserve">
+    <value>L'identificativo del banco deve |essere numerico. Assumo &lt;blank&gt; |</value>
+  </data>
+  <data name="str00076" xml:space="preserve">
+    <value>SCEGLI QUELLO DA CUI COPIARE</value>
+  </data>
+  <data name="str00077" xml:space="preserve">
+    <value>SCEGLI QUELLO DA CANCELLARE</value>
+  </data>
+  <data name="str00078" xml:space="preserve">
+    <value>Lista preventivi</value>
+  </data>
+  <data name="str00079" xml:space="preserve">
+    <value>Il numero massimo di zone</value>
+  </data>
+  <data name="str00080" xml:space="preserve">
+    <value>previsto è 12</value>
+  </data>
+  <data name="str00081" xml:space="preserve">
+    <value>Inserimento n° di zone</value>
+  </data>
+  <data name="str00082" xml:space="preserve">
+    <value>Vuoi studiare un nuovo punto?     |</value>
+  </data>
+  <data name="str00083" xml:space="preserve">
+    <value>TAir     TOut       Duty</value>
+  </data>
+  <data name="str00084" xml:space="preserve">
+    <value>Fouling  TOut       Duty</value>
+  </data>
+  <data name="str00085" xml:space="preserve">
+    <value>Face vel. TOut       Duty</value>
+  </data>
+  <data name="str00086" xml:space="preserve">
+    <value>TAir     Face Velocity</value>
+  </data>
+  <data name="str00087" xml:space="preserve">
+    <value>Operazione fallita poiché non vi è|alcuna alternativa aperta.        |</value>
+  </data>
+  <data name="str00088" xml:space="preserve">
+    <value>Preparo la base di dati per lo|  studio. . . .               |</value>
+  </data>
+  <data name="str00089" xml:space="preserve">
+    <value>Cancello la base di dati uti-|lizzata per lo studio. . .   |</value>
+  </data>
+  <data name="str00090" xml:space="preserve">
+    <value>Prego confermare cancellazione|alternativa                   |</value>
+  </data>
+  <data name="str00091" xml:space="preserve">
+    <value>Prego confermare cancellazione|item                          |</value>
+  </data>
+  <data name="str00092" xml:space="preserve">
+    <value>Errore irrecuperabile (NuoPre)</value>
+  </data>
+  <data name="str00093" xml:space="preserve">
+    <value>Esiste già un precedente file    |.ACE per questo item/alternativa.|Vuoi rigenerarlo o utilizzarlo?  |</value>
+  </data>
+  <data name="str00094" xml:space="preserve">
+    <value>Operazione rifiutata poiché alcuni|fra i dati costruttivi e/o funzio-|nali sono incostistenti.          |</value>
+  </data>
+  <data name="str00095" xml:space="preserve">
+    <value>ISA</value>
+  </data>
+  <data name="str00096" xml:space="preserve">
+    <value>Vers. 3.00</value>
+  </data>
+  <data name="str00097" xml:space="preserve">
+    <value>15/04/96</value>
+  </data>
+  <data name="str00098" xml:space="preserve">
+    <value>Ingegneria Scambiatori ad Aria</value>
+  </data>
+  <data name="str00099" xml:space="preserve">
+    <value>\DOAPAI.DAT</value>
+  </data>
+  <data name="str00100" xml:space="preserve">
+    <value>SI</value>
+  </data>
+  <data name="str00101" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="str00102" xml:space="preserve">
+    <value>Altern. da editare</value>
+  </data>
+  <data name="str00103" xml:space="preserve">
+    <value>Dati di zona</value>
+  </data>
+  <data name="str00104" xml:space="preserve">
+    <value>Calcolo camini in serie?| (vecchia opzione)      |</value>
+  </data>
+  <data name="str00105" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di specificare questa opzione|</value>
+  </data>
+  <data name="str00106" xml:space="preserve">
+    <value>Numero di zone :</value>
+  </data>
+  <data name="str00107" xml:space="preserve">
+    <value>Calcolo automatico?</value>
+  </data>
+  <data name="str00108" xml:space="preserve">
+    <value>Zona n°</value>
+  </data>
+  <data name="str00109" xml:space="preserve">
+    <value>condensante</value>
+  </data>
+  <data name="str00110" xml:space="preserve">
+    <value>Scelta zone condensanti</value>
+  </data>
+  <data name="str00111" xml:space="preserve">
+    <value>Numero Preventivo:</value>
+  </data>
+  <data name="str00112" xml:space="preserve">
+    <value>Cliente          :</value>
+  </data>
+  <data name="str00113" xml:space="preserve">
+    <value>Indirizzo        :</value>
+  </data>
+  <data name="str00114" xml:space="preserve">
+    <value>Luogo impianto   :</value>
+  </data>
+  <data name="str00115" xml:space="preserve">
+    <value>Va bene questo</value>
+  </data>
+  <data name="str00116" xml:space="preserve">
+    <value>Ne voglio un altro</value>
+  </data>
+  <data name="str00201" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00202" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00203" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00204" xml:space="preserve">
+    <value>Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|</value>
+  </data>
+  <data name="str00205" xml:space="preserve">
+    <value>LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO....</value>
+  </data>
+  <data name="str00206" xml:space="preserve">
+    <value>SCEGLI QUELLO DA APRIRE</value>
+  </data>
+  <data name="str00207" xml:space="preserve">
+    <value>Errore irrecuperabile (CarPre)</value>
+  </data>
+  <data name="str00208" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |</value>
+  </data>
+  <data name="str00209" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di inserirvi i dati costruttivi!  |</value>
+  </data>
+  <data name="str00210" xml:space="preserve">
+    <value>In questo preventivo non e'  |stato inserito ancora nessun |</value>
+  </data>
+  <data name="str00211" xml:space="preserve">
+    <value>Item. Vuoi inserirne uno ?   |</value>
+  </data>
+  <data name="str00212" xml:space="preserve">
+    <value>Il valore per 'SERPENTINO VAPORE' puo'|essere solo SI o NO.                  |</value>
+  </data>
+  <data name="str00213" xml:space="preserve">
+    <value>Vuoi copiare i dati da un altro|item per poi editarli?         |</value>
+  </data>
+  <data name="str00214" xml:space="preserve">
+    <value>Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|</value>
+  </data>
+  <data name="str00215" xml:space="preserve">
+    <value>LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO....</value>
+  </data>
+  <data name="str00216" xml:space="preserve">
+    <value>SCEGLINE UNO DA COPIARE</value>
+  </data>
+  <data name="str00217" xml:space="preserve">
+    <value>Errore. Suggerisco di controllare le | directories (menu Opzioni).|</value>
+  </data>
+  <data name="str00218" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |</value>
+  </data>
+  <data name="str00219" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di definire una alternativa!      |</value>
+  </data>
+  <data name="str00220" xml:space="preserve">
+    <value>Dichiara il tuo tipo di video||Programma HTRI|</value>
+  </data>
+  <data name="str00221" xml:space="preserve">
+    <value>Copyright (c) 1989-2007 Leonardo Presciuttini|</value>
+  </data>
+  <data name="str00222" xml:space="preserve">
+    <value>|Vuoi la stampa in linea?|</value>
+  </data>
+  <data name="str00223" xml:space="preserve">
+    <value>N° dell'alternativa da editare</value>
+  </data>
+  <data name="str00224" xml:space="preserve">
+    <value>N° alternativa modello       :</value>
+  </data>
+  <data name="str00225" xml:space="preserve">
+    <value>Inserimento alternativa</value>
+  </data>
+  <data name="str00226" xml:space="preserve">
+    <value>Si prega di definire l'alternativa |di lavoro prima di definire l'even-|</value>
+  </data>
+  <data name="str00227" xml:space="preserve">
+    <value>tuale alternativa modello          |</value>
+  </data>
+  <data name="str00228" xml:space="preserve">
+    <value>Dati errati! Si suggerisce di inse-|rire i dati clickando sugli spazi  |</value>
+  </data>
+  <data name="str00229" xml:space="preserve">
+    <value>bianchi riservati ai dati.         |</value>
+  </data>
+  <data name="str00230" xml:space="preserve">
+    <value>Errore irrecuperabile (SetUpDeskTop)</value>
+  </data>
+  <data name="str00231" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di inserire i dati costr.!  |</value>
+  </data>
+  <data name="str00232" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di inserire dati costruttivi!     |</value>
+  </data>
+  <data name="str00233" xml:space="preserve">
+    <value>Si prega di aprire un'alternativa |prima di inserire dati costruttivi|</value>
+  </data>
+  <data name="str00234" xml:space="preserve">
+    <value>Si e' determinata la seguente condizione di errore:|</value>
+  </data>
+  <data name="str00235" xml:space="preserve">
+    <value>Ricontrollare i dati di input.                     |</value>
+  </data>
+  <data name="str00236" xml:space="preserve">
+    <value>Definire quante delle sezioni per  |unita' presentano l'albero ventila-|</value>
+  </data>
+  <data name="str00237" xml:space="preserve">
+    <value>tore passante                      |</value>
+  </data>
+  <data name="str00238" xml:space="preserve">
+    <value>Dato inafferente in quanto trattasi|di unita' a circolazione forzata   |</value>
+  </data>
+  <data name="str00239" xml:space="preserve">
+    <value>Il tipo di tiraggio (F o N) non e' |stato definito correttamente.      |</value>
+  </data>
+  <data name="str00240" xml:space="preserve">
+    <value>Rifare il giro.                    |</value>
+  </data>
+  <data name="str00241" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |</value>
+  </data>
+  <data name="str00242" xml:space="preserve">
+    <value>Il numero di tipi di tubi deve  |essere compreso tra 1 e 3;      |</value>
+  </data>
+  <data name="str00243" xml:space="preserve">
+    <value>Fornire codice compreso tra 2 e 20. |Lo spessore sara' calcolato in auto-|</value>
+  </data>
+  <data name="str00244" xml:space="preserve">
+    <value>matico.                             |</value>
+  </data>
+  <data name="str00245" xml:space="preserve">
+    <value>Fornire codice MIN. per minimum wall| o codice AVG. per average wall.      |</value>
+  </data>
+  <data name="str00246" xml:space="preserve">
+    <value>Questo valore e' calcolato in funzio-|ne dei due valori che precedono.     |</value>
+  </data>
+  <data name="str00247" xml:space="preserve">
+    <value>Il valore sara' calcolato dal pro-  |gramma (LAVORI IN CORSO)            |</value>
+  </data>
+  <data name="str00248" xml:space="preserve">
+    <value>Il diametro tubi non e' standard:   |se vuoi puoi battere direttamente il|</value>
+  </data>
+  <data name="str00249" xml:space="preserve">
+    <value>valore del passo.                   |</value>
+  </data>
+  <data name="str00250" xml:space="preserve">
+    <value>I valori per diametro tubi e/o diam.|alette non sono standard.           |</value>
+  </data>
+  <data name="str00251" xml:space="preserve">
+    <value>Se vuoi puoi battere velori liberi. |</value>
+  </data>
+  <data name="str00252" xml:space="preserve">
+    <value>Valori forniti in modo scorretto.   |     Rifai.                         |</value>
+  </data>
+  <data name="str00253" xml:space="preserve">
+    <value>|    Riinserisci i dati correttamente!|</value>
+  </data>
+  <data name="str00254" xml:space="preserve">
+    <value>Sono stati scelti dati geometrici non  |standard. Saranno quindi proposti dei  |</value>
+  </data>
+  <data name="str00255" xml:space="preserve">
+    <value>valori approssimati per i coefficienti,|che l'utente potra' modificare.        |</value>
+  </data>
+  <data name="str00256" xml:space="preserve">
+    <value>Prima di eseguire un calcolo biso-|gna identificare un'alternativa.  |</value>
+  </data>
+  <data name="str00257" xml:space="preserve">
+    <value>Questo programma non deve es-|sere lanciato da solo.       |Lanciare  HTRI.EXE           |</value>
+  </data>
+  <data name="str00258" xml:space="preserve">
+    <value>N. OF FANS/UNIT</value>
+  </data>
+  <data name="str00259" xml:space="preserve">
+    <value>KIND OF DRAFT</value>
+  </data>
+  <data name="str00260" xml:space="preserve">
+    <value>AIR PLENUM</value>
+  </data>
+  <data name="str00261" xml:space="preserve">
+    <value>TRANSMISSION</value>
+  </data>
+  <data name="str00262" xml:space="preserve">
+    <value>POSITION OF DRIVE</value>
+  </data>
+  <data name="str00263" xml:space="preserve">
+    <value>Help non disponibile</value>
+  </data>
+  <data name="str00264" xml:space="preserve">
+    <value>TEXT</value>
+  </data>
+  <data name="str00265" xml:space="preserve">
+    <value>Unità</value>
+  </data>
+  <data name="str00266" xml:space="preserve">
+    <value>Sezioni</value>
+  </data>
+  <data name="str00267" xml:space="preserve">
+    <value>Ventilatori</value>
+  </data>
+  <data name="str00268" xml:space="preserve">
+    <value>F : Forced Draft</value>
+  </data>
+  <data name="str00269" xml:space="preserve">
+    <value>N : Induced Draft</value>
+  </data>
+  <data name="str00270" xml:space="preserve">
+    <value>P : a Pannelli</value>
+  </data>
+  <data name="str00271" xml:space="preserve">
+    <value>T : a Tramoggia</value>
+  </data>
+  <data name="str00272" xml:space="preserve">
+    <value>G : a Ingranaggi</value>
+  </data>
+  <data name="str00273" xml:space="preserve">
+    <value>V : V-belt</value>
+  </data>
+  <data name="str00274" xml:space="preserve">
+    <value>T : cinghie HTD</value>
+  </data>
+  <data name="str00275" xml:space="preserve">
+    <value>A : Appoggiato</value>
+  </data>
+  <data name="str00276" xml:space="preserve">
+    <value>S : Sospeso</value>
+  </data>
+  <data name="str00277" xml:space="preserve">
+    <value>N. di sezioni errato!|</value>
+  </data>
+  <data name="str00278" xml:space="preserve">
+    <value>N. di ventilatori errato!|</value>
+  </data>
+  <data name="str00279" xml:space="preserve">
+    <value>N. di passaggi scorretto|</value>
+  </data>
+  <data name="str00280" xml:space="preserve">
+    <value>Sigla dell'autore del preventivo</value>
+  </data>
+  <data name="str00281" xml:space="preserve">
+    <value>Lunghezze di zona</value>
+  </data>
+  <data name="str00282" xml:space="preserve">
+    <value>File / passo</value>
+  </data>
+  <data name="str00283" xml:space="preserve">
+    <value>TUBE THK. [in]</value>
+  </data>
+  <data name="str00284" xml:space="preserve">
+    <value>Lo sbilancio calore scambiato/duty|</value>
+  </data>
+  <data name="str00285" xml:space="preserve">
+    <value>il progetto o vuoi proseguire?|</value>
+  </data>
+  <data name="str00286" xml:space="preserve">
+    <value>|    Problema di convergenza:      |rientra in Dati Costr. e cambia la |lunghezza iniziale delle zone.     |</value>
+  </data>
+  <data name="str00287" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="str00288" xml:space="preserve">
+    <value>Verifico il caso di dimensio- |  namento . . .               |</value>
+  </data>
+  <data name="str00289" xml:space="preserve">
+    <value>La calibrazione del calcolo di di-|mensionamento e' pari a</value>
+  </data>
+  <data name="str00290" xml:space="preserve">
+    <value>%|cioe' superiore al 2% : vuoi con- |tinuare lo stesso?                |</value>
+  </data>
+  <data name="str00291" xml:space="preserve">
+    <value>Ricerca soluzione|</value>
+  </data>
+  <data name="str00292" xml:space="preserve">
+    <value>...iterazione n.</value>
+  </data>
+  <data name="str00293" xml:space="preserve">
+    <value>| Errore:</value>
+  </data>
+  <data name="str00294" xml:space="preserve">
+    <value>Iterazione sulle zone |numero</value>
+  </data>
+  <data name="str00295" xml:space="preserve">
+    <value>Codice tolleranza spessore tubi non |previsto:</value>
+  </data>
+  <data name="str00296" xml:space="preserve">
+    <value>|Vuoi correggere?</value>
+  </data>
+  <data name="str00297" xml:space="preserve">
+    <value>Diam.alette</value>
+  </data>
+  <data name="str00298" xml:space="preserve">
+    <value>Diam.tubi</value>
+  </data>
+  <data name="str00299" xml:space="preserve">
+    <value>Tiraggio</value>
+  </data>
+  <data name="str00300" xml:space="preserve">
+    <value>S : tranSition</value>
+  </data>
+  <data name="str00301" xml:space="preserve">
+    <value>Camera d'aria</value>
+  </data>
+  <data name="str00302" xml:space="preserve">
+    <value>D : Diretta</value>
+  </data>
+  <data name="str00303" xml:space="preserve">
+    <value>Trasmissione</value>
+  </data>
+  <data name="str00304" xml:space="preserve">
+    <value>Gruppo motore</value>
+  </data>
+  <data name="str00305" xml:space="preserve">
+    <value>hai invece dato:</value>
+  </data>
+  <data name="str00306" xml:space="preserve">
+    <value>ENGINEER  :</value>
+  </data>
+  <data name="str00307" xml:space="preserve">
+    <value>Progettista</value>
+  </data>
+  <data name="str00308" xml:space="preserve">
+    <value>TUBE/T.S. JOINT</value>
+  </data>
+  <data name="str00309" xml:space="preserve">
+    <value>Tubi tipo</value>
+  </data>
+  <data name="str00310" xml:space="preserve">
+    <value>Materiale tubo</value>
+  </data>
+  <data name="str00311" xml:space="preserve">
+    <value>Tubo nudo</value>
+  </data>
+  <data name="str00401" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00402" xml:space="preserve">
+    <value>Si prega di aprire  un  item prima|di eseguire un bilancio  !        |</value>
+  </data>
+  <data name="str00403" xml:space="preserve">
+    <value>Si prega di aprire un'alternativa |prima di eseguire un bilancio  !  |</value>
+  </data>
+  <data name="str00404" xml:space="preserve">
+    <value>Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|</value>
+  </data>
+  <data name="str00405" xml:space="preserve">
+    <value>LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO....</value>
+  </data>
+  <data name="str00406" xml:space="preserve">
+    <value>SCEGLI QUELLO DA APRIRE</value>
+  </data>
+  <data name="str00407" xml:space="preserve">
+    <value>Errore irrecuperabile (CarPre)</value>
+  </data>
+  <data name="str00408" xml:space="preserve">
+    <value>Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |</value>
+  </data>
+  <data name="str00409" xml:space="preserve">
+    <value>Questo programma non deve es-|sere lanciato da solo.       |</value>
+  </data>
+  <data name="str00410" xml:space="preserve">
+    <value>Lanciare  HTRI.EXE           |</value>
+  </data>
+  <data name="str00411" xml:space="preserve">
+    <value>Vuoi stampare tutti gli items   |o vuoi stamparne uno solo       |</value>
+  </data>
+  <data name="str00412" xml:space="preserve">
+    <value>o vuoi stampare l'item corrente?|</value>
+  </data>
+  <data name="str00413" xml:space="preserve">
+    <value>In questo preventivo non e'  |stato inserito ancora nessun |</value>
+  </data>
+  <data name="str00414" xml:space="preserve">
+    <value>Item. Operazione impossibile!|</value>
+  </data>
+  <data name="str00415" xml:space="preserve">
+    <value>Non e' attivo alcun item!  |</value>
+  </data>
+  <data name="str00416" xml:space="preserve">
+    <value>Valori forniti in modo errato|</value>
+  </data>
+  <data name="str00417" xml:space="preserve">
+    <value>Questo preventivo non risulta|essere stato compattato.     |</value>
+  </data>
+  <data name="str00418" xml:space="preserve">
+    <value>Operazione rifiutata.        |</value>
+  </data>
+  <data name="str00419" xml:space="preserve">
+    <value>Dato in formato libero       |</value>
+  </data>
+  <data name="str00420" xml:space="preserve">
+    <value>TEXT</value>
+  </data>
+  <data name="str00421" xml:space="preserve">
+    <value>Commessa         :</value>
+  </data>
+  <data name="str00422" xml:space="preserve">
+    <value>Costruttore vent.:</value>
+  </data>
+  <data name="str00423" xml:space="preserve">
+    <value>Materiale pale   :</value>
+  </data>
+  <data name="str00424" xml:space="preserve">
+    <value>Materiale mozzo  :</value>
+  </data>
+  <data name="str00425" xml:space="preserve">
+    <value>Nome della commessa illegale.     |(1..4 caratteri):ripetere      !  |</value>
+  </data>
+  <data name="str00426" xml:space="preserve">
+    <value>Ci sono degli items senza al-|ternative. Operazione negata.|</value>
+  </data>
+  <data name="str00427" xml:space="preserve">
+    <value>Compattamento in corso,|</value>
+  </data>
+  <data name="str00428" xml:space="preserve">
+    <value>Le scelte possibili sono:       |    SI :  Sistema Internazionale|    ME :  Sistema Tecnico       |    BR :  Sistema Imperiale     |</value>
+  </data>
+  <data name="str00429" xml:space="preserve">
+    <value>Le scelte possibili sono:       |    IT :  Italiano              |    IN :  Inglese               |    FR :  Francese              |</value>
+  </data>
+  <data name="str00430" xml:space="preserve">
+    <value>Dati non accettabili !          |</value>
+  </data>
+  <data name="str00431" xml:space="preserve">
+    <value>Scelta alternative</value>
+  </data>
+  <data name="str00432" xml:space="preserve">
+    <value>Non sono ammesse piu' di quattro |ripetizioni dello stesso item    |</value>
+  </data>
+  <data name="str00433" xml:space="preserve">
+    <value>stato ancora dimensionato.  |Vuoi procedere comunque?    |</value>
+  </data>
+  <data name="str00434" xml:space="preserve">
+    <value>Help non disponibile</value>
+  </data>
+  <data name="str00435" xml:space="preserve">
+    <value>Ricerca degli items e|delle alternative in corso</value>
+  </data>
+  <data name="str00436" xml:space="preserve">
+    <value>Generazione del sommario|in corso . . .</value>
+  </data>
+  <data name="str00437" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="str00438" xml:space="preserve">
+    <value>Lista preventivi</value>
+  </data>
+  <data name="str00439" xml:space="preserve">
+    <value>Liquido: cal.sp.</value>
+  </data>
+  <data name="str00440" xml:space="preserve">
+    <value>viscos.</value>
+  </data>
+  <data name="str00441" xml:space="preserve">
+    <value>conduc.</value>
+  </data>
+  <data name="str00442" xml:space="preserve">
+    <value>densit.</value>
+  </data>
+  <data name="str00443" xml:space="preserve">
+    <value>Vapore : cal.sp.</value>
+  </data>
+  <data name="str00444" xml:space="preserve">
+    <value>viscos.</value>
+  </data>
+  <data name="str00445" xml:space="preserve">
+    <value>conduc.</value>
+  </data>
+  <data name="str00446" xml:space="preserve">
+    <value>compr.</value>
+  </data>
+  <data name="str00447" xml:space="preserve">
+    <value>Tipo di output</value>
+  </data>
+  <data name="str00449" xml:space="preserve">
+    <value>TEXT</value>
+  </data>
+  <data name="str00501" xml:space="preserve">
+    <value>Materiale Bulloni :  A-193 B7 (1)    A-320 L7 (2)    Altro (3)</value>
+  </data>
+  <data name="str00502" xml:space="preserve">
+    <value>Codice mat. Bulloni</value>
+  </data>
+  <data name="str00503" xml:space="preserve">
+    <value>Materiale Bullone</value>
+  </data>
+  <data name="str00504" xml:space="preserve">
+    <value>Soll. Amm. Bull. a Temp. prog.</value>
+  </data>
+  <data name="str00505" xml:space="preserve">
+    <value>Soll. Amm. Bull. a Temp. Amb.</value>
+  </data>
+  <data name="str00506" xml:space="preserve">
+    <value>Diam.Bull. : M16   (1)   M18 (2)   M20   (3)   M22   (4)</value>
+  </data>
+  <data name="str00507" xml:space="preserve">
+    <value>.            5/8'' (5)   1'' (6)   3/4'' (7)   Altro (8) : Codice</value>
+  </data>
+  <data name="str00508" xml:space="preserve">
+    <value>Mat. Guarn: COMPR. ASBESTOS FIBER(1)    COPPER/BRASS JACK.ASB(2)</value>
+  </data>
+  <data name="str00509" xml:space="preserve">
+    <value>.           STEEL JACK. ASBESTOS (3)    MONEL JACK. ASBESTOS (4)</value>
+  </data>
+  <data name="str00510" xml:space="preserve">
+    <value>.           4-6%CR JACK. ASBESTOS(5)    INOX JACKETED ASBEST.(6)</value>
+  </data>
+  <data name="str00511" xml:space="preserve">
+    <value>.           COPPER/ BRASS SOLID  (7)    SOLID IRON           (8)</value>
+  </data>
+  <data name="str00512" xml:space="preserve">
+    <value>.           SOLID MONEL or 4-6%CR(9)    SOLID INOX          (10)</value>
+  </data>
+  <data name="str00513" xml:space="preserve">
+    <value>.           MET.REINF.EXP.GRAPH.(11)    CAF                 (12)</value>
+  </data>
+  <data name="str00514" xml:space="preserve">
+    <value>.           Altro materiale     (13)    Introdurre il codice</value>
+  </data>
+  <data name="str00515" xml:space="preserve">
+    <value>M16</value>
+  </data>
+  <data name="str00516" xml:space="preserve">
+    <value>M18</value>
+  </data>
+  <data name="str00517" xml:space="preserve">
+    <value>M20</value>
+  </data>
+  <data name="str00518" xml:space="preserve">
+    <value>M22</value>
+  </data>
+  <data name="str00519" xml:space="preserve">
+    <value>5/8"</value>
+  </data>
+  <data name="str00520" xml:space="preserve">
+    <value>1"</value>
+  </data>
+  <data name="str00521" xml:space="preserve">
+    <value>3/4"</value>
+  </data>
+  <data name="str00522" xml:space="preserve">
+    <value>Altro</value>
+  </data>
+  <data name="str00523" xml:space="preserve">
+    <value>Diametro bulloni</value>
+  </data>
+  <data name="str00524" xml:space="preserve">
+    <value>Numero Totale Bulloni</value>
+  </data>
+  <data name="str00525" xml:space="preserve">
+    <value>Materiale guarnizione</value>
+  </data>
+  <data name="str00526" xml:space="preserve">
+    <value>M 16      141       16        .</value>
+  </data>
+  <data name="str00527" xml:space="preserve">
+    <value>M 18      171       18        .</value>
+  </data>
+  <data name="str00528" xml:space="preserve">
+    <value>M 20      220       20        .</value>
+  </data>
+  <data name="str00529" xml:space="preserve">
+    <value>M 22      276       22        .</value>
+  </data>
+  <data name="str00530" xml:space="preserve">
+    <value>Inch 5/8  131       15.875    .</value>
+  </data>
+  <data name="str00531" xml:space="preserve">
+    <value>Inch 1    357       25.4      .</value>
+  </data>
+  <data name="str00532" xml:space="preserve">
+    <value>Inch 3/4  196       19.05     .</value>
+  </data>
+  <data name="str00533" xml:space="preserve">
+    <value>2      1.12   .</value>
+  </data>
+  <data name="str00534" xml:space="preserve">
+    <value>3.5    4.57   .</value>
+  </data>
+  <data name="str00535" xml:space="preserve">
+    <value>3.75   5.34   .</value>
+  </data>
+  <data name="str00536" xml:space="preserve">
+    <value>3.5    5.62   .</value>
+  </data>
+  <data name="str00537" xml:space="preserve">
+    <value>3.75   6.33   .</value>
+  </data>
+  <data name="str00538" xml:space="preserve">
+    <value>4.75   9.14   .</value>
+  </data>
+  <data name="str00539" xml:space="preserve">
+    <value>5.5    12.65  .</value>
+  </data>
+  <data name="str00540" xml:space="preserve">
+    <value>6      15.33  .</value>
+  </data>
+  <data name="str00541" xml:space="preserve">
+    <value>6.5    18.28  .</value>
+  </data>
+  <data name="str00542" xml:space="preserve">
+    <value>2      1.7581 .</value>
+  </data>
+  <data name="str00543" xml:space="preserve">
+    <value>2.25   1.75   .</value>
+  </data>
+  <data name="str00544" xml:space="preserve">
+    <value>Tipo Bullone</value>
+  </data>
+  <data name="str00545" xml:space="preserve">
+    <value>Area Nocciolo mm2</value>
+  </data>
+  <data name="str00546" xml:space="preserve">
+    <value>Tipo guarnizione</value>
+  </data>
+  <data name="str00547" xml:space="preserve">
+    <value>Coefficiente m</value>
+  </data>
+  <data name="str00548" xml:space="preserve">
+    <value>Carico Y [kg/mm2]</value>
+  </data>
+  <data name="str00549" xml:space="preserve">
+    <value>Guarniz. confinata nel coperchio</value>
+  </data>
+  <data name="str00550" xml:space="preserve">
+    <value>Guarniz. confinata tra cop./flangia</value>
+  </data>
+  <data name="str00551" xml:space="preserve">
+    <value>Tipo di giunto</value>
+  </data>
+  <data name="str00552" xml:space="preserve">
+    <value>Larghezza int.cassa [mm]</value>
+  </data>
+  <data name="str00553" xml:space="preserve">
+    <value>Altezza grad.cop.</value>
+  </data>
+  <data name="str00554" xml:space="preserve">
+    <value>Vuoi iterare ? (S/N)</value>
+  </data>
+  <data name="str00555" xml:space="preserve">
+    <value>Casse cover (thru)</value>
+  </data>
+  <data name="str00556" xml:space="preserve">
+    <value>Casse cover (stud)</value>
+  </data>
+  <data name="str00557" xml:space="preserve">
+    <value>Spessore Coperchio mm</value>
+  </data>
+  <data name="str00558" xml:space="preserve">
+    <value>##.#   ##.#   ##.#   ##.#&amp;</value>
+  </data>
+  <data name="str00559" xml:space="preserve">
+    <value>Spess. Piastra Tub mm</value>
+  </data>
+  <data name="str00560" xml:space="preserve">
+    <value>Spess. Top,Btm,End =</value>
+  </data>
+  <data name="str00561" xml:space="preserve">
+    <value>##.#    ##.#&amp;</value>
+  </data>
+  <data name="str00562" xml:space="preserve">
+    <value>Passi Bull. (Freddo)  (Caldo)  (API 661)</value>
+  </data>
+  <data name="str00563" xml:space="preserve">
+    <value>\         \ ###.#    ###.#     ###.#</value>
+  </data>
+  <data name="str00564" xml:space="preserve">
+    <value>&gt; SPESSORE PIASTRA TUBIERA</value>
+  </data>
+  <data name="str00565" xml:space="preserve">
+    <value>&gt; SPESSORE COVER</value>
+  </data>
+  <data name="str00566" xml:space="preserve">
+    <value>&gt; SPESSORE ENDS</value>
+  </data>
+  <data name="str00567" xml:space="preserve">
+    <value>&gt; SPESSORE SETTI</value>
+  </data>
+  <data name="str00568" xml:space="preserve">
+    <value>&gt; PASSO BULLONI</value>
+  </data>
+  <data name="str00601" xml:space="preserve">
+    <value>SIGLA ITEM</value>
+  </data>
+  <data name="str00602" xml:space="preserve">
+    <value>BANCO</value>
+  </data>
+  <data name="str00603" xml:space="preserve">
+    <value>SERVIZIO</value>
+  </data>
+  <data name="str00604" xml:space="preserve">
+    <value>FLUIDO CIRCOLANTE</value>
+  </data>
+  <data name="str00605" xml:space="preserve">
+    <value>NO. REVISIONE</value>
+  </data>
+  <data name="str00606" xml:space="preserve">
+    <value>MONTAGGIO</value>
+  </data>
+  <data name="str00607" xml:space="preserve">
+    <value>TELAIO</value>
+  </data>
+  <data name="str00608" xml:space="preserve">
+    <value>STRUTTURE</value>
+  </data>
+  <data name="str00609" xml:space="preserve">
+    <value>CAMERE D'ARIA</value>
+  </data>
+  <data name="str00610" xml:space="preserve">
+    <value>SCALE A PIOLI</value>
+  </data>
+  <data name="str00611" xml:space="preserve">
+    <value>SCALE A GRADINI</value>
+  </data>
+  <data name="str00612" xml:space="preserve">
+    <value>TIPO TESTATE</value>
+  </data>
+  <data name="str00613" xml:space="preserve">
+    <value>SIGLA MATER. TESTATE</value>
+  </data>
+  <data name="str00614" xml:space="preserve">
+    <value>SIGLA MATER. TAPPI</value>
+  </data>
+  <data name="str00615" xml:space="preserve">
+    <value>SIGLA MATER.GUARNIZ.</value>
+  </data>
+  <data name="str00616" xml:space="preserve">
+    <value>CORROSIONE</value>
+  </data>
+  <data name="str00617" xml:space="preserve">
+    <value>RT FLANGE BOCCHELLI</value>
+  </data>
+  <data name="str00618" xml:space="preserve">
+    <value>SPECIFICHE</value>
+  </data>
+  <data name="str00619" xml:space="preserve">
+    <value>COLLAUDI</value>
+  </data>
+  <data name="str00620" xml:space="preserve">
+    <value>PASSERELLE</value>
+  </data>
+  <data name="str00621" xml:space="preserve">
+    <value>INTERRUTT.VIBRAZIONI</value>
+  </data>
+  <data name="str00622" xml:space="preserve">
+    <value>ISOLAMENTO MOTORE</value>
+  </data>
+  <data name="str00623" xml:space="preserve">
+    <value>VOLT/CICLI/FASI MOT.</value>
+  </data>
+  <data name="str00624" xml:space="preserve">
+    <value>TIPO MOTORE</value>
+  </data>
+  <data name="str00625" xml:space="preserve">
+    <value>PERSIANE</value>
+  </data>
+  <data name="str00626" xml:space="preserve">
+    <value>RICIRCOLO</value>
+  </data>
+  <data name="str00627" xml:space="preserve">
+    <value>MATERIALE ALETTE</value>
+  </data>
+  <data name="str00628" xml:space="preserve">
+    <value>SERPENTINO VAPORE</value>
+  </data>
+  <data name="str00629" xml:space="preserve">
+    <value>SC-SIGLA MATER. TUBI</value>
+  </data>
+  <data name="str00630" xml:space="preserve">
+    <value>SC-BWG TUBI</value>
+  </data>
+  <data name="str00631" xml:space="preserve">
+    <value>SC-TIPO BWG TUBI</value>
+  </data>
+  <data name="str00632" xml:space="preserve">
+    <value>SC-TIPO ALETTE</value>
+  </data>
+  <data name="str00633" xml:space="preserve">
+    <value>SC-NO. ALETTE/POLL.</value>
+  </data>
+  <data name="str00634" xml:space="preserve">
+    <value>SC-PRESS. VAPORE IN.</value>
+  </data>
+  <data name="str00635" xml:space="preserve">
+    <value>SC-PRESS. PROGETTO</value>
+  </data>
+  <data name="str00636" xml:space="preserve">
+    <value>SC-TEMP. VAPORE IN.</value>
+  </data>
+  <data name="str00637" xml:space="preserve">
+    <value>SC-TEMP. PROGETTO</value>
+  </data>
+  <data name="str00638" xml:space="preserve">
+    <value>SC-RT  FLAGE BOCCH.</value>
+  </data>
+  <data name="str00639" xml:space="preserve">
+    <value>SC-DIAM.BOC.IN. [in]</value>
+  </data>
+  <data name="str00640" xml:space="preserve">
+    <value>SC-DIAM.BOC.USC.[in]</value>
+  </data>
+  <data name="str01001" xml:space="preserve">
+    <value>Cas.in/out</value>
+  </data>
+  <data name="str01002" xml:space="preserve">
+    <value>Cas.ingr.</value>
+  </data>
+  <data name="str01003" xml:space="preserve">
+    <value>Cas.uscita</value>
+  </data>
+  <data name="str01004" xml:space="preserve">
+    <value>Cas.A sup</value>
+  </data>
+  <data name="str01005" xml:space="preserve">
+    <value>Cas.A inf</value>
+  </data>
+  <data name="str01006" xml:space="preserve">
+    <value>Cas.B</value>
+  </data>
+  <data name="str01007" xml:space="preserve">
+    <value>Cas.A</value>
+  </data>
+  <data name="str01008" xml:space="preserve">
+    <value>Cas.B sup</value>
+  </data>
+  <data name="str01009" xml:space="preserve">
+    <value>Cas.B inf</value>
+  </data>
+  <data name="str01010" xml:space="preserve">
+    <value>Cas.A sup</value>
+  </data>
+  <data name="str01011" xml:space="preserve">
+    <value>Cas.A inf</value>
+  </data>
+  <data name="str01012" xml:space="preserve">
+    <value>Cas.B sup</value>
+  </data>
+  <data name="str01013" xml:space="preserve">
+    <value>Cas.B inf</value>
+  </data>
+  <data name="str01014" xml:space="preserve">
+    <value>Cassa A singola, B singola</value>
+  </data>
+  <data name="str01015" xml:space="preserve">
+    <value>Cassa A split,   B singola</value>
+  </data>
+  <data name="str01016" xml:space="preserve">
+    <value>Cassa A singola, B split</value>
+  </data>
+  <data name="str01017" xml:space="preserve">
+    <value>Cassa A split,   B split</value>
+  </data>
+  <data name="str01018" xml:space="preserve">
+    <value>Le casse di ingresso e uscita|saranno uguali?              |</value>
+  </data>
+  <data name="str01019" xml:space="preserve">
+    <value>UPM</value>
+  </data>
+  <data name="str01020" xml:space="preserve">
+    <value>Vers. 0.00</value>
+  </data>
+  <data name="str01021" xml:space="preserve">
+    <value>15/07/93</value>
+  </data>
+  <data name="str01022" xml:space="preserve">
+    <value>Calcolo Meccanico Testate AFC</value>
+  </data>
+  <data name="str01023" xml:space="preserve">
+    <value>Items da copiare</value>
+  </data>
+  <data name="str01024" xml:space="preserve">
+    <value>Efficienza di legamento</value>
+  </data>
+  <data name="str01025" xml:space="preserve">
+    <value>Camere</value>
+  </data>
+  <data name="str01026" xml:space="preserve">
+    <value>Spessori</value>
+  </data>
+  <data name="str01027" xml:space="preserve">
+    <value>Splittaggio cassa A</value>
+  </data>
+  <data name="str01028" xml:space="preserve">
+    <value>Splittaggio cassa B</value>
+  </data>
+  <data name="str01029" xml:space="preserve">
+    <value>N° camere cassa sup.</value>
+  </data>
+  <data name="str01030" xml:space="preserve">
+    <value>N° camere cassa inf.</value>
+  </data>
+  <data name="str01031" xml:space="preserve">
+    <value>Diametro bulloni   [mm]</value>
+  </data>
+  <data name="str01032" xml:space="preserve">
+    <value>Sezione bullone  [mm^2]</value>
+  </data>
+  <data name="str01033" xml:space="preserve">
+    <value>Numero bulloni</value>
+  </data>
+  <data name="str01034" xml:space="preserve">
+    <value>Ammissibile a caldo [kg/mm^2]</value>
+  </data>
+  <data name="str01035" xml:space="preserve">
+    <value>Ammissibile a freddo[kg/mm^2]</value>
+  </data>
+  <data name="str01036" xml:space="preserve">
+    <value>Y di guarnizione    [kg/mm^2]</value>
+  </data>
+  <data name="str01037" xml:space="preserve">
+    <value>m di guarnizione</value>
+  </data>
+  <data name="str01038" xml:space="preserve">
+    <value>Larghezza gradino   [mm]</value>
+  </data>
+  <data name="str01039" xml:space="preserve">
+    <value>Larghezza guarniz.  [mm]</value>
+  </data>
+  <data name="str01040" xml:space="preserve">
+    <value>Tolleranza di lav.  [mm]</value>
+  </data>
+  <data name="str01041" xml:space="preserve">
+    <value>Hg                  [mm]</value>
+  </data>
+  <data name="str01042" xml:space="preserve">
+    <value>I                   [mm]</value>
+  </data>
+  <data name="str01043" xml:space="preserve">
+    <value>x                   [mm]</value>
+  </data>
+  <data name="str01044" xml:space="preserve">
+    <value>Spessore flangia    [mm]</value>
+  </data>
+  <data name="str01045" xml:space="preserve">
+    <value>Spessore top/btm    [mm]</value>
+  </data>
+  <data name="str01046" xml:space="preserve">
+    <value>N° dell'alternativa da calcolare</value>
+  </data>
+  <data name="str01047" xml:space="preserve">
+    <value>Scelta alternativa</value>
+  </data>
+  <data name="str01048" xml:space="preserve">
+    <value>Alternativa   :</value>
+  </data>
+  <data name="str01049" xml:space="preserve">
+    <value>Altern. da calcol.</value>
+  </data>
+  <data name="str01050" xml:space="preserve">
+    <value>Lista preventivi</value>
+  </data>
+  <data name="str01051" xml:space="preserve">
+    <value>Config. Casse</value>
+  </data>
+  <data name="str01052" xml:space="preserve">
+    <value>Dati generali</value>
+  </data>
+  <data name="str01053" xml:space="preserve">
+    <value>Casse thrubolt</value>
+  </data>
+  <data name="str01054" xml:space="preserve">
+    <value>########.###</value>
+  </data>
+  <data name="str01055" xml:space="preserve">
+    <value>Verifica spessori</value>
+  </data>
+  <data name="str01056" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="str01057" xml:space="preserve">
+    <value>Dati meccanici</value>
+  </data>
+  <data name="str01058" xml:space="preserve">
+    <value>        LAVORO CORRENTE:  | |</value>
+  </data>
+  <data name="str01059" xml:space="preserve">
+    <value> Numero Preventivo:</value>
+  </data>
+  <data name="str01060" xml:space="preserve">
+    <value> Cliente          :</value>
+  </data>
+  <data name="str01061" xml:space="preserve">
+    <value> Indirizzo        :</value>
+  </data>
+  <data name="str01062" xml:space="preserve">
+    <value> Luogo impianto   :</value>
+  </data>
+  <data name="str01063" xml:space="preserve">
+    <value>Preventivo corrente :</value>
+  </data>
+  <data name="str01064" xml:space="preserve">
+    <value>;Item :</value>
+  </data>
+  <data name="str01065" xml:space="preserve">
+    <value>;Altern.:</value>
+  </data>
+  <data name="str01066" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="str01067" xml:space="preserve">
+    <value>Carica pr/item&lt;F1&gt;</value>
+  </data>
+  <data name="str01068" xml:space="preserve">
+    <value>Chiudi prev.corr.</value>
+  </data>
+  <data name="str01069" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="str01070" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="str01071" xml:space="preserve">
+    <value>Calc.meccanico</value>
+  </data>
+  <data name="str01072" xml:space="preserve">
+    <value>Lista bocchelli</value>
+  </data>
+  <data name="str01073" xml:space="preserve">
+    <value>Testate (press.i.)</value>
+  </data>
+  <data name="str01074" xml:space="preserve">
+    <value>Testate (press.e.)</value>
+  </data>
+  <data name="str01075" xml:space="preserve">
+    <value>Calcolo split</value>
+  </data>
+  <data name="str01076" xml:space="preserve">
+    <value>Annulla calcolo</value>
+  </data>
+  <data name="str01077" xml:space="preserve">
+    <value>Opzioni</value>
+  </data>
+  <data name="str01078" xml:space="preserve">
+    <value>Colori</value>
+  </data>
+  <data name="str01079" xml:space="preserve">
+    <value>Percorsi</value>
+  </data>
+  <data name="str01080" xml:space="preserve">
+    <value>Stampa in linea</value>
+  </data>
+  <data name="str01081" xml:space="preserve">
+    <value>Welding neck:     0|Sagomato:         1|Long Welding neck:2|</value>
+  </data>
+  <data name="str01082" xml:space="preserve">
+    <value>Dati costrutt.</value>
+  </data>
+  <data name="str01083" xml:space="preserve">
+    <value>Nuovo lavoro</value>
+  </data>
+  <data name="str01084" xml:space="preserve">
+    <value>Non possediamo regole per il|calcolo in accordo alla nor-|mativa indicata             |</value>
+  </data>
+  <data name="str01085" xml:space="preserve">
+    <value>VENTS      Nø tot.:</value>
+  </data>
+  <data name="str01086" xml:space="preserve">
+    <value>DRAINS     Nø tot.:</value>
+  </data>
+  <data name="str01087" xml:space="preserve">
+    <value> TH.WELLS   Nø tot.:</value>
+  </data>
+  <data name="str01088" xml:space="preserve">
+    <value>PR.GAUGES. Nø tot.:</value>
+  </data>
+  <data name="str01089" xml:space="preserve">
+    <value>             size:</value>
+  </data>
+  <data name="str01090" xml:space="preserve">
+    <value>Lista bocchelli</value>
+  </data>
+  <data name="str01091" xml:space="preserve">
+    <value>Pressione di progetto</value>
+  </data>
+  <data name="str01092" xml:space="preserve">
+    <value>Temperatura di progetto</value>
+  </data>
+  <data name="str01093" xml:space="preserve">
+    <value>Item n.</value>
+  </data>
+  <data name="str01094" xml:space="preserve">
+    <value>.MEC</value>
+  </data>
+  <data name="str01095" xml:space="preserve">
+    <value>(OK)</value>
+  </data>
+  <data name="str01096" xml:space="preserve">
+    <value>(..)</value>
+  </data>
+  <data name="str01097" xml:space="preserve">
+    <value>Nuovo Item</value>
+  </data>
+  <data name="str01098" xml:space="preserve">
+    <value>HTRI</value>
+  </data>
+  <data name="str01099" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+  <data name="str01100" xml:space="preserve">
+    <value>N° di setti:</value>
+  </data>
+  <data name="str01101" xml:space="preserve">
+    <value>Procedi</value>
+  </data>
+  <data name="str01102" xml:space="preserve">
+    <value>Cambia sp.</value>
+  </data>
+  <data name="str01103" xml:space="preserve">
+    <value>Cambia setti</value>
+  </data>
+  <data name="str01104" xml:space="preserve">
+    <value>File camera</value>
+  </data>
+  <data name="str01105" xml:space="preserve">
+    <value>Errore fori!</value>
+  </data>
+  <data name="str01106" xml:space="preserve">
+    <value>.VER</value>
+  </data>
+  <data name="str01107" xml:space="preserve">
+    <value>COVER</value>
+  </data>
+  <data name="str01108" xml:space="preserve">
+    <value>Commessa</value>
+  </data>
+  <data name="str01109" xml:space="preserve">
+    <value>TESTIU</value>
+  </data>
+  <data name="str01110" xml:space="preserve">
+    <value>\DOAPAI.DAT</value>
+  </data>
+  <data name="str01111" xml:space="preserve">
+    <value>FBM</value>
+  </data>
+  <data name="str01112" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="str01113" xml:space="preserve">
+    <value>SI</value>
+  </data>
+  <data name="str01114" xml:space="preserve">
+    <value>.Tipo:</value>
+  </data>
+  <data name="str01115" xml:space="preserve">
+    <value>\DATI.TE1</value>
+  </data>
+  <data name="str01116" xml:space="preserve">
+    <value>Va bene</value>
+  </data>
+  <data name="str01117" xml:space="preserve">
+    <value>Un altro</value>
+  </data>
+  <data name="str01118" xml:space="preserve">
+    <value>Nuovo</value>
+  </data>
+  <data name="str01119" xml:space="preserve">
+    <value>119 Sigla Item:</value>
+  </data>
+  <data name="str01120" xml:space="preserve">
+    <value>L'item</value>
+  </data>
+  <data name="str01121" xml:space="preserve">
+    <value> esiste gia'.|</value>
+  </data>
+  <data name="str01123" xml:space="preserve">
+    <value> Le sezioni rette delle camere estreme |sono insufficienti.                    |        Deficit camera di ingresso:</value>
+  </data>
+  <data name="str01124" xml:space="preserve">
+    <value>        Deficit camera  di  uscita:</value>
+  </data>
+  <data name="str01125" xml:space="preserve">
+    <value> Vuoi correggere dette sezioni ?       |</value>
+  </data>
+  <data name="str01126" xml:space="preserve">
+    <value>Aumenta largh.test. (H=</value>
+  </data>
+  <data name="str01127" xml:space="preserve">
+    <value>Aumenta alt.cam.(maxHX=</value>
+  </data>
+  <data name="str01128" xml:space="preserve">
+    <value>Assumi tipo obround.</value>
+  </data>
+  <data name="str01129" xml:space="preserve">
+    <value>Tipo di allargamento</value>
+  </data>
+  <data name="str01130" xml:space="preserve">
+    <value>Stai per (re)visionare i dati|costruttivi. Vuoi annullare i|risultati del dimensionamento|</value>
+  </data>
+  <data name="str01131" xml:space="preserve">
+    <value>meccanico precedentemente ef-|fettuato?                    |</value>
+  </data>
+  <data name="str01132" xml:space="preserve">
+    <value>Temperatura di progetto</value>
+  </data>
+  <data name="str01133" xml:space="preserve">
+    <value>Pressione di progetto</value>
+  </data>
+  <data name="str01134" xml:space="preserve">
+    <value>Temperatura di esercizio</value>
+  </data>
+  <data name="str01135" xml:space="preserve">
+    <value>Pressione di esercizio</value>
+  </data>
+  <data name="str01136" xml:space="preserve">
+    <value>Pressione di prova</value>
+  </data>
+  <data name="str01137" xml:space="preserve">
+    <value>Temperatura minima</value>
+  </data>
+  <data name="str01138" xml:space="preserve">
+    <value>Desideri verificare le dilatazioni |      differenziali dei tubi       |nella configurazione non splittata?|</value>
+  </data>
+  <data name="str01139" xml:space="preserve">
+    <value>Non e' stato ancora generato il|testate/telai. Alcuni dati sono|quindi da fornire a mano       |</value>
+  </data>
+  <data name="str01140" xml:space="preserve">
+    <value>N° di tipi di tubi (max 2)</value>
+  </data>
+  <data name="str01141" xml:space="preserve">
+    <value>N° file con 1. tipo</value>
+  </data>
+  <data name="str01142" xml:space="preserve">
+    <value>N° file con 2. tipo</value>
+  </data>
+  <data name="str01143" xml:space="preserve">
+    <value>Diam. 1. tipo [mm]</value>
+  </data>
+  <data name="str01144" xml:space="preserve">
+    <value>Diam. 2. tipo [mm]</value>
+  </data>
+  <data name="str01145" xml:space="preserve">
+    <value>Spess. 1. tipo [mm]</value>
+  </data>
+  <data name="str01146" xml:space="preserve">
+    <value>Spess. 2. tipo [mm]</value>
+  </data>
+  <data name="str01147" xml:space="preserve">
+    <value>Passo vert. 1. tipo [mm]</value>
+  </data>
+  <data name="str01148" xml:space="preserve">
+    <value>Passo vert. 2. tipo [mm]</value>
+  </data>
+  <data name="str01149" xml:space="preserve">
+    <value> A-515-GR 60         A-516-GR 60         A-515-GR 70         A-516-GR 70        |</value>
+  </data>
+  <data name="str01150" xml:space="preserve">
+    <value> FE35.2-UNI 663      HII-DIN 17155       A 240-304           A 312-TP 304       |</value>
+  </data>
+  <data name="str01151" xml:space="preserve">
+    <value> A 240-304L          A 312-TP 304L       A 240-316           A 240-316L         |</value>
+  </data>
+  <data name="str01152" xml:space="preserve">
+    <value> A 240-321           A 106-GR B          ST35.8I-17175       ST35.8II-17175     |</value>
+  </data>
+  <data name="str01153" xml:space="preserve">
+    <value>Vuoi revisionare il presente calcolo?</value>
+  </data>
+  <data name="str01154" xml:space="preserve">
+    <value>Spessore tubi</value>
+  </data>
+  <data name="str01155" xml:space="preserve">
+    <value>Poiché questo item ha un solo|passaggio, questo calcolo non|avrebbe senso.               |</value>
+  </data>
+  <data name="str01156" xml:space="preserve">
+    <value>Non disponiamo di metodi per|il calcolo delle testate   |di tipo</value>
+  </data>
+  <data name="str01157" xml:space="preserve">
+    <value>Non disponiamo di metodi per|il calcolo delle testate   |a norme</value>
+  </data>
+  <data name="str01158" xml:space="preserve">
+    <value>Vuoi rigenerare la struttura dei setti?|Se rispondi si, dovrai rigenerare la |struttura della commessa</value>
+  </data>
+  <data name="str01159" xml:space="preserve">
+    <value>Le casse A e B sono identiche?</value>
+  </data>
+  <data name="str01222" xml:space="preserve">
+    <value>Vuoi editarlo?               |</value>
+  </data>
+  <data name="str01238" xml:space="preserve">
+    <value>Larghezza gradino   [mm]</value>
+  </data>
+  <data name="str01239" xml:space="preserve">
+    <value>Larghezza guarniz.  [mm]</value>
+  </data>
+  <data name="str01240" xml:space="preserve">
+    <value>Tolleranza di lav.  [mm]</value>
+  </data>
+  <data name="str01241" xml:space="preserve">
+    <value>Larghezza int. cassa   [mm]</value>
+  </data>
+  <data name="str01242" xml:space="preserve">
+    <value>Hg                  [mm]</value>
+  </data>
+  <data name="str01243" xml:space="preserve">
+    <value>I                   [mm]</value>
+  </data>
+  <data name="str01244" xml:space="preserve">
+    <value>x                   [mm]</value>
+  </data>
+  <data name="str01245" xml:space="preserve">
+    <value>Spessore flangia    [mm]</value>
+  </data>
+  <data name="str01246" xml:space="preserve">
+    <value>Spessore top/btm    [mm]</value>
+  </data>
+  <data name="str01247" xml:space="preserve">
+    <value>Spess top/btm min   [mm]</value>
+  </data>
+  <data name="str01248" xml:space="preserve">
+    <value>Spess top/btm max   [mm]</value>
+  </data>
+  <data name="str01250" xml:space="preserve">
+    <value>Casse ingresso/uscita singole uguali </value>
+  </data>
+  <data name="str01251" xml:space="preserve">
+    <value>Scelta unità di misura</value>
+  </data>
+  <data name="str01252" xml:space="preserve">
+    <value>Metrico  (ME)</value>
+  </data>
+  <data name="str01253" xml:space="preserve">
+    <value>British  (BR)</value>
+  </data>
+  <data name="str01254" xml:space="preserve">
+    <value>S.I.     (SI)</value>
+  </data>
+  <data name="str05280" xml:space="preserve">
+    <value>Spessore setto n° {0} troppo grande.
+Passo da aumentare di {1,5:###.#} mm.
+(Esigenza altra cassa: {2,5:###.#} mm.)
+Si approva?</value>
+  </data>
+</root>

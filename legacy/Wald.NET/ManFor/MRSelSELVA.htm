@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MRSelSELVA_file/filelist.xml">
+<link rel=Edit-Time-Data href="./MRSelSELVA_file/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Subroutine SELVA</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:Template>HTML.dot</o:Template>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>84</o:TotalTime>
+  <o:Created>2001-06-20T16:18:00Z</o:Created>
+  <o:LastSaved>2001-06-20T16:48:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>377</o:Words>
+  <o:Characters>2149</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>17</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2639</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:AutoHyphenation/>
+  <w:HyphenationZone>13</w:HyphenationZone>
+  <w:DoNotHyphenateCaps/>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Fortran, li.Fortran, div.Fortran
+	{mso-style-name:Fortran;
+	mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine SELVA</h1>
+
+<table border=0 cellspacing=0 cellpadding=0 style='mso-cellspacing:0cm;
+ mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  0cm'><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=115 height=18 id="_x0000_i1025"
+  src="..\img\SubSELVA.bmp" alt="Subroutine SELVA"></span><br>
+  <img border=0 width=17 height=25 id="_x0000_i1026" src="..\img\parmult.bmp"><A href="MRSelINPUT.HTM"><img
+  border=0 width=115 height=18 id="_x0000_i1027" src="..\img\SubINPUT.bmp"
+  alt="Subroutine INPUT"></A><br>
+<img  border=0 width=17 height=25 id="_x0000_i1029" src="..\img\parmult.bmp"><A href="MRP1PROC1.HTM"><img
+  border=0 width=115 height=18 id="_x0000_i1039" src="..\img\SubPROC1.bmp"
+  alt="Subroutine PROC1"></A><br>
+<img  border=0 width=17 height=25 id="_x0000_i1041" src="..\img\parmult.bmp"><a
+  href="MRSelPROC2.HTM"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1051" src="..\img\SubPROC2.bmp"
+  alt="Subroutine PROC2"></span></a><br>
+<img  border=0 width=17 height=25 id="_x0000_i1041" src="..\img\parchild.bmp"><a
+  href="MRSelPROC3.HTM"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1051" src="..\img\SubPROC3.bmp"
+  alt="Subroutine PROC3"></span></a></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Autore<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Revisioni<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Scopo<o:p></o:p></span></h2>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+text-align:justify;tab-stops:list 71.45pt'>E’ la routine che funge da programma
+principale: essa viene chiamata dal modulo eseguibile in Visual Basic (detto ‘<a
+href="..\ManProgBasic.htm">Wald-lato Basic</a>’, che, a sua volta, è realizzato
+come una DLL ActiveX) tramite una chiamata ad una DLL standard.</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Argomenti<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>STREAM</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+text-align:justify;tab-stops:list 71.45pt'>E’ un flusso virtuale di schede dati
+tipo Hollerith, o, se si vuole, di stringhe alfanumeriche a lunghezza fissa di
+80 caratteri. Esso viene preparato lato Visual Basic</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>STAMPA</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+text-align:justify;tab-stops:list 71.45pt'>Stringa alfanumerica a lunghezza
+fissa di 80 caratteri: percorso e nome del file ASCII sul quale Wald-lato
+FORTRAN scrive il risultato delle elaborazioni. Tale file sarà ulteriormente elaborato
+da Wald-lato Basic.</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>FIRMA</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Stringa alfanumerica a lunghezza fissa di 80 caratteri:
+nome dell’azienda, da far figurare nell’intestazione dell’elaborato.</p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'>ID</p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Indicatore del livello di messaggistica di debugging
+che apparirà nell’elaborato: 0 significa nessun messaggio di debug.</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Listato<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>SUBROUTINE SELVA(STREAM,STAMPA,FIRMA,ID)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>!DEC$
+ATTRIBUTES DLLEXPORT::/SYSTEM/,SELVA,/CFIRMA/<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>TYPE SCHEDE<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style='mso-tab-count:1'>            </span><span style="mso-spacerun: yes">  
+</span>CHARACTER*80 SK(100)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>END TYPE<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>TYPE BUFFER<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style='mso-tab-count:1'>            </span><span style="mso-spacerun: yes">  
+</span>CHARACTER*40 STAMPA<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>END TYPE<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/STOPPA/NSTOP,NPAGE,NCALC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/SYSTEM/IN,IO,KDOS,MDOS,LDOS,NDOS,NUOVER,NOUTP3,KCONV,IDEBUG<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=DE style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+DE'>TYPE(SCHEDE)::STREAM<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=DE style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>TYPE(BUFFER)::STAMPA,FIRMA<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=DE style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:DE'><span
+style="mso-spacerun: yes">      </span>INTEGER*2 ID<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>CHARACTER*26 FIRMAAZ<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>COMMON/CFIRMA/FIRMAAZ<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>INTEGER CS<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>IDEBUG=ID<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>FIRMAAZ=FIRMA%STAMPA<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>NPAGE=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>NCALC=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>NSTOP=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">     
+</span>NUOVER=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>NOUTP3=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>IO=3<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">     
+</span>OPEN(IO,FILE=STAMPA%STAMPA)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>CS=1<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">    </span>1 NDOS=0<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>c<span style="mso-spacerun: yes">  </span>per NDOS
+vedi CONDEN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>CALL INPUT(IND,STREAM,CS)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(IND.LT.1.OR.IND.GT.36)GOTO40<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>IF(IND-32) 5,5,10<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>5 CALL PROC1(IND)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 35<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>10 IF(IND-34) 15,15,20<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>15 CALL PROC2(IND)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 35<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>20 IF(IND-36) 25,25,40<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>25 CALL PROC3(IND)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>35 NCALC=NCALC+1<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">     
+</span>IF(NCALC-50) 1,1,40<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">   </span>40
+CLOSE(IO)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>RETURN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>END<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

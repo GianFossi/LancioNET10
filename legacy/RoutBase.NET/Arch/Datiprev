@@ -1,0 +1,271 @@
+        rec   n.  ini_w ln_w tipo arch p_arc  descrizione
+        1    1     1     4    S,  00,   0   ,N. Preventivo
+        1    2     5    10    S,  00,   0   ,Nome cliente
+        1    3    15    10    S,  00,   0   ,Indirizzo cliente
+        1    4    25    10    S,  00,   0   ,Localita' impianto
+        1    5    35     6    S,  00,   0   ,Riferimento cliente
+        1    6    41     1    S,  00,   0   ,Unita' misura
+        1    7    42     1    S,  00,   0   ,Linguaggio
+        1    8    43     1    I,  00,   0   ,N. totale di items
+        1    9    45     1    I,  00,   0   ,Ultimo record del file
+        1   10    46     3    S,  00,   0   ,N. della commessa
+        1   11   114     5    S,  00,   0   ,Ventilatore se # da AX-HI
+        1   12   119     5    S,  00,   0   ,Materiale pale ventil. # AX-HI
+        1   13   124     5    S,  00,   0   ,Mat. mozzo vent. # AH-HI
+        1   14    49     1    I,  00,   0   ,2=vecchia opz camini;1=nuova
+        1   15    50     4    S,  00,   0   ,Data ap.prev. (ggmmaa)
+        1   16    54     4    S,  00,   0   ,Data ap.commessa
+        1   17    58     4    S,  00,   0   ,Data chiusura
+        1   18    62     4    S,  00,   0   ,Nø protocollo
+        2    1     1    10    S,  00,   0   ,Sigla item
+        2    2    11     2    S,  00,   0   ,Banco
+        2    3    13    20    S,  00,   0   ,Servizio
+        2    4    33    10    S,  00,   0   ,Fluido circolante
+        2    5    43     1    I,  11,   0   ,Codice montaggio
+        2    6    44     1    I,  12,   0   ,Codice telaio
+        2    7    45     1    I,  12,   0   ,Codice strutture
+        2    8    46     1    I,  12,   0   ,Codice camere aria
+        2    9    47     1    I,  13,   0   ,Codice testate
+        2   10    48     1    I,  14,   0   ,Cod. materiale testate
+        2   11    49     1    I,  15,   0   ,Cod. materiale tappi
+        2   12    50     1    I,  00,   0   ,-----
+        2   13    51     1    I,  16,   0   ,Rating flange
+        2   14    52     1    I,  17,   0   ,Cod. collaudi
+        2   15    53     1    I,  18,   0   ,Cod. passerelle
+        2   16    54     1    I,  00,   0   ,-----
+        2   17    55     1    I,  19,   0   ,Cod. isolamento motore
+        2   18    56     1    I,  27,   0   ,Cod. tipo motore
+        2   19    57     1    I,  21,   0   ,Cod. ricircolo
+        2   20    58     1    I,  22,   0   ,Cod. persiane
+        2   21    59     1    I,  17,   0   ,Cod. specifiche
+        2   22    60     1    I,  24,   0   ,Cod. materiale guarnizioni
+        2   23    61     1    I,  23,   0   ,Cod. mat. tubi st. coil
+        2   24    62     1    I,  26,   0   ,Cod. volt-cicli-fasi motore
+        2   25    63     1    I,  16,   0   ,Cod. rating flange st. coil
+        2   26    64     1    I,  00,   0   ,-----
+        2   27    65     1    I,  29,   0   ,Cod. scale pioli
+        2   28    66     1    I,  29,   0   ,Cod. scale gradini
+        2   29    67     1    I,  29,   0   ,Cod. interr. vibrazioni
+        2   30    73     1    I,  00,   0   ,Cod. materiale alette
+        2   31    74     1    I,  00,   0   ,BWG tubi steam coil
+        2   32    75     2    S,  00,   0   ,Tipo BWG tubi s.c.
+        2   33    77     1    I,  00,   0   ,Tipo alette st. coil
+        2   34    81     2    R,  00,   0   ,N. alette 1" St. coil
+        2   35    83     2    R,  00,   0   ,Pressione ingresso st. coil
+        2   36    85     2    R,  00,   0   ,Pressione progetto st. coil
+        2   37    87     2    R,  00,   0   ,Temperat. ingresso st. coil
+        2   38    89     2    R,  00,   0   ,Temperat. progetto st. coil
+        2   39    91     2    R,  00,   0   ,Dia. boc. ingresso st. coil
+        2   40    93     2    R,  00,   0   ,Dia. boc. uscita st. coil
+        2   41    95     2    R,  00,   0   ,Corrosione
+        2   42    97     2    S,  00,   0   ,Banco 2
+        2   43    99     2    S,  00,   0   ,Banco 3
+        2   44   101     2    S,  00,   0   ,Banco 4
+        2   45   103     1    I,  00,   0   ,Codice proprieta' liquido
+        2   46   104     1    I,  00,   0   ,Codice proprieta' vapore
+        2   47   105     1    I,  00,   0   ,N. revisione
+        2   48   106     1    I,  00,   0   ,N. rec. note 1ø alternativa
+        2   49   107     1    I,  00,   0   ,N. rec. note 2ø alternativa
+        2   50   108     1    I,  00,   0   ,N. rec. note 3ø alternativa
+        2   51   109     1    I,  00,   0   ,N. rec. note 4ø alternativa
+        2   52   110     1    I,  00,   0   ,N. rec. note 5ø alternativa
+        2   53   113     1    I,  00,   0   ,Dati manuali ..............
+        2   54   114     1    S,  00,   0   ,Steam coil (YE NO)
+        2   55   117     1    I,  00,   0   ,Chiave dati item
+        2   56   118     1    I,  00,   0   ,N. totale calcoli registrati
+        2   57   119     1    I,  00,   0   ,N. 1ø rec. dati
+        2   58   120     1    I,  00,   0   ,N. 1ø chiave validita'
+        2   59   121     1    I,  00,   0   ,N. 2ø rec. dati
+        2   60   122     1    I,  00,   0   ,N. 2ø chiave validita'
+        2   61   123     1    I,  00,   0   ,N. 3ø rec. dati
+        2   62   124     1    I,  00,   0   ,N. 3ø chiave validita'
+        2   63   125     1    I,  00,   0   ,N. 4ø rec. dati
+        2   64   126     1    I,  00,   0   ,N. 4ø chiave validita'
+        2   65   127     1    I,  00,   0   ,N. 5ø rec. dati
+        2   66   128     1    I,  00,   0   ,N. 5ø chiave validita'
+        2   67    68     1    S,  00,   0   ,VENT       (n.tot size)
+        2   68    69     1    S,  00,   0   ,DRAIN      (n.tot size)
+        2   69    70     1    S,  00,   0   ,THERMOWELL (n.tot size)
+        2   70    71     1    S,  00,   0   ,PRESS.G.   (n.tot size)
+        2   71   115     1    I,  00,   0   ,Automatico 0 NO 1 SI
+        2   72   116     1    I,  00,   0   ,N° repliche
+        3    1     1     2    R,  00,   0   ,Duty totale
+        3    2     3     2    R,  00,   0   ,Temp. in
+        3    3     5     2    R,  00,   0   ,Temp. out
+        3    4     7     2    R,  00,   0   ,Liq. HC in
+        3    5     9     2    R,  00,   0   ,Vap. HC in
+        3    6    11     2    R,  00,   0   ,Non-Cond in
+        3    7    13     2    R,  00,   0   ,Steam in
+        3    8    15     2    R,  00,   0   ,Water in
+        3    9    17     2    R,  00,   0   ,Pressione in
+        3   10    19     2    R,  00,   0   ,D.P allowable
+        3   11    21     2    R,  00,   0   ,Temp. air in
+        3   12    23     2    R,  00,   0   ,Fouling
+        3   13    25     2    R,  00,   0   ,MW incond.
+        3   14    27     2    R,  00,   0   ,MW vap. in
+        3   15    29     2    R,  00,   0   ,MW vap out
+        3   16    31     2    R,  00,   0   ,Visc. liq. HC
+        3   17    33     2    R,  00,   0   ,Temp.
+        3   18    35     2    R,  00,   0   ,Visc. liq. HC
+        3   19    37     2    R,  00,   0   ,Temp.
+        3   20    39     2    R,  00,   0   ,Cond. liq.
+        3   21    41     2    R,  00,   0   ,Temp.
+        3   22    43     2    R,  00,   0   ,Cond. liq.
+        3   23   113     2    R,  00,   0   ,Temp min.aria
+        3   24   107     2    R,  00,   0   ,Design Temperature
+        3   25   103     2    R,  00,   0   ,Design Pressure
+        3   26   105     2    R,  00,   0   ,Test Pressure
+        4    1     1     1    S,  00,   0   ,Engineer
+        4    2     2     3    S,  00,   0   ,Tipo unita'
+        4    3     5     1    I,  00,   0   ,N. fasci in parallelo
+        4    4     6     1    I,  00,   0   ,N. fasci in par. con albero pass.
+        4    5     7     1    I,  00,   0   ,N. totale passi
+        4    6     8     1    I,  00,   0   ,N. bocchelli in
+        4    7     9     1    I,  00,   0   ,N. bocchelli out
+        4    8    10     1    I,  00,   0   ,N. tipi di tubi
+        4    9    11     1    I,  00,   0   ,R.P.M. Ventilatore
+        4   10    12     1    S,  00,   0   ,Tipo Ventilatore
+        4   11    13     1    I,  00,   0   ,% Passo AV
+        4   12    14     2    S,  00,   0   ,Posizion. o rele'
+        4   13    16     2    S,  00,   0   ,Tipo pale
+        4   14    18     1    I,  00,   0   ,N. Zone di calcolo
+        4   15    19     1    I,  00,   0   ,RPM Motore
+        4   16    20     1    I,  25,   0   ,Codice slope
+        4   17    21     1    I,  00,   0   ,Codice riduttore
+        4   18    25     1    S,  00,   0   ,N. Unita' per D.S.
+        4   19    26     1    S,  00,   0   ,Codice asterisco
+        4   20    27     1    I,  00,   0   ,Note per bocchelli
+        4   21    28     1    I,  00,   0   ,Note generali
+        4   22    29     1    I,  00,   0   ,Giorno
+        4   23    30     1    I,  00,   0   ,Mese
+        4   24    31     1    I,  00,   0   ,Anno
+        4   25    32     1    I,  00,   0   ,Codice testate
+        4   26    33     1    I,  00,   0   ,Codice St. Coil
+        4   27    34     1    I,  00,   0   ,N. pale ventilatore
+        4   28    35     1    I,  00,   0   ,N. passi orizzontali
+        4   29    36     1    I,  00,   0   ,N. fasci stacked
+        4   30    37     1    I,  00,   0   ,N. rows (Top ... 1)
+        4   31    38     1    I,  00,   0   ,N. rows (Top ... 2)
+        4   32    39     1    I,  00,   0   ,N. rows (Top ... 3)
+        4   33    40     1    I,  00,   0   ,N. file per unita' accoppiate
+        4   34    41     1    I,  00,   0   ,Chiave per Vent=1 se da scrivere
+        4   35    42     1    I,  00,   0   ,N. items su stessa unita'
+        4   36    43     1    I,  00,   0   ,N. 1ø record dati item 1
+        4   37    44     1    I,  00,   0   ,N. 1ø record dati item 2
+        4   38    45     1    I,  00,   0   ,N. 1ø record dati item 3
+        4   39    46     1    I,  00,   0   ,N. 1ø record dati item 4
+        4   40    47     1    I,  00,   0   ,N. 1ø record dati item 5
+        4   41    48     1    I,  00,   0   ,N. 1ø record dati item 6
+        4   42    49     1    I,  00,   0   ,N. fasci in comune 1ø item
+        4   43    50     1    I,  00,   0   ,N. fasci in comune 2ø item
+        4   44    51     1    I,  00,   0   ,N. fasci in comune 3ø item
+        4   45    52     1    I,  00,   0   ,N. fasci in comune 4ø item
+        4   46    53     1    I,  00,   0   ,N. fasci in comune 5ø item
+        4   47    54     1    I,  00,   0   ,N. fasci in comune 6ø item
+        4   48    89     1    I,  00,   0   ,N. file tubi
+        4   49    90     1    I,  00,   0   ,N. tubi/fascio
+        4   50    22     1    S,  00,   0   ,Autom (SI/NO)
+        4   51    55     1    I,  30,   0   ,Giunto t/p. (WE/EX)
+        4   52   121     1    I,  00,   0   ,N. file tubi     2.tipo
+        4   53   122     1    I,  00,   0   ,N. tubi/fascio   2.tipo
+        4   54    65     1    I,  00,   0   ,BWG 1.tipo
+        4   55    66     2    S,  00,   0   ,Tipo bwg 1. tipo
+        4   56    68     1    I,  23,   0   ,Mater    1. tipo
+        4   57    85     1    I,  00,   0   ,cond.    1. tipo
+        4   58    86     1    S,  00,   0   ,CodAlett 1. tipo
+        4   59    87     2    S,  00,   0   ,SpAlett  1. tipo
+        4   60    91     1    I,  00,   0   ,N.tubi/fascio S.T.
+        4   61    97     1    I,  00,   0   ,BWG 2.tipo
+        4   62    98     2    S,  00,   0   ,Tipo bwg 2. tipo
+        4   63   100     1    I,  23,   0   ,Mater    2. tipo
+        4   64   117     1    I,  00,   0   ,cond.    2. tipo
+        4   65   118     1    S,  00,   0   ,CodAlett 2. tipo
+        4   66   119     2    S,  00,   0   ,SpAlett  2. tipo
+        4   67   123     1    I,  00,   0   ,N.tubi/fascio S.T.
+        4   68    92     1    I,  10,   0   ,Turbol   1. tipo
+        4   69   124     1    I,  10,   0   ,Turbol   2. tipo
+        4   70   125     1    I,  30,   0   ,Giunto t/p 2. tipo 
+        4   71    23     1    I,  00,   0   ,Codice split
+        4   72    24     1    I,  43,   0   ,Codice imbocco       
+        4   73    61     1    I,  00,   0   ,Correlazioni lato aria
+        4   74    62     1    I,  00,   0   ,Origine proprietà fluido 0,1,2
+        5    1    17     2    R,  00,   0   ,Dia. tubo
+        5    2    19     2    R,  00,   0   ,Passo tubi
+        5    3    21     2    R,  00,   0   ,Dia. alette
+        5    4    23     2    R,  00,   0   ,N.alette x 1"
+        5    5    25     2    R,  00,   0   ,N.tot.tubi
+        5    6    27     2    R,  00,   0   ,Sp.tubi inch
+        5    7    41     2    R,  00,   0   ,Dia. tubo   2.
+        5    8    43     2    R,  00,   0   ,Passo tubi  2.
+        5    9    45     2    R,  00,   0   ,Dia. alette 2.
+        5   10    47     2    R,  00,   0   ,N.alette x 1" 2.
+        5   11    49     2    R,  00,   0   ,N.tot.tubi  2.
+        5   12    51     2    R,  00,   0   ,Sp.tubi inch 2.
+        5   13     1     1    I,  00,   0   ,Chiave per condensatori
+        5   14     2     1    I,  00,   0   ,1=calcolo HTRI
+        5   15     3     2    R,  00,   0   ,Addit. static pr. per MFVC
+        5   16     5     1    I,  00,   0   ,Tipo tubi zona 1         
+        5   17     6     1    I,  00,   0   ,Tipo tubi zona 2
+        5   18     7     1    I,  00,   0   ,Tipo tubi zona 3
+        5   19     8     1    I,  00,   0   ,Tipo tubi zona 4
+        5   20     9     1    I,  00,   0   ,Tipo tubi zona 5
+        5   21    10     1    I,  00,   0   ,Tipo tubi zona 6
+        5   22    11     1    I,  00,   0   ,Tipo tubi zona 7
+        5   23    12     1    I,  00,   0   ,Tipo tubi zona 8
+        5   24    13     1    I,  00,   0   ,Tipo tubi zona 9
+        5   25    14     1    I,  00,   0   ,Tipo tubi zona 10
+        5   26    15     1    I,  00,   0   ,Tipo tubi zona 11
+        5   27    16     1    I,  00,   0   ,Tipo tubi zona 12
+        6    1     1     2    R,  00,   0   ,dummy
+        7    1   115     2    R,  00,   0   ,Dia. ventilatore
+        7    2     1     2    R,  00,   0   ,N. file 1  passo
+        7    3     3     2    R,  00,   0   ,N. file 2  passo
+        7    4     5     2    R,  00,   0   ,N. file 3  passo
+        7    5     7     2    R,  00,   0   ,N. file 4  passo
+        7    6     9     2    R,  00,   0   ,N. file 5  passo
+        7    7    11     2    R,  00,   0   ,N. file 6  passo
+        7    8    13     2    R,  00,   0   ,N. file 7  passo
+        7    9    15     2    R,  00,   0   ,N. file 8  passo
+        7   10    17     2    R,  00,   0   ,N. file 9  passo
+        7   11    19     2    R,  00,   0   ,N. file 10 passo
+        7   12    21     2    R,  00,   0   ,N. file 11 passo
+        7   13    23     2    R,  00,   0   ,N. file 12 passo
+        7   14    25     2    R,  00,   0   ,N. file 13 passo
+        7   15    27     2    R,  00,   0   ,N. file 14 passo
+        7   16    29     2    R,  00,   0   ,N. file 15 passo
+        7   17    31     2    R,  00,   0   ,N. file 16 passo
+        7   18   117     2    R,  00,   0   ,Dbocch.out
+        7   19   119     2    R,  00,   0   ,Dbocch.in
+        7   20   123     2    R,  00,   0   ,Lunghezza fascio
+        7   21   125     2    R,  00,   0   ,Larghezza fascio
+        7   22    75     2    R,  00,   0   ,HP-Motor
+        7   23   107     2    R,  00,   0   ,HP-Fan
+        7   24   121     2    R,  00,   0   ,Face Velocity
+        7   25    33     2    R,  00,   0   ,T. med. 1  passo
+        7   26    35     2    R,  00,   0   ,T. med. 2  passo
+        7   27    37     2    R,  00,   0   ,T. med. 3  passo
+        7   28    39     2    R,  00,   0   ,T. med. 4  passo
+        7   29    41     2    R,  00,   0   ,T. med. 5  passo
+        7   30    43     2    R,  00,   0   ,T. med. 6  passo
+        7   31    45     2    R,  00,   0   ,T. med. 7  passo
+        7   32    47     2    R,  00,   0   ,T. med. 8  passo
+        7   33    49     2    R,  00,   0   ,T. med. 9  passo
+        7   34    51     2    R,  00,   0   ,T. med. 10 passo
+        7   35    53     2    R,  00,   0   ,T. med. 11 passo
+        7   36    55     2    R,  00,   0   ,T. med. 12 passo
+        7   37    57     2    R,  00,   0   ,T. med. 13 passo
+        7   38    59     2    R,  00,   0   ,T. med. 14 passo
+        7   39    61     2    R,  00,   0   ,T. med. 15 passo
+        7   40    63     2    R,  00,   0   ,T. med. 16 passo
+        7   41   127     2    R,  00,   0   ,N. di unità
+        7   42    65     2    R,  00,   0   ,Width x fasci sotto vent.comune
+        7   43   113     2    R,  00,   0   ,T aria out
+        7   44    97     2    R,  00,   0   ,Superficie liscia
+        7   45   111     2    R,  00,   0   ,Angolo pale 
+        7   46    83     2    R,  00,   0   ,N. tot. ventilatori
+        7   47    77     2    R,  00,   0   ,Addit. static pressure
+        7   48    67     2    R,  00,   0   ,Altezza divergente
+        7   49    69     2    R,  00,   0   ,Rapporto gioco/diametro
+        7   50    71     2    R,  00,   0   ,Lunghezza efficace fascio
+        0    0     0     0    0,  00,   0   ,0
+

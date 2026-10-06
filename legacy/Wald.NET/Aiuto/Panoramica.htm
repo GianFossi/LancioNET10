@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Panoramica</Title>
+</HEAD>
+<BODY>
+<H1>Panoramica</H1>
+<P>Wald è un programma per il calcolo delle caratteristiche fisiche di fluidi petroliferi in fase liquida, aeriforme o bifase, con possibile presenza di acqua e di gas nobili.</P>
+<P>Esso consente il calcolo del punto di ebollizione e del punto di rugiada, come pure la costruzione di curve di raffredamento/condensazione e di riscaldamento/evaporazione.</P>
+<P>Il programma Wald è implementato, dal punto di vista informatico, come una DLL, così da poterne utilizzare le prestazioni a partire da altri programmi.</P>
+<P>In particolare, Wald può essere chiamato direttamente dal programma <OBJECT id=hhctrl type="application/x-oleobject"
+        classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+        codebase="hhctrl.ocx#Version=4,73,8561,0"
+        width=100
+        height=100
+>
+    <PARAM name="Command" value="ShortCut">
+    <PARAM name="Button" value="Text:ISA - Ingegneria Scambiatori ad Aria">
+    <PARAM name="Item1" value=",AiutoIsa.chm,">
+</OBJECT>
+, in modo trasparente per l'utente, al fine della gestione delle curve di condensazione.</P>
+<P>Ne consegue che Wald può funzionare secondo le seguenti tre modalità:
+<li><a HREF="FunzAut.htm">Modalità autonoma</A>. Il programma viene chiamato da <OBJECT id=hhctrl type="application/x-oleobject"
+        classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+        codebase="hhctrl.ocx#Version=4,73,8561,0"
+        width=100
+        height=100
+>
+    <PARAM name="Command" value="ShortCut">
+    <PARAM name="Button" value="Text:Lancio">
+    <PARAM name="Item1" value=",Lancio.chm,">
+</OBJECT>
+accedendo al menu 'Librerie termiche'.
+<li><A href="Manuale.htm">Curve manuali</A> per ISA. Il programma viene chiamato da ISA per la gestione di curve di condensazione fornite in modo manuale. In questo caso nessuna elaborazione di tipo termodinamico viene eseguita da Wald.
+<li><A href="Autom.htm">Curve automatiche</A> per ISA. Il programma viene chiamato da ISA, con utilizzo completo delle capacità di calcolo termodinamico di Wald.</P>
+<H2><A name="Limitazioni">Limitazioni</A></H2>
+Il programma non è attualmente in grado di fornire risposte ad alcuni problemi (in particolare calcolo del punto di ebollizione e del punto di rugiada), quando la composizione della miscela ricade nei casi seguenti:
+<li> acqua pura
+<li> acqua più idrogeno
+</P>
+<H2>Dettagli relativi all'implementazione informatica</H2>
+<P>Il <A HREF="ManProgFORTRAN.htm">motore</A> di <A name="motore">calcolo</A> di Wald è scritto in Digital-Visual Fortran; le corrispondenti routines eseguibili sono contenute nella libreria dinamica WaldLib.dll. L'interfaccia utente è scritta in MicroSoft-Visual Basic; le corrispondenti routines eseguibili sono contenute nella DLL Active-X Wald.dll.</P>
+<P>I risultati delle elaborazioni del motore di calcolo vengono registrati in un file <A name="txt">temporaneo di tipo testo</A> che viene presentato all'utente e registrato in modo permanente sotto forma di documento WinWord.</P>
+</BODY>
+</HTML>

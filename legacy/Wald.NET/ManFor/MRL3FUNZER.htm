@@ -1,0 +1,529 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MRL3FUNZER_file/filelist.xml">
+<link rel=Edit-Time-Data href="./MRL3FUNZER_file/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Subroutine FUNZER</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:Template>HTML.dot</o:Template>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>68</o:TotalTime>
+  <o:Created>2001-06-17T16:33:00Z</o:Created>
+  <o:LastSaved>2001-06-21T12:58:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>471</o:Words>
+  <o:Characters>2688</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3301</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Fortran, li.Fortran, div.Fortran
+	{mso-style-name:Fortran;
+	mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Subroutine FUNZER</h1>
+
+<table border=0 cellspacing=0 cellpadding=0 style='mso-cellspacing:0cm;
+ mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+  0cm'><a href="MRL2PROCIT.HTM"><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=115 height=18 id="_x0000_i1027"
+  src="..\img\SubPROCIT.bmp" alt="Subroutine PROCIT"></span></a><img border=0
+  width=17 height=25 id="_x0000_i1031" src="..\img\space.bmp"><a
+  href="MRL3PROCOV.HTM"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=115 height=18 id="_x0000_i1032" src="..\img\SubPROCOV.bmp"
+  alt="Subroutine PROCOV"></span></a><img border=0 width=17 height=25
+  id="_x0000_i1033" src="..\img\space.bmp"><a href="MRL3INVERS.HTM"><span
+  style='text-decoration:none;text-underline:none'><img border=0 width=115
+  height=18 id="_x0000_i1034" src="..\img\SubINVERS.bmp" alt="Subroutine INVERS"></span></a><br>
+  <img border=0 width=17 height=25 id="_x0000_i1029" src="..\img\parmult.bmp"><img
+  border=0 width=115 height=18 id="_x0000_i1030" src="..\img\SubFUNZER.bmp"
+  alt="Subroutine FUNZER"></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Autore<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Revisioni<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly'><span
+style='mso-ansi-language:IT'>Scopo<o:p></o:p></span></h2>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Calcola i valori del termine noto (nullo) delle
+equazioni di stato, di equilibrio, e di bilancio da risolvere. Tali valori sono
+contenuti nel Common Block /<a href="cbFER.htm">FER</a>/.</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Argomenti<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;margin-left:0cm;
+tab-stops:list 71.45pt'>Nessuno</p>
+
+<h2 style='line-height:12.0pt;mso-line-height-rule:exactly;tab-stops:list 71.45pt'><span
+style='mso-ansi-language:IT'>Listato<o:p></o:p></span></h2>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>C ----------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=FR style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:FR'>C<span
+style="mso-spacerun: yes">     </span>- SUBROUTINE FUNZER - 65<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>C
+----------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SUBROUTINE FUNZER<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>REAL LAMDA,MU,NU,K<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>CHARACTER*4 NAME<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/HFASE/HF,Q,HL,HV,DPHL,DPHV,DTHL,DTHV,DXHL(50),DYHV(50)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     
+</span>COMMON/SFASE/SF,SL,SV,DPSL,DPSV,DTSL,DTSV,DXSL(50),DYSV(50)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     
+</span>COMMON/KVALUE/DTK(50),DPK(50),DXK(50,50),DYK(50,50),K(50)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">     
+</span>COMMON/NCODEX/NCOD(50),NAME(50,5),NCST,NCNST,NCIP,NC,NCW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span><span style="mso-spacerun: yes">  </span></span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>COMMON/SPECIF/AL(50),AV(50),BL(50),BV(50),C,D,E<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=FR style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+FR'>COMMON/MOLFR/X(50),Y(50),Z(50),ZN(50,2),SOMM(2)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=FR style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:FR'><span
+style="mso-spacerun: yes">      </span></span><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>COMMON/WATER/HWL,DTHWL,DPHWL,SWL,DTSWL,DPSWL<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>COMMON/FER/F(50),FI(50),SNOR,GI,ERRE,SGI,SGR<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>COMMON/INDEX/KBDF,KE,KU,KHS,KW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>COMMON/PARTIZ/LAMDA,MU,NU,YW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 100 I=1,NCW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>F(I)=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">  </span>100
+FI(I)=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>SNOR=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>GI=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>ERRE=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>IF(KBDF.EQ.1.OR.KBDF.EQ.2.OR.KE.EQ.5) GO TO 2<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>DO 1 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">    </span>1 <a
+name=F>F(I)=LAMDA*Y(I)+(1.-LAMDA-MU)*X(I)-Z(I)</a><o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">    </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>2 GO TO (24,24,24,3,18),KE<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>3 GO TO (4,9,14,14),KU<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>4 GO TO (5,7,24),KBDF<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>5 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 6 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>6 SOM=SOM+K(I)*X(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span><a name=SNOR>SNOR=SOM-1.+YW</a><o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 16<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>7 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 8 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>8 SOM=SOM+Y(I)/K(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SNOR=SOM-1.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 16<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span>9 GO TO (10,12,24),KBDF<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>10 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 11 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>11 SOM=SOM+K(I)*X(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SNOR=ALOG(SOM+YW)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 16<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>12 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>C<span style="mso-spacerun: yes">    
+</span>AGGIUNTO IF LP<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>IF(NC.GT.0)THEN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 13 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>13 SOM=SOM+Y(I)/K(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SNOR=ALOG(SOM)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">    </span><span style="mso-spacerun:
+yes">  </span>ENDIF<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 16<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>14 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 15 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>15 SOM=SOM+Z (I)*(K(I)-1.)/(LAMDA*(K(I)-1.)+1.-MU)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>SNOR=SOM+YW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>GO TO 16<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>24 SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 25 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>25 SOM=SOM+Y(I)-X(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SNOR=SOM+YW<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>16 DO 17 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>17 <a name=FI>FI(I)=Y(I)-K(I)*X(I)</a><o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">   </span></span><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-GB'>18 IF(KHS.NE.1) GO TO 19<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span><a name=GI>GI</a>=LAMDA*HV+(1.-LAMDA-MU)*HL+MU*HWL-HF-Q<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span>19 IF(KHS.NE.2) GO TO 20<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span></span><span lang=DE style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:DE'>GI=LAMDA*SV+(1.-LAMDA-MU)*SL+MU*SWL-SF<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=DE style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:DE'><span
+style="mso-spacerun: yes">   </span></span><span lang=EN-GB style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'>20 IF(KE.GT.2) GO TO
+22<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>SOM=0.<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">      </span>DO 21 I=1,NC<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-GB'><span
+style="mso-spacerun: yes">   </span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>21 SOM=SOM+(AV(I)*LAMDA+BV(I))*Y(I)/(1.-C*YW)+(AL(I)*(1.-LAMDA-MU)+BL<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">    
+</span>*(I))*X(I)<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span><a
+name=ERRE>ERRE</a>=SOM+D*YW-E<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">   </span>22 RETURN<o:p></o:p></span></p>
+
+<p class=Fortran style='tab-stops:list 71.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><span style="mso-spacerun: yes">      </span>END<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

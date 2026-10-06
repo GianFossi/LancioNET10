@@ -1,0 +1,45 @@
+Foglio di Calcolo (Custom _& ASME)   Doc.N{_\super 0} \           \ Comm.   \     \ _\par _\par 
+                                   Foglio ## di ##        Data \        \ _\par
+Testata COVER Tipo STUD   Redatto  \    \ Visto..........   Rev. ## _\par_\par
+Item  \                           \ _\tab Testata: \                          \ _\par_\par
+Mat. Testata  \                 \   _\tab Soll. Amm.S{_\sub RT}/S(kg/mm{_\super 2})= ##.0/ ##.0_\par
+Mat. Coperch  \                 \   _\tab Soll. Amm.S{_\sub RT}/S(kg/mm{_\super 2})= ##.0/ ##.0_\par
+Mat. Bulloni  \                 \   _\tab Soll. Amm.S{_\sub A}/S{_\sub B}(kg/mm{_\super 2})= ##.0/ ##.0_\par
+Mat. Guarn    \                 \   _\tab Carico Unit. Y (kg/mm2)=      ##.00_\par
+                                    _\tab Coefficiente m         =      ##.00_\par_\par
+Press. Prog.  (kg/cm{_\super 2})=     ###.# _\tab Temp. Prog.   (Gradi C)=      ###.#_\par 
+Toll Corros/Cave  (mm)=    #.#/ # _\tab Numero File e Setti    =     ## / # _\par_\par
+Eff. Sald. Piastre    =     ##.## _\tab Altezza Int. Test. (mm)=      ###.#_\par 
+Eff. Legamento        =     ##.## _\tab Largh. Testata     (mm)=      ###.#_\par 
+                                  _\tab Long. Gask. Span   (mm)=     ####.#_\par 
+                                  _\tab Short Gask. Span   (mm)=     ####.#_\par 
+Diametro Tubi     (mm)=     ###.# _\tab Braccio Hg         (mm)=      ###.#_\par 
+Passo Tubi        (mm)=     ###.# _\tab Braccio I          (mm)=      ###.#_\par 
+                                  _\tab Larghezza Risalto  (mm)=       ##.#_\par 
+Spess Top/Btm max (mm)=     ###.# _\tab Spess Top/Btm min  (mm)=      ###.# _\par 
+                                  _\tab Guarnizione tra facce piane\par 
+Diam. Bulloni         =  \      \  _\tab Largh. Guarniz.    (mm)=      ###.#_\par 
+Area Nocc. Bull. (mm2)=       ###  _\tab Spess. Guarniz.    (mm)=       ##.#_\par 
+Numero Totale Bulloni         ###  _\tab Largh. Utile Guarn.(mm)=       ##.#_\par 
+Coefficiente  Z       =      ##.#  _\tab Coefficiente  C        =       ##.# _\par_\par
+Posizione    :   G##  .
+Distanza (mm)= ###.#  .
+W{_\sub m1}            (kg)=    #######.# _\tab W (prog. bull.) (kg)=     #######.#_\par 
+W{_\sub m2}            (kg)=    #######.# _\tab L (perimetro g.)(mm)=     #######.#_\par 
+A{_\sub m1}           (mm{_\super 2})=    #######.# _\tab w (c.unit.g.)(kg/mm)=     #######.#_\par 
+A{_\sub m2}           (mm{_\super 2})=    #######.# _\tab M{_\sub 3}              (kg)=     #######.#_\par 
+A{_\sub b}            (mm{_\super 2})=    #######.# _\tab M{_\sub 1}            (  kg)=     #######.#_\par 
+M{_\sub G}             (kg)=    #######.# _\tab M{_\sub 2}              (kg)=     #######.#_\par _\par 
+Passo Bulloni Minimo E{_\sub 1}/E{_\sub 2}/E{_\sub 3} (mm)  ###.# / ###.# / ###.#; Assunto (mm)= ###.#_\par _\par 
+Piastra Tubiera (serraggio) (mm):t{_\sub p1}= ###.0        + ##.0 =####.0 < ###.0_\par 
+(esercizio,zona non forata)      t{_\sub p2}= ###.0 + ##.0 + ##.0 =####.0 < ###.0_\par 
+(esercizio, mezzeria)            t{_\sub p3}= ###.0 + ##.0 + ##.0 =####.0 < ###.0_\par 
+(esercizio, bordo foratura)      t{_\sub p4}= ###.0 + ##.0 + ##.0 =####.0 < ###.0_\par _\par 
+Fianchi   (serraggio)       (mm):t{_\sub f1}= ###.0       + ###.0 =####.0 < ###.0_\par 
+          (esercizio)            t{_\sub f2}= ###.0 + ##.0 + ##.0 =####.0 < ###.0_\par _\par 
+Coperchio (serraggio)Custom (mm):t{_\sub c1}= ###.0        + ##.0 =####.0 < ###.0_\par 
+          (esercizio)Custom (mm):t{_\sub c2}= ###.0        + ##.0 =####.0 < ###.0_\par 
+          (serraggio)  ASME (mm):t{_\sub c3}= ###.0        + ##.0 =####.0 < ###.0_\par 
+          (esercizio)  ASME (mm):t{_\sub c4}= ###.0        + ##.0 =####.0 < ###.0_\par _\par 
+Spess. Partizioni                t{_\sub s1}=                               ###.0_\par
+

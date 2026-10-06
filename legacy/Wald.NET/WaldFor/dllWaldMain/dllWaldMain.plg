@@ -1,0 +1,55 @@
+--------------------Configuration: WaldLib - Win32 Debug--------------------
+Begining build with project "C:\Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\WaldLib.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"Fortran 90 Compiler for 80x86" with flags "/include:"Debug/" /compile_only /nologo /libs:dll /debug:full /optimize:0 /warn:nofileopt /module:"Debug/" /object:"Debug/" /pdbfile:"Debug/DF50.PDB" /dll "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x410 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/WaldLib.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Debug/WaldLib.pdb" /debug /machine:I386 /out:"C:/WINNT/SYSTEM32/WaldLib.dll" /implib:"Debug/WaldLib.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP3B0.tmp" with contents </include:"Debug/" /compile_only /nologo /libs:dll /debug:full /optimize:0 /warn:nofileopt /module:"Debug/" /object:"Debug/" /pdbfile:"Debug/DF50.PDB" /dll 
+"C:\Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\NselvaDLL.for"
+"C:\Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\Block1DLL.for"
+>
+Creating temp file "C:\TEMP\RSP3B1.tmp" with contents <kernel32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Debug/WaldLib.pdb" /debug /machine:I386 /out:"C:/WINNT/SYSTEM32/WaldLib.dll" /implib:"Debug/WaldLib.lib" /pdbtype:sept 
+.\Debug\Block1DLL.obj
+.\Debug\Block2DLL.obj
+.\Debug\Block3DLL.obj
+.\Debug\Block4DLL.obj
+.\Debug\Block5DLL.obj
+.\Debug\LetbanDLL.obj
+.\Debug\Level1DLL.obj
+.\Debug\Level2DLL.obj
+.\Debug\Level3aDLL.obj
+.\Debug\Level3DLL.obj
+.\Debug\NselvaDLL.obj
+.\Debug\OutputDLL.obj
+.\Debug\Proc1DLL.obj>
+Creating command line "link.exe @C:\TEMP\RSP3B1.tmp" 
+Compiling Fortran...
+C:\Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\NselvaDLL.for
+C:\Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\Block1DLL.for
+Linking...
+   Creating library Debug/WaldLib.lib and object Debug/WaldLib.exp
+--------------------Configuration: dllWaldMain - Win32 Debug--------------------
+Begining build with project "C:\Programmi\DevStudio\VB\FBM\Wald\Wald\dllWaldMain\dllWaldMain.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"Fortran 90 Compiler for 80x86" with flags "/include:"Debug/" /compile_only /nologo /debug:full /optimize:0 /warn:nofileopt /module:"Debug/" /object:"Debug/" /pdbfile:"Debug/DF50.PDB" "
+			"Win32 Resource Compiler" with flags "/l 0x410 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/dllWaldMain.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/dllWaldMain.pdb" /debug /machine:I386 /out:"Debug/dllWaldMain.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "link.exe kernel32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/dllWaldMain.pdb" /debug /machine:I386 /out:"Debug/dllWaldMain.exe" /pdbtype:sept  .\Debug\dllNselvaMain.obj \Programmi\DevStudio\VB\FBM\Wald\Wald\WaldLib\Debug\WaldLib.lib" 
+Linking...
+
+
+
+dllWaldMain.exe - 0 error(s), 0 warning(s)

@@ -1,0 +1,344 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./DiafElast_file/filelist.xml">
+<link rel=Edit-Time-Data href="./DiafElast_file/editdata.mso">
+<link rel=OLE-Object-Data href="./DiafElast_file/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Calcolo del diaframma elastico</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Leonardo Presciuttini</o:Author>
+  <o:Template>HTML.dot</o:Template>
+  <o:LastAuthor>Leonardo Presciuttini</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>287</o:TotalTime>
+  <o:LastPrinted>2001-07-12T06:45:00Z</o:LastPrinted>
+  <o:Created>2001-07-12T06:29:00Z</o:Created>
+  <o:LastSaved>2001-07-12T12:19:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>162</o:Words>
+  <o:Characters>927</o:Characters>
+  <o:Company>Mangiarotti SpA</o:Company>
+  <o:Lines>7</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>1138</o:CharactersWithSpaces>
+  <o:Version>9.2520</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:AttachedTemplate
+   HRef="C:\WINDOWS\Profiles\lpresci\Application Data\Microsoft\Modelli\HTML.dot"></w:AttachedTemplate>
+  <w:UpdateStylesOnOpen/>
+  <w:HyphenationZone>14</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normale;
+	margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-style-next:Normale;
+	margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Fortran, li.Fortran, div.Fortran
+	{mso-style-name:Fortran;
+	mso-style-next:Normale;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:429551196;
+	mso-list-type:hybrid;
+	mso-list-template-ids:13819218 -1700525164 68157443 68157445 68157441 68157443 68157445 68157441 68157443 68157445;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:80.8pt;
+	mso-level-number-position:left;
+	margin-left:80.8pt;
+	text-indent:-22.65pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body lang=IT link=blue vlink=blue style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1>Calcolo del diaframma elastico</h1>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><!--[if gte vml1 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1116" type="#_x0000_t75" style='width:420.75pt;
+ height:260.25pt' o:ole="">
+ <v:imagedata src="./DiafElast_file/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=561 height=347
+src="./DiafElast_file/image002.gif" v:shapes="_x0000_i1116"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1116"
+  DrawAspect="Content" ObjectID="_1056452762">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoBodyTextIndent>L&#8217;azione attraverso il diaframma sulla guarnizione
+della piastra tubiera (internal push screws) o sulla guarnizione della cassa (external
+push screws, vedi carico W nella figura) richiede di esecitare una forza che,
+oltre a comprimere adeguatamente la guarnizione, vinca la resistenza del
+diaframma e soprattutto l&#8217;effetto di fondo della pressione interna esercitato
+sull&#8217;area anulare di larghezza l rappresentata in figura. A sua volta l è una
+funzione di:</p>
+
+<p class=MsoNormal style='margin-left:80.8pt;text-indent:-22.65pt;mso-list:
+l0 level1 lfo1;tab-stops:list 80.8pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>pressione interna p</p>
+
+<p class=MsoNormal style='margin-left:80.8pt;text-indent:-22.65pt;mso-list:
+l0 level1 lfo1;tab-stops:list 80.8pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>spessore t del diaframma elastico</p>
+
+<p class=MsoNormal style='margin-left:80.8pt;text-indent:-22.65pt;mso-list:
+l0 level1 lfo1;tab-stops:list 80.8pt'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>spostamento assiale y dell&#8217;anello di compressione
+rispetto alla posizione di riposo</p>
+
+<p class=MsoBodyTextIndent>Una soluzione sufficientemente accurata del problema
+sopra esposto è data dal caso 2f della tabella 24 di Roark, Formulas for stress
+and strain.</p>
+
+<p class=MsoNormal>Detti a e b i raggi esterno ed interno della fascia anulare
+di larghezza l, si ha:</p>
+
+<p class=MsoNormal><span style='mso-text-raise:-51.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1134" type="#_x0000_t75" style='width:126.75pt;height:111.75pt'
+ o:ole="">
+ <v:imagedata src="./DiafElast_file/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=169 height=149
+src="./DiafElast_file/image004.gif" v:shapes="_x0000_i1134"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1134"
+  DrawAspect="Content" ObjectID="_1056452764">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal>con:</p>
+
+<p class=MsoNormal><span style='mso-text-raise:-36.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1144" type="#_x0000_t75" style='width:140.25pt;height:78pt' o:ole="">
+ <v:imagedata src="./DiafElast_file/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=187 height=104
+src="./DiafElast_file/image006.gif" v:shapes="_x0000_i1144"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1144"
+  DrawAspect="Content" ObjectID="_1056452765">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal><span style='mso-text-raise:-39.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1156" type="#_x0000_t75" style='width:132.75pt;height:84pt' o:ole="">
+ <v:imagedata src="./DiafElast_file/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=177 height=112
+src="./DiafElast_file/image008.gif" v:shapes="_x0000_i1156"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1156"
+  DrawAspect="Content" ObjectID="_1056452766">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal><span style='mso-text-raise:-62.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1177" type="#_x0000_t75" style='width:258.75pt;height:129.75pt'
+ o:ole="">
+ <v:imagedata src="./DiafElast_file/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=345 height=173
+src="./DiafElast_file/image010.gif" v:shapes="_x0000_i1177"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1177"
+  DrawAspect="Content" ObjectID="_1056452767">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal>La ricerca del valore di l=a-b in funzione di y può essere
+fatta quindi per tentativi iterando sul valore di b nelle precedenti
+espressioni.</p>
+
+<p class=MsoNormal>Qualora ci si accontenti di una soluzione meno accurata, o
+nel caso in cui l sia piccolo rispetto ad a, si può utlizzare l&#8217;espressione seguente:</p>
+
+<p class=MsoNormal><span style='mso-text-raise:-15.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1182" type="#_x0000_t75" style='width:69pt;height:38.25pt' o:ole="">
+ <v:imagedata src="./DiafElast_file/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=92 height=51
+src="./DiafElast_file/image012.gif" v:shapes="_x0000_i1182"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1182"
+  DrawAspect="Content" ObjectID="_1056452768">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal>cui corrisponde la seguente espressione per la tensione di
+flessione massima nel diaframma:</p>
+
+<p class=MsoNormal><span style='mso-text-raise:-14.0pt'><!--[if gte vml1 1]><v:shape
+ id="_x0000_i1187" type="#_x0000_t75" style='width:63pt;height:36.75pt' o:ole="">
+ <v:imagedata src="./DiafElast_file/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml1]><img width=84 height=49
+src="./DiafElast_file/image014.gif" v:shapes="_x0000_i1187"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1187"
+  DrawAspect="Content" ObjectID="_1056452769">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal>Normalmente questa tensione assume valori molto elevati e
+ben superiori al limite elastico: essa sarà assoggettata unicamente a limiti
+connessi con il rischio di rottura a fatica.</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{022700EF-E560-425C-949B-E55A3F1A7B52}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Surrisc</AssemblyName>
+    <OutputType>Library</OutputType>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>1</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>9</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>True</GenerateRevisionNumber>
+    <AssemblyCompanyName>Fbm-Hudson Italiana S.P.A.</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <RootNamespace>Surrisc</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Surrisc.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Surrisc.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Word, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\StubW9.NET\bin\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Private>False</Private>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <Reference Include="WinWordControl">
+      <HintPath>..\DLL Extra\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="clsSurrisc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmApertDll.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmApertDll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApertDll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProp.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmProp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipo.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmTipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTubi.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmTubi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTubi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenSurr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Proprietà.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="surMonitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmApertDll.resX">
+      <DependentUpon>frmApertDll.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProp.resX">
+      <DependentUpon>frmProp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipo.resX">
+      <DependentUpon>frmTipo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTubi.resX">
+      <DependentUpon>frmTubi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibMat.NET\LibMat.vbproj">
+      <Project>{BFBA7621-266F-4831-8B74-A3AFBF0FE303}</Project>
+      <Name>LibMat</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\PPgas.net\Ppgas.vbproj">
+      <Project>{4F2BD0E7-E215-4166-A45F-1CC99E56B433}</Project>
+      <Name>Ppgas</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutBase.NET\RoutBase1.vbproj">
+      <Project>{3B2389A2-3B3A-4FDE-980B-3345357EC065}</Project>
+      <Name>RoutBase1</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW2000.NET\StubW2000.vbproj">
+      <Project>{CEF5E506-69FD-499F-99B3-E10767B365D4}</Project>
+      <Name>StubW2000</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StubW9.NET\StubW9.vbproj">
+      <Project>{D211EA20-5776-410B-9174-1817E9DD67C3}</Project>
+      <Name>StubW9</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\traccia.NET\Traccia.vbproj">
+      <Project>{1D65AB85-8081-4275-A7CC-97B0F7C6A67C}</Project>
+      <Name>Traccia</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\VapAcqua.NET\VapAcqua.vbproj">
+      <Project>{C227EF5C-19A0-45A3-980C-AA0EE776D1A8}</Project>
+      <Name>VapAcqua</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Figure\A8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Figure\B6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Figure\C8.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
