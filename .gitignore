@@ -1,0 +1,12 @@
+# Output e stato locale Visual Studio / .NET
+**/bin/
+**/obj/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+TestResults/
+*.binlog
+
+# Non ignorare risorse legacy, interop o file .resx: vanno inventariati.
