@@ -1,0 +1,4039 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HTRI
+</name>
+</assembly>
+<members>
+<member name="P:HTRI.My.Resources.HelpTopics.ResourceManager">
+	<summary>
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+</summary>
+</member><member name="P:HTRI.My.Resources.HelpTopics.Culture">
+	<summary>
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+</summary>
+</member><member name="P:HTRI.My.Resources.HelpTopics.dummy">
+	<summary>
+  Cerca una stringa localizzata simile a dummy.
+</summary>
+</member><member name="T:HTRI.My.Resources.HelpTopics">
+	<summary>
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ResourceManager">
+	<summary>
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.Culture">
+	<summary>
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_002">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A515 GR.60    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_003">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A515 GR.60  K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_004">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A516 GR.60    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_005">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A516 GR.60  K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_006">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A515 GR.70    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_007">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A515 GR.70  K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_008">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A516 GR.70    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_009">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A516 GR.70  K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_010">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A285 GR.C     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_011">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A285 GR.C   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_012">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.A     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_013">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.A   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_014">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.B     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_015">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.B   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_016">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.D     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_017">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.D   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_018">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.E     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_019">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A203 GR.E   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_020">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A204 GR.B     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_021">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A204 GR.B   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_022">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A387 GR.5     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_023">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A387 GR.5   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_024">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-304      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_025">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-304L     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_026">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-316      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_027">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-316L     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_028">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-321      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_029">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-405      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_030">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A240-410      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_031">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B209-6061-T6  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_032">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B152-122      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_033">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B169-614      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_034">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B171-444      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_035">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B171-464      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_036">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B171-614      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_037">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B402-715      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_038">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B402-706      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_039">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B168-600      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_040">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B409-800      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_041">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B333-B        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_042">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B265 GR.1     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_043">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B265 GR.2     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_044">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B127-400      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_045">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B424-825      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_046">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK 3RE-60     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_047">
+	<summary>
+  Cerca una stringa localizzata simile a H II DIN 17155     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_048">
+	<summary>
+  Cerca una stringa localizzata simile a H II DIN 17155   K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_049">
+	<summary>
+  Cerca una stringa localizzata simile a FE410-1 KW UNI5869 |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_050">
+	<summary>
+  Cerca una stringa localizzata simile a FE410-1 KW UNI586K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_051">
+	<summary>
+  Cerca una stringa localizzata simile a FE410-2 KW UNI5869 |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_052">
+	<summary>
+  Cerca una stringa localizzata simile a FE410-2 KW UNI586K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_053">
+	<summary>
+  Cerca una stringa localizzata simile a FE510-1 KW UNI5869 |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_054">
+	<summary>
+  Cerca una stringa localizzata simile a FE510-1 KW UNI586K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_055">
+	<summary>
+  Cerca una stringa localizzata simile a FE510-2 KW UNI5869 |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_056">
+	<summary>
+  Cerca una stringa localizzata simile a FE510-2 KW UNI586K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_057">
+	<summary>
+  Cerca una stringa localizzata simile a SELCO 53           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_058">
+	<summary>
+  Cerca una stringa localizzata simile a SELCO 53         K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_059">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK 2RK-65     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_060">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A387 GR.11    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_061">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A387 GR.11  K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_062">
+	<summary>
+  Cerca una stringa localizzata simile a                    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_063">
+	<summary>
+  Cerca una stringa localizzata simile a A ST 45 DIN 17135K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_064">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA515 GR.60   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_065">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA515 GR.70 K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_066">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA516 GR.60   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_067">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA516 GR.70   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_068">
+	<summary>
+  Cerca una stringa localizzata simile a A42CP-NFA36205     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_069">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK SAF-2205   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_070">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA516 GR.70 K |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_071">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA240-304     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_072">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B443-6625     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_073">
+	<summary>
+  Cerca una stringa localizzata simile a SANICRO 28         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH14_074">
+	<summary>
+  Cerca una stringa localizzata simile a X                  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_002">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 105.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_003">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 181 GR.1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_004">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 181 GR.2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_005">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 350-LF1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_006">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 350-LF2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_007">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 350-LF3.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_008">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_009">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F12.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_010">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F304.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_011">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F304L.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_012">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F316.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_013">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F316L.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_014">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F321.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_015">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 164-400.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_016">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 166-600.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_017">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 408-800.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_018">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 425-825.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_019">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 381 GR.1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_020">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B 381 GR.F2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_021">
+	<summary>
+  Cerca una stringa localizzata simile a C 22.8 NR-350.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_022">
+	<summary>
+  Cerca una stringa localizzata simile a -.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_023">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 182-F11.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_024">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA105.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_025">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A 276-405.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_026">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A576GR.1022.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_027">
+	<summary>
+  Cerca una stringa localizzata simile a AF48N-NFM87508.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_028">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK SAF-2205.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_029">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA182-F304.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_030">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B446.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_031">
+	<summary>
+  Cerca una stringa localizzata simile a SANICRO 28.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_033">
+	<summary>
+  Cerca una stringa localizzata simile a DUPLEX 2500.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH15_034">
+	<summary>
+  Cerca una stringa localizzata simile a X.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_02">
+	<summary>
+  Cerca una stringa localizzata simile a z.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_03">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 150 LB RF      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_04">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 300 LB RF      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_05">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 400 LB RF      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_06">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 600 LB RF      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_07">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 900 LB RF      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_08">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 1500 LB RF     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_09">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 2500 LB RF     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_10">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 150 LB RTJ     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_11">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 300 LB RTJ     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_12">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 400 LB RTJ     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_13">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 600 LB RTJ     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_14">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 900 LB RTJ     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_15">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 1500 LB RTJ    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_16">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 2500 LB RTJ    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_17">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 150 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_18">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 300 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_19">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 400 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_20">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 600 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_21">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 900 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_22">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 1500 RF 125 RMS|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_23">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 2500 RF 125 RMS|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_24">
+	<summary>
+  Cerca una stringa localizzata simile a ND 6                |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_25">
+	<summary>
+  Cerca una stringa localizzata simile a ND 10               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_26">
+	<summary>
+  Cerca una stringa localizzata simile a ND 25               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_27">
+	<summary>
+  Cerca una stringa localizzata simile a ND 40               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_28">
+	<summary>
+  Cerca una stringa localizzata simile a ND 64               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_29">
+	<summary>
+  Cerca una stringa localizzata simile a ND 100              |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_30">
+	<summary>
+  Cerca una stringa localizzata simile a ND 160              |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_31">
+	<summary>
+  Cerca una stringa localizzata simile a STUB ENDS           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_32">
+	<summary>
+  Cerca una stringa localizzata simile a ND.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_33">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 150 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_34">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 300 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_35">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 400 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_36">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 600 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_37">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 900 RF 125 RMS |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_38">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 1500 RF 125 RMS|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_39">
+	<summary>
+  Cerca una stringa localizzata simile a ANSI 2500 RF 125 RMS|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_40">
+	<summary>
+  Cerca una stringa localizzata simile a ND 6                |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_41">
+	<summary>
+  Cerca una stringa localizzata simile a ND 10               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_42">
+	<summary>
+  Cerca una stringa localizzata simile a ND 25               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_43">
+	<summary>
+  Cerca una stringa localizzata simile a ND 40               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_44">
+	<summary>
+  Cerca una stringa localizzata simile a ND 64               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_45">
+	<summary>
+  Cerca una stringa localizzata simile a ND 100              |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_47">
+	<summary>
+  Cerca una stringa localizzata simile a STUB ENDS           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_48">
+	<summary>
+  Cerca una stringa localizzata simile a ND 16               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_49">
+	<summary>
+  Cerca una stringa localizzata simile a X                   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH16_56">
+	<summary>
+  Cerca una stringa localizzata simile a ND 160              D.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_02">
+	<summary>
+  Cerca una stringa localizzata simile a NO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_03">
+	<summary>
+  Cerca una stringa localizzata simile a HEADERS.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_04">
+	<summary>
+  Cerca una stringa localizzata simile a HEADERS (ONE END).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_05">
+	<summary>
+  Cerca una stringa localizzata simile a HEADERS &amp; MOTORS.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_06">
+	<summary>
+  Cerca una stringa localizzata simile a MOTORS.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH18_07">
+	<summary>
+  Cerca una stringa localizzata simile a X.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_002">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A179          |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_003">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A179        K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_004">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A214          |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_005">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A214        K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_006">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A210 GR.A1    |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_007">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A210 GR.A1  K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_008">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A210 GR.C     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_009">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A210 GR.C   K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_010">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.1-SML |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_011">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.1SMLk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_012">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.1-ERW |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_013">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.1ERWk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_014">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.3-SML |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_015">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.3SMLk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_016">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.3-ERW |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_017">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.3ERWk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_018">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.6-SML |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_019">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.6SMLk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_020">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.6-ERW |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_021">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A334 GR.6ERWk |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_022">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1       |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_023">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1     K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_024">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1A      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_025">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1A    K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_026">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1B      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_027">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A209-T1B    K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_028">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A213-304      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_029">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A249-304      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_030">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A213-304L     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_031">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A249-304L     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_032">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A213-316      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_033">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A249-316      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_034">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A213-316L     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_035">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A249-316L     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_036">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A213-321      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_037">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A249-321      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_038">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A268-405-SML  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_039">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A268-405-ERW  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_040">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A268-410-SML  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_041">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A268-410-ERW  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_042">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B234-6061-T6  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_043">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-443      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_044">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-608      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_045">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-706      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_046">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-715      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_047">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B163-400      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_048">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B163-825      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_049">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B135-230      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_050">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B338-GR.1     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_051">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B338 GR.2     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_052">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8-I DIN 17175 |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_053">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8-I DIN17175K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_054">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8-II DIN17175 |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_055">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8-IIDIN17175K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_056">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8-IIIDIN17175 |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_057">
+	<summary>
+  Cerca una stringa localizzata simile a ST35.8IIIDIN17175K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_058">
+	<summary>
+  Cerca una stringa localizzata simile a FE 35.2 UNI 663    |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_059">
+	<summary>
+  Cerca una stringa localizzata simile a FE 35.2 UNI 663  K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_060">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B163-600      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_061">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK 3RE-60     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_062">
+	<summary>
+  Cerca una stringa localizzata simile a ST 34.2 DIN 1626   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_063">
+	<summary>
+  Cerca una stringa localizzata simile a ST 34.2 DIN 1626 K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_064">
+	<summary>
+  Cerca una stringa localizzata simile a ST 37.2 DIN 1626   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_065">
+	<summary>
+  Cerca una stringa localizzata simile a ST 37.2 DIN 1626 K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_066">
+	<summary>
+  Cerca una stringa localizzata simile a ST 42.2 DIN 1626   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_067">
+	<summary>
+  Cerca una stringa localizzata simile a ST 42.2 DIN 1626 K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_068">
+	<summary>
+  Cerca una stringa localizzata simile a ST 52.3 DIN 1626   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_069">
+	<summary>
+  Cerca una stringa localizzata simile a ST 52.3 DIN 1626 K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_070">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK 2RK-65     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_071">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A269-304      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_072">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A226-ERW      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_073">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A226-ERW    K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_074">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A199 GR.T11   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_075">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A192          |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_076">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B-167-SML     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_077">
+	<summary>
+  Cerca una stringa localizzata simile a ASME A213-T5       |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_078">
+	<summary>
+  Cerca una stringa localizzata simile a ASME A213-T5     K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_079">
+	<summary>
+  Cerca una stringa localizzata simile a C 14 UNI 5462      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_080">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B626-ERW      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_081">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-142      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_082">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA179         |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_083">
+	<summary>
+  Cerca una stringa localizzata simile a TU42C-NFA49215     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_084">
+	<summary>
+  Cerca una stringa localizzata simile a TUZ2CN18.10/49217  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_085">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A268-18CR 2MO |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_086">
+	<summary>
+  Cerca una stringa localizzata simile a SANDVIK SAF-2205   |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_087">
+	<summary>
+  Cerca una stringa localizzata simile a FE 37 CS UNI 7091  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_088">
+	<summary>
+  Cerca una stringa localizzata simile a FE 37 CS UNI 7091K |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_089">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B111-122      |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_090">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM A-669         |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_091">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA214         |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_092">
+	<summary>
+  Cerca una stringa localizzata simile a ASME SA249-304     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_093">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B444-6625     |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_094">
+	<summary>
+  Cerca una stringa localizzata simile a SANICRO 28         |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_095">
+	<summary>
+  Cerca una stringa localizzata simile a ASTM B515-800-ERW  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH23_096">
+	<summary>
+  Cerca una stringa localizzata simile a X                  |         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_02">
+	<summary>
+  Cerca una stringa localizzata simile a NO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_03">
+	<summary>
+  Cerca una stringa localizzata simile a 5 MM/M.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_04">
+	<summary>
+  Cerca una stringa localizzata simile a 10 MM/M.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_05">
+	<summary>
+  Cerca una stringa localizzata simile a 20 MM/M.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_06">
+	<summary>
+  Cerca una stringa localizzata simile a 40 MM/M.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_07">
+	<summary>
+  Cerca una stringa localizzata simile a 1/8 IN/FT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_08">
+	<summary>
+  Cerca una stringa localizzata simile a 1/4 IN/FT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_09">
+	<summary>
+  Cerca una stringa localizzata simile a 1/2 IN/FT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_10">
+	<summary>
+  Cerca una stringa localizzata simile a NOTE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_11">
+	<summary>
+  Cerca una stringa localizzata simile a 1/16 IN/FT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_12">
+	<summary>
+  Cerca una stringa localizzata simile a 1/5 IN/FT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.ARCH25_13">
+	<summary>
+  Cerca una stringa localizzata simile a X.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.Helpfile">
+	<summary>
+  Cerca una stringa localizzata simile a \BIN\AiutoISA.chm.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00001">
+	<summary>
+  Cerca una stringa localizzata simile a S P E S S O R I  P I A S T R A  T U B I E R A\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00002">
+	<summary>
+  Cerca una stringa localizzata simile a Spessori Top &amp; Bottom &amp; End MINIMI/ASSUNTO\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00003">
+	<summary>
+  Cerca una stringa localizzata simile a Spessori Flangia            MINIMI/ASSUNTO\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00004">
+	<summary>
+  Cerca una stringa localizzata simile a PASSO TIRANTI : BOLTING UP OPER. CONDITION MAX.API\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00005">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE PIASTRA TUBIERA{0,12:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00006">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE COVER         {0,12:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00007">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE SETTI          {0,12:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00008">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; PASSO BULLONI           {0,12:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00011">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',4X,'= A I R C O O L E R S    S U M M A R Y =  DATE : ',6A1,'19',2A1,5X,'CHECK : ',A2,7X,'SHEET',I3,' OF',I3,/5X,123('*'),//,5X,'QUOTATION: ',A8 ,2X,'REV.: ',A2,10X,'CUSTOMER: ',10A2,4X,'PLANT LOCATION:  ',10A2,//,5X,123('='),/,5X,'|  I T E M',13X,'|   BARE   |   (N0.)  SIZE    |   (NO.)  SIZE    | DESIGN |  (NO.) SIZE |   (NO.)  SIZE    |  % AV |',/,5X,'|',22X,'|  SURFACE |     SECTIONS     |       BAYS',7X,'| OPERAT.|    MOTORS   |       FANS',7X,'|  FANS |' [stringa troncata]";.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00012">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',8X,'= C O N T R O L S    S U M M A R Y =   DATE : ',6A1,'19',2A1,4X,'CHECK : ',A2,6X,'SHEET',I3,' OF',I3,/,5X,122('*'),//,5X,'QUOTATION: ',A8 ,2X,'REV.: ',A2,10X,'CUSTOMER: ',10A2,4X,'PLANT LOCATION:  ',10A2,///,5X,122('='),/,5X,'|  I T E M',13X,'|',5X,'LOUVERS    |  STEAM |  AIR RECIRCULATION |','PITCH N.PASSES|INLET NOZZL|OUT   NOZZL|  SLOPE    |',/,5X,'|',22X,'|',16X,'|  COILS |',20X,'|NUMBER OF ROWS| Nø  DIA   | Nø  DIA   |',11X,'|').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00013">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',11X,'= SOMMARIO REFRIGERANTI AD ARIA =  DATA : ',6A1,'19',2A1,4X,'COMPIL.: ',A2,6X,'FOGLIO',I3,' DI',I3,/,5X,123('*'),//,5X,'QUOTAZIONE: ',A8 ,2X,'REV.: ',A2,10X,'CLIENTE: ',10A2,4X,'LOCALITA IMPIANTO: ',10A2,//,5X,123('='),/,5X,'|  S I G L A',11X,'|SUPERFICIE|  (N0.)  DIMENS.  |  (NO.)  DIMENS.  | POTENZA| (NO.) POTEN |  (NO.) DIAMETRO  | % VENT|',/,5X,'|',22X,'|  LISCIA  |       FASCI      |      SEZIONI',5X,'|DI CALC.|    MOTORI   |    VENTILATORI   | AUTO [stringa troncata]";.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00014">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',4X,'= S O M M A R I O    C O N T R O L L I  = DATA : ',6A1,'19',2A1,3X,'COMPIL.: ',A2,6X,'FOGLIO',I3,' DI',I3,/,5X,122('*'),//,5X,'QUOTAZIONE: ', A8,2X,'REV.: ',A2,10X,'CLIENTE: ',10A2,4X,'LOCALITA IMPIANTO:  ',10A2,///,5X,122('='),/,5X,'|  S I G L A',11X,'|    PERSIANE    | SERPEN.|   RICIRCOLO ARIA   |','PASSO/N.PASS. |BOCCH ENTR.|BOCCH USC. | PENDENZA  |',/,5X,'|',22X,'|',16X,'| VAPORE |',20X,'|NUMERO DI FILE| Nø  DIA   | Nø  DIA   |',11X,'|').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00015">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,123('*'),/,5X,'FBM-HUDSON ITALIANA  SPA  = TABLEAU RECAPITULATIF AEROREFRIGERANTS = DATE : ',6A1,'19',2A1,5X,'SIGN.: ',A2,8X,'PAGE',I3,' DE',I3,/,5X,123('*'),//,5X,'OFFRE NO.: ', A8,2X,'REV.: ',A2,12X,'CLIENT: ',10A2,4X,'LIEU INSTALLATION: ',10A2,//,5X,123('='),/,5X,'|  A P P A R E I L     |  SURFACE |  (NO.)  DIMENS.  |  (NO.)  DIMENS.  | PUISS. | (NO.) PUISS |  (NO.) DIAMETRE  | % VENT|',/,5X,'|',22X,'|    NUE   |     FAISCEAUX    |     SECTIONS     |DE CALC.|   MOTEURS   |   VENTILATEURS   |  AUT [stringa troncata]";.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00016">
+	<summary>
+  Cerca una stringa localizzata simile a (///,5X,122('*'),/,5X,'FBM-HUDSON ITALIANA  SPA',9X,'= TABLEAU RECAPITULATIF CONTROLES = DATE : ',6A1,'19',2A1,3X,'SIGN.: ',A2,8X,'PAGE',I3,' DE',I3,/,5X,122('*'),//,5X,'OFFRE NO.: ', A8,2X,'REV.: ',A2,12X,'CLIENT: ',10A2,4X,'LIEU INSTALLATION:  ',10A2,///5X,122('='),/,5X,'|  A P P A R E I L     |   PERSIENNES   | SERPEN.|  RECIRCULATION AIR |','PAS/N.PASSAGES|BRIDE ENTR.|BRIDE SORT.|   PENTE   |',/,5X,'|',22X,'|',16X,'| VAPEUR |',20X,'|N. DE RANGEES | Nø  DIA   | Nø  DIA   |',11X,'|').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00991">
+	<summary>
+  Cerca una stringa localizzata simile a {0,12:######.#####}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00992">
+	<summary>
+  Cerca una stringa localizzata simile a *{0,12:########.###}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00993">
+	<summary>
+  Cerca una stringa localizzata simile a {0,3}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00994">
+	<summary>
+  Cerca una stringa localizzata simile a {0,18}..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop00995">
+	<summary>
+  Cerca una stringa localizzata simile a *{0,12:######.#####}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01006">
+	<summary>
+  Cerca una stringa localizzata simile a {0,9:F}   {1,9:F}   {2,9:F}   {3,9:F}\par.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01007">
+	<summary>
+  Cerca una stringa localizzata simile a {0,9:F}   {1,9:F}   {2,9:F}   {3,9:F}            {4,9:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01008">
+	<summary>
+  Cerca una stringa localizzata simile a {0,9:F}   {1,9:F}                      {2,9:F}\par.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01009">
+	<summary>
+  Cerca una stringa localizzata simile a SPESSORI COPERCHIO ASME      SPESSORI COPERCHIO H.I.\par {0,10:F}  {1,10:F}  {2,10:F}      {3,10:F}     {4,10:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01010">
+	<summary>
+  Cerca una stringa localizzata simile a .               {0,9:F}       {1,9:F}       {2,9:F}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01110">
+	<summary>
+  Cerca una stringa localizzata simile a  Numero bulloni  ipotizzato/risultante {0:####.}\par {1:####}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop01220">
+	<summary>
+  Cerca una stringa localizzata simile a '(',I2,'A2,1H/,I2)'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02001">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'|',11A2,'|',5A2,'|',9A2,'|',9A2,'|',4A2,'|',6A2,A1,  
+ '|',9A2,'|',3A2,A1,'|'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02002">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'TOTAL NUMBER OF BANKS:',I3.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02010">
+	<summary>
+  Cerca una stringa localizzata simile a 3X,I2,'| ',10A2,' |',10X,'|',18X,'|',18X,'|',
+8X,'|',13X,'|',18X,'|',7X,'|'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02020">
+	<summary>
+  Cerca una stringa localizzata simile a    {0,2} |{1,20} |{2,9:######0.0} | ({3,2})
+{4,6:F}-{5,2}{6,2} | {7,14} {8,20}     |
+                  |       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02030">
+	<summary>
+  Cerca una stringa localizzata simile a    {0,2}| {1,40} |{2,9:######0.0} | ({3,3)){4,6:F}-{5,2}{6,2} | ({7,4:#0.0})
+{8,5:##0.0} -{9,2}{10,2} |{11,7:####0.0} | ({12,3}){13,6:###0.0}
+ | ({14,3}){15,3}-{16,2}\par {17,4} |{18,6} |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02050">
+	<summary>
+  Cerca una stringa localizzata simile a \page .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop02500">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'|',22X,'|',10X,'| (',I3,')',F6.2,'-',2I2,' |',  
+     1        18X,'|',8X,'|',13X,'|',18X,'|',7X,'|'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop03001">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'|',11A2,'|',8A2,'|',4A2,'|',
+     $ 10A2,'|',7A2,'|',3(5A2,'=|').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop03030">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'| ',10A2,' |  ',6A2,'  |  ',
+     1 2A2,'  |  ',8A2,'  |',F6.2,I3,I3,'  |',
+     $ 2(I2,F7.2,'  |'),2X,A8' |'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05001">
+	<summary>
+  Cerca una stringa localizzata simile a  ITEM                   .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05002">
+	<summary>
+  Cerca una stringa localizzata simile a N° DOC. DI CALCOLO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05003">
+	<summary>
+  Cerca una stringa localizzata simile a REVISIONE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05004">
+	<summary>
+  Cerca una stringa localizzata simile a SERVIZIO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05005">
+	<summary>
+  Cerca una stringa localizzata simile a PRESS PROG. (kg/cm2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05006">
+	<summary>
+  Cerca una stringa localizzata simile a TEMP  PROG. (°C).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05007">
+	<summary>
+  Cerca una stringa localizzata simile a CORR.       (mm).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05008">
+	<summary>
+  Cerca una stringa localizzata simile a TESTATA.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop050117">
+	<summary>
+  Cerca una stringa localizzata simile a EFFIC SALD TOP-BTM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05015">
+	<summary>
+  Cerca una stringa localizzata simile a PRESS PROG. (PSI).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05016">
+	<summary>
+  Cerca una stringa localizzata simile a TEMP  PROG. (°F).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05017">
+	<summary>
+  Cerca una stringa localizzata simile a CORR.       (inch).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05025">
+	<summary>
+  Cerca una stringa localizzata simile a PRESS PROG. (kPa).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05026">
+	<summary>
+  Cerca una stringa localizzata simile a TEMP  PROG. (°C).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05027">
+	<summary>
+  Cerca una stringa localizzata simile a CORR.       (mm).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05101">
+	<summary>
+  Cerca una stringa localizzata simile a DIAMETRO TUBI     (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05102">
+	<summary>
+  Cerca una stringa localizzata simile a PASSO TUBI ORIZZ. (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05103">
+	<summary>
+  Cerca una stringa localizzata simile a LARGHEZZA TESTATA (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05105">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATERIALE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05106">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) MAT. (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05107">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MAT P. TUB/TAPPI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05108">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MAT TOP / BTM..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05109">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATERIALE END.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05110">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.)P. TUB/TAPPI(KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05111">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) TOP/BTM    (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05112">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) END        (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05113">
+	<summary>
+  Cerca una stringa localizzata simile a DISTANZA X.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05114">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATER SETTI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05115">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.( TEMP.) SETTI     (KGMM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05116">
+	<summary>
+  Cerca una stringa localizzata simile a EFFIC SALD SETTI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05117">
+	<summary>
+  Cerca una stringa localizzata simile a EFFIC SALD TOP-BTM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05118">
+	<summary>
+  Cerca una stringa localizzata simile a EFFIC SALD     END.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05119">
+	<summary>
+  Cerca una stringa localizzata simile a PASSO FORI (0=NO FORI).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05120">
+	<summary>
+  Cerca una stringa localizzata simile a LATO DEI FORI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05180">
+	<summary>
+  Cerca una stringa localizzata simile a Testata costituita da pezzi di materiale omogeneo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05201">
+	<summary>
+  Cerca una stringa localizzata simile a N° FILE CAMERA  {0}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05204">
+	<summary>
+  Cerca una stringa localizzata simile a MAX SPAN VERT. PIASTRA TUB/TAPPI (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05205">
+	<summary>
+  Cerca una stringa localizzata simile a MAX SPAN VERT END (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05206">
+	<summary>
+  Cerca una stringa localizzata simile a ALTEZZA   TESTATA (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05207">
+	<summary>
+  Cerca una stringa localizzata simile a ALTEZZA CAMERA {0}.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop05212">
+	<summary>
+  Cerca una stringa localizzata simile a NUMERO SETTI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop10990">
+	<summary>
+  Cerca una stringa localizzata simile a 20A2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop10991">
+	<summary>
+  Cerca una stringa localizzata simile a BN,I6.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop10992">
+	<summary>
+  Cerca una stringa localizzata simile a BN,F12.0.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11455">
+	<summary>
+  Cerca una stringa localizzata simile a /1H1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11500">
+	<summary>
+  Cerca una stringa localizzata simile a 2H1b,I2
+     a/1X,'* Program name: UPM03A  rev.7.1 (Date: Jun-04-1995) *'
+     &amp;//5X,'*** ',A20,' ***',35X,'Page',I2,' of',I2//.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11520">
+	<summary>
+  Cerca una stringa localizzata simile a 30X,'PLUG HEADER CHECK SHEET',                              
+     &amp;/,18X,'(ASME VIII Div. 1 App.13 - 1992 Ed. + 1992 Add.)'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11521">
+	<summary>
+  Cerca una stringa localizzata simile a \par\par      ENGENEER: {0,39}DATE  : {1,8}
+     \par      APPR  BY:{2,42}DOC.N°: {3,12}
+     \par      CUSTOMER: {4,36}     JOB N°:     {5,4}
+     \par      SERVICE : {6,40} ITEM  : {7,32}
+     \par      PLANT   : {8,24}                 REVIS.: {9,2}\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11522">
+	<summary>
+  Cerca una stringa localizzata simile a                     PLUG HEADER CHECK SHEET (OBROUND CROSS SECTION)
+    \par                   (ASME VIII Div. 1 App.13 - 1992 Ed. + 1992 Add.).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11600">
+	<summary>
+  Cerca una stringa localizzata simile a                                 * INPUT DATA *.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11602">
+	<summary>
+  Cerca una stringa localizzata simile a      DESIGN TEMPER (°C):{0:###0.0} ({1,####0.0} °F )  \par 
+     MAX VERT SPAN (MM) :{2:###0.0}   ({3,##0.000} inch)\par 
+     CORROS. ALLOW (MM) :{4:###0.0}   ({5,##0.000} inch)
+  VERT SPAN END (MM) :{6:###0.0}   ({7,##0.000} inch)\par 
+                                          N.{8,2}
+ STAY{9,2}  (APP. 13{10,2}).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11620">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'TUBE &amp; PLUG PL. :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')',                             
+     &amp;/,5X,'TOP  &amp; BTM  PL. :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')',/,5X,'ENDS',8X,'PL. :',1X,   
+     &amp;10A2,3X,'MEMBRANE', 4X,':',F5.1,'        (',F7.0,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11630">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'PART &amp; STIF PL. :',1X,9A2, 5X,'MEMBRANE', 4X,':',F5.1,  
+     &amp;'        (',F7.0,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11640">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'HEADER PLATE    :',1X,9A2, 5X,'MEMBR./(M+B):',
+     &amp;F5.1,'/',F5.1,'  (',F7.0,'/',F7.0,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11663">
+	<summary>
+  Cerca una stringa localizzata simile a 46X,/.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11666">
+	<summary>
+  Cerca una stringa localizzata simile a 'END PL.(APP. 13-4.F):',F6.2,2X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11700">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'HEADER THICKNESS (MM)',20X,'JOINT EFFICIENCY',        
+     &amp;/,5X,21('-'),20X,16('-'),/,5X,'TUBE &amp; PLUG PL :',F5.1,5X,          
+     &amp;'(',F6.3,' inch)',2X,                                             
+     &amp;'CORNER TOP/BTM (EW):',F5.2,/,5X,'TOP &amp;  BTM  PL :',F5.1,5X,      
+     &amp;'(',F6.3,' inch)',2X,                                              
+     &amp;'CORNER TUB/PLG (EW):',F5.2,/,5X,'ENDS',8X,'PL :',F5.1,5X,         
+     &amp;'(',F6.3,' inch)',2X,                                              
+   [stringa troncata]";.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11720">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'PART &amp; STIF PL :',F5.1,5X,'(',F6.3,' inch)',2X,         
+     &amp;'PARTIT &amp; STIFF (EW):',F5.2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11750">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'TUBES PITCH  (MM):',F5.1,3X,'(',F6.3,' inch)',2X,     
+     &amp;'PLUGS PITCH (MM):',F5.1,7X,'(',F5.3,'")',
+     &amp;/,5X,'TUBES O.D.   (MM):',F5.1,3X,'(',F6.3,' inch)',2X,
+     &amp;'PLUGS DO/D1 (MM):',F5.1,'/',F5.1,' (',F5.3,'/ ',F5.3,'")'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11751">
+	<summary>
+  Cerca una stringa localizzata simile a 46X,'PLUGS D2/D3 (MM):',F5.1,'/',F5.1,                      
+     &amp;' (',F5.3,'/ ',F5.3,'")'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11752">
+	<summary>
+  Cerca una stringa localizzata simile a 46X,'PLUGS TO/T1 (MM):',F5.1,'/',F5.1,                      
+     &amp;' (',F5.3,'/ ',F5.3,'")'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11753">
+	<summary>
+  Cerca una stringa localizzata simile a 46X,'PLUGS T2/T3    (MM):',F5.1,'/',F5.1,                   
+     &amp;' (',F5.3,'/ ',F5.3,'")'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11780">
+	<summary>
+  Cerca una stringa localizzata simile a /,29X,'* ANALYSIS RESULTS *',//,5X,                         
+     &amp;'LIGAM. EFFICIENCY',24X,                                           
+     &amp;'LIGAM. EFFICIENCY',/,5X,17('-'),24X,17('-'),/,                    
+     &amp;5X,'TUBE SHEET EM/EB :',F4.2,'/',F4.2,14X,'PLUG SHEET EM/EB :'     
+     &amp;,F5.2,'/',F5.2,/,46X,'DISTANCE X/C (MM):',F5.1,'/',F5.1,           
+     &amp;' (',F5.3,'/',F5.3,'")'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11781">
+	<summary>
+  Cerca una stringa localizzata simile a ///.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11800">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,37('-'),4X,43('-'),/,5X,                                 
+     &amp;'TOP &amp; BTM PLATE     :',F6.2,2X,'(',F7.1,')',3X,                   
+     &amp;'TOP&amp;BTM PLATE (Loc.',A1,'):',F6.2,6X,'(',F7.1,')',   
+     &amp;/,5X,'TUBE SHEET',10X,':',F6.2,2X,'(',F7.1,')',3X,                 
+     &amp;'TUBE SHEET    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')',
+     &amp;/,5X,'PLUG SHEET',10X,':',F6.2,2X,'(',F7.1,')',3X,                 
+     &amp;'PLUG SHEET    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11820">
+	<summary>
+  Cerca una stringa localizzata simile a 'PARTIT &amp; STIFF      :',F6.2,2X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11821">
+	<summary>
+  Cerca una stringa localizzata simile a 'STIFFEN(PERFORATED) :',F6.2,2X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11822">
+	<summary>
+  Cerca una stringa localizzata simile a 84X.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11824">
+	<summary>
+  Cerca una stringa localizzata simile a 'Top&amp;Btm plate (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11825">
+	<summary>
+  Cerca una stringa localizzata simile a 'Tube sheet    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11826">
+	<summary>
+  Cerca una stringa localizzata simile a 'Plug sheet    (Loc.',A1,'):',F6.2,6X,'(',F7.1,')'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11827">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,A84.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11830">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       5X,'M.A.W.P.(KG/CM2):',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11831">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       5X,'M.A.W.P. (BAR)      :',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT  : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11832">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       5X,'M.A.W.P. (MPA)      :',F6.2,2X,'(',F7.1,' PSI)',
+     &amp;       2X,' CONTROLLING COMPONENT  : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11840">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       1X,'M.A.W.P.(KG/CM2):',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11841">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       1X,'M.A.W.P. (BAR)      :',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT  : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop11842">
+	<summary>
+  Cerca una stringa localizzata simile a /,
+     &amp;       1X,'M.A.W.P. (MPA)      :',F6.2,2X,'(',F7.1,' PSI)',/
+     &amp;       1X,'CONTROLLING COMPONENT  : ',A22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17000">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'DES. PRESS(KG/CM2):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17001">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'DESIGN PRESS (BAR):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17002">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS (KG/MM2)'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17003">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS ( N/MM2)'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17004">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'MEMBRANE STRESS    (KG/MM2)',3X,'( PSI )',4X,        
+     &amp;'MEMBRANE + BEND. STRESS(KG/MM2)',5X,'( PSI )'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop17005">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'MEMBRANE STRESS     (N/MM2)',3X,'( PSI )',4X,        
+     &amp;'MEMBRANE + BEND. STRESS (N/MM2)',5X,'( PSI )'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18000">
+	<summary>
+  Cerca una stringa localizzata simile a //,28X,'* INPUT DATA NOZZLE *',/.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18005">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'NOZZLE    DIA.',5X,'THICK.    MATERIAL',6X,             
+     &amp;  'E.W.',4X,'ALLOW. STRESS',4A2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18007">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'DESIGN PRESS ',4A2,':',F6.2,                      
+     &amp;15X,'CORROSION ALLOW (MM):',F4.1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18008">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'DESIGN TEMPER',4X,'([C):',F6.1,//.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18010">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,6('-'),4X,4('-'),5X,6('-'),4X,8('-'),6X,4('-'),4X,21('-'
+     &amp;).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18020">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,3A2,4X,I2,' INCH',2X,F4.1,' MM',3X,6A2,2X,F4.2,        
+     &amp;  4X,'MEMBRANE    : ',F6.1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18030">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'REINF.(',2A2,' SIDE) ',F5.1,' MM',3X,6A2,2X,F4.2,    
+     &amp;  4X,'MEMBRANE    : ',F6.1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18040">
+	<summary>
+  Cerca una stringa localizzata simile a /,28X,'* ANALYSIS RESULTS *',/.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18050">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,3A2,' NOZZLE (',4A2,15X,'MEMBRANE STRESS ',4A2,' :',   
+     &amp;F7.2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18060">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'REINF  (NR',I2,1X,2A2,' SIDE)',15X,'MEMBRANE STRESS ', 
+     &amp;  4A2,' :',F7.2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18601">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'DESIGN PRESS (MPA):',F6.2,' (',F7.1,' PSI)',2X,      
+     &amp;'HEADER WIDTH  (MM) :',F6.1,'   (',F7.3,' inch)'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18602">
+	<summary>
+  Cerca una stringa localizzata simile a 5X,'HEADER MATERIAL',26X,'ALLOWABLE STRESS  ( MPA )'
+     &amp;,8X,'(PSI)',/,5X,15('-'),26X,43('-').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop18603">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'MEMBRANE STRESS     ( MPA )',3X,'( PSI )',4X,         
+     &amp;'MEMBRANE + BEND. STRESS ( MPA )',5X,'( PSI )'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop19000">
+	<summary>
+  Cerca una stringa localizzata simile a //,5X,17('+'),3X,'CONVERSION FACTORS',3X,17('+').
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop19001">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'PSI = Bar * 14.50377',6X,'PSI = N/mm2 * 145.0377',   
+     &amp;6X,'PSI = Pa * 1.450377 E-04',/,5X,'PSI = kg/cm2 * 14.22334',
+     &amp;7X,'inch= mm / 25.4',13X,'°F  = °C * 1.8 + 32'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop19002">
+	<summary>
+  Cerca una stringa localizzata simile a /,5X,'NOTE : CONVERSION FACTORS TAKEN FROM ASME CODE',1X,  
+     &amp;'SECT. VIII DIV.1 " SI UNITS "'.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop2060">
+	<summary>
+  Cerca una stringa localizzata simile a      |  *****{0,14} {1,9:######0.0} | ({2,3}) {3,10} | ({4,4}) {5,10}|
+{6,7:####0.0} | ({8,3}){9,6:###0.0} | ({10,3}) {11,10} |       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop2061">
+	<summary>
+  Cerca una stringa localizzata simile a      NOTES: BANK POS.:{0,2};BANK ID.:{1,4}\par\par .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50031">
+	<summary>
+  Cerca una stringa localizzata simile a PASSO TUBI VERT.  (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50061">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(AMB. ) MAT. (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50062">
+	<summary>
+  Cerca una stringa localizzata simile a LUNGH.INT.CASSA   (MM).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50071">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MAT PIASTRA TAP..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50081">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MAT TOP/BTM/END.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50091">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATERIALE COVER.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50101">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) PIASTRA TAP(KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50102">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(AMB. ) PIASTRA TAP(KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50111">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) TOP/BTM/END(KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50112">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(AMB. ) TOP/BTM/END(KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50121">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(TEMP.) COPERCHIO  (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50122">
+	<summary>
+  Cerca una stringa localizzata simile a AMMISS.(AMB. ) COPERCHIO  (KG/MM2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stop50207">
+	<summary>
+  Cerca una stringa localizzata simile a ALTEZZA CAMERA.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.stp11662">
+	<summary>
+  Cerca una stringa localizzata simile a 46X,'HOLE/PITCH(mm) :',F6.1,'/',F6.1,2H (,F6.1,1H/,F6.1,
+&amp;      '")'/.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00001">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00002">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di eseguire un bilancio  !        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00003">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire un'alternativa |prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00004">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00005">
+	<summary>
+  Cerca una stringa localizzata simile a LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO.....
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00006">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLI QUELLO DA APRIRE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00007">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (CarPre).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00008">
+	<summary>
+  Cerca una stringa localizzata simile a Operazione fallita poiché non vi è|alcun preventivo aperto.          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00009">
+	<summary>
+  Cerca una stringa localizzata simile a Operazione fallita poiché non vi è|alcun item aperto.                |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00010">
+	<summary>
+  Cerca una stringa localizzata simile a In questo preventivo non e'  |stato inserito ancora nessun |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00011">
+	<summary>
+  Cerca una stringa localizzata simile a Item. Vuoi inserirne uno ?   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00012">
+	<summary>
+  Cerca una stringa localizzata simile a Il valore per 'SERPENTINO VAPORE' puo'|essere solo SI o NO.                  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00013">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi copiare i dati da un altro|item per poi editarli?         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00014">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00015">
+	<summary>
+  Cerca una stringa localizzata simile a LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO.....
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00016">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLINE UNO DA COPIARE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00017">
+	<summary>
+  Cerca una stringa localizzata simile a Errore. Suggerisco di controllare le | directories (menu Opzioni).|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00018">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00019">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di definire una alternativa!      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00020">
+	<summary>
+  Cerca una stringa localizzata simile a Dichiara il tuo tipo di video||Programma ISA |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00021">
+	<summary>
+  Cerca una stringa localizzata simile a Copyright (c) 1989-2007 Leonardo Presciuttini|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00022">
+	<summary>
+  Cerca una stringa localizzata simile a |Vuoi la stampa in linea?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00023">
+	<summary>
+  Cerca una stringa localizzata simile a N° dell'alternativa da editare.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00024">
+	<summary>
+  Cerca una stringa localizzata simile a N° alternativa modello       :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00025">
+	<summary>
+  Cerca una stringa localizzata simile a Inserimento alternativa.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00026">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di definire l'alternativa |di lavoro prima di definire l'even-|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00027">
+	<summary>
+  Cerca una stringa localizzata simile a tuale alternativa modello          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00028">
+	<summary>
+  Cerca una stringa localizzata simile a Dati errati. |   L'alternativa modello non può coincidere con|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00029">
+	<summary>
+  Cerca una stringa localizzata simile a l'alternativa da inserire.|   I numeri di alternativa sono compresi tra 1 e 5..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00030">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (SetUpDeskTop).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00031">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di inserire i dati costr.!  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00032">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di inserire dati costruttivi!     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00033">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire un'alternativa |prima di inserire dati costruttivi|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00034">
+	<summary>
+  Cerca una stringa localizzata simile a Dato in formato libero       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00035">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi lavorare sull'item corrente  |(.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00036">
+	<summary>
+  Cerca una stringa localizzata simile a ), o vuoi cambiare item?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00037">
+	<summary>
+  Cerca una stringa localizzata simile a Dato in formato F10.0        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00038">
+	<summary>
+  Cerca una stringa localizzata simile a Mi rifiuto di cancellare | la distinta corrente! |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00039">
+	<summary>
+  Cerca una stringa localizzata simile a Esiste gia' una preventivo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00040">
+	<summary>
+  Cerca una stringa localizzata simile a | Cambia il nuovo o cancella il vecchio.     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00041">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi utilizzare un preventivo| esistente da modificare ? |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00042">
+	<summary>
+  Cerca una stringa localizzata simile a Errore. La directory.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00043">
+	<summary>
+  Cerca una stringa localizzata simile a | esiste gia'.                         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00044">
+	<summary>
+  Cerca una stringa localizzata simile a Dati errati! Si suggerisce di inse-|rire i dati clickando sugli spazi  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00045">
+	<summary>
+  Cerca una stringa localizzata simile a bianchi riservati ai dati.         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00046">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire un'alternativa|prima di tentare di eliminarla    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00047">
+	<summary>
+  Cerca una stringa localizzata simile a In questo  lavoro  non   e'  |stato inserito ancora nessun |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00048">
+	<summary>
+  Cerca una stringa localizzata simile a Item. Vuoi inserine uno?     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00049">
+	<summary>
+  Cerca una stringa localizzata simile a Questo item non possiede alcu-|na alternativa. Pertanto non  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00050">
+	<summary>
+  Cerca una stringa localizzata simile a c'e' niente da calcolare      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00051">
+	<summary>
+  Cerca una stringa localizzata simile a L'efficienza di legamento lato|tappi deve essere calcolata in|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00052">
+	<summary>
+  Cerca una stringa localizzata simile a modo standard ?               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00053">
+	<summary>
+  Cerca una stringa localizzata simile a I percorsi non sono registrati |correttamente. Accedere al menu|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00054">
+	<summary>
+  Cerca una stringa localizzata simile a &lt;Opzioni/Percorsi&gt; (subito!)   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00055">
+	<summary>
+  Cerca una stringa localizzata simile a TEXT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00056">
+	<summary>
+  Cerca una stringa localizzata simile a Help non disponibile.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00057">
+	<summary>
+  Cerca una stringa localizzata simile a State lavorando in modo 'superauto-.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00058">
+	<summary>
+  Cerca una stringa localizzata simile a matico'. Non cambiate quindi niente.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00059">
+	<summary>
+  Cerca una stringa localizzata simile a delle opzioni sotto proposte!.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00060">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi calcolare le proprieta' termo|dinamiche dei fluidi?             |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00061">
+	<summary>
+  Cerca una stringa localizzata simile a Nuova alternativa   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00062">
+	<summary>
+  Cerca una stringa localizzata simile a Vecchia alternativa :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00063">
+	<summary>
+  Cerca una stringa localizzata simile a Nessun modello      :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00064">
+	<summary>
+  Cerca una stringa localizzata simile a Alternativa modello :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00065">
+	<summary>
+  Cerca una stringa localizzata simile a Inserire un numero compreso tra|1  e 12.                       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00066">
+	<summary>
+  Cerca una stringa localizzata simile a Rispondere SI o NO. La risposta|e' ininfluente nel caso di una |sola zona.                     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00067">
+	<summary>
+  Cerca una stringa localizzata simile a LAVORO CORRENTE:  | |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00068">
+	<summary>
+  Cerca una stringa localizzata simile a Commessa         :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00069">
+	<summary>
+  Cerca una stringa localizzata simile a Costruttore vent.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00070">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale pale   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00071">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale mozzo  :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00072">
+	<summary>
+  Cerca una stringa localizzata simile a Help non disponibile|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00073">
+	<summary>
+  Cerca una stringa localizzata simile a OK.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00074">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi importare il nuovo item da|un altro preventivo?           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00075">
+	<summary>
+  Cerca una stringa localizzata simile a L'identificativo del banco deve |essere numerico. Assumo &lt;blank&gt; |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00076">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLI QUELLO DA CUI COPIARE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00077">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLI QUELLO DA CANCELLARE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00078">
+	<summary>
+  Cerca una stringa localizzata simile a Lista preventivi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00079">
+	<summary>
+  Cerca una stringa localizzata simile a Il numero massimo di zone.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00080">
+	<summary>
+  Cerca una stringa localizzata simile a previsto è 12.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00081">
+	<summary>
+  Cerca una stringa localizzata simile a Inserimento n° di zone.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00082">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi studiare un nuovo punto?     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00083">
+	<summary>
+  Cerca una stringa localizzata simile a TAir     TOut       Duty.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00084">
+	<summary>
+  Cerca una stringa localizzata simile a Fouling  TOut       Duty.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00085">
+	<summary>
+  Cerca una stringa localizzata simile a Face vel. TOut       Duty.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00086">
+	<summary>
+  Cerca una stringa localizzata simile a TAir     Face Velocity.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00087">
+	<summary>
+  Cerca una stringa localizzata simile a Operazione fallita poiché non vi è|alcuna alternativa aperta.        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00088">
+	<summary>
+  Cerca una stringa localizzata simile a Preparo la base di dati per lo|  studio. . . .               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00089">
+	<summary>
+  Cerca una stringa localizzata simile a Cancello la base di dati uti-|lizzata per lo studio. . .   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00090">
+	<summary>
+  Cerca una stringa localizzata simile a Prego confermare cancellazione|alternativa                   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00091">
+	<summary>
+  Cerca una stringa localizzata simile a Prego confermare cancellazione|item                          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00092">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (NuoPre).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00093">
+	<summary>
+  Cerca una stringa localizzata simile a Esiste già un precedente file    |.ACE per questo item/alternativa.|Vuoi rigenerarlo o utilizzarlo?  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00094">
+	<summary>
+  Cerca una stringa localizzata simile a Operazione rifiutata poiché alcuni|fra i dati costruttivi e/o funzio-|nali sono incostistenti.          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00095">
+	<summary>
+  Cerca una stringa localizzata simile a ISA.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00096">
+	<summary>
+  Cerca una stringa localizzata simile a Vers. 3.00.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00097">
+	<summary>
+  Cerca una stringa localizzata simile a 15/04/96.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00098">
+	<summary>
+  Cerca una stringa localizzata simile a Ingegneria Scambiatori ad Aria.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00099">
+	<summary>
+  Cerca una stringa localizzata simile a \DOAPAI.DAT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00100">
+	<summary>
+  Cerca una stringa localizzata simile a SI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00101">
+	<summary>
+  Cerca una stringa localizzata simile a NO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00102">
+	<summary>
+  Cerca una stringa localizzata simile a Altern. da editare.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00103">
+	<summary>
+  Cerca una stringa localizzata simile a Dati di zona.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00104">
+	<summary>
+  Cerca una stringa localizzata simile a Calcolo camini in serie?| (vecchia opzione)      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00105">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di specificare questa opzione|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00106">
+	<summary>
+  Cerca una stringa localizzata simile a Numero di zone :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00107">
+	<summary>
+  Cerca una stringa localizzata simile a Calcolo automatico?.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00108">
+	<summary>
+  Cerca una stringa localizzata simile a Zona n°.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00109">
+	<summary>
+  Cerca una stringa localizzata simile a condensante.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00110">
+	<summary>
+  Cerca una stringa localizzata simile a Scelta zone condensanti.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00111">
+	<summary>
+  Cerca una stringa localizzata simile a Numero Preventivo:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00112">
+	<summary>
+  Cerca una stringa localizzata simile a Cliente          :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00113">
+	<summary>
+  Cerca una stringa localizzata simile a Indirizzo        :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00114">
+	<summary>
+  Cerca una stringa localizzata simile a Luogo impianto   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00115">
+	<summary>
+  Cerca una stringa localizzata simile a Va bene questo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00116">
+	<summary>
+  Cerca una stringa localizzata simile a Ne voglio un altro.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00201">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00202">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00203">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00204">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00205">
+	<summary>
+  Cerca una stringa localizzata simile a LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO.....
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00206">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLI QUELLO DA APRIRE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00207">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (CarPre).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00208">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00209">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di inserirvi i dati costruttivi!  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00210">
+	<summary>
+  Cerca una stringa localizzata simile a In questo preventivo non e'  |stato inserito ancora nessun |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00211">
+	<summary>
+  Cerca una stringa localizzata simile a Item. Vuoi inserirne uno ?   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00212">
+	<summary>
+  Cerca una stringa localizzata simile a Il valore per 'SERPENTINO VAPORE' puo'|essere solo SI o NO.                  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00213">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi copiare i dati da un altro|item per poi editarli?         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00214">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00215">
+	<summary>
+  Cerca una stringa localizzata simile a LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO.....
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00216">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLINE UNO DA COPIARE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00217">
+	<summary>
+  Cerca una stringa localizzata simile a Errore. Suggerisco di controllare le | directories (menu Opzioni).|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00218">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00219">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di definire una alternativa!      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00220">
+	<summary>
+  Cerca una stringa localizzata simile a Dichiara il tuo tipo di video||Programma HTRI|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00221">
+	<summary>
+  Cerca una stringa localizzata simile a Copyright (c) 1989-2007 Leonardo Presciuttini|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00222">
+	<summary>
+  Cerca una stringa localizzata simile a |Vuoi la stampa in linea?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00223">
+	<summary>
+  Cerca una stringa localizzata simile a N° dell'alternativa da editare.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00224">
+	<summary>
+  Cerca una stringa localizzata simile a N° alternativa modello       :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00225">
+	<summary>
+  Cerca una stringa localizzata simile a Inserimento alternativa.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00226">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di definire l'alternativa |di lavoro prima di definire l'even-|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00227">
+	<summary>
+  Cerca una stringa localizzata simile a tuale alternativa modello          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00228">
+	<summary>
+  Cerca una stringa localizzata simile a Dati errati! Si suggerisce di inse-|rire i dati clickando sugli spazi  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00229">
+	<summary>
+  Cerca una stringa localizzata simile a bianchi riservati ai dati.         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00230">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (SetUpDeskTop).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00231">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di inserire i dati costr.!  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00232">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di inserire dati costruttivi!     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00233">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire un'alternativa |prima di inserire dati costruttivi|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00234">
+	<summary>
+  Cerca una stringa localizzata simile a Si e' determinata la seguente condizione di errore:|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00235">
+	<summary>
+  Cerca una stringa localizzata simile a Ricontrollare i dati di input.                     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00236">
+	<summary>
+  Cerca una stringa localizzata simile a Definire quante delle sezioni per  |unita' presentano l'albero ventila-|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00237">
+	<summary>
+  Cerca una stringa localizzata simile a tore passante                      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00238">
+	<summary>
+  Cerca una stringa localizzata simile a Dato inafferente in quanto trattasi|di unita' a circolazione forzata   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00239">
+	<summary>
+  Cerca una stringa localizzata simile a Il tipo di tiraggio (F o N) non e' |stato definito correttamente.      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00240">
+	<summary>
+  Cerca una stringa localizzata simile a Rifare il giro.                    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00241">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00242">
+	<summary>
+  Cerca una stringa localizzata simile a Il numero di tipi di tubi deve  |essere compreso tra 1 e 3;      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00243">
+	<summary>
+  Cerca una stringa localizzata simile a Fornire codice compreso tra 2 e 20. |Lo spessore sara' calcolato in auto-|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00244">
+	<summary>
+  Cerca una stringa localizzata simile a matico.                             |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00245">
+	<summary>
+  Cerca una stringa localizzata simile a Fornire codice MIN. per minimum wall| o codice AVG. per average wall.      |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00246">
+	<summary>
+  Cerca una stringa localizzata simile a Questo valore e' calcolato in funzio-|ne dei due valori che precedono.     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00247">
+	<summary>
+  Cerca una stringa localizzata simile a Il valore sara' calcolato dal pro-  |gramma (LAVORI IN CORSO)            |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00248">
+	<summary>
+  Cerca una stringa localizzata simile a Il diametro tubi non e' standard:   |se vuoi puoi battere direttamente il|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00249">
+	<summary>
+  Cerca una stringa localizzata simile a valore del passo.                   |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00250">
+	<summary>
+  Cerca una stringa localizzata simile a I valori per diametro tubi e/o diam.|alette non sono standard.           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00251">
+	<summary>
+  Cerca una stringa localizzata simile a Se vuoi puoi battere velori liberi. |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00252">
+	<summary>
+  Cerca una stringa localizzata simile a Valori forniti in modo scorretto.   |     Rifai.                         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00253">
+	<summary>
+  Cerca una stringa localizzata simile a |    Riinserisci i dati correttamente!|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00254">
+	<summary>
+  Cerca una stringa localizzata simile a Sono stati scelti dati geometrici non  |standard. Saranno quindi proposti dei  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00255">
+	<summary>
+  Cerca una stringa localizzata simile a valori approssimati per i coefficienti,|che l'utente potra' modificare.        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00256">
+	<summary>
+  Cerca una stringa localizzata simile a Prima di eseguire un calcolo biso-|gna identificare un'alternativa.  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00257">
+	<summary>
+  Cerca una stringa localizzata simile a Questo programma non deve es-|sere lanciato da solo.       |Lanciare  HTRI.EXE           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00258">
+	<summary>
+  Cerca una stringa localizzata simile a N. OF FANS/UNIT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00259">
+	<summary>
+  Cerca una stringa localizzata simile a KIND OF DRAFT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00260">
+	<summary>
+  Cerca una stringa localizzata simile a AIR PLENUM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00261">
+	<summary>
+  Cerca una stringa localizzata simile a TRANSMISSION.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00262">
+	<summary>
+  Cerca una stringa localizzata simile a POSITION OF DRIVE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00263">
+	<summary>
+  Cerca una stringa localizzata simile a Help non disponibile.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00264">
+	<summary>
+  Cerca una stringa localizzata simile a TEXT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00265">
+	<summary>
+  Cerca una stringa localizzata simile a Unità.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00266">
+	<summary>
+  Cerca una stringa localizzata simile a Sezioni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00267">
+	<summary>
+  Cerca una stringa localizzata simile a Ventilatori.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00268">
+	<summary>
+  Cerca una stringa localizzata simile a F : Forced Draft.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00269">
+	<summary>
+  Cerca una stringa localizzata simile a N : Induced Draft.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00270">
+	<summary>
+  Cerca una stringa localizzata simile a P : a Pannelli.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00271">
+	<summary>
+  Cerca una stringa localizzata simile a T : a Tramoggia.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00272">
+	<summary>
+  Cerca una stringa localizzata simile a G : a Ingranaggi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00273">
+	<summary>
+  Cerca una stringa localizzata simile a V : V-belt.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00274">
+	<summary>
+  Cerca una stringa localizzata simile a T : cinghie HTD.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00275">
+	<summary>
+  Cerca una stringa localizzata simile a A : Appoggiato.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00276">
+	<summary>
+  Cerca una stringa localizzata simile a S : Sospeso.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00277">
+	<summary>
+  Cerca una stringa localizzata simile a N. di sezioni errato!|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00278">
+	<summary>
+  Cerca una stringa localizzata simile a N. di ventilatori errato!|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00279">
+	<summary>
+  Cerca una stringa localizzata simile a N. di passaggi scorretto|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00280">
+	<summary>
+  Cerca una stringa localizzata simile a Sigla dell'autore del preventivo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00281">
+	<summary>
+  Cerca una stringa localizzata simile a Lunghezze di zona.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00282">
+	<summary>
+  Cerca una stringa localizzata simile a File / passo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00283">
+	<summary>
+  Cerca una stringa localizzata simile a TUBE THK. [in].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00284">
+	<summary>
+  Cerca una stringa localizzata simile a Lo sbilancio calore scambiato/duty|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00285">
+	<summary>
+  Cerca una stringa localizzata simile a il progetto o vuoi proseguire?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00286">
+	<summary>
+  Cerca una stringa localizzata simile a |    Problema di convergenza:      |rientra in Dati Costr. e cambia la |lunghezza iniziale delle zone.     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00287">
+	<summary>
+  Cerca una stringa localizzata simile a OK.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00288">
+	<summary>
+  Cerca una stringa localizzata simile a Verifico il caso di dimensio- |  namento . . .               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00289">
+	<summary>
+  Cerca una stringa localizzata simile a La calibrazione del calcolo di di-|mensionamento e' pari a.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00290">
+	<summary>
+  Cerca una stringa localizzata simile a %|cioe' superiore al 2% : vuoi con- |tinuare lo stesso?                |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00291">
+	<summary>
+  Cerca una stringa localizzata simile a Ricerca soluzione|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00292">
+	<summary>
+  Cerca una stringa localizzata simile a ...iterazione n..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00293">
+	<summary>
+  Cerca una stringa localizzata simile a | Errore:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00294">
+	<summary>
+  Cerca una stringa localizzata simile a Iterazione sulle zone |numero.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00295">
+	<summary>
+  Cerca una stringa localizzata simile a Codice tolleranza spessore tubi non |previsto:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00296">
+	<summary>
+  Cerca una stringa localizzata simile a |Vuoi correggere?.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00297">
+	<summary>
+  Cerca una stringa localizzata simile a Diam.alette.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00298">
+	<summary>
+  Cerca una stringa localizzata simile a Diam.tubi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00299">
+	<summary>
+  Cerca una stringa localizzata simile a Tiraggio.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00300">
+	<summary>
+  Cerca una stringa localizzata simile a S : tranSition.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00301">
+	<summary>
+  Cerca una stringa localizzata simile a Camera d'aria.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00302">
+	<summary>
+  Cerca una stringa localizzata simile a D : Diretta.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00303">
+	<summary>
+  Cerca una stringa localizzata simile a Trasmissione.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00304">
+	<summary>
+  Cerca una stringa localizzata simile a Gruppo motore.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00305">
+	<summary>
+  Cerca una stringa localizzata simile a hai invece dato:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00306">
+	<summary>
+  Cerca una stringa localizzata simile a ENGINEER  :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00307">
+	<summary>
+  Cerca una stringa localizzata simile a Progettista.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00308">
+	<summary>
+  Cerca una stringa localizzata simile a TUBE/T.S. JOINT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00309">
+	<summary>
+  Cerca una stringa localizzata simile a Tubi tipo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00310">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale tubo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00311">
+	<summary>
+  Cerca una stringa localizzata simile a Tubo nudo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00401">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00402">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  item prima|di eseguire un bilancio  !        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00403">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire un'alternativa |prima di eseguire un bilancio  !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00404">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di chiudere il preventivo|corrente prima di aprirne un'altro|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00405">
+	<summary>
+  Cerca una stringa localizzata simile a LISTA DEI PREVENTIVI PRESENTI NELLO SPAZIO DI LAVORO.....
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00406">
+	<summary>
+  Cerca una stringa localizzata simile a SCEGLI QUELLO DA APRIRE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00407">
+	<summary>
+  Cerca una stringa localizzata simile a Errore irrecuperabile (CarPre).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00408">
+	<summary>
+  Cerca una stringa localizzata simile a Si prega di aprire  un  preventivo|prima di editarne il contenuto !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00409">
+	<summary>
+  Cerca una stringa localizzata simile a Questo programma non deve es-|sere lanciato da solo.       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00410">
+	<summary>
+  Cerca una stringa localizzata simile a Lanciare  HTRI.EXE           |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00411">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi stampare tutti gli items   |o vuoi stamparne uno solo       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00412">
+	<summary>
+  Cerca una stringa localizzata simile a o vuoi stampare l'item corrente?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00413">
+	<summary>
+  Cerca una stringa localizzata simile a In questo preventivo non e'  |stato inserito ancora nessun |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00414">
+	<summary>
+  Cerca una stringa localizzata simile a Item. Operazione impossibile!|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00415">
+	<summary>
+  Cerca una stringa localizzata simile a Non e' attivo alcun item!  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00416">
+	<summary>
+  Cerca una stringa localizzata simile a Valori forniti in modo errato|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00417">
+	<summary>
+  Cerca una stringa localizzata simile a Questo preventivo non risulta|essere stato compattato.     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00418">
+	<summary>
+  Cerca una stringa localizzata simile a Operazione rifiutata.        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00419">
+	<summary>
+  Cerca una stringa localizzata simile a Dato in formato libero       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00420">
+	<summary>
+  Cerca una stringa localizzata simile a TEXT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00421">
+	<summary>
+  Cerca una stringa localizzata simile a Commessa         :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00422">
+	<summary>
+  Cerca una stringa localizzata simile a Costruttore vent.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00423">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale pale   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00424">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale mozzo  :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00425">
+	<summary>
+  Cerca una stringa localizzata simile a Nome della commessa illegale.     |(1..4 caratteri):ripetere      !  |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00426">
+	<summary>
+  Cerca una stringa localizzata simile a Ci sono degli items senza al-|ternative. Operazione negata.|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00427">
+	<summary>
+  Cerca una stringa localizzata simile a Compattamento in corso,|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00428">
+	<summary>
+  Cerca una stringa localizzata simile a Le scelte possibili sono:       |    SI :  Sistema Internazionale|    ME :  Sistema Tecnico       |    BR :  Sistema Imperiale     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00429">
+	<summary>
+  Cerca una stringa localizzata simile a Le scelte possibili sono:       |    IT :  Italiano              |    IN :  Inglese               |    FR :  Francese              |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00430">
+	<summary>
+  Cerca una stringa localizzata simile a Dati non accettabili !          |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00431">
+	<summary>
+  Cerca una stringa localizzata simile a Scelta alternative.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00432">
+	<summary>
+  Cerca una stringa localizzata simile a Non sono ammesse piu' di quattro |ripetizioni dello stesso item    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00433">
+	<summary>
+  Cerca una stringa localizzata simile a stato ancora dimensionato.  |Vuoi procedere comunque?    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00434">
+	<summary>
+  Cerca una stringa localizzata simile a Help non disponibile.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00435">
+	<summary>
+  Cerca una stringa localizzata simile a Ricerca degli items e|delle alternative in corso.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00436">
+	<summary>
+  Cerca una stringa localizzata simile a Generazione del sommario|in corso . . ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00437">
+	<summary>
+  Cerca una stringa localizzata simile a OK.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00438">
+	<summary>
+  Cerca una stringa localizzata simile a Lista preventivi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00439">
+	<summary>
+  Cerca una stringa localizzata simile a Liquido: cal.sp..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00440">
+	<summary>
+  Cerca una stringa localizzata simile a viscos..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00441">
+	<summary>
+  Cerca una stringa localizzata simile a conduc..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00442">
+	<summary>
+  Cerca una stringa localizzata simile a densit..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00443">
+	<summary>
+  Cerca una stringa localizzata simile a Vapore : cal.sp..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00444">
+	<summary>
+  Cerca una stringa localizzata simile a viscos..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00445">
+	<summary>
+  Cerca una stringa localizzata simile a conduc..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00446">
+	<summary>
+  Cerca una stringa localizzata simile a compr..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00447">
+	<summary>
+  Cerca una stringa localizzata simile a Tipo di output.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00449">
+	<summary>
+  Cerca una stringa localizzata simile a TEXT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00501">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale Bulloni :  A-193 B7 (1)    A-320 L7 (2)    Altro (3).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00502">
+	<summary>
+  Cerca una stringa localizzata simile a Codice mat. Bulloni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00503">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale Bullone.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00504">
+	<summary>
+  Cerca una stringa localizzata simile a Soll. Amm. Bull. a Temp. prog..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00505">
+	<summary>
+  Cerca una stringa localizzata simile a Soll. Amm. Bull. a Temp. Amb..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00506">
+	<summary>
+  Cerca una stringa localizzata simile a Diam.Bull. : M16   (1)   M18 (2)   M20   (3)   M22   (4).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00507">
+	<summary>
+  Cerca una stringa localizzata simile a .            5/8'' (5)   1'' (6)   3/4'' (7)   Altro (8) : Codice.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00508">
+	<summary>
+  Cerca una stringa localizzata simile a Mat. Guarn: COMPR. ASBESTOS FIBER(1)    COPPER/BRASS JACK.ASB(2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00509">
+	<summary>
+  Cerca una stringa localizzata simile a .           STEEL JACK. ASBESTOS (3)    MONEL JACK. ASBESTOS (4).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00510">
+	<summary>
+  Cerca una stringa localizzata simile a .           4-6%CR JACK. ASBESTOS(5)    INOX JACKETED ASBEST.(6).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00511">
+	<summary>
+  Cerca una stringa localizzata simile a .           COPPER/ BRASS SOLID  (7)    SOLID IRON           (8).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00512">
+	<summary>
+  Cerca una stringa localizzata simile a .           SOLID MONEL or 4-6%CR(9)    SOLID INOX          (10).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00513">
+	<summary>
+  Cerca una stringa localizzata simile a .           MET.REINF.EXP.GRAPH.(11)    CAF                 (12).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00514">
+	<summary>
+  Cerca una stringa localizzata simile a .           Altro materiale     (13)    Introdurre il codice.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00515">
+	<summary>
+  Cerca una stringa localizzata simile a M16.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00516">
+	<summary>
+  Cerca una stringa localizzata simile a M18.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00517">
+	<summary>
+  Cerca una stringa localizzata simile a M20.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00518">
+	<summary>
+  Cerca una stringa localizzata simile a M22.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00519">
+	<summary>
+  Cerca una stringa localizzata simile a 5/8".
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00520">
+	<summary>
+  Cerca una stringa localizzata simile a 1".
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00521">
+	<summary>
+  Cerca una stringa localizzata simile a 3/4".
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00522">
+	<summary>
+  Cerca una stringa localizzata simile a Altro.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00523">
+	<summary>
+  Cerca una stringa localizzata simile a Diametro bulloni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00524">
+	<summary>
+  Cerca una stringa localizzata simile a Numero Totale Bulloni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00525">
+	<summary>
+  Cerca una stringa localizzata simile a Materiale guarnizione.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00526">
+	<summary>
+  Cerca una stringa localizzata simile a M 16      141       16        ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00527">
+	<summary>
+  Cerca una stringa localizzata simile a M 18      171       18        ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00528">
+	<summary>
+  Cerca una stringa localizzata simile a M 20      220       20        ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00529">
+	<summary>
+  Cerca una stringa localizzata simile a M 22      276       22        ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00530">
+	<summary>
+  Cerca una stringa localizzata simile a Inch 5/8  131       15.875    ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00531">
+	<summary>
+  Cerca una stringa localizzata simile a Inch 1    357       25.4      ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00532">
+	<summary>
+  Cerca una stringa localizzata simile a Inch 3/4  196       19.05     ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00533">
+	<summary>
+  Cerca una stringa localizzata simile a 2      1.12   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00534">
+	<summary>
+  Cerca una stringa localizzata simile a 3.5    4.57   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00535">
+	<summary>
+  Cerca una stringa localizzata simile a 3.75   5.34   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00536">
+	<summary>
+  Cerca una stringa localizzata simile a 3.5    5.62   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00537">
+	<summary>
+  Cerca una stringa localizzata simile a 3.75   6.33   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00538">
+	<summary>
+  Cerca una stringa localizzata simile a 4.75   9.14   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00539">
+	<summary>
+  Cerca una stringa localizzata simile a 5.5    12.65  ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00540">
+	<summary>
+  Cerca una stringa localizzata simile a 6      15.33  ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00541">
+	<summary>
+  Cerca una stringa localizzata simile a 6.5    18.28  ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00542">
+	<summary>
+  Cerca una stringa localizzata simile a 2      1.7581 ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00543">
+	<summary>
+  Cerca una stringa localizzata simile a 2.25   1.75   ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00544">
+	<summary>
+  Cerca una stringa localizzata simile a Tipo Bullone.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00545">
+	<summary>
+  Cerca una stringa localizzata simile a Area Nocciolo mm2.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00546">
+	<summary>
+  Cerca una stringa localizzata simile a Tipo guarnizione.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00547">
+	<summary>
+  Cerca una stringa localizzata simile a Coefficiente m.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00548">
+	<summary>
+  Cerca una stringa localizzata simile a Carico Y [kg/mm2].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00549">
+	<summary>
+  Cerca una stringa localizzata simile a Guarniz. confinata nel coperchio.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00550">
+	<summary>
+  Cerca una stringa localizzata simile a Guarniz. confinata tra cop./flangia.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00551">
+	<summary>
+  Cerca una stringa localizzata simile a Tipo di giunto.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00552">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza int.cassa [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00553">
+	<summary>
+  Cerca una stringa localizzata simile a Altezza grad.cop..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00554">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi iterare ? (S/N).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00555">
+	<summary>
+  Cerca una stringa localizzata simile a Casse cover (thru).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00556">
+	<summary>
+  Cerca una stringa localizzata simile a Casse cover (stud).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00557">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore Coperchio mm.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00558">
+	<summary>
+  Cerca una stringa localizzata simile a ##.#   ##.#   ##.#   ##.#&amp;.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00559">
+	<summary>
+  Cerca una stringa localizzata simile a Spess. Piastra Tub mm.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00560">
+	<summary>
+  Cerca una stringa localizzata simile a Spess. Top,Btm,End =.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00561">
+	<summary>
+  Cerca una stringa localizzata simile a ##.#    ##.#&amp;.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00562">
+	<summary>
+  Cerca una stringa localizzata simile a Passi Bull. (Freddo)  (Caldo)  (API 661).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00563">
+	<summary>
+  Cerca una stringa localizzata simile a \         \ ###.#    ###.#     ###.#.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00564">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE PIASTRA TUBIERA.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00565">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE COVER.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00566">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE ENDS.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00567">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; SPESSORE SETTI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00568">
+	<summary>
+  Cerca una stringa localizzata simile a &gt; PASSO BULLONI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00601">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA ITEM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00602">
+	<summary>
+  Cerca una stringa localizzata simile a BANCO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00603">
+	<summary>
+  Cerca una stringa localizzata simile a SERVIZIO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00604">
+	<summary>
+  Cerca una stringa localizzata simile a FLUIDO CIRCOLANTE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00605">
+	<summary>
+  Cerca una stringa localizzata simile a NO. REVISIONE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00606">
+	<summary>
+  Cerca una stringa localizzata simile a MONTAGGIO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00607">
+	<summary>
+  Cerca una stringa localizzata simile a TELAIO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00608">
+	<summary>
+  Cerca una stringa localizzata simile a STRUTTURE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00609">
+	<summary>
+  Cerca una stringa localizzata simile a CAMERE D'ARIA.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00610">
+	<summary>
+  Cerca una stringa localizzata simile a SCALE A PIOLI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00611">
+	<summary>
+  Cerca una stringa localizzata simile a SCALE A GRADINI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00612">
+	<summary>
+  Cerca una stringa localizzata simile a TIPO TESTATE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00613">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATER. TESTATE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00614">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATER. TAPPI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00615">
+	<summary>
+  Cerca una stringa localizzata simile a SIGLA MATER.GUARNIZ..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00616">
+	<summary>
+  Cerca una stringa localizzata simile a CORROSIONE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00617">
+	<summary>
+  Cerca una stringa localizzata simile a RT FLANGE BOCCHELLI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00618">
+	<summary>
+  Cerca una stringa localizzata simile a SPECIFICHE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00619">
+	<summary>
+  Cerca una stringa localizzata simile a COLLAUDI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00620">
+	<summary>
+  Cerca una stringa localizzata simile a PASSERELLE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00621">
+	<summary>
+  Cerca una stringa localizzata simile a INTERRUTT.VIBRAZIONI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00622">
+	<summary>
+  Cerca una stringa localizzata simile a ISOLAMENTO MOTORE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00623">
+	<summary>
+  Cerca una stringa localizzata simile a VOLT/CICLI/FASI MOT..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00624">
+	<summary>
+  Cerca una stringa localizzata simile a TIPO MOTORE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00625">
+	<summary>
+  Cerca una stringa localizzata simile a PERSIANE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00626">
+	<summary>
+  Cerca una stringa localizzata simile a RICIRCOLO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00627">
+	<summary>
+  Cerca una stringa localizzata simile a MATERIALE ALETTE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00628">
+	<summary>
+  Cerca una stringa localizzata simile a SERPENTINO VAPORE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00629">
+	<summary>
+  Cerca una stringa localizzata simile a SC-SIGLA MATER. TUBI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00630">
+	<summary>
+  Cerca una stringa localizzata simile a SC-BWG TUBI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00631">
+	<summary>
+  Cerca una stringa localizzata simile a SC-TIPO BWG TUBI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00632">
+	<summary>
+  Cerca una stringa localizzata simile a SC-TIPO ALETTE.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00633">
+	<summary>
+  Cerca una stringa localizzata simile a SC-NO. ALETTE/POLL..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00634">
+	<summary>
+  Cerca una stringa localizzata simile a SC-PRESS. VAPORE IN..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00635">
+	<summary>
+  Cerca una stringa localizzata simile a SC-PRESS. PROGETTO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00636">
+	<summary>
+  Cerca una stringa localizzata simile a SC-TEMP. VAPORE IN..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00637">
+	<summary>
+  Cerca una stringa localizzata simile a SC-TEMP. PROGETTO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00638">
+	<summary>
+  Cerca una stringa localizzata simile a SC-RT  FLAGE BOCCH..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00639">
+	<summary>
+  Cerca una stringa localizzata simile a SC-DIAM.BOC.IN. [in].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str00640">
+	<summary>
+  Cerca una stringa localizzata simile a SC-DIAM.BOC.USC.[in].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01001">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.in/out.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01002">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.ingr..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01003">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.uscita.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01004">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.A sup.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01005">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.A inf.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01006">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.B.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01007">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.A.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01008">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.B sup.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01009">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.B inf.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01010">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.A sup.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01011">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.A inf.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01012">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.B sup.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01013">
+	<summary>
+  Cerca una stringa localizzata simile a Cas.B inf.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01014">
+	<summary>
+  Cerca una stringa localizzata simile a Cassa A singola, B singola.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01015">
+	<summary>
+  Cerca una stringa localizzata simile a Cassa A split,   B singola.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01016">
+	<summary>
+  Cerca una stringa localizzata simile a Cassa A singola, B split.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01017">
+	<summary>
+  Cerca una stringa localizzata simile a Cassa A split,   B split.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01018">
+	<summary>
+  Cerca una stringa localizzata simile a Le casse di ingresso e uscita|saranno uguali?              |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01019">
+	<summary>
+  Cerca una stringa localizzata simile a UPM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01020">
+	<summary>
+  Cerca una stringa localizzata simile a Vers. 0.00.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01021">
+	<summary>
+  Cerca una stringa localizzata simile a 15/07/93.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01022">
+	<summary>
+  Cerca una stringa localizzata simile a Calcolo Meccanico Testate AFC.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01023">
+	<summary>
+  Cerca una stringa localizzata simile a Items da copiare.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01024">
+	<summary>
+  Cerca una stringa localizzata simile a Efficienza di legamento.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01025">
+	<summary>
+  Cerca una stringa localizzata simile a Camere.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01026">
+	<summary>
+  Cerca una stringa localizzata simile a Spessori.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01027">
+	<summary>
+  Cerca una stringa localizzata simile a Splittaggio cassa A.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01028">
+	<summary>
+  Cerca una stringa localizzata simile a Splittaggio cassa B.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01029">
+	<summary>
+  Cerca una stringa localizzata simile a N° camere cassa sup..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01030">
+	<summary>
+  Cerca una stringa localizzata simile a N° camere cassa inf..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01031">
+	<summary>
+  Cerca una stringa localizzata simile a Diametro bulloni   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01032">
+	<summary>
+  Cerca una stringa localizzata simile a Sezione bullone  [mm^2].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01033">
+	<summary>
+  Cerca una stringa localizzata simile a Numero bulloni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01034">
+	<summary>
+  Cerca una stringa localizzata simile a Ammissibile a caldo [kg/mm^2].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01035">
+	<summary>
+  Cerca una stringa localizzata simile a Ammissibile a freddo[kg/mm^2].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01036">
+	<summary>
+  Cerca una stringa localizzata simile a Y di guarnizione    [kg/mm^2].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01037">
+	<summary>
+  Cerca una stringa localizzata simile a m di guarnizione.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01038">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza gradino   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01039">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza guarniz.  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01040">
+	<summary>
+  Cerca una stringa localizzata simile a Tolleranza di lav.  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01041">
+	<summary>
+  Cerca una stringa localizzata simile a Hg                  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01042">
+	<summary>
+  Cerca una stringa localizzata simile a I                   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01043">
+	<summary>
+  Cerca una stringa localizzata simile a x                   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01044">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore flangia    [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01045">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore top/btm    [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01046">
+	<summary>
+  Cerca una stringa localizzata simile a N° dell'alternativa da calcolare.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01047">
+	<summary>
+  Cerca una stringa localizzata simile a Scelta alternativa.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01048">
+	<summary>
+  Cerca una stringa localizzata simile a Alternativa   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01049">
+	<summary>
+  Cerca una stringa localizzata simile a Altern. da calcol..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01050">
+	<summary>
+  Cerca una stringa localizzata simile a Lista preventivi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01051">
+	<summary>
+  Cerca una stringa localizzata simile a Config. Casse.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01052">
+	<summary>
+  Cerca una stringa localizzata simile a Dati generali.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01053">
+	<summary>
+  Cerca una stringa localizzata simile a Casse thrubolt.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01054">
+	<summary>
+  Cerca una stringa localizzata simile a ########.###.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01055">
+	<summary>
+  Cerca una stringa localizzata simile a Verifica spessori.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01056">
+	<summary>
+  Cerca una stringa localizzata simile a OK.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01057">
+	<summary>
+  Cerca una stringa localizzata simile a Dati meccanici.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01058">
+	<summary>
+  Cerca una stringa localizzata simile a         LAVORO CORRENTE:  | |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01059">
+	<summary>
+  Cerca una stringa localizzata simile a  Numero Preventivo:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01060">
+	<summary>
+  Cerca una stringa localizzata simile a  Cliente          :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01061">
+	<summary>
+  Cerca una stringa localizzata simile a  Indirizzo        :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01062">
+	<summary>
+  Cerca una stringa localizzata simile a  Luogo impianto   :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01063">
+	<summary>
+  Cerca una stringa localizzata simile a Preventivo corrente :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01064">
+	<summary>
+  Cerca una stringa localizzata simile a ;Item :.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01065">
+	<summary>
+  Cerca una stringa localizzata simile a ;Altern.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01066">
+	<summary>
+  Cerca una stringa localizzata simile a File.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01067">
+	<summary>
+  Cerca una stringa localizzata simile a Carica pr/item&lt;F1&gt;.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01068">
+	<summary>
+  Cerca una stringa localizzata simile a Chiudi prev.corr..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01069">
+	<summary>
+  Cerca una stringa localizzata simile a -.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01070">
+	<summary>
+  Cerca una stringa localizzata simile a Exit.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01071">
+	<summary>
+  Cerca una stringa localizzata simile a Calc.meccanico.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01072">
+	<summary>
+  Cerca una stringa localizzata simile a Lista bocchelli.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01073">
+	<summary>
+  Cerca una stringa localizzata simile a Testate (press.i.).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01074">
+	<summary>
+  Cerca una stringa localizzata simile a Testate (press.e.).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01075">
+	<summary>
+  Cerca una stringa localizzata simile a Calcolo split.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01076">
+	<summary>
+  Cerca una stringa localizzata simile a Annulla calcolo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01077">
+	<summary>
+  Cerca una stringa localizzata simile a Opzioni.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01078">
+	<summary>
+  Cerca una stringa localizzata simile a Colori.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01079">
+	<summary>
+  Cerca una stringa localizzata simile a Percorsi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01080">
+	<summary>
+  Cerca una stringa localizzata simile a Stampa in linea.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01081">
+	<summary>
+  Cerca una stringa localizzata simile a Welding neck:     0|Sagomato:         1|Long Welding neck:2|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01082">
+	<summary>
+  Cerca una stringa localizzata simile a Dati costrutt..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01083">
+	<summary>
+  Cerca una stringa localizzata simile a Nuovo lavoro.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01084">
+	<summary>
+  Cerca una stringa localizzata simile a Non possediamo regole per il|calcolo in accordo alla nor-|mativa indicata             |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01085">
+	<summary>
+  Cerca una stringa localizzata simile a VENTS      Nø tot.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01086">
+	<summary>
+  Cerca una stringa localizzata simile a DRAINS     Nø tot.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01087">
+	<summary>
+  Cerca una stringa localizzata simile a  TH.WELLS   Nø tot.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01088">
+	<summary>
+  Cerca una stringa localizzata simile a PR.GAUGES. Nø tot.:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01089">
+	<summary>
+  Cerca una stringa localizzata simile a              size:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01090">
+	<summary>
+  Cerca una stringa localizzata simile a Lista bocchelli.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01091">
+	<summary>
+  Cerca una stringa localizzata simile a Pressione di progetto.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01092">
+	<summary>
+  Cerca una stringa localizzata simile a Temperatura di progetto.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01093">
+	<summary>
+  Cerca una stringa localizzata simile a Item n..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01094">
+	<summary>
+  Cerca una stringa localizzata simile a .MEC.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01095">
+	<summary>
+  Cerca una stringa localizzata simile a (OK).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01096">
+	<summary>
+  Cerca una stringa localizzata simile a (..).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01097">
+	<summary>
+  Cerca una stringa localizzata simile a Nuovo Item.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01098">
+	<summary>
+  Cerca una stringa localizzata simile a HTRI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01099">
+	<summary>
+  Cerca una stringa localizzata simile a Nessuno.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01100">
+	<summary>
+  Cerca una stringa localizzata simile a N° di setti:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01101">
+	<summary>
+  Cerca una stringa localizzata simile a Procedi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01102">
+	<summary>
+  Cerca una stringa localizzata simile a Cambia sp..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01103">
+	<summary>
+  Cerca una stringa localizzata simile a Cambia setti.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01104">
+	<summary>
+  Cerca una stringa localizzata simile a File camera.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01105">
+	<summary>
+  Cerca una stringa localizzata simile a Errore fori!.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01106">
+	<summary>
+  Cerca una stringa localizzata simile a .VER.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01107">
+	<summary>
+  Cerca una stringa localizzata simile a COVER.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01108">
+	<summary>
+  Cerca una stringa localizzata simile a Commessa.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01109">
+	<summary>
+  Cerca una stringa localizzata simile a TESTIU.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01110">
+	<summary>
+  Cerca una stringa localizzata simile a \DOAPAI.DAT.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01111">
+	<summary>
+  Cerca una stringa localizzata simile a FBM.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01112">
+	<summary>
+  Cerca una stringa localizzata simile a NO.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01113">
+	<summary>
+  Cerca una stringa localizzata simile a SI.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01114">
+	<summary>
+  Cerca una stringa localizzata simile a .Tipo:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01115">
+	<summary>
+  Cerca una stringa localizzata simile a \DATI.TE1.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01116">
+	<summary>
+  Cerca una stringa localizzata simile a Va bene.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01117">
+	<summary>
+  Cerca una stringa localizzata simile a Un altro.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01118">
+	<summary>
+  Cerca una stringa localizzata simile a Nuovo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01119">
+	<summary>
+  Cerca una stringa localizzata simile a 119 Sigla Item:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01120">
+	<summary>
+  Cerca una stringa localizzata simile a L'item.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01121">
+	<summary>
+  Cerca una stringa localizzata simile a  esiste gia'.|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01123">
+	<summary>
+  Cerca una stringa localizzata simile a  Le sezioni rette delle camere estreme |sono insufficienti.                    |        Deficit camera di ingresso:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01124">
+	<summary>
+  Cerca una stringa localizzata simile a         Deficit camera  di  uscita:.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01125">
+	<summary>
+  Cerca una stringa localizzata simile a  Vuoi correggere dette sezioni ?       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01126">
+	<summary>
+  Cerca una stringa localizzata simile a Aumenta largh.test. (H=.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01127">
+	<summary>
+  Cerca una stringa localizzata simile a Aumenta alt.cam.(maxHX=.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01128">
+	<summary>
+  Cerca una stringa localizzata simile a Assumi tipo obround..
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01129">
+	<summary>
+  Cerca una stringa localizzata simile a Tipo di allargamento.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01130">
+	<summary>
+  Cerca una stringa localizzata simile a Stai per (re)visionare i dati|costruttivi. Vuoi annullare i|risultati del dimensionamento|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01131">
+	<summary>
+  Cerca una stringa localizzata simile a meccanico precedentemente ef-|fettuato?                    |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01132">
+	<summary>
+  Cerca una stringa localizzata simile a Temperatura di progetto.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01133">
+	<summary>
+  Cerca una stringa localizzata simile a Pressione di progetto.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01134">
+	<summary>
+  Cerca una stringa localizzata simile a Temperatura di esercizio.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01135">
+	<summary>
+  Cerca una stringa localizzata simile a Pressione di esercizio.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01136">
+	<summary>
+  Cerca una stringa localizzata simile a Pressione di prova.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01137">
+	<summary>
+  Cerca una stringa localizzata simile a Temperatura minima.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01138">
+	<summary>
+  Cerca una stringa localizzata simile a Desideri verificare le dilatazioni |      differenziali dei tubi       |nella configurazione non splittata?|.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01139">
+	<summary>
+  Cerca una stringa localizzata simile a Non e' stato ancora generato il|testate/telai. Alcuni dati sono|quindi da fornire a mano       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01140">
+	<summary>
+  Cerca una stringa localizzata simile a N° di tipi di tubi (max 2).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01141">
+	<summary>
+  Cerca una stringa localizzata simile a N° file con 1. tipo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01142">
+	<summary>
+  Cerca una stringa localizzata simile a N° file con 2. tipo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01143">
+	<summary>
+  Cerca una stringa localizzata simile a Diam. 1. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01144">
+	<summary>
+  Cerca una stringa localizzata simile a Diam. 2. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01145">
+	<summary>
+  Cerca una stringa localizzata simile a Spess. 1. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01146">
+	<summary>
+  Cerca una stringa localizzata simile a Spess. 2. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01147">
+	<summary>
+  Cerca una stringa localizzata simile a Passo vert. 1. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01148">
+	<summary>
+  Cerca una stringa localizzata simile a Passo vert. 2. tipo [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01149">
+	<summary>
+  Cerca una stringa localizzata simile a  A-515-GR 60         A-516-GR 60         A-515-GR 70         A-516-GR 70        |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01150">
+	<summary>
+  Cerca una stringa localizzata simile a  FE35.2-UNI 663      HII-DIN 17155       A 240-304           A 312-TP 304       |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01151">
+	<summary>
+  Cerca una stringa localizzata simile a  A 240-304L          A 312-TP 304L       A 240-316           A 240-316L         |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01152">
+	<summary>
+  Cerca una stringa localizzata simile a  A 240-321           A 106-GR B          ST35.8I-17175       ST35.8II-17175     |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01153">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi revisionare il presente calcolo?.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01154">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore tubi.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01155">
+	<summary>
+  Cerca una stringa localizzata simile a Poiché questo item ha un solo|passaggio, questo calcolo non|avrebbe senso.               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01156">
+	<summary>
+  Cerca una stringa localizzata simile a Non disponiamo di metodi per|il calcolo delle testate   |di tipo.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01157">
+	<summary>
+  Cerca una stringa localizzata simile a Non disponiamo di metodi per|il calcolo delle testate   |a norme.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01158">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi rigenerare la struttura dei setti?|Se rispondi si, dovrai rigenerare la |struttura della commessa.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01159">
+	<summary>
+  Cerca una stringa localizzata simile a Le casse A e B sono identiche?.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01222">
+	<summary>
+  Cerca una stringa localizzata simile a Vuoi editarlo?               |.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01238">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza gradino   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01239">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza guarniz.  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01240">
+	<summary>
+  Cerca una stringa localizzata simile a Tolleranza di lav.  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01241">
+	<summary>
+  Cerca una stringa localizzata simile a Larghezza int. cassa   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01242">
+	<summary>
+  Cerca una stringa localizzata simile a Hg                  [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01243">
+	<summary>
+  Cerca una stringa localizzata simile a I                   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01244">
+	<summary>
+  Cerca una stringa localizzata simile a x                   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01245">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore flangia    [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01246">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore top/btm    [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01247">
+	<summary>
+  Cerca una stringa localizzata simile a Spess top/btm min   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01248">
+	<summary>
+  Cerca una stringa localizzata simile a Spess top/btm max   [mm].
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01250">
+	<summary>
+  Cerca una stringa localizzata simile a Casse ingresso/uscita singole uguali .
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01251">
+	<summary>
+  Cerca una stringa localizzata simile a Scelta unità di misura.
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01252">
+	<summary>
+  Cerca una stringa localizzata simile a Metrico  (ME).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01253">
+	<summary>
+  Cerca una stringa localizzata simile a British  (BR).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str01254">
+	<summary>
+  Cerca una stringa localizzata simile a S.I.     (SI).
+</summary>
+</member><member name="P:HTRI.My.Resources.ProjectResources.str05280">
+	<summary>
+  Cerca una stringa localizzata simile a Spessore setto n° {0} troppo grande.
+Passo da aumentare di {1,5:###.#} mm.
+(Esigenza altra cassa: {2,5:###.#} mm.)
+Si approva?.
+</summary>
+</member><member name="T:HTRI.My.Resources.ProjectResources">
+	<summary>
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+</summary>
+</member>
+</members>
+</doc>
