@@ -8,5 +8,6 @@
 *.sln.docstates
 TestResults/
 *.binlog
+local/
 
 # Non ignorare risorse legacy, interop o file .resx: vanno inventariati.

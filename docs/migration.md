@@ -2,6 +2,12 @@
 
 ## Stato corrente dopo l'importazione
 
+I manifest LibMat e Orecchia sono stati ricostruiti in `src/` su richiesta,
+con copie separate dei file disponibili. Vedere
+[progetti ricostruiti e alternative Word](reconstructed-projects.md) per
+prerequisiti, sorgenti mancanti e risultati delle build. Questo aggiornamento
+non rende complete le cartelle originali né sostituisce WinWordControl.
+
 Il commit remoto `7c5c2e4` ha aggiunto `legacy/` a main. È stato integrato
 sulla branch `migration/vb-net10-inventory` senza scrivere su main.
 I paragrafi dell'inventario iniziale sotto riportano lo stato precedente

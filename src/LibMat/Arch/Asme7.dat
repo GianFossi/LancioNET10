@@ -1,0 +1,21 @@
+Durante il calcolo del valore di B secondo ASME|per la pressione esterna si è determinato|il seguente errore:||
+Il materiale non è stato definito|correttamente. Accedere alla libreria materiali tramite|il bottone posto nella maschera di input|della membratura
+Il codice di calcolo non è ASME con|uso di unità imperiali
+Il materiale & non ha i dati relativi agli ammissibili|(codice ASME, unità imperiali)
+La chart applicabile per il dato|materiale (&) non è definita
+La chart applicabile per il dato|materiale (&) non è stata caricata
+La temperatura di calcolo è supe-|riore al massimo della chart per|il materiale &
+Lo snervamento del materiale & è|superiore al massimo della chart
+La chart contiene dei dati non|validi (formato)
+L'intestatzione della chart non|è conforme al formato
+Il valore del parametro geometri-|co A è inferiore al minimo|della chart
+Il valore del parametro geometri-|co A è superiore al massimo|della chart
+Errore codice 21            .
+Parametri per il calcolo di A |non validi
+Errore non previsto
+Utilizzo della funzione inversa|A=f(B). B<=0
+Valore di A in input       [--]
+Valore di B fornito a mano [psi]
+10000.00
+|Se si risponde OK si può continuare il calcolo|fornendo il valore manualmente.
+

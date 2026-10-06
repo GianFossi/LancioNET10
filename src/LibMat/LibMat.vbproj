@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AssemblyName>LibMat</AssemblyName>
+    <RootNamespace>LibMat</RootNamespace>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <CodePage>1252</CodePage>
+    <LegacyInteropDirectory Condition="'$(LegacyInteropDirectory)' == ''">$(MSBuildProjectDirectory)/../../local/interop</LegacyInteropDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
+    <Reference Include="Interop.ADOX">
+      <HintPath>$(LegacyInteropDirectory)/Interop.ADOX.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <None Update="Arch/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CheckAdoInterop" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(LegacyInteropDirectory)/Interop.ADOX.dll')"
+           Text="ADOXSample requires a verified ADOX interop assembly. Set LegacyInteropDirectory to its directory. LibMat source is also incomplete: MaterialeNew1 and clsInitLibMat are not present in this import." />
+  </Target>
+</Project>
