@@ -2,6 +2,15 @@
 
 ## Stato corrente dopo l'importazione
 
+[Controllo finale](final-check.md): importato anche b0e0f43, che contiene
+WinWordControl.dll e gli interop. La soluzione dei componenti migrati compila e
+passano 66 controlli; la build completa e le integrazioni Windows restano aperte.
+
+Nuovo intervento: [adapter Microsoft Word e pannello WinForms](word-modernization.md).
+Core e pannello SDK compilabili senza WinWordControl.dll; quattro copie di
+chiamanti preparate per l'integrazione, ancora escluse dalla soluzione verificata.
+Il backend Word reale richiede validazione su Windows prima dell'uso.
+
 Nuovo intervento: [adapter ADO.NET per LibMat](ado-modernization.md).
 Sostituiti i percorsi query Excel e creazione schema Access della copia migrata;
 adapter compilato e test di pianificazione passati. La build completa resta
