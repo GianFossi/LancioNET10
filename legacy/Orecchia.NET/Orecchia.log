@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Orecchia.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Orecchia"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Orecchia.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\Orecchia.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\clsOrecchia.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\clsOrecchia.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\Var_Funz.bas"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\Var_Funz.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "inserisci" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.Vaiinizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.Testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto variabile.</Issue>
+        </Section>
+        <Section Name = "Segnalibri" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.sSaveAs.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.Vaiinizio.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.Testo.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Impossibile risolvere la proprietà predefinita dell'oggetto user_doc.Massimizza.</Issue>
+        </Section>
+        <Section Name = "CaricaCommessa" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "InserDati_1"
+                ObjectType = "Form"
+                PME = "Activated"
+            >Form evento InserDati_1.Activated presenta un nuovo comportamento.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\oreMonitor.cls"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\oreMonitor.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\InserDati_1.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\InserDati_1.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "At_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento At.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "d1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento d1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "dit_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento dit.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "dt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento dt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Et1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Et1.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "InserDati_1"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento InserDati_1.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "Ft_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Ft.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Gt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Gt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Ht_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Ht.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Kt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Kt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "l3t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento l3t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "l6t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento l6t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "l7t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento l7t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "llt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento llt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Rt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Rt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Siglat_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Siglat.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "t1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento t1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "t2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento t2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "t3t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento t3t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Tst_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Tst.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "tt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento tt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\InserDati_2.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\InserDati_2.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "alphat_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento alphat.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "B1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento B1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "B2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento B2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "dft_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento dft.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "et2_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento et2.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "InserDati_2"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento InserDati_2.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "L10t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento L10t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "l1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento l1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "l2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento l2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Qt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Qt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "R1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento R1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "t4t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento t4t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "We2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento We2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "wt_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento wt.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "E:\Programmi\MicroSoft Visual Studio\Fbm\Orecchia\InserDati_3.frm"
+        NewPath = "C:\Documenti\Visual Studio Projects\Lancio\Orecchia.NET\InserDati_3.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2056"
+                ObjectName = "List_err"
+                ObjectType = "ListBox"
+                PME = "ItemData"
+            >La proprietà di ListBox List_err.ItemData non è stata aggiornata.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2045"
+                ObjectName = "Label2"
+                ObjectType = "Label"
+                PME = "Font"
+            >Nei Windows Form sono supportati solo tipi di carattere TrueType e OpenType.</Issue>
+        </Section>
+        <Section Name = "Form_Activate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "InserDati_3"
+                ObjectType = "Form"
+                PME = "Activate"
+            >Form evento InserDati_3.Activate presenta un nuovo comportamento.</Issue>
+        </Section>
+        <Section Name = "sa1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sa1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sy1t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sy1t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sa2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sa2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sy2t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sy2t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sa3t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sa3t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sy3t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sy3t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sa4t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sa4t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sy4t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sy4t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sa5t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sa5t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "sy5t_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento sy5t.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+        <Section Name = "Textcil_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >L'evento Textcil.TextChanged può essere generato quando il form è inizializzato.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

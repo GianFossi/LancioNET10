@@ -2259,6 +2259,7 @@ Friend Class InserDati_1
     Private Sub _mnuFile0_3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles _mnuFile0_3.Click
         Monitor.Motore.Ammazza("OREC")
         Monitor.Oggetto = Nothing
+        If Not Monitor Is Nothing Then Monitor.Motore = Nothing
         Monitor = Nothing
         Dispose()
     End Sub
@@ -2663,7 +2664,11 @@ Friend Class InserDati_1
         cmdCil_Click(4)
     End Sub
     Private Sub cmdStampa_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdStampa.Click
-        Segnalibri()
+        If Monitor.Motore.Inizio.VersOffice < 11 Then
+            Segnalibri9()
+        Else
+            Segnalibri()
+        End If
     End Sub
 
     Private Sub mnuCalcola_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuCalcola.Click
@@ -2671,6 +2676,10 @@ Friend Class InserDati_1
     End Sub
 
     Private Sub mnuRapporto_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuRapporto.Click
-        Segnalibri()
+        If Monitor.Motore.Inizio.VersOffice < 11 Then
+            Segnalibri9()
+        Else
+            Segnalibri()
+        End If
     End Sub
 End Class
