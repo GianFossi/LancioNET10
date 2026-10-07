@@ -67,3 +67,9 @@ una virola, un fondo o un altro elemento portante. Si creano aprendo `Dati`
 dell'elemento e impostando `Number of openings`; ASMEVIP genera quindi i nodi
 nozzle collegati all'elemento. Il materiale si seleziona dalla finestra dati
 del componente tramite il pulsante a fianco del campo materiale.
+
+Per un materiale nuovo e ancora vuoto, il pulsante di ricerca attiva
+automaticamente `bound to library` quando `Mat200400.mdb` e' presente nella
+cartella ARCH configurata. I materiali gia' definiti localmente non vengono
+convertiti automaticamente. Se l'archivio manca, ASMEVIP mostra il percorso
+esatto atteso invece di aprire silenziosamente una scheda locale vuota.

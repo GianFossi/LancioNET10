@@ -1666,6 +1666,7 @@ FinDia:
     Public Sub SelMat(Optional ByRef l As Short = -1, Optional ByRef t As Short = -1)
         Dim indice, iClasse, ms As Short
         Dim tt, i, ll, ic As Short
+        Dim archivioMateriali As String
         ll = 1
         If Not l = -1 Then ll = l
         tt = Involucr(kLato, jInvolucr).Tipo
@@ -1675,6 +1676,21 @@ FinDia:
             indice = NuovoIndice()
             indici.Add(indice)
             Involucr(kLato, jInvolucr).indice(ll - 1) = indice
+        End If
+        'Un materiale nuovo e vuoto deve aprire la libreria, non la scheda
+        'locale. I materiali gia' definiti localmente conservano invece la
+        'scelta esplicita Agganciato=False.
+        If Matdim(indice).Indmat = 0 AndAlso
+           String.IsNullOrWhiteSpace(Matdim(indice).MatStr) AndAlso
+           Not Matdim(indice).Agganciato Then
+            archivioMateriali = Monitor.Motore.MatFile
+            If archivioMateriali <> "" Then
+                Matdim(indice).Agganciato = True
+            Else
+                MessageBox.Show("Libreria materiali non trovata:" & vbCrLf &
+                                IO.Path.Combine(clsInizio.Archdir, "Mat200400.mdb"),
+                                "AsmeVip", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         End If
         Select Case tt
             Case 0
