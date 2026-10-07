@@ -1070,10 +1070,10 @@ Me.TabPage7 = New System.Windows.Forms.TabPage
 Me.TabPage8 = New System.Windows.Forms.TabPage
 Me.TabPage9 = New System.Windows.Forms.TabPage
 Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
-Me.StatusBar1 = New System.Windows.Forms.StatusBar
-Me.StatusBarPanel1 = New System.Windows.Forms.StatusBarPanel
-Me.StatusBarPanel2 = New System.Windows.Forms.StatusBarPanel
-Me.StatusBarPanel3 = New System.Windows.Forms.StatusBarPanel
+Me.StatusBar1 = New System.Windows.Forms.StatusStrip
+Me.StatusBarPanel1 = New Global.LancioMigration.LegacyStatusLabel
+Me.StatusBarPanel2 = New Global.LancioMigration.LegacyStatusLabel
+Me.StatusBarPanel3 = New Global.LancioMigration.LegacyStatusLabel
 Me.CommonDialog2 = New System.Windows.Forms.SaveFileDialog
 CType(Me.UpDownMat,System.ComponentModel.ISupportInitialize).BeginInit
 Me.Commento.SuspendLayout
@@ -8861,31 +8861,30 @@ Me.TabPage9.UseVisualStyleBackColor = true
 '
 Me.StatusBar1.Location = New System.Drawing.Point(0, 512)
 Me.StatusBar1.Name = "StatusBar1"
-Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
-Me.StatusBar1.ShowPanels = true
+Me.StatusBar1.Items.AddRange(New Global.LancioMigration.LegacyStatusLabel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
 Me.StatusBar1.Size = New System.Drawing.Size(623, 16)
 Me.StatusBar1.TabIndex = 357
 '
 'StatusBarPanel1
 '
-Me.StatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
-Me.StatusBarPanel1.MinWidth = 350
+Me.StatusBarPanel1.AutoSize = True
+Me.StatusBarPanel1.MinimumWidth = 350
 Me.StatusBarPanel1.Name = "StatusBarPanel1"
 Me.StatusBarPanel1.Text = "Area di lavoro:"
 Me.StatusBarPanel1.Width = 350
 '
 'StatusBarPanel2
 '
-Me.StatusBarPanel2.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
-Me.StatusBarPanel2.MinWidth = 120
+Me.StatusBarPanel2.AutoSize = True
+Me.StatusBarPanel2.MinimumWidth = 120
 Me.StatusBarPanel2.Name = "StatusBarPanel2"
 Me.StatusBarPanel2.Text = "Prev:"
 Me.StatusBarPanel2.Width = 120
 '
 'StatusBarPanel3
 '
-Me.StatusBarPanel3.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-Me.StatusBarPanel3.MinWidth = 120
+Me.StatusBarPanel3.Spring = True
+Me.StatusBarPanel3.MinimumWidth = 120
 Me.StatusBarPanel3.Name = "StatusBarPanel3"
 Me.StatusBarPanel3.Text = "Item:"
 Me.StatusBarPanel3.Width = 136
@@ -9024,10 +9023,10 @@ End Sub
     Friend WithEvents cmdRicalcola As System.Windows.Forms.Button
     Friend WithEvents cmdSel As System.Windows.Forms.Button
     Friend WithEvents menChiudi As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusBar
-    Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel3 As System.Windows.Forms.StatusBarPanel
+    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusBarPanel1 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel2 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel3 As Global.LancioMigration.LegacyStatusLabel
     Friend WithEvents txtTroppiTiranti As System.Windows.Forms.TextBox
     Friend WithEvents txtSizeScr As System.Windows.Forms.TextBox
     Public WithEvents _txtSplit_11 As System.Windows.Forms.TextBox

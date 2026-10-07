@@ -321,7 +321,7 @@ Module mainASME
     End Function
     Sub Aggiorna()
         Dim Testo As String
-        mioApert.StatusBar1.Panels(0).Text = "Area di lavoro: " & RTrim(clsInizio.Datidir)
+        mioApert.StatusBar1.Items(0).Text = "Area di lavoro: " & RTrim(clsInizio.Datidir)
         Testo = "nessuno"
         If Len(icome) = 0 Then icome = " "
         With mioApert
@@ -367,9 +367,9 @@ Module mainASME
                 .Command1.Enabled = False
             End If
             Testo = " File corrente = " & Testo
-            .StatusBar1.Panels(1).Text = Testo
+            .StatusBar1.Items(1).Text = Testo
             Testo = " Item = " & Config(0).Item
-            .StatusBar1.Panels(2).Text = Testo
+            .StatusBar1.Items(2).Text = Testo
             .Text = GlobalRoutines.StringaInformativaProgramma(myAssembly) & " " & icome
         End With
     End Sub

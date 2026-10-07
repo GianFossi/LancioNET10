@@ -1241,7 +1241,7 @@ FineCalc:
         Testo = "nessuno"
         Try
             With Apert.DefInstance
-                .StatusBar1.Panels(0).Text = "Area di lavoro: " & RTrim(Monitor.Motore.Inizio.Workdir)
+                .StatusBar1.Items(0).Text = "Area di lavoro: " & RTrim(Monitor.Motore.Inizio.Workdir)
                 If Config.NBocch > 0 Then
                     Testo = objWRCB.commessa
                     .mnuSalva.Enabled = True
@@ -1257,10 +1257,10 @@ FineCalc:
                     .cmdEscludi.Enabled = False
                 End If
                 Testo = " File corrente = " & Testo
-                .StatusBar1.Panels(1).Text = Testo
+                .StatusBar1.Items(1).Text = Testo
                 If Config.Item.Trim = "" Then Config.Item = "(nessuno)"
                 Testo = " Item = " & Config.Item
-                .StatusBar1.Panels(2).Text = Testo
+                .StatusBar1.Items(2).Text = Testo
             End With
             AggAlbero()
         Catch e As Exception

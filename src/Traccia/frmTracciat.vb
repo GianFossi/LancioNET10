@@ -119,10 +119,10 @@ Friend Class frmTracciat
     Friend WithEvents mnuDisegna As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnu4sp As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuElim As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusBar
-    Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel3 As System.Windows.Forms.StatusBarPanel
+    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusBarPanel1 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel2 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel3 As Global.LancioMigration.LegacyStatusLabel
     Friend WithEvents panStrumenti As System.Windows.Forms.Panel
     Friend WithEvents cmdZoom As System.Windows.Forms.Button
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
@@ -212,10 +212,10 @@ Friend Class frmTracciat
         Me.cmdRight = New System.Windows.Forms.Button
         Me.cmdUp = New System.Windows.Forms.Button
         Me.cmdSpostOK = New System.Windows.Forms.Button
-        Me.StatusBar1 = New System.Windows.Forms.StatusBar
-        Me.StatusBarPanel1 = New System.Windows.Forms.StatusBarPanel
-        Me.StatusBarPanel2 = New System.Windows.Forms.StatusBarPanel
-        Me.StatusBarPanel3 = New System.Windows.Forms.StatusBarPanel
+        Me.StatusBar1 = New System.Windows.Forms.StatusStrip
+        Me.StatusBarPanel1 = New Global.LancioMigration.LegacyStatusLabel
+        Me.StatusBarPanel2 = New Global.LancioMigration.LegacyStatusLabel
+        Me.StatusBarPanel3 = New Global.LancioMigration.LegacyStatusLabel
         Me.panStrumenti = New System.Windows.Forms.Panel
         Me.cmdStampa = New System.Windows.Forms.Button
         Me.cmdDisTrk = New System.Windows.Forms.Button
@@ -527,15 +527,14 @@ Friend Class frmTracciat
         '
         Me.StatusBar1.Location = New System.Drawing.Point(0, 452)
         Me.StatusBar1.Name = "StatusBar1"
-        Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
-        Me.StatusBar1.ShowPanels = True
+        Me.StatusBar1.Items.AddRange(New Global.LancioMigration.LegacyStatusLabel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
         Me.StatusBar1.Size = New System.Drawing.Size(778, 18)
         Me.StatusBar1.TabIndex = 3
         Me.StatusBar1.Text = "StatusBar1"
         '
         'StatusBarPanel1
         '
-        Me.StatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
+        Me.StatusBarPanel1.AutoSize = True
         Me.StatusBarPanel1.Width = 10
         '
         'panStrumenti
@@ -900,7 +899,7 @@ Friend Class frmTracciat
         pictHeight = Picture1.ClientRectangle.Height
         mnuEnable(False, 1, npagine)
         DELTAX = 1 : DELTAA = 1
-        StatusBar1.Panels(2).Text = "" '"dX=" + myStr(DELTAX, 2, 2, False) + " dA=" + myStr(DELTAA, 2, 2, False)
+        StatusBar1.Items(2).Text = "" '"dX=" + myStr(DELTAX, 2, 2, False) + " dA=" + myStr(DELTAA, 2, 2, False)
         p = New Pen(Color.Black)
         b = New SolidBrush(Color.Black)
         IniziaPagina()
@@ -2955,7 +2954,7 @@ Friend Class frmTracciat
             End If
             xvec = x : yvec = y
             If iPagina = 3 And Not Zooming Then
-                If Not InStr(StatusBar1.Panels(0).Text, "Non è") = 1 Then StatusBar1.Panels(0).Text = "x=" & GlobalRoutines.myStr(CSng(x), 5, 2, 0) & " y=" & GlobalRoutines.myStr(CSng(y), 5, 2, 0)
+                If Not InStr(StatusBar1.Items(0).Text, "Non è") = 1 Then StatusBar1.Items(0).Text = "x=" & GlobalRoutines.myStr(CSng(x), 5, 2, 0) & " y=" & GlobalRoutines.myStr(CSng(y), 5, 2, 0)
                 Try
                     Raggio = CSng(System.Math.Sqrt(x * x + y * y))
                 Catch
@@ -2963,8 +2962,8 @@ Friend Class frmTracciat
                 End Try
                 Alfa = GlobalRoutines.arco(x / Raggio, y / Raggio)
                 Alfadeg = CSng(Alfa * 180 / System.Math.PI)
-                StatusBar1.Panels(1).Text = "R=" & GlobalRoutines.myStr(Raggio, 5, 2, 0) & " a=" & GlobalRoutines.myStr(Alfadeg, 3, 2, 0) & "°"
-                StatusBar1.Panels(2).Text = "dX=" & GlobalRoutines.myStr(DELTAX, 2, 2, 0) & " dA=" & GlobalRoutines.myStr(DELTAA, 2, 2, 0)
+                StatusBar1.Items(1).Text = "R=" & GlobalRoutines.myStr(Raggio, 5, 2, 0) & " a=" & GlobalRoutines.myStr(Alfadeg, 3, 2, 0) & "°"
+                StatusBar1.Items(2).Text = "dX=" & GlobalRoutines.myStr(DELTAX, 2, 2, 0) & " dA=" & GlobalRoutines.myStr(DELTAA, 2, 2, 0)
                 If DaTos(iDat).TipoFascio = 4 Then
                     If Raggio < (DaTos(1).OTL + 2 * DaTos(iDat).cinter) / 4 Then
                         QualeCorona = 2
@@ -3051,8 +3050,8 @@ Friend Class frmTracciat
                     End If
                 End If
                 If Not FuoriReticolo Then  'siamo su un tubo
-                    If Not InStr(StatusBar1.Panels(0).Text, "Non è") = 1 Then _
-                    StatusBar1.Panels(0).Text = "x=" & GlobalRoutines.myStr(xtub, 5, 2, 0) & _
+                    If Not InStr(StatusBar1.Items(0).Text, "Non è") = 1 Then _
+                    StatusBar1.Items(0).Text = "x=" & GlobalRoutines.myStr(xtub, 5, 2, 0) & _
                     " y=" & GlobalRoutines.myStr(ytub, 5, 2, 0)
                     Raggio = CSng(System.Math.Sqrt(xtub * xtub + ytub * ytub))
                     If Raggio = 0 Then
@@ -3061,7 +3060,7 @@ Friend Class frmTracciat
                         Alfa = GlobalRoutines.arco(xtub / Raggio, ytub / Raggio)
                     End If
                     Alfadeg = CSng(Alfa * 180 / System.Math.PI)
-                    StatusBar1.Panels(1).Text = "R=" & GlobalRoutines.myStr(Raggio, 5, 2, 0) & _
+                    StatusBar1.Items(1).Text = "R=" & GlobalRoutines.myStr(Raggio, 5, 2, 0) & _
                     " a=" & GlobalRoutines.myStr(Alfadeg, 3, 2, 0) & "°"
                 End If
                 If Not FuoriReticolo And (j <> jvec Or k <> kvec Or H <> Hvec) Then
@@ -3093,7 +3092,7 @@ Friend Class frmTracciat
                     ToolTipHelp.Active = True
                 End If
             Else
-                    StatusBar1.Panels(0).Text = ""
+                    StatusBar1.Items(0).Text = ""
             End If
         Catch er As Exception
             MsgBox(er.Message + vbCrLf + er.StackTrace)
@@ -3135,16 +3134,16 @@ Friend Class frmTracciat
         Cursor = System.Windows.Forms.Cursors.Default
         Picture1.Refresh()
     End Sub
-    Private Sub StatusBar1_PanelClick(ByVal sender As Object, ByVal e As System.Windows.Forms.StatusBarPanelClickEventArgs) Handles StatusBar1.PanelClick
+    Private Sub StatusBar1_PanelClick(ByVal sender As Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles StatusBar1.ItemClicked
         Dim FV_Renamed As Short
-        If e.StatusBarPanel Is StatusBar1.Panels(2) Then
+        If e.ClickedItem Is StatusBar1.Items(2) Then
             FV_Renamed = FuoriLayOut
             FuoriLayOut = 100
-            frmEdita.DefInstance.Left = StatusBar1.Panels(0).Width + StatusBar1.Panels(1).Width
+            frmEdita.DefInstance.Left = StatusBar1.Items(0).Width + StatusBar1.Items(1).Width
             frmEdita.DefInstance.Top = CInt(StatusBar1.Top - frmEdita.DefInstance.Height - GlobalRoutines.TwipsToPixelsY(200))
             frmEdita.DefInstance.ShowDialog()
             frmEdita.DefInstance.Dispose()
-            StatusBar1.Panels(2).Text = "dX=" & GlobalRoutines.myStr(DELTAX, 2, 2, 0) & _
+            StatusBar1.Items(2).Text = "dX=" & GlobalRoutines.myStr(DELTAX, 2, 2, 0) & _
             " dA=" & GlobalRoutines.myStr(DELTAA, 2, 2, 0)
             FuoriLayOut = FV_Renamed
         End If

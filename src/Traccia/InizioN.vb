@@ -198,7 +198,7 @@ Riprendi:   Raggio = -1 : iDat = 1 : iTubo1 = 0
                 Dist = 1.0E+20 : iTubo2 = 0 : iDat = 0 : indice = 0
                 If iCMax > 0 Then Testo = "Coppia massima" & Str(iCMax) & " " Else Testo = ""
                 Testo = Testo & "Esamino la coppia" & Str(iCoppia)
-                MainForm.StatusBar1.Panels(0).Text = Testo
+                MainForm.StatusBar1.Items(0).Text = Testo
                 For iTubo = 1 To DaTos(iDat).ktotal
                     If Accoppia(iTubo, iDat) = 0 And iTubo <> iTubo1 Then
                         Distl = CSng(System.Math.Sqrt((PuntiD(iTubo, iDat).X - PuntiD(iTubo1, 1).X) ^ 2 + (PuntiD(iTubo, iDat).y - PuntiD(iTubo1, 1).y) ^ 2))
@@ -225,7 +225,7 @@ Riprendi:   Raggio = -1 : iDat = 1 : iTubo1 = 0
                 If iTubo2 > 0 Then
                     If iCMax > 0 Then Testo = "Coppia massima" & Str(iCMax) & " " Else Testo = ""
                     Testo = Testo & "Sorvolo la coppia" & Str(iCoppia)
-                    MainForm.StatusBar1.Panels(0).Text = Testo
+                    MainForm.StatusBar1.Items(0).Text = Testo
 829:                iSorv = Sorvolo(iTubo1, iTubo2, iCoppia)
                     If iSorv <> 0 Then
                         'indcont = indcont - 1
@@ -264,7 +264,7 @@ Riprendi:   Raggio = -1 : iDat = 1 : iTubo1 = 0
                             .p.Color = forecolor
                             If iCMax > 0 Then Testo = "Coppia massima" & Str(iCMax) & " " Else Testo = ""
                             Testo = Testo & "Verifico la coppia" & Str(iCoppia)
-                            .StatusBar1.Panels(0).Text = Testo
+                            .StatusBar1.Items(0).Text = Testo
                             'MainForm.StatusBar1.CtlRefresh()
                         End With
                         iCoppiaV = iCoppia
@@ -333,7 +333,7 @@ Riprendi:   Raggio = -1 : iDat = 1 : iTubo1 = 0
             PrintLine(ifl, GlobalRoutines.FormatS(Form2, Fila(IndT1(iCoppia), 1), Posizbu(IndT1(iCoppia), 1), Fila(IndT2(iCoppia), 0), Posizbu(IndT2(iCoppia), 0), IndT1(iCoppia), IndT2(iCoppia)))
         Next
         Testo = "Operazione di aggiancio terminata con successo." & Str(iCoppia)
-        MainForm.StatusBar1.Panels(0).Text = Testo
+        MainForm.StatusBar1.Items(0).Text = Testo
 Esci:   FileClose(ifl)
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
         MainForm.Break.Visible = False
@@ -341,7 +341,7 @@ Esci:   FileClose(ifl)
 FinePrematura:
         iAgg = 0
         MainForm.Breckato = False
-        MainForm.StatusBar1.Panels(0).Text = "Non è stato possibile trovare una soluzione"
+        MainForm.StatusBar1.Items(0).Text = "Non è stato possibile trovare una soluzione"
         SubTraccia(0)
         GoTo Esci
     End Sub
@@ -361,7 +361,7 @@ FinePrematura:
         Text = Text & "in corso "
         Monitor.Motore.ProgrInizio(Text)
         With MainForm
-            .StatusBar1.Panels(0).Text = "Attendere, prego . . ."
+            .StatusBar1.Items(0).Text = "Attendere, prego . . ."
             RiDim()
             DistInMem()
             For iDat = 0 To 1
@@ -430,14 +430,14 @@ FinePrematura:
             Testo = at1(69) & ktest.ToString
             Monitor.Motore.Inizio.ConvertiCr(Testo)
             MsgBox(Testo, MsgBoxStyle.OKOnly)
-            MainForm.StatusBar1.Panels(0).Text = ""
+            MainForm.StatusBar1.Items(0).Text = ""
             Exit Sub
         End If
         If DaTos(iDat).OTL < 0 Then
             Testo = at1(210) & ktest.ToString
             Monitor.Motore.Inizio.ConvertiCr(Testo)
             MsgBox(Testo, MsgBoxStyle.OKOnly)
-            MainForm.StatusBar1.Panels(0).Text = ""
+            MainForm.StatusBar1.Items(0).Text = ""
             Exit Sub
         End If
         Call SuperDiadif(DiaframmiTight)
@@ -456,7 +456,7 @@ FinePrematura:
             If starty = -9999 Then GoTo 40
         Else
             Call UTUBI()
-            MainForm.StatusBar1.Panels(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0)
+            MainForm.StatusBar1.Items(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0)
             ' MainForm.StatusBar1.CtlRefresh()
             If FuoriReticolo Then
                 FuoriReticolo = False : GoTo 1231
@@ -465,7 +465,7 @@ FinePrematura:
         If Not (kwrite = 0) Then Call Rownf()
         DaTos(iDat).ktotal = DaTos(iDat).ktotal + DaTos(iDat).Ntot
         dx = SpostXSettore(jsect)
-        MainForm.StatusBar1.Panels(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0) & "; n° fori" & Str(DaTos(iDat).ktotal)
+        MainForm.StatusBar1.Items(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0) & "; n° fori" & Str(DaTos(iDat).ktotal)
         'MainForm.StatusBar1.CtlRefresh()
         If Indexx = 0 Then
             '          If DaTos(iDat).CurveInPianoVert = 1 Then jsect = DaTos(iDat).NumeroSettori
@@ -534,7 +534,7 @@ Fine:           If DaTos(iDat).CurveInPianoVert And kwrite = 1 Then GoTo 105
             'LINDE
             DaTos(iDat).NumeroTubiSettore(jsect) = DaTos(iDat).Ntot
             DaTos(iDat).ktotal = DaTos(iDat).ktotal + DaTos(iDat).Ntot
-            MainForm.StatusBar1.Panels(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0) & "; n° fori" & Str(DaTos(iDat).ktotal)
+            MainForm.StatusBar1.Items(0).Text = "Iterazione" & Str(KCONT) & "; OTL " & GlobalRoutines.myStr(DaTos(iDat).OTL, 4, 1, 0) & "; n° fori" & Str(DaTos(iDat).ktotal)
             If kwrite = 1 Then Call Nhsym()
             If jsect = DaTos(iDat).NumeroSettori Then
                 'LINDE
@@ -598,7 +598,7 @@ Fine:           If DaTos(iDat).CurveInPianoVert And kwrite = 1 Then GoTo 105
         '-------------------------------------------------------
 105:    Call Nhsym()
 110:    If Sub110(kwritf) = 1 Then GoTo 60
-        MainForm.StatusBar1.Panels(0).Text = ""
+        MainForm.StatusBar1.Items(0).Text = ""
         'MainForm.StatusBar1.Style = MSComctlLib.SbarStyleConstants.sbrNormal
     End Sub
 

@@ -14,6 +14,14 @@ Module Program
         Using form = DirectCast(Activator.CreateInstance(asmeType, nonPublic:=True), Form)
             If form.MainMenuStrip Is Nothing OrElse form.MainMenuStrip.Items.Count = 0 Then Throw New Exception("ASME menu missing")
         End Using
+        Dim wrcbType = System.Reflection.Assembly.Load("Wrcb").GetType("Wrcb.Apert", throwOnError:=True)
+        Using form = DirectCast(Activator.CreateInstance(wrcbType, nonPublic:=True), Form)
+            Dim status = DirectCast(wrcbType.GetField("StatusBar1", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic).GetValue(form), StatusStrip)
+            If status.Items.Count <> 3 OrElse Not form.Controls.Contains(status) Then Throw New Exception("WRCB status fields missing")
+            If Not DirectCast(status.Items(0), ToolStripStatusLabel).Spring Then Throw New Exception("WRCB workspace panel must fill available space")
+            status.Items(1).Text = "Prev.: smoke"
+            If status.Items(1).Text <> "Prev.: smoke" Then Throw New Exception("WRCB status text update failed")
+        End Using
         Console.WriteLine("Main and ASME menu construction checks passed (forms not shown, calculations not executed).")
     End Sub
 End Module

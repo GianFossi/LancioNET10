@@ -662,7 +662,7 @@ Module Infila
                 Riga1 = prossimo(Riga) : If Len(Riga1) > 0 Then Franco.Utub.p1.X = CSng(GlobalRoutines.ValVir(Riga1)) Else Exit Do
                 Riga1 = prossimo(Riga) : If Len(Riga1) > 0 Then Franco.Utub.p1.y = CSng(GlobalRoutines.ValVir(Riga1)) Else Exit Do
                 If Int(NumLin \ Dieci) * Dieci = NumLin Then
-                    MainForm.StatusBar1.Panels(0).Text = "Leggo coordinate.   Tubo: " & Franco.recB1.Sigla
+                    MainForm.StatusBar1.Items(0).Text = "Leggo coordinate.   Tubo: " & Franco.recB1.Sigla
                 End If
                 If Not AppeB1() Then
                     MsgBox("ERRORE:identificativo " & Franco.recB1.Sigla & " ripetuto.")
@@ -675,14 +675,14 @@ Module Infila
         If Len(Riga1) > 0 Then
 300:        FileClose(Franco.Manici.nCOO)
             If NumLin > 0 Then
-                MainForm.StatusBar1.Panels(0).Text = "Trovati" & Str(NumLin) & " tubi"
+                MainForm.StatusBar1.Items(0).Text = "Trovati" & Str(NumLin) & " tubi"
             Else
-                MainForm.StatusBar1.Panels(0).Text = "ERRORE:nessun tubo trovato!"
+                MainForm.StatusBar1.Items(0).Text = "ERRORE:nessun tubo trovato!"
                 i = ChiuB1()
                 Exit Sub
             End If
         Else
-            MainForm.StatusBar1.Panels(0).Text = "ERRORE:dati insufficienti in riga" & Str(NumLin)
+            MainForm.StatusBar1.Items(0).Text = "ERRORE:dati insufficienti in riga" & Str(NumLin)
             i = ChiuB1()
             FileClose(Franco.Manici.nCOO)
             Exit Sub
@@ -694,7 +694,7 @@ Module Infila
         Franco.Preciso = Preciso
         Franco.GapCurve = GapCurve + Franco.Diametro
         If Franco.Diametro <= Zero Then
-            MainForm.StatusBar1.Panels(0).Text = "ERRORE:diametro non definito o illegale "
+            MainForm.StatusBar1.Items(0).Text = "ERRORE:diametro non definito o illegale "
             GoTo Prematuro1
         ElseIf Franco.SovrAlt < Zero Then
             GoTo Prematuro1
@@ -739,7 +739,7 @@ Module Infila
                 Franco.CC = Franco.recB1.Cd
                 Franco.Lun = Franco.recB1.Lungh
                 Riga1 = Riga & "Tubo: " & Franco.recB1.Sigla
-                MainForm.StatusBar1.Panels(0).Text = Riga1
+                MainForm.StatusBar1.Items(0).Text = Riga1
                 Franco.Raggio = Franco.Lun / SDue
                 Franco.Hmax = Zero : Franco.recB2.SiglaMin = Nul
                 If GoTopB2(False) Then
@@ -773,7 +773,7 @@ Module Infila
                                     'Distanza in pianta del centro di Utub dall'asse y di rif.
                                     Franco.HCalc = Altezza()
                                     If Franco.HCalc > 0 Or Franco.recB2.SiglaMin = Nul Then
-                                        MainForm.StatusBar1.Panels(0).Text = Riga1 & " sovrapposto a tubo: " & Str(CDbl(Franco.recB2.Sigla)) & " sovralt.: " & GlobalRoutines.myStr(CSng(Franco.HCalc + 0.4999), 4, 0, 0)
+                                        MainForm.StatusBar1.Items(0).Text = Riga1 & " sovrapposto a tubo: " & Str(CDbl(Franco.recB2.Sigla)) & " sovralt.: " & GlobalRoutines.myStr(CSng(Franco.HCalc + 0.4999), 4, 0, 0)
                                         '  Print USING; "####"; Franco.HCalc + 0.4999
                                         '   era già    PRINT SPACE$(LEN(Riga));
                                     End If
@@ -801,7 +801,7 @@ Module Infila
             Franco.iChiu = CShort(GoTopB2(True)) 'GO TOP
 
             '        LOCATE 1, 1: PRINT "Trascrivo dati calcolati nel file "; File; ExtRES
-            MainForm.StatusBar1.Panels(0).Text = "   Altezza diritta minima:" & Str(Franco.AltMin)
+            MainForm.StatusBar1.Items(0).Text = "   Altezza diritta minima:" & Str(Franco.AltMin)
             '            MainForm.StatusBar1.CtlRefresh()
             '   LOCATE 1, 1: Print Space$(79)
             '  LOCATE 2, 1: Print Space$(79)
@@ -834,7 +834,7 @@ Module Infila
             Do
                 Franco.recB2 = CType(Franco.Manici.nRB2.ItemAt(Franco.iRecB2), typrecB2) ' CType(cosa, typrecB2)
                 If Int(CShort(Franco.iRecB2) \ Dieci) * Dieci = CShort(Franco.iRecB2) Then
-                    MainForm.StatusBar1.Panels(0).Text = "Registro risultati.   Tubo: " & Str(Franco.iRecB2)
+                    MainForm.StatusBar1.Items(0).Text = "Registro risultati.   Tubo: " & Str(Franco.iRecB2)
                     'MainForm.StatusBar1.CtlRefresh()
                 End If
                 Franco.Raggio1 = CShort(Franco.recB2.Raggio)
@@ -870,7 +870,7 @@ Module Infila
             '  LOCATE 2, 1: Print ". Trovati"; NumErr; "errori di sequenza"
         End If
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
-        MainForm.StatusBar1.Panels(0).Text = ""
+        MainForm.StatusBar1.Items(0).Text = ""
         ' MainForm.StatusBar1.Style = MSComctlLib.SbarStyleConstants.sbrNormal
         Exit Sub
 Prematuro1:

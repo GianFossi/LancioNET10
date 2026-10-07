@@ -81,9 +81,9 @@ Friend Class Apert
     Friend WithEvents Command3D1 As System.Windows.Forms.Button
     Friend WithEvents Command3D2 As System.Windows.Forms.Button
     Friend WithEvents Comannd3D4 As System.Windows.Forms.Button
-    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusBar
-    Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
+    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusBarPanel1 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel2 As Global.LancioMigration.LegacyStatusLabel
     Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
     Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
@@ -160,9 +160,9 @@ Friend Class Apert
         Me.Command3D1 = New System.Windows.Forms.Button
         Me.Command3D2 = New System.Windows.Forms.Button
         Me.Comannd3D4 = New System.Windows.Forms.Button
-        Me.StatusBar1 = New System.Windows.Forms.StatusBar
-        Me.StatusBarPanel1 = New System.Windows.Forms.StatusBarPanel
-        Me.StatusBarPanel2 = New System.Windows.Forms.StatusBarPanel
+        Me.StatusBar1 = New System.Windows.Forms.StatusStrip
+        Me.StatusBarPanel1 = New Global.LancioMigration.LegacyStatusLabel
+        Me.StatusBarPanel2 = New Global.LancioMigration.LegacyStatusLabel
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
         Me.Frame1.SuspendLayout()
         CType(Me.Grid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -795,15 +795,14 @@ Friend Class Apert
         '
         Me.StatusBar1.Location = New System.Drawing.Point(0, 288)
         Me.StatusBar1.Name = "StatusBar1"
-        Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2})
-        Me.StatusBar1.ShowPanels = True
+        Me.StatusBar1.Items.AddRange(New Global.LancioMigration.LegacyStatusLabel() {Me.StatusBarPanel1, Me.StatusBarPanel2})
         Me.StatusBar1.Size = New System.Drawing.Size(580, 24)
         Me.StatusBar1.TabIndex = 47
         Me.StatusBar1.Text = "StatusBar1"
         '
         'StatusBarPanel1
         '
-        Me.StatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.StatusBarPanel1.Spring = True
         Me.StatusBarPanel1.Text = "StatusBarPanel1"
         Me.StatusBarPanel1.Width = 464
         '
@@ -1742,9 +1741,9 @@ Friend Class Apert
             Testo = "nessuno"
             Testo1 = "nessuno"
         End If
-        StatusBar1.Panels(0).Text = "File di lavoro: " & File
+        StatusBar1.Items(0).Text = "File di lavoro: " & File
         Testo1 = " Item = " & Testo1
-        StatusBar1.Panels(1).Text = Testo1
+        StatusBar1.Items(1).Text = Testo1
         Cliente.Text = job.Comm.Clie '"" '13-5-99
         Oggetto.Text = job.Comm.Oggetto '13-5-99
         Denomin.Text = DataSheet.DatiSh0.DenomItem '13-5-99

@@ -1262,7 +1262,7 @@ Friend Class frmApert
     End Property
     Public Sub Aggiorna()
         Dim Testo As String
-        StatusBar1.Panels(0).Text = "Area di lavoro: " & RTrim(Monitor.Motore.Inizio.Datidir)
+        StatusBar1.Items(0).Text = "Area di lavoro: " & RTrim(Monitor.Motore.Inizio.Datidir)
         If nomefile Is Nothing Then
             Testo = "nessuno"
         ElseIf nomefile = "" Then
@@ -1271,9 +1271,9 @@ Friend Class frmApert
             Testo = IO.Path.GetFileName(nomefile)
         End If
         Testo = " File corrente = " & Testo
-        StatusBar1.Panels(1).Text = Testo
+        StatusBar1.Items(1).Text = Testo
         Testo = " Item = " & objBre.Item
-        StatusBar1.Panels(2).Text = Testo
+        StatusBar1.Items(2).Text = Testo
         With objBre
             optTipo(.TipoBL).Checked = True
             optDiff(.Ipres).Checked = True
@@ -2832,7 +2832,7 @@ Friend Class frmApert
         End With
     End Sub
 
-    Private Sub StatusBar1_PanelClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.StatusBarPanelClickEventArgs)
+    Private Sub StatusBar1_PanelClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs)
 
     End Sub
     Private ReadOnly Property optPasso(ByVal i As Integer) As RadioButton

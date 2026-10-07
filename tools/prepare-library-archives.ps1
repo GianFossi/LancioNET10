@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'
 $repo = Split-Path $PSScriptRoot -Parent
 $destinationRoot = [System.IO.Path]::GetFullPath($ArchiveDirectory)
 $plan = @{}
-foreach ($module in @('LibMat', 'Grafic2', 'RoutBase', 'Traccia')) {
+foreach ($module in @('LibMat', 'Grafic2', 'RoutBase', 'Traccia', 'Wrcb')) {
     $sourceRoot = Join-Path $repo "src\$module\Arch"
     if (-not (Test-Path -LiteralPath $sourceRoot -PathType Container)) { throw "Missing source archive: $sourceRoot" }
     foreach ($file in Get-ChildItem -LiteralPath $sourceRoot -File -Recurse) {
@@ -19,7 +19,7 @@ foreach ($module in @('LibMat', 'Grafic2', 'RoutBase', 'Traccia')) {
         }
     }
 }
-foreach ($required in @('Flange.mdb', 'tabelle.mdb', 'Mat200400.mdb', 'STRI04.DAT')) {
+foreach ($required in @('Flange.mdb', 'tabelle.mdb', 'Mat200400.mdb', 'STRI04.DAT', 'WR\WRCBDATA.DAT')) {
     if (-not $plan.ContainsKey($required)) { throw "Missing required archive: $required" }
 }
 # Check every existing target before copying anything. Never replace user data.
@@ -44,4 +44,4 @@ foreach ($relative in $plan.Keys) {
 }
 Write-Host "Verified $($plan.Count) library archive files; copied $copied."
 Write-Host "Archive directory: $destinationRoot"
-Write-Host 'LibMat/Grafic2/RoutBase/Traccia archives prepared. Other modules, Office and database runtime access require separate verification.'
+Write-Host 'LibMat/Grafic2/RoutBase/Traccia/Wrcb archives prepared. Other modules, Office and database runtime access require separate verification.'

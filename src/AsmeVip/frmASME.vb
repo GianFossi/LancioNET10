@@ -90,10 +90,10 @@ Friend Class Apert
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents TreeView1 As System.Windows.Forms.TreeView
-    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusBar
-    Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel3 As System.Windows.Forms.StatusBarPanel
+    Friend WithEvents StatusBar1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusBarPanel1 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel2 As Global.LancioMigration.LegacyStatusLabel
+    Friend WithEvents StatusBarPanel3 As Global.LancioMigration.LegacyStatusLabel
     Friend WithEvents CommonDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents CommonDialog2 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
@@ -177,10 +177,10 @@ Friend Class Apert
         Me.mnu = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuComment = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuWordIn = New System.Windows.Forms.ToolStripMenuItem
-        Me.StatusBar1 = New System.Windows.Forms.StatusBar
-        Me.StatusBarPanel1 = New System.Windows.Forms.StatusBarPanel
-        Me.StatusBarPanel2 = New System.Windows.Forms.StatusBarPanel
-        Me.StatusBarPanel3 = New System.Windows.Forms.StatusBarPanel
+        Me.StatusBar1 = New System.Windows.Forms.StatusStrip
+        Me.StatusBarPanel1 = New Global.LancioMigration.LegacyStatusLabel
+        Me.StatusBarPanel2 = New Global.LancioMigration.LegacyStatusLabel
+        Me.StatusBarPanel3 = New Global.LancioMigration.LegacyStatusLabel
         Me.CommonDialog1 = New System.Windows.Forms.OpenFileDialog
         Me.CommonDialog2 = New System.Windows.Forms.SaveFileDialog
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
@@ -695,29 +695,28 @@ Friend Class Apert
         '
         Me.StatusBar1.Location = New System.Drawing.Point(0, 467)
         Me.StatusBar1.Name = "StatusBar1"
-        Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
-        Me.StatusBar1.ShowPanels = True
+        Me.StatusBar1.Items.AddRange(New Global.LancioMigration.LegacyStatusLabel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
         Me.StatusBar1.Size = New System.Drawing.Size(754, 16)
         Me.StatusBar1.TabIndex = 19
         '
         'StatusBarPanel1
         '
-        Me.StatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
-        Me.StatusBarPanel1.MinWidth = 500
+        Me.StatusBarPanel1.AutoSize = True
+        Me.StatusBarPanel1.MinimumWidth = 500
         Me.StatusBarPanel1.Text = "Area di lavoro:"
         Me.StatusBarPanel1.Width = 500
         '
         'StatusBarPanel2
         '
-        Me.StatusBarPanel2.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
-        Me.StatusBarPanel2.MinWidth = 120
+        Me.StatusBarPanel2.AutoSize = True
+        Me.StatusBarPanel2.MinimumWidth = 120
         Me.StatusBarPanel2.Text = "Prev:"
         Me.StatusBarPanel2.Width = 120
         '
         'StatusBarPanel3
         '
-        Me.StatusBarPanel3.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.StatusBarPanel3.MinWidth = 120
+        Me.StatusBarPanel3.Spring = True
+        Me.StatusBarPanel3.MinimumWidth = 120
         Me.StatusBarPanel3.Text = "Item:"
         Me.StatusBarPanel3.Width = 120
         '
