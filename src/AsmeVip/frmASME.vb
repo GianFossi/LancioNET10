@@ -3038,7 +3038,6 @@ Cont:       Next
         Try
             If OptWordIn Then
                 Testo = "Si"
-                wordPanel.EnsureStarted()
                 Dim templatePath = IO.Path.Combine(Monitor.Motore.Inizio.Archdir, "mioTemplate.dot")
                 If IO.File.Exists(templatePath) Then
                     wordPanel.SetTemplate(templatePath)
@@ -3051,7 +3050,6 @@ Cont:       Next
             Else
                 Testo = "No"
                 TabRapporto.SelectedIndex = 0
-                wordPanel.ShowWord()
                 TabRapporto.Enabled = False
             End If
         Catch ex As Exception

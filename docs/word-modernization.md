@@ -41,6 +41,9 @@ sconosciuto ora usano WordReportPanel e i suoi metodi espliciti. La voce menu
 descrive l'apertura dei rapporti in Microsoft Word, non un editor inglobato.
 La vecchia chiave INI WordEmbedded è conservata per leggere le preferenze
 esistenti, ma nella copia migrata seleziona il pannello con Word esterno.
+La selezione del pannello non avvia più Word durante il caricamento di AsmeVip:
+l'istanza COM viene creata soltanto alla prima apertura o creazione effettiva
+di un rapporto. Anche la disattivazione del pannello non avvia Word.
 
 Il percorso attivo del pannello in SuperStampa apre/crea tramite la nuova
 sessione e passa i documenti/applicazione nativi al vecchio StubW2000 con cast
