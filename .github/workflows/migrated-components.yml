@@ -13,6 +13,9 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Restore migrated components
         run: dotnet restore LancioNET10.slnx
       - name: Build migrated components
@@ -23,3 +26,11 @@ jobs:
         run: dotnet run --project tests/Access.Smoke -c Release --no-build
       - name: Verify Word session lifecycle using fake backend
         run: dotnet run --project tests/Word.Smoke -c Release --no-build
+      - name: Verify fixed records and isolated legacy serialization
+        run: dotnet run --project tests/LegacyRuntime.Smoke -c Release --no-build
+      - name: Verify WinForms control collections and form construction
+        run: dotnet run --project tests/WinForms.Smoke -c Release --no-build
+      - name: Verify direct legacy calculation harness on Windows
+        run: dotnet run --project tools/LegacyCalculation.Debug -c Debug
+      - name: Characterize original ASME cylinder routines
+        run: dotnet run --project tools/AsmeCalculation.Debug -c Release --no-build -- --check

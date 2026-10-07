@@ -2,6 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "ASME cylinder thickness and pressure (original VB)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build ASME cylinder debugger",
+      "program": "${workspaceFolder}/tools/AsmeCalculation.Debug/bin/Debug/net10.0/AsmeCalculation.Debug.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": true,
+      "justMyCode": false
+    },
+    {
       "name": "FormulaParser checks (VB)",
       "type": "coreclr",
       "request": "launch",
@@ -10,6 +22,18 @@
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "Legacy interpolation step by step (VB, Windows)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build legacy calculation debugger",
+      "program": "${workspaceFolder}/tools/LegacyCalculation.Debug/bin/Debug/net10.0-windows/LegacyCalculation.Debug.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": true,
+      "justMyCode": false
     }
   ]
 }

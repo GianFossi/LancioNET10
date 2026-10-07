@@ -53,6 +53,36 @@
       },
       "problemMatcher": "$msCompile",
       "group": "build"
+    },
+    {
+      "label": "build legacy calculation debugger",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "tools/LegacyCalculation.Debug/LegacyCalculation.Debug.vbproj",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build ASME cylinder debugger",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "tools/AsmeCalculation.Debug/AsmeCalculation.Debug.vbproj",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
     }
   ]
 }

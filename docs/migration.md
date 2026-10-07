@@ -1,3 +1,16 @@
+## Obiettivo aggiornato: riferimento VB e nuovo core F#
+
+Il legacy serve ora a osservare formule e algoritmi nel debugger; il nuovo
+prodotto avrà core F# e UI C#/WPF/MVVM separati. È disponibile un harness VB
+per entrare direttamente in InterLogar e un banco ASME headless eseguito nel
+cloud: 21 controlli su pressione/spessore dei cilindri, senza modificare le formule. Vedere
+[debug e nuovo core](engineering-debug-and-new-core.md).
+
+RoutBase1 e RoutBase3 ora compilano; la soluzione dei componenti verificati
+include entrambi e supera 86 controlli nel cloud. La build completa resta
+bloccata in altri cinque progetti, con 64 errori. Vedere
+[control array e verifiche](routbase-winforms-migration.md).
+
 ## Aggiornamento RoutBase ADO.NET
 
 Applicata la migrazione ADODB/ADOX a RoutBase1 e RoutBase3 e rimossa la dichiarazione

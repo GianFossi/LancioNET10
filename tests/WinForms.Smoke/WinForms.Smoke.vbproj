@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>WinFormsSmoke</RootNamespace>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/RoutBase/IndexedControls.vb" Link="IndexedControls.vb" />
+    <ProjectReference Include="../../src/RoutBase/RoutBase1.vbproj" />
+  </ItemGroup>
+</Project>
