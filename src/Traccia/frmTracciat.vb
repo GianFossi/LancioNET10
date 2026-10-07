@@ -246,9 +246,6 @@ Friend Class frmTracciat
         Me.Frame = New System.Windows.Forms.GroupBox
         Me.panRisult.SuspendLayout()
         Me.Frame1.SuspendLayout()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panStrumenti.SuspendLayout()
         Me.Frame.SuspendLayout()
         Me.SuspendLayout()
@@ -794,9 +791,6 @@ Friend Class frmTracciat
         Me.Text = "TRACCIA"
         Me.panRisult.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panStrumenti.ResumeLayout(False)
         Me.Frame.ResumeLayout(False)
         Me.ResumeLayout(False)

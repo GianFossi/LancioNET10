@@ -164,8 +164,6 @@ Friend Class Apert
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
         Me.Frame1.SuspendLayout()
         CType(Me.Grid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmbClasse
@@ -858,8 +856,6 @@ Friend Class Apert
         Me.Text = "IST - Configurazione apparecchio S&T"
         Me.Frame1.ResumeLayout(False)
         CType(Me.Grid1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

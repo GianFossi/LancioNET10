@@ -22,6 +22,12 @@ Module Program
             status.Items(1).Text = "Prev.: smoke"
             If status.Items(1).Text <> "Prev.: smoke" Then Throw New Exception("WRCB status text update failed")
         End Using
+        Dim traceType = System.Reflection.Assembly.Load("traccia").GetType("traccia.frmTracciat", throwOnError:=True)
+        Using form = DirectCast(Activator.CreateInstance(traceType, nonPublic:=True), Form)
+            Dim status = DirectCast(traceType.GetField("StatusBar1", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic Or Reflection.BindingFlags.Public).GetValue(form), StatusStrip)
+            If status.Items.Count <> 3 Then Throw New Exception("Traccia status panels missing")
+            If Not form.Controls.Contains(status) Then Throw New Exception("Traccia status strip not attached")
+        End Using
         Console.WriteLine("Main and ASME menu construction checks passed (forms not shown, calculations not executed).")
     End Sub
 End Module

@@ -151,9 +151,6 @@ Friend Class Apert
         Me._Frames_2.SuspendLayout()
         Me._Frames_1.SuspendLayout()
         Me._Frames_0.SuspendLayout()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_Frames_2
@@ -577,9 +574,6 @@ Friend Class Apert
         Me._Frames_2.ResumeLayout(False)
         Me._Frames_1.ResumeLayout(False)
         Me._Frames_0.ResumeLayout(False)
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
