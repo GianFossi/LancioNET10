@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>AsmeCalculationDebug</RootNamespace>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <PythonCommand Condition="'$(PythonCommand)' == ''">python</PythonCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(IntermediateOutputPath)LegacyAsmeSlice.g.vb" />
+  </ItemGroup>
+  <Target Name="ExtractOriginalAsmeRoutines" BeforeTargets="CoreCompile"
+          Inputs="$(MSBuildThisFileDirectory)../extract_asme_debug_slice.py;$(MSBuildThisFileDirectory)../../legacy/AsmeVip.NET/Calcoli.vb"
+          Outputs="$(IntermediateOutputPath)LegacyAsmeSlice.g.vb">
+    <Exec Command="&quot;$(PythonCommand)&quot; &quot;$(MSBuildThisFileDirectory)../extract_asme_debug_slice.py&quot; --output &quot;$(IntermediateOutputPath)LegacyAsmeSlice.g.vb&quot;" />
+  </Target>
+</Project>
