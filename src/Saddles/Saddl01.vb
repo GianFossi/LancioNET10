@@ -5428,9 +5428,9 @@ ErrFS:
         Dim j As Short
         Dim drv As DataRowView
         Dim dv As DataView
-        Dim Griglia As DataGrid
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
+        Dim Griglia As DataGridView
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
         tbListaBocchelli = New DataTable("ListaBocchelli")
         Try
             tbListaBocchelli.Columns.Add("Bocchello", GetType(String))
@@ -5445,28 +5445,27 @@ ErrFS:
                 drv.EndEdit()
             Next
             Griglia = frmSaddles.DefInstance.dgListaBocchelli
-            Griglia.TableStyles.Clear()
-            t = New DataGridTableStyle
-            t.RowHeadersVisible = True
-            t.ColumnHeadersVisible = True
-            t.MappingName = tbListaBocchelli.TableName
-            c = New DataGridTextBoxColumn
-            c.Width = Griglia.Width - 6 - 60 - 60 - Griglia.RowHeaderWidth
-            c.MappingName = "Bocchello"
-            AddHandler c.TextBox.TextChanged, AddressOf dgTextChanged
-            t.GridColumnStyles.Add(c)
-            c = New DataGridTextBoxColumn
+            Griglia.Columns.Clear()
+            t = New System.Collections.Generic.List(Of DataGridViewColumn)
+            Griglia.ColumnHeadersVisible = True
+            c = New DataGridViewTextBoxColumn
+            c.Width = Griglia.Width - 6 - 60 - 60 - Griglia.RowHeadersWidth
+            c.DataPropertyName = "Bocchello"
+            ' Editing text events are attached to the grid editor below.
+            t.Add(c)
+            c = New DataGridViewTextBoxColumn
             c.Width = 60
             c.HeaderText = "CG-x [mm]"
-            c.MappingName = "Posx"
-            t.GridColumnStyles.Add(c)
-            c = New DataGridTextBoxColumn
+            c.DataPropertyName = "Posx"
+            t.Add(c)
+            c = New DataGridViewTextBoxColumn
             c.Width = 60
             c.HeaderText = "CG-z [mm]"
-            c.MappingName = "Posz"
-            t.GridColumnStyles.Add(c)
-            Griglia.TableStyles.Add(t)
-            Griglia.SetDataBinding(dv, "")
+            c.DataPropertyName = "Posz"
+            t.Add(c)
+            Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+            Griglia.DataSource = dv
             Griglia.Name = "miaGriglia"
             With frmSaddles.DefInstance
                 .PagListaBocchelli.Controls.Add(Griglia)
@@ -5488,9 +5487,9 @@ ErrFS:
         Dim j As Short
         Dim drv As DataRowView
         Dim dv As DataView
-        Dim Griglia As DataGrid
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
+        Dim Griglia As DataGridView
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
         tbListaBocchelliT = New DataTable("ListaBocchelli")
         Try
             tbListaBocchelliT.Columns.Add("Bocchello", GetType(String))
@@ -5505,28 +5504,27 @@ ErrFS:
                 drv.EndEdit()
             Next
             Griglia = frmSaddles.DefInstance.dgListaBocchelliT
-            Griglia.TableStyles.Clear()
-            t = New DataGridTableStyle
-            t.RowHeadersVisible = True
-            t.ColumnHeadersVisible = True
-            t.MappingName = tbListaBocchelliT.TableName
-            c = New DataGridTextBoxColumn
-            c.Width = Griglia.Width - 6 - 60 - 60 - Griglia.RowHeaderWidth
-            c.MappingName = "Bocchello"
-            AddHandler c.TextBox.TextChanged, AddressOf dgTextChangedT
-            t.GridColumnStyles.Add(c)
-            c = New DataGridTextBoxColumn
+            Griglia.Columns.Clear()
+            t = New System.Collections.Generic.List(Of DataGridViewColumn)
+            Griglia.ColumnHeadersVisible = True
+            c = New DataGridViewTextBoxColumn
+            c.Width = Griglia.Width - 6 - 60 - 60 - Griglia.RowHeadersWidth
+            c.DataPropertyName = "Bocchello"
+            ' Editing text events are attached to the grid editor below.
+            t.Add(c)
+            c = New DataGridViewTextBoxColumn
             c.Width = 60
             c.HeaderText = "CG-x [mm]"
-            c.MappingName = "Posx"
-            t.GridColumnStyles.Add(c)
-            c = New DataGridTextBoxColumn
+            c.DataPropertyName = "Posx"
+            t.Add(c)
+            c = New DataGridViewTextBoxColumn
             c.Width = 60
             c.HeaderText = "CG-z [mm]"
-            c.MappingName = "Posz"
-            t.GridColumnStyles.Add(c)
-            Griglia.TableStyles.Add(t)
-            Griglia.SetDataBinding(dv, "")
+            c.DataPropertyName = "Posz"
+            t.Add(c)
+            Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+            Griglia.DataSource = dv
             Griglia.Name = "miaGrigliaT"
             With frmSaddles.DefInstance
                 .PagListaBocchelliT.Controls.Add(Griglia)
@@ -5712,8 +5710,8 @@ ErrFS:
         End With
     End Sub
     Public Sub CarDaSopraTextChanged(ByVal s As Object, ByVal e As EventArgs)
-        Dim Griglia As DataGrid = frmSaddles.DefInstance.dgCarSopra
-        Dim RigaLista As Integer = Griglia.CurrentRowIndex + 1
+        Dim Griglia As DataGridView = frmSaddles.DefInstance.dgCarSopra
+        Dim RigaLista As Integer = If(Griglia.CurrentRow Is Nothing, -1, Griglia.CurrentRow.Index) + 1
         If RigaLista < NumCondElemIniz Then
             Problem.NumCondElem += CShort(1)
         Else
@@ -5722,8 +5720,8 @@ ErrFS:
         End If
     End Sub
     Public Sub CarFondTextChanged(ByVal s As Object, ByVal e As EventArgs)
-        Dim Griglia As DataGrid = frmSaddles.DefInstance.dgCarFond
-        Dim RigaLista As Integer = Griglia.CurrentRowIndex + 1
+        Dim Griglia As DataGridView = frmSaddles.DefInstance.dgCarFond
+        Dim RigaLista As Integer = If(Griglia.CurrentRow Is Nothing, -1, Griglia.CurrentRow.Index) + 1
         If RigaLista < NumCondElemIniz Then
             Problem.NumCondElem += CShort(1)
         Else
@@ -5732,8 +5730,8 @@ ErrFS:
         End If
     End Sub
     Public Sub CarFondTTextChanged(ByVal s As Object, ByVal e As EventArgs)
-        Dim Griglia As DataGrid = frmSaddles.DefInstance.dgCarFondT
-        Dim RigaLista As Integer = Griglia.CurrentRowIndex + 1
+        Dim Griglia As DataGridView = frmSaddles.DefInstance.dgCarFondT
+        Dim RigaLista As Integer = If(Griglia.CurrentRow Is Nothing, -1, Griglia.CurrentRow.Index) + 1
         If RigaLista < NumCondElemIniz Then
             Problem.NumCondElem += CShort(1)
         Else
@@ -5742,12 +5740,13 @@ ErrFS:
         End If
     End Sub
     Public Sub dgTextChanged(ByVal s As Object, ByVal e As EventArgs)
-        Dim Griglia As DataGrid = frmSaddles.DefInstance.dgListaBocchelli
-        If Griglia.CurrentCell.ColumnNumber = 1 Then Exit Sub
-        Dim t As TextBox = CType(Griglia.TableStyles(0).GridColumnStyles(0), DataGridTextBoxColumn).TextBox
+        Dim Griglia As DataGridView = frmSaddles.DefInstance.dgListaBocchelli
+        If Griglia.CurrentCell Is Nothing OrElse Griglia.CurrentCell.ColumnIndex <> 0 Then Exit Sub
+        Dim t As TextBox = TryCast(Griglia.EditingControl, TextBox)
+        If t Is Nothing Then Exit Sub
         Dim ss As String = t.Text
         If ss = "(null)" Then Exit Sub
-        RigaLista = CShort(Griglia.CurrentRowIndex + 1)
+        RigaLista = CShort(If(Griglia.CurrentRow Is Nothing, -1, Griglia.CurrentRow.Index) + 1)
         Dim i As Integer = ss.ToUpper.IndexOf("NOZZLES")
         If i > -1 Then
             ss = ss.Substring(i + 7).Trim
@@ -5762,12 +5761,13 @@ ErrFS:
         End If
     End Sub
     Public Sub dgTextChangedT(ByVal s As Object, ByVal e As EventArgs)
-        Dim Griglia As DataGrid = frmSaddles.DefInstance.dgListaBocchelliT
-        If Griglia.CurrentCell.ColumnNumber = 1 Then Exit Sub
-        Dim t As TextBox = CType(Griglia.TableStyles(0).GridColumnStyles(0), DataGridTextBoxColumn).TextBox
+        Dim Griglia As DataGridView = frmSaddles.DefInstance.dgListaBocchelliT
+        If Griglia.CurrentCell Is Nothing OrElse Griglia.CurrentCell.ColumnIndex <> 0 Then Exit Sub
+        Dim t As TextBox = TryCast(Griglia.EditingControl, TextBox)
+        If t Is Nothing Then Exit Sub
         Dim ss As String = t.Text
         If ss = "(null)" Then Exit Sub
-        RigaLista = CShort(Griglia.CurrentRowIndex + 1)
+        RigaLista = CShort(If(Griglia.CurrentRow Is Nothing, -1, Griglia.CurrentRow.Index) + 1)
         Dim i As Integer = ss.ToUpper.IndexOf("NOZZLES")
         If i > -1 Then
             ss = ss.Substring(i + 7).Trim
@@ -5834,36 +5834,35 @@ ErrFS:
     Friend Sub InitTables1(ByVal p As Integer)
         Dim k As Short
         Dim dv As DataView
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
-        Dim Griglia As DataGrid
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
+        Dim Griglia As DataGridView
         Dim r As Rectangle
         Try
             dv = InitTabellaNozzle(p)
-            Griglia = New DataGrid
+            Griglia = New LoadGridView
             Griglia.Size = dgSize ' New Size(544, 312) ' frmSaddles.DefInstance.dgCarBocch1.Size
             Griglia.Location = dgLocation ' New Point(8, 8) 'frmSaddles.DefInstance.dgCarBocch1.Location
             frmSaddles.DefInstance.TabBocchDown.TabPages(p).Controls.Add(Griglia)
-            Griglia.CaptionVisible = False
-            t = New DataGridTableStyle
-            t.MappingName = CType(CarBocch(p - 1), DataTable).TableName
-            c = New DataGridTextBoxColumn
+            t = New System.Collections.Generic.List(Of DataGridViewColumn)
+            c = New DataGridViewTextBoxColumn
             c.Width = 140
-            c.MappingName = "Condizione"
-            c.HeaderText = c.MappingName
-            t.GridColumnStyles.Add(c)
+            c.DataPropertyName = "Condizione"
+            c.HeaderText = c.DataPropertyName
+            t.Add(c)
             For k = 1 To 6
-                c = New DataGridTextBoxColumn
+                c = New DataGridViewTextBoxColumn
                 c.Width = 60
-                c.MappingName = Titoli(k)
-                c.HeaderText = c.MappingName
-                t.GridColumnStyles.Add(c)
+                c.DataPropertyName = Titoli(k)
+                c.HeaderText = c.DataPropertyName
+                t.Add(c)
             Next
-            Griglia.TableStyles.Add(t)
-            Griglia.SetDataBinding(dv, "")
+            Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+            Griglia.DataSource = dv
             If p = 1 Then
-                r = Griglia.GetCellBounds(SaddlesItem.NumCondBocch - 1, 6)
-                Griglia.Width = r.Left + r.Width + Griglia.RowHeaderWidth + 6
+                r = Griglia.GetCellDisplayRectangle(6, SaddlesItem.NumCondBocch - 1, False)
+                Griglia.Width = r.Left + r.Width + Griglia.RowHeadersWidth + 6
             End If
         Catch e As Exception
             MsgBox(e.Message + vbCrLf + e.StackTrace)
@@ -5872,61 +5871,60 @@ ErrFS:
     Friend Sub RinfrescaTabelleNozzles()
         Dim i As Short
         Dim dv As DataView
-        Dim Griglia As DataGrid
+        Dim Griglia As DataGridView
         If CarBocch.Count = 0 Then Exit Sub
         CarBocch.Clear()
         For i = 1 To SaddlesItem.NumBocch
             dv = InitTabellaNozzle(i)
-            Griglia = CType(frmSaddles.DefInstance.TabBocchDown.TabPages(i).Controls(0), DataGrid)
-            Griglia.SetDataBinding(dv, "")
+            Griglia = CType(frmSaddles.DefInstance.TabBocchDown.TabPages(i).Controls(0), DataGridView)
+            Griglia.DataSource = dv
         Next
     End Sub
     Friend Sub RinfrescaTabelleNozzlesT()
         Dim i As Short
         Dim dv As DataView
-        Dim Griglia As DataGrid
+        Dim Griglia As DataGridView
         If CarBocchT.Count = 0 Then Exit Sub
         CarBocchT.Clear()
         For i = 1 To SaddlesItem.NumBocch
             dv = InitTabellaNozzleT(i)
-            Griglia = CType(frmSaddles.DefInstance.TabBocchUp.TabPages(i).Controls(0), DataGrid)
-            Griglia.SetDataBinding(dv, "")
+            Griglia = CType(frmSaddles.DefInstance.TabBocchUp.TabPages(i).Controls(0), DataGridView)
+            Griglia.DataSource = dv
         Next
     End Sub
     Friend Sub InitTables1T(ByVal p As Integer)
         Dim k As Short
         Dim dv As DataView
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
-        Dim Griglia As DataGrid
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
+        Dim Griglia As DataGridView
         Dim r As Rectangle
         Dim Titoli As String() = {"", "Fx [N]", "Fy [N]", "Fz [N]", "Mx [Nm]", "My [Nm]", "Mz [Nm]"}
         Try
             dv = InitTabellaNozzleT(p)
-            Griglia = New DataGrid
+            Griglia = New LoadGridView
             Griglia.Size = dgSize ' New Size(544, 312) ' frmSaddles.DefInstance.dgCarBocch1.Size
             Griglia.Location = dgLocation ' New Point(8, 8) 'frmSaddles.DefInstance.dgCarBocch1.Location
             frmSaddles.DefInstance.TabBocchUp.TabPages(p).Controls.Add(Griglia)
-            Griglia.CaptionVisible = False
-            t = New DataGridTableStyle
-            t.MappingName = CType(CarBocchT(p - 1), DataTable).TableName
-            c = New DataGridTextBoxColumn
+            t = New System.Collections.Generic.List(Of DataGridViewColumn)
+            c = New DataGridViewTextBoxColumn
             c.Width = 140
-            c.MappingName = "Condizione"
-            c.HeaderText = c.MappingName
-            t.GridColumnStyles.Add(c)
+            c.DataPropertyName = "Condizione"
+            c.HeaderText = c.DataPropertyName
+            t.Add(c)
             For k = 1 To 6
-                c = New DataGridTextBoxColumn
+                c = New DataGridViewTextBoxColumn
                 c.Width = 60
-                c.MappingName = Titoli(k)
-                c.HeaderText = c.MappingName
-                t.GridColumnStyles.Add(c)
+                c.DataPropertyName = Titoli(k)
+                c.HeaderText = c.DataPropertyName
+                t.Add(c)
             Next
-            Griglia.TableStyles.Add(t)
-            Griglia.SetDataBinding(dv, "")
+            Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+            Griglia.DataSource = dv
             If p = 1 Then
-                r = Griglia.GetCellBounds(SaddlesItemT.NumCondBocchT - 1, 6)
-                Griglia.Width = r.Left + r.Width + Griglia.RowHeaderWidth + 6
+                r = Griglia.GetCellDisplayRectangle(6, SaddlesItemT.NumCondBocchT - 1, False)
+                Griglia.Width = r.Left + r.Width + Griglia.RowHeadersWidth + 6
             End If
         Catch e As Exception
             MsgBox(e.Message + vbCrLf + e.StackTrace)
@@ -5993,11 +5991,11 @@ ErrFS:
     Friend Sub InitTables()
         Dim drv As DataRowView
         Dim dv, dvd As DataView
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
         Dim r As Rectangle
         Dim tavola As DataTable
-        Dim Griglia, Grigliad As DataGrid
+        Dim Griglia, Grigliad As DataGridView
         Dim i, ii, j, k As Short
         LCshell = New DataTable("LCshell")
         LCsadd = New DataTable("LCsadd")
@@ -6041,22 +6039,22 @@ ErrFS:
                         .Columns.Add(ii.ToString, Type.GetType("System.Single"))
                     Next
                 End With
-                t = New DataGridTableStyle
-                t.MappingName = tavola.TableName
-                c = New DataGridTextBoxColumn
+                t = New System.Collections.Generic.List(Of DataGridViewColumn)
+                c = New DataGridViewTextBoxColumn
                 c.Width = 140
-                c.MappingName = "Combinazione"
-                c.HeaderText = c.MappingName
-                t.GridColumnStyles.Add(c)
+                c.DataPropertyName = "Combinazione"
+                c.HeaderText = c.DataPropertyName
+                t.Add(c)
                 For ii = 1 To Problem.NumCondElem
-                    c = New DataGridTextBoxColumn
+                    c = New DataGridViewTextBoxColumn
                     c.Width = 20
-                    c.MappingName = ii.ToString
-                    c.HeaderText = c.MappingName
-                    t.GridColumnStyles.Add(c)
+                    c.DataPropertyName = ii.ToString
+                    c.HeaderText = c.DataPropertyName
+                    t.Add(c)
                 Next
-                Griglia.TableStyles.Clear()
-                Griglia.TableStyles.Add(t)
+                Griglia.Columns.Clear()
+                Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
                 For j = 1 To Problem.NCond(i)
                     drv = dv.AddNew
                     drv(0) = Problem.LoadCond(i, j)
@@ -6065,27 +6063,27 @@ ErrFS:
                     Next
                     drv.EndEdit()
                 Next
-                Griglia.SetDataBinding(dv, "")
-                t = New DataGridTableStyle
-                t.MappingName = LCelem.TableName
-                t.RowHeadersVisible = False
-                t.BackColor = Color.Yellow
-                t.AlternatingBackColor = Color.Yellow
-                c = New DataGridTextBoxColumn
+                Griglia.DataSource = dv
+                t = New System.Collections.Generic.List(Of DataGridViewColumn)
+                Grigliad.DefaultCellStyle.BackColor = Color.Yellow
+                Grigliad.AlternatingRowsDefaultCellStyle.BackColor = Color.Yellow
+                c = New DataGridViewTextBoxColumn
                 c.Width = 20
-                c.MappingName = "Numero"
-                c.HeaderText = "" ' c.MappingName
-                t.GridColumnStyles.Add(c)
-                c = New DataGridTextBoxColumn
+                c.DataPropertyName = "Numero"
+                c.HeaderText = "" ' c.DataPropertyName
+                t.Add(c)
+                c = New DataGridViewTextBoxColumn
                 c.Width = 140
-                c.MappingName = "Descrizione"
-                c.HeaderText = c.MappingName
-                t.GridColumnStyles.Add(c)
-                Grigliad.TableStyles.Clear()
-                Grigliad.TableStyles.Add(t)
-                Grigliad.SetDataBinding(dvd, "")
-                r = Griglia.GetCellBounds(Problem.NCond(i), Problem.NumCondElem)
-                Griglia.Width = r.Left + r.Width + Griglia.RowHeaderWidth + 6
+                c.DataPropertyName = "Descrizione"
+                c.HeaderText = c.DataPropertyName
+                t.Add(c)
+                Grigliad.RowHeadersVisible = False
+                Grigliad.Columns.Clear()
+                Grigliad.AutoGenerateColumns = False
+            Grigliad.Columns.AddRange(t.ToArray())
+                Grigliad.DataSource = dvd
+                r = Griglia.GetCellDisplayRectangle(Problem.NumCondElem, Problem.NCond(i), False)
+                Griglia.Width = r.Left + r.Width + Griglia.RowHeadersWidth + 6
                 Grigliad.Left = Griglia.Left + Griglia.Width + 8
                 Grigliad.Width = Grigliad.Parent.Width - Grigliad.Left - 8
             Next

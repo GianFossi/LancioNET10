@@ -34,6 +34,7 @@
     <Compile Include="frmResultSaddles.vb" />
     <EmbeddedResource Include="frmResultSaddles.resx" />
     <Compile Include="frmSaddles.vb" />
+    <Compile Include="LoadGridView.vb" />
     <EmbeddedResource Include="frmSaddles.resX" />
     <EmbeddedResource Include="HelpTopics.resx" />
     <Compile Include="Monitor.vb" />

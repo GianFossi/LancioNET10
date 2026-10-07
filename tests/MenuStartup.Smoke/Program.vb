@@ -28,6 +28,24 @@ Module Program
             If status.Items.Count <> 3 Then Throw New Exception("Traccia status panels missing")
             If Not form.Controls.Contains(status) Then Throw New Exception("Traccia status strip not attached")
         End Using
+        Dim saddleType = System.Reflection.Assembly.Load("prgSaddles").GetType("Saddles.frmSaddles", throwOnError:=True)
+        Using form = DirectCast(Activator.CreateInstance(saddleType, Reflection.BindingFlags.Instance Or Reflection.BindingFlags.Public Or Reflection.BindingFlags.NonPublic,
+                                                        Nothing, New Object() {False}, Nothing), Form)
+            Dim grids = saddleType.GetFields(Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic).Where(Function(field) GetType(DataGridView).IsAssignableFrom(field.FieldType)).ToArray()
+            If grids.Length <> 13 Then Throw New Exception("Saddles input/result grids missing")
+            For Each field In grids
+                Dim grid = DirectCast(field.GetValue(form), DataGridView)
+                If grid Is Nothing OrElse grid.Parent Is Nothing Then Throw New Exception("Saddles grid not initialized: " & field.Name)
+            Next
+            Dim inputGrid = DirectCast(saddleType.GetField("dgElemMant", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic).GetValue(form), DataGridView)
+            inputGrid.BindingContext = New BindingContext()
+            Dim values As New System.Data.DataTable()
+            values.Columns.Add("Load", GetType(Double))
+            values.Rows.Add(12.5)
+            inputGrid.DataSource = values.DefaultView
+            inputGrid.CreateControl()
+            If inputGrid.Columns.Count <> 1 OrElse inputGrid.Columns(0).SortMode <> DataGridViewColumnSortMode.NotSortable Then Throw New Exception("Load row ordering changed")
+        End Using
         Console.WriteLine("Main and ASME menu construction checks passed (forms not shown, calculations not executed).")
     End Sub
 End Module

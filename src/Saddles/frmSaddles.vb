@@ -9,6 +9,9 @@ Friend Class frmSaddles
 	Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
 	Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
 		MyBase.New()
 		If m_vb6FormDefInstance Is Nothing Then
 			If m_InitializingDefInstance Then
@@ -26,7 +29,7 @@ Friend Class frmSaddles
         'Chiamata richiesta dalla progettazione Windows Form.
         Inizializzando = True
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
         Inizializzando = False
 	End Sub
 	'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
@@ -75,26 +78,26 @@ Friend Class frmSaddles
     Friend WithEvents PagCombMant As System.Windows.Forms.TabPage
     Friend WithEvents PagCombSelle As System.Windows.Forms.TabPage
     Friend WithEvents PagCombFonda As System.Windows.Forms.TabPage
-    Friend WithEvents dgCombMant As System.Windows.Forms.DataGrid
-    Friend WithEvents dgCombsadd As System.Windows.Forms.DataGrid
-    Friend WithEvents dgCombfond As System.Windows.Forms.DataGrid
-    Friend WithEvents dgElemMant As System.Windows.Forms.DataGrid
-    Friend WithEvents dgElemSadd As System.Windows.Forms.DataGrid
-    Friend WithEvents dgElemfond As System.Windows.Forms.DataGrid
+    Friend WithEvents dgCombMant As System.Windows.Forms.DataGridView
+    Friend WithEvents dgCombsadd As System.Windows.Forms.DataGridView
+    Friend WithEvents dgCombfond As System.Windows.Forms.DataGridView
+    Friend WithEvents dgElemMant As System.Windows.Forms.DataGridView
+    Friend WithEvents dgElemSadd As System.Windows.Forms.DataGridView
+    Friend WithEvents dgElemfond As System.Windows.Forms.DataGridView
     Friend WithEvents cmdRiprMant As System.Windows.Forms.Button
     Friend WithEvents cmdRiprSadd As System.Windows.Forms.Button
     Friend WithEvents cmdRiprFond As System.Windows.Forms.Button
     Friend WithEvents TabBocchDown As System.Windows.Forms.TabControl
     Friend WithEvents PagListaBocchelli As System.Windows.Forms.TabPage
     Friend WithEvents PagT1 As System.Windows.Forms.TabPage
-    Friend WithEvents dgListaBocchelli As System.Windows.Forms.DataGrid
-    Friend WithEvents dgCarBocch1 As System.Windows.Forms.DataGrid
+    Friend WithEvents dgListaBocchelli As System.Windows.Forms.DataGridView
+    Friend WithEvents dgCarBocch1 As System.Windows.Forms.DataGridView
     Friend WithEvents TabCarFondDown As System.Windows.Forms.TabControl
     Friend WithEvents PagRisultBocchelli As System.Windows.Forms.TabPage
     Friend WithEvents PagCarichiFinali As System.Windows.Forms.TabPage
     Friend WithEvents lblNienteCarichi As System.Windows.Forms.Label
     Friend WithEvents cmdRiprBocch As System.Windows.Forms.Button
-    Friend WithEvents dgCarFond As System.Windows.Forms.DataGrid
+    Friend WithEvents dgCarFond As System.Windows.Forms.DataGridView
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PagVento As System.Windows.Forms.TabPage
@@ -188,9 +191,9 @@ Friend Class frmSaddles
     Friend WithEvents TabBocchUp As System.Windows.Forms.TabControl
     Friend WithEvents PagListaBocchelliT As System.Windows.Forms.TabPage
     Friend WithEvents cmdRiprBocchT As System.Windows.Forms.Button
-    Friend WithEvents dgListaBocchelliT As System.Windows.Forms.DataGrid
+    Friend WithEvents dgListaBocchelliT As System.Windows.Forms.DataGridView
     Friend WithEvents PagT1T As System.Windows.Forms.TabPage
-    Friend WithEvents dgCarBocchT1 As System.Windows.Forms.DataGrid
+    Friend WithEvents dgCarBocchT1 As System.Windows.Forms.DataGridView
     Friend WithEvents TabCarFondUp As System.Windows.Forms.TabControl
     Friend WithEvents PagRisultBocchelliT As System.Windows.Forms.TabPage
     Friend WithEvents PagSismaT As System.Windows.Forms.TabPage
@@ -232,7 +235,7 @@ Friend Class frmSaddles
     Friend WithEvents rtfForceSeismT As System.Windows.Forms.RichTextBox
     Public WithEvents txtForceSeismT As System.Windows.Forms.TextBox
     Public WithEvents lblForceSeismT As System.Windows.Forms.Label
-    Friend WithEvents dgCarFondT As System.Windows.Forms.DataGrid
+    Friend WithEvents dgCarFondT As System.Windows.Forms.DataGridView
     Friend WithEvents TabTensMantUp As System.Windows.Forms.TabControl
     Friend WithEvents PagCalcMantProgT As System.Windows.Forms.TabPage
     Public WithEvents cmdAmmissT As System.Windows.Forms.Button
@@ -261,7 +264,7 @@ Friend Class frmSaddles
     Friend WithEvents PagCarichiDaSopra As System.Windows.Forms.TabPage
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents dgCarSopra As System.Windows.Forms.DataGrid
+    Friend WithEvents dgCarSopra As System.Windows.Forms.DataGridView
     Friend WithEvents lblNota As System.Windows.Forms.Label
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
     Public WithEvents _Label2T_0 As System.Windows.Forms.Label
@@ -303,9 +306,9 @@ Friend Class frmSaddles
         Me.PagCarichiBocchelli = New System.Windows.Forms.TabPage
         Me.TabBocchDown = New System.Windows.Forms.TabControl
         Me.PagListaBocchelli = New System.Windows.Forms.TabPage
-        Me.dgListaBocchelli = New System.Windows.Forms.DataGrid
+        Me.dgListaBocchelli = New LoadGridView
         Me.PagT1 = New System.Windows.Forms.TabPage
-        Me.dgCarBocch1 = New System.Windows.Forms.DataGrid
+        Me.dgCarBocch1 = New LoadGridView
         Me.PagCarichiFondazioni = New System.Windows.Forms.TabPage
         Me.TabCarFondDown = New System.Windows.Forms.TabControl
         Me.PagRisultBocchelli = New System.Windows.Forms.TabPage
@@ -351,23 +354,23 @@ Friend Class frmSaddles
         Me.PagCarichiDaSopra = New System.Windows.Forms.TabPage
         Me.Label7 = New System.Windows.Forms.Label
         Me.Label8 = New System.Windows.Forms.Label
-        Me.dgCarSopra = New System.Windows.Forms.DataGrid
+        Me.dgCarSopra = New LoadGridView
         Me.PagCarichiFinali = New System.Windows.Forms.TabPage
         Me.lblNota = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
-        Me.dgCarFond = New System.Windows.Forms.DataGrid
+        Me.dgCarFond = New LoadGridView
         Me.PagCombinazioni = New System.Windows.Forms.TabPage
         Me.TabCombCarDown = New System.Windows.Forms.TabControl
         Me.PagCombMant = New System.Windows.Forms.TabPage
-        Me.dgElemMant = New System.Windows.Forms.DataGrid
-        Me.dgCombMant = New System.Windows.Forms.DataGrid
+        Me.dgElemMant = New LoadGridView
+        Me.dgCombMant = New LoadGridView
         Me.PagCombSelle = New System.Windows.Forms.TabPage
-        Me.dgElemSadd = New System.Windows.Forms.DataGrid
-        Me.dgCombsadd = New System.Windows.Forms.DataGrid
+        Me.dgElemSadd = New LoadGridView
+        Me.dgCombsadd = New LoadGridView
         Me.PagCombFonda = New System.Windows.Forms.TabPage
-        Me.dgElemfond = New System.Windows.Forms.DataGrid
-        Me.dgCombfond = New System.Windows.Forms.DataGrid
+        Me.dgElemfond = New LoadGridView
+        Me.dgCombfond = New LoadGridView
         Me.PagCalcMant = New System.Windows.Forms.TabPage
         Me.TabTensMantDown = New System.Windows.Forms.TabControl
         Me.PagCalcMantProg = New System.Windows.Forms.TabPage
@@ -416,9 +419,9 @@ Friend Class frmSaddles
         Me.PagCarichiBocchelliT = New System.Windows.Forms.TabPage
         Me.TabBocchUp = New System.Windows.Forms.TabControl
         Me.PagListaBocchelliT = New System.Windows.Forms.TabPage
-        Me.dgListaBocchelliT = New System.Windows.Forms.DataGrid
+        Me.dgListaBocchelliT = New LoadGridView
         Me.PagT1T = New System.Windows.Forms.TabPage
-        Me.dgCarBocchT1 = New System.Windows.Forms.DataGrid
+        Me.dgCarBocchT1 = New LoadGridView
         Me.PagCarichiFondazioniT = New System.Windows.Forms.TabPage
         Me.TabCarFondUp = New System.Windows.Forms.TabControl
         Me.PagRisultBocchelliT = New System.Windows.Forms.TabPage
@@ -464,7 +467,7 @@ Friend Class frmSaddles
         Me.PagCarichifinaliT = New System.Windows.Forms.TabPage
         Me.Label26 = New System.Windows.Forms.Label
         Me.Label27 = New System.Windows.Forms.Label
-        Me.dgCarFondT = New System.Windows.Forms.DataGrid
+        Me.dgCarFondT = New LoadGridView
         Me.PagCalcMantT = New System.Windows.Forms.TabPage
         Me.TabTensMantUp = New System.Windows.Forms.TabControl
         Me.PagCalcMantProgT = New System.Windows.Forms.TabPage
@@ -832,9 +835,9 @@ Friend Class frmSaddles
         '
         'dgListaBocchelli
         '
-        Me.dgListaBocchelli.CaptionText = "LISTA BOCCHELLI"
+        DirectCast(Me.dgListaBocchelli, LoadGridView).CaptionTitle = "LISTA BOCCHELLI"
         Me.dgListaBocchelli.DataMember = ""
-        Me.dgListaBocchelli.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgListaBocchelli.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.HelpProvider1.SetHelpKeyword(Me.dgListaBocchelli, "CarBocch.htm")
         Me.HelpProvider1.SetHelpNavigator(Me.dgListaBocchelli, System.Windows.Forms.HelpNavigator.Topic)
         Me.dgListaBocchelli.Location = New System.Drawing.Point(64, 47)
@@ -855,7 +858,7 @@ Friend Class frmSaddles
         'dgCarBocch1
         '
         Me.dgCarBocch1.DataMember = ""
-        Me.dgCarBocch1.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCarBocch1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCarBocch1.Location = New System.Drawing.Point(8, 8)
         Me.dgCarBocch1.Name = "dgCarBocch1"
         Me.dgCarBocch1.Size = New System.Drawing.Size(544, 312)
@@ -1510,9 +1513,8 @@ Friend Class frmSaddles
         '
         'dgCarSopra
         '
-        Me.dgCarSopra.CaptionVisible = False
         Me.dgCarSopra.DataMember = ""
-        Me.dgCarSopra.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCarSopra.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCarSopra.Location = New System.Drawing.Point(7, 31)
         Me.dgCarSopra.Name = "dgCarSopra"
         Me.dgCarSopra.Size = New System.Drawing.Size(546, 296)
@@ -1568,9 +1570,8 @@ Friend Class frmSaddles
         '
         'dgCarFond
         '
-        Me.dgCarFond.CaptionVisible = False
         Me.dgCarFond.DataMember = ""
-        Me.dgCarFond.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCarFond.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCarFond.Location = New System.Drawing.Point(8, 32)
         Me.dgCarFond.Name = "dgCarFond"
         Me.dgCarFond.Size = New System.Drawing.Size(546, 296)
@@ -1610,9 +1611,8 @@ Friend Class frmSaddles
         'dgElemMant
         '
         Me.dgElemMant.BackColor = System.Drawing.Color.Yellow
-        Me.dgElemMant.CaptionVisible = False
         Me.dgElemMant.DataMember = ""
-        Me.dgElemMant.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgElemMant.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgElemMant.Location = New System.Drawing.Point(424, 16)
         Me.dgElemMant.Name = "dgElemMant"
         Me.dgElemMant.Size = New System.Drawing.Size(128, 272)
@@ -1620,9 +1620,8 @@ Friend Class frmSaddles
         '
         'dgCombMant
         '
-        Me.dgCombMant.CaptionVisible = False
         Me.dgCombMant.DataMember = ""
-        Me.dgCombMant.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCombMant.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCombMant.Location = New System.Drawing.Point(16, 16)
         Me.dgCombMant.Name = "dgCombMant"
         Me.dgCombMant.Size = New System.Drawing.Size(392, 272)
@@ -1642,9 +1641,8 @@ Friend Class frmSaddles
         'dgElemSadd
         '
         Me.dgElemSadd.BackColor = System.Drawing.Color.Yellow
-        Me.dgElemSadd.CaptionVisible = False
         Me.dgElemSadd.DataMember = ""
-        Me.dgElemSadd.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgElemSadd.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgElemSadd.Location = New System.Drawing.Point(424, 16)
         Me.dgElemSadd.Name = "dgElemSadd"
         Me.dgElemSadd.Size = New System.Drawing.Size(128, 272)
@@ -1652,9 +1650,8 @@ Friend Class frmSaddles
         '
         'dgCombsadd
         '
-        Me.dgCombsadd.CaptionVisible = False
         Me.dgCombsadd.DataMember = ""
-        Me.dgCombsadd.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCombsadd.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCombsadd.Location = New System.Drawing.Point(16, 16)
         Me.dgCombsadd.Name = "dgCombsadd"
         Me.dgCombsadd.Size = New System.Drawing.Size(400, 272)
@@ -1674,9 +1671,8 @@ Friend Class frmSaddles
         'dgElemfond
         '
         Me.dgElemfond.BackColor = System.Drawing.Color.Yellow
-        Me.dgElemfond.CaptionVisible = False
         Me.dgElemfond.DataMember = ""
-        Me.dgElemfond.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgElemfond.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgElemfond.Location = New System.Drawing.Point(424, 16)
         Me.dgElemfond.Name = "dgElemfond"
         Me.dgElemfond.Size = New System.Drawing.Size(128, 272)
@@ -1684,9 +1680,8 @@ Friend Class frmSaddles
         '
         'dgCombfond
         '
-        Me.dgCombfond.CaptionVisible = False
         Me.dgCombfond.DataMember = ""
-        Me.dgCombfond.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCombfond.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCombfond.Location = New System.Drawing.Point(16, 16)
         Me.dgCombfond.Name = "dgCombfond"
         Me.dgCombfond.Size = New System.Drawing.Size(400, 272)
@@ -2349,9 +2344,9 @@ Friend Class frmSaddles
         '
         'dgListaBocchelliT
         '
-        Me.dgListaBocchelliT.CaptionText = "LISTA BOCCHELLI"
+        DirectCast(Me.dgListaBocchelliT, LoadGridView).CaptionTitle = "LISTA BOCCHELLI"
         Me.dgListaBocchelliT.DataMember = ""
-        Me.dgListaBocchelliT.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgListaBocchelliT.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.HelpProvider1.SetHelpKeyword(Me.dgListaBocchelliT, "CarBocch.htm")
         Me.HelpProvider1.SetHelpNavigator(Me.dgListaBocchelliT, System.Windows.Forms.HelpNavigator.Topic)
         Me.dgListaBocchelliT.Location = New System.Drawing.Point(64, 47)
@@ -2373,7 +2368,7 @@ Friend Class frmSaddles
         'dgCarBocchT1
         '
         Me.dgCarBocchT1.DataMember = ""
-        Me.dgCarBocchT1.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCarBocchT1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCarBocchT1.Location = New System.Drawing.Point(8, 8)
         Me.dgCarBocchT1.Name = "dgCarBocchT1"
         Me.dgCarBocchT1.Size = New System.Drawing.Size(544, 312)
@@ -3031,9 +3026,8 @@ Friend Class frmSaddles
         '
         'dgCarFondT
         '
-        Me.dgCarFondT.CaptionVisible = False
         Me.dgCarFondT.DataMember = ""
-        Me.dgCarFondT.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgCarFondT.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.dgCarFondT.Location = New System.Drawing.Point(8, 32)
         Me.dgCarFondT.Name = "dgCarFondT"
         Me.dgCarFondT.Size = New System.Drawing.Size(546, 296)
@@ -5913,14 +5907,15 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
         TrasfLCtoTable(3)
     End Sub
     Private Sub dgListaBocchelli_CurrentCellChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgListaBocchelli.CurrentCellChanged
-        RigaLista = dgListaBocchelli.CurrentCell.RowNumber + 1
+        If dgListaBocchelli.CurrentCell Is Nothing Then Exit Sub
+        RigaLista = dgListaBocchelli.CurrentCell.RowIndex + 1
     End Sub
     Private Sub dgListaBocchelli_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgListaBocchelli.Enter
         Dim j As Short
         Try
-            dgListaBocchelli.CurrentCell = New DataGridCell(0, 1)
+            If 0 >= 0 AndAlso 0 < dgListaBocchelli.Rows.Count AndAlso 1 < dgListaBocchelli.Columns.Count Then dgListaBocchelli.CurrentCell = dgListaBocchelli.Rows(0).Cells(1)
             For j = 1 To SaddlesItem.NumBocch
-                dgListaBocchelli.CurrentCell = New DataGridCell(j - 1, 0)
+                If j - 1 >= 0 AndAlso j - 1 < dgListaBocchelli.Rows.Count AndAlso 0 < dgListaBocchelli.Columns.Count Then dgListaBocchelli.CurrentCell = dgListaBocchelli.Rows(j - 1).Cells(0)
             Next
         Catch ex As Exception
             ' MsgBox(ex.Message + vbCrLf + ex.StackTrace)
@@ -5951,9 +5946,9 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
         Dim i, j, k As Short
         Dim dv As DataView
         Dim drv As DataRowView
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
-        Dim Griglia As DataGrid
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
+        Dim Griglia As DataGridView
         Dim r As Rectangle
         Dim delta As Short
         delta = 0
@@ -5972,7 +5967,7 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                     If i - delta > 0 And delta = 1 Or i - delta > 1 And delta = 2 Then TabCarFondDown.SelectedIndex = i - delta
                 Next
                 GiaSotto = False
-                If delta < 2 And Not (Index = 3 And dgCarFond.TableStyles.Count = 0) Then Exit Sub
+                If delta < 2 And Not (Index = 3 And dgCarFond.Columns.Count = 0) Then Exit Sub
             End If
             iSottoSottoPagina = Index
             Select Case Index
@@ -6006,31 +6001,30 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                                 drv.EndEdit()
                             End If
                         Next
-                        Griglia = New DataGrid
+                        Griglia = New LoadGridView
                         Griglia.Size = dgSize ' New Size(344, 312) ' dgCarBocch1.Size
                         Griglia.Location = dgLocation ' New Point(8, 8) ' dgCarBocch1.Location
-                        Griglia.CaptionVisible = True
-                        Griglia.CaptionText = "Risultanti rispetto al baricentro"
+                        DirectCast(Griglia, LoadGridView).CaptionTitle = "Risultanti rispetto al baricentro"
                         AddHandler Griglia.Leave, AddressOf PagRisultBocchelli_Leave
                         PagRisultBocchelli.Controls.Add(Griglia)
-                        t = New DataGridTableStyle
-                        t.MappingName = CarBocchR.TableName
-                        c = New DataGridTextBoxColumn
+                        t = New System.Collections.Generic.List(Of DataGridViewColumn)
+                        c = New DataGridViewTextBoxColumn
                         c.Width = 140
-                        c.MappingName = "Condizione"
-                        c.HeaderText = c.MappingName
-                        t.GridColumnStyles.Add(c)
+                        c.DataPropertyName = "Condizione"
+                        c.HeaderText = c.DataPropertyName
+                        t.Add(c)
                         For k = 1 To 6
-                            c = New DataGridTextBoxColumn
+                            c = New DataGridViewTextBoxColumn
                             c.Width = 60
-                            c.MappingName = Titoli(k)
-                            c.HeaderText = c.MappingName
-                            t.GridColumnStyles.Add(c)
+                            c.DataPropertyName = Titoli(k)
+                            c.HeaderText = c.DataPropertyName
+                            t.Add(c)
                         Next
-                        Griglia.TableStyles.Add(t)
-                        Griglia.SetDataBinding(dv, "")
-                        r = Griglia.GetCellBounds(Problem.NumCondBocch - 1, 6)
-                        Griglia.Width = r.Left + r.Width + Griglia.RowHeaderWidth + 6
+                        Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+                        Griglia.DataSource = dv
+                        r = Griglia.GetCellDisplayRectangle(6, Problem.NumCondBocch - 1, False)
+                        Griglia.Width = r.Left + r.Width + Griglia.RowHeadersWidth + 6
                     End If
                 Case 1 'vento
                     If Not EliminatoVento Then
@@ -6063,8 +6057,8 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
         Dim i, j, k, kk As Short
         Dim dv As DataView
         Dim drv As DataRowView
-        Dim c As DataGridTextBoxColumn
-        Dim t As DataGridTableStyle
+        Dim c As DataGridViewTextBoxColumn
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
         Dim r As Rectangle
         CalcolaCarichi()
         LoadsCalcolate = True
@@ -6087,34 +6081,34 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                 drv.EndEdit()
             Next
         Next
-        t = New DataGridTableStyle
-        t.MappingName = CarDaSopra.TableName
-        c = New DataGridTextBoxColumn
+        t = New System.Collections.Generic.List(Of DataGridViewColumn)
+        c = New DataGridViewTextBoxColumn
         c.Width = 124
-        c.MappingName = "Condizione"
-        c.HeaderText = c.MappingName
-        AddHandler c.TextBox.TextChanged, AddressOf CarDaSopraTextChanged
-        t.GridColumnStyles.Add(c)
+        c.DataPropertyName = "Condizione"
+        c.HeaderText = c.DataPropertyName
+            ' Editing text events are attached to the grid editor below.
+        t.Add(c)
         For k = 1 To 8
-            c = New DataGridTextBoxColumn
+            c = New DataGridViewTextBoxColumn
             c.Width = 48
-            c.MappingName = Titol2(k)
+            c.DataPropertyName = Titol2(k)
             c.HeaderText = Titol1(k)
-            AddHandler c.TextBox.TextChanged, AddressOf CarDaSopraTextChanged
-            t.GridColumnStyles.Add(c)
+            ' Editing text events are attached to the grid editor below.
+            t.Add(c)
         Next
-        dgCarSopra.TableStyles.Clear()
-        dgCarSopra.TableStyles.Add(t)
-        dgCarSopra.SetDataBinding(dv, "")
-        r = dgCarSopra.GetCellBounds(0, 8)
-        dgCarSopra.Width = r.Left + r.Width + dgCarSopra.RowHeaderWidth '+ 6
+        dgCarSopra.Columns.Clear()
+        dgCarSopra.AutoGenerateColumns = False
+            dgCarSopra.Columns.AddRange(t.ToArray())
+        dgCarSopra.DataSource = dv
+        r = dgCarSopra.GetCellDisplayRectangle(8, 0, False)
+        dgCarSopra.Width = r.Left + r.Width + dgCarSopra.RowHeadersWidth '+ 6
     End Sub
     Private Sub CompilaTabCarFond()
         Dim i, j, k, kk As Short
         Dim dv As DataView
         Dim drv As DataRowView
-        Dim c As DataGridTextBoxColumn
-        Dim t As DataGridTableStyle
+        Dim c As DataGridViewTextBoxColumn
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
         Dim r As Rectangle
         CalcolaCarichi()
         LoadsCalcolate = True
@@ -6137,27 +6131,27 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                 drv.EndEdit()
             Next
         Next
-        t = New DataGridTableStyle
-        t.MappingName = CarFond.TableName
-        c = New DataGridTextBoxColumn
+        t = New System.Collections.Generic.List(Of DataGridViewColumn)
+        c = New DataGridViewTextBoxColumn
         c.Width = 124
-        c.MappingName = "Condizione"
-        c.HeaderText = c.MappingName
-        AddHandler c.TextBox.TextChanged, AddressOf CarFondTextChanged
-        t.GridColumnStyles.Add(c)
+        c.DataPropertyName = "Condizione"
+        c.HeaderText = c.DataPropertyName
+            ' Editing text events are attached to the grid editor below.
+        t.Add(c)
         For k = 1 To 8
-            c = New DataGridTextBoxColumn
+            c = New DataGridViewTextBoxColumn
             c.Width = 48
-            c.MappingName = Titol2(k)
+            c.DataPropertyName = Titol2(k)
             c.HeaderText = Titol1(k)
-            AddHandler c.TextBox.TextChanged, AddressOf CarFondTextChanged
-            t.GridColumnStyles.Add(c)
+            ' Editing text events are attached to the grid editor below.
+            t.Add(c)
         Next
-        dgCarFond.TableStyles.Clear()
-        dgCarFond.TableStyles.Add(t)
-        dgCarFond.SetDataBinding(dv, "")
-        r = dgCarFond.GetCellBounds(0, 8)
-        dgCarFond.Width = r.Left + r.Width + dgCarFond.RowHeaderWidth '+ 6
+        dgCarFond.Columns.Clear()
+        dgCarFond.AutoGenerateColumns = False
+            dgCarFond.Columns.AddRange(t.ToArray())
+        dgCarFond.DataSource = dv
+        r = dgCarFond.GetCellDisplayRectangle(8, 0, False)
+        dgCarFond.Width = r.Left + r.Width + dgCarFond.RowHeadersWidth '+ 6
     End Sub
     Private Sub PagRisultBocchelli_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PagRisultBocchelli.Leave
         Dim i, k As Short
@@ -6274,9 +6268,9 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
         Dim i, j, k As Short
         Dim dv As DataView
         Dim drv As DataRowView
-        Dim t As DataGridTableStyle
-        Dim c As DataGridTextBoxColumn
-        Dim Griglia As DataGrid
+        Dim t As System.Collections.Generic.List(Of DataGridViewColumn)
+        Dim c As DataGridViewTextBoxColumn
+        Dim Griglia As DataGridView
         Dim r As Rectangle
         Dim delta As Short
         delta = 0
@@ -6295,7 +6289,7 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                     If i - delta > 0 And delta = 1 Or i - delta > 1 And delta = 2 Then TabCarFondUp.SelectedIndex = i - delta
                 Next
                 GiaSottoT = False
-                If delta < 2 And Not (Index = 3 And dgCarFondT.TableStyles.Count = 0) Then Exit Sub
+                If delta < 2 And Not (Index = 3 And dgCarFondT.Columns.Count = 0) Then Exit Sub
             End If
             iSottoSottoPaginaT = Index
             Select Case Index
@@ -6329,31 +6323,30 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                                 drv.EndEdit()
                             End If
                         Next
-                        Griglia = New DataGrid
+                        Griglia = New LoadGridView
                         Griglia.Size = dgSize ' New Size(344, 312) ' dgCarBocch1.Size
                         Griglia.Location = dgLocation ' New Point(8, 8) ' dgCarBocch1.Location
-                        Griglia.CaptionVisible = True
-                        Griglia.CaptionText = "Risultanti rispetto al baricentro"
+                        DirectCast(Griglia, LoadGridView).CaptionTitle = "Risultanti rispetto al baricentro"
                         AddHandler Griglia.Leave, AddressOf PagRisultBocchelliT_Leave
                         PagRisultBocchelliT.Controls.Add(Griglia)
-                        t = New DataGridTableStyle
-                        t.MappingName = CarBocchRT.TableName
-                        c = New DataGridTextBoxColumn
+                        t = New System.Collections.Generic.List(Of DataGridViewColumn)
+                        c = New DataGridViewTextBoxColumn
                         c.Width = 140
-                        c.MappingName = "Condizione"
-                        c.HeaderText = c.MappingName
-                        t.GridColumnStyles.Add(c)
+                        c.DataPropertyName = "Condizione"
+                        c.HeaderText = c.DataPropertyName
+                        t.Add(c)
                         For k = 1 To 6
-                            c = New DataGridTextBoxColumn
+                            c = New DataGridViewTextBoxColumn
                             c.Width = 60
-                            c.MappingName = Titoli(k)
-                            c.HeaderText = c.MappingName
-                            t.GridColumnStyles.Add(c)
+                            c.DataPropertyName = Titoli(k)
+                            c.HeaderText = c.DataPropertyName
+                            t.Add(c)
                         Next
-                        Griglia.TableStyles.Add(t)
-                        Griglia.SetDataBinding(dv, "")
-                        r = Griglia.GetCellBounds(SaddlesItemT.NumCondBocch - 1, 6)
-                        Griglia.Width = r.Left + r.Width + Griglia.RowHeaderWidth + 6
+                        Griglia.AutoGenerateColumns = False
+            Griglia.Columns.AddRange(t.ToArray())
+                        Griglia.DataSource = dv
+                        r = Griglia.GetCellDisplayRectangle(6, SaddlesItemT.NumCondBocch - 1, False)
+                        Griglia.Width = r.Left + r.Width + Griglia.RowHeadersWidth + 6
                     End If
                 Case 1 'vento
                     If Not EliminatoVento Then
@@ -6390,27 +6383,27 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
                             drv.EndEdit()
                         Next
                     Next
-                    t = New DataGridTableStyle
-                    t.MappingName = CarFondT.TableName
-                    c = New DataGridTextBoxColumn
+                    t = New System.Collections.Generic.List(Of DataGridViewColumn)
+                    c = New DataGridViewTextBoxColumn
                     c.Width = 124
-                    c.MappingName = "Condizione"
-                    c.HeaderText = c.MappingName
-                    AddHandler c.TextBox.TextChanged, AddressOf CarFondTTextChanged
-                    t.GridColumnStyles.Add(c)
+                    c.DataPropertyName = "Condizione"
+                    c.HeaderText = c.DataPropertyName
+            ' Editing text events are attached to the grid editor below.
+                    t.Add(c)
                     For k = 1 To 8
-                        c = New DataGridTextBoxColumn
+                        c = New DataGridViewTextBoxColumn
                         c.Width = 48
-                        c.MappingName = Titol2(k)
+                        c.DataPropertyName = Titol2(k)
                         c.HeaderText = Titol1(k)
-                        AddHandler c.TextBox.TextChanged, AddressOf CarFondTTextChanged
-                        t.GridColumnStyles.Add(c)
+            ' Editing text events are attached to the grid editor below.
+                        t.Add(c)
                     Next
-                    dgCarFondT.TableStyles.Clear()
-                    dgCarFondT.TableStyles.Add(t)
-                    dgCarFondT.SetDataBinding(dv, "")
-                    r = dgCarFondT.GetCellBounds(0, 8)
-                    dgCarFondT.Width = r.Left + r.Width + dgCarFondT.RowHeaderWidth '+ 6
+                    dgCarFondT.Columns.Clear()
+                    dgCarFondT.AutoGenerateColumns = False
+            dgCarFondT.Columns.AddRange(t.ToArray())
+                    dgCarFondT.DataSource = dv
+                    r = dgCarFondT.GetCellDisplayRectangle(8, 0, False)
+                    dgCarFondT.Width = r.Left + r.Width + dgCarFondT.RowHeadersWidth '+ 6
             End Select
         Catch ex As Exception
             MsgBox(ex.Message + vbCrLf + ex.StackTrace)
@@ -6593,9 +6586,9 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
     Private Sub dgListaBocchelliT_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgListaBocchelliT.Enter
         Dim j As Short
         Try
-            dgListaBocchelliT.CurrentCell = New DataGridCell(0, 1)
+            If 0 >= 0 AndAlso 0 < dgListaBocchelliT.Rows.Count AndAlso 1 < dgListaBocchelliT.Columns.Count Then dgListaBocchelliT.CurrentCell = dgListaBocchelliT.Rows(0).Cells(1)
             For j = 1 To SaddlesItemT.NumBocch
-                dgListaBocchelliT.CurrentCell = New DataGridCell(j - 1, 0)
+                If j - 1 >= 0 AndAlso j - 1 < dgListaBocchelliT.Rows.Count AndAlso 0 < dgListaBocchelliT.Columns.Count Then dgListaBocchelliT.CurrentCell = dgListaBocchelliT.Rows(j - 1).Cells(0)
             Next
         Catch ex As Exception
             'MsgBox(ex.Message + vbCrLf + ex.StackTrace)
@@ -6733,5 +6726,19 @@ Fine1:  Me.Cursor = System.Windows.Forms.Cursors.Default
     Private Sub txtForceSeismT_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtForceSeismT.TextChanged
         LoadFoundDataT.FrontForceS = GlobalRoutines.ValVir(txtForceSeismT.Text)
         LoadFoundDataT.LateralForceS = GlobalRoutines.ValVir(txtForceSeismT.Text)
+    End Sub
+    Private Sub LoadGridEditingControlShowing(sender As Object, e As DataGridViewEditingControlShowingEventArgs) Handles dgCarSopra.EditingControlShowing, dgCarFond.EditingControlShowing, dgCarFondT.EditingControlShowing, dgListaBocchelli.EditingControlShowing, dgListaBocchelliT.EditingControlShowing
+        Dim editor = TryCast(e.Control, TextBox)
+        If editor Is Nothing Then Return
+        RemoveHandler editor.TextChanged, AddressOf CarDaSopraTextChanged
+        RemoveHandler editor.TextChanged, AddressOf CarFondTextChanged
+        RemoveHandler editor.TextChanged, AddressOf CarFondTTextChanged
+        RemoveHandler editor.TextChanged, AddressOf dgTextChanged
+        RemoveHandler editor.TextChanged, AddressOf dgTextChangedT
+        If sender Is dgCarSopra Then AddHandler editor.TextChanged, AddressOf CarDaSopraTextChanged
+        If sender Is dgCarFond Then AddHandler editor.TextChanged, AddressOf CarFondTextChanged
+        If sender Is dgCarFondT Then AddHandler editor.TextChanged, AddressOf CarFondTTextChanged
+        If sender Is dgListaBocchelli Then AddHandler editor.TextChanged, AddressOf dgTextChanged
+        If sender Is dgListaBocchelliT Then AddHandler editor.TextChanged, AddressOf dgTextChangedT
     End Sub
 End Class
