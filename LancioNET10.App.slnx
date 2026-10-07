@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AsmeVip/AsmeVip.vbproj" />
+    <Project Path="src/DataShDll/DataShDll.vbproj" />
+    <Project Path="src/FormulaParser/FormulaParser.vbproj" />
+    <Project Path="src/Grafic2/Grafic2.vbproj" />
+    <Project Path="src/Lancio.Data.Access/Lancio.Data.Access.vbproj" />
+    <Project Path="src/Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
+    <Project Path="src/Lancio.Office.Word.WinForms/Lancio.Office.Word.WinForms.vbproj" />
+    <Project Path="src/Lancio.Office.Word/Lancio.Office.Word.vbproj" />
+    <Project Path="src/Lancion/Lancion.vbproj" />
+    <Project Path="src/LibMat/LibMat.vbproj" />
+    <Project Path="src/Orecchia/Orecchia.vbproj" />
+    <Project Path="src/RoutBase/RoutBase1.vbproj" />
+    <Project Path="src/RoutBase2/RoutBase2.vbproj" />
+    <Project Path="src/RoutBase3/RoutBase3.vbproj" />
+    <Project Path="src/RoutBase4/RoutBase4.vbproj" />
+    <Project Path="src/Saddles/Saddles.vbproj" />
+    <Project Path="src/StubW2000/StubW2000.vbproj" />
+    <Project Path="src/StubW9/StubW9.vbproj" />
+    <Project Path="src/Tiranti/Tiranti.vbproj" />
+    <Project Path="src/Traccia/Traccia.vbproj" />
+    <Project Path="src/Wrcb/Wrcb.vbproj" />
+  </Folder>
+</Solution>

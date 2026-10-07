@@ -77,6 +77,7 @@ Module GenLancio
         Dim DataScad As Date
         Public QuestoComputer As String
     End Structure
+    <System.STAThread()>
     Public Sub Main()
         Dim i, prgsingolo As Short
         Dim strU As String
@@ -84,13 +85,13 @@ Module GenLancio
         System.Globalization.CultureInfo(Threading.Thread.CurrentThread.CurrentCulture.Name, False)
         Monitor = New Lancio.clsMonitor
         With Monitor.Motore.Inizio
-            i = .Standard
+            i = LegacyStartupConfiguration.Initialize(Monitor.Motore.Inizio)
             EsitoStd = i
             If i = 3 Then
                 .InRete = False
             ElseIf i = 1 Then
                 NonValido = True
-                MsgBox("Non è stato trovato il file di inizializzazione, che dovrebbe trovarsi nella directory di sistema. Il programma sarà arrestato.", MsgBoxStyle.Critical)
+                MsgBox("Non e' stato selezionato un INI valido. Selezionare la propria copia configurata di LancioNET.ini oppure impostare LANCIO_INI. Il programma sara' arrestato.", MsgBoxStyle.Critical)
                 Exit Sub
             ElseIf i > 0 Then
                 NonValido = True
@@ -154,7 +155,7 @@ Module GenLancio
         'ifl = FreeFile()
         Dim Esiste As Boolean = IO.File.Exists(File)
         Dim fs As New FileStream(File, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Not Esiste Then
             Lic.Provvisorio = True
             Scad = DateAdd(Microsoft.VisualBasic.DateInterval.Month, 1, Now)

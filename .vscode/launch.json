@@ -2,6 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Lancion complete VB GUI (Windows x86)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Lancion GUI",
+      "program": "${workspaceFolder}/src/Lancion/bin/Debug/net10.0-windows/win-x86/Lancio.exe",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "LANCIO_INI": "${input:lancioIni}"
+      },
+      "stopAtEntry": true,
+      "justMyCode": false
+    },
+    {
       "name": "ASME cylinder thickness and pressure (original VB)",
       "type": "coreclr",
       "request": "launch",
@@ -34,6 +47,13 @@
       "console": "integratedTerminal",
       "stopAtEntry": true,
       "justMyCode": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "lancioIni",
+      "type": "promptString",
+      "description": "Percorso assoluto della copia INI configurata per questo PC"
     }
   ]
 }

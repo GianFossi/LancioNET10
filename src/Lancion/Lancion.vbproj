@@ -11,6 +11,10 @@
     <AssemblyName>Lancio</AssemblyName>
     <RootNamespace>Lancio</RootNamespace>
     <OutputType>WinExe</OutputType>
+    <!-- Supplied ASME/MathAV/Fortran libraries are 32-bit Windows binaries. -->
+    <PlatformTarget>x86</PlatformTarget>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
     <OptionStrict>Off</OptionStrict>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -67,8 +71,13 @@
     <ProjectReference Include="../Orecchia/Orecchia.vbproj" />
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../DataShDll/DataShDll.vbproj" />
-    <Reference Include="stdole" />
-    <Reference Include="StdType" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
   </ItemGroup>
+  <ItemGroup><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup>
+    <Content Include="../../legacy/AsmeVip.NET/Dll/AsmeLib.dll" Link="AsmeLib.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../legacy/AsmeVip.NET/Dll/MathAV.dll" Link="MathAV.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../legacy/AsmeVip.NET/Dll/Dforrt.dll" Link="Dforrt.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup><Compile Include="LegacyStartupConfiguration.vb" /></ItemGroup>
 </Project>

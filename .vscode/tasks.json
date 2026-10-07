@@ -2,6 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "build Lancion GUI",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "LancioNET10.App.slnx",
+        "--configuration",
+        "Debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
       "label": "build migrated components",
       "type": "process",
       "command": "dotnet",

@@ -45,11 +45,11 @@ Friend Class Form1
     Public WithEvents cmdExit As System.Windows.Forms.Button
     Public WithEvents Text1 As System.Windows.Forms.TextBox
     Public WithEvents Combo1 As System.Windows.Forms.ComboBox
-    Public WithEvents mnuGuida As Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
-    Public WithEvents mnuStamLib As Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
-    Public WithEvents mnuTerm As Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
-    Public WithEvents mnuUltAgg As Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
-    Public WithEvents mnuUt As Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
+    Public mnuGuida As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
+    Public mnuStamLib As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
+    Public mnuTerm As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
+    Public mnuUltAgg As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
+    Public mnuUt As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
     Public WithEvents _mnuTerm_0 As System.Windows.Forms.MenuItem
     Public WithEvents _mnuTerm_1 As System.Windows.Forms.MenuItem
     Public WithEvents _mnuTerm_2 As System.Windows.Forms.MenuItem
@@ -140,23 +140,18 @@ Friend Class Form1
         Me.cmdWHB = New System.Windows.Forms.Button
         Me.cmdWPS = New System.Windows.Forms.Button
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.mnuGuida = New Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray(Me.components)
         Me._mnuGuida_0 = New System.Windows.Forms.MenuItem
         Me._mnuGuida_1 = New System.Windows.Forms.MenuItem
-        Me.mnuStamLib = New Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray(Me.components)
         Me._mnuStamLib_0 = New System.Windows.Forms.MenuItem
         Me._mnuStamLib_1 = New System.Windows.Forms.MenuItem
-        Me.mnuTerm = New Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray(Me.components)
         Me._mnuTerm_0 = New System.Windows.Forms.MenuItem
         Me._mnuTerm_1 = New System.Windows.Forms.MenuItem
         Me._mnuTerm_2 = New System.Windows.Forms.MenuItem
         Me._mnuTerm_3 = New System.Windows.Forms.MenuItem
         Me._mnuTerm_4 = New System.Windows.Forms.MenuItem
         Me._mnuTerm_5 = New System.Windows.Forms.MenuItem
-        Me.mnuUltAgg = New Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray(Me.components)
         Me._mnuUltAgg_0 = New System.Windows.Forms.MenuItem
         Me._mnuUltAgg_1 = New System.Windows.Forms.MenuItem
-        Me.mnuUt = New Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray(Me.components)
         Me._mnuUt_0 = New System.Windows.Forms.MenuItem
         Me.MainMenu1 = New System.Windows.Forms.MainMenu
         Me.mnuTerm0 = New System.Windows.Forms.MenuItem
@@ -214,11 +209,6 @@ Friend Class Form1
         Me.MenuItem15 = New System.Windows.Forms.MenuItem
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
-        CType(Me.mnuGuida, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mnuStamLib, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mnuTerm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mnuUltAgg, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mnuUt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Command3
@@ -506,7 +496,7 @@ Friend Class Form1
         '_mnuGuida_0
         '
         Me._mnuGuida_0.Enabled = CType(resources.GetObject("_mnuGuida_0.Enabled"), Boolean)
-        Me.mnuGuida.SetIndex(Me._mnuGuida_0, CType(0, Short))
+        Me.mnuGuida.Add(0, Me._mnuGuida_0)
         Me._mnuGuida_0.Index = 0
         Me._mnuGuida_0.Shortcut = CType(resources.GetObject("_mnuGuida_0.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuGuida_0.ShowShortcut = CType(resources.GetObject("_mnuGuida_0.ShowShortcut"), Boolean)
@@ -516,7 +506,7 @@ Friend Class Form1
         '_mnuGuida_1
         '
         Me._mnuGuida_1.Enabled = CType(resources.GetObject("_mnuGuida_1.Enabled"), Boolean)
-        Me.mnuGuida.SetIndex(Me._mnuGuida_1, CType(1, Short))
+        Me.mnuGuida.Add(1, Me._mnuGuida_1)
         Me._mnuGuida_1.Index = 1
         Me._mnuGuida_1.Shortcut = CType(resources.GetObject("_mnuGuida_1.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuGuida_1.ShowShortcut = CType(resources.GetObject("_mnuGuida_1.ShowShortcut"), Boolean)
@@ -529,7 +519,7 @@ Friend Class Form1
         '_mnuStamLib_0
         '
         Me._mnuStamLib_0.Enabled = CType(resources.GetObject("_mnuStamLib_0.Enabled"), Boolean)
-        Me.mnuStamLib.SetIndex(Me._mnuStamLib_0, CType(0, Short))
+        Me.mnuStamLib.Add(0, Me._mnuStamLib_0)
         Me._mnuStamLib_0.Index = 0
         Me._mnuStamLib_0.Shortcut = CType(resources.GetObject("_mnuStamLib_0.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuStamLib_0.ShowShortcut = CType(resources.GetObject("_mnuStamLib_0.ShowShortcut"), Boolean)
@@ -539,7 +529,7 @@ Friend Class Form1
         '_mnuStamLib_1
         '
         Me._mnuStamLib_1.Enabled = CType(resources.GetObject("_mnuStamLib_1.Enabled"), Boolean)
-        Me.mnuStamLib.SetIndex(Me._mnuStamLib_1, CType(1, Short))
+        Me.mnuStamLib.Add(1, Me._mnuStamLib_1)
         Me._mnuStamLib_1.Index = 1
         Me._mnuStamLib_1.Shortcut = CType(resources.GetObject("_mnuStamLib_1.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuStamLib_1.ShowShortcut = CType(resources.GetObject("_mnuStamLib_1.ShowShortcut"), Boolean)
@@ -552,7 +542,7 @@ Friend Class Form1
         '_mnuTerm_0
         '
         Me._mnuTerm_0.Enabled = CType(resources.GetObject("_mnuTerm_0.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_0, CType(0, Short))
+        Me.mnuTerm.Add(0, Me._mnuTerm_0)
         Me._mnuTerm_0.Index = 0
         Me._mnuTerm_0.Shortcut = CType(resources.GetObject("_mnuTerm_0.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_0.ShowShortcut = CType(resources.GetObject("_mnuTerm_0.ShowShortcut"), Boolean)
@@ -562,7 +552,7 @@ Friend Class Form1
         '_mnuTerm_1
         '
         Me._mnuTerm_1.Enabled = CType(resources.GetObject("_mnuTerm_1.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_1, CType(1, Short))
+        Me.mnuTerm.Add(1, Me._mnuTerm_1)
         Me._mnuTerm_1.Index = 1
         Me._mnuTerm_1.Shortcut = CType(resources.GetObject("_mnuTerm_1.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_1.ShowShortcut = CType(resources.GetObject("_mnuTerm_1.ShowShortcut"), Boolean)
@@ -572,7 +562,7 @@ Friend Class Form1
         '_mnuTerm_2
         '
         Me._mnuTerm_2.Enabled = CType(resources.GetObject("_mnuTerm_2.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_2, CType(2, Short))
+        Me.mnuTerm.Add(2, Me._mnuTerm_2)
         Me._mnuTerm_2.Index = 2
         Me._mnuTerm_2.Shortcut = CType(resources.GetObject("_mnuTerm_2.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_2.ShowShortcut = CType(resources.GetObject("_mnuTerm_2.ShowShortcut"), Boolean)
@@ -582,7 +572,7 @@ Friend Class Form1
         '_mnuTerm_3
         '
         Me._mnuTerm_3.Enabled = CType(resources.GetObject("_mnuTerm_3.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_3, CType(3, Short))
+        Me.mnuTerm.Add(3, Me._mnuTerm_3)
         Me._mnuTerm_3.Index = 3
         Me._mnuTerm_3.Shortcut = CType(resources.GetObject("_mnuTerm_3.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_3.ShowShortcut = CType(resources.GetObject("_mnuTerm_3.ShowShortcut"), Boolean)
@@ -592,7 +582,7 @@ Friend Class Form1
         '_mnuTerm_4
         '
         Me._mnuTerm_4.Enabled = CType(resources.GetObject("_mnuTerm_4.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_4, CType(4, Short))
+        Me.mnuTerm.Add(4, Me._mnuTerm_4)
         Me._mnuTerm_4.Index = 4
         Me._mnuTerm_4.Shortcut = CType(resources.GetObject("_mnuTerm_4.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_4.ShowShortcut = CType(resources.GetObject("_mnuTerm_4.ShowShortcut"), Boolean)
@@ -602,7 +592,7 @@ Friend Class Form1
         '_mnuTerm_5
         '
         Me._mnuTerm_5.Enabled = CType(resources.GetObject("_mnuTerm_5.Enabled"), Boolean)
-        Me.mnuTerm.SetIndex(Me._mnuTerm_5, CType(5, Short))
+        Me.mnuTerm.Add(5, Me._mnuTerm_5)
         Me._mnuTerm_5.Index = 5
         Me._mnuTerm_5.Shortcut = CType(resources.GetObject("_mnuTerm_5.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuTerm_5.ShowShortcut = CType(resources.GetObject("_mnuTerm_5.ShowShortcut"), Boolean)
@@ -615,7 +605,7 @@ Friend Class Form1
         '_mnuUltAgg_0
         '
         Me._mnuUltAgg_0.Enabled = CType(resources.GetObject("_mnuUltAgg_0.Enabled"), Boolean)
-        Me.mnuUltAgg.SetIndex(Me._mnuUltAgg_0, CType(0, Short))
+        Me.mnuUltAgg.Add(0, Me._mnuUltAgg_0)
         Me._mnuUltAgg_0.Index = 0
         Me._mnuUltAgg_0.Shortcut = CType(resources.GetObject("_mnuUltAgg_0.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuUltAgg_0.ShowShortcut = CType(resources.GetObject("_mnuUltAgg_0.ShowShortcut"), Boolean)
@@ -625,7 +615,7 @@ Friend Class Form1
         '_mnuUltAgg_1
         '
         Me._mnuUltAgg_1.Enabled = CType(resources.GetObject("_mnuUltAgg_1.Enabled"), Boolean)
-        Me.mnuUltAgg.SetIndex(Me._mnuUltAgg_1, CType(1, Short))
+        Me.mnuUltAgg.Add(1, Me._mnuUltAgg_1)
         Me._mnuUltAgg_1.Index = 1
         Me._mnuUltAgg_1.Shortcut = CType(resources.GetObject("_mnuUltAgg_1.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuUltAgg_1.ShowShortcut = CType(resources.GetObject("_mnuUltAgg_1.ShowShortcut"), Boolean)
@@ -638,7 +628,7 @@ Friend Class Form1
         '_mnuUt_0
         '
         Me._mnuUt_0.Enabled = CType(resources.GetObject("_mnuUt_0.Enabled"), Boolean)
-        Me.mnuUt.SetIndex(Me._mnuUt_0, CType(0, Short))
+        Me.mnuUt.Add(0, Me._mnuUt_0)
         Me._mnuUt_0.Index = 0
         Me._mnuUt_0.Shortcut = CType(resources.GetObject("_mnuUt_0.Shortcut"), System.Windows.Forms.Shortcut)
         Me._mnuUt_0.ShowShortcut = CType(resources.GetObject("_mnuUt_0.ShowShortcut"), Boolean)
@@ -1191,11 +1181,36 @@ Friend Class Form1
         Me.StartPosition = CType(resources.GetObject("$this.StartPosition"), System.Windows.Forms.FormStartPosition)
         Me.Text = resources.GetString("$this.Text")
         Me.ToolTip1.SetToolTip(Me, resources.GetString("$this.ToolTip"))
-        CType(Me.mnuGuida, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mnuStamLib, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mnuTerm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mnuUltAgg, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mnuUt, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In mnuGuida.Values
+            AddHandler control.Popup, AddressOf mnuGuida_Popup
+        Next
+        For Each control In mnuGuida.Values
+            AddHandler control.Click, AddressOf mnuGuida_Click
+        Next
+        For Each control In mnuStamLib.Values
+            AddHandler control.Popup, AddressOf mnuStamLib_Popup
+        Next
+        For Each control In mnuStamLib.Values
+            AddHandler control.Click, AddressOf mnuStamLib_Click
+        Next
+        For Each control In mnuTerm.Values
+            AddHandler control.Popup, AddressOf mnuTerm_Popup
+        Next
+        For Each control In mnuTerm.Values
+            AddHandler control.Click, AddressOf mnuTerm_Click
+        Next
+        For Each control In mnuUltAgg.Values
+            AddHandler control.Popup, AddressOf mnuUltAgg_Popup
+        Next
+        For Each control In mnuUltAgg.Values
+            AddHandler control.Click, AddressOf mnuUltAgg_Click
+        Next
+        For Each control In mnuUt.Values
+            AddHandler control.Popup, AddressOf mnuUt_Popup
+        Next
+        For Each control In mnuUt.Values
+            AddHandler control.Click, AddressOf mnuUt_Click
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -1518,11 +1533,11 @@ Fine:
         Mat.Scelta(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
     End Sub
 
-    Public Sub mnuGuida_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuGuida.Popup
+    Public Sub mnuGuida_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuGuida_Click(eventSender, eventArgs)
     End Sub
-    Public Sub mnuGuida_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuGuida.Click
-        Dim Index As Short = mnuGuida.GetIndex(CType(eventSender, MenuItem))
+    Public Sub mnuGuida_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuGuida, CType(eventSender, MenuItem))
         Dim Rad As String
         Dim Desc, Versione, Disc As String
         Dim VersionInfo As System.Diagnostics.FileVersionInfo
@@ -1612,11 +1627,11 @@ Fine:
         Mat.RegoleMDMT()
     End Sub
 
-    Public Sub mnuStamLib_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuStamLib.Popup
+    Public Sub mnuStamLib_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuStamLib_Click(eventSender, eventArgs)
     End Sub
-    Public Sub mnuStamLib_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuStamLib.Click
-        Dim Index As Short = mnuStamLib.GetIndex(CType(eventSender, MenuItem))
+    Public Sub mnuStamLib_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuStamLib, CType(eventSender, MenuItem))
         Dim Mat As LibMat.MaterialeNew1
         Select Case Index
             Case 0 'stampa materiali
@@ -1654,11 +1669,11 @@ Fine:
         End With
     End Sub
 
-    Public Sub mnuTerm_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTerm.Popup
+    Public Sub mnuTerm_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuTerm_Click(eventSender, eventArgs)
     End Sub
-    Public Sub mnuTerm_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTerm.Click
-        Dim Index As Short = mnuTerm.GetIndex(CType(eventSender, MenuItem))
+    Public Sub mnuTerm_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuTerm, CType(eventSender, MenuItem))
         Select Case Index
             Case 0 : LanciaProg(19)
             Case 1 : LanciaProg(15)
@@ -1709,11 +1724,11 @@ Fine:
         objBWG.Mostra()
     End Sub
 
-    Public Sub mnuUltAgg_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuUltAgg.Popup
+    Public Sub mnuUltAgg_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuUltAgg_Click(eventSender, eventArgs)
     End Sub
-    Public Sub mnuUltAgg_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuUltAgg.Click
-        Dim Index As Short = mnuUltAgg.GetIndex(CType(eventSender, MenuItem))
+    Public Sub mnuUltAgg_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuUltAgg, CType(eventSender, MenuItem))
         Dim Stringa(10) As String
         Dim Result(10) As String
         Dim Ris As Boolean
@@ -1738,11 +1753,11 @@ Fine:
         End Select
     End Sub
 
-    Public Sub mnuUt_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuUt.Popup
+    Public Sub mnuUt_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuUt_Click(eventSender, eventArgs)
     End Sub
-    Public Sub mnuUt_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuUt.Click
-        Dim Index As Short = mnuUt.GetIndex(CType(eventSender, MenuItem))
+    Public Sub mnuUt_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuUt, CType(eventSender, MenuItem))
         Dim File As String
         Dim h As New RoutBase1.HHHelp.HTMLHelp
         Select Case Index
@@ -1929,7 +1944,6 @@ Cont1:  cmdExit.Enabled = False
             Case 13
                 Testo = "alla dll BabCock"
                 'objBabC = New BabCock.Calcoli
-                On Error GoTo 0
                 '   objBabC.DoveMotore = Monitor.Motore
                 '   objBabC.DoveRoutines = Routines
                 ' objBabC.EseguiSciolto()

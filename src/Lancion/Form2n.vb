@@ -52,7 +52,7 @@ Friend Class Form2
     Public WithEvents Label3 As System.Windows.Forms.Label
     Public WithEvents Label2 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents txtQualif As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public txtQualif As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -76,8 +76,6 @@ Friend Class Form2
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.txtQualif = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        CType(Me.txtQualif, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmdhelp
@@ -111,7 +109,7 @@ Friend Class Form2
         Me._txtQualif_2.BackColor = System.Drawing.SystemColors.Window
         Me._txtQualif_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtQualif_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtQualif.SetIndex(Me._txtQualif_2, CType(2, Short))
+        Me.txtQualif.Add(2, Me._txtQualif_2)
         Me._txtQualif_2.Location = New System.Drawing.Point(96, 104)
         Me._txtQualif_2.MaxLength = 0
         Me._txtQualif_2.Name = "_txtQualif_2"
@@ -128,7 +126,7 @@ Friend Class Form2
         Me._txtQualif_1.BackColor = System.Drawing.SystemColors.Window
         Me._txtQualif_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtQualif_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtQualif.SetIndex(Me._txtQualif_1, CType(1, Short))
+        Me.txtQualif.Add(1, Me._txtQualif_1)
         Me._txtQualif_1.Location = New System.Drawing.Point(96, 80)
         Me._txtQualif_1.MaxLength = 0
         Me._txtQualif_1.Name = "_txtQualif_1"
@@ -145,7 +143,7 @@ Friend Class Form2
         Me._txtQualif_0.BackColor = System.Drawing.SystemColors.Window
         Me._txtQualif_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtQualif_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtQualif.SetIndex(Me._txtQualif_0, CType(0, Short))
+        Me.txtQualif.Add(0, Me._txtQualif_0)
         Me._txtQualif_0.Location = New System.Drawing.Point(96, 56)
         Me._txtQualif_0.MaxLength = 0
         Me._txtQualif_0.Name = "_txtQualif_0"
@@ -348,7 +346,7 @@ Friend Class Form2
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Autenticazione Utente"
-        CType(Me.txtQualif, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
 
     End Sub

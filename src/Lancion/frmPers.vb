@@ -43,7 +43,7 @@ Friend Class frmPers
     Public WithEvents _Label2_1 As System.Windows.Forms.Label
 	Public WithEvents _Label2_0 As System.Windows.Forms.Label
 	Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents Picture1 As Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray
+    Public Picture1 As New System.Collections.Generic.Dictionary(Of Integer, PictureBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -61,10 +61,8 @@ Friend Class frmPers
         Me._Label2_1 = New System.Windows.Forms.Label
         Me._Label2_0 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Picture1 = New Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(Me.components)
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown
-        CType(Me.Picture1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -87,7 +85,7 @@ Friend Class frmPers
         Me._Picture1_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_1, CType(1, Short))
+        Me.Picture1.Add(1, Me._Picture1_1)
         Me._Picture1_1.Location = New System.Drawing.Point(136, 160)
         Me._Picture1_1.Name = "_Picture1_1"
         Me._Picture1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -126,7 +124,7 @@ Friend Class frmPers
         Me._Picture1_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_0, CType(0, Short))
+        Me.Picture1.Add(0, Me._Picture1_0)
         Me._Picture1_0.Location = New System.Drawing.Point(136, 80)
         Me._Picture1_0.Name = "_Picture1_0"
         Me._Picture1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -226,7 +224,7 @@ Friend Class frmPers
         Me.Name = "frmPers"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "Personalizzazione Azienda"
-        CType(Me.Picture1, System.ComponentModel.ISupportInitialize).EndInit()
+
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
