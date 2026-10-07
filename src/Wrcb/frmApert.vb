@@ -11,7 +11,7 @@ Friend Class Apert
 			Else
 				Try 
                     'La prima istanza creata per il form di avvio rappresenta l'istanza predefinita.
-					If System.Reflection.Assembly.GetExecutingAssembly.EntryPoint.DeclaringType Is Me.GetType Then
+					If System.Reflection.Assembly.GetExecutingAssembly.EntryPoint IsNot Nothing AndAlso System.Reflection.Assembly.GetExecutingAssembly.EntryPoint.DeclaringType Is Me.GetType Then
 						m_vb6FormDefInstance = Me
 					End If
 				Catch
