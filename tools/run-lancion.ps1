@@ -25,8 +25,8 @@ try {
     $env:LANCIO_INI = $resolvedIni
     if ($EnableTrustedLegacySerialization) { $env:LANCIO_ENABLE_LEGACY_BINARY_FORMATTER = '1' }
     # The child inherits the selected INI. Original license checks remain active.
-    & $executable
-    if ($LASTEXITCODE -ne 0) { throw "Lancion terminato con codice $LASTEXITCODE. Verificare .NET 10 Desktop Runtime x86 e il messaggio dell'applicazione." }
+    $process = Start-Process -FilePath $executable -WorkingDirectory $repository -PassThru -Wait
+    if ($process.ExitCode -ne 0) { throw "Lancion terminato con codice $($process.ExitCode). Verificare .NET 10 Desktop Runtime x86 e il messaggio dell'applicazione." }
 } finally {
     $env:LANCIO_INI = $previousIni
     $env:LANCIO_ENABLE_LEGACY_BINARY_FORMATTER = $previousSerialization

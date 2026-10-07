@@ -1,3 +1,7 @@
+> Aggiornamento 7 ottobre 2026: la soluzione completa di 26 progetti VB compila.
+> Per stato attuale, avvio Lancion e funzionalita' ancora sospese, vedere
+> [il checkpoint di ripristino](full-application-restoration.md). I risultati precedenti sotto sono storici.
+
 # Correzione dei tre blocchi di progetto
 
 ## Intervento

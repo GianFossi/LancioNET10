@@ -8,5 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="../../src/Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
     <Compile Include="../../src/RoutBase/FixedRecordString.vb" Link="FixedRecordString.vb" />
+      <Compile Include="../../src/LibMat/LegacyMaterialMetadata.vb" Link="LegacyMaterialMetadata.vb" />
+      <Compile Include="../../src/VapAcqua/LegacySteamLibrary.vb" Link="LegacySteamLibrary.vb" />
   </ItemGroup>
 </Project>

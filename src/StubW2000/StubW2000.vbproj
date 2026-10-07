@@ -37,7 +37,6 @@
     <Import Include="System.Windows.Forms" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Office">
       <HintPath>../../legacy/DLL Extra/Interop.Office.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>

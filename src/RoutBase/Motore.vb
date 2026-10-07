@@ -1295,6 +1295,7 @@ No:         MyFile = Trim(Inizio.Archdir) & "\Mat200400.MDB"
         Return job
     End Function
     Public Function Retrievejob(ByVal ContrNome As String, ByVal ContrFile As String) As clsjob
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim myFileStream As Stream
         Dim job As clsjob = New clsjob(Me)
         Try
@@ -1316,6 +1317,7 @@ No:         MyFile = Trim(Inizio.Archdir) & "\Mat200400.MDB"
         Return job
     End Function
     Public Function RetrieveComS(ByRef Nome As String) As clsComm
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim FileTem As String
         Dim Comm As New clsComm
         FileTem = Inizio.Workdir & "\" + Nome + ".TEM"

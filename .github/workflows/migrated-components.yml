@@ -20,6 +20,15 @@ jobs:
         run: dotnet restore LancioNET10.slnx
       - name: Build migrated components
         run: dotnet build LancioNET10.slnx -c Release --no-restore
+      - name: Build the complete VB application and standalone modules
+        run: dotnet build LancioNET10.Full.slnx -c Release
+      - name: Verify native ASME runtime deployment
+        shell: pwsh
+        run: |
+          $output = 'src/Lancion/bin/Release/net10.0-windows/win-x86'
+          foreach ($name in @('Lancio.exe', 'AsmeLib.dll', 'MathAV.dll', 'Dforrt.dll')) {
+            if (-not (Test-Path (Join-Path $output $name))) { throw "Missing deployment file: $name" }
+          }
       - name: Verify FormulaParser calculations
         run: dotnet run --project tests/FormulaParser.Smoke -c Release --no-build
       - name: Verify Access SQL and schema planning
@@ -29,6 +38,7 @@ jobs:
       - name: Verify fixed records and isolated legacy serialization
         run: dotnet run --project tests/LegacyRuntime.Smoke -c Release --no-build
       - name: Verify WinForms control collections and form construction
+        timeout-minutes: 2
         run: dotnet run --project tests/WinForms.Smoke -c Release --no-build
       - name: Verify direct legacy calculation harness on Windows
         run: dotnet run --project tools/LegacyCalculation.Debug -c Debug

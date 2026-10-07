@@ -10,5 +10,8 @@
   <ItemGroup>
     <Compile Include="../../src/RoutBase/IndexedControls.vb" Link="IndexedControls.vb" />
     <ProjectReference Include="../../src/RoutBase/RoutBase1.vbproj" />
+      <ProjectReference Include="../../src/LibMat/LibMat.vbproj" />
+    <ProjectReference Include="../../src/Grafic2/Grafic2.vbproj" />
+    <ProjectReference Include="../../src/DataShDll/DataShDll.vbproj" />
   </ItemGroup>
 </Project>
