@@ -23,7 +23,7 @@ MASTER = DOCS / "tracciatura-algoritmi.md"
 SYMBOLS = DOCS / "tracciatura-simboli.md"
 MASKS = DOCS / "tracciatura-maschere.md"
 CONTROLS = DOCS / "tracciatura-controlli-processo.md"
-AUTHOR = "dott. ing. Gian-Lucva ANFOSSI"
+AUTHOR = "dott. ing. Gian-Luca ANFOSSI"
 
 
 def run(*args: str) -> None:
