@@ -1102,7 +1102,11 @@ ErrH:   Resume ResH
         lstRes.Items.Clear()
         Aggiorna()
         Frames(0).Visible = False
+        Frames(1).Visible = False
         _Frames_2.Visible = False
+        PictureBox1.Visible = True
+        PictureBox1.SendToBack()
+        MainMenu1.BringToFront()
         Distruggi(colMAWP)
         Distruggi(colMDMT)
         _mnuDis_0.Enabled = False

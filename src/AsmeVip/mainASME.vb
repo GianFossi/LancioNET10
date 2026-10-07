@@ -1257,9 +1257,17 @@ Rif:        For i = 1 To indici.Count
         End With
     End Sub
     Public Sub MostraFrame()
-        mioApert.Frames(0).Visible = True
-        mioApert.Frames(1).Visible = True
-        mioApert._Frames_2.Visible = True
+        With mioApert
+            .PictureBox1.Visible = False
+            .Frames(0).Visible = True
+            .Frames(1).Visible = True
+            ._Frames_2.Visible = True
+            .Frames(0).BringToFront()
+            .Frames(1).BringToFront()
+            ._Frames_2.BringToFront()
+            .StatusBar1.BringToFront()
+            .MainMenu1.BringToFront()
+        End With
     End Sub
     Public Sub AggDatiBel(ByRef k As Short, ByRef j As Short)
         Dim NBocch As Short

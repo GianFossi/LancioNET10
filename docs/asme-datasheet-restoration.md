@@ -18,6 +18,12 @@ Durante la selezione e lettura del file la barra di stato mostra inoltre che il
 caricamento è in corso. Annullamento ed errori della finestra di selezione non
 vengono più interpretati come un caricamento riuscito.
 
+La schermata iniziale `S&T.jpg` viene nascosta quando un progetto è aperto.
+I tre pannelli di lavoro, compreso l'albero laterale usato per selezionare e
+inserire i componenti, vengono resi visibili e portati esplicitamente in primo
+piano. Alla chiusura del progetto i pannelli vengono nascosti e la schermata
+iniziale viene ripristinata.
+
 AsmeVip usa il bridge di serializzazione isolato e namespace WinForms espliciti.
 RichiaTir assegna Diam e chiama la ricerca esistente Cerca("Diam"), coerente con
 la firma LibMat fornita. I corpi delle routine Calcoli.vb non sono stati cambiati.
