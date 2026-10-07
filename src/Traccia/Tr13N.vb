@@ -428,8 +428,9 @@ Module Tr13
             Monitor.Motore.Problem.TipoFile = "Tracciatura "
             ' About.Code = " TEMA 7th Edition"
             If Monitor.Routines Is Nothing Then
-                Monitor.Routines = New RoutBase1.Routines
-                Monitor.Routines.Init200(Monitor.Motore.Inizio.Archdir)
+                Dim routines As New RoutBase1.Routines
+                routines.Init200(Monitor.Motore.Inizio.Archdir)
+                Monitor.Routines = routines
             End If
             MainForm = New frmTracciat
             Monitor.Routines.DoveDisegno = MainForm.Picture1
@@ -440,8 +441,10 @@ Module Tr13
             MainForm.pctRisult.Image = bmRisult
             Inizializzando = False
             DisegnaFontana()
-        Catch e As Exception
-            MessageBox.Show(e.Message + vbCrLf + e.StackTrace)
+        Catch
+            Throw
+        Finally
+            Inizializzando = False
         End Try
     End Sub
     Public Sub DisegnaFontana()
