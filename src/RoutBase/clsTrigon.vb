@@ -30,22 +30,10 @@ Public Class clsTrigon
     Private Const SND_FILENAME As Integer = &H20000   ' name is file name
     Private Const SND_RESOURCE As Integer = &H40004   ' name is resource name or atom
     Public Sub DuplicaTableDef(ByVal vTesta As DataTable, ByVal tabTesta As String, ByVal StringConnection As String)
-        Dim Testa As DataTable = vTesta.Clone
-        Testa.TableName = tabTesta
-        Dim Catlog As ADOX.Catalog
-        Dim Cn As New ADODB.Connection
-        Cn.Open(StringConnection)
-        Catlog.ActiveConnection = Cn
-        Catlog.Tables.Append(CType(Testa, ADOX.Table))
-        Cn.Close()
+        Lancio.Data.Access.AccessDatabase.CloneTableDefinition(vTesta, tabTesta, StringConnection)
     End Sub
     Public Sub TableDelete(ByVal Nome As String, ByVal StringConnection As String)
-        Dim Catlog As ADOX.Catalog
-        Dim Cn As New ADODB.Connection
-        Cn.Open(StringConnection)
-        Catlog.ActiveConnection = Cn
-        Catlog.Tables.Delete(Nome)
-        Cn.Close()
+        Lancio.Data.Access.AccessDatabase.DeleteTable(Nome, StringConnection)
     End Sub
     Public Function TwipsToPixelsX(ByVal t As Double) As Double
         Return VB6.TwipsToPixelsX(t)

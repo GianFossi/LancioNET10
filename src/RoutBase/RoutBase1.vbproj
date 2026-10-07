@@ -42,7 +42,6 @@
     <Compile Include="clsVec3.vb" />
     <Compile Include="Comm.vb" />
     <Compile Include="ControlArrays.vb" />
-    <EmbeddedResource Include="ControlArrays.resx" />
     <Compile Include="DataForm1.vb" />
     <EmbeddedResource Include="DataForm1.resx" />
     <Compile Include="DatBase.vb" />
@@ -117,11 +116,6 @@
       <HintPath>../../legacy/DLL Extra/Interop.Office.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
-    <Reference Include="ADODB" />
-    <Reference Include="ADOX">
-      <HintPath>../../legacy/DLL Extra/Interop.ADOX.dll</HintPath>
-      <EmbedInteropTypes>false</EmbedInteropTypes>
-    </Reference>
     <Reference Include="VBIDE">
       <HintPath>../../legacy/DLL Extra/Interop.VBIDE.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
@@ -131,5 +125,8 @@
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
     <ProjectReference Include="../Lancio.Office.Word.WinForms/Lancio.Office.Word.WinForms.vbproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Data.Access/Lancio.Data.Access.vbproj" />
   </ItemGroup>
 </Project>

@@ -1,3 +1,10 @@
+## Aggiornamento RoutBase ADO.NET
+
+Applicata la migrazione ADODB/ADOX a RoutBase1 e RoutBase3 e rimossa la dichiarazione
+della risorsa inesistente ControlArrays.resx. RoutBase3 compila; la soluzione
+completa è ora bloccata dai control array VB6 di RoutBase1.
+Dettagli e verifiche: [RoutBase ADO.NET](routbase-ado-modernization.md).
+
 # Migrazione VB.NET verso .NET 10
 
 ## Stato corrente dopo l'importazione

@@ -42,10 +42,8 @@
     <Import Include="System.Diagnostics" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
-    <Reference Include="adodb" />
-    <Reference Include="ADOX">
-      <HintPath>../../legacy/DLL Extra/Interop.ADOX.dll</HintPath>
-      <EmbedInteropTypes>false</EmbedInteropTypes>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Data.Access/Lancio.Data.Access.vbproj" />
   </ItemGroup>
 </Project>
