@@ -1195,7 +1195,6 @@ Friend Class Form1
             AddHandler control.Click, AddressOf mnuStamLib_Click
         Next
         For Each control In mnuTerm.Values
-            AddHandler control.DropDownOpening, AddressOf mnuTerm_Popup
         Next
         For Each control In mnuTerm.Values
             AddHandler control.Click, AddressOf mnuTerm_Click
@@ -1584,10 +1583,12 @@ Fine:
         Mat.DoveMotore = Monitor.Motore
         Mat.Scelta(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
     End Sub
-    Public Sub mnuPPgas_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPgas.DropDownOpening
+    Public Sub mnuPPgas_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuPPgas_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPPgas_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPgas.Click
+        ShowNotImplemented("Fumi di combustione")
+        Return
         ' Dim objPpg As Ppgas.clsPpg
         Dim Fluido As String
         'objPpg = New Ppgas.clsPpg
@@ -1596,10 +1597,12 @@ Fine:
         'objPpg.mostra(0, Fluido)
     End Sub
 
-    Public Sub mnuPPSM_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPSM.DropDownOpening
+    Public Sub mnuPPSM_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuPPSM_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPPSM_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPSM.Click
+        ShowNotImplemented("PPSM")
+        Return
         ' objPPSM = New PPSM.clsPPSM
         '    objPPSM.DoveMotore = Monitor.Motore
         'objPPSM.EseguiSciolto()
@@ -1639,6 +1642,7 @@ Fine:
                 Mat = New LibMat.MaterialeNew1
                 Mat.Stampa()
             Case 1 ' stampa flange
+                ShowNotImplemented("Stampa libreria flange")
         End Select
     End Sub
 
@@ -1681,10 +1685,12 @@ Fine:
             Case 2 : LanciaProg(14)
             Case 3 : LanciaProg(13)
             Case 4
+                ShowNotImplemented("LigTem")
                 'objLigTem = New LigTem.clsLigTemp
                 '      objLigTem.DoveMotore = Monitor.Motore
                 'objLigTem.Esegui()
             Case 5
+                ShowNotImplemented("Fire")
                 ' objWallT = New Fire.clsWallT
                 '      objWallT.DoveMotore = Monitor.Motore
                 ' objWallT.Esegui(False)
@@ -1773,10 +1779,12 @@ Fine:
         End Select
     End Sub
 
-    Public Sub mnuVentilatori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVentilatori.DropDownOpening
+    Public Sub mnuVentilatori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         mnuVentilatori_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuVentilatori_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVentilatori.Click
+        ShowNotImplemented("Ventilatori")
+        Return
         ''''Dim objVentil As Ventil.clsVentil
         'objventil = New Ventil.clsVentil
         '  objventil.DoveMotore = Monitor.Motore
@@ -1785,19 +1793,23 @@ Fine:
         '''objventil.Class_Terminate
         '''Set objventil = Nothing
     End Sub
-    Public Sub terAcqua_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terAcqua.DropDownOpening
+    Public Sub terAcqua_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         terAcqua_Click(eventSender, eventArgs)
     End Sub
     Public Sub terAcqua_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terAcqua.Click
+        ShowNotImplemented("Acqua-Vapore")
+        Return
         ' Dim objVap As New VapAcqua.clsVapAcqua
         '  objVap.DoveMotore = Monitor.Motore
         ' objVap.Inizia()
         ' objVap.Mostra()
     End Sub
-    Public Sub terPetrol_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terPetrol.DropDownOpening
+    Public Sub terPetrol_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         terPetrol_Click(eventSender, eventArgs)
     End Sub
     Public Sub terPetrol_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terPetrol.Click
+        ShowNotImplemented("Fluidi petroliferi")
+        Return
         'Dim objWald As New Wald.clsWald
         Monitor.Motore.Inizio.LavoriSciolti = True
         '    objWald.DoveMotore = Monitor.Motore
@@ -1889,7 +1901,17 @@ Cont1:  cmdExit.Enabled = False
             MyDatabase.Dispose()
         End If
     End Sub
+    Private Sub ShowNotImplemented(commandName As String)
+        MessageBox.Show(Me, "NOT IMPLEMENTED" & Environment.NewLine & commandName,
+                        "NOT IMPLEMENTED", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
     Public Sub LanciaProg(ByRef indice As Short)
+        Select Case indice
+            Case 13 : ShowNotImplemented("WHB / BabCock") : Return
+            Case 15 : ShowNotImplemented("Surrisc") : Return
+            Case 18 : ShowNotImplemented("Coni") : Return
+            Case 21 : ShowNotImplemented("BreLock") : Return
+        End Select
         Dim i As Short, Testo As String, j As Short
         If Programma(indice) <> 0 Then
             Dim p As New Process
@@ -2096,6 +2118,8 @@ Cont1:  cmdExit.Enabled = False
     End Sub
 
     Private Sub mnuUtDis_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuUtDis.Click
+        ShowNotImplemented("FBMUtil")
+        Return
         WindowState = System.Windows.Forms.FormWindowState.Minimized
         ' Util = New FBMUtil.clsUtil
         'Set Util.DoveInizio = Monitor.Motore.Inizio
@@ -2116,6 +2140,8 @@ Cont1:  cmdExit.Enabled = False
         LanciaProg(14)
     End Sub
     Private Sub cmdWPS_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmdWPS.Click
+        ShowNotImplemented("WPS")
+        Return
         '   WPS = New Sald.clsWPS
         '      WPS.DoveInizio = Monitor.Motore.Inizio
         '      WPS.DoveMotore = Monitor.Motore
