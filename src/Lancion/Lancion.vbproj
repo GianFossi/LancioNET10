@@ -79,5 +79,5 @@
     <Content Include="../../legacy/AsmeVip.NET/Dll/MathAV.dll" Link="MathAV.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Content Include="../../legacy/AsmeVip.NET/Dll/Dforrt.dll" Link="Dforrt.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
-  <ItemGroup><Compile Include="LegacyStartupConfiguration.vb" /></ItemGroup>
+  <ItemGroup><Compile Include="LegacyStartupConfiguration.vb" /><Compile Include="LegacyTextLayoutAudit.vb" /></ItemGroup>
 </Project>

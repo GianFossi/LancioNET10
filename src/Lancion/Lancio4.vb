@@ -79,6 +79,7 @@ Module GenLancio
     End Structure
     <System.STAThread()>
     Public Sub Main()
+        LegacyTextLayoutAudit.StartFromEnvironment()
         Dim i, prgsingolo As Short
         Dim strU As String
         Threading.Thread.CurrentThread.CurrentCulture = New _
