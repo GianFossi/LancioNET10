@@ -48,6 +48,62 @@ Public NotInheritable Class AccessSql
         Return "CREATE TABLE " & QuoteIdentifier(targetName) & " (" & String.Join(", ", columns) & ")"
     End Function
 
+    ' RoutBase historically forces the first selected column to auto-increment,
+    ' makes the remaining columns nullable and copies source indexes.
+    Public Shared Function CloneTablePlan(schema As DataTable, indexes As DataTable,
+                                          captions As String(), targetName As String) As String()
+        If captions Is Nothing OrElse captions.Length = 0 Then Throw New ArgumentException("No columns selected.")
+        Dim definitions As New List(Of String)
+        Dim selected As New HashSet(Of String)(StringComparer.OrdinalIgnoreCase)
+        For i = 0 To captions.Length - 1
+            Dim name = captions(i)
+            If Not selected.Add(name) Then Throw New ArgumentException("Duplicate column: " & name)
+            Dim matches = schema.Rows.Cast(Of DataRow)().Where(Function(r) String.Equals(CStr(r("ColumnName")), name, StringComparison.OrdinalIgnoreCase)).ToArray()
+            If matches.Length <> 1 Then Throw New ArgumentException("Source column missing or ambiguous: " & name)
+            Dim kind = CType(Convert.ToInt32(matches(0)("ProviderType")), OleDbType)
+            Dim declaration = ColumnType(matches(0), kind)
+            If i = 0 Then
+                If kind <> OleDbType.Integer Then Throw New NotSupportedException("Auto-increment requires a 32-bit integer first column.")
+                declaration = "COUNTER NOT NULL"
+            End If
+            definitions.Add(QuoteIdentifier(name) & " " & declaration)
+        Next
+        Dim statements As New List(Of String) From {
+            "CREATE TABLE " & QuoteIdentifier(targetName) & " (" & String.Join(", ", definitions) & ")"}
+        If indexes Is Nothing Then Throw New NotSupportedException("Provider returned no index metadata.")
+        For Each group In indexes.Rows.Cast(Of DataRow)().GroupBy(Function(r) CStr(r("INDEX_NAME")), StringComparer.OrdinalIgnoreCase)
+            Dim ordered = group.OrderBy(Function(r) Convert.ToInt32(r("ORDINAL_POSITION"))).ToArray()
+            Dim first = ordered(0)
+            Dim columns As New List(Of String)
+            For Each row In ordered
+                Dim name = CStr(row("COLUMN_NAME"))
+                If Not selected.Contains(name) Then Throw New NotSupportedException("Index references an unselected column: " & name)
+                Dim direction As String = ""
+                If Not row.IsNull("COLLATION") Then
+                    Select Case Convert.ToInt32(row("COLLATION"))
+                        Case 1 : direction = " ASC"
+                        Case 2 : direction = " DESC"
+                        Case Else : Throw New NotSupportedException("Unsupported index collation.")
+                    End Select
+                End If
+                columns.Add(QuoteIdentifier(name) & direction)
+            Next
+            Dim flags As String = ""
+            If CBool(first("PRIMARY_KEY")) Then flags = " PRIMARY"
+            If first.IsNull("NULLS") Then Throw New NotSupportedException("Missing index NULL policy.")
+            Select Case Convert.ToInt32(first("NULLS"))
+                Case 1 : flags &= " DISALLOW NULL"
+                Case 2 : flags &= " IGNORE NULL"
+                Case 0 ' Allow NULL: Access default.
+                Case Else : Throw New NotSupportedException("Unsupported index NULL policy.")
+            End Select
+            statements.Add("CREATE " & If(CBool(first("UNIQUE")), "UNIQUE ", "") & "INDEX " &
+                           QuoteIdentifier(group.Key) & " ON " & QuoteIdentifier(targetName) &
+                           " (" & String.Join(", ", columns) & ")" & If(flags = "", "", " WITH" & flags))
+        Next
+        Return statements.ToArray()
+    End Function
+
     Private Shared Function ColumnType(row As DataRow, kind As OleDbType) As String
         Select Case kind
             Case OleDbType.UnsignedTinyInt : Return "BYTE"

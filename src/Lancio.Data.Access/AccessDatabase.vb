@@ -73,4 +73,43 @@ Public NotInheritable Class AccessDatabase
             If openedHere Then connection.Close()
         End Try
     End Function
+    Public Shared Sub CloneTableDefinition(source As DataTable, target As String, connectionString As String)
+        If source Is Nothing Then Throw New ArgumentNullException(NameOf(source))
+        Dim captions = source.Columns.Cast(Of DataColumn)().Select(Function(c) c.Caption).ToArray()
+        Using connection As New OleDbConnection(connectionString)
+            connection.Open()
+            Dim plan As String()
+            Using command As New OleDbCommand("SELECT * FROM " & AccessSql.QuoteIdentifier(source.TableName), connection),
+                  reader = command.ExecuteReader(CommandBehavior.SchemaOnly),
+                  schema = reader.GetSchemaTable(),
+                  indexes = connection.GetOleDbSchemaTable(OleDbSchemaGuid.Indexes, {Nothing, Nothing, Nothing, Nothing, source.TableName})
+                plan = AccessSql.CloneTablePlan(schema, indexes, captions, target)
+            End Using
+            Using transaction = connection.BeginTransaction()
+                Try
+                    For Each sql In plan
+                        Using command As New OleDbCommand(sql, connection, transaction)
+                            command.ExecuteNonQuery()
+                        End Using
+                    Next
+                    transaction.Commit()
+                Catch originalError As Exception
+                    Try
+                        transaction.Rollback()
+                    Catch rollbackError As Exception
+                        Throw New AggregateException("Schema creation and rollback failed.", originalError, rollbackError)
+                    End Try
+                    Throw
+                End Try
+            End Using
+        End Using
+    End Sub
+
+    Public Shared Sub DeleteTable(tableName As String, connectionString As String)
+        Dim sql = "DROP TABLE " & AccessSql.QuoteIdentifier(tableName)
+        Using connection As New OleDbConnection(connectionString), command As New OleDbCommand(sql, connection)
+            connection.Open()
+            command.ExecuteNonQuery()
+        End Using
+    End Sub
 End Class

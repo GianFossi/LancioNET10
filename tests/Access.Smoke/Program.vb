@@ -45,6 +45,33 @@ Module Program
             schema.Rows(1)("ColumnName") = "id"
             Reject(Of ArgumentException)(Sub() AccessSql.CreateMaterialTable(schema, "NewTable"))
         End Using
+        Using schema = MakeSchema(OleDbType.VarWChar), indexes As New DataTable()
+            For Each field In {"INDEX_NAME", "COLUMN_NAME"}
+                indexes.Columns.Add(field, GetType(String))
+            Next
+            For Each field In {"ORDINAL_POSITION", "COLLATION", "NULLS"}
+                indexes.Columns.Add(field, GetType(Integer))
+            Next
+            indexes.Columns.Add("PRIMARY_KEY", GetType(Boolean))
+            indexes.Columns.Add("UNIQUE", GetType(Boolean))
+            indexes.Rows.Add("PrimaryKey", "ID", 1, 1, 1, True, True)
+            indexes.Rows.Add("Composite", "VALUE", 2, 2, 2, False, True)
+            indexes.Rows.Add("Composite", "ID", 1, 1, 2, False, True)
+            Dim plan = AccessSql.CloneTablePlan(schema, indexes, {"ID", "VALUE"}, "Copy")
+            Equal("CREATE TABLE [Copy] ([ID] COUNTER NOT NULL, [VALUE] TEXT(40))", plan(0))
+            Equal("CREATE UNIQUE INDEX [PrimaryKey] ON [Copy] ([ID] ASC) WITH PRIMARY DISALLOW NULL", plan(1))
+            Equal("CREATE UNIQUE INDEX [Composite] ON [Copy] ([ID] ASC, [VALUE] DESC) WITH IGNORE NULL", plan(2))
+            Reject(Of NotSupportedException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"ID"}, "Copy"))
+            Reject(Of ArgumentException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"ID", "absent"}, "Copy"))
+            Reject(Of ArgumentException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"ID", "id"}, "Copy"))
+            Reject(Of NotSupportedException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"VALUE", "ID"}, "Copy"))
+            indexes.Rows(0)("NULLS") = 0
+            Equal("CREATE UNIQUE INDEX [PrimaryKey] ON [Copy] ([ID] ASC) WITH PRIMARY", AccessSql.CloneTablePlan(schema, indexes, {"ID", "VALUE"}, "Copy")(1))
+            indexes.Rows(0)("NULLS") = 4
+            Reject(Of NotSupportedException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"ID", "VALUE"}, "Copy"))
+            indexes.Rows(0)("NULLS") = 99
+            Reject(Of NotSupportedException)(Sub() AccessSql.CloneTablePlan(schema, indexes, {"ID", "VALUE"}, "Copy"))
+        End Using
         Console.WriteLine($"PASS: {count} Access SQL/schema planning checks.")
         Console.WriteLine("NOT RUN: Windows Jet/ACE execution, database transactions and Excel integration.")
     End Sub
