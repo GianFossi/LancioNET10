@@ -61,20 +61,20 @@ Friend Class Apert
     Public WithEvents LabDisp As System.Windows.Forms.Label
     Public WithEvents _Label1_3 As System.Windows.Forms.Label
     Public WithEvents lblNomeProto As System.Windows.Forms.Label
-    Public WithEvents mnuApri As System.Windows.Forms.MenuItem
-    Public WithEvents mnuSalva As System.Windows.Forms.MenuItem
-    Public WithEvents mnuChiudi As System.Windows.Forms.MenuItem
-    Public WithEvents mnuEsci As System.Windows.Forms.MenuItem
-    Public WithEvents mnuFile As System.Windows.Forms.MenuItem
-    Public WithEvents mnuLibrMat As System.Windows.Forms.MenuItem
-    Public WithEvents mnuLibr As System.Windows.Forms.MenuItem
-    Public WithEvents mnuAree As System.Windows.Forms.MenuItem
-    Public WithEvents mnuLavori As System.Windows.Forms.MenuItem
-    Public WithEvents mnuVerboso As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPref As System.Windows.Forms.MenuItem
-    Public WithEvents mnuHelp As System.Windows.Forms.MenuItem
-    Public WithEvents mnuH As System.Windows.Forms.MenuItem
-    Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public WithEvents mnuApri As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuChiudi As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuEsci As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuFile As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuLibrMat As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuLibr As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuAree As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuLavori As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuVerboso As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPref As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuHelp As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuH As System.Windows.Forms.ToolStripMenuItem
+    Public MainMenu1 As System.Windows.Forms.MenuStrip
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -88,12 +88,12 @@ Friend Class Apert
     Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuDataSheet As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuDistinta As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuGrezzi As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuFormati As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuCalcoli As System.Windows.Forms.MenuItem
+    Friend WithEvents MenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuDataSheet As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuDistinta As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuGrezzi As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuFormati As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuCalcoli As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
@@ -137,26 +137,26 @@ Friend Class Apert
         Me.LabDisp = New System.Windows.Forms.Label
         Me._Label1_3 = New System.Windows.Forms.Label
         Me.lblNomeProto = New System.Windows.Forms.Label
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.mnuFile = New System.Windows.Forms.MenuItem
-        Me.mnuApri = New System.Windows.Forms.MenuItem
-        Me.mnuSalva = New System.Windows.Forms.MenuItem
-        Me.mnuChiudi = New System.Windows.Forms.MenuItem
-        Me.mnuEsci = New System.Windows.Forms.MenuItem
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.mnuDataSheet = New System.Windows.Forms.MenuItem
-        Me.mnuDistinta = New System.Windows.Forms.MenuItem
-        Me.mnuGrezzi = New System.Windows.Forms.MenuItem
-        Me.mnuFormati = New System.Windows.Forms.MenuItem
-        Me.mnuCalcoli = New System.Windows.Forms.MenuItem
-        Me.mnuLibr = New System.Windows.Forms.MenuItem
-        Me.mnuLibrMat = New System.Windows.Forms.MenuItem
-        Me.mnuPref = New System.Windows.Forms.MenuItem
-        Me.mnuAree = New System.Windows.Forms.MenuItem
-        Me.mnuLavori = New System.Windows.Forms.MenuItem
-        Me.mnuVerboso = New System.Windows.Forms.MenuItem
-        Me.mnuH = New System.Windows.Forms.MenuItem
-        Me.mnuHelp = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuApri = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSalva = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuChiudi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuEsci = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuDataSheet = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuDistinta = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuGrezzi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFormati = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuCalcoli = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuLibr = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuLibrMat = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPref = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAree = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuLavori = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuVerboso = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuH = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem
         Me.Command3D1 = New System.Windows.Forms.Button
         Me.Command3D2 = New System.Windows.Forms.Button
         Me.Comannd3D4 = New System.Windows.Forms.Button
@@ -660,111 +660,111 @@ Friend Class Apert
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuFile, Me.MenuItem1, Me.mnuLibr, Me.mnuPref, Me.mnuH})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuFile, Me.MenuItem1, Me.mnuLibr, Me.mnuPref, Me.mnuH})
         '
         'mnuFile
         '
-        Me.mnuFile.Index = 0
-        Me.mnuFile.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuChiudi, Me.mnuEsci})
+
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuChiudi, Me.mnuEsci})
         Me.mnuFile.Text = "&File"
         '
         'mnuApri
         '
-        Me.mnuApri.Index = 0
+
         Me.mnuApri.Text = "&Apri"
         '
         'mnuSalva
         '
-        Me.mnuSalva.Index = 1
+
         Me.mnuSalva.Text = "&Salva"
         '
         'mnuChiudi
         '
-        Me.mnuChiudi.Index = 2
+
         Me.mnuChiudi.Text = "&Chiudi"
         '
         'mnuEsci
         '
-        Me.mnuEsci.Index = 3
+
         Me.mnuEsci.Text = "&Esci"
         '
         'MenuItem1
         '
-        Me.MenuItem1.Index = 1
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuDataSheet, Me.mnuDistinta, Me.mnuGrezzi, Me.mnuFormati, Me.mnuCalcoli})
+
+        Me.MenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuDataSheet, Me.mnuDistinta, Me.mnuGrezzi, Me.mnuFormati, Me.mnuCalcoli})
         Me.MenuItem1.Text = "Azioni"
         '
         'mnuDataSheet
         '
         Me.mnuDataSheet.Enabled = False
-        Me.mnuDataSheet.Index = 0
+
         Me.mnuDataSheet.Text = "Compila il datasheet"
         '
         'mnuDistinta
         '
         Me.mnuDistinta.Enabled = False
-        Me.mnuDistinta.Index = 1
+
         Me.mnuDistinta.Text = "Compila la distinta"
         '
         'mnuGrezzi
         '
         Me.mnuGrezzi.Enabled = False
-        Me.mnuGrezzi.Index = 2
+
         Me.mnuGrezzi.Text = "Conteggia i grezzi"
         '
         'mnuFormati
         '
         Me.mnuFormati.Enabled = False
-        Me.mnuFormati.Index = 3
+
         Me.mnuFormati.Text = "Esegui i lamieramenti"
         '
         'mnuCalcoli
         '
         Me.mnuCalcoli.Enabled = False
-        Me.mnuCalcoli.Index = 4
+
         Me.mnuCalcoli.Text = "Calcoli meccanici"
         '
         'mnuLibr
         '
-        Me.mnuLibr.Index = 2
-        Me.mnuLibr.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuLibrMat})
+
+        Me.mnuLibr.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuLibrMat})
         Me.mnuLibr.Text = "&Librerie"
         '
         'mnuLibrMat
         '
-        Me.mnuLibrMat.Index = 0
+
         Me.mnuLibrMat.Text = "&Materiali"
         '
         'mnuPref
         '
-        Me.mnuPref.Index = 3
-        Me.mnuPref.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAree, Me.mnuLavori, Me.mnuVerboso})
+
+        Me.mnuPref.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuAree, Me.mnuLavori, Me.mnuVerboso})
         Me.mnuPref.Text = "&Preferenze"
         '
         'mnuAree
         '
-        Me.mnuAree.Index = 0
+
         Me.mnuAree.Text = "&Aree di lavoro"
         '
         'mnuLavori
         '
-        Me.mnuLavori.Index = 1
+
         Me.mnuLavori.Text = "&Tipi di Lavori"
         '
         'mnuVerboso
         '
-        Me.mnuVerboso.Index = 2
+
         Me.mnuVerboso.Text = "PPSM verboso"
         '
         'mnuH
         '
-        Me.mnuH.Index = 4
-        Me.mnuH.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuHelp})
+
+        Me.mnuH.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuHelp})
         Me.mnuH.Text = "?"
         '
         'mnuHelp
         '
-        Me.mnuHelp.Index = 0
+
         Me.mnuHelp.Text = "Guida di IST"
         '
         'Command3D1
@@ -856,7 +856,8 @@ Friend Class Apert
         Me.HelpButton = True
         Me.Location = New System.Drawing.Point(29, 104)
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "Apert"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1580,7 +1581,7 @@ Friend Class Apert
             eventArgs.Handled = True
         End If
     End Sub
-    Public Sub mnuApri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.Popup
+    Public Sub mnuApri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.DropDownOpening
         mnuApri_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuApri_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.Click
@@ -1617,7 +1618,7 @@ Friend Class Apert
             Esiste = False
         End If
     End Sub
-    Public Sub mnuAree_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.Popup
+    Public Sub mnuAree_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.DropDownOpening
         mnuAree_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuAree_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.Click
@@ -1626,7 +1627,7 @@ Friend Class Apert
             objIFST.Out = False
         End If
     End Sub
-    Public Sub mnuChiudi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuChiudi.Popup
+    Public Sub mnuChiudi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuChiudi.DropDownOpening
         mnuChiudi_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuChiudi_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuChiudi.Click
@@ -1636,7 +1637,7 @@ Friend Class Apert
         job.Comm.Arch = ""
         Aggiorna()
     End Sub
-    Public Sub mnuEsci_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuEsci.Popup
+    Public Sub mnuEsci_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuEsci.DropDownOpening
         mnuEsci_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuEsci_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuEsci.Click
@@ -1653,19 +1654,19 @@ Friend Class Apert
         Monitor.Motore.Ammazza("ISFT")
         Monitor = Nothing
     End Sub
-    Public Sub mnuHelp_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelp.Popup
+    Public Sub mnuHelp_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelp.DropDownOpening
         mnuHelp_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuHelp_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelp.Click
         Help.ShowHelp(Me, RadiceHelp, HelpNavigator.TableOfContents)
     End Sub
-    Public Sub mnuLavori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLavori.Popup
+    Public Sub mnuLavori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLavori.DropDownOpening
         mnuLavori_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuLavori_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLavori.Click
         Monitor.Motore.SetLavoriSciolti()
     End Sub
-    Public Sub mnuLibrMat_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLibrMat.Popup
+    Public Sub mnuLibrMat_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLibrMat.DropDownOpening
         mnuLibrMat_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuLibrMat_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuLibrMat.Click
@@ -1673,14 +1674,14 @@ Friend Class Apert
         Mat = New LibMat.MaterialeNew1
         Mat.Scelta(0, Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
     End Sub
-    Public Sub mnuSalva_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuSalva.Popup
+    Public Sub mnuSalva_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuSalva.DropDownOpening
         mnuSalva_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuSalva_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuSalva.Click
         Salva(OKpuoiIniziare) '13-5-99
         ModifiedData = False '13-5-99
     End Sub
-    Public Sub mnuVerboso_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.Popup
+    Public Sub mnuVerboso_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.DropDownOpening
         mnuVerboso_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuVerboso_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.Click

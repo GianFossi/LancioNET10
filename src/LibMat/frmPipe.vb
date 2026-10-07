@@ -34,20 +34,20 @@ Friend Class frmPipe
     Public WithEvents Label3 As System.Windows.Forms.Label
     Public WithEvents Label2 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents mnuModifica As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPrima As System.Windows.Forms.MenuItem
-    Public WithEvents mnuDopo As System.Windows.Forms.MenuItem
-    Public WithEvents mnuCancella As System.Windows.Forms.MenuItem
-    Public WithEvents miomenu As System.Windows.Forms.MenuItem
-    Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public WithEvents mnuModifica As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPrima As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuDopo As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuCancella As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents miomenu As System.Windows.Forms.ToolStripMenuItem
+    Public MainMenu1 As System.Windows.Forms.MenuStrip
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
-    Friend WithEvents mioContesto As System.Windows.Forms.ContextMenu
-    Friend WithEvents popModifica As System.Windows.Forms.MenuItem
-    Friend WithEvents popPrima As System.Windows.Forms.MenuItem
-    Friend WithEvents popDopo As System.Windows.Forms.MenuItem
-    Friend WithEvents popCancella As System.Windows.Forms.MenuItem
+    Friend WithEvents mioContesto As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents popModifica As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popPrima As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popDopo As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popCancella As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -56,23 +56,23 @@ Friend Class frmPipe
         Me.List1 = New System.Windows.Forms.ListBox
         Me.cmdOK = New System.Windows.Forms.Button
         Me.lstSpess = New System.Windows.Forms.ListBox
-        Me.mioContesto = New System.Windows.Forms.ContextMenu
-        Me.popModifica = New System.Windows.Forms.MenuItem
-        Me.popPrima = New System.Windows.Forms.MenuItem
-        Me.popDopo = New System.Windows.Forms.MenuItem
-        Me.popCancella = New System.Windows.Forms.MenuItem
+        Me.mioContesto = New System.Windows.Forms.ContextMenuStrip
+        Me.popModifica = New System.Windows.Forms.ToolStripMenuItem
+        Me.popPrima = New System.Windows.Forms.ToolStripMenuItem
+        Me.popDopo = New System.Windows.Forms.ToolStripMenuItem
+        Me.popCancella = New System.Windows.Forms.ToolStripMenuItem
         Me.lstSchedula = New System.Windows.Forms.ListBox
         Me.txtDiam = New System.Windows.Forms.TextBox
         Me.cmbDN = New System.Windows.Forms.ComboBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.miomenu = New System.Windows.Forms.MenuItem
-        Me.mnuModifica = New System.Windows.Forms.MenuItem
-        Me.mnuPrima = New System.Windows.Forms.MenuItem
-        Me.mnuDopo = New System.Windows.Forms.MenuItem
-        Me.mnuCancella = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.miomenu = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuModifica = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPrima = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuDopo = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuCancella = New System.Windows.Forms.ToolStripMenuItem
         Me.SuspendLayout()
         '
         'cmdHelp
@@ -126,7 +126,7 @@ Friend Class frmPipe
         'lstSpess
         '
         Me.lstSpess.BackColor = System.Drawing.SystemColors.Window
-        Me.lstSpess.ContextMenu = Me.mioContesto
+        Me.lstSpess.ContextMenuStrip = Me.mioContesto
         Me.lstSpess.Cursor = System.Windows.Forms.Cursors.Default
         Me.lstSpess.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lstSpess.Location = New System.Drawing.Point(68, 39)
@@ -137,32 +137,32 @@ Friend Class frmPipe
         '
         'mioContesto
         '
-        Me.mioContesto.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.popModifica, Me.popPrima, Me.popDopo, Me.popCancella})
+        Me.mioContesto.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.popModifica, Me.popPrima, Me.popDopo, Me.popCancella})
         '
         'popModifica
         '
-        Me.popModifica.Index = 0
+
         Me.popModifica.Text = "Modifica"
         '
         'popPrima
         '
-        Me.popPrima.Index = 1
+
         Me.popPrima.Text = "Inserisci prima"
         '
         'popDopo
         '
-        Me.popDopo.Index = 2
+
         Me.popDopo.Text = "Inserisci dopo"
         '
         'popCancella
         '
-        Me.popCancella.Index = 3
+
         Me.popCancella.Text = "Cancella"
         '
         'lstSchedula
         '
         Me.lstSchedula.BackColor = System.Drawing.SystemColors.Window
-        Me.lstSchedula.ContextMenu = Me.mioContesto
+        Me.lstSchedula.ContextMenuStrip = Me.mioContesto
         Me.lstSchedula.Cursor = System.Windows.Forms.Cursors.Default
         Me.lstSchedula.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lstSchedula.Location = New System.Drawing.Point(12, 39)
@@ -238,33 +238,33 @@ Friend Class frmPipe
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.miomenu})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.miomenu})
         '
         'miomenu
         '
-        Me.miomenu.Index = 0
-        Me.miomenu.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuModifica, Me.mnuPrima, Me.mnuDopo, Me.mnuCancella})
+
+        Me.miomenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuModifica, Me.mnuPrima, Me.mnuDopo, Me.mnuCancella})
         Me.miomenu.Text = "Azioni"
         Me.miomenu.Visible = False
         '
         'mnuModifica
         '
-        Me.mnuModifica.Index = 0
+
         Me.mnuModifica.Text = "Modifica"
         '
         'mnuPrima
         '
-        Me.mnuPrima.Index = 1
+
         Me.mnuPrima.Text = "Inserisci prima"
         '
         'mnuDopo
         '
-        Me.mnuDopo.Index = 2
+
         Me.mnuDopo.Text = "Inserisci dopo"
         '
         'mnuCancella
         '
-        Me.mnuCancella.Index = 3
+
         Me.mnuCancella.Text = "Cancella"
         '
         'frmPipe
@@ -287,7 +287,8 @@ Friend Class frmPipe
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(318, 82)
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.Name = "frmPipe"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
@@ -534,7 +535,7 @@ Friend Class frmPipe
         If Tubo.Standard = 0 Then Exit Sub
         If Button = 2 Then
             lstSchedula_SelectedIndexChanged(lstSchedula, New System.EventArgs)
-            'UPGRADE_ISSUE: Form metodo frmPipe.PopupMenu non è stato aggiornato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2064"'
+            'UPGRADE_ISSUE: Form metodo frmPipe.DropDownOpeningMenu non è stato aggiornato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2064"'
             'PopupMenu(miomenu)
         End If
     End Sub
@@ -551,11 +552,11 @@ Friend Class frmPipe
         If Tubo.Standard = 0 Then Exit Sub
         If Button = 2 Then
             lstSpess_SelectedIndexChanged(lstSpess, New System.EventArgs)
-            'UPGRADE_ISSUE: Form metodo frmPipe.PopupMenu non è stato aggiornato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2064"'
+            'UPGRADE_ISSUE: Form metodo frmPipe.DropDownOpeningMenu non è stato aggiornato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2064"'
             'PopupMenu(miomenu)
         End If
     End Sub
-    Public Sub mnuCancella_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuCancella.Popup
+    Public Sub mnuCancella_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuCancella.DropDownOpening
         mnuCancella_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuCancella_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuCancella.Click
@@ -568,7 +569,7 @@ Friend Class frmPipe
         Variato = True
         cmbDN_SelectedIndexChanged(cmbDN, New System.EventArgs)
     End Sub
-    Public Sub mnuDopo_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuDopo.Popup
+    Public Sub mnuDopo_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuDopo.DropDownOpening
         mnuDopo_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuDopo_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuDopo.Click
@@ -587,7 +588,7 @@ Friend Class frmPipe
         Pipe.Spess(lstSchedula.SelectedIndex + 1) = CStr(0)
         mnuModifica_Click(mnuModifica, New System.EventArgs)
     End Sub
-    Public Sub mnuModifica_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuModifica.Popup
+    Public Sub mnuModifica_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuModifica.DropDownOpening
         mnuModifica_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuModifica_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuModifica.Click
@@ -612,7 +613,7 @@ Friend Class frmPipe
         cmbDN_SelectedIndexChanged(cmbDN, New System.EventArgs)
         lstSchedula.SelectedIndex = l
     End Sub
-    Public Sub mnuPrima_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPrima.Popup
+    Public Sub mnuPrima_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPrima.DropDownOpening
         mnuPrima_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPrima_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPrima.Click

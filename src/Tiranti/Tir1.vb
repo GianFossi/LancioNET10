@@ -145,15 +145,15 @@ Friend Class Tir1
 	Public WithEvents _SysInter_1 As System.Windows.Forms.RadioButton
 	Public WithEvents _SysInter_0 As System.Windows.Forms.RadioButton
 	Public WithEvents Sistema As System.Windows.Forms.GroupBox
-    Public WithEvents mennuovo As System.Windows.Forms.MenuItem
-	Public WithEvents menapri As System.Windows.Forms.MenuItem
-	Public WithEvents menSalva As System.Windows.Forms.MenuItem
-	Public WithEvents line1 As System.Windows.Forms.MenuItem
-	Public WithEvents menstampa As System.Windows.Forms.MenuItem
-	Public WithEvents line2 As System.Windows.Forms.MenuItem
-	Public WithEvents menEsci As System.Windows.Forms.MenuItem
-	Public WithEvents menfile As System.Windows.Forms.MenuItem
-	Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public WithEvents mennuovo As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents menapri As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents menSalva As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents line1 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents menstampa As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents line2 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents menEsci As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents menfile As System.Windows.Forms.ToolStripMenuItem
+	Public MainMenu1 As System.Windows.Forms.MenuStrip
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -279,15 +279,15 @@ Friend Class Tir1
         Me._SysInter_2 = New System.Windows.Forms.RadioButton
         Me._SysInter_1 = New System.Windows.Forms.RadioButton
         Me._SysInter_0 = New System.Windows.Forms.RadioButton
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.menfile = New System.Windows.Forms.MenuItem
-        Me.mennuovo = New System.Windows.Forms.MenuItem
-        Me.menapri = New System.Windows.Forms.MenuItem
-        Me.menSalva = New System.Windows.Forms.MenuItem
-        Me.line1 = New System.Windows.Forms.MenuItem
-        Me.menstampa = New System.Windows.Forms.MenuItem
-        Me.line2 = New System.Windows.Forms.MenuItem
-        Me.menEsci = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.menfile = New System.Windows.Forms.ToolStripMenuItem
+        Me.mennuovo = New System.Windows.Forms.ToolStripMenuItem
+        Me.menapri = New System.Windows.Forms.ToolStripMenuItem
+        Me.menSalva = New System.Windows.Forms.ToolStripMenuItem
+        Me.line1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.menstampa = New System.Windows.Forms.ToolStripMenuItem
+        Me.line2 = New System.Windows.Forms.ToolStripMenuItem
+        Me.menEsci = New System.Windows.Forms.ToolStripMenuItem
         Me.O_S = New System.Windows.Forms.OpenFileDialog
         Me.S_S = New System.Windows.Forms.SaveFileDialog
         Me.ToolBar2 = New System.Windows.Forms.ToolBar
@@ -1904,52 +1904,52 @@ Friend Class Tir1
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.menfile})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.menfile})
         '
         'menfile
         '
-        Me.menfile.Index = 0
-        Me.menfile.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mennuovo, Me.menapri, Me.menSalva, Me.line1, Me.menstampa, Me.line2, Me.menEsci})
+
+        Me.menfile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mennuovo, Me.menapri, Me.menSalva, Me.line1, Me.menstampa, Me.line2, Me.menEsci})
         Me.menfile.Text = "File"
         '
         'mennuovo
         '
-        Me.mennuovo.Index = 0
-        Me.mennuovo.Shortcut = System.Windows.Forms.Shortcut.CtrlN
+
+        Me.mennuovo.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlN), System.Windows.Forms.Keys)
         Me.mennuovo.Text = "Nuovo"
         '
         'menapri
         '
-        Me.menapri.Index = 1
-        Me.menapri.Shortcut = System.Windows.Forms.Shortcut.CtrlA
+
+        Me.menapri.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlA), System.Windows.Forms.Keys)
         Me.menapri.Text = "Apri"
         '
         'menSalva
         '
-        Me.menSalva.Index = 2
-        Me.menSalva.Shortcut = System.Windows.Forms.Shortcut.CtrlS
+
+        Me.menSalva.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlS), System.Windows.Forms.Keys)
         Me.menSalva.Text = "Salva"
         '
         'line1
         '
-        Me.line1.Index = 3
+
         Me.line1.Text = "-"
         '
         'menstampa
         '
-        Me.menstampa.Index = 4
-        Me.menstampa.Shortcut = System.Windows.Forms.Shortcut.CtrlP
+
+        Me.menstampa.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlP), System.Windows.Forms.Keys)
         Me.menstampa.Text = "Stampa"
         '
         'line2
         '
-        Me.line2.Index = 5
+
         Me.line2.Text = "-"
         '
         'menEsci
         '
-        Me.menEsci.Index = 6
-        Me.menEsci.Shortcut = System.Windows.Forms.Shortcut.CtrlE
+
+        Me.menEsci.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlE), System.Windows.Forms.Keys)
         Me.menEsci.Text = "Esci"
         '
         'ToolBar2
@@ -2013,7 +2013,8 @@ Friend Class Tir1
         Me.HelpButton = True
         Me.Location = New System.Drawing.Point(123, 122)
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "Tir1"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -2194,7 +2195,7 @@ Cont:   Next
             End If
         End Set
     End Property
-    Public Sub menapri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menapri.Popup
+    Public Sub menapri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menapri.DropDownOpening
         menapri_Click(eventSender, eventArgs)
     End Sub
     Public Sub menapri_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menapri.Click
@@ -2214,7 +2215,7 @@ Cont:   Next
             End If
         End If
     End Sub
-    Public Sub menEsci_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menEsci.Popup
+    Public Sub menEsci_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menEsci.DropDownOpening
         menEsci_Click(eventSender, eventArgs)
     End Sub
     Public Sub menEsci_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menEsci.Click
@@ -2222,7 +2223,7 @@ Cont:   Next
         Hide()
         Me.Close()
     End Sub
-    Public Sub mennuovo_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mennuovo.Popup
+    Public Sub mennuovo_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mennuovo.DropDownOpening
         mennuovo_Click(eventSender, eventArgs)
     End Sub
     Public Sub mennuovo_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mennuovo.Click
@@ -2231,7 +2232,7 @@ Cont:   Next
             Text_Renamed(ne).Text = ""
         Next
     End Sub
-    Public Sub menSalva_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menSalva.Popup
+    Public Sub menSalva_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menSalva.DropDownOpening
         menSalva_Click(eventSender, eventArgs)
     End Sub
     Public Sub menSalva_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menSalva.Click
@@ -2243,7 +2244,7 @@ Cont:   Next
         Tir1.DefInstance.Refresh()
         ModifiedData = False
     End Sub
-    Public Sub menstampa_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menstampa.Popup
+    Public Sub menstampa_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menstampa.DropDownOpening
         menstampa_Click(eventSender, eventArgs)
     End Sub
     Public Sub menstampa_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles menstampa.Click

@@ -40,6 +40,9 @@ jobs:
       - name: Verify WinForms control collections and form construction
         timeout-minutes: 2
         run: dotnet run --project tests/WinForms.Smoke -c Release --no-build
+      - name: Verify main and ASME menus on Windows x86
+        timeout-minutes: 2
+        run: dotnet run --project tests/MenuStartup.Smoke -c Release
       - name: Verify direct legacy calculation harness on Windows
         run: dotnet run --project tools/LegacyCalculation.Debug -c Debug
       - name: Characterize original ASME cylinder routines

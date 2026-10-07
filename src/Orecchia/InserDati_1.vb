@@ -35,20 +35,20 @@ Friend Class InserDati_1
 	Private components As System.ComponentModel.IContainer
 	Public ToolTip1 As System.Windows.Forms.ToolTip
     Public WithEvents Titolo As System.Windows.Forms.Label
-    Public WithEvents _mnuFile0_0 As System.Windows.Forms.MenuItem
-	Public WithEvents _mnuFile0_1 As System.Windows.Forms.MenuItem
-	Public WithEvents _mnuFile0_2 As System.Windows.Forms.MenuItem
-	Public WithEvents _mnuFile0_3 As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFile As System.Windows.Forms.MenuItem
-	Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public WithEvents _mnuFile0_0 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents _mnuFile0_1 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents _mnuFile0_2 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents _mnuFile0_3 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFile As System.Windows.Forms.ToolStripMenuItem
+	Public MainMenu1 As System.Windows.Forms.MenuStrip
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
     Friend WithEvents CommonDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
+    Friend WithEvents MenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem4 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
@@ -161,8 +161,8 @@ Friend Class InserDati_1
     Public WithEvents Label46 As System.Windows.Forms.Label
     Public WithEvents Label47 As System.Windows.Forms.Label
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents mnuCalcola As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuRapporto As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuCalcola As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuRapporto As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(InserDati_1))
@@ -180,16 +180,16 @@ Friend Class InserDati_1
         Me.Label29 = New System.Windows.Forms.Label
         Me.Label30 = New System.Windows.Forms.Label
         Me.Titolo = New System.Windows.Forms.Label
-        Me._mnuFile0_0 = New System.Windows.Forms.MenuItem
-        Me._mnuFile0_1 = New System.Windows.Forms.MenuItem
-        Me._mnuFile0_2 = New System.Windows.Forms.MenuItem
-        Me._mnuFile0_3 = New System.Windows.Forms.MenuItem
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.mnuFile = New System.Windows.Forms.MenuItem
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem
-        Me.MenuItem4 = New System.Windows.Forms.MenuItem
+        Me._mnuFile0_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuFile0_1 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuFile0_2 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuFile0_3 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem2 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem3 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem4 = New System.Windows.Forms.ToolStripMenuItem
         Me.CommonDialog1 = New System.Windows.Forms.SaveFileDialog
         Me.TabControl1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
@@ -291,8 +291,8 @@ Friend Class InserDati_1
         Me.Label45 = New System.Windows.Forms.Label
         Me.Label46 = New System.Windows.Forms.Label
         Me.Label47 = New System.Windows.Forms.Label
-        Me.mnuCalcola = New System.Windows.Forms.MenuItem
-        Me.mnuRapporto = New System.Windows.Forms.MenuItem
+        Me.mnuCalcola = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuRapporto = New System.Windows.Forms.ToolStripMenuItem
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -481,54 +481,54 @@ Friend Class InserDati_1
         '
         '_mnuFile0_0
         '
-        Me._mnuFile0_0.Index = 0
+
         Me._mnuFile0_0.Text = "Apri"
         '
         '_mnuFile0_1
         '
-        Me._mnuFile0_1.Index = 1
+
         Me._mnuFile0_1.Text = "Salva"
         '
         '_mnuFile0_2
         '
-        Me._mnuFile0_2.Index = 2
+
         Me._mnuFile0_2.Text = "Salva Come"
         '
         '_mnuFile0_3
         '
-        Me._mnuFile0_3.Index = 3
+
         Me._mnuFile0_3.Text = "Esci"
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuFile, Me.MenuItem1, Me.MenuItem2})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuFile, Me.MenuItem1, Me.MenuItem2})
         '
         'mnuFile
         '
-        Me.mnuFile.Index = 0
-        Me.mnuFile.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuFile0_0, Me._mnuFile0_1, Me._mnuFile0_2, Me._mnuFile0_3})
+
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuFile0_0, Me._mnuFile0_1, Me._mnuFile0_2, Me._mnuFile0_3})
         Me.mnuFile.Text = "File"
         '
         'MenuItem1
         '
-        Me.MenuItem1.Index = 1
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuCalcola, Me.mnuRapporto})
+
+        Me.MenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuCalcola, Me.mnuRapporto})
         Me.MenuItem1.Text = "Azioni"
         '
         'MenuItem2
         '
-        Me.MenuItem2.Index = 2
-        Me.MenuItem2.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem3, Me.MenuItem4})
+
+        Me.MenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.MenuItem3, Me.MenuItem4})
         Me.MenuItem2.Text = "?"
         '
         'MenuItem3
         '
-        Me.MenuItem3.Index = 0
+
         Me.MenuItem3.Text = "Guida"
         '
         'MenuItem4
         '
-        Me.MenuItem4.Index = 1
+
         Me.MenuItem4.Text = "Informazioni"
         '
         'TabControl1
@@ -2006,12 +2006,12 @@ Friend Class InserDati_1
         '
         'mnuCalcola
         '
-        Me.mnuCalcola.Index = 0
+
         Me.mnuCalcola.Text = "Calcola"
         '
         'mnuRapporto
         '
-        Me.mnuRapporto.Index = 1
+
         Me.mnuRapporto.Text = "Rapporto"
         '
         'InserDati_1
@@ -2027,7 +2027,8 @@ Friend Class InserDati_1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Location = New System.Drawing.Point(10, 48)
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "InserDati_1"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No

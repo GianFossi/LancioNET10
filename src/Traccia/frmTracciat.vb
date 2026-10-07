@@ -91,19 +91,19 @@ Friend Class frmTracciat
     'NOTA: la procedura che segue è richiesta da Progettazione Windows Form.
     'Può essere modificata in Progettazione Windows Form.  
     'Non modificarla nell'editor del codice.
-    Friend WithEvents MainMenu1 As System.Windows.Forms.MainMenu
-    Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuSalva As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuSalvaCome As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuEsci As System.Windows.Forms.MenuItem
+    Friend WithEvents MainMenu1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents MenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuSalvaCome As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuEsci As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents pctRisult As System.Windows.Forms.PictureBox
     Public WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents panRisult As System.Windows.Forms.Panel
     Friend WithEvents cmdAggiorna As System.Windows.Forms.Button
-    Friend WithEvents mnuStampa As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuRM As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuStampa As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuRM As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Frame1 As System.Windows.Forms.Panel
@@ -112,13 +112,13 @@ Friend Class frmTracciat
     Friend WithEvents cmdRight As System.Windows.Forms.Button
     Friend WithEvents cmdLeft As System.Windows.Forms.Button
     Friend WithEvents cmdDown As System.Windows.Forms.Button
-    Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuDati As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem5 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuCalcola As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuDisegna As System.Windows.Forms.MenuItem
-    Friend WithEvents mnu4sp As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuElim As System.Windows.Forms.MenuItem
+    Friend WithEvents MenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuDati As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuCalcola As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuDisegna As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnu4sp As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuElim As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusBar1 As System.Windows.Forms.StatusBar
     Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
     Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
@@ -128,29 +128,29 @@ Friend Class frmTracciat
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents cmdFull As System.Windows.Forms.Button
     Friend WithEvents Picture1 As System.Windows.Forms.PictureBox
-    Friend WithEvents mnuPref As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuPref As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cmd4Ssp As System.Windows.Forms.Button
-    Friend WithEvents mnuTiranti As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuTondi As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuPiatti As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuTagli As System.Windows.Forms.MenuItem
-    Friend WithEvents mioContesto As System.Windows.Forms.ContextMenu
+    Friend WithEvents mnuTiranti As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuTondi As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuPiatti As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuTagli As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mioContesto As System.Windows.Forms.ContextMenuStrip
     Public WithEvents _cmdTraccia_2 As System.Windows.Forms.Button
-    Friend WithEvents popTogli As System.Windows.Forms.MenuItem
-    Friend WithEvents popCambia As System.Windows.Forms.MenuItem
-    Friend WithEvents popDimen As System.Windows.Forms.MenuItem
-    Friend WithEvents popRuota As System.Windows.Forms.MenuItem
-    Friend WithEvents popRuotaGen As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuRipristina As System.Windows.Forms.MenuItem
+    Friend WithEvents popTogli As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popCambia As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popDimen As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popRuota As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents popRuotaGen As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuRipristina As System.Windows.Forms.ToolStripMenuItem
     Public WithEvents Break As System.Windows.Forms.Button
-    Friend WithEvents mnuAree As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuLavori As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuStrategia As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuAree As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuLavori As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuStrategia As System.Windows.Forms.ToolStripMenuItem
     Public WithEvents Timer2 As System.Windows.Forms.Timer
-    Friend WithEvents popToglTi As System.Windows.Forms.MenuItem
+    Friend WithEvents popToglTi As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ListSelect As System.Windows.Forms.ListBox
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
-    Friend WithEvents mnuApri As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuApri As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cmdElim As System.Windows.Forms.Button
     Friend WithEvents ToolTipHelp As System.Windows.Forms.ToolTip
     Friend WithEvents Frame As System.Windows.Forms.GroupBox
@@ -158,48 +158,48 @@ Friend Class frmTracciat
     Friend WithEvents cmdDati As System.Windows.Forms.Button
     Friend WithEvents cmdCalcola As System.Windows.Forms.Button
     Public WithEvents cmdTipPass As System.Windows.Forms.Button
-    Friend WithEvents mnuSoloPerif As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuSoloPerif As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cmdSalva As System.Windows.Forms.Button
     Friend WithEvents cmdDisTrk As System.Windows.Forms.Button
     Friend WithEvents cmdStampa As System.Windows.Forms.Button
-    Friend WithEvents MenuItem6 As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuGuida As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuInformazioni As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuChiudi As System.Windows.Forms.MenuItem
+    Friend WithEvents MenuItem6 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuGuida As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuInformazioni As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuChiudi As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmTracciat))
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.mnuApri = New System.Windows.Forms.MenuItem
-        Me.mnuSalva = New System.Windows.Forms.MenuItem
-        Me.mnuSalvaCome = New System.Windows.Forms.MenuItem
-        Me.mnuRipristina = New System.Windows.Forms.MenuItem
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem
-        Me.mnuStampa = New System.Windows.Forms.MenuItem
-        Me.mnuRM = New System.Windows.Forms.MenuItem
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem
-        Me.mnuChiudi = New System.Windows.Forms.MenuItem
-        Me.mnuEsci = New System.Windows.Forms.MenuItem
-        Me.MenuItem4 = New System.Windows.Forms.MenuItem
-        Me.mnuDati = New System.Windows.Forms.MenuItem
-        Me.mnuTiranti = New System.Windows.Forms.MenuItem
-        Me.mnuTondi = New System.Windows.Forms.MenuItem
-        Me.mnuPiatti = New System.Windows.Forms.MenuItem
-        Me.mnuTagli = New System.Windows.Forms.MenuItem
-        Me.MenuItem5 = New System.Windows.Forms.MenuItem
-        Me.mnuCalcola = New System.Windows.Forms.MenuItem
-        Me.mnuDisegna = New System.Windows.Forms.MenuItem
-        Me.mnu4sp = New System.Windows.Forms.MenuItem
-        Me.mnuElim = New System.Windows.Forms.MenuItem
-        Me.mnuPref = New System.Windows.Forms.MenuItem
-        Me.mnuAree = New System.Windows.Forms.MenuItem
-        Me.mnuLavori = New System.Windows.Forms.MenuItem
-        Me.mnuStrategia = New System.Windows.Forms.MenuItem
-        Me.mnuSoloPerif = New System.Windows.Forms.MenuItem
-        Me.MenuItem6 = New System.Windows.Forms.MenuItem
-        Me.mnuGuida = New System.Windows.Forms.MenuItem
-        Me.mnuInformazioni = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.MenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuApri = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSalva = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSalvaCome = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuRipristina = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem3 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStampa = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuRM = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem2 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuChiudi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuEsci = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem4 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuDati = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTiranti = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTondi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPiatti = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTagli = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem5 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuCalcola = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuDisegna = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnu4sp = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuElim = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPref = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAree = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuLavori = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStrategia = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSoloPerif = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem6 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuGuida = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuInformazioni = New System.Windows.Forms.ToolStripMenuItem
         Me.pctRisult = New System.Windows.Forms.PictureBox
         Me.panRisult = New System.Windows.Forms.Panel
         Me.cmdAggiorna = New System.Windows.Forms.Button
@@ -231,13 +231,13 @@ Friend Class frmTracciat
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.cmd4Ssp = New System.Windows.Forms.Button
         Me.Picture1 = New System.Windows.Forms.PictureBox
-        Me.mioContesto = New System.Windows.Forms.ContextMenu
-        Me.popTogli = New System.Windows.Forms.MenuItem
-        Me.popCambia = New System.Windows.Forms.MenuItem
-        Me.popToglTi = New System.Windows.Forms.MenuItem
-        Me.popDimen = New System.Windows.Forms.MenuItem
-        Me.popRuota = New System.Windows.Forms.MenuItem
-        Me.popRuotaGen = New System.Windows.Forms.MenuItem
+        Me.mioContesto = New System.Windows.Forms.ContextMenuStrip
+        Me.popTogli = New System.Windows.Forms.ToolStripMenuItem
+        Me.popCambia = New System.Windows.Forms.ToolStripMenuItem
+        Me.popToglTi = New System.Windows.Forms.ToolStripMenuItem
+        Me.popDimen = New System.Windows.Forms.ToolStripMenuItem
+        Me.popRuota = New System.Windows.Forms.ToolStripMenuItem
+        Me.popRuotaGen = New System.Windows.Forms.ToolStripMenuItem
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.ListSelect = New System.Windows.Forms.ListBox
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
@@ -255,168 +255,168 @@ Friend Class frmTracciat
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem1, Me.MenuItem4, Me.MenuItem5, Me.mnuPref, Me.MenuItem6})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.MenuItem1, Me.MenuItem4, Me.MenuItem5, Me.mnuPref, Me.MenuItem6})
         '
         'MenuItem1
         '
-        Me.MenuItem1.Index = 0
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuSalvaCome, Me.mnuRipristina, Me.MenuItem3, Me.mnuStampa, Me.mnuRM, Me.MenuItem2, Me.mnuChiudi, Me.mnuEsci})
+
+        Me.MenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuSalvaCome, Me.mnuRipristina, Me.MenuItem3, Me.mnuStampa, Me.mnuRM, Me.MenuItem2, Me.mnuChiudi, Me.mnuEsci})
         Me.MenuItem1.Text = "File"
         '
         'mnuApri
         '
-        Me.mnuApri.Index = 0
+
         Me.mnuApri.Text = "Apri"
         '
         'mnuSalva
         '
         Me.mnuSalva.Enabled = False
-        Me.mnuSalva.Index = 1
+
         Me.mnuSalva.Text = "Salva"
         '
         'mnuSalvaCome
         '
         Me.mnuSalvaCome.Enabled = False
-        Me.mnuSalvaCome.Index = 2
+
         Me.mnuSalvaCome.Text = "Salva come ..."
         '
         'mnuRipristina
         '
         Me.mnuRipristina.Enabled = False
-        Me.mnuRipristina.Index = 3
+
         Me.mnuRipristina.Text = "Ripristina"
         '
         'MenuItem3
         '
-        Me.MenuItem3.Index = 4
+
         Me.MenuItem3.Text = "-"
         '
         'mnuStampa
         '
         Me.mnuStampa.Enabled = False
-        Me.mnuStampa.Index = 5
+
         Me.mnuStampa.Text = "Esposta disegno ..."
         '
         'mnuRM
         '
         Me.mnuRM.Enabled = False
-        Me.mnuRM.Index = 6
+
         Me.mnuRM.Text = "RM"
         '
         'MenuItem2
         '
-        Me.MenuItem2.Index = 7
+
         Me.MenuItem2.Text = "-"
         '
         'mnuChiudi
         '
         Me.mnuChiudi.Enabled = False
-        Me.mnuChiudi.Index = 8
+
         Me.mnuChiudi.Text = "Chiudi"
         '
         'mnuEsci
         '
-        Me.mnuEsci.Index = 9
+
         Me.mnuEsci.Text = "Esci"
         '
         'MenuItem4
         '
-        Me.MenuItem4.Index = 1
-        Me.MenuItem4.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuDati, Me.mnuTiranti, Me.mnuTondi, Me.mnuPiatti, Me.mnuTagli})
+
+        Me.MenuItem4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuDati, Me.mnuTiranti, Me.mnuTondi, Me.mnuPiatti, Me.mnuTagli})
         Me.MenuItem4.Text = "Modifica"
         '
         'mnuDati
         '
-        Me.mnuDati.Index = 0
+
         Me.mnuDati.Text = "Dati di progetto"
         '
         'mnuTiranti
         '
-        Me.mnuTiranti.Index = 1
+
         Me.mnuTiranti.Text = "Tiranti"
         '
         'mnuTondi
         '
-        Me.mnuTondi.Index = 2
+
         Me.mnuTondi.Text = "Tondi"
         '
         'mnuPiatti
         '
-        Me.mnuPiatti.Index = 3
+
         Me.mnuPiatti.Text = "Piatti"
         '
         'mnuTagli
         '
-        Me.mnuTagli.Index = 4
+
         Me.mnuTagli.Text = "Tagli diaframmi"
         '
         'MenuItem5
         '
-        Me.MenuItem5.Index = 2
-        Me.MenuItem5.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuCalcola, Me.mnuDisegna, Me.mnu4sp, Me.mnuElim})
+
+        Me.MenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuCalcola, Me.mnuDisegna, Me.mnu4sp, Me.mnuElim})
         Me.MenuItem5.Text = "Tracciatura"
         '
         'mnuCalcola
         '
-        Me.mnuCalcola.Index = 0
+
         Me.mnuCalcola.Text = "Calcola Tracciatura"
         '
         'mnuDisegna
         '
-        Me.mnuDisegna.Index = 1
+
         Me.mnuDisegna.Text = "Disegna Tracciatura"
         '
         'mnu4sp
         '
-        Me.mnu4sp.Index = 2
+
         Me.mnu4sp.Text = "Calcola 4S/p"
         '
         'mnuElim
         '
         Me.mnuElim.Enabled = False
-        Me.mnuElim.Index = 3
+
         Me.mnuElim.Text = "Elimina Dati Finali"
         '
         'mnuPref
         '
-        Me.mnuPref.Index = 3
-        Me.mnuPref.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAree, Me.mnuLavori, Me.mnuStrategia, Me.mnuSoloPerif})
+
+        Me.mnuPref.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuAree, Me.mnuLavori, Me.mnuStrategia, Me.mnuSoloPerif})
         Me.mnuPref.Text = "Preferenze"
         '
         'mnuAree
         '
-        Me.mnuAree.Index = 0
+
         Me.mnuAree.Text = "Aree di Lavoro"
         '
         'mnuLavori
         '
-        Me.mnuLavori.Index = 1
+
         Me.mnuLavori.Text = "Tipo di Lavori"
         '
         'mnuStrategia
         '
-        Me.mnuStrategia.Index = 2
+
         Me.mnuStrategia.Text = "Fattore strategia"
         '
         'mnuSoloPerif
         '
-        Me.mnuSoloPerif.Index = 3
+
         Me.mnuSoloPerif.Text = "Dis. solo periferia"
         '
         'MenuItem6
         '
-        Me.MenuItem6.Index = 4
-        Me.MenuItem6.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuGuida, Me.mnuInformazioni})
+
+        Me.MenuItem6.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuGuida, Me.mnuInformazioni})
         Me.MenuItem6.Text = "?"
         '
         'mnuGuida
         '
-        Me.mnuGuida.Index = 0
+
         Me.mnuGuida.Text = "Guida"
         '
         'mnuInformazioni
         '
-        Me.mnuInformazioni.Index = 1
+
         Me.mnuInformazioni.Text = "Informazioni"
         '
         'pctRisult
@@ -685,7 +685,7 @@ Friend Class frmTracciat
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Picture1.ContextMenu = Me.mioContesto
+        Me.Picture1.ContextMenuStrip = Me.mioContesto
         Me.Picture1.Location = New System.Drawing.Point(8, 40)
         Me.Picture1.Name = "Picture1"
         Me.Picture1.Size = New System.Drawing.Size(640, 411)
@@ -694,36 +694,36 @@ Friend Class frmTracciat
         '
         'mioContesto
         '
-        Me.mioContesto.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.popTogli, Me.popCambia, Me.popToglTi, Me.popDimen, Me.popRuota, Me.popRuotaGen})
+        Me.mioContesto.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.popTogli, Me.popCambia, Me.popToglTi, Me.popDimen, Me.popRuota, Me.popRuotaGen})
         '
         'popTogli
         '
-        Me.popTogli.Index = 0
+
         Me.popTogli.Text = "Togli"
         '
         'popCambia
         '
-        Me.popCambia.Index = 1
+
         Me.popCambia.Text = "Cambia"
         '
         'popToglTi
         '
-        Me.popToglTi.Index = 2
+
         Me.popToglTi.Text = "ToglTi"
         '
         'popDimen
         '
-        Me.popDimen.Index = 3
+
         Me.popDimen.Text = "Dimen"
         '
         'popRuota
         '
-        Me.popRuota.Index = 4
+
         Me.popRuota.Text = "Ruota"
         '
         'popRuotaGen
         '
-        Me.popRuotaGen.Index = 5
+
         Me.popRuotaGen.Text = "RuotaGen"
         '
         'Timer2
@@ -788,7 +788,8 @@ Friend Class frmTracciat
         Me.Controls.Add(Me.pctRisult)
         Me.HelpButton = True
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "frmTracciat"
         Me.Text = "TRACCIA"
@@ -3653,7 +3654,7 @@ EventExitSub:
         SecondaPagina()
         Enabled = True
     End Sub
-    Private Sub mioContesto_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles mioContesto.Popup
+    Private Sub mioContesto_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles mioContesto.Opening
         ExecPopupMenu()
     End Sub
     Private Sub cmdElim_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdElim.Click

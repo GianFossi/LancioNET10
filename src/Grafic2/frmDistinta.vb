@@ -60,19 +60,19 @@ Friend Class frmDistinta
     Public WithEvents Label1 As System.Windows.Forms.Label
 	Public Combo1 As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
 	Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
-	Public WithEvents mnuFileNew As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFileOpen As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFileClose As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFileExit As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFile As System.Windows.Forms.MenuItem
-	Public WithEvents mnuAggImm As System.Windows.Forms.MenuItem
-	Public WithEvents mnuVerboso As System.Windows.Forms.MenuItem
-	Public WithEvents mnuPref As System.Windows.Forms.MenuItem
-	Public WithEvents mnuHelpContents As System.Windows.Forms.MenuItem
-    Public WithEvents mnuHelpBar1 As System.Windows.Forms.MenuItem
-	Public WithEvents mnuHelpAbout As System.Windows.Forms.MenuItem
-	Public WithEvents mnuHelp As System.Windows.Forms.MenuItem
-	Public MainMenu1 As System.Windows.Forms.MainMenu
+	Public WithEvents mnuFileNew As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFileOpen As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFileClose As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFileExit As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFile As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuAggImm As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuVerboso As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuPref As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuHelpContents As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuHelpBar1 As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuHelpAbout As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuHelp As System.Windows.Forms.ToolStripMenuItem
+	Public MainMenu1 As System.Windows.Forms.MenuStrip
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -95,7 +95,7 @@ Friend Class frmDistinta
     Friend WithEvents cmdZoom As System.Windows.Forms.Button
     Friend WithEvents cmdAuto As System.Windows.Forms.Button
     Friend WithEvents cmdAcad As System.Windows.Forms.Button
-    Friend WithEvents mnuSalva As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmDistinta))
@@ -129,19 +129,19 @@ Friend Class frmDistinta
         Me.cmdCreaDaProto = New System.Windows.Forms.Button
         Me.Listj = New System.Windows.Forms.ListBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.mnuFile = New System.Windows.Forms.MenuItem
-        Me.mnuFileNew = New System.Windows.Forms.MenuItem
-        Me.mnuFileOpen = New System.Windows.Forms.MenuItem
-        Me.mnuFileClose = New System.Windows.Forms.MenuItem
-        Me.mnuFileExit = New System.Windows.Forms.MenuItem
-        Me.mnuPref = New System.Windows.Forms.MenuItem
-        Me.mnuAggImm = New System.Windows.Forms.MenuItem
-        Me.mnuVerboso = New System.Windows.Forms.MenuItem
-        Me.mnuHelp = New System.Windows.Forms.MenuItem
-        Me.mnuHelpContents = New System.Windows.Forms.MenuItem
-        Me.mnuHelpBar1 = New System.Windows.Forms.MenuItem
-        Me.mnuHelpAbout = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFileNew = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFileOpen = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFileClose = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFileExit = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPref = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAggImm = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuVerboso = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuHelpContents = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuHelpBar1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuHelpAbout = New System.Windows.Forms.ToolStripMenuItem
         Me.pictAssieme = New System.Windows.Forms.PictureBox
         Me.pictVirtual = New System.Windows.Forms.Panel
         Me.cmdHelpnonCB = New System.Windows.Forms.Button
@@ -152,7 +152,7 @@ Friend Class frmDistinta
         Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader
         Me.Frame4 = New System.Windows.Forms.GroupBox
         Me.cmdAcad = New System.Windows.Forms.Button
-        Me.mnuSalva = New System.Windows.Forms.MenuItem
+        Me.mnuSalva = New System.Windows.Forms.ToolStripMenuItem
         Me.Frame3.SuspendLayout()
         Me.Frame2.SuspendLayout()
         Me.Frame1.SuspendLayout()
@@ -544,74 +544,74 @@ Friend Class frmDistinta
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuFile, Me.mnuPref, Me.mnuHelp})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuFile, Me.mnuPref, Me.mnuHelp})
         '
         'mnuFile
         '
-        Me.mnuFile.Index = 0
-        Me.mnuFile.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuFileNew, Me.mnuFileOpen, Me.mnuSalva, Me.mnuFileClose, Me.mnuFileExit})
+
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuFileNew, Me.mnuFileOpen, Me.mnuSalva, Me.mnuFileClose, Me.mnuFileExit})
         Me.mnuFile.Text = "&File"
         '
         'mnuFileNew
         '
         Me.mnuFileNew.Enabled = False
-        Me.mnuFileNew.Index = 0
-        Me.mnuFileNew.Shortcut = System.Windows.Forms.Shortcut.CtrlN
+
+        Me.mnuFileNew.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlN), System.Windows.Forms.Keys)
         Me.mnuFileNew.Text = "Nu&ovo"
         '
         'mnuFileOpen
         '
         Me.mnuFileOpen.Enabled = False
-        Me.mnuFileOpen.Index = 1
-        Me.mnuFileOpen.Shortcut = System.Windows.Forms.Shortcut.CtrlO
+
+        Me.mnuFileOpen.ShortcutKeys = CType(CInt(System.Windows.Forms.Shortcut.CtrlO), System.Windows.Forms.Keys)
         Me.mnuFileOpen.Text = "&Apri"
         '
         'mnuFileClose
         '
         Me.mnuFileClose.Enabled = False
-        Me.mnuFileClose.Index = 3
+
         Me.mnuFileClose.Text = "C&hiudi"
         '
         'mnuFileExit
         '
-        Me.mnuFileExit.Index = 4
+
         Me.mnuFileExit.Text = "Es&ci"
         '
         'mnuPref
         '
-        Me.mnuPref.Index = 1
-        Me.mnuPref.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAggImm, Me.mnuVerboso})
+
+        Me.mnuPref.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuAggImm, Me.mnuVerboso})
         Me.mnuPref.Text = "&Preferenze"
         '
         'mnuAggImm
         '
-        Me.mnuAggImm.Index = 0
+
         Me.mnuAggImm.Text = "Aggiornamento immediato"
         '
         'mnuVerboso
         '
-        Me.mnuVerboso.Index = 1
+
         Me.mnuVerboso.Text = "Esecuzione verbosa"
         '
         'mnuHelp
         '
-        Me.mnuHelp.Index = 2
-        Me.mnuHelp.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuHelpContents, Me.mnuHelpBar1, Me.mnuHelpAbout})
+
+        Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuHelpContents, Me.mnuHelpBar1, Me.mnuHelpAbout})
         Me.mnuHelp.Text = "&?"
         '
         'mnuHelpContents
         '
-        Me.mnuHelpContents.Index = 0
+
         Me.mnuHelpContents.Text = "&Sommario"
         '
         'mnuHelpBar1
         '
-        Me.mnuHelpBar1.Index = 1
+
         Me.mnuHelpBar1.Text = "-"
         '
         'mnuHelpAbout
         '
-        Me.mnuHelpAbout.Index = 2
+
         Me.mnuHelpAbout.Text = "&Informazioni su MyApp..."
         '
         'pictAssieme
@@ -711,7 +711,7 @@ Friend Class frmDistinta
         '
         'mnuSalva
         '
-        Me.mnuSalva.Index = 2
+
         Me.mnuSalva.Text = "Salva"
         '
         'frmDistinta
@@ -736,7 +736,8 @@ Friend Class frmDistinta
         Me.HelpButton = True
         Me.Location = New System.Drawing.Point(2, 39)
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "frmDistinta"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -819,47 +820,47 @@ Friend Class frmDistinta
     Private Sub cmdHelpNonCB_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         Monitor.Motore.RetrHelp(RadiceHelp, Me, "", "FinestraIniziale.htm#NoDisegno")
     End Sub
-    Public Sub mnuAggImm_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAggImm.Popup
+    Public Sub mnuAggImm_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAggImm.DropDownOpening
         mnuAggImm_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuAggImm_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAggImm.Click
         mnuAggImm.Checked = Not mnuAggImm.Checked
         AggiornamentoAutomatico = mnuAggImm.Checked
     End Sub
-    Public Sub mnuHelpAbout_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpAbout.Popup
+    Public Sub mnuHelpAbout_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpAbout.DropDownOpening
         mnuHelpAbout_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuHelpAbout_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpAbout.Click
         MsgBox("Inserire il codice per la finestra informazioni su...")
         '  frmAbout.Show vbModal
     End Sub
-    Public Sub mnuHelpContents_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpContents.Popup
+    Public Sub mnuHelpContents_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpContents.DropDownOpening
         mnuHelpContents_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuHelpContents_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuHelpContents.Click
         Help.ShowHelpIndex(Me, RadiceHelp)
     End Sub
-    Public Sub mnuFileClose_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileClose.Popup
+    Public Sub mnuFileClose_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileClose.DropDownOpening
         mnuFileClose_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuFileClose_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileClose.Click
         MsgBox("Inserire il codice per il menu Chiudi.")
     End Sub
-    Public Sub mnuFileExit_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileExit.Popup
+    Public Sub mnuFileExit_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileExit.DropDownOpening
         mnuFileExit_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuFileExit_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileExit.Click
         Me.Close() 'frmDistinta
     End Sub
 
-    Public Sub mnuFileNew_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileNew.Popup
+    Public Sub mnuFileNew_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileNew.DropDownOpening
         mnuFileNew_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuFileNew_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileNew.Click
         MsgBox("Inserire il codice per il menu Nuovo.")
     End Sub
 
-    Public Sub mnuFileOpen_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileOpen.Popup
+    Public Sub mnuFileOpen_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileOpen.DropDownOpening
         mnuFileOpen_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuFileOpen_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFileOpen.Click
@@ -1050,7 +1051,7 @@ Friend Class frmDistinta
         ScriviPref()
     End Sub
 
-    Public Sub mnuVerboso_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.Popup
+    Public Sub mnuVerboso_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.DropDownOpening
         mnuVerboso_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuVerboso_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerboso.Click

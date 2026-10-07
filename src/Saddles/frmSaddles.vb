@@ -42,26 +42,26 @@ Friend Class frmSaddles
 	Private components As System.ComponentModel.IContainer
 	Public ToolTip1 As System.Windows.Forms.ToolTip
     Public WithEvents Timer1 As System.Windows.Forms.Timer
-    Public WithEvents mnuApri As System.Windows.Forms.MenuItem
-	Public WithEvents mnuExit As System.Windows.Forms.MenuItem
-	Public WithEvents mnuFile As System.Windows.Forms.MenuItem
-	Public WithEvents mnuVerb As System.Windows.Forms.MenuItem
-	Public WithEvents mnuPref As System.Windows.Forms.MenuItem
-	Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public WithEvents mnuApri As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuExit As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuFile As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuVerb As System.Windows.Forms.ToolStripMenuItem
+	Public WithEvents mnuPref As System.Windows.Forms.ToolStripMenuItem
+	Public MainMenu1 As System.Windows.Forms.MenuStrip
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
-    Friend WithEvents mnuSalva As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuSalvaCome As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuAzioni As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuSalvaCome As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuAzioni As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem4 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TabPrimoLivDown As System.Windows.Forms.TabControl
     Friend WithEvents PagCarichi As System.Windows.Forms.TabPage
     Friend WithEvents PagCalcSelle As System.Windows.Forms.TabPage
     Friend WithEvents PagCalcMant As System.Windows.Forms.TabPage
-    Friend WithEvents mnuCodice As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuCodice As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Commondialog1 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents TabCarichiDown As System.Windows.Forms.TabControl
     Friend WithEvents PagDatiGenerali As System.Windows.Forms.TabPage
@@ -120,8 +120,8 @@ Friend Class frmSaddles
     Friend WithEvents lblsPressure As System.Windows.Forms.Label
     Friend WithEvents lblsLateralForce As System.Windows.Forms.Label
     Friend WithEvents lblsFrontForce As System.Windows.Forms.Label
-    Friend WithEvents mnuVento As System.Windows.Forms.MenuItem
-    Friend WithEvents mnuSisma As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuVento As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuSisma As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents _lblsVento_0 As System.Windows.Forms.Label
     Friend WithEvents _rtfVento_0 As System.Windows.Forms.RichTextBox
     Public WithEvents _txtVento_0 As System.Windows.Forms.TextBox
@@ -162,7 +162,7 @@ Friend Class frmSaddles
     Public WithEvents _Label62_0 As System.Windows.Forms.Label
     Public WithEvents _Label61_0 As System.Windows.Forms.Label
     Friend WithEvents cmdCalcMant6 As System.Windows.Forms.Button
-    Friend WithEvents mnuStampa As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuStampa As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents pctSimpleComplex As System.Windows.Forms.PictureBox
     Public WithEvents cmdLibrTir As System.Windows.Forms.Button
     Friend WithEvents cmdCalcMant5 As System.Windows.Forms.Button
@@ -254,7 +254,7 @@ Friend Class frmSaddles
     Public WithEvents _Label41T_0 As System.Windows.Forms.Label
     Friend WithEvents cmdCalcMantT As System.Windows.Forms.Button
     Public WithEvents _Check1T_0 As System.Windows.Forms.CheckBox
-    Friend WithEvents mnuStacked As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuStacked As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblCodiceVentoT As System.Windows.Forms.Label
     Public WithEvents _txtVentoT_0 As System.Windows.Forms.TextBox
     Public WithEvents _txtSismaT_0 As System.Windows.Forms.TextBox
@@ -275,23 +275,23 @@ Friend Class frmSaddles
         Me.cmdRiprBocch = New System.Windows.Forms.Button
         Me.cmdRiprBocchT = New System.Windows.Forms.Button
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.mnuFile = New System.Windows.Forms.MenuItem
-        Me.mnuApri = New System.Windows.Forms.MenuItem
-        Me.mnuSalva = New System.Windows.Forms.MenuItem
-        Me.mnuSalvaCome = New System.Windows.Forms.MenuItem
-        Me.mnuExit = New System.Windows.Forms.MenuItem
-        Me.mnuAzioni = New System.Windows.Forms.MenuItem
-        Me.mnuStampa = New System.Windows.Forms.MenuItem
-        Me.mnuPref = New System.Windows.Forms.MenuItem
-        Me.mnuVerb = New System.Windows.Forms.MenuItem
-        Me.mnuCodice = New System.Windows.Forms.MenuItem
-        Me.mnuVento = New System.Windows.Forms.MenuItem
-        Me.mnuSisma = New System.Windows.Forms.MenuItem
-        Me.mnuStacked = New System.Windows.Forms.MenuItem
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem
-        Me.MenuItem4 = New System.Windows.Forms.MenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuApri = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSalva = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSalvaCome = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAzioni = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStampa = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPref = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuVerb = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuCodice = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuVento = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuSisma = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStacked = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem2 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem3 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem4 = New System.Windows.Forms.ToolStripMenuItem
         Me.TabPrimoLivDown = New System.Windows.Forms.TabControl
         Me.PagCarichi = New System.Windows.Forms.TabPage
         Me.TabCarichiDown = New System.Windows.Forms.TabControl
@@ -609,90 +609,90 @@ Friend Class frmSaddles
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuFile, Me.mnuAzioni, Me.mnuPref, Me.MenuItem2})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuFile, Me.mnuAzioni, Me.mnuPref, Me.MenuItem2})
         '
         'mnuFile
         '
-        Me.mnuFile.Index = 0
-        Me.mnuFile.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuSalvaCome, Me.mnuExit})
+
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuApri, Me.mnuSalva, Me.mnuSalvaCome, Me.mnuExit})
         Me.mnuFile.Text = "File"
         '
         'mnuApri
         '
-        Me.mnuApri.Index = 0
+
         Me.mnuApri.Text = "Apri"
         '
         'mnuSalva
         '
-        Me.mnuSalva.Index = 1
+
         Me.mnuSalva.Text = "Salva"
         '
         'mnuSalvaCome
         '
-        Me.mnuSalvaCome.Index = 2
+
         Me.mnuSalvaCome.Text = "Salva come ..."
         '
         'mnuExit
         '
-        Me.mnuExit.Index = 3
+
         Me.mnuExit.Text = "Esci"
         '
         'mnuAzioni
         '
-        Me.mnuAzioni.Index = 1
-        Me.mnuAzioni.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuStampa})
+
+        Me.mnuAzioni.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuStampa})
         Me.mnuAzioni.Text = "Azioni"
         '
         'mnuStampa
         '
-        Me.mnuStampa.Index = 0
+
         Me.mnuStampa.Text = "Stampa rapporto"
         '
         'mnuPref
         '
-        Me.mnuPref.Index = 2
-        Me.mnuPref.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuVerb, Me.mnuCodice, Me.mnuVento, Me.mnuSisma, Me.mnuStacked})
+
+        Me.mnuPref.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuVerb, Me.mnuCodice, Me.mnuVento, Me.mnuSisma, Me.mnuStacked})
         Me.mnuPref.Text = "Preferenze"
         '
         'mnuVerb
         '
-        Me.mnuVerb.Index = 0
+
         Me.mnuVerb.Text = "Esecuzione commentata"
         '
         'mnuCodice
         '
-        Me.mnuCodice.Index = 1
+
         Me.mnuCodice.Text = "Normativa verifica mantello"
         '
         'mnuVento
         '
-        Me.mnuVento.Index = 2
+
         Me.mnuVento.Text = "Normativa carichi da vento"
         '
         'mnuSisma
         '
-        Me.mnuSisma.Index = 3
+
         Me.mnuSisma.Text = "Normativa carichi sismici"
         '
         'mnuStacked
         '
-        Me.mnuStacked.Index = 4
+
         Me.mnuStacked.Text = "Apparecchi stacked"
         '
         'MenuItem2
         '
-        Me.MenuItem2.Index = 3
-        Me.MenuItem2.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem3, Me.MenuItem4})
+
+        Me.MenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.MenuItem3, Me.MenuItem4})
         Me.MenuItem2.Text = "?"
         '
         'MenuItem3
         '
-        Me.MenuItem3.Index = 0
+
         Me.MenuItem3.Text = "Guida"
         '
         'MenuItem4
         '
-        Me.MenuItem4.Index = 1
+
         Me.MenuItem4.Text = "Informazioni"
         '
         'TabPrimoLivDown
@@ -3408,7 +3408,8 @@ Friend Class frmSaddles
         Me.KeyPreview = True
         Me.Location = New System.Drawing.Point(2, 53)
         Me.MaximizeBox = False
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.Name = "frmSaddles"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -4071,7 +4072,7 @@ Friend Class frmSaddles
         IniziaVento()
         IniziaSisma()
     End Sub
-    Public Sub mnuApri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.Popup
+    Public Sub mnuApri_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.DropDownOpening
         mnuApri_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuApri_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.Click
@@ -4089,7 +4090,7 @@ Friend Class frmSaddles
         Cursor = System.Windows.Forms.Cursors.Default
     End Sub
 
-    Public Sub mnuExit_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuExit.Popup
+    Public Sub mnuExit_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuExit.DropDownOpening
         mnuExit_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuExit_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuExit.Click
@@ -4098,7 +4099,7 @@ Friend Class frmSaddles
         Dispose()
     End Sub
 
-    Public Sub mnuVerb_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerb.Popup
+    Public Sub mnuVerb_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerb.DropDownOpening
         mnuVerb_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuVerb_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVerb.Click

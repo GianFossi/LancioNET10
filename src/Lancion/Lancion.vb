@@ -45,87 +45,87 @@ Friend Class Form1
     Public WithEvents cmdExit As System.Windows.Forms.Button
     Public WithEvents Text1 As System.Windows.Forms.TextBox
     Public WithEvents Combo1 As System.Windows.Forms.ComboBox
-    Public mnuGuida As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
-    Public mnuStamLib As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
-    Public mnuTerm As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
-    Public mnuUltAgg As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
-    Public mnuUt As New System.Collections.Generic.Dictionary(Of Integer, MenuItem)
-    Public WithEvents _mnuTerm_0 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuTerm_1 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuTerm_2 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuTerm_3 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuTerm_4 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuTerm_5 As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTerm0 As System.Windows.Forms.MenuItem
-    Public WithEvents mecMantelli As System.Windows.Forms.MenuItem
-    Public WithEvents mecBocchelli As System.Windows.Forms.MenuItem
-    Public WithEvents mecSelle As System.Windows.Forms.MenuItem
-    Public WithEvents mecOrecchie As System.Windows.Forms.MenuItem
-    Public WithEvents mecSerraggio As System.Windows.Forms.MenuItem
-    Public WithEvents mecConi As System.Windows.Forms.MenuItem
-    Public WithEvents mecBreLoc As System.Windows.Forms.MenuItem
-    Public WithEvents mnuCalc As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTracciature As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPPSM As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTrac As System.Windows.Forms.MenuItem
-    Public WithEvents terPetrol As System.Windows.Forms.MenuItem
-    Public WithEvents terAcqua As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPPgas As System.Windows.Forms.MenuItem
-    Public WithEvents mnuVentilatori As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTermo As System.Windows.Forms.MenuItem
-    Public WithEvents mnuMateriali As System.Windows.Forms.MenuItem
-    Public WithEvents mnuFlange As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTiranti As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPiping As System.Windows.Forms.MenuItem
-    Public WithEvents mnuGuarn As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTubi As System.Windows.Forms.MenuItem
-    Public WithEvents mnuLibrerie As System.Windows.Forms.MenuItem
-    Public WithEvents mnuAree As System.Windows.Forms.MenuItem
-    Public WithEvents mnuTipLav As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPW As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPersAz As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuUltAgg_0 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuUltAgg_1 As System.Windows.Forms.MenuItem
-    Public WithEvents mnuStdPip As System.Windows.Forms.MenuItem
-    Public WithEvents mnuOpzLibr As System.Windows.Forms.MenuItem
-    Public WithEvents mnuPref As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuUt_0 As System.Windows.Forms.MenuItem
-    Public WithEvents mnuASME As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuStamLib_0 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuStamLib_1 As System.Windows.Forms.MenuItem
-    Public WithEvents mnuStamLibr As System.Windows.Forms.MenuItem
-    Public WithEvents mnuRegole As System.Windows.Forms.MenuItem
-    Public WithEvents mnuUt0 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuGuida_0 As System.Windows.Forms.MenuItem
-    Public WithEvents _mnuGuida_1 As System.Windows.Forms.MenuItem
-    Public WithEvents mnuGuide As System.Windows.Forms.MenuItem
-    Public MainMenu1 As System.Windows.Forms.MainMenu
+    Public mnuGuida As New System.Collections.Generic.Dictionary(Of Integer, ToolStripMenuItem)
+    Public mnuStamLib As New System.Collections.Generic.Dictionary(Of Integer, ToolStripMenuItem)
+    Public mnuTerm As New System.Collections.Generic.Dictionary(Of Integer, ToolStripMenuItem)
+    Public mnuUltAgg As New System.Collections.Generic.Dictionary(Of Integer, ToolStripMenuItem)
+    Public mnuUt As New System.Collections.Generic.Dictionary(Of Integer, ToolStripMenuItem)
+    Public WithEvents _mnuTerm_0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuTerm_1 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuTerm_2 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuTerm_3 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuTerm_4 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuTerm_5 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTerm0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecMantelli As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecBocchelli As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecSelle As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecOrecchie As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecSerraggio As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecConi As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mecBreLoc As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuCalc As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTracciature As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPPSM As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTrac As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents terPetrol As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents terAcqua As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPPgas As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuVentilatori As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTermo As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuMateriali As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuFlange As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTiranti As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPiping As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuGuarn As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTubi As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuLibrerie As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuAree As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuTipLav As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPW As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPersAz As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuUltAgg_0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuUltAgg_1 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuStdPip As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuOpzLibr As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuPref As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuUt_0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuASME As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuStamLib_0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuStamLib_1 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuStamLibr As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuRegole As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuUt0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuGuida_0 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents _mnuGuida_1 As System.Windows.Forms.ToolStripMenuItem
+    Public WithEvents mnuGuide As System.Windows.Forms.ToolStripMenuItem
+    Public MainMenu1 As System.Windows.Forms.MenuStrip
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
-    Friend WithEvents mnuUtDis As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuUtDis As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cmdAFC As System.Windows.Forms.Button
     Friend WithEvents cmdST As System.Windows.Forms.Button
     Friend WithEvents cmdWHB As System.Windows.Forms.Button
     Friend WithEvents cmdWPS As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
-    Friend WithEvents mnuAvvio As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem5 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem6 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem7 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem8 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem9 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem10 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem11 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem12 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem13 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem14 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem15 As System.Windows.Forms.MenuItem
+    Friend WithEvents mnuAvvio As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem6 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem7 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem8 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem9 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem10 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem11 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem12 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem13 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem14 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuItem15 As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
@@ -140,73 +140,73 @@ Friend Class Form1
         Me.cmdWHB = New System.Windows.Forms.Button
         Me.cmdWPS = New System.Windows.Forms.Button
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me._mnuGuida_0 = New System.Windows.Forms.MenuItem
-        Me._mnuGuida_1 = New System.Windows.Forms.MenuItem
-        Me._mnuStamLib_0 = New System.Windows.Forms.MenuItem
-        Me._mnuStamLib_1 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_0 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_1 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_2 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_3 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_4 = New System.Windows.Forms.MenuItem
-        Me._mnuTerm_5 = New System.Windows.Forms.MenuItem
-        Me._mnuUltAgg_0 = New System.Windows.Forms.MenuItem
-        Me._mnuUltAgg_1 = New System.Windows.Forms.MenuItem
-        Me._mnuUt_0 = New System.Windows.Forms.MenuItem
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.mnuTerm0 = New System.Windows.Forms.MenuItem
-        Me.mnuCalc = New System.Windows.Forms.MenuItem
-        Me.mecMantelli = New System.Windows.Forms.MenuItem
-        Me.mecBocchelli = New System.Windows.Forms.MenuItem
-        Me.mecSelle = New System.Windows.Forms.MenuItem
-        Me.mecOrecchie = New System.Windows.Forms.MenuItem
-        Me.mecSerraggio = New System.Windows.Forms.MenuItem
-        Me.mecConi = New System.Windows.Forms.MenuItem
-        Me.mecBreLoc = New System.Windows.Forms.MenuItem
-        Me.mnuTrac = New System.Windows.Forms.MenuItem
-        Me.mnuTracciature = New System.Windows.Forms.MenuItem
-        Me.mnuPPSM = New System.Windows.Forms.MenuItem
-        Me.mnuTermo = New System.Windows.Forms.MenuItem
-        Me.terPetrol = New System.Windows.Forms.MenuItem
-        Me.terAcqua = New System.Windows.Forms.MenuItem
-        Me.mnuPPgas = New System.Windows.Forms.MenuItem
-        Me.mnuVentilatori = New System.Windows.Forms.MenuItem
-        Me.mnuLibrerie = New System.Windows.Forms.MenuItem
-        Me.mnuMateriali = New System.Windows.Forms.MenuItem
-        Me.mnuFlange = New System.Windows.Forms.MenuItem
-        Me.mnuTiranti = New System.Windows.Forms.MenuItem
-        Me.mnuPiping = New System.Windows.Forms.MenuItem
-        Me.mnuGuarn = New System.Windows.Forms.MenuItem
-        Me.mnuTubi = New System.Windows.Forms.MenuItem
-        Me.mnuPref = New System.Windows.Forms.MenuItem
-        Me.mnuAree = New System.Windows.Forms.MenuItem
-        Me.mnuTipLav = New System.Windows.Forms.MenuItem
-        Me.mnuPW = New System.Windows.Forms.MenuItem
-        Me.mnuPersAz = New System.Windows.Forms.MenuItem
-        Me.mnuOpzLibr = New System.Windows.Forms.MenuItem
-        Me.mnuStdPip = New System.Windows.Forms.MenuItem
-        Me.mnuAvvio = New System.Windows.Forms.MenuItem
-        Me.mnuUt0 = New System.Windows.Forms.MenuItem
-        Me.mnuASME = New System.Windows.Forms.MenuItem
-        Me.mnuStamLibr = New System.Windows.Forms.MenuItem
-        Me.mnuRegole = New System.Windows.Forms.MenuItem
-        Me.mnuUtDis = New System.Windows.Forms.MenuItem
-        Me.mnuGuide = New System.Windows.Forms.MenuItem
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem
-        Me.MenuItem4 = New System.Windows.Forms.MenuItem
-        Me.MenuItem5 = New System.Windows.Forms.MenuItem
-        Me.MenuItem6 = New System.Windows.Forms.MenuItem
-        Me.MenuItem7 = New System.Windows.Forms.MenuItem
-        Me.MenuItem8 = New System.Windows.Forms.MenuItem
-        Me.MenuItem9 = New System.Windows.Forms.MenuItem
-        Me.MenuItem10 = New System.Windows.Forms.MenuItem
-        Me.MenuItem11 = New System.Windows.Forms.MenuItem
-        Me.MenuItem12 = New System.Windows.Forms.MenuItem
-        Me.MenuItem13 = New System.Windows.Forms.MenuItem
-        Me.MenuItem14 = New System.Windows.Forms.MenuItem
-        Me.MenuItem15 = New System.Windows.Forms.MenuItem
+        Me._mnuGuida_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuGuida_1 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuStamLib_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuStamLib_1 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_1 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_2 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_3 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_4 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuTerm_5 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuUltAgg_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuUltAgg_1 = New System.Windows.Forms.ToolStripMenuItem
+        Me._mnuUt_0 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MainMenu1 = New System.Windows.Forms.MenuStrip
+        Me.mnuTerm0 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuCalc = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecMantelli = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecBocchelli = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecSelle = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecOrecchie = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecSerraggio = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecConi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mecBreLoc = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTrac = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTracciature = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPPSM = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTermo = New System.Windows.Forms.ToolStripMenuItem
+        Me.terPetrol = New System.Windows.Forms.ToolStripMenuItem
+        Me.terAcqua = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPPgas = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuVentilatori = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuLibrerie = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuMateriali = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuFlange = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTiranti = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPiping = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuGuarn = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTubi = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPref = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAree = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuTipLav = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPW = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuPersAz = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuOpzLibr = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStdPip = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuAvvio = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuUt0 = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuASME = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuStamLibr = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuRegole = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuUtDis = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuGuide = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem2 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem3 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem4 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem5 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem6 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem7 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem8 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem9 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem10 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem11 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem12 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem13 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem14 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuItem15 = New System.Windows.Forms.ToolStripMenuItem
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider
         Me.SuspendLayout()
@@ -497,9 +497,9 @@ Friend Class Form1
         '
         Me._mnuGuida_0.Enabled = CType(resources.GetObject("_mnuGuida_0.Enabled"), Boolean)
         Me.mnuGuida.Add(0, Me._mnuGuida_0)
-        Me._mnuGuida_0.Index = 0
-        Me._mnuGuida_0.Shortcut = CType(resources.GetObject("_mnuGuida_0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuGuida_0.ShowShortcut = CType(resources.GetObject("_mnuGuida_0.ShowShortcut"), Boolean)
+
+        Me._mnuGuida_0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuGuida_0.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuGuida_0.ShowShortcutKeys = CType(resources.GetObject("_mnuGuida_0.ShowShortcut"), Boolean)
         Me._mnuGuida_0.Text = resources.GetString("_mnuGuida_0.Text")
         Me._mnuGuida_0.Visible = CType(resources.GetObject("_mnuGuida_0.Visible"), Boolean)
         '
@@ -507,9 +507,9 @@ Friend Class Form1
         '
         Me._mnuGuida_1.Enabled = CType(resources.GetObject("_mnuGuida_1.Enabled"), Boolean)
         Me.mnuGuida.Add(1, Me._mnuGuida_1)
-        Me._mnuGuida_1.Index = 1
-        Me._mnuGuida_1.Shortcut = CType(resources.GetObject("_mnuGuida_1.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuGuida_1.ShowShortcut = CType(resources.GetObject("_mnuGuida_1.ShowShortcut"), Boolean)
+
+        Me._mnuGuida_1.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuGuida_1.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuGuida_1.ShowShortcutKeys = CType(resources.GetObject("_mnuGuida_1.ShowShortcut"), Boolean)
         Me._mnuGuida_1.Text = resources.GetString("_mnuGuida_1.Text")
         Me._mnuGuida_1.Visible = CType(resources.GetObject("_mnuGuida_1.Visible"), Boolean)
         '
@@ -520,9 +520,9 @@ Friend Class Form1
         '
         Me._mnuStamLib_0.Enabled = CType(resources.GetObject("_mnuStamLib_0.Enabled"), Boolean)
         Me.mnuStamLib.Add(0, Me._mnuStamLib_0)
-        Me._mnuStamLib_0.Index = 0
-        Me._mnuStamLib_0.Shortcut = CType(resources.GetObject("_mnuStamLib_0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuStamLib_0.ShowShortcut = CType(resources.GetObject("_mnuStamLib_0.ShowShortcut"), Boolean)
+
+        Me._mnuStamLib_0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuStamLib_0.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuStamLib_0.ShowShortcutKeys = CType(resources.GetObject("_mnuStamLib_0.ShowShortcut"), Boolean)
         Me._mnuStamLib_0.Text = resources.GetString("_mnuStamLib_0.Text")
         Me._mnuStamLib_0.Visible = CType(resources.GetObject("_mnuStamLib_0.Visible"), Boolean)
         '
@@ -530,9 +530,9 @@ Friend Class Form1
         '
         Me._mnuStamLib_1.Enabled = CType(resources.GetObject("_mnuStamLib_1.Enabled"), Boolean)
         Me.mnuStamLib.Add(1, Me._mnuStamLib_1)
-        Me._mnuStamLib_1.Index = 1
-        Me._mnuStamLib_1.Shortcut = CType(resources.GetObject("_mnuStamLib_1.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuStamLib_1.ShowShortcut = CType(resources.GetObject("_mnuStamLib_1.ShowShortcut"), Boolean)
+
+        Me._mnuStamLib_1.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuStamLib_1.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuStamLib_1.ShowShortcutKeys = CType(resources.GetObject("_mnuStamLib_1.ShowShortcut"), Boolean)
         Me._mnuStamLib_1.Text = resources.GetString("_mnuStamLib_1.Text")
         Me._mnuStamLib_1.Visible = CType(resources.GetObject("_mnuStamLib_1.Visible"), Boolean)
         '
@@ -543,9 +543,9 @@ Friend Class Form1
         '
         Me._mnuTerm_0.Enabled = CType(resources.GetObject("_mnuTerm_0.Enabled"), Boolean)
         Me.mnuTerm.Add(0, Me._mnuTerm_0)
-        Me._mnuTerm_0.Index = 0
-        Me._mnuTerm_0.Shortcut = CType(resources.GetObject("_mnuTerm_0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_0.ShowShortcut = CType(resources.GetObject("_mnuTerm_0.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_0.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_0.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_0.ShowShortcut"), Boolean)
         Me._mnuTerm_0.Text = resources.GetString("_mnuTerm_0.Text")
         Me._mnuTerm_0.Visible = CType(resources.GetObject("_mnuTerm_0.Visible"), Boolean)
         '
@@ -553,9 +553,9 @@ Friend Class Form1
         '
         Me._mnuTerm_1.Enabled = CType(resources.GetObject("_mnuTerm_1.Enabled"), Boolean)
         Me.mnuTerm.Add(1, Me._mnuTerm_1)
-        Me._mnuTerm_1.Index = 1
-        Me._mnuTerm_1.Shortcut = CType(resources.GetObject("_mnuTerm_1.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_1.ShowShortcut = CType(resources.GetObject("_mnuTerm_1.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_1.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_1.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_1.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_1.ShowShortcut"), Boolean)
         Me._mnuTerm_1.Text = resources.GetString("_mnuTerm_1.Text")
         Me._mnuTerm_1.Visible = CType(resources.GetObject("_mnuTerm_1.Visible"), Boolean)
         '
@@ -563,9 +563,9 @@ Friend Class Form1
         '
         Me._mnuTerm_2.Enabled = CType(resources.GetObject("_mnuTerm_2.Enabled"), Boolean)
         Me.mnuTerm.Add(2, Me._mnuTerm_2)
-        Me._mnuTerm_2.Index = 2
-        Me._mnuTerm_2.Shortcut = CType(resources.GetObject("_mnuTerm_2.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_2.ShowShortcut = CType(resources.GetObject("_mnuTerm_2.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_2.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_2.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_2.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_2.ShowShortcut"), Boolean)
         Me._mnuTerm_2.Text = resources.GetString("_mnuTerm_2.Text")
         Me._mnuTerm_2.Visible = CType(resources.GetObject("_mnuTerm_2.Visible"), Boolean)
         '
@@ -573,9 +573,9 @@ Friend Class Form1
         '
         Me._mnuTerm_3.Enabled = CType(resources.GetObject("_mnuTerm_3.Enabled"), Boolean)
         Me.mnuTerm.Add(3, Me._mnuTerm_3)
-        Me._mnuTerm_3.Index = 3
-        Me._mnuTerm_3.Shortcut = CType(resources.GetObject("_mnuTerm_3.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_3.ShowShortcut = CType(resources.GetObject("_mnuTerm_3.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_3.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_3.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_3.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_3.ShowShortcut"), Boolean)
         Me._mnuTerm_3.Text = resources.GetString("_mnuTerm_3.Text")
         Me._mnuTerm_3.Visible = CType(resources.GetObject("_mnuTerm_3.Visible"), Boolean)
         '
@@ -583,9 +583,9 @@ Friend Class Form1
         '
         Me._mnuTerm_4.Enabled = CType(resources.GetObject("_mnuTerm_4.Enabled"), Boolean)
         Me.mnuTerm.Add(4, Me._mnuTerm_4)
-        Me._mnuTerm_4.Index = 4
-        Me._mnuTerm_4.Shortcut = CType(resources.GetObject("_mnuTerm_4.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_4.ShowShortcut = CType(resources.GetObject("_mnuTerm_4.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_4.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_4.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_4.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_4.ShowShortcut"), Boolean)
         Me._mnuTerm_4.Text = resources.GetString("_mnuTerm_4.Text")
         Me._mnuTerm_4.Visible = CType(resources.GetObject("_mnuTerm_4.Visible"), Boolean)
         '
@@ -593,9 +593,9 @@ Friend Class Form1
         '
         Me._mnuTerm_5.Enabled = CType(resources.GetObject("_mnuTerm_5.Enabled"), Boolean)
         Me.mnuTerm.Add(5, Me._mnuTerm_5)
-        Me._mnuTerm_5.Index = 5
-        Me._mnuTerm_5.Shortcut = CType(resources.GetObject("_mnuTerm_5.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuTerm_5.ShowShortcut = CType(resources.GetObject("_mnuTerm_5.ShowShortcut"), Boolean)
+
+        Me._mnuTerm_5.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuTerm_5.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuTerm_5.ShowShortcutKeys = CType(resources.GetObject("_mnuTerm_5.ShowShortcut"), Boolean)
         Me._mnuTerm_5.Text = resources.GetString("_mnuTerm_5.Text")
         Me._mnuTerm_5.Visible = CType(resources.GetObject("_mnuTerm_5.Visible"), Boolean)
         '
@@ -606,9 +606,9 @@ Friend Class Form1
         '
         Me._mnuUltAgg_0.Enabled = CType(resources.GetObject("_mnuUltAgg_0.Enabled"), Boolean)
         Me.mnuUltAgg.Add(0, Me._mnuUltAgg_0)
-        Me._mnuUltAgg_0.Index = 0
-        Me._mnuUltAgg_0.Shortcut = CType(resources.GetObject("_mnuUltAgg_0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuUltAgg_0.ShowShortcut = CType(resources.GetObject("_mnuUltAgg_0.ShowShortcut"), Boolean)
+
+        Me._mnuUltAgg_0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuUltAgg_0.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuUltAgg_0.ShowShortcutKeys = CType(resources.GetObject("_mnuUltAgg_0.ShowShortcut"), Boolean)
         Me._mnuUltAgg_0.Text = resources.GetString("_mnuUltAgg_0.Text")
         Me._mnuUltAgg_0.Visible = CType(resources.GetObject("_mnuUltAgg_0.Visible"), Boolean)
         '
@@ -616,9 +616,9 @@ Friend Class Form1
         '
         Me._mnuUltAgg_1.Enabled = CType(resources.GetObject("_mnuUltAgg_1.Enabled"), Boolean)
         Me.mnuUltAgg.Add(1, Me._mnuUltAgg_1)
-        Me._mnuUltAgg_1.Index = 1
-        Me._mnuUltAgg_1.Shortcut = CType(resources.GetObject("_mnuUltAgg_1.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuUltAgg_1.ShowShortcut = CType(resources.GetObject("_mnuUltAgg_1.ShowShortcut"), Boolean)
+
+        Me._mnuUltAgg_1.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuUltAgg_1.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuUltAgg_1.ShowShortcutKeys = CType(resources.GetObject("_mnuUltAgg_1.ShowShortcut"), Boolean)
         Me._mnuUltAgg_1.Text = resources.GetString("_mnuUltAgg_1.Text")
         Me._mnuUltAgg_1.Visible = CType(resources.GetObject("_mnuUltAgg_1.Visible"), Boolean)
         '
@@ -629,502 +629,502 @@ Friend Class Form1
         '
         Me._mnuUt_0.Enabled = CType(resources.GetObject("_mnuUt_0.Enabled"), Boolean)
         Me.mnuUt.Add(0, Me._mnuUt_0)
-        Me._mnuUt_0.Index = 0
-        Me._mnuUt_0.Shortcut = CType(resources.GetObject("_mnuUt_0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me._mnuUt_0.ShowShortcut = CType(resources.GetObject("_mnuUt_0.ShowShortcut"), Boolean)
+
+        Me._mnuUt_0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("_mnuUt_0.Shortcut")), System.Windows.Forms.Keys)
+        Me._mnuUt_0.ShowShortcutKeys = CType(resources.GetObject("_mnuUt_0.ShowShortcut"), Boolean)
         Me._mnuUt_0.Text = resources.GetString("_mnuUt_0.Text")
         Me._mnuUt_0.Visible = CType(resources.GetObject("_mnuUt_0.Visible"), Boolean)
         '
         'MainMenu1
         '
-        Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuTerm0, Me.mnuCalc, Me.mnuTrac, Me.mnuTermo, Me.mnuLibrerie, Me.mnuPref, Me.mnuUt0, Me.mnuGuide})
+        Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuTerm0, Me.mnuCalc, Me.mnuTrac, Me.mnuTermo, Me.mnuLibrerie, Me.mnuPref, Me.mnuUt0, Me.mnuGuide})
         Me.MainMenu1.RightToLeft = CType(resources.GetObject("MainMenu1.RightToLeft"), System.Windows.Forms.RightToLeft)
         '
         'mnuTerm0
         '
         Me.mnuTerm0.Enabled = CType(resources.GetObject("mnuTerm0.Enabled"), Boolean)
-        Me.mnuTerm0.Index = 0
-        Me.mnuTerm0.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuTerm_0, Me._mnuTerm_1, Me._mnuTerm_2, Me._mnuTerm_3, Me._mnuTerm_4, Me._mnuTerm_5})
-        Me.mnuTerm0.Shortcut = CType(resources.GetObject("mnuTerm0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTerm0.ShowShortcut = CType(resources.GetObject("mnuTerm0.ShowShortcut"), Boolean)
+
+        Me.mnuTerm0.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuTerm_0, Me._mnuTerm_1, Me._mnuTerm_2, Me._mnuTerm_3, Me._mnuTerm_4, Me._mnuTerm_5})
+        Me.mnuTerm0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTerm0.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTerm0.ShowShortcutKeys = CType(resources.GetObject("mnuTerm0.ShowShortcut"), Boolean)
         Me.mnuTerm0.Text = resources.GetString("mnuTerm0.Text")
         Me.mnuTerm0.Visible = CType(resources.GetObject("mnuTerm0.Visible"), Boolean)
         '
         'mnuCalc
         '
         Me.mnuCalc.Enabled = CType(resources.GetObject("mnuCalc.Enabled"), Boolean)
-        Me.mnuCalc.Index = 1
-        Me.mnuCalc.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mecMantelli, Me.mecBocchelli, Me.mecSelle, Me.mecOrecchie, Me.mecSerraggio, Me.mecConi, Me.mecBreLoc})
-        Me.mnuCalc.Shortcut = CType(resources.GetObject("mnuCalc.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuCalc.ShowShortcut = CType(resources.GetObject("mnuCalc.ShowShortcut"), Boolean)
+
+        Me.mnuCalc.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mecMantelli, Me.mecBocchelli, Me.mecSelle, Me.mecOrecchie, Me.mecSerraggio, Me.mecConi, Me.mecBreLoc})
+        Me.mnuCalc.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuCalc.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuCalc.ShowShortcutKeys = CType(resources.GetObject("mnuCalc.ShowShortcut"), Boolean)
         Me.mnuCalc.Text = resources.GetString("mnuCalc.Text")
         Me.mnuCalc.Visible = CType(resources.GetObject("mnuCalc.Visible"), Boolean)
         '
         'mecMantelli
         '
         Me.mecMantelli.Enabled = CType(resources.GetObject("mecMantelli.Enabled"), Boolean)
-        Me.mecMantelli.Index = 0
-        Me.mecMantelli.Shortcut = CType(resources.GetObject("mecMantelli.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecMantelli.ShowShortcut = CType(resources.GetObject("mecMantelli.ShowShortcut"), Boolean)
+
+        Me.mecMantelli.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecMantelli.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecMantelli.ShowShortcutKeys = CType(resources.GetObject("mecMantelli.ShowShortcut"), Boolean)
         Me.mecMantelli.Text = resources.GetString("mecMantelli.Text")
         Me.mecMantelli.Visible = CType(resources.GetObject("mecMantelli.Visible"), Boolean)
         '
         'mecBocchelli
         '
         Me.mecBocchelli.Enabled = CType(resources.GetObject("mecBocchelli.Enabled"), Boolean)
-        Me.mecBocchelli.Index = 1
-        Me.mecBocchelli.Shortcut = CType(resources.GetObject("mecBocchelli.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecBocchelli.ShowShortcut = CType(resources.GetObject("mecBocchelli.ShowShortcut"), Boolean)
+
+        Me.mecBocchelli.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecBocchelli.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecBocchelli.ShowShortcutKeys = CType(resources.GetObject("mecBocchelli.ShowShortcut"), Boolean)
         Me.mecBocchelli.Text = resources.GetString("mecBocchelli.Text")
         Me.mecBocchelli.Visible = CType(resources.GetObject("mecBocchelli.Visible"), Boolean)
         '
         'mecSelle
         '
         Me.mecSelle.Enabled = CType(resources.GetObject("mecSelle.Enabled"), Boolean)
-        Me.mecSelle.Index = 2
-        Me.mecSelle.Shortcut = CType(resources.GetObject("mecSelle.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecSelle.ShowShortcut = CType(resources.GetObject("mecSelle.ShowShortcut"), Boolean)
+
+        Me.mecSelle.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecSelle.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecSelle.ShowShortcutKeys = CType(resources.GetObject("mecSelle.ShowShortcut"), Boolean)
         Me.mecSelle.Text = resources.GetString("mecSelle.Text")
         Me.mecSelle.Visible = CType(resources.GetObject("mecSelle.Visible"), Boolean)
         '
         'mecOrecchie
         '
         Me.mecOrecchie.Enabled = CType(resources.GetObject("mecOrecchie.Enabled"), Boolean)
-        Me.mecOrecchie.Index = 3
-        Me.mecOrecchie.Shortcut = CType(resources.GetObject("mecOrecchie.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecOrecchie.ShowShortcut = CType(resources.GetObject("mecOrecchie.ShowShortcut"), Boolean)
+
+        Me.mecOrecchie.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecOrecchie.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecOrecchie.ShowShortcutKeys = CType(resources.GetObject("mecOrecchie.ShowShortcut"), Boolean)
         Me.mecOrecchie.Text = resources.GetString("mecOrecchie.Text")
         Me.mecOrecchie.Visible = CType(resources.GetObject("mecOrecchie.Visible"), Boolean)
         '
         'mecSerraggio
         '
         Me.mecSerraggio.Enabled = CType(resources.GetObject("mecSerraggio.Enabled"), Boolean)
-        Me.mecSerraggio.Index = 4
-        Me.mecSerraggio.Shortcut = CType(resources.GetObject("mecSerraggio.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecSerraggio.ShowShortcut = CType(resources.GetObject("mecSerraggio.ShowShortcut"), Boolean)
+
+        Me.mecSerraggio.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecSerraggio.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecSerraggio.ShowShortcutKeys = CType(resources.GetObject("mecSerraggio.ShowShortcut"), Boolean)
         Me.mecSerraggio.Text = resources.GetString("mecSerraggio.Text")
         Me.mecSerraggio.Visible = CType(resources.GetObject("mecSerraggio.Visible"), Boolean)
         '
         'mecConi
         '
         Me.mecConi.Enabled = CType(resources.GetObject("mecConi.Enabled"), Boolean)
-        Me.mecConi.Index = 5
-        Me.mecConi.Shortcut = CType(resources.GetObject("mecConi.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecConi.ShowShortcut = CType(resources.GetObject("mecConi.ShowShortcut"), Boolean)
+
+        Me.mecConi.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecConi.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecConi.ShowShortcutKeys = CType(resources.GetObject("mecConi.ShowShortcut"), Boolean)
         Me.mecConi.Text = resources.GetString("mecConi.Text")
         Me.mecConi.Visible = CType(resources.GetObject("mecConi.Visible"), Boolean)
         '
         'mecBreLoc
         '
         Me.mecBreLoc.Enabled = CType(resources.GetObject("mecBreLoc.Enabled"), Boolean)
-        Me.mecBreLoc.Index = 6
-        Me.mecBreLoc.Shortcut = CType(resources.GetObject("mecBreLoc.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mecBreLoc.ShowShortcut = CType(resources.GetObject("mecBreLoc.ShowShortcut"), Boolean)
+
+        Me.mecBreLoc.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mecBreLoc.Shortcut")), System.Windows.Forms.Keys)
+        Me.mecBreLoc.ShowShortcutKeys = CType(resources.GetObject("mecBreLoc.ShowShortcut"), Boolean)
         Me.mecBreLoc.Text = resources.GetString("mecBreLoc.Text")
         Me.mecBreLoc.Visible = CType(resources.GetObject("mecBreLoc.Visible"), Boolean)
         '
         'mnuTrac
         '
         Me.mnuTrac.Enabled = CType(resources.GetObject("mnuTrac.Enabled"), Boolean)
-        Me.mnuTrac.Index = 2
-        Me.mnuTrac.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuTracciature, Me.mnuPPSM})
-        Me.mnuTrac.Shortcut = CType(resources.GetObject("mnuTrac.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTrac.ShowShortcut = CType(resources.GetObject("mnuTrac.ShowShortcut"), Boolean)
+
+        Me.mnuTrac.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuTracciature, Me.mnuPPSM})
+        Me.mnuTrac.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTrac.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTrac.ShowShortcutKeys = CType(resources.GetObject("mnuTrac.ShowShortcut"), Boolean)
         Me.mnuTrac.Text = resources.GetString("mnuTrac.Text")
         Me.mnuTrac.Visible = CType(resources.GetObject("mnuTrac.Visible"), Boolean)
         '
         'mnuTracciature
         '
         Me.mnuTracciature.Enabled = CType(resources.GetObject("mnuTracciature.Enabled"), Boolean)
-        Me.mnuTracciature.Index = 0
-        Me.mnuTracciature.Shortcut = CType(resources.GetObject("mnuTracciature.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTracciature.ShowShortcut = CType(resources.GetObject("mnuTracciature.ShowShortcut"), Boolean)
+
+        Me.mnuTracciature.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTracciature.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTracciature.ShowShortcutKeys = CType(resources.GetObject("mnuTracciature.ShowShortcut"), Boolean)
         Me.mnuTracciature.Text = resources.GetString("mnuTracciature.Text")
         Me.mnuTracciature.Visible = CType(resources.GetObject("mnuTracciature.Visible"), Boolean)
         '
         'mnuPPSM
         '
         Me.mnuPPSM.Enabled = CType(resources.GetObject("mnuPPSM.Enabled"), Boolean)
-        Me.mnuPPSM.Index = 1
-        Me.mnuPPSM.Shortcut = CType(resources.GetObject("mnuPPSM.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPPSM.ShowShortcut = CType(resources.GetObject("mnuPPSM.ShowShortcut"), Boolean)
+
+        Me.mnuPPSM.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPPSM.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPPSM.ShowShortcutKeys = CType(resources.GetObject("mnuPPSM.ShowShortcut"), Boolean)
         Me.mnuPPSM.Text = resources.GetString("mnuPPSM.Text")
         Me.mnuPPSM.Visible = CType(resources.GetObject("mnuPPSM.Visible"), Boolean)
         '
         'mnuTermo
         '
         Me.mnuTermo.Enabled = CType(resources.GetObject("mnuTermo.Enabled"), Boolean)
-        Me.mnuTermo.Index = 3
-        Me.mnuTermo.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.terPetrol, Me.terAcqua, Me.mnuPPgas, Me.mnuVentilatori})
-        Me.mnuTermo.Shortcut = CType(resources.GetObject("mnuTermo.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTermo.ShowShortcut = CType(resources.GetObject("mnuTermo.ShowShortcut"), Boolean)
+
+        Me.mnuTermo.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.terPetrol, Me.terAcqua, Me.mnuPPgas, Me.mnuVentilatori})
+        Me.mnuTermo.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTermo.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTermo.ShowShortcutKeys = CType(resources.GetObject("mnuTermo.ShowShortcut"), Boolean)
         Me.mnuTermo.Text = resources.GetString("mnuTermo.Text")
         Me.mnuTermo.Visible = CType(resources.GetObject("mnuTermo.Visible"), Boolean)
         '
         'terPetrol
         '
         Me.terPetrol.Enabled = CType(resources.GetObject("terPetrol.Enabled"), Boolean)
-        Me.terPetrol.Index = 0
-        Me.terPetrol.Shortcut = CType(resources.GetObject("terPetrol.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.terPetrol.ShowShortcut = CType(resources.GetObject("terPetrol.ShowShortcut"), Boolean)
+
+        Me.terPetrol.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("terPetrol.Shortcut")), System.Windows.Forms.Keys)
+        Me.terPetrol.ShowShortcutKeys = CType(resources.GetObject("terPetrol.ShowShortcut"), Boolean)
         Me.terPetrol.Text = resources.GetString("terPetrol.Text")
         Me.terPetrol.Visible = CType(resources.GetObject("terPetrol.Visible"), Boolean)
         '
         'terAcqua
         '
         Me.terAcqua.Enabled = CType(resources.GetObject("terAcqua.Enabled"), Boolean)
-        Me.terAcqua.Index = 1
-        Me.terAcqua.Shortcut = CType(resources.GetObject("terAcqua.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.terAcqua.ShowShortcut = CType(resources.GetObject("terAcqua.ShowShortcut"), Boolean)
+
+        Me.terAcqua.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("terAcqua.Shortcut")), System.Windows.Forms.Keys)
+        Me.terAcqua.ShowShortcutKeys = CType(resources.GetObject("terAcqua.ShowShortcut"), Boolean)
         Me.terAcqua.Text = resources.GetString("terAcqua.Text")
         Me.terAcqua.Visible = CType(resources.GetObject("terAcqua.Visible"), Boolean)
         '
         'mnuPPgas
         '
         Me.mnuPPgas.Enabled = CType(resources.GetObject("mnuPPgas.Enabled"), Boolean)
-        Me.mnuPPgas.Index = 2
-        Me.mnuPPgas.Shortcut = CType(resources.GetObject("mnuPPgas.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPPgas.ShowShortcut = CType(resources.GetObject("mnuPPgas.ShowShortcut"), Boolean)
+
+        Me.mnuPPgas.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPPgas.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPPgas.ShowShortcutKeys = CType(resources.GetObject("mnuPPgas.ShowShortcut"), Boolean)
         Me.mnuPPgas.Text = resources.GetString("mnuPPgas.Text")
         Me.mnuPPgas.Visible = CType(resources.GetObject("mnuPPgas.Visible"), Boolean)
         '
         'mnuVentilatori
         '
         Me.mnuVentilatori.Enabled = CType(resources.GetObject("mnuVentilatori.Enabled"), Boolean)
-        Me.mnuVentilatori.Index = 3
-        Me.mnuVentilatori.Shortcut = CType(resources.GetObject("mnuVentilatori.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuVentilatori.ShowShortcut = CType(resources.GetObject("mnuVentilatori.ShowShortcut"), Boolean)
+
+        Me.mnuVentilatori.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuVentilatori.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuVentilatori.ShowShortcutKeys = CType(resources.GetObject("mnuVentilatori.ShowShortcut"), Boolean)
         Me.mnuVentilatori.Text = resources.GetString("mnuVentilatori.Text")
         Me.mnuVentilatori.Visible = CType(resources.GetObject("mnuVentilatori.Visible"), Boolean)
         '
         'mnuLibrerie
         '
         Me.mnuLibrerie.Enabled = CType(resources.GetObject("mnuLibrerie.Enabled"), Boolean)
-        Me.mnuLibrerie.Index = 4
-        Me.mnuLibrerie.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuMateriali, Me.mnuFlange, Me.mnuTiranti, Me.mnuPiping, Me.mnuGuarn, Me.mnuTubi})
-        Me.mnuLibrerie.Shortcut = CType(resources.GetObject("mnuLibrerie.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuLibrerie.ShowShortcut = CType(resources.GetObject("mnuLibrerie.ShowShortcut"), Boolean)
+
+        Me.mnuLibrerie.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuMateriali, Me.mnuFlange, Me.mnuTiranti, Me.mnuPiping, Me.mnuGuarn, Me.mnuTubi})
+        Me.mnuLibrerie.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuLibrerie.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuLibrerie.ShowShortcutKeys = CType(resources.GetObject("mnuLibrerie.ShowShortcut"), Boolean)
         Me.mnuLibrerie.Text = resources.GetString("mnuLibrerie.Text")
         Me.mnuLibrerie.Visible = CType(resources.GetObject("mnuLibrerie.Visible"), Boolean)
         '
         'mnuMateriali
         '
         Me.mnuMateriali.Enabled = CType(resources.GetObject("mnuMateriali.Enabled"), Boolean)
-        Me.mnuMateriali.Index = 0
-        Me.mnuMateriali.Shortcut = CType(resources.GetObject("mnuMateriali.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuMateriali.ShowShortcut = CType(resources.GetObject("mnuMateriali.ShowShortcut"), Boolean)
+
+        Me.mnuMateriali.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuMateriali.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuMateriali.ShowShortcutKeys = CType(resources.GetObject("mnuMateriali.ShowShortcut"), Boolean)
         Me.mnuMateriali.Text = resources.GetString("mnuMateriali.Text")
         Me.mnuMateriali.Visible = CType(resources.GetObject("mnuMateriali.Visible"), Boolean)
         '
         'mnuFlange
         '
         Me.mnuFlange.Enabled = CType(resources.GetObject("mnuFlange.Enabled"), Boolean)
-        Me.mnuFlange.Index = 1
-        Me.mnuFlange.Shortcut = CType(resources.GetObject("mnuFlange.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuFlange.ShowShortcut = CType(resources.GetObject("mnuFlange.ShowShortcut"), Boolean)
+
+        Me.mnuFlange.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuFlange.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuFlange.ShowShortcutKeys = CType(resources.GetObject("mnuFlange.ShowShortcut"), Boolean)
         Me.mnuFlange.Text = resources.GetString("mnuFlange.Text")
         Me.mnuFlange.Visible = CType(resources.GetObject("mnuFlange.Visible"), Boolean)
         '
         'mnuTiranti
         '
         Me.mnuTiranti.Enabled = CType(resources.GetObject("mnuTiranti.Enabled"), Boolean)
-        Me.mnuTiranti.Index = 2
-        Me.mnuTiranti.Shortcut = CType(resources.GetObject("mnuTiranti.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTiranti.ShowShortcut = CType(resources.GetObject("mnuTiranti.ShowShortcut"), Boolean)
+
+        Me.mnuTiranti.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTiranti.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTiranti.ShowShortcutKeys = CType(resources.GetObject("mnuTiranti.ShowShortcut"), Boolean)
         Me.mnuTiranti.Text = resources.GetString("mnuTiranti.Text")
         Me.mnuTiranti.Visible = CType(resources.GetObject("mnuTiranti.Visible"), Boolean)
         '
         'mnuPiping
         '
         Me.mnuPiping.Enabled = CType(resources.GetObject("mnuPiping.Enabled"), Boolean)
-        Me.mnuPiping.Index = 3
-        Me.mnuPiping.Shortcut = CType(resources.GetObject("mnuPiping.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPiping.ShowShortcut = CType(resources.GetObject("mnuPiping.ShowShortcut"), Boolean)
+
+        Me.mnuPiping.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPiping.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPiping.ShowShortcutKeys = CType(resources.GetObject("mnuPiping.ShowShortcut"), Boolean)
         Me.mnuPiping.Text = resources.GetString("mnuPiping.Text")
         Me.mnuPiping.Visible = CType(resources.GetObject("mnuPiping.Visible"), Boolean)
         '
         'mnuGuarn
         '
         Me.mnuGuarn.Enabled = CType(resources.GetObject("mnuGuarn.Enabled"), Boolean)
-        Me.mnuGuarn.Index = 4
-        Me.mnuGuarn.Shortcut = CType(resources.GetObject("mnuGuarn.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuGuarn.ShowShortcut = CType(resources.GetObject("mnuGuarn.ShowShortcut"), Boolean)
+
+        Me.mnuGuarn.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuGuarn.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuGuarn.ShowShortcutKeys = CType(resources.GetObject("mnuGuarn.ShowShortcut"), Boolean)
         Me.mnuGuarn.Text = resources.GetString("mnuGuarn.Text")
         Me.mnuGuarn.Visible = CType(resources.GetObject("mnuGuarn.Visible"), Boolean)
         '
         'mnuTubi
         '
         Me.mnuTubi.Enabled = CType(resources.GetObject("mnuTubi.Enabled"), Boolean)
-        Me.mnuTubi.Index = 5
-        Me.mnuTubi.Shortcut = CType(resources.GetObject("mnuTubi.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTubi.ShowShortcut = CType(resources.GetObject("mnuTubi.ShowShortcut"), Boolean)
+
+        Me.mnuTubi.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTubi.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTubi.ShowShortcutKeys = CType(resources.GetObject("mnuTubi.ShowShortcut"), Boolean)
         Me.mnuTubi.Text = resources.GetString("mnuTubi.Text")
         Me.mnuTubi.Visible = CType(resources.GetObject("mnuTubi.Visible"), Boolean)
         '
         'mnuPref
         '
         Me.mnuPref.Enabled = CType(resources.GetObject("mnuPref.Enabled"), Boolean)
-        Me.mnuPref.Index = 5
-        Me.mnuPref.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAree, Me.mnuTipLav, Me.mnuPW, Me.mnuPersAz, Me.mnuOpzLibr, Me.mnuAvvio})
-        Me.mnuPref.Shortcut = CType(resources.GetObject("mnuPref.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPref.ShowShortcut = CType(resources.GetObject("mnuPref.ShowShortcut"), Boolean)
+
+        Me.mnuPref.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.mnuAree, Me.mnuTipLav, Me.mnuPW, Me.mnuPersAz, Me.mnuOpzLibr, Me.mnuAvvio})
+        Me.mnuPref.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPref.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPref.ShowShortcutKeys = CType(resources.GetObject("mnuPref.ShowShortcut"), Boolean)
         Me.mnuPref.Text = resources.GetString("mnuPref.Text")
         Me.mnuPref.Visible = CType(resources.GetObject("mnuPref.Visible"), Boolean)
         '
         'mnuAree
         '
         Me.mnuAree.Enabled = CType(resources.GetObject("mnuAree.Enabled"), Boolean)
-        Me.mnuAree.Index = 0
-        Me.mnuAree.Shortcut = CType(resources.GetObject("mnuAree.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuAree.ShowShortcut = CType(resources.GetObject("mnuAree.ShowShortcut"), Boolean)
+
+        Me.mnuAree.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuAree.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuAree.ShowShortcutKeys = CType(resources.GetObject("mnuAree.ShowShortcut"), Boolean)
         Me.mnuAree.Text = resources.GetString("mnuAree.Text")
         Me.mnuAree.Visible = CType(resources.GetObject("mnuAree.Visible"), Boolean)
         '
         'mnuTipLav
         '
         Me.mnuTipLav.Enabled = CType(resources.GetObject("mnuTipLav.Enabled"), Boolean)
-        Me.mnuTipLav.Index = 1
-        Me.mnuTipLav.Shortcut = CType(resources.GetObject("mnuTipLav.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuTipLav.ShowShortcut = CType(resources.GetObject("mnuTipLav.ShowShortcut"), Boolean)
+
+        Me.mnuTipLav.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuTipLav.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuTipLav.ShowShortcutKeys = CType(resources.GetObject("mnuTipLav.ShowShortcut"), Boolean)
         Me.mnuTipLav.Text = resources.GetString("mnuTipLav.Text")
         Me.mnuTipLav.Visible = CType(resources.GetObject("mnuTipLav.Visible"), Boolean)
         '
         'mnuPW
         '
         Me.mnuPW.Enabled = CType(resources.GetObject("mnuPW.Enabled"), Boolean)
-        Me.mnuPW.Index = 2
-        Me.mnuPW.Shortcut = CType(resources.GetObject("mnuPW.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPW.ShowShortcut = CType(resources.GetObject("mnuPW.ShowShortcut"), Boolean)
+
+        Me.mnuPW.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPW.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPW.ShowShortcutKeys = CType(resources.GetObject("mnuPW.ShowShortcut"), Boolean)
         Me.mnuPW.Text = resources.GetString("mnuPW.Text")
         Me.mnuPW.Visible = CType(resources.GetObject("mnuPW.Visible"), Boolean)
         '
         'mnuPersAz
         '
         Me.mnuPersAz.Enabled = CType(resources.GetObject("mnuPersAz.Enabled"), Boolean)
-        Me.mnuPersAz.Index = 3
-        Me.mnuPersAz.Shortcut = CType(resources.GetObject("mnuPersAz.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuPersAz.ShowShortcut = CType(resources.GetObject("mnuPersAz.ShowShortcut"), Boolean)
+
+        Me.mnuPersAz.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuPersAz.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuPersAz.ShowShortcutKeys = CType(resources.GetObject("mnuPersAz.ShowShortcut"), Boolean)
         Me.mnuPersAz.Text = resources.GetString("mnuPersAz.Text")
         Me.mnuPersAz.Visible = CType(resources.GetObject("mnuPersAz.Visible"), Boolean)
         '
         'mnuOpzLibr
         '
         Me.mnuOpzLibr.Enabled = CType(resources.GetObject("mnuOpzLibr.Enabled"), Boolean)
-        Me.mnuOpzLibr.Index = 4
-        Me.mnuOpzLibr.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuUltAgg_0, Me._mnuUltAgg_1, Me.mnuStdPip})
-        Me.mnuOpzLibr.Shortcut = CType(resources.GetObject("mnuOpzLibr.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuOpzLibr.ShowShortcut = CType(resources.GetObject("mnuOpzLibr.ShowShortcut"), Boolean)
+
+        Me.mnuOpzLibr.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuUltAgg_0, Me._mnuUltAgg_1, Me.mnuStdPip})
+        Me.mnuOpzLibr.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuOpzLibr.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuOpzLibr.ShowShortcutKeys = CType(resources.GetObject("mnuOpzLibr.ShowShortcut"), Boolean)
         Me.mnuOpzLibr.Text = resources.GetString("mnuOpzLibr.Text")
         Me.mnuOpzLibr.Visible = CType(resources.GetObject("mnuOpzLibr.Visible"), Boolean)
         '
         'mnuStdPip
         '
         Me.mnuStdPip.Enabled = CType(resources.GetObject("mnuStdPip.Enabled"), Boolean)
-        Me.mnuStdPip.Index = 2
-        Me.mnuStdPip.Shortcut = CType(resources.GetObject("mnuStdPip.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuStdPip.ShowShortcut = CType(resources.GetObject("mnuStdPip.ShowShortcut"), Boolean)
+
+        Me.mnuStdPip.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuStdPip.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuStdPip.ShowShortcutKeys = CType(resources.GetObject("mnuStdPip.ShowShortcut"), Boolean)
         Me.mnuStdPip.Text = resources.GetString("mnuStdPip.Text")
         Me.mnuStdPip.Visible = CType(resources.GetObject("mnuStdPip.Visible"), Boolean)
         '
         'mnuAvvio
         '
         Me.mnuAvvio.Enabled = CType(resources.GetObject("mnuAvvio.Enabled"), Boolean)
-        Me.mnuAvvio.Index = 5
-        Me.mnuAvvio.Shortcut = CType(resources.GetObject("mnuAvvio.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuAvvio.ShowShortcut = CType(resources.GetObject("mnuAvvio.ShowShortcut"), Boolean)
+
+        Me.mnuAvvio.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuAvvio.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuAvvio.ShowShortcutKeys = CType(resources.GetObject("mnuAvvio.ShowShortcut"), Boolean)
         Me.mnuAvvio.Text = resources.GetString("mnuAvvio.Text")
         Me.mnuAvvio.Visible = CType(resources.GetObject("mnuAvvio.Visible"), Boolean)
         '
         'mnuUt0
         '
         Me.mnuUt0.Enabled = CType(resources.GetObject("mnuUt0.Enabled"), Boolean)
-        Me.mnuUt0.Index = 6
-        Me.mnuUt0.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuUt_0, Me.mnuASME, Me.mnuStamLibr, Me.mnuRegole, Me.mnuUtDis})
-        Me.mnuUt0.Shortcut = CType(resources.GetObject("mnuUt0.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuUt0.ShowShortcut = CType(resources.GetObject("mnuUt0.ShowShortcut"), Boolean)
+
+        Me.mnuUt0.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuUt_0, Me.mnuASME, Me.mnuStamLibr, Me.mnuRegole, Me.mnuUtDis})
+        Me.mnuUt0.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuUt0.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuUt0.ShowShortcutKeys = CType(resources.GetObject("mnuUt0.ShowShortcut"), Boolean)
         Me.mnuUt0.Text = resources.GetString("mnuUt0.Text")
         Me.mnuUt0.Visible = CType(resources.GetObject("mnuUt0.Visible"), Boolean)
         '
         'mnuASME
         '
         Me.mnuASME.Enabled = CType(resources.GetObject("mnuASME.Enabled"), Boolean)
-        Me.mnuASME.Index = 1
-        Me.mnuASME.Shortcut = CType(resources.GetObject("mnuASME.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuASME.ShowShortcut = CType(resources.GetObject("mnuASME.ShowShortcut"), Boolean)
+
+        Me.mnuASME.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuASME.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuASME.ShowShortcutKeys = CType(resources.GetObject("mnuASME.ShowShortcut"), Boolean)
         Me.mnuASME.Text = resources.GetString("mnuASME.Text")
         Me.mnuASME.Visible = CType(resources.GetObject("mnuASME.Visible"), Boolean)
         '
         'mnuStamLibr
         '
         Me.mnuStamLibr.Enabled = CType(resources.GetObject("mnuStamLibr.Enabled"), Boolean)
-        Me.mnuStamLibr.Index = 2
-        Me.mnuStamLibr.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuStamLib_0, Me._mnuStamLib_1})
-        Me.mnuStamLibr.Shortcut = CType(resources.GetObject("mnuStamLibr.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuStamLibr.ShowShortcut = CType(resources.GetObject("mnuStamLibr.ShowShortcut"), Boolean)
+
+        Me.mnuStamLibr.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuStamLib_0, Me._mnuStamLib_1})
+        Me.mnuStamLibr.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuStamLibr.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuStamLibr.ShowShortcutKeys = CType(resources.GetObject("mnuStamLibr.ShowShortcut"), Boolean)
         Me.mnuStamLibr.Text = resources.GetString("mnuStamLibr.Text")
         Me.mnuStamLibr.Visible = CType(resources.GetObject("mnuStamLibr.Visible"), Boolean)
         '
         'mnuRegole
         '
         Me.mnuRegole.Enabled = CType(resources.GetObject("mnuRegole.Enabled"), Boolean)
-        Me.mnuRegole.Index = 3
-        Me.mnuRegole.Shortcut = CType(resources.GetObject("mnuRegole.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuRegole.ShowShortcut = CType(resources.GetObject("mnuRegole.ShowShortcut"), Boolean)
+
+        Me.mnuRegole.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuRegole.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuRegole.ShowShortcutKeys = CType(resources.GetObject("mnuRegole.ShowShortcut"), Boolean)
         Me.mnuRegole.Text = resources.GetString("mnuRegole.Text")
         Me.mnuRegole.Visible = CType(resources.GetObject("mnuRegole.Visible"), Boolean)
         '
         'mnuUtDis
         '
         Me.mnuUtDis.Enabled = CType(resources.GetObject("mnuUtDis.Enabled"), Boolean)
-        Me.mnuUtDis.Index = 4
-        Me.mnuUtDis.Shortcut = CType(resources.GetObject("mnuUtDis.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuUtDis.ShowShortcut = CType(resources.GetObject("mnuUtDis.ShowShortcut"), Boolean)
+
+        Me.mnuUtDis.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuUtDis.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuUtDis.ShowShortcutKeys = CType(resources.GetObject("mnuUtDis.ShowShortcut"), Boolean)
         Me.mnuUtDis.Text = resources.GetString("mnuUtDis.Text")
         Me.mnuUtDis.Visible = CType(resources.GetObject("mnuUtDis.Visible"), Boolean)
         '
         'mnuGuide
         '
         Me.mnuGuide.Enabled = CType(resources.GetObject("mnuGuide.Enabled"), Boolean)
-        Me.mnuGuide.Index = 7
-        Me.mnuGuide.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me._mnuGuida_0, Me._mnuGuida_1, Me.MenuItem1})
-        Me.mnuGuide.Shortcut = CType(resources.GetObject("mnuGuide.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.mnuGuide.ShowShortcut = CType(resources.GetObject("mnuGuide.ShowShortcut"), Boolean)
+
+        Me.mnuGuide.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me._mnuGuida_0, Me._mnuGuida_1, Me.MenuItem1})
+        Me.mnuGuide.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("mnuGuide.Shortcut")), System.Windows.Forms.Keys)
+        Me.mnuGuide.ShowShortcutKeys = CType(resources.GetObject("mnuGuide.ShowShortcut"), Boolean)
         Me.mnuGuide.Text = resources.GetString("mnuGuide.Text")
         Me.mnuGuide.Visible = CType(resources.GetObject("mnuGuide.Visible"), Boolean)
         '
         'MenuItem1
         '
         Me.MenuItem1.Enabled = CType(resources.GetObject("MenuItem1.Enabled"), Boolean)
-        Me.MenuItem1.Index = 2
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem2, Me.MenuItem3, Me.MenuItem4, Me.MenuItem5, Me.MenuItem6, Me.MenuItem7, Me.MenuItem8, Me.MenuItem9, Me.MenuItem10, Me.MenuItem11, Me.MenuItem12, Me.MenuItem13, Me.MenuItem14, Me.MenuItem15})
-        Me.MenuItem1.Shortcut = CType(resources.GetObject("MenuItem1.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem1.ShowShortcut = CType(resources.GetObject("MenuItem1.ShowShortcut"), Boolean)
+
+        Me.MenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.MenuItem2, Me.MenuItem3, Me.MenuItem4, Me.MenuItem5, Me.MenuItem6, Me.MenuItem7, Me.MenuItem8, Me.MenuItem9, Me.MenuItem10, Me.MenuItem11, Me.MenuItem12, Me.MenuItem13, Me.MenuItem14, Me.MenuItem15})
+        Me.MenuItem1.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem1.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem1.ShowShortcutKeys = CType(resources.GetObject("MenuItem1.ShowShortcut"), Boolean)
         Me.MenuItem1.Text = resources.GetString("MenuItem1.Text")
         Me.MenuItem1.Visible = CType(resources.GetObject("MenuItem1.Visible"), Boolean)
         '
         'MenuItem2
         '
         Me.MenuItem2.Enabled = CType(resources.GetObject("MenuItem2.Enabled"), Boolean)
-        Me.MenuItem2.Index = 0
-        Me.MenuItem2.Shortcut = CType(resources.GetObject("MenuItem2.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem2.ShowShortcut = CType(resources.GetObject("MenuItem2.ShowShortcut"), Boolean)
+
+        Me.MenuItem2.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem2.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem2.ShowShortcutKeys = CType(resources.GetObject("MenuItem2.ShowShortcut"), Boolean)
         Me.MenuItem2.Text = resources.GetString("MenuItem2.Text")
         Me.MenuItem2.Visible = CType(resources.GetObject("MenuItem2.Visible"), Boolean)
         '
         'MenuItem3
         '
         Me.MenuItem3.Enabled = CType(resources.GetObject("MenuItem3.Enabled"), Boolean)
-        Me.MenuItem3.Index = 1
-        Me.MenuItem3.Shortcut = CType(resources.GetObject("MenuItem3.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem3.ShowShortcut = CType(resources.GetObject("MenuItem3.ShowShortcut"), Boolean)
+
+        Me.MenuItem3.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem3.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem3.ShowShortcutKeys = CType(resources.GetObject("MenuItem3.ShowShortcut"), Boolean)
         Me.MenuItem3.Text = resources.GetString("MenuItem3.Text")
         Me.MenuItem3.Visible = CType(resources.GetObject("MenuItem3.Visible"), Boolean)
         '
         'MenuItem4
         '
         Me.MenuItem4.Enabled = CType(resources.GetObject("MenuItem4.Enabled"), Boolean)
-        Me.MenuItem4.Index = 2
-        Me.MenuItem4.Shortcut = CType(resources.GetObject("MenuItem4.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem4.ShowShortcut = CType(resources.GetObject("MenuItem4.ShowShortcut"), Boolean)
+
+        Me.MenuItem4.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem4.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem4.ShowShortcutKeys = CType(resources.GetObject("MenuItem4.ShowShortcut"), Boolean)
         Me.MenuItem4.Text = resources.GetString("MenuItem4.Text")
         Me.MenuItem4.Visible = CType(resources.GetObject("MenuItem4.Visible"), Boolean)
         '
         'MenuItem5
         '
         Me.MenuItem5.Enabled = CType(resources.GetObject("MenuItem5.Enabled"), Boolean)
-        Me.MenuItem5.Index = 3
-        Me.MenuItem5.Shortcut = CType(resources.GetObject("MenuItem5.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem5.ShowShortcut = CType(resources.GetObject("MenuItem5.ShowShortcut"), Boolean)
+
+        Me.MenuItem5.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem5.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem5.ShowShortcutKeys = CType(resources.GetObject("MenuItem5.ShowShortcut"), Boolean)
         Me.MenuItem5.Text = resources.GetString("MenuItem5.Text")
         Me.MenuItem5.Visible = CType(resources.GetObject("MenuItem5.Visible"), Boolean)
         '
         'MenuItem6
         '
         Me.MenuItem6.Enabled = CType(resources.GetObject("MenuItem6.Enabled"), Boolean)
-        Me.MenuItem6.Index = 4
-        Me.MenuItem6.Shortcut = CType(resources.GetObject("MenuItem6.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem6.ShowShortcut = CType(resources.GetObject("MenuItem6.ShowShortcut"), Boolean)
+
+        Me.MenuItem6.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem6.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem6.ShowShortcutKeys = CType(resources.GetObject("MenuItem6.ShowShortcut"), Boolean)
         Me.MenuItem6.Text = resources.GetString("MenuItem6.Text")
         Me.MenuItem6.Visible = CType(resources.GetObject("MenuItem6.Visible"), Boolean)
         '
         'MenuItem7
         '
         Me.MenuItem7.Enabled = CType(resources.GetObject("MenuItem7.Enabled"), Boolean)
-        Me.MenuItem7.Index = 5
-        Me.MenuItem7.Shortcut = CType(resources.GetObject("MenuItem7.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem7.ShowShortcut = CType(resources.GetObject("MenuItem7.ShowShortcut"), Boolean)
+
+        Me.MenuItem7.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem7.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem7.ShowShortcutKeys = CType(resources.GetObject("MenuItem7.ShowShortcut"), Boolean)
         Me.MenuItem7.Text = resources.GetString("MenuItem7.Text")
         Me.MenuItem7.Visible = CType(resources.GetObject("MenuItem7.Visible"), Boolean)
         '
         'MenuItem8
         '
         Me.MenuItem8.Enabled = CType(resources.GetObject("MenuItem8.Enabled"), Boolean)
-        Me.MenuItem8.Index = 6
-        Me.MenuItem8.Shortcut = CType(resources.GetObject("MenuItem8.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem8.ShowShortcut = CType(resources.GetObject("MenuItem8.ShowShortcut"), Boolean)
+
+        Me.MenuItem8.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem8.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem8.ShowShortcutKeys = CType(resources.GetObject("MenuItem8.ShowShortcut"), Boolean)
         Me.MenuItem8.Text = resources.GetString("MenuItem8.Text")
         Me.MenuItem8.Visible = CType(resources.GetObject("MenuItem8.Visible"), Boolean)
         '
         'MenuItem9
         '
         Me.MenuItem9.Enabled = CType(resources.GetObject("MenuItem9.Enabled"), Boolean)
-        Me.MenuItem9.Index = 7
-        Me.MenuItem9.Shortcut = CType(resources.GetObject("MenuItem9.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem9.ShowShortcut = CType(resources.GetObject("MenuItem9.ShowShortcut"), Boolean)
+
+        Me.MenuItem9.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem9.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem9.ShowShortcutKeys = CType(resources.GetObject("MenuItem9.ShowShortcut"), Boolean)
         Me.MenuItem9.Text = resources.GetString("MenuItem9.Text")
         Me.MenuItem9.Visible = CType(resources.GetObject("MenuItem9.Visible"), Boolean)
         '
         'MenuItem10
         '
         Me.MenuItem10.Enabled = CType(resources.GetObject("MenuItem10.Enabled"), Boolean)
-        Me.MenuItem10.Index = 8
-        Me.MenuItem10.Shortcut = CType(resources.GetObject("MenuItem10.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem10.ShowShortcut = CType(resources.GetObject("MenuItem10.ShowShortcut"), Boolean)
+
+        Me.MenuItem10.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem10.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem10.ShowShortcutKeys = CType(resources.GetObject("MenuItem10.ShowShortcut"), Boolean)
         Me.MenuItem10.Text = resources.GetString("MenuItem10.Text")
         Me.MenuItem10.Visible = CType(resources.GetObject("MenuItem10.Visible"), Boolean)
         '
         'MenuItem11
         '
         Me.MenuItem11.Enabled = CType(resources.GetObject("MenuItem11.Enabled"), Boolean)
-        Me.MenuItem11.Index = 9
-        Me.MenuItem11.Shortcut = CType(resources.GetObject("MenuItem11.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem11.ShowShortcut = CType(resources.GetObject("MenuItem11.ShowShortcut"), Boolean)
+
+        Me.MenuItem11.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem11.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem11.ShowShortcutKeys = CType(resources.GetObject("MenuItem11.ShowShortcut"), Boolean)
         Me.MenuItem11.Text = resources.GetString("MenuItem11.Text")
         Me.MenuItem11.Visible = CType(resources.GetObject("MenuItem11.Visible"), Boolean)
         '
         'MenuItem12
         '
         Me.MenuItem12.Enabled = CType(resources.GetObject("MenuItem12.Enabled"), Boolean)
-        Me.MenuItem12.Index = 10
-        Me.MenuItem12.Shortcut = CType(resources.GetObject("MenuItem12.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem12.ShowShortcut = CType(resources.GetObject("MenuItem12.ShowShortcut"), Boolean)
+
+        Me.MenuItem12.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem12.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem12.ShowShortcutKeys = CType(resources.GetObject("MenuItem12.ShowShortcut"), Boolean)
         Me.MenuItem12.Text = resources.GetString("MenuItem12.Text")
         Me.MenuItem12.Visible = CType(resources.GetObject("MenuItem12.Visible"), Boolean)
         '
         'MenuItem13
         '
         Me.MenuItem13.Enabled = CType(resources.GetObject("MenuItem13.Enabled"), Boolean)
-        Me.MenuItem13.Index = 11
-        Me.MenuItem13.Shortcut = CType(resources.GetObject("MenuItem13.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem13.ShowShortcut = CType(resources.GetObject("MenuItem13.ShowShortcut"), Boolean)
+
+        Me.MenuItem13.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem13.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem13.ShowShortcutKeys = CType(resources.GetObject("MenuItem13.ShowShortcut"), Boolean)
         Me.MenuItem13.Text = resources.GetString("MenuItem13.Text")
         Me.MenuItem13.Visible = CType(resources.GetObject("MenuItem13.Visible"), Boolean)
         '
         'MenuItem14
         '
         Me.MenuItem14.Enabled = CType(resources.GetObject("MenuItem14.Enabled"), Boolean)
-        Me.MenuItem14.Index = 12
-        Me.MenuItem14.Shortcut = CType(resources.GetObject("MenuItem14.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem14.ShowShortcut = CType(resources.GetObject("MenuItem14.ShowShortcut"), Boolean)
+
+        Me.MenuItem14.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem14.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem14.ShowShortcutKeys = CType(resources.GetObject("MenuItem14.ShowShortcut"), Boolean)
         Me.MenuItem14.Text = resources.GetString("MenuItem14.Text")
         Me.MenuItem14.Visible = CType(resources.GetObject("MenuItem14.Visible"), Boolean)
         '
         'MenuItem15
         '
         Me.MenuItem15.Enabled = CType(resources.GetObject("MenuItem15.Enabled"), Boolean)
-        Me.MenuItem15.Index = 13
-        Me.MenuItem15.Shortcut = CType(resources.GetObject("MenuItem15.Shortcut"), System.Windows.Forms.Shortcut)
-        Me.MenuItem15.ShowShortcut = CType(resources.GetObject("MenuItem15.ShowShortcut"), Boolean)
+
+        Me.MenuItem15.ShortcutKeys = CType(System.Convert.ToInt32(resources.GetObject("MenuItem15.Shortcut")), System.Windows.Forms.Keys)
+        Me.MenuItem15.ShowShortcutKeys = CType(resources.GetObject("MenuItem15.ShowShortcut"), Boolean)
         Me.MenuItem15.Text = resources.GetString("MenuItem15.Text")
         Me.MenuItem15.Visible = CType(resources.GetObject("MenuItem15.Visible"), Boolean)
         '
@@ -1172,7 +1172,8 @@ Friend Class Form1
         Me.Location = CType(resources.GetObject("$this.Location"), System.Drawing.Point)
         Me.MaximizeBox = False
         Me.MaximumSize = CType(resources.GetObject("$this.MaximumSize"), System.Drawing.Size)
-        Me.Menu = Me.MainMenu1
+        Me.MainMenuStrip = Me.MainMenu1
+        Me.Controls.Add(Me.MainMenu1)
         Me.MinimizeBox = False
         Me.MinimumSize = CType(resources.GetObject("$this.MinimumSize"), System.Drawing.Size)
         Me.Name = "Form1"
@@ -1182,31 +1183,31 @@ Friend Class Form1
         Me.Text = resources.GetString("$this.Text")
         Me.ToolTip1.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         For Each control In mnuGuida.Values
-            AddHandler control.Popup, AddressOf mnuGuida_Popup
+            AddHandler control.DropDownOpening, AddressOf mnuGuida_Popup
         Next
         For Each control In mnuGuida.Values
             AddHandler control.Click, AddressOf mnuGuida_Click
         Next
         For Each control In mnuStamLib.Values
-            AddHandler control.Popup, AddressOf mnuStamLib_Popup
+            AddHandler control.DropDownOpening, AddressOf mnuStamLib_Popup
         Next
         For Each control In mnuStamLib.Values
             AddHandler control.Click, AddressOf mnuStamLib_Click
         Next
         For Each control In mnuTerm.Values
-            AddHandler control.Popup, AddressOf mnuTerm_Popup
+            AddHandler control.DropDownOpening, AddressOf mnuTerm_Popup
         Next
         For Each control In mnuTerm.Values
             AddHandler control.Click, AddressOf mnuTerm_Click
         Next
         For Each control In mnuUltAgg.Values
-            AddHandler control.Popup, AddressOf mnuUltAgg_Popup
+            AddHandler control.DropDownOpening, AddressOf mnuUltAgg_Popup
         Next
         For Each control In mnuUltAgg.Values
             AddHandler control.Click, AddressOf mnuUltAgg_Click
         Next
         For Each control In mnuUt.Values
-            AddHandler control.Popup, AddressOf mnuUt_Popup
+            AddHandler control.DropDownOpening, AddressOf mnuUt_Popup
         Next
         For Each control In mnuUt.Values
             AddHandler control.Click, AddressOf mnuUt_Click
@@ -1443,39 +1444,39 @@ Fine:
             ErrCommesse = True
         End Try
     End Sub
-    Public Sub mecBocchelli_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBocchelli.Popup
+    Public Sub mecBocchelli_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBocchelli.DropDownOpening
         mecBocchelli_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecBocchelli_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBocchelli.Click
         LanciaProg(1)
     End Sub
 
-    Public Sub mecBreLoc_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBreLoc.Popup
+    Public Sub mecBreLoc_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBreLoc.DropDownOpening
         mecBreLoc_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecBreLoc_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecBreLoc.Click
         LanciaProg(21)
     End Sub
 
-    Public Sub mecConi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecConi.Popup
+    Public Sub mecConi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecConi.DropDownOpening
         mecConi_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecConi_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecConi.Click
         LanciaProg(18)
     End Sub
-    Public Sub mecMantelli_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecMantelli.Popup
+    Public Sub mecMantelli_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecMantelli.DropDownOpening
         mecMantelli_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecMantelli_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecMantelli.Click
         LanciaProg(3)
     End Sub
-    Public Sub mecOrecchie_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecOrecchie.Popup
+    Public Sub mecOrecchie_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecOrecchie.DropDownOpening
         mecOrecchie_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecOrecchie_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecOrecchie.Click
         LanciaProg(16)
     End Sub
-    Public Sub mecSelle_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSelle.Popup
+    Public Sub mecSelle_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSelle.DropDownOpening
         mecSelle_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecSelle_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSelle.Click
@@ -1484,20 +1485,20 @@ Fine:
         objBSDD.DoveRoutines = Routines
         objBSDD.Esegui(0, "")
     End Sub
-    Public Sub mecSerraggio_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSerraggio.Popup
+    Public Sub mecSerraggio_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSerraggio.DropDownOpening
         mecSerraggio_Click(eventSender, eventArgs)
     End Sub
     Public Sub mecSerraggio_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mecSerraggio.Click
         LanciaProg(17)
     End Sub
-    Public Sub mnuAree_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.Popup
+    Public Sub mnuAree_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.DropDownOpening
         mnuAree_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuAree_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAree.Click
         If Not Monitor.Motore.Aree(Abilitato) Then cmdExit_Click(cmdExit, New System.EventArgs)
     End Sub
 
-    Public Sub mnuASME_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuASME.Popup
+    Public Sub mnuASME_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuASME.DropDownOpening
         mnuASME_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuASME_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuASME.Click
@@ -1507,7 +1508,7 @@ Fine:
         Mat.SuperUpDate()
     End Sub
 
-    Public Sub mnuFlange_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFlange.Popup
+    Public Sub mnuFlange_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFlange.DropDownOpening
         mnuFlange_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuFlange_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFlange.Click
@@ -1524,7 +1525,7 @@ Fine:
         End Try
     End Sub
 
-    Public Sub mnuGuarn_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuGuarn.Popup
+    Public Sub mnuGuarn_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuGuarn.DropDownOpening
         mnuGuarn_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuGuarn_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuGuarn.Click
@@ -1537,7 +1538,7 @@ Fine:
         mnuGuida_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuGuida_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
-        Dim Index As Short = IndexedControls.IndexOf(mnuGuida, CType(eventSender, MenuItem))
+        Dim Index As Short = IndexedControls.IndexOf(mnuGuida, CType(eventSender, ToolStripMenuItem))
         Dim Rad As String
         Dim Desc, Versione, Disc As String
         Dim VersionInfo As System.Diagnostics.FileVersionInfo
@@ -1553,7 +1554,7 @@ Fine:
                 Monitor.Motore.Informazioni(Me, Reflection.Assembly.GetExecutingAssembly)
         End Select
     End Sub
-    Public Sub mnuMateriali_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuMateriali.Popup
+    Public Sub mnuMateriali_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuMateriali.DropDownOpening
         mnuMateriali_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuMateriali_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuMateriali.Click
@@ -1567,14 +1568,14 @@ Fine:
         End Try
     End Sub
 
-    Public Sub mnuPersAz_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPersAz.Popup
+    Public Sub mnuPersAz_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPersAz.DropDownOpening
         mnuPersAz_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPersAz_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPersAz.Click
         frmPers.DefInstance.ShowDialog()
         frmPers.DefInstance.Close()
     End Sub
-    Public Sub mnuPiping_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPiping.Popup
+    Public Sub mnuPiping_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPiping.DropDownOpening
         mnuPiping_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPiping_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPiping.Click
@@ -1583,7 +1584,7 @@ Fine:
         Mat.DoveMotore = Monitor.Motore
         Mat.Scelta(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
     End Sub
-    Public Sub mnuPPgas_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPgas.Popup
+    Public Sub mnuPPgas_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPgas.DropDownOpening
         mnuPPgas_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPPgas_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPgas.Click
@@ -1595,7 +1596,7 @@ Fine:
         'objPpg.mostra(0, Fluido)
     End Sub
 
-    Public Sub mnuPPSM_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPSM.Popup
+    Public Sub mnuPPSM_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPSM.DropDownOpening
         mnuPPSM_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPPSM_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPPSM.Click
@@ -1603,7 +1604,7 @@ Fine:
         '    objPPSM.DoveMotore = Monitor.Motore
         'objPPSM.EseguiSciolto()
     End Sub
-    Public Sub mnuPW_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPW.Popup
+    Public Sub mnuPW_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPW.DropDownOpening
         mnuPW_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuPW_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPW.Click
@@ -1617,7 +1618,7 @@ Fine:
         MyDatabase.Dispose()
     End Sub
 
-    Public Sub mnuRegole_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuRegole.Popup
+    Public Sub mnuRegole_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuRegole.DropDownOpening
         mnuRegole_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuRegole_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuRegole.Click
@@ -1631,7 +1632,7 @@ Fine:
         mnuStamLib_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuStamLib_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
-        Dim Index As Short = IndexedControls.IndexOf(mnuStamLib, CType(eventSender, MenuItem))
+        Dim Index As Short = IndexedControls.IndexOf(mnuStamLib, CType(eventSender, ToolStripMenuItem))
         Dim Mat As LibMat.MaterialeNew1
         Select Case Index
             Case 0 'stampa materiali
@@ -1641,7 +1642,7 @@ Fine:
         End Select
     End Sub
 
-    Public Sub mnuStdPIP_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuStdPip.Popup
+    Public Sub mnuStdPIP_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuStdPip.DropDownOpening
         mnuStdPIP_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuStdPIP_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuStdPip.Click
@@ -1673,7 +1674,7 @@ Fine:
         mnuTerm_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuTerm_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
-        Dim Index As Short = IndexedControls.IndexOf(mnuTerm, CType(eventSender, MenuItem))
+        Dim Index As Short = IndexedControls.IndexOf(mnuTerm, CType(eventSender, ToolStripMenuItem))
         Select Case Index
             Case 0 : LanciaProg(19)
             Case 1 : LanciaProg(15)
@@ -1689,13 +1690,13 @@ Fine:
                 ' objWallT.Esegui(False)
         End Select
     End Sub
-    Public Sub mnuTipLav_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTipLav.Popup
+    Public Sub mnuTipLav_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTipLav.DropDownOpening
         mnuTipLav_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuTipLav_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTipLav.Click
         Monitor.Motore.SetLavoriSciolti()
     End Sub
-    Public Sub mnuTiranti_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTiranti.Popup
+    Public Sub mnuTiranti_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTiranti.DropDownOpening
         mnuTiranti_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuTiranti_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTiranti.Click
@@ -1703,7 +1704,7 @@ Fine:
         Mat = New LibMat.clsTira
         Mat.Scelta(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
     End Sub
-    Public Sub mnuTracciature_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTracciature.Popup
+    Public Sub mnuTracciature_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTracciature.DropDownOpening
         mnuTracciature_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuTracciature_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTracciature.Click
@@ -1715,7 +1716,7 @@ Fine:
         objTraccia.Esegui(0, "")
     End Sub
 
-    Public Sub mnuTubi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTubi.Popup
+    Public Sub mnuTubi_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTubi.DropDownOpening
         mnuTubi_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuTubi_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuTubi.Click
@@ -1728,7 +1729,7 @@ Fine:
         mnuUltAgg_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuUltAgg_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
-        Dim Index As Short = IndexedControls.IndexOf(mnuUltAgg, CType(eventSender, MenuItem))
+        Dim Index As Short = IndexedControls.IndexOf(mnuUltAgg, CType(eventSender, ToolStripMenuItem))
         Dim Stringa(10) As String
         Dim Result(10) As String
         Dim Ris As Boolean
@@ -1757,7 +1758,7 @@ Fine:
         mnuUt_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuUt_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
-        Dim Index As Short = IndexedControls.IndexOf(mnuUt, CType(eventSender, MenuItem))
+        Dim Index As Short = IndexedControls.IndexOf(mnuUt, CType(eventSender, ToolStripMenuItem))
         Dim File As String
         Dim h As New RoutBase1.HHHelp.HTMLHelp
         Select Case Index
@@ -1772,7 +1773,7 @@ Fine:
         End Select
     End Sub
 
-    Public Sub mnuVentilatori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVentilatori.Popup
+    Public Sub mnuVentilatori_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVentilatori.DropDownOpening
         mnuVentilatori_Click(eventSender, eventArgs)
     End Sub
     Public Sub mnuVentilatori_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuVentilatori.Click
@@ -1784,7 +1785,7 @@ Fine:
         '''objventil.Class_Terminate
         '''Set objventil = Nothing
     End Sub
-    Public Sub terAcqua_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terAcqua.Popup
+    Public Sub terAcqua_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terAcqua.DropDownOpening
         terAcqua_Click(eventSender, eventArgs)
     End Sub
     Public Sub terAcqua_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terAcqua.Click
@@ -1793,7 +1794,7 @@ Fine:
         ' objVap.Inizia()
         ' objVap.Mostra()
     End Sub
-    Public Sub terPetrol_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terPetrol.Popup
+    Public Sub terPetrol_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terPetrol.DropDownOpening
         terPetrol_Click(eventSender, eventArgs)
     End Sub
     Public Sub terPetrol_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles terPetrol.Click
