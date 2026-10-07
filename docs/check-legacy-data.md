@@ -19,3 +19,8 @@ ma assenti anche dalle sorgenti, nomi generati dinamicamente, file utente o
 formati diversi da MDB/DAT. I moduli opzionali possono risultare mancanti.
 Inventario sorgenti: 216 file MDB/DAT nelle cartelle Arch/Dati.
 PowerShell non disponibile nel cloud: esecuzione script da verificare su Windows.
+
+`tools/prepare-library-archives.ps1` copia inoltre gli archivi applicativi di
+AsmeVip nella directory `ARCH` configurata, compreso `S&T.jpg`, richiesto
+all'apertura della finestra principale. Lo script verifica gli hash e non
+sovrascrive un file locale con contenuto diverso.

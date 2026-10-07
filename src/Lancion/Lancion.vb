@@ -1944,12 +1944,26 @@ Cont1:  cmdExit.Enabled = False
                     MsgBox("Esiste già un'istanza di AsmeVip in esecuzione")
                     Exit Sub
                 End If
-                objASME = New AsmeVip.CalcASME
-                objASME.DoveMotore = Monitor.Motore
-                objASME.DoveRoutines = Routines
-                objASME.DoveFunzioni = Libgra
-                objASME.EseguiSciolto()
-                WindowState = System.Windows.Forms.FormWindowState.Minimized
+                Try
+                    objASME = New AsmeVip.CalcASME
+                    objASME.DoveMotore = Monitor.Motore
+                    objASME.DoveRoutines = Routines
+                    objASME.DoveFunzioni = Libgra
+                    objASME.EseguiSciolto()
+                    WindowState = System.Windows.Forms.FormWindowState.Minimized
+                Catch ex As Exception
+                    If objASME IsNot Nothing Then
+                        Try
+                            objASME.Dispose()
+                        Catch
+                            ' Preserve the original startup exception.
+                        End Try
+                    End If
+                    objASME = Nothing
+                    MessageBox.Show(Me,
+                                    "Impossibile avviare AsmeVip." & Environment.NewLine & Environment.NewLine & ex.ToString(),
+                                    "Errore avvio AsmeVip", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
             Case 12
                 Testo = "al programma ISFT"
                 'Programma(indice) = Shell(Monitor.Motore.Inizio.Basedir & "\DataShee.exe -n /" & Monitor.Motore.Inizio.DiscoRam, CType(1, Microsoft.VisualBasic.AppWinStyle))
