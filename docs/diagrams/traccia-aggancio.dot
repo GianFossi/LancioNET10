@@ -1,0 +1,27 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.2];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  coords [label="CoorInMem\ncoordinate dei fori disponibili"];
+  inner [label="Scegli foro interno libero\ncon raggio massimo"];
+  candidates [label="Ordina candidati esterni per costo\nJ = distanza × (1 + Fact·Δangolo / 2π)"];
+  choose [label="Candidato successivo"];
+  fly [label="Sorvola un foro ancora libero?", shape=diamond, fillcolor="#fff7d6"];
+  cross [label="VerifInters: collegamento compatibile?", shape=diamond, fillcolor="#fff7d6"];
+  bind [label="Registra Accoppia, IndT1, IndT2"];
+  done [label="Tutti i fori accoppiati?", shape=diamond, fillcolor="#fff7d6"];
+  back [label="Backtracking\nriapre coppie precedenti / cambia strategia"];
+  fail [label="Richiede riequilibrio manuale", fillcolor="#fee2e2"];
+  out [label="Scrive file .COO", fillcolor="#e6f7ee"];
+  coords -> inner -> candidates -> choose -> fly;
+  fly -> choose [label="sì"];
+  fly -> cross [label="no"];
+  cross -> choose [label="no"];
+  cross -> bind [label="sì"];
+  bind -> done;
+  done -> inner [label="no"];
+  done -> out [label="sì"];
+  choose -> back [label="nessun candidato"];
+  back -> inner [label="alternativa trovata"];
+  back -> fail [label="nessuna soluzione"];
+}

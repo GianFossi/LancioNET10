@@ -1,0 +1,23 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.2, nodesep=0.35, ranksep=0.45];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  start [label="Nuovo progetto / apertura file", fillcolor="#dbeafe"];
+  input [label="Dati generali e dati iniziali\ngeometria, tubo, passo, passaggi, diaframmi"];
+  validate [label="Validazione e normalizzazione\nInizioN: nuovi / check dati", shape=diamond, fillcolor="#fff7d6"];
+  calc [label="Calcolo iterativo del layout\nCalcolaTrac"];
+  family [label="Tipo di fascio?", shape=diamond, fillcolor="#fff7d6"];
+  straight [label="Teste fisse / testa flottante\nreticolo e settori"];
+  u [label="Tubi a U\nzone di curvatura e raggi minimi"];
+  fountain [label="Fontana\ndue layout: corona esterna + interna", fillcolor="#e6f7ee"];
+  final [label="Dati finali modificabili\nmatrice bu, file/settori, coordinate"];
+  docs [label="Disegno, RMT, DXF/AutoCAD, file di scambio", fillcolor="#ede9fe"];
+  start -> input -> validate;
+  validate -> input [label="errore"];
+  validate -> family [label="OK"];
+  family -> straight [label="fisso/flottante"];
+  family -> u [label="U"];
+  family -> fountain [label="fontana"];
+  straight -> calc; u -> calc; fountain -> calc;
+  calc -> final -> docs;
+}

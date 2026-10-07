@@ -16,3 +16,6 @@ La compilazione completa non prova il funzionamento di ogni percorso: alcuni
 adapter segnalano API o librerie originali ancora mancanti.
 
 [Debugger ASME e progetto del futuro core F#](docs/engineering-debug-and-new-core.md).
+
+[Modulo Tracciatura: funzionamento, algoritmi e flowchart](docs/Tracciatura-funzionamento-e-algoritmi.pdf)
+([sorgente modificabile](docs/tracciatura-algoritmi.md)).

@@ -1,0 +1,19 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.2];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  init [label="InitItera\nazzera stato, interpreta ingressi/uscite, calcola passi"];
+  estimate [label="ContItera\nstima diametro/OTL o numero tubi\narrotonda l'incremento del diametro"];
+  geometry [label="NoTuadu oppure Tubiadu\ndistanze da setti e zona curve"];
+  sectors [label="CalcSettor\nnumero settori, setti e spostamenti"];
+  clearance [label="SuperDiadif + SuperYinout\ngiochi, OTL, zone ingresso/uscita"];
+  rows [label="RSETTO / UTUBI\ngenera file candidate nel cerchio utile"];
+  map [label="Generabu\n1=foro, 0=vuoto, 9=cambio semipiano"];
+  ok [label="Numero tubi, OTL e vincoli soddisfatti?", shape=diamond, fillcolor="#fff7d6"];
+  adjust [label="Modifica diametro, offset o iterazione"];
+  out [label="Coordinate e conteggi per fila/settore", fillcolor="#e6f7ee"];
+  init -> estimate -> geometry -> sectors -> clearance -> rows -> map -> ok;
+  ok -> out [label="sì"];
+  ok -> adjust [label="no"];
+  adjust -> rows;
+}

@@ -1,0 +1,23 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.2];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  input [label="Dati fontana\ncorona interna/esterna, passi, gap, interferenza"];
+  gen [label="GenCorInt\nclona i dati comuni nel secondo dataset"];
+  mode [label="Numero tubi imposto?", shape=diamond, fillcolor="#fff7d6"];
+  calc1 [label="Calc1\nesterna → interna\npropaga diametro corona interna"];
+  calc2 [label="Calc2\ninterna → calcolo gap → esterna"];
+  compare [label="Confronta ktotal esterno/interno con ntubi", shape=diamond, fillcolor="#fff7d6"];
+  balance [label="Bilancio\nelimina fori eccedenti in modo distribuito"];
+  pair [label="Aggancia\naccoppiamento uno-a-uno + non-sorvolo"];
+  insert [label="Infilaggio\ninterferenze 3D e sovraltezze"];
+  seq [label="Riordino / sequenza\nordine angolare e vincoli RX"];
+  out [label="COO, RES, MTO, RB2, SEQ, DXF/RMT", fillcolor="#e6f7ee"];
+  input -> gen -> mode;
+  mode -> calc1 [label="no / diametri"];
+  mode -> calc2 [label="sì / tubi"];
+  calc1 -> compare; calc2 -> compare;
+  compare -> balance [label="fori eccedenti"];
+  compare -> pair [label="bilanciato"];
+  balance -> pair -> insert -> seq -> out;
+}

@@ -1,0 +1,29 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.2];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  load [label="Legge .COO\nidentificatore e quattro coordinate per forcina"];
+  valid [label="Dati completi, sigle uniche, parametri validi?", shape=diamond, fillcolor="#fff7d6"];
+  normalize [label="Normalizza interferenza, sovraltezza, precisione e gap"];
+  tube [label="Per ogni forcina nell'ordine corrente"];
+  prior [label="Confronta con tutte le forcine già montate"];
+  planar [label="Incrocio\nsegmenti, estremi e distanza minima in pianta"];
+  spatial [label="DistMin / derivate\nminima distanza tridimensionale fra chiome"];
+  raise [label="Incrementa la sovraltezza finché\ndistanza ≥ diametro − interferenza"];
+  result [label="Memorizza altezza minima e vincoli"];
+  more [label="Altre forcine?", shape=diamond, fillcolor="#fff7d6"];
+  out [label="Scrive .RES, .MTO e cache .RB2", fillcolor="#e6f7ee"];
+  error [label="Errore / sequenza non montabile", fillcolor="#fee2e2"];
+  load -> valid;
+  valid -> error [label="no"];
+  valid -> normalize [label="sì"];
+  normalize -> tube -> prior -> planar;
+  planar -> spatial [label="potenziale interferenza"];
+  planar -> result [label="separati"];
+  spatial -> raise [label="troppo vicini"];
+  spatial -> result [label="OK"];
+  raise -> spatial;
+  result -> more;
+  more -> tube [label="sì"];
+  more -> out [label="no"];
+}

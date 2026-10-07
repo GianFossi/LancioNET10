@@ -1,0 +1,8 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.2, nodesep=0.4];
+  node [shape=box, style="rounded,filled", color="#315b8a", fontname="Arial", fontsize=9, width=2.3];
+  fixed [label="TESTE FISSE\nTubi diritti\n1..10 passaggi\nGioco diaframmi standard", fillcolor="#eef5ff"];
+  floating [label="TESTA FLOTTANTE\nTubi diritti\n1..10 passaggi\nGioco maggiorato in diadiffe", fillcolor="#eef5ff"];
+  utube [label="TUBI A U\n2, 4, 6, 8 (e varianti)\nRaggio minimo e piano curve\nConteggio gambe distinto", fillcolor="#fff7d6"];
+  fountain [label="U A FONTANA\nCorona esterna + interna\nSolo schema 2U nel controllo dati\nBilancia/Aggancia/Infila", fillcolor="#e6f7ee"];
+}
