@@ -1013,8 +1013,8 @@ Friend Class frmGruppi
         Dim i, iNum As Short
         Dim Num As Single
         Dim k, Omog As Short
-        Dim Item As Windows.Forms.ListViewItem
-        Dim l As New Windows.Forms.ListView
+        Dim Item As System.Windows.Forms.ListViewItem
+        Dim l As New System.Windows.Forms.ListView
         DuranteCarica = True
         On Error GoTo ErrCarica
         Text2.Text = cotub

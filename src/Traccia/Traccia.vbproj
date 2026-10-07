@@ -75,10 +75,12 @@
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="stdole" />
     <Reference Include="Interop.AutoCAD">
       <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
   </ItemGroup>
 </Project>

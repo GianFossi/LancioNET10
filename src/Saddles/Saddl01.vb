@@ -1778,7 +1778,7 @@ Module saddles
             If Problem.NCond(iCalc) = 0 Then Problem.NCond(iCalc) = 1
         Next
         Dim fs As New FileStream(FileData, FileMode.Open)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         LeggiData = True
         Try
             Problem = CType(bf.Deserialize(fs), typProblem)
@@ -2227,7 +2227,7 @@ Module saddles
             NozzleData.Initialize(False)
             Call AggRedim()
             Dim fs As New FileStream(FileData, FileMode.OpenOrCreate)
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Problem.Versione = 2
             bf.Serialize(fs, Problem)
             bf.Serialize(fs, SaddlesItem)

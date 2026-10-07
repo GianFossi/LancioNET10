@@ -1807,7 +1807,7 @@ Fine:   Try
         Try
             Dim FileRB2 As String = gencommes.Trim & ".RB2"
             Dim fs As New FileStream(FileRB2, FileMode.Open)
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Dim j As Short
             Franco.Manici.nRB2 = CType(bf.Deserialize(fs), OggList)
             fs.Close()

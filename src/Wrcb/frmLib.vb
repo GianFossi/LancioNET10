@@ -1292,7 +1292,7 @@ Rif:    Stringa(2) = "Numero di NPS considerati"
     End Property
 
     Private Sub TabStrip1_MouseUp(ByVal sender As Object, ByVal EventArgs As System.Windows.Forms.MouseEventArgs) Handles TabStrip1.MouseUp
-        If EventArgs.Button = Windows.Forms.MouseButtons.Left Then Exit Sub 'era 1
+        If EventArgs.Button = System.Windows.Forms.MouseButtons.Left Then Exit Sub 'era 1
         Dim Index As Short
         Dim T As New TabPage
         Index = -1

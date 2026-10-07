@@ -232,6 +232,8 @@
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../Grafic2/Grafic2.vbproj" />
-    <Reference Include="stdole" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
   </ItemGroup>
 </Project>

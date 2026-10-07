@@ -282,7 +282,7 @@ Module Tr13
         End If
         If Not IO.File.Exists(icome1) Then Exit Sub
         Dim fs As New FileStream(icome1, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Try
             Monitor.Motore.Problem = CType(bf.Deserialize(fs), RoutBase1.clsProblem)
             DaTos(0) = CType(bf.Deserialize(fs), traccia.clsTracciatura.typDaTos)
@@ -368,7 +368,7 @@ Module Tr13
             FileCopy(icome1, Left(icome1, Len(icome1) - 3) & "TMP")
         End If
         Dim fs As New FileStream(icome1, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Monitor.Motore.Problem)
         inverti(0)
         bf.Serialize(fs, DaTos(0))

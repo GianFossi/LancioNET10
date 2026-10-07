@@ -1033,25 +1033,25 @@ Friend Class frmTracciat
             tempo = VB.Timer()
             If (tempo - FrecciaDown) > 0.5 And FrecciaDown <> 0 And cmdDown.Visible Then
                 While FrecciaDown <> 0
-                    cmdDown_MouseDown(sender, New MouseEventArgs(Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
+                    cmdDown_MouseDown(sender, New MouseEventArgs(System.Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
                     System.Windows.Forms.Application.DoEvents()
                 End While
             End If
             If (tempo - FrecciaUp) > 1 And FrecciaUp <> 0 And cmdUp.Visible Then
                 While FrecciaUp <> 0
-                    cmdUp_MouseDown(sender, New MouseEventArgs(Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
+                    cmdUp_MouseDown(sender, New MouseEventArgs(System.Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
                     System.Windows.Forms.Application.DoEvents()
                 End While
             End If
             If (tempo - FrecciaLeft) > 1 And FrecciaLeft <> 0 And cmdLeft.Visible Then
                 While FrecciaLeft <> 0
-                    cmdLeft_MouseDown(cmdLeft, New MouseEventArgs(Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
+                    cmdLeft_MouseDown(cmdLeft, New MouseEventArgs(System.Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
                     System.Windows.Forms.Application.DoEvents()
                 End While
             End If
             If (tempo - FrecciaRight) > 1 And FrecciaRight <> 0 And cmdRight.Visible Then
                 While FrecciaRight <> 0
-                    cmdRight_MouseDown(cmdRight, New MouseEventArgs(Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
+                    cmdRight_MouseDown(cmdRight, New MouseEventArgs(System.Windows.Forms.MouseButtons.Left, 1, 0, 0, 0))
                     System.Windows.Forms.Application.DoEvents()
                 End While
             End If
@@ -1968,7 +1968,7 @@ Friend Class frmTracciat
         Dim ContrNome As String = ""
         Dim ContrFile As String = ""
         mnuChiudi_Click(Me, New EventArgs)
-        Cursor = Windows.Forms.Cursors.WaitCursor
+        Cursor = System.Windows.Forms.Cursors.WaitCursor
         MenuFinali(False)
         Timer1.Enabled = False
         IniziaPagina()
@@ -1997,7 +1997,7 @@ Friend Class frmTracciat
             Text = GlobalRoutines.StringaInformativaProgramma(Reflection.Assembly.GetExecutingAssembly) & gencommes
             AggSecondaPagina()
         End If
-        Cursor = Windows.Forms.Cursors.Default
+        Cursor = System.Windows.Forms.Cursors.Default
     End Sub
 
     Public Sub mnuDati_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuDati.Click
@@ -3118,7 +3118,7 @@ Friend Class frmTracciat
         If x1 < x0 Then GlobalRoutines.SWAP(x1, x0)
         If y1 < y0 Then GlobalRoutines.SWAP(y1, y0)
         If Not Monitor.Routines.Scala(x0, x1, y0, y1, , True, p) Then Exit Sub
-        Cursor = Windows.Forms.Cursors.WaitCursor
+        Cursor = System.Windows.Forms.Cursors.WaitCursor
         g.Clear(Color.Turquoise)
         Dim Colore As Color = b.Color
         b.Color = Color.FromArgb(200, 255, 255)
@@ -3131,7 +3131,7 @@ Friend Class frmTracciat
                 Tracciatura.DisTrk(RTrim(gencommes) & ".TRK", RTrim(gencommes), 1, 1)
                 DisTEMA((Tracciatura.icount))
         End Select
-        Cursor = Windows.Forms.Cursors.Default
+        Cursor = System.Windows.Forms.Cursors.Default
         Picture1.Refresh()
     End Sub
     Private Sub StatusBar1_PanelClick(ByVal sender As Object, ByVal e As System.Windows.Forms.StatusBarPanelClickEventArgs) Handles StatusBar1.PanelClick
@@ -3430,7 +3430,7 @@ EventExitSub:
             If ActiveControl.Name.IndexOf("Text1") > -1 Then Text1Leave(CShort(GetTag0(CStr(CType(ActiveControl, arrText1).Tag))), New EventArgs)
             If Not Dati() Then Exit Sub
         End If
-        Cursor = Windows.Forms.Cursors.WaitCursor
+        Cursor = System.Windows.Forms.Cursors.WaitCursor
         mnuRM.Enabled = True
         IniziaPagina()
         iPagina = 3
@@ -3517,7 +3517,7 @@ EventExitSub:
     End Sub
     Private Sub Click78(ByVal Index As Integer)
         Timer1.Enabled = False
-        Windows.Forms.Cursor.Current = Windows.Forms.Cursors.WaitCursor
+        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
         MenuFinali(True)
         If iPagina = 4 Then  '4s/p dopo disegno
             iPagina = -1
@@ -3541,7 +3541,7 @@ EventExitSub:
             mnuEnable(True, 1, npagine)
             _cmdTraccia_2.Visible = (DaTos(iDat).TipoFascio = 4)
         End If
-        Windows.Forms.Cursor.Current = Windows.Forms.Cursors.Default
+        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
         VariatiDati = True
         VariatiOpfin = True
     End Sub

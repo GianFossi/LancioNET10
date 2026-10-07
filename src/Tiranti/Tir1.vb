@@ -2144,7 +2144,7 @@ Cont:   Next
                     End If
                     If Problem.Diam > 0 Then
                         .Dnom = Problem.Diam
-                        .Cerca(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
+                        .Cerca("Dnom")
                     End If
                     .Scelta(Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoTem)
                     Problem.Diam = .Dnom
@@ -2515,9 +2515,9 @@ EventExitSub:
         Public Sub New(ByVal host As Tir1)
             HostForm = host
         End Sub
-        Default Public ReadOnly Property Item(ByVal Index As Integer) As Windows.Forms.TextBox
+        Default Public ReadOnly Property Item(ByVal Index As Integer) As System.Windows.Forms.TextBox
             Get
-                Return CType(List.Item(Index), Windows.Forms.TextBox)
+                Return CType(List.Item(Index), System.Windows.Forms.TextBox)
             End Get
         End Property
         Public Sub UnLoad(ByVal Index As Integer)

@@ -4076,7 +4076,7 @@ Friend Class frmSaddles
     End Sub
     Public Sub mnuApri_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuApri.Click
         If Not ChiudiOLE() Then Exit Sub
-        Cursor = Windows.Forms.Cursors.WaitCursor
+        Cursor = System.Windows.Forms.Cursors.WaitCursor
         TabCarichiDown.Select()
         If PrimaPagina() Then
             If TabCarichiDown.SelectedIndex = 0 Then
@@ -4086,7 +4086,7 @@ Friend Class frmSaddles
             End If
             Me.pctSimpleComplex.Visible = False
         End If
-        Cursor = Windows.Forms.Cursors.Default
+        Cursor = System.Windows.Forms.Cursors.Default
     End Sub
 
     Public Sub mnuExit_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuExit.Popup

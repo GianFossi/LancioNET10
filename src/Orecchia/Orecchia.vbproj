@@ -28,4 +28,7 @@
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../StubW9/StubW9.vbproj" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
+  </ItemGroup>
 </Project>

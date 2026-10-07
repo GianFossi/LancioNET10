@@ -1355,7 +1355,7 @@ ExitSub:
         'Dim i As Short
         If Len(nomefile) = 0 Then nomefile = Monitor.Motore.Inizio.Datidir & "\" & Orecchia.Sigla & ".ORE"
         Dim fs As New FileStream(nomefile, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Problem.Versione = 1
         Orecchia.Indmat1 = Matdim(0).Indmat
         Orecchia.Indmat2 = Matdim(1).Indmat
@@ -1371,7 +1371,7 @@ ExitSub:
         Leggi = False
         If Not File.Exists(nomefile) Then Exit Function
         Dim fs As New FileStream(nomefile, FileMode.Open)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Leggi = True
         Try
             Problem = CType(bf.Deserialize(fs), typProblem)

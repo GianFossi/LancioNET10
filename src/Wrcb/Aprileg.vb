@@ -324,7 +324,7 @@ Module Aprileg
         Dim Indmat As Short
         Dim fs As New FileStream(objWRCB.commessa, FileMode.Open)
         Try
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Config = CType(bf.Deserialize(fs), wrcConfig)
             If sonda Then
                 fs.Close()

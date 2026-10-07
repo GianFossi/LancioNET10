@@ -46,7 +46,8 @@
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="stdole" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
   </ItemGroup>
 </Project>

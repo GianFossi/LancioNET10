@@ -1529,7 +1529,7 @@ FineCalc:
         Try
             Config.Versione = 2
             Dim fs As New FileStream(objWRCB.commessa, FileMode.OpenOrCreate)
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             bf.Serialize(fs, Config)
             For j = 1 To Config.NBocch
                 bf.Serialize(fs, Geom(j))

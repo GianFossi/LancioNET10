@@ -264,7 +264,7 @@ Module Infila
         Dim FileRB2 As String = gencommes.Trim & ".RB2"
         File.Delete(FileRB2)
         Dim fs As New FileStream(gencommes.Trim & ".RB2", FileMode.Create)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Franco.Manici.nRB2)
         fs.Close()
         Franco.Manici.nRB2.RemoveAll()
@@ -634,7 +634,7 @@ Module Infila
             Risposta = CShort(MsgBox("Esiste il risultato di un calcolo precedente. Vuoi usarlo ?", MsgBoxStyle.YesNo Or MsgBoxStyle.Question))
             If Risposta = MsgBoxResult.Yes Then
                 Dim fs As New FileStream(FileRB2, FileMode.Open)
-                Dim bf As New BinaryFormatter
+                Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
                 Franco.Manici.nRB2 = CType(bf.Deserialize(fs), OggList)
                 fs.Close()
                 Exit Sub

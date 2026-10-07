@@ -508,7 +508,7 @@ Public Class Serraggio
     Public Function apri(Optional ByRef icome As String = "") As Boolean
         If Not Sciolto Then nomefile = icome
         Dim fs As New FileStream(nomefile, FileMode.Open)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Problem = CType(bf.Deserialize(fs), typProblem)
         If Problem.intestazione <> intestazione Then
             MsgBox("Il file che si è deciso di aprire non è stato creato da questa applicazione", MsgBoxStyle.Critical, "Apri")
@@ -529,7 +529,7 @@ Public Class Serraggio
         Problem.intestazione = intestazione
         If Not Sciolto Then nomefile = icome
         Dim fs As New FileStream(nomefile, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Problem.Version = Version
         bf.Serialize(fs, Problem)
         fs.Close()

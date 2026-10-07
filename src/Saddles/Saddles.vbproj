@@ -94,7 +94,8 @@
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../FormulaParser/FormulaParser.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="stdole" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
   </ItemGroup>
 </Project>

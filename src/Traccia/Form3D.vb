@@ -304,7 +304,7 @@ Friend Class frmDis3D
             cmdCancel.Text = "Cancel"
             ProgressBar1.Minimum = 0
             Dim fs As New FileStream(gencommes.Trim + ".RB2", FileMode.Open)
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Franco.Manici.nRB2 = CType(bf.Deserialize(fs), RoutBase1.OggList)
             fs.Close()
             nrec = Franco.Manici.nRB2.Count ' CInt(LOF(Rb2) \ Len(RecoRb2))
