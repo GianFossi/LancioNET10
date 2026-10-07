@@ -1,9 +1,8 @@
 Imports System.ComponentModel
-Imports System.Configuration.Install
 Imports System.io
 
-<RunInstaller(True)> Public Class Installer1
-    Inherits System.Configuration.Install.Installer
+Public Class Installer1
+    Inherits System.ComponentModel.Component
 
 #Region " Codice generato da Progettazione componenti "
 
@@ -38,9 +37,11 @@ Imports System.io
     End Sub
 
 #End Region
+    ' .NET 10 cannot be loaded by the .NET Framework InstallUtil/MSI managed installer.
+    ' These preserved actions are callable explicitly by a modern installer adapter.
+    Public ReadOnly Property Context As New LegacyInstallerContext()
     Private AssemblyPath As String
-    Public Overrides Sub Install(ByVal stateSaver As System.Collections.IDictionary)
-        MyBase.Install(stateSaver)
+    Public Sub Install(ByVal stateSaver As System.Collections.IDictionary)
         ' Gets the parameter passed across in the CustomActionData.
         'Dim myStringDictionary As StringDictionary = Context.Parameters
         'Dim sr As StreamWriter = File.CreateText("C:\Testo.txt")
@@ -55,7 +56,7 @@ Imports System.io
         'Exit Sub
         AssemblyPath = Me.Context.Parameters.Item("AssemblyPath")
         If AssemblyPath = "" Then
-            Throw New InstallException("No AssemblyPath argument specified")
+            Throw New InvalidOperationException("No AssemblyPath argument specified")
         End If
         'MsgBox("AssemblyPath " & AssemblyPath)
 
@@ -64,7 +65,7 @@ Imports System.io
         'MsgBox(Asm.Location)
         'Dim FileInfo As System.IO.FileInfo = New System.IO.FileInfo(Asm.Location + ".config")
         'If Not FileInfo.Exists Then
-        'Throw New InstallException("Missing config file")
+        'Throw New InvalidOperationException("Missing config file")
         'End If
 
         ' Loads the config file into the XML DOM.
@@ -84,15 +85,14 @@ Imports System.io
         'Next Node
 
         'If Not FoundIt Then
-        'Throw New InstallException("Config file did not contain a ServerName section")
+        'Throw New InvalidOperationException("Config file did not contain a ServerName section")
         'End If
 
         ' Write out the new config file.
         'XmlDocument.Save(FileInfo.FullName)
     End Sub
 
-    Public Overrides Sub Commit(ByVal savedState As System.Collections.IDictionary)
-        MyBase.Commit(savedState)
+    Public Sub Commit(ByVal savedState As System.Collections.IDictionary)
         Dim Asm As System.Reflection.Assembly = System.Reflection.Assembly.GetExecutingAssembly
         AssemblyPath = Path.GetDirectoryName(Asm.Location)
         AggiornaINI(AssemblyPath)

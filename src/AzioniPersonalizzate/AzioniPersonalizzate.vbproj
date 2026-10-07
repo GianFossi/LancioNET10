@@ -36,4 +36,5 @@
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <Reference Include="System.Configuration.Install" />
   </ItemGroup>
+  <ItemGroup><Compile Include="LegacyInstallerContext.vb" /></ItemGroup>
 </Project>
