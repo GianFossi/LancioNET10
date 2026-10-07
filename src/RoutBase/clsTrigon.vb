@@ -36,10 +36,10 @@ Public Class clsTrigon
         Lancio.Data.Access.AccessDatabase.DeleteTable(Nome, StringConnection)
     End Sub
     Public Function TwipsToPixelsX(ByVal t As Double) As Double
-        Return VB6.TwipsToPixelsX(t)
+        Return ScreenUnits.TwipsToPixels(t, True)
     End Function
     Public Function TwipsToPixelsY(ByVal t As Double) As Double
-        Return VB6.TwipsToPixelsY(t)
+        Return ScreenUnits.TwipsToPixels(t, False)
     End Function
     Public Sub PlaySoundFile(ByVal filename As String)
         ' Plays a sound from filename.
@@ -536,7 +536,7 @@ Rif:    n = Form.IndexOf("|", n2 - 1) + 1 ' InStr(n2, Form, "|")
     Public Function Formato(ByRef f As String, ByRef a As Object) As String
         Dim Ris As String
         Dim n, n1 As Integer
-        Ris = VB6.Format(a, f)
+        Ris = Microsoft.VisualBasic.Strings.Format(a, f)
         If InStr(f, ",") = 0 Then
             n = InStr(Ris, ",")
             If n > 0 Then Mid(Ris, n, 1) = "."

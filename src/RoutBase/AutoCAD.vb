@@ -103,14 +103,14 @@ Public Class Auto_CAD
         Punto1(1) = Punto(1) + 2
         Punto1(2) = 0
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto V1. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
-        V1 = VB6.CopyArray(Punto1)
+        V1 = Punto1.Clone()
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Punto(). Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
         Punto1(0) = Punto(0) - 2
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Punto(). Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
         Punto1(1) = Punto(1) - 2
         Punto1(2) = 0
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto V2. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
-        V2 = VB6.CopyArray(Punto1)
+        V2 = Punto1.Clone()
         sset = cls_Doc_Obj.SelectionSets.Add("zxisd")
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto sset.Select. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
         sset.Select(AutoCAD.AcSelect.acSelectionSetCrossing, V2, V1)
@@ -318,7 +318,7 @@ Public Class Auto_CAD
         End If
         Err.Clear()
         'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Temp. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup1037"'
-        Temp = VB6.CopyArray(ObjGruppo)
+        Temp = ObjGruppo.Clone()
         cls_Gruppo.AppendItems(Temp)
         ContoObj = 0
         ReDim ObjGruppo(0)
@@ -1139,8 +1139,8 @@ Public Class Auto_CAD
         Real(0) = 0
         Real(1) = 0
         Real(2) = 0
-        Data(8) = VB6.CopyArray(Real)
-        Data(9) = VB6.CopyArray(Real)
+        Data(8) = Real.Clone()
+        Data(9) = Real.Clone()
 
         DataType(0) = 1001
         DataType(1) = 1000
@@ -1219,11 +1219,11 @@ Public Class Auto_CAD
         Punto1(0) = Punto(0) + 2
         Punto1(1) = Punto(1) + 2
         Punto1(2) = 0
-        V1 = VB6.CopyArray(Punto1)
+        V1 = Punto1.Clone()
         Punto1(0) = Punto(0) - 2
         Punto1(1) = Punto(1) - 2
         Punto1(2) = 0
-        V2 = VB6.CopyArray(Punto1)
+        V2 = Punto1.Clone()
 
         sset = cls_Doc_Obj.SelectionSets.Add("zxisd")
         sset.Clear()

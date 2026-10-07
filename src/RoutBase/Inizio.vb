@@ -976,7 +976,7 @@ ErrMode:
         If Len(WinSys) = 0 Then Return ""
         ProgMain = "LancioNET" ' GetFileName(QuestoProgramma)
         FileIni = WinSys & ProgMain & ".INI"
-        If Not Exists(FileIni) Then FileIni = ""
+        If Not System.IO.File.Exists(FileIni) Then FileIni = ""
     End Function
     Public Function CodiciCalc() As String()
         Dim Testo As String = ReadIniFile("", "Preferenze AsmeVip", "Codici")

@@ -1304,7 +1304,7 @@ No:         MyFile = Trim(Inizio.Archdir) & "\Mat200400.MDB"
             Exit Function
         End Try
         Try
-            Dim deserializer As New BinaryFormatter
+            Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             job = CType(deserializer.Deserialize(myFileStream), clsjob)
             job.Coll.BaseZero = 1
             job.Motore = Me
@@ -1321,7 +1321,7 @@ No:         MyFile = Trim(Inizio.Archdir) & "\Mat200400.MDB"
         FileTem = Inizio.Workdir & "\" + Nome + ".TEM"
         If File.Exists(FileTem) Then
             Dim myFileStream As Stream = File.OpenRead(FileTem)
-            Dim deserializer As New BinaryFormatter
+            Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 Comm = CType(deserializer.Deserialize(myFileStream), clsComm)
                 With Comm

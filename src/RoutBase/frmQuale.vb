@@ -41,8 +41,8 @@ Public Class frmQuale
     Public WithEvents _Command1_2 As System.Windows.Forms.Button
     Public WithEvents _Command1_1 As System.Windows.Forms.Button
     Public WithEvents _Command1_0 As System.Windows.Forms.Button
-    Public WithEvents Command1 As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
+    Public Command1 As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -57,12 +57,8 @@ Public Class frmQuale
         Me._Command1_2 = New System.Windows.Forms.Button
         Me._Command1_1 = New System.Windows.Forms.Button
         Me._Command1_0 = New System.Windows.Forms.Button
-        Me.Command1 = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
         Me.Picture2 = New System.Windows.Forms.Label
         Me.Picture1.SuspendLayout()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HScroll1
@@ -107,7 +103,7 @@ Public Class frmQuale
         Me._Option1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_0, CType(0, Short))
+        Me.Option1.Add(0, Me._Option1_0)
         Me._Option1_0.Location = New System.Drawing.Point(16, 0)
         Me._Option1_0.Name = "_Option1_0"
         Me._Option1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -121,7 +117,7 @@ Public Class frmQuale
         Me._Command1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_2, CType(2, Short))
+        Me.Command1.Add(2, Me._Command1_2)
         Me._Command1_2.Location = New System.Drawing.Point(171, 88)
         Me._Command1_2.Name = "_Command1_2"
         Me._Command1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -134,7 +130,7 @@ Public Class frmQuale
         Me._Command1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_1, CType(1, Short))
+        Me.Command1.Add(1, Me._Command1_1)
         Me._Command1_1.Location = New System.Drawing.Point(96, 88)
         Me._Command1_1.Name = "_Command1_1"
         Me._Command1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -147,7 +143,7 @@ Public Class frmQuale
         Me._Command1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_0, CType(0, Short))
+        Me.Command1.Add(0, Me._Command1_0)
         Me._Command1_0.Location = New System.Drawing.Point(8, 88)
         Me._Command1_0.Name = "_Command1_0"
         Me._Command1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -193,8 +189,12 @@ Public Class frmQuale
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Form1"
         Me.Picture1.ResumeLayout(False)
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In Command1.Values
+            AddHandler control.Click, AddressOf Command1_Click
+        Next
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -251,8 +251,8 @@ Public Class frmQuale
             If Ninput > 0 Then ReDim Strin(Ninput)
         End Set
     End Property
-    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-        Dim Index As Short = Command1.GetIndex(eventSender)
+    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Command1, eventSender)
         Select Case Index
             Case 0
                 If Nfin > 0 Then
@@ -301,9 +301,9 @@ Public Class frmQuale
     End Sub
 
     'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             If Not Option1(Index).Enabled Then Exit Sub
             iQuale = Index + 1
             iQ = iQuale
@@ -393,7 +393,8 @@ Public Class frmQuale
         gPicture1 = Graphics.FromHwnd(Picture1.Handle)
         MaxLength = gPicture1.MeasureString(Strin(1), Picture1.Font).Width
         For i = 1 To Ninput - 1
-            Option1.Load(i)
+            IndexedControls.AddClone(Option1, i)
+            AddHandler Option1(i).CheckedChanged, AddressOf Option1_CheckedChanged
             If CarFissi Then Option1(i).Font = New Font("Courier New", 10)
             Option1(i).Top = Option1(i - 1).Top + Option1(i - 1).Height
             Option1(i).Text = Strin(i + 1)

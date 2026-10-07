@@ -45,7 +45,7 @@ Public Class DatBase
         Dim nreb, nrec, u As Short
         Dim npos, il1rec, ilf As Short
         Dim iboo, iuno, nrecu, lenrec As Short
-        Dim Buf18 As New VB6.FixedLengthString(18)
+        Dim Buf18 As New FixedRecordString(18)
         For i = 1 To 5 ': Line Input #ifl, Stringa3(i): Next
             Stringa3(i) = HelpStringa(clsInizio.IDHS.IDH_BASE_HTRI06 + 5 + i)
         Next
@@ -249,7 +249,7 @@ Jump:
     End Function
 
     Function PutReco(ByRef nrec As Short, ByRef ipos As Short, ByRef ilu As Short, ByRef inp As String, ByRef itp As String) As String
-        Dim Dati As New VB6.FixedLengthString(256)
+        Dim Dati As New FixedRecordString(256)
         Dim ifl As Integer
         Dim File1 As String
         Dim ibyte As Integer
@@ -269,7 +269,7 @@ ExAut:
 ErrAut: Resume ExAut
     End Function
     Function Readreco(ByRef nrec As Short, ByRef ipos As Short, ByRef ilu As Short) As String
-        Dim Dati As New VB6.FixedLengthString(256)
+        Dim Dati As New FixedRecordString(256)
         Dim ifl As Integer
         Dim File1 As String
         Dim ibyte As Integer
@@ -283,7 +283,7 @@ ErrAut: Resume ExAut
     End Function
     Public Function CVI(ByRef a As String) As Short
         Dim i, ifl As Integer
-        Dim a1 As New VB6.FixedLengthString(2)
+        Dim a1 As New FixedRecordString(2)
         Dim Nome As String
         ifl = FreeFile()
         a1.Value = Left(a, 2)
@@ -302,7 +302,7 @@ ErrAut: Resume ExAut
     Public Function CVS(ByRef a As String) As Single
         Dim i As Single
         Dim ifl As Integer
-        Dim a1 As New VB6.FixedLengthString(4)
+        Dim a1 As New FixedRecordString(4)
         Dim Nome As String
         ifl = FreeFile()
         a1.Value = Left(a, 4)
@@ -319,7 +319,7 @@ ErrAut: Resume ExAut
         CVS = i
     End Function
     Public Function MKI(ByRef a As Short) As String
-        Dim i As New VB6.FixedLengthString(2)
+        Dim i As New FixedRecordString(2)
         Dim ifl As Integer
         ifl = FreeFile()
         FileOpen(ifl, objInizio.DiscoTem & "TEMP", OpenMode.Binary)
@@ -330,7 +330,7 @@ ErrAut: Resume ExAut
         MKI = i.Value
     End Function
     Public Function MKS(ByRef a As Single) As String
-        Dim i As New VB6.FixedLengthString(4)
+        Dim i As New FixedRecordString(4)
         Dim ifl As Integer
         ifl = FreeFile()
         FileOpen(ifl, objInizio.DiscoTem & "TEMP", OpenMode.Binary)

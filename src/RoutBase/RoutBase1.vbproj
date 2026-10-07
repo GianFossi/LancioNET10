@@ -42,6 +42,9 @@
     <Compile Include="clsVec3.vb" />
     <Compile Include="Comm.vb" />
     <Compile Include="ControlArrays.vb" />
+    <Compile Include="IndexedControls.vb" />
+    <Compile Include="FixedRecordString.vb" />
+    <Compile Include="ScreenUnits.vb" />
     <Compile Include="DataForm1.vb" />
     <EmbeddedResource Include="DataForm1.resx" />
     <Compile Include="DatBase.vb" />
@@ -106,7 +109,6 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
     <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="stdole" />
     <Reference Include="Interop.AutoCAD">
       <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
@@ -128,5 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Lancio.Data.Access/Lancio.Data.Access.vbproj" />
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
   </ItemGroup>
 </Project>

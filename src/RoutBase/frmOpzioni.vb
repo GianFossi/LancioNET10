@@ -36,9 +36,9 @@ Friend Class frmOpzioni
 	Private components As System.ComponentModel.IContainer
 	Public ToolTip1 As System.Windows.Forms.ToolTip
 	Public WithEvents Command1 As System.Windows.Forms.Button
-	Public WithEvents drvList As Microsoft.VisualBasic.Compatibility.VB6.DriveListBox
-	Public WithEvents dirList As Microsoft.VisualBasic.Compatibility.VB6.DirListBox
-	Public WithEvents filList As Microsoft.VisualBasic.Compatibility.VB6.FileListBox
+	Public WithEvents drvList As System.Windows.Forms.ComboBox
+	Public WithEvents dirList As System.Windows.Forms.ListBox
+	Public WithEvents filList As System.Windows.Forms.ListBox
 	Public WithEvents Text2 As System.Windows.Forms.TextBox
 	Public WithEvents Text3 As System.Windows.Forms.TextBox
 	Public WithEvents Text4 As System.Windows.Forms.TextBox
@@ -59,9 +59,9 @@ Friend Class frmOpzioni
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Command1 = New System.Windows.Forms.Button
-        Me.drvList = New Microsoft.VisualBasic.Compatibility.VB6.DriveListBox
-        Me.dirList = New Microsoft.VisualBasic.Compatibility.VB6.DirListBox
-        Me.filList = New Microsoft.VisualBasic.Compatibility.VB6.FileListBox
+        Me.drvList = New System.Windows.Forms.ComboBox
+        Me.dirList = New System.Windows.Forms.ListBox
+        Me.filList = New System.Windows.Forms.ListBox
         Me.Text2 = New System.Windows.Forms.TextBox
         Me.Text3 = New System.Windows.Forms.TextBox
         Me.Text4 = New System.Windows.Forms.TextBox
@@ -120,7 +120,7 @@ Friend Class frmOpzioni
         Me.filList.ForeColor = System.Drawing.SystemColors.WindowText
         Me.filList.Location = New System.Drawing.Point(176, 0)
         Me.filList.Name = "filList"
-        Me.filList.Pattern = "*.*"
+        Me.drvList.DropDownStyle = ComboBoxStyle.DropDownList
         Me.filList.Size = New System.Drawing.Size(121, 158)
         Me.filList.TabIndex = 7
         '
@@ -341,11 +341,16 @@ Friend Class frmOpzioni
     Public Motore As clsMotore
     Private Sub frmOpzioni_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
         Dim i As Short
+        For Each driveInfo In IO.DriveInfo.GetDrives()
+            Dim label = If(driveInfo.IsReady, driveInfo.VolumeLabel, "")
+            drvList.Items.Add(driveInfo.Name & " [" & label & "]")
+        Next
         RadioButton2.Checked = True
+        ShowDirectory(Motore.Inizio.Workdir)
         Direct.Text = Motore.Inizio.Workdir
         For i = 0 To CShort(drvList.Items.Count - 1)
-            If InStr(drvList.Items(i), "RAM") > 0 Then
-                Motore.Inizio.DiscoRam = VB.Left(drvList.Items(i), 2) & "\"
+            If InStr(CStr(drvList.Items(i)), "RAM") > 0 Then
+                Motore.Inizio.DiscoRam = VB.Left(CStr(drvList.Items(i)), 2) & "\"
                 Exit For
             End If
         Next
@@ -362,27 +367,16 @@ Friend Class frmOpzioni
         Hide()
     End Sub
 
-    Private Sub DirList_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles dirList.Change
+    Private Sub DirList_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles dirList.DoubleClick
         ' Update File listbox to sync with Dir listbox.
-        filList.Path = dirList.Path
-        If RadioButton1.Checked Then
-            Motore.Inizio.Datidir = dirList.Path
-        ElseIf RadioButton2.Checked Then
-            Motore.Inizio.Workdir = dirList.Path
-        ElseIf RadioButton3.Checked Then
-            Motore.Inizio.Basedir = dirList.Path
-        ElseIf RadioButton4.Checked Then
-            Motore.Inizio.Archdir = dirList.Path
-        ElseIf RadioButton5.Checked Then
-            Motore.Inizio.DBFdir = dirList.Path
-        End If
-        Direct.Text = dirList.Path.ToUpper
+        If dirList.SelectedItem Is Nothing Then Return
+        ShowDirectory(CStr(dirList.SelectedItem))
     End Sub
     Private Sub DirList_Leave(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles dirList.Leave
-        dirList.Path = dirList.DirList(dirList.DirListIndex)
+        If dirList.SelectedItem IsNot Nothing Then DirList_Change(eventSender, eventArgs)
     End Sub
     Private Sub DrvList_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles drvList.SelectedIndexChanged
-        dirList.Path = drvList.Drive
+        If drvList.SelectedItem IsNot Nothing AndAlso Motore IsNot Nothing Then ShowDirectory(CStr(drvList.SelectedItem).Substring(0, 3))
     End Sub
     Private Sub RadioButton1_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked Then
@@ -398,11 +392,11 @@ Friend Class frmOpzioni
             Direct.Text = Motore.Inizio.Workdir
             drive = VB.Left(Motore.Inizio.Workdir, 2)
             For i = 0 To CShort(drvList.Items.Count - 1)
-                If InStr(drvList.Items(i), drive) > 0 Then
-                    n1 = CShort(InStr(drvList.Items(i), "["))
-                    n2 = CShort(InStr(drvList.Items(i), "]"))
+                If InStr(CStr(drvList.Items(i)), drive) > 0 Then
+                    n1 = CShort(InStr(CStr(drvList.Items(i)), "["))
+                    n2 = CShort(InStr(CStr(drvList.Items(i)), "]"))
                     If n1 = 0 Or n2 = 0 Then Exit For
-                    Motore.Inizio.DBFdir = Mid(drvList.Items(i), n1 + 1, n2 - n1 - 1)
+                    Motore.Inizio.DBFdir = Mid(CStr(drvList.Items(i)), n1 + 1, n2 - n1 - 1)
                     Exit Sub
                 End If
             Next
@@ -426,5 +420,36 @@ Friend Class frmOpzioni
             GiaFatto = False : GiaFattoB = False
             Direct.Text = Motore.Inizio.DBFdir
         End If
+    End Sub
+    Private CurrentDirectory As String
+    Private Sub ShowDirectory(directory As String)
+        Try
+            Dim fullPath = IO.Path.GetFullPath(directory)
+            Dim directories = IO.Directory.GetDirectories(fullPath)
+            Dim files = IO.Directory.GetFiles(fullPath)
+            CurrentDirectory = fullPath
+            dirList.Items.Clear()
+            Dim parent = IO.Directory.GetParent(fullPath)
+            If parent IsNot Nothing Then dirList.Items.Add(parent.FullName)
+            dirList.Items.AddRange(directories)
+            filList.Items.Clear()
+            filList.Items.AddRange(files.Select(Function(f) IO.Path.GetFileName(f)).ToArray())
+            If Motore IsNot Nothing Then
+                If RadioButton1.Checked Then
+                    Motore.Inizio.Datidir = CurrentDirectory
+                ElseIf RadioButton2.Checked Then
+                    Motore.Inizio.Workdir = CurrentDirectory
+                ElseIf RadioButton3.Checked Then
+                    Motore.Inizio.Basedir = CurrentDirectory
+                ElseIf RadioButton4.Checked Then
+                    Motore.Inizio.Archdir = CurrentDirectory
+                ElseIf RadioButton5.Checked Then
+                    Motore.Inizio.DBFdir = CurrentDirectory
+                End If
+            End If
+            Direct.Text = fullPath
+        Catch ex As Exception When TypeOf ex Is IO.IOException OrElse TypeOf ex Is UnauthorizedAccessException OrElse TypeOf ex Is ArgumentException
+            MessageBox.Show(ex.Message, "Cartella non accessibile")
+        End Try
     End Sub
 End Class

@@ -49,12 +49,12 @@ Public Class frmInput
     Public WithEvents LabelHelp As System.Windows.Forms.Label
     Public WithEvents _Label1_0 As System.Windows.Forms.Label
     Public WithEvents Picture1 As System.Windows.Forms.Panel
-    Public WithEvents ComboFisso As Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray
-    Public WithEvents ComboLibero As Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray
-    Public WithEvents Command1 As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents HelpFile As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public ComboFisso As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
+    Public ComboLibero As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
+    Public Command1 As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public HelpFile As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -74,19 +74,7 @@ Public Class frmInput
         Me._ComboFisso_0 = New System.Windows.Forms.ComboBox
         Me.LabelHelp = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.ComboFisso = New Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray(Me.components)
-        Me.ComboLibero = New Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray(Me.components)
-        Me.Command1 = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.HelpFile = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.Picture1.SuspendLayout()
-        CType(Me.ComboFisso, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboLibero, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HelpFile, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_Command1_0
@@ -94,7 +82,7 @@ Public Class frmInput
         Me._Command1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_0.Cursor = System.Windows.Forms.Cursors.Arrow
         Me._Command1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_0, CType(0, Short))
+        Me.Command1.Add(0, Me._Command1_0)
         Me._Command1_0.Location = New System.Drawing.Point(168, 64)
         Me._Command1_0.Name = "_Command1_0"
         Me._Command1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -107,7 +95,7 @@ Public Class frmInput
         Me._Command1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me._Command1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_1, CType(1, Short))
+        Me.Command1.Add(1, Me._Command1_1)
         Me._Command1_1.Location = New System.Drawing.Point(240, 64)
         Me._Command1_1.Name = "_Command1_1"
         Me._Command1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -120,7 +108,7 @@ Public Class frmInput
         Me._Command1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me._Command1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_2, CType(2, Short))
+        Me.Command1.Add(2, Me._Command1_2)
         Me._Command1_2.Location = New System.Drawing.Point(312, 64)
         Me._Command1_2.Name = "_Command1_2"
         Me._Command1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -178,7 +166,7 @@ Public Class frmInput
         Me._Text1_0.BackColor = System.Drawing.Color.White
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.Arrow
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(216, 8)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Name = "_Text1_0"
@@ -193,7 +181,7 @@ Public Class frmInput
         Me._HelpFile_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._HelpFile_0.ForeColor = System.Drawing.SystemColors.ControlText
         Me._HelpFile_0.Image = CType(resources.GetObject("_HelpFile_0.Image"), System.Drawing.Image)
-        Me.HelpFile.SetIndex(Me._HelpFile_0, CType(0, Short))
+        Me.HelpFile.Add(0, Me._HelpFile_0)
         Me._HelpFile_0.Location = New System.Drawing.Point(344, 8)
         Me._HelpFile_0.Name = "_HelpFile_0"
         Me._HelpFile_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -207,7 +195,7 @@ Public Class frmInput
         Me._ComboLibero_0.BackColor = System.Drawing.Color.White
         Me._ComboLibero_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboLibero_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboLibero.SetIndex(Me._ComboLibero_0, CType(0, Short))
+        Me.ComboLibero.Add(0, Me._ComboLibero_0)
         Me._ComboLibero_0.Location = New System.Drawing.Point(216, 9)
         Me._ComboLibero_0.Name = "_ComboLibero_0"
         Me._ComboLibero_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -221,7 +209,7 @@ Public Class frmInput
         Me._ComboFisso_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboFisso_0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboFisso_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboFisso.SetIndex(Me._ComboFisso_0, CType(0, Short))
+        Me.ComboFisso.Add(0, Me._ComboFisso_0)
         Me._ComboFisso_0.Location = New System.Drawing.Point(216, 8)
         Me._ComboFisso_0.Name = "_ComboFisso_0"
         Me._ComboFisso_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -248,7 +236,7 @@ Public Class frmInput
         Me._Label1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_0.Font = New System.Drawing.Font("Arial", 7.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label1.SetIndex(Me._Label1_0, CType(0, Short))
+        Me.Label1.Add(0, Me._Label1_0)
         Me._Label1_0.Location = New System.Drawing.Point(8, 8)
         Me._Label1_0.Name = "_Label1_0"
         Me._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -294,12 +282,25 @@ Public Class frmInput
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Form1"
         Me.Picture1.ResumeLayout(False)
-        CType(Me.ComboFisso, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboLibero, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HelpFile, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In ComboFisso.Values
+            AddHandler control.SelectedIndexChanged, AddressOf ComboFisso_SelectedIndexChanged
+        Next
+        For Each control In ComboLibero.Values
+            AddHandler control.TextChanged, AddressOf ComboLibero_TextChanged
+        Next
+        For Each control In ComboLibero.Values
+            AddHandler control.SelectedIndexChanged, AddressOf ComboLibero_SelectedIndexChanged
+        Next
+        For Each control In Command1.Values
+            AddHandler control.Click, AddressOf Command1_Click
+        Next
+        For Each control In HelpFile.Values
+            AddHandler control.Click, AddressOf HelpFile_Click
+        Next
+
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -372,9 +373,9 @@ Public Class frmInput
             End If
         End Set
     End Property
-    Private Sub ComboFisso_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ComboFisso.SelectedIndexChanged
+    Private Sub ComboFisso_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = ComboFisso.GetIndex(CType(eventSender, Forms.ComboBox))
+        Dim Index As Short = IndexedControls.IndexOf(ComboFisso, CType(eventSender, Forms.ComboBox))
         Risposte(Index + 1) = ComboFisso(Index).Text
         If Gia Then
             Select Case Nfin
@@ -383,14 +384,14 @@ Public Class frmInput
             End Select
         End If
     End Sub
-    Private Sub ComboLibero_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ComboLibero.TextChanged
+    Private Sub ComboLibero_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = ComboLibero.GetIndex(CType(eventSender, Forms.ComboBox))
+        Dim Index As Short = IndexedControls.IndexOf(ComboLibero, CType(eventSender, Forms.ComboBox))
         Risposte(Index + 1) = ComboLibero(Index).Text
     End Sub
-    Private Sub ComboLibero_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ComboLibero.SelectedIndexChanged
+    Private Sub ComboLibero_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = ComboLibero.GetIndex(CType(eventSender, Forms.ComboBox))
+        Dim Index As Short = IndexedControls.IndexOf(ComboLibero, CType(eventSender, Forms.ComboBox))
         Risposte(Index + 1) = ComboLibero(Index).Text
         If Gia Then
             Select Case Nfin
@@ -399,8 +400,8 @@ Public Class frmInput
             End Select
         End If
     End Sub
-    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-        Dim Index As Short = Command1.GetIndex(CType(eventSender, Forms.Button))
+    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Command1, CType(eventSender, Forms.Button))
         Select Case Index
             Case 0
                 If Nfin > 0 Then
@@ -483,7 +484,8 @@ Public Class frmInput
                 End If
                 TextArr(0) = Text1(0)
                 For i = 2 To Ncol
-                    Text1.Load(CShort(i - 1) * Ninput)
+                    IndexedControls.AddClone(Text1, CShort(i - 1) * Ninput)
+                    AddHandler Text1(CShort(i - 1) * Ninput).TextChanged, AddressOf Text1_TextChanged
                     If CarFissi Then Text1(CShort(i - 1)).Font = New Font("Courier New", 10)
                     TextArr((i - 1) * Ninput) = Text1(CShort((i - 1) * Ninput))
                     Text1(CShort((i - 1) * Ninput)).Text = Risposte((i - 1) * Ninput + 1)
@@ -510,29 +512,34 @@ Public Class frmInput
         Next
         For i = 1 To CShort(Ninput - 1)
             If Len(Trim(Help(i + 1))) > 0 Then
-                HelpFile.Load(i)
+                IndexedControls.AddClone(HelpFile, i)
+                AddHandler HelpFile(i).Click, AddressOf HelpFile_Click
                 HelpFile(i).Visible = True
             End If
             Select Case Archivio(i + 1)
                 Case Is < 0
-                    ComboLibero.Load(i)
+                    IndexedControls.AddClone(ComboLibero, i)
+                    AddHandler ComboLibero(i).TextChanged, AddressOf ComboLibero_TextChanged
+                    AddHandler ComboLibero(i).SelectedIndexChanged, AddressOf ComboLibero_SelectedIndexChanged
                     TextArr(i) = ComboLibero(i)
                     u = ReadArch(-Archivio(i + 1), ComboLibero(i), 0)
                     TextArr(i).Text = Risposte(i + 1)
                 Case 0
                     For k = 1 To Ncol
-                        Text1.Load(CShort((k - 1) * Ninput + i))
+                        IndexedControls.AddClone(Text1, CShort((k - 1) * Ninput + i))
+                        AddHandler Text1(CShort((k - 1) * Ninput + i)).TextChanged, AddressOf Text1_TextChanged
                         If CarFissi Then Text1(CShort((k - 1) * Ninput + i)).Font = New Font("Courier New", 10)
                         TextArr((k - 1) * Ninput + i) = Text1(CShort((k - 1) * Ninput + i))
                         TextArr((k - 1) * Ninput + i).Text = Risposte((k - 1) * Ninput + i + 1)
                     Next
                 Case Is > 0
-                    ComboFisso.Load(i)
+                    IndexedControls.AddClone(ComboFisso, i)
+                    AddHandler ComboFisso(i).SelectedIndexChanged, AddressOf ComboFisso_SelectedIndexChanged
                     TextArr(i) = ComboFisso(i)
                     u = ReadArch(Archivio(i + 1), ComboFisso(i), 0)
                     AggioFisso(ComboFisso(i), Risposte(i + 1))
             End Select
-            Label1.Load(i)
+            IndexedControls.AddClone(Label1, i)
             If CarFissi Then Label1(i).Font = New Font("Courier New", 10)
             Label1(i).Top = Label1(CShort(i - 1)).Top + TextArr(i - 1).Height
             Label1(i).Text = Strin(i + 1)
@@ -707,8 +714,8 @@ Public Class frmInput
         If Nfin = 0 Then Visible = True
         If Len(Trim(Aiuto)) = 0 Then Command1(2).Visible = False
     End Sub
-    Private Sub HelpFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles HelpFile.Click
-        Dim Index As Short = HelpFile.GetIndex(CType(eventSender, Forms.Button))
+    Private Sub HelpFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(HelpFile, CType(eventSender, Forms.Button))
         If Nfin > 0 And Help(Index + 1) = "*" Then
             RaiseEvent dAiuClick(CShort(Index + 1))
         Else
@@ -732,8 +739,8 @@ Public Class frmInput
             Next
         Next
     End Sub
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, Forms.TextBox))
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, Forms.TextBox))
         Risposte(Index + 1) = Text1(Index).Text
         If Gia Then
             Select Case Nfin
@@ -807,15 +814,15 @@ Public Class frmInput
     Private Sub AggioFisso(ByRef c As System.Windows.Forms.ComboBox, ByRef R As String)
         Dim i As Short
         For i = 0 To CShort(c.Items.Count - 1)
-            If Trim(UCase(VB6.GetItemString(c, i))) = Trim(UCase(R)) Then c.SelectedIndex = i : Exit Sub
+            If Trim(UCase(c.GetItemText(c.Items(i)))) = Trim(UCase(R)) Then c.SelectedIndex = i : Exit Sub
         Next
         For i = 0 To CShort(c.Items.Count - 1)
-            If Len(Trim(UCase(VB6.GetItemString(c, i)))) > 1 Then
-                If VB.Left(Trim(UCase(VB6.GetItemString(c, i))), 2) = VB.Left(Trim(UCase(R)), 2) Then c.SelectedIndex = i : Exit Sub
+            If Len(Trim(UCase(c.GetItemText(c.Items(i))))) > 1 Then
+                If VB.Left(Trim(UCase(c.GetItemText(c.Items(i)))), 2) = VB.Left(Trim(UCase(R)), 2) Then c.SelectedIndex = i : Exit Sub
             End If
         Next
         For i = 0 To CShort(c.Items.Count - 1)
-            If VB.Left(Trim(UCase(VB6.GetItemString(c, i))), 1) = VB.Left(Trim(UCase(R)), 1) Then c.SelectedIndex = i : Exit Sub
+            If VB.Left(Trim(UCase(c.GetItemText(c.Items(i)))), 1) = VB.Left(Trim(UCase(R)), 1) Then c.SelectedIndex = i : Exit Sub
         Next
         If c.Items.Count = 0 Then Exit Sub
         c.SelectedIndex = 0

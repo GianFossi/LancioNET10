@@ -45,7 +45,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
             If Nome.Length = 0 Then n = Arch Else n = Nome
             FileTem = Padre.Motore.Inizio.Workdir & "\" & n & ".TEM"
             Dim myFileStream As Stream = File.OpenWrite(FileTem)
-            Dim deserializer As New BinaryFormatter
+            Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 deserializer.Serialize(myFileStream, Me)
             Catch e As SerializationException

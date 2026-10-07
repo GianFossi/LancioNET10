@@ -44,7 +44,7 @@ Imports RoutBase1
         Try
             Dim Nome As String = Motore.Inizio.Workdir & "\" & Contratto & ".JOB"
             Dim myFileStream As Stream = File.OpenWrite(Nome)
-            Dim serializer As New BinaryFormatter
+            Dim serializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 serializer.Serialize(myFileStream, Me)
             Catch e As SerializationException

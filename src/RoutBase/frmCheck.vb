@@ -29,9 +29,9 @@ Public Class frmCheck
     Public WithEvents _Text1_0 As System.Windows.Forms.TextBox
     Public WithEvents _Check1_0 As System.Windows.Forms.CheckBox
     Public WithEvents Picture1 As System.Windows.Forms.Panel
-    Public WithEvents Check1 As Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray
-    Public WithEvents Command1 As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Check1 As New System.Collections.Generic.Dictionary(Of Integer, CheckBox)
+    Public Command1 As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -46,13 +46,7 @@ Public Class frmCheck
         Me.Picture1 = New System.Windows.Forms.Panel
         Me._Text1_0 = New System.Windows.Forms.TextBox
         Me._Check1_0 = New System.Windows.Forms.CheckBox
-        Me.Check1 = New Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray(Me.components)
-        Me.Command1 = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.Picture1.SuspendLayout()
-        CType(Me.Check1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_Command1_0
@@ -60,7 +54,7 @@ Public Class frmCheck
         Me._Command1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_0, CType(0, Short))
+        Me.Command1.Add(0, Me._Command1_0)
         Me._Command1_0.Location = New System.Drawing.Point(160, 56)
         Me._Command1_0.Name = "_Command1_0"
         Me._Command1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -73,7 +67,7 @@ Public Class frmCheck
         Me._Command1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_1, CType(1, Short))
+        Me.Command1.Add(1, Me._Command1_1)
         Me._Command1_1.Location = New System.Drawing.Point(232, 56)
         Me._Command1_1.Name = "_Command1_1"
         Me._Command1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -86,7 +80,7 @@ Public Class frmCheck
         Me._Command1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_2, CType(2, Short))
+        Me.Command1.Add(2, Me._Command1_2)
         Me._Command1_2.Location = New System.Drawing.Point(304, 56)
         Me._Command1_2.Name = "_Command1_2"
         Me._Command1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -139,7 +133,7 @@ Public Class frmCheck
         Me._Text1_0.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(24, 4)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Name = "_Text1_0"
@@ -153,7 +147,7 @@ Public Class frmCheck
         Me._Check1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Check1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Check1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Check1.SetIndex(Me._Check1_0, CType(0, Short))
+        Me.Check1.Add(0, Me._Check1_0)
         Me._Check1_0.Location = New System.Drawing.Point(7, 4)
         Me._Check1_0.Name = "_Check1_0"
         Me._Check1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -189,9 +183,13 @@ Public Class frmCheck
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Form1"
         Me.Picture1.ResumeLayout(False)
-        CType(Me.Check1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In Check1.Values
+            AddHandler control.CheckStateChanged, AddressOf Check1_CheckStateChanged
+        Next
+        For Each control In Command1.Values
+            AddHandler control.Click, AddressOf Command1_Click
+        Next
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -229,8 +227,8 @@ Public Class frmCheck
     End Property
 
     'UPGRADE_WARNING: L'evento Check1.CheckStateChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Check1.CheckStateChanged
-        Dim Index As Short = Check1.GetIndex(CType(eventSender, CheckBox))
+    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Check1, CType(eventSender, CheckBox))
         Risult(Index + 1) = Check1(Index).CheckState = CheckState.Checked
         If Gia Then
             Select Case Nfin
@@ -240,8 +238,8 @@ Public Class frmCheck
         End If
     End Sub
 
-    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-        Dim Index As Short = Command1.GetIndex(CType(eventSender, Button))
+    Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Command1, CType(eventSender, Button))
         Select Case Index
             Case 0
                 If Nfin > 0 Then
@@ -289,8 +287,9 @@ Public Class frmCheck
             Dim gPicture1 As Graphics = Picture1.CreateGraphics
             MaxLength = gPicture1.MeasureString(Strin(1), Picture1.Font).Width
             For i = 1 To CShort(Ninput - 1)
-                Check1.Load(i)
-                Text1.Load(i)
+                IndexedControls.AddClone(Check1, i)
+                AddHandler Check1(i).CheckStateChanged, AddressOf Check1_CheckStateChanged
+                IndexedControls.AddClone(Text1, i)
                 Check1(i).Top = Check1(CShort(i - 1)).Top + Text1(CShort(i - 1)).Height
                 Text1(i).Top = Text1(CShort(i - 1)).Top + Text1(CShort(i - 1)).Height
                 Text1(i).Text = Strin(i + 1)

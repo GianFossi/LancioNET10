@@ -43,7 +43,7 @@ Friend Class frmAbout
 	Public WithEvents lblTitle As System.Windows.Forms.Label
     Public WithEvents lblVersion As System.Windows.Forms.Label
 	Public WithEvents lblDisclaimer As System.Windows.Forms.Label
-	Public WithEvents Line1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
+	Public Line1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -60,8 +60,6 @@ Friend Class frmAbout
         Me.lblTitle = New System.Windows.Forms.Label
         Me.lblVersion = New System.Windows.Forms.Label
         Me.lblDisclaimer = New System.Windows.Forms.Label
-        Me.Line1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        CType(Me.Line1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Text1
@@ -205,7 +203,7 @@ Friend Class frmAbout
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Informazioni su AsmeVip"
-        CType(Me.Line1, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
 
     End Sub

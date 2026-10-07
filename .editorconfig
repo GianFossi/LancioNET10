@@ -11,3 +11,8 @@ indent_size = 2
 
 # Non eseguire una normalizzazione massiva dei sorgenti legacy.
 # Verificare prima encoding e terminatori originali durante l'importazione.
+
+# VS2003 VB WithEvents creates properties whose field attributes are not forwarded.
+# Keep this designer diagnostic visible while migrating initialization by hand.
+[src/RoutBase/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
