@@ -5,6 +5,16 @@ Module Program
     Private count As Integer
     <STAThread>
     Sub Main()
+        Dim iniPath = System.IO.Path.Combine(System.IO.Path.GetTempPath(), Guid.NewGuid().ToString("N") & ".ini")
+        Try
+            System.IO.File.WriteAllText(iniPath, "[Percorsi]" & vbCrLf & "DiscoBase=C:\" & vbCrLf & "BaseDir=C:\Lancio Debug" & vbCrLf)
+            Dim initialization As New RoutBase1.clsInizio()
+            Check(initialization.ReadIniFile(iniPath, "Percorsi", "DiscoBase") = "C:\")
+            Check(initialization.ReadIniFile(iniPath, "Percorsi", "BaseDir") = "C:\Lancio Debug")
+            Check(initialization.ReadIniFile(iniPath, "Percorsi", "Missing") = "")
+        Finally
+            System.IO.File.Delete(iniPath)
+        End Try
         Using parent As New Panel(), template As New TextBox() With {.Text = "base", .Multiline = True, .MaxLength = 24}
             parent.Controls.Add(template)
             Dim controls As New Dictionary(Of Integer, TextBox) From {{0, template}}

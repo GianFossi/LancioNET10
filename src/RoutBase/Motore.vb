@@ -1003,8 +1003,8 @@ ju:     If Not Autorizz Then
         Dim Cursore As System.Windows.Forms.Cursor
         Dim DefButton As Short
         Cursore = System.Windows.Forms.Cursor.Current
-        If chm.Length = 0 Then chm = "Lancio.chm"
-        If Tit.Length = 0 Then Tit = System.Reflection.Assembly.GetExecutingAssembly.GetName.Name
+        If String.IsNullOrEmpty(chm) Then chm = "Lancio.chm"
+        If String.IsNullOrEmpty(Tit) Then Tit = System.Reflection.Assembly.GetExecutingAssembly.GetName.Name
         cmd(0) = True
         If (Chiavi And ChiaviMess.messDef1) > 0 Then DefButton = 0
         If (Chiavi And ChiaviMess.MessDef2) > 0 Then DefButton = 1

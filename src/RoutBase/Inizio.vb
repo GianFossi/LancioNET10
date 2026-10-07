@@ -32,7 +32,7 @@ Public Class clsInizio
         REMOTE_NAME_INFO_LEVEL = 2
     End Enum
     Private Declare Function GetPrivateProfileString Lib "kernel32" Alias "GetPrivateProfileStringA" (ByVal lpApplicationName As String, _
-    ByVal lpKeyName As String, ByVal lpDefault As String, ByVal lpReturnedString As String, ByVal lSize As Integer, ByVal lpFilename As String) As Integer
+    ByVal lpKeyName As String, ByVal lpDefault As String, ByVal lpReturnedString As System.Text.StringBuilder, ByVal lSize As Integer, ByVal lpFilename As String) As Integer
     Private Declare Function WritePrivateProfileString Lib "kernel32" Alias "WritePrivateProfileStringA" _
     (ByVal lpApplicationName As String, ByVal lpKeyName As String, ByVal lpString As String, ByVal lplFilename As String) As Integer
     Private Declare Function GetPrivateProfileSection Lib "kernel32" Alias "GetPrivateProfileSectionA" _
@@ -554,17 +554,16 @@ Public Class clsInizio
         If Not CheckDir() Then Standard = 3
     End Function
     Public Function ReadIniFile(ByVal strIniFile As String, ByVal strSection As String, ByVal strKey As String) As String
-        Dim strBuffer As String
+        Dim strBuffer As New System.Text.StringBuilder(gintMAX_SIZE)
         If Len(strIniFile) = 0 Then strIniFile = FileIni()
         If Len(strIniFile) = 0 Then Return ""
         '
         'Se la lettura dal file .ini ha avuto esito positivo, elimina gli eventuali zeri
         'restituiti dalla funzione GetPrivateProfileString dell'API di Windows.
         '
-        strBuffer = Space(gintMAX_SIZE)
 
         If GetPrivateProfileString(strSection, strKey, gstrNULL, strBuffer, gintMAX_SIZE, strIniFile) > 0 Then
-            ReadIniFile = RTrim(StripTerminator(strBuffer))
+            ReadIniFile = RTrim(StripTerminator(strBuffer.ToString()))
         Else
             ReadIniFile = gstrNULL
         End If
