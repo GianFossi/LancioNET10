@@ -71,14 +71,37 @@ Public NotInheritable Class OfficeComBackend
     End Sub
 
     Public Sub CloseDocument(choice As WordSaveChoice) Implements IWordBackend.CloseDocument
-        document.Close(CInt(choice))
-        Release(document)
+        If document Is Nothing Then Return
+        Try
+            document.Close(CInt(choice))
+        Catch ex As COMException When IsDisconnected(ex)
+            ' Word was closed or crashed outside Lancio. Treat its document as
+            ' already closed and discard the stale application proxy as well.
+            Release(application)
+        Finally
+            Release(document)
+        End Try
     End Sub
 
     Public Sub Quit(choice As WordSaveChoice) Implements IWordBackend.Quit
-        application.Quit(CInt(choice))
-        Release(application)
+        If application Is Nothing Then Return
+        Try
+            application.Quit(CInt(choice))
+        Catch ex As COMException When IsDisconnected(ex)
+            ' The external Word process no longer exists; there is nothing to quit.
+        Finally
+            Release(application)
+        End Try
     End Sub
+
+    Private Shared Function IsDisconnected(ex As COMException) As Boolean
+        Select Case ex.HResult
+            Case -2147023174, -2147023170, -2147417848
+                Return True
+            Case Else
+                Return False
+        End Select
+    End Function
 
     Private Shared Sub Release(ByRef value As Object)
         If value IsNot Nothing AndAlso Marshal.IsComObject(value) Then

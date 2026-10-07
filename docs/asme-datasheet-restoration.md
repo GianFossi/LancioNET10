@@ -73,3 +73,8 @@ automaticamente `bound to library` quando `Mat200400.mdb` e' presente nella
 cartella ARCH configurata. I materiali gia' definiti localmente non vengono
 convertiti automaticamente. Se l'archivio manca, ASMEVIP mostra il percorso
 esatto atteso invece di aprire silenziosamente una scheda locale vuota.
+
+La barra laterale espone inoltre `Dati generali apparecchio`, che richiama la
+stessa finestra mostrata all'avvio. La chiusura del rapporto durante `Clear`
+tollera la chiusura o il crash esterno di Word (RPC non disponibile), elimina
+i riferimenti COM non piu' validi e permette una sessione successiva.

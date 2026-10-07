@@ -36,6 +36,7 @@ Friend Class Apert
 	Public WithEvents cmdCalc As System.Windows.Forms.Button
 	Public WithEvents Command1 As System.Windows.Forms.Button
 	Public WithEvents cmdInserisci As System.Windows.Forms.Button
+	Public WithEvents cmdDatiGenerali As System.Windows.Forms.Button
 	Public WithEvents _Frames_1 As System.Windows.Forms.GroupBox
     Public WithEvents mnuApri As System.Windows.Forms.ToolStripMenuItem
 	Public WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
@@ -133,6 +134,7 @@ Friend Class Apert
         Me.cmdCalc = New System.Windows.Forms.Button
         Me.Command1 = New System.Windows.Forms.Button
         Me.cmdInserisci = New System.Windows.Forms.Button
+        Me.cmdDatiGenerali = New System.Windows.Forms.Button
         Me._mnuAiuto_0 = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuInf = New System.Windows.Forms.ToolStripMenuItem
@@ -391,6 +393,7 @@ Friend Class Apert
         Me._Frames_1.Controls.Add(Me.cmdCalc)
         Me._Frames_1.Controls.Add(Me.Command1)
         Me._Frames_1.Controls.Add(Me.cmdInserisci)
+        Me._Frames_1.Controls.Add(Me.cmdDatiGenerali)
         Me._Frames_1.ForeColor = System.Drawing.Color.Yellow
         Me._Frames_1.Location = New System.Drawing.Point(0, 0)
         Me._Frames_1.Name = "_Frames_1"
@@ -407,9 +410,9 @@ Friend Class Apert
         Me.TreeView1.HideSelection = False
         Me.TreeView1.ImageList = Me.ImageList1
         Me.TreeView1.LabelEdit = True
-        Me.TreeView1.Location = New System.Drawing.Point(8, 48)
+        Me.TreeView1.Location = New System.Drawing.Point(8, 80)
         Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.Size = New System.Drawing.Size(240, 408)
+        Me.TreeView1.Size = New System.Drawing.Size(240, 376)
         Me.TreeView1.TabIndex = 16
         '
         'ImageList1
@@ -464,6 +467,16 @@ Friend Class Apert
         Me.cmdInserisci.TabIndex = 17
         Me.cmdInserisci.Text = "Inserisci..."
         Me.cmdInserisci.Enabled = False
+        '
+        'cmdDatiGenerali
+        '
+        Me.cmdDatiGenerali.BackColor = System.Drawing.SystemColors.Control
+        Me.cmdDatiGenerali.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.cmdDatiGenerali.Location = New System.Drawing.Point(8, 48)
+        Me.cmdDatiGenerali.Name = "cmdDatiGenerali"
+        Me.cmdDatiGenerali.Size = New System.Drawing.Size(244, 25)
+        Me.cmdDatiGenerali.TabIndex = 18
+        Me.cmdDatiGenerali.Text = "Dati generali apparecchio"
         '
         '_mnuAiuto_0
         '
@@ -839,6 +852,9 @@ Friend Class Apert
     End Sub
     Private Sub cmdDati_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdDati.Click
         mnuDatiElem_Click(mnuDatiElem, New System.EventArgs)
+    End Sub
+    Private Sub cmdDatiGenerali_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdDatiGenerali.Click
+        mnuTuttiDati_Click(mnuTuttiDati, New System.EventArgs)
     End Sub
     Private Sub cmdInserisci_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdInserisci.Click
         mnuInseElem_Click(mnuInseElem, New System.EventArgs)
