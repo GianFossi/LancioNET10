@@ -1,3 +1,8 @@
+> Aggiornamento 2026-10-07: tutti i dieci costruttori elencati sotto sono stati
+> migrati. L'inventario corrente riporta zero costruttori DataGrid obsoleti.
+> Vedere [remaining-grid-migration.md](remaining-grid-migration.md) per evidenza
+> e limiti. Il seguito conserva i risultati del controllo prima della correzione.
+
 # Controllo generalizzato DataGrid (2026-10-07)
 
 Controllati tutti i sorgenti VB di src, escludendo bin/obj e commenti.

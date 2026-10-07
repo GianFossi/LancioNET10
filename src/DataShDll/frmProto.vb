@@ -1,5 +1,6 @@
 Option Strict Off
 Option Explicit On
+Imports LancioMigration
 Imports System.Data
 Imports System.Data.OleDb
 Imports System.Data.common
@@ -8,10 +9,13 @@ Friend Class frmProto
 	Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
 	Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
 		MyBase.New()
         'Chiamata richiesta dalla progettazione Windows Form.
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
 	End Sub
 	'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
 	Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -33,7 +37,7 @@ Friend Class frmProto
 	Public WithEvents Command2 As System.Windows.Forms.Button
 	Public WithEvents Command1 As System.Windows.Forms.Button
 	Public WithEvents Picture1 As System.Windows.Forms.PictureBox
-    Public WithEvents Grid1 As System.Windows.Forms.DataGrid 'AxMSGrid.AxGrid
+    Public WithEvents Grid1 As Global.LancioMigration.LegacyGridView 'AxMSGrid.AxGrid
 	Public WithEvents lblNomeProto As System.Windows.Forms.Label
 	Public WithEvents lblProto As System.Windows.Forms.Label
 	Public WithEvents Label13 As System.Windows.Forms.Label
@@ -56,7 +60,7 @@ Friend Class frmProto
         Me.Command2 = New System.Windows.Forms.Button
         Me.Command1 = New System.Windows.Forms.Button
         Me.Picture1 = New System.Windows.Forms.PictureBox
-        Me.Grid1 = New System.Windows.Forms.DataGrid 'AxMSGrid.AxGrid
+        Me.Grid1 = New Global.LancioMigration.LegacyGridView 'AxMSGrid.AxGrid
         Me.lblNomeProto = New System.Windows.Forms.Label
         Me.lblProto = New System.Windows.Forms.Label
         Me.Label13 = New System.Windows.Forms.Label

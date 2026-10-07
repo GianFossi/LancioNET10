@@ -26,7 +26,7 @@ for path in sorted((ROOT / 'src').rglob('*.vb')):
     lines = [code_part(line) for line in path.read_bytes().decode('cp1252', errors='replace').splitlines()]
     constructors = [i for i, line in enumerate(lines, 1) if re.search(r'\bNew\s+(?:System\.Windows\.Forms\.)?DataGrid\b', line)]
     legacy_apis = [i for i, line in enumerate(lines, 1) if re.search(r'\b(?:DataGrid|DataGridTableStyle|DataGridTextBoxColumn|DataGridCell)\b', line)]
-    modern = sum(bool(re.search(r'\bNew\s+(?:(?:System\.Windows\.Forms\.)?DataGridView|LoadGridView)\b', line)) for line in lines)
+    modern = sum(bool(re.search(r'\bNew\s+(?:(?:System\.Windows\.Forms\.)?DataGridView|LoadGridView|(?:Global\.)?LancioMigration\.LegacyGridView|LegacyGridView)\b', line)) for line in lines)
     if constructors or legacy_apis or modern:
         rows.append({'file': path.relative_to(ROOT).as_posix(), 'unsupported_constructor_lines': constructors,
                      'legacy_api_lines': legacy_apis, 'modern_constructors': modern})

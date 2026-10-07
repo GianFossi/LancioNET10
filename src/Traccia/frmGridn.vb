@@ -1,5 +1,6 @@
 Option Strict Off
 Option Explicit On
+Imports LancioMigration
 Friend Class frmGridn
     Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
@@ -41,10 +42,9 @@ Friend Class frmGridn
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
     Friend WithEvents UpDown1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Grid As System.Windows.Forms.DataGrid
+    Friend WithEvents DataGridTextBoxColumn1 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn2 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Grid As Global.LancioMigration.LegacyGridView
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -53,10 +53,9 @@ Friend Class frmGridn
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.UpDown1 = New System.Windows.Forms.NumericUpDown
-        Me.Grid = New System.Windows.Forms.DataGrid
-        Me.DataGridTableStyle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.Grid = New Global.LancioMigration.LegacyGridView
+        Me.DataGridTextBoxColumn1 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn2 = New Global.LancioMigration.LegacyTextColumn
         CType(Me.UpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -121,19 +120,15 @@ Friend Class frmGridn
         'Grid
         '
         Me.Grid.DataMember = ""
-        Me.Grid.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.Grid.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Grid.Location = New System.Drawing.Point(16, 32)
         Me.Grid.Name = "Grid"
         Me.Grid.Size = New System.Drawing.Size(208, 176)
         Me.Grid.TabIndex = 9
-        Me.Grid.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.DataGridTableStyle1})
         '
         'DataGridTableStyle1
         '
-        Me.DataGridTableStyle1.DataGrid = Me.Grid
-        Me.DataGridTableStyle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2})
-        Me.DataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGridTableStyle1.MappingName = ""
+        Me.Grid.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         '
         'DataGridTextBoxColumn1
         '
@@ -196,7 +191,7 @@ Friend Class frmGridn
 #End Region
     Private WithEvents tGriglia As DataTable
     Private dview As DataView
-    Private VecchiaCella As DataGridCell
+    Private VecchiaCella As New GridPosition(-1, -1)
     Private Nelem As Short
     Private Inret() As Short
     Private NinRet As Short
@@ -204,6 +199,8 @@ Friend Class frmGridn
         Hide()
     End Sub
     Private Sub cmdOK_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdOK.Click
+        Grid.EndEdit()
+        If dview IsNot Nothing Then BindingContext(dview).EndCurrentEdit()
         Registra()
         Hide()
         SubTraccia(0)
@@ -251,7 +248,9 @@ Friend Class frmGridn
         Dim Testo As String
         Static Gia As Boolean
         If Gia Then
-            Registra()
+            Grid.EndEdit()
+        If dview IsNot Nothing Then BindingContext(dview).EndCurrentEdit()
+        Registra()
         Else
             Gia = True
         End If
@@ -399,10 +398,11 @@ Friend Class frmGridn
         Pagina()
     End Sub
     Private Sub Grid_CurrentCellChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Grid.CurrentCellChanged
+        If Grid.CurrentCell.RowNumber < 0 OrElse tGriglia Is Nothing Then Return
         Dim ColInput, RowInput As Integer
         Dim x, y As Single
         Dim Rvec, R, diro As Single
-        If Not VecchiaCella.RowNumber = -1 Then
+        If VecchiaCella.RowNumber >= 0 AndAlso VecchiaCella.RowNumber < tGriglia.Rows.Count Then
             Select Case MainForm.FuoriLayOut
                 Case 3
                 Case 4

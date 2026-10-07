@@ -1,3 +1,4 @@
+Imports LancioMigration
 Public Class frmNonTrovato
     Inherits System.Windows.Forms.Form
     Public rsCandidati As DataTable
@@ -10,13 +11,16 @@ Public Class frmNonTrovato
 #Region " Codice generato da Progettazione Windows Form "
 
     Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
         MyBase.New()
         Inizializzando = True
         'Chiamata richiesta da Progettazione Windows Form.
         InitializeComponent()
         Inizializzando = False
         'Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -33,7 +37,7 @@ Public Class frmNonTrovato
     'NOTA: la procedura che segue è richiesta da Progettazione Windows Form.
     'Può essere modificata in Progettazione Windows Form.  
     'Non modificarla nell'editor del codice.
-    Friend WithEvents Candidati As System.Windows.Forms.DataGrid
+    Friend WithEvents Candidati As Global.LancioMigration.LegacyGridView
     Friend WithEvents txtSpec As System.Windows.Forms.TextBox
     Friend WithEvents txtGrade As System.Windows.Forms.TextBox
     Friend WithEvents txtUNS As System.Windows.Forms.TextBox
@@ -43,22 +47,20 @@ Public Class frmNonTrovato
     Friend WithEvents cmdSelez As System.Windows.Forms.Button
     Friend WithEvents cmdNuovo As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn5 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn1 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn2 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn3 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn4 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn5 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn6 As Global.LancioMigration.LegacyTextColumn
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.Candidati = New System.Windows.Forms.DataGrid
-        Me.DataGridTableStyle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn5 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn6 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.Candidati = New Global.LancioMigration.LegacyGridView
+        Me.DataGridTextBoxColumn1 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn2 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn3 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn4 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn5 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn6 = New Global.LancioMigration.LegacyTextColumn
         Me.txtSpec = New System.Windows.Forms.TextBox
         Me.txtGrade = New System.Windows.Forms.TextBox
         Me.txtUNS = New System.Windows.Forms.TextBox
@@ -74,21 +76,19 @@ Public Class frmNonTrovato
         'Candidati
         '
         Me.Candidati.DataMember = ""
-        Me.Candidati.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.Candidati.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Candidati.Location = New System.Drawing.Point(16, 80)
         Me.Candidati.Name = "Candidati"
         Me.Candidati.PreferredColumnWidth = 90
         Me.Candidati.ReadOnly = True
         Me.Candidati.Size = New System.Drawing.Size(584, 168)
         Me.Candidati.TabIndex = 0
-        Me.Candidati.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.DataGridTableStyle1})
         '
         'DataGridTableStyle1
         '
-        Me.DataGridTableStyle1.DataGrid = Me.Candidati
-        Me.DataGridTableStyle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6})
-        Me.DataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGridTableStyle1.MappingName = ""
+        Me.Candidati.AutoGenerateColumns = False
+        Me.Candidati.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6})
+        Me.Candidati.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         '
         'DataGridTextBoxColumn1
         '
@@ -255,6 +255,7 @@ Public Class frmNonTrovato
 
     Private Sub cmdSelez_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSelez.Click
         Nuovo = False
+        If Me.Candidati.CurrentRowIndex < 0 Then Exit Sub
         RowIndex = Me.Candidati.CurrentRowIndex
         Hide()
     End Sub
@@ -267,10 +268,10 @@ Public Class frmNonTrovato
     Private Sub frmNonTrovato_Activated(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Activated
         Try
             Me.Candidati.SetDataBinding(dvCandidati, "")
-            Me.Candidati.TableStyles(0).GridColumnStyles(0).Width = 150
-            Me.Candidati.TableStyles(0).GridColumnStyles(1).Width = 60
-            Me.Candidati.TableStyles(0).GridColumnStyles(2).Width = 60
-            Me.Candidati.TableStyles(0).GridColumnStyles(5).Width = 150
+            Me.Candidati.Columns(0).Width = 150
+            Me.Candidati.Columns(1).Width = 60
+            Me.Candidati.Columns(2).Width = 60
+            Me.Candidati.Columns(5).Width = 150
             Me.Candidati.Width = 150 + 60 + 60 + 75 + 75 + 150 + 30
             Me.txtSpec.Text = CStr(T1a(CampoSN))
             If Not CampoTG Is Nothing Then Me.txtGrade.Text = CStr(T1a(CampoTG))

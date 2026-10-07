@@ -1,5 +1,6 @@
 Option Strict On
 Option Explicit On
+Imports LancioMigration
 Imports VB = Microsoft.VisualBasic
 Imports System.Data
 Imports System.Data.OleDb
@@ -9,10 +10,13 @@ Friend Class frmNote
 	Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
 	Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
 		MyBase.New()
         'Chiamata richiesta dalla progettazione Windows Form.
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -31,43 +35,39 @@ Friend Class frmNote
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
-    Friend WithEvents DBNote As System.Windows.Forms.DataGrid
-    Friend WithEvents DBnote1 As System.Windows.Forms.DataGrid
-    Friend WithEvents Stile As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents Col_0 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col_1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col_2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col_3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col_4 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col_5 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Stle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents Col1_1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col1_2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col1_3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col1_4 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col1_5 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents Col1_0 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DBNote As Global.LancioMigration.LegacyGridView
+    Friend WithEvents DBnote1 As Global.LancioMigration.LegacyGridView
+    Friend WithEvents Col_0 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col_1 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col_2 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col_3 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col_4 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col_5 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_1 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_2 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_3 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_4 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_5 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents Col1_0 As Global.LancioMigration.LegacyTextColumn
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.cmdCancel = New System.Windows.Forms.Button
         Me.cmdOK = New System.Windows.Forms.Button
-        Me.DBNote = New System.Windows.Forms.DataGrid
-        Me.Stile = New System.Windows.Forms.DataGridTableStyle
-        Me.Col_0 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col_1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col_2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col_3 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col_4 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col_5 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DBnote1 = New System.Windows.Forms.DataGrid
-        Me.Stle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.Col1_0 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col1_1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col1_2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col1_3 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col1_4 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.Col1_5 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.DBNote = New Global.LancioMigration.LegacyGridView
+        Me.Col_0 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col_1 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col_2 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col_3 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col_4 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col_5 = New Global.LancioMigration.LegacyTextColumn
+        Me.DBnote1 = New Global.LancioMigration.LegacyGridView
+        Me.Col1_0 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col1_1 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col1_2 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col1_3 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col1_4 = New Global.LancioMigration.LegacyTextColumn
+        Me.Col1_5 = New Global.LancioMigration.LegacyTextColumn
         CType(Me.DBNote, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DBnote1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -100,21 +100,18 @@ Friend Class frmNote
         '
         'DBNote
         '
-        Me.DBNote.CaptionVisible = False
         Me.DBNote.DataMember = ""
-        Me.DBNote.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.DBNote.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.DBNote.Location = New System.Drawing.Point(0, 8)
         Me.DBNote.Name = "DBNote"
         Me.DBNote.Size = New System.Drawing.Size(640, 320)
         Me.DBNote.TabIndex = 3
-        Me.DBNote.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.Stile})
         '
         'Stile
         '
-        Me.Stile.DataGrid = Me.DBNote
-        Me.Stile.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.Col_0, Me.Col_1, Me.Col_2, Me.Col_3, Me.Col_4, Me.Col_5})
-        Me.Stile.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.Stile.MappingName = "Notes"
+        Me.DBNote.AutoGenerateColumns = False
+        Me.DBNote.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Col_0, Me.Col_1, Me.Col_2, Me.Col_3, Me.Col_4, Me.Col_5})
+        Me.DBNote.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         '
         'Col_0
         '
@@ -160,24 +157,21 @@ Friend Class frmNote
         '
         'DBnote1
         '
-        Me.DBnote1.CaptionVisible = False
         Me.DBnote1.DataMember = ""
-        Me.DBnote1.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.DBnote1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.DBnote1.Location = New System.Drawing.Point(0, 0)
         Me.DBnote1.Name = "DBnote1"
         Me.DBnote1.PreferredColumnWidth = 80
         Me.DBnote1.Size = New System.Drawing.Size(640, 272)
         Me.DBnote1.TabIndex = 4
-        Me.DBnote1.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.Stle1})
         Me.DBnote1.Visible = False
         '
         'Stle1
         '
-        Me.Stle1.DataGrid = Me.DBnote1
-        Me.Stle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.Col1_0, Me.Col1_1, Me.Col1_2, Me.Col1_3, Me.Col1_4, Me.Col1_5})
-        Me.Stle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.Stle1.MappingName = "Notes1"
-        Me.Stle1.PreferredColumnWidth = 80
+        Me.DBnote1.AutoGenerateColumns = False
+        Me.DBnote1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Col1_0, Me.Col1_1, Me.Col1_2, Me.Col1_3, Me.Col1_4, Me.Col1_5})
+        Me.DBnote1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.DBnote1.PreferredColumnWidth = 80
         '
         'Col1_0
         '
@@ -269,6 +263,7 @@ Friend Class frmNote
 	End Sub
 	Private Sub cmdOK_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdOK.Click
 		Dim nuovo, i, j As Short
+        If DBnote1.CurrentRowIndex < 0 Then Exit Sub
         nuovo = CShort(rsDBNote1.Rows(DBnote1.CurrentRowIndex)("ID"))
         drv.BeginEdit()
         For i = 1 To CShort(Direct.Columns.Count - 1)
@@ -366,23 +361,23 @@ Friend Class frmNote
     Private Sub Riempi()
         Dim Criterio As String
         With DBNote
-            .TableStyles(0).GridColumnStyles(0).Width = 0
-            .TableStyles(0).GridColumnStyles(1).Width = 0
-            .TableStyles(0).GridColumnStyles(2).Width = 0
-            .TableStyles(0).GridColumnStyles(3).Width = CInt(Funzioni.TwipsToPixelsX(495))
-            .TableStyles(0).GridColumnStyles(3).HeaderText = "Nota"
+            .Columns(0).Visible = False
+            .Columns(1).Visible = False
+            .Columns(2).Visible = False
+            .Columns(3).Width = CInt(Funzioni.TwipsToPixelsX(495))
+            .Columns(3).HeaderText = "Nota"
             Dim Col_4n As MultiLineColumn = New MultiLineColumn
-            Col_4n.TextBox.Multiline = True
-            Col_4n.TextBox.WordWrap = True
+            Col_4n.DefaultCellStyle.WrapMode = DataGridViewTriState.True
+            DBNote.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
             Col_4n.AutoAdjustHeight = True
             Col_4n.MappingName = "Note_text"
             Col_4n.Width = CInt(Funzioni.TwipsToPixelsX(8400))
-            .TableStyles(0).GridColumnStyles(4).HeaderText = "Testo"
-            .TableStyles(0).GridColumnStyles.RemoveAt(5)
-            .TableStyles(0).GridColumnStyles.RemoveAt(4)
-            .TableStyles(0).GridColumnStyles.Add(Col_4n)
-            .TableStyles(0).GridColumnStyles.Add(Col_5)
-            .TableStyles(0).GridColumnStyles(5).Width = 0
+            .Columns(4).HeaderText = "Testo"
+            .Columns.RemoveAt(5)
+            .Columns.RemoveAt(4)
+            .Columns.Add(Col_4n)
+            .Columns.Add(Col_5)
+            .Columns(5).Visible = False
             RowColChangeForb = True
             .BringToFront()
         End With
@@ -433,17 +428,17 @@ Friend Class frmNote
         rsDBNote1.TableName = "Notes1"
         DBnote1.SetDataBinding(rsDBNote1, "")
         With DBnote1
-            .TableStyles(0).GridColumnStyles(0).Width = 0
-            .TableStyles(0).GridColumnStyles(1).Width = CInt(Funzioni.TwipsToPixelsX(800))
-            .TableStyles(0).GridColumnStyles(1).HeaderText = "Group"
-            .TableStyles(0).GridColumnStyles(2).Width = CInt(Funzioni.TwipsToPixelsX(495))
-            .TableStyles(0).GridColumnStyles(2).HeaderText = "Add"
-            .TableStyles(0).GridColumnStyles(3).Width = CInt(Funzioni.TwipsToPixelsX(400))
-            .TableStyles(0).GridColumnStyles(3).HeaderText = "Nota"
-            .TableStyles(0).GridColumnStyles(4).Width = CInt(Funzioni.TwipsToPixelsX(6900))
-            .TableStyles(0).GridColumnStyles(4).HeaderText = "Testo"
-            .TableStyles(0).GridColumnStyles(5).Width = CInt(Funzioni.TwipsToPixelsX(495))
-            .TableStyles(0).GridColumnStyles(5).HeaderText = "Tab"
+            .Columns(0).Visible = False
+            .Columns(1).Width = CInt(Funzioni.TwipsToPixelsX(800))
+            .Columns(1).HeaderText = "Group"
+            .Columns(2).Width = CInt(Funzioni.TwipsToPixelsX(495))
+            .Columns(2).HeaderText = "Add"
+            .Columns(3).Width = CInt(Funzioni.TwipsToPixelsX(400))
+            .Columns(3).HeaderText = "Nota"
+            .Columns(4).Width = CInt(Funzioni.TwipsToPixelsX(6900))
+            .Columns(4).HeaderText = "Testo"
+            .Columns(5).Width = CInt(Funzioni.TwipsToPixelsX(495))
+            .Columns(5).HeaderText = "Tab"
         End With
         With dvDBNote1
             .AllowNew = True
@@ -569,6 +564,7 @@ Friend Class frmNote
     End Sub
     Private Sub DBNote_CurrentCellChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DBNote.CurrentCellChanged
         If RowColChangeForb Then Exit Sub
+        If DBNote.CurrentCell.RowNumber < 0 Then Exit Sub
         Dim r As Integer = DBNote.CurrentCell.RowNumber
         Dim c As Integer = DBNote.CurrentCell.ColumnNumber
         Try

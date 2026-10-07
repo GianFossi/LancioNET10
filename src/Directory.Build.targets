@@ -4,5 +4,6 @@
   </ItemGroup>
   <ItemGroup Condition="'$(UseWindowsForms)' == 'true'">
     <Compile Include="$(MSBuildThisFileDirectory)Migration/LegacyStatusLabel.vb" Link="Migration/LegacyStatusLabel.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)Migration/LegacyGridView.vb" Link="Migration/LegacyGridView.vb" />
   </ItemGroup>
 </Project>

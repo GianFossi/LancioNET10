@@ -1,5 +1,6 @@
 Option Strict On
 Option Explicit On
+Imports LancioMigration
 Imports VB = Microsoft.VisualBasic
 Imports RoutBase1.clsInizio
 Imports System.Data
@@ -13,10 +14,13 @@ Friend Class frmScheda
     Private GiaFatto As Boolean
 #Region "Codice generato dalla finestra di progettazione Windows Form "
 	Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
 		MyBase.New()
         IsInitializing = True
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
         IsInitializing = False
         HelpProvider1.HelpNamespace = RadiceHelp
     End Sub
@@ -112,8 +116,8 @@ Friend Class frmScheda
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents _GridAm_0 As System.Windows.Forms.DataGrid
-    Friend WithEvents _GridSy_0 As System.Windows.Forms.DataGrid
+    Friend WithEvents _GridAm_0 As Global.LancioMigration.LegacyGridView
+    Friend WithEvents _GridSy_0 As Global.LancioMigration.LegacyGridView
     Friend WithEvents _lblCreep_0 As System.Windows.Forms.Label
     Public WithEvents _txtCreep_0 As System.Windows.Forms.TextBox
     Public WithEvents _lblF_0 As System.Windows.Forms.Label
@@ -134,8 +138,8 @@ Friend Class frmScheda
         Me._Text1_3 = New System.Windows.Forms.TextBox
         Me._Picture1_0 = New System.Windows.Forms.Panel
         Me._lblF_0 = New System.Windows.Forms.Label
-        Me._GridSy_0 = New System.Windows.Forms.DataGrid
-        Me._GridAm_0 = New System.Windows.Forms.DataGrid
+        Me._GridSy_0 = New Global.LancioMigration.LegacyGridView
+        Me._GridAm_0 = New Global.LancioMigration.LegacyGridView
         Me._cmbMWDTrule_0 = New System.Windows.Forms.ComboBox
         Me._cmbCurve_0 = New System.Windows.Forms.ComboBox
         Me._Text2_0 = New System.Windows.Forms.TextBox
@@ -417,7 +421,7 @@ Friend Class frmScheda
         '_GridSy_0
         '
         Me._GridSy_0.DataMember = ""
-        Me._GridSy_0.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me._GridSy_0.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me._GridSy_0.Location = New System.Drawing.Point(8, 152)
         Me._GridSy_0.Name = "_GridSy_0"
         Me._GridSy_0.Size = New System.Drawing.Size(528, 80)
@@ -425,11 +429,9 @@ Friend Class frmScheda
         '
         '_GridAm_0
         '
-        Me._GridAm_0.AllowSorting = False
-        Me._GridAm_0.CaptionVisible = False
         Me._GridAm_0.ColumnHeadersVisible = False
         Me._GridAm_0.DataMember = ""
-        Me._GridAm_0.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me._GridAm_0.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me._GridAm_0.Location = New System.Drawing.Point(8, 64)
         Me._GridAm_0.Name = "_GridAm_0"
         Me._GridAm_0.Size = New System.Drawing.Size(528, 88)
@@ -1639,7 +1641,7 @@ Friend Class frmScheda
     End Sub
     Private Sub AggiornaGriglie(ByVal k As Short)
         Dim r As Rectangle
-        Dim ts As DataGridTableStyle
+        Dim ts As System.Collections.Generic.List(Of DataGridViewColumn)
         Dim kk As Short
         IndCaract = k
         _GridAm_0.Enabled = False
@@ -1647,55 +1649,55 @@ Friend Class frmScheda
         RiempiValori(k, True)
         With _GridAm_0
             .ColumnHeadersVisible = False
-            .CaptionVisible = False
             .SetDataBinding(dvGridAm, "")
         End With
         With _GridSy_0
             .ColumnHeadersVisible = False
-            .CaptionVisible = False
             .SetDataBinding(dvGridSy, "")
         End With
         Try
-            Dim cs As DataGridTextBoxColumn
-            ts = New DataGridTableStyle
+            Dim cs As LegacyTextColumn
+            ts = New System.Collections.Generic.List(Of DataGridViewColumn)
             For kk = 0 To 11
-                cs = New DataGridTextBoxColumn
+                cs = New LegacyTextColumn
                 With cs
                     .Width = 39
                     .Alignment = HorizontalAlignment.Right
                     .MappingName = "dato" & kk.ToString
                 End With
-                ts.GridColumnStyles.Add(cs)
+                ts.Add(cs)
             Next
-            _GridAm_0.TableStyles.Add(ts)
-            With _GridAm_0.TableStyles(0)
+            _GridAm_0.Columns.Clear()
+            _GridAm_0.AutoGenerateColumns = False
+            _GridAm_0.Columns.AddRange(ts.ToArray())
+            With _GridAm_0
                 .PreferredRowHeight = 19
                 .PreferredColumnWidth = 39
-                .RowHeaderWidth = 50
+                .RowHeadersWidth = 50
                 .RowHeadersVisible = True
                 .ColumnHeadersVisible = False
-                .HeaderBackColor = Color.Yellow
-                .MappingName = "Am"
+                .ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow
             End With
-            ts = New DataGridTableStyle
+            ts = New System.Collections.Generic.List(Of DataGridViewColumn)
             For kk = 0 To 11
-                cs = New DataGridTextBoxColumn
+                cs = New LegacyTextColumn
                 With cs
                     .Width = 39
                     .Alignment = HorizontalAlignment.Right
                     .MappingName = "dato" & kk.ToString
                 End With
-                ts.GridColumnStyles.Add(cs)
+                ts.Add(cs)
             Next
-            _GridSy_0.TableStyles.Add(ts)
-            With _GridSy_0.TableStyles(0)
+            _GridSy_0.Columns.Clear()
+            _GridSy_0.AutoGenerateColumns = False
+            _GridSy_0.Columns.AddRange(ts.ToArray())
+            With _GridSy_0
                 .PreferredRowHeight = 19
                 .PreferredColumnWidth = 39
-                .RowHeaderWidth = 50
+                .RowHeadersWidth = 50
                 .RowHeadersVisible = True
                 .ColumnHeadersVisible = False
-                .HeaderBackColor = Color.Yellow
-                .MappingName = "Sy"
+                .ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow
             End With
             With _GridAm_0
                 r = .GetCellBounds(3, 11)

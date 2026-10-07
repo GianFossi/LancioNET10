@@ -1,5 +1,6 @@
 Option Strict On
 Option Explicit On
+Imports LancioMigration
 Imports System.Data
 Imports System.Data.OleDb
 Friend Class frmDati
@@ -44,40 +45,39 @@ Friend Class frmDati
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
-    Friend WithEvents DBValori As System.Windows.Forms.DataGrid
-    Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn5 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn7 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn8 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn9 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn10 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn11 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn12 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn13 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn14 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn15 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn16 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn17 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn18 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn19 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn20 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn21 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn22 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn23 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn24 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn25 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn26 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn27 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn28 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn29 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn30 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn31 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn32 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DBValori As Global.LancioMigration.LegacyGridView
+    Friend WithEvents DataGridTextBoxColumn1 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn2 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn3 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn4 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn5 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn6 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn7 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn8 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn9 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn10 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn11 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn12 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn13 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn14 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn15 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn16 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn17 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn18 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn19 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn20 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn21 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn22 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn23 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn24 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn25 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn26 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn27 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn28 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn29 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn30 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn31 As Global.LancioMigration.LegacyTextColumn
+    Friend WithEvents DataGridTextBoxColumn32 As Global.LancioMigration.LegacyTextColumn
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -87,40 +87,39 @@ Friend Class frmDati
         Me._Label1_0 = New System.Windows.Forms.Label
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label1_2 = New System.Windows.Forms.Label
-        Me.DBValori = New System.Windows.Forms.DataGrid
-        Me.DataGridTableStyle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn5 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn6 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn7 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn8 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn9 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn10 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn11 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn12 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn13 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn14 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn15 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn16 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn17 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn18 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn19 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn20 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn21 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn22 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn23 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn24 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn25 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn26 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn27 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn28 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn29 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn30 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn31 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn32 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.DBValori = New Global.LancioMigration.LegacyGridView
+        Me.DataGridTextBoxColumn1 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn2 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn3 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn4 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn5 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn6 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn7 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn8 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn9 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn10 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn11 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn12 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn13 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn14 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn15 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn16 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn17 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn18 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn19 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn20 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn21 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn22 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn23 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn24 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn25 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn26 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn27 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn28 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn29 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn30 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn31 = New Global.LancioMigration.LegacyTextColumn
+        Me.DataGridTextBoxColumn32 = New Global.LancioMigration.LegacyTextColumn
         CType(Me.DBValori, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -206,22 +205,18 @@ Friend Class frmDati
         '
         'DBValori
         '
-        Me.DBValori.CaptionVisible = False
         Me.DBValori.DataMember = ""
-        Me.DBValori.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.DBValori.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.DBValori.Location = New System.Drawing.Point(8, 48)
         Me.DBValori.Name = "DBValori"
         Me.DBValori.Size = New System.Drawing.Size(624, 248)
         Me.DBValori.TabIndex = 6
-        Me.DBValori.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.DataGridTableStyle1})
         '
         'DataGridTableStyle1
         '
-        Me.DataGridTableStyle1.AllowSorting = False
-        Me.DataGridTableStyle1.DataGrid = Me.DBValori
-        Me.DataGridTableStyle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6, Me.DataGridTextBoxColumn7, Me.DataGridTextBoxColumn8, Me.DataGridTextBoxColumn9, Me.DataGridTextBoxColumn10, Me.DataGridTextBoxColumn11, Me.DataGridTextBoxColumn12, Me.DataGridTextBoxColumn13, Me.DataGridTextBoxColumn14, Me.DataGridTextBoxColumn15, Me.DataGridTextBoxColumn16, Me.DataGridTextBoxColumn17, Me.DataGridTextBoxColumn18, Me.DataGridTextBoxColumn19, Me.DataGridTextBoxColumn20, Me.DataGridTextBoxColumn21, Me.DataGridTextBoxColumn22, Me.DataGridTextBoxColumn23, Me.DataGridTextBoxColumn24, Me.DataGridTextBoxColumn25, Me.DataGridTextBoxColumn26, Me.DataGridTextBoxColumn27, Me.DataGridTextBoxColumn28, Me.DataGridTextBoxColumn29, Me.DataGridTextBoxColumn30, Me.DataGridTextBoxColumn31, Me.DataGridTextBoxColumn32})
-        Me.DataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGridTableStyle1.MappingName = ""
+        Me.DBValori.AutoGenerateColumns = False
+        Me.DBValori.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6, Me.DataGridTextBoxColumn7, Me.DataGridTextBoxColumn8, Me.DataGridTextBoxColumn9, Me.DataGridTextBoxColumn10, Me.DataGridTextBoxColumn11, Me.DataGridTextBoxColumn12, Me.DataGridTextBoxColumn13, Me.DataGridTextBoxColumn14, Me.DataGridTextBoxColumn15, Me.DataGridTextBoxColumn16, Me.DataGridTextBoxColumn17, Me.DataGridTextBoxColumn18, Me.DataGridTextBoxColumn19, Me.DataGridTextBoxColumn20, Me.DataGridTextBoxColumn21, Me.DataGridTextBoxColumn22, Me.DataGridTextBoxColumn23, Me.DataGridTextBoxColumn24, Me.DataGridTextBoxColumn25, Me.DataGridTextBoxColumn26, Me.DataGridTextBoxColumn27, Me.DataGridTextBoxColumn28, Me.DataGridTextBoxColumn29, Me.DataGridTextBoxColumn30, Me.DataGridTextBoxColumn31, Me.DataGridTextBoxColumn32})
+        Me.DBValori.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         '
         'DataGridTextBoxColumn1
         '
@@ -513,7 +508,7 @@ Friend Class frmDati
                 iFound = 1
             End If
         End If
-        DBValori.CurrentCell = New DataGridCell(iFound, DBValori.CurrentCell.ColumnNumber)
+        DBValori.CurrentCell = New GridPosition(iFound, DBValori.CurrentCell.ColumnNumber)
     End Sub
     Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
         If m.Agganciato Then If IndiceTab <> 1 Then IndiceRig = CShort(Valori.Rows(CShort(DBValori.CurrentRowIndex))(0)) '.AbsolutePosition + 1
@@ -563,7 +558,7 @@ Friend Class frmDati
         Hide()
     End Sub
     Private Sub frmDati_Activated(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Activated
-        Dim c As DataGridColumnStyle
+        Dim c As LegacyTextColumn
         Dim rr As New DataTable
         Dim i As Integer
         Dim myDataRow, myDataRow1 As DataRow
@@ -658,13 +653,12 @@ Friend Class frmDati
         If m.Agganciato Then
             dvValori.Sort = "ID"
         End If
-        DBValori.TableStyles(0).MappingName = "Valori"
-        DBValori.TableStyles(0).ColumnHeadersVisible = m.Agganciato
-        For i = 0 To DBValori.TableStyles(0).GridColumnStyles.Count - 1
-            c = DBValori.TableStyles(0).GridColumnStyles(i)
+        DBValori.ColumnHeadersVisible = m.Agganciato
+        For i = 0 To DBValori.Columns.Count - 1
+            c = DirectCast(DBValori.Columns(i), LegacyTextColumn)
             c.Alignment = HorizontalAlignment.Right
             If i = 0 Or i > Valori.Columns.Count - 1 Then
-                c.ResetHeaderText()
+                c.HeaderText = ""
                 c.Width = 0
             ElseIf i = 1 Then
                 If IndiceTab = 1 Then
