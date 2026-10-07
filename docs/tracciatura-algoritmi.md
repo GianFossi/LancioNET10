@@ -37,7 +37,7 @@ di scambio. Per i fasci a U a fontana aggiunge tre problemi distinti:
 2. accoppiare ogni foro interno con un foro esterno senza bloccare il montaggio;
 3. simulare l'infilaggio tridimensionale e ricavare sovraltezze e sequenza.
 
-![Flusso complessivo del modulo](diagrams/traccia-overview.svg)
+![Flusso complessivo del modulo](diagrams/traccia-overview.png)
 
 Le strutture principali sono contenute in `clsTracciatura.typDaTos`. La matrice
 `bu(fila,posizione)` codifica il layout: `1` indica un foro/tubo presente, `0`
@@ -80,7 +80,7 @@ La routine centrale è `CalcolaTrac`. Non colloca semplicemente punti in un
 cerchio: esegue un ciclo iterativo perché numero tubi, OTL, diametro e
 disposizione delle file si influenzano reciprocamente.
 
-![Calcolo iterativo del layout](diagrams/traccia-layout.svg)
+![Calcolo iterativo del layout](diagrams/traccia-layout.png)
 
 Passo per passo:
 
@@ -107,7 +107,7 @@ Passo per passo:
 
 # 4. Tipologie di fascio
 
-![Confronto delle quattro famiglie](diagrams/traccia-families.svg)
+![Confronto delle quattro famiglie](diagrams/traccia-families.png)
 
 ## 4.1 Teste fisse (`TesteFisse = 1`)
 
@@ -149,7 +149,7 @@ corona esterna e dataset `1` per quella interna. Non è quindi un semplice
 caso grafico del fascio U: richiede due tracciature compatibili e un problema
 di accoppiamento/montaggio.
 
-![Pipeline completa della fontana](diagrams/traccia-fontana.svg)
+![Pipeline completa della fontana](diagrams/traccia-fontana.png)
 
 # 5. Fontana: generazione e bilanciamento
 
@@ -178,41 +178,372 @@ numero richiesto. `inizio2` decide lo stato successivo:
 - una zona ha meno fori del richiesto: soluzione impossibile;
 - esistono fori eccedenti: richiede bilanciamento.
 
-`Bilancio` ordina le posizioni e marca come vuote (`bu = 0`) quelle eccedenti,
-aggiornando conteggi per fila, settore e totale. Il criterio mira a mantenere
-uniformità angolare e corrispondenza tra le due zone; la documentazione legacy
-avverte che il bilanciamento automatico non garantisce l'esistenza di un
-aggancio e può richiedere correzioni manuali.
+`Bilancio` non crea ancora le coppie. Prima `DistInMem` enumera le posizioni,
+calcola il raggio e le riordina prevalentemente per raggio decrescente; un
+secondo passaggio cerca di mantenere vicini settori adiacenti nei gruppi con
+raggio quasi uguale (`|Δr| < 0,1`). Poi elimina dall'inizio dell'elenco tante
+posizioni quante sono eccedenti, marcando la cella originale `bu = "0"` e
+aggiornando i conteggi di fila, settore e corona.
 
-# 6. Fontana: algoritmo di aggancio
+```text
+DistInMem()       // coordinate + raggio; ordine prevalentemente decrescente
 
-L'aggancio costruisce una corrispondenza biunivoca tra fori interni ed esterni.
-Le strutture chiave sono `Accoppia(tubo,zona)`, `IndT1(coppia)` e
-`IndT2(coppia)`.
+PER zona = ESTERNA, INTERNA
+    totale = ktotal(zona)
+    SE ntubi(zona) > 0
+        obiettivo = ntubi(zona)
+    ALTRIMENTI SE zona = ESTERNA
+        obiettivo = ktotal(INTERNA)
+    ALTRIMENTI
+        obiettivo = ktotal(INTERNA)
+    FINE SE
 
-![Algoritmo di aggancio](diagrams/traccia-aggancio.svg)
+    PER i = 1 .. totale-obiettivo
+        (fila,posizione,settore) = riferimenti del foro ordinato i
+        bu[fila,posizione] = "0"
+        NumeroTubiFila[fila]--
+        NumeroTubiSettore[settore]--
+        ktotal(zona)--
+    FINE PER
+FINE PER
+```
 
-Per la coppia successiva:
+Di conseguenza il bilanciamento modifica il set di fori ammessi **prima** che
+`CoorInMem` assegni gli identificativi usati da `Aggancia`. Non effettua un
+matching fra corone e non garantisce da solo che il matching esista; la
+documentazione legacy prevede infatti correzioni manuali nei casi intrappolati.
 
-1. sceglie il foro **interno** libero più lontano dal centro;
-2. valuta ogni foro **esterno** libero;
-3. calcola distanza e differenza angolare rispetto alla direzione radiale;
-4. ordina col costo implementato
+# 6. Fontana: algoritmo di aggancio, in dettaglio
 
-`J = d × (1 + Fact × Δθ / (2π))`
+L'aggancio costruisce una corrispondenza biunivoca fra i fori della corona
+interna (`zona = 1`) e quelli della corona esterna (`zona = 0`). Non usa una
+ricerca globale dell'abbinamento ottimo: è un algoritmo **greedy con filtri e
+backtracking locale**. Questa distinzione è importante quando si confronta il
+risultato del programma con un algoritmo moderno di matching.
 
-dove `Fact` è il fattore di strategia letto dall'INI;
-5. `Sorvolo` rifiuta il collegamento se il segmento passa troppo vicino a un
-   foro ancora libero: la soglia usa il diametro e l'interferenza ammessa;
-6. `VerifInters` controlla la compatibilità con la geometria già costruita;
-7. se nessun candidato funziona, l'algoritmo torna indietro, libera coppie
-   precedenti e prova alternative. Può anche ridurre progressivamente `Fact`;
-8. se il backtracking non trova soluzione, evidenzia il foro critico e chiede
-   un nuovo bilanciamento; altrimenti scrive le coppie nel file `.COO`.
+![Algoritmo di aggancio](diagrams/traccia-aggancio.png)
 
-Il controllo di non-sorvolo non dimostra da solo la montabilità tridimensionale:
-serve a evitare che una forcina impegni la proiezione di un foro che dovrà
-essere utilizzato più tardi.
+## 6.1 Le tre nozioni di “ordine” non vanno confuse
+
+Il software usa tre ordinamenti differenti, in momenti differenti:
+
+| Momento | Criterio effettivo | Scopo |
+|---|---|---|
+| Enumerazione (`CoorInMem`) | zona, settore crescente, fila crescente, posizione crescente | assegnare un indice stabile a ogni foro |
+| Costruzione delle coppie (`Aggancia`) | interno libero a raggio massimo; esterni provati per costo crescente `J` | decidere chi viene collegato con chi |
+| Sequenza finale (`Riordino`) | angolo corretto con `Anomal0`; quasi-parità angolare: raggio interno decrescente | stabilire l'ordine di montaggio/controllo |
+
+![I tre ordinamenti distinti](diagrams/traccia-ordinamenti.png)
+
+Quindi la risposta breve è: **il raggio decide quale foro interno trattare per
+primo; distanza e deviazione angolare classificano gli esterni; l'angolo
+polare ordina le coppie soltanto dopo che gli abbinamenti sono già stati
+decisi.**
+
+## 6.2 Come vengono numerati e memorizzati i fori
+
+`CoorInMem` percorre separatamente le due corone. Per ciascuna corona visita i
+settori, le file del settore e le posizioni della fila. `CoorXY` traduce la
+matrice compatta `bu` in coordinate cartesiane; soltanto `iCod = 0`, cioè una
+cella `bu = "1"`, diventa un foro disponibile.
+
+```text
+PER zona = 0, 1
+    idForo = 0
+    PER settore = 1 .. NumeroSettori(zona)
+        PER fila = FilaIniziale(settore) .. FilaFinale(settore)
+            SE fila > 0
+                PER posizione = 1 .. ici(fila)
+                    (x, y, codice) = CoorXY(zona, fila, posizione)
+                    SE codice = 0
+                        idForo = idForo + 1
+                        PuntiD[idForo,zona]    = (x,y)
+                        DistCentro[...]       = sqrt(x²+y²)
+                        Anomal[...]           = atan2 normalizzato da arco(...)
+                        Fila[...]             = fila
+                        Posizbu[...]          = posizione
+                        Settore[...]          = settore
+                    FINE SE
+                FINE PER
+            FINE SE
+        FINE PER
+    FINE PER
+FINE PER
+```
+
+L'indice non rappresenta né il raggio né la vicinanza fra le due corone. A
+parità dei criteri numerici usati più avanti, prevale però il primo elemento
+incontrato in questo ordine, perché i confronti del legacy usano `<` o `>` e
+non sostituiscono un valore uguale.
+
+## 6.3 Stato dell'accoppiamento
+
+| Struttura | Significato |
+|---|---|
+| `PuntiD(id,zona)` | coordinate cartesiane del centro del foro |
+| `Accoppia(id,zona)` | `0` se libero, altrimenti numero della coppia assegnata |
+| `IndT1(coppia)` | indice del foro interno della coppia |
+| `IndT2(coppia)` | indice del foro esterno della coppia |
+| `NewInd(k)` | indice reale del k-esimo candidato esterno |
+| `NewDist(k)` | costo del candidato; il segno negativo significa “già provato” |
+| `Fila`, `Posizbu`, `Settore` | provenienza del foro nella matrice geometrica |
+
+All'avvio gli array di assegnazione vengono azzerati. `Aggancia` imposta
+esplicitamente `Fact = 2`; pertanto in questa routine il valore iniziale non è
+quello eventualmente letto in precedenza dall'INI. Se l'intero tentativo deve
+essere rigenerato, `Fact` viene diminuito di `0,25`, fino al limite descritto
+nel paragrafo 6.9.
+
+## 6.4 Scelta del foro della corona interna
+
+Per ogni nuova coppia il programma spazzola **tutti** i fori interni e sceglie
+quello libero con distanza massima dall'origine:
+
+```text
+raggioMigliore = -1
+interno = nessuno
+
+PER i = 1 .. numeroForiInterni
+    SE Accoppia[i,INTERNA] = 0
+        r = sqrt(PuntiD[i,INTERNA].x² + PuntiD[i,INTERNA].y²)
+        SE r > raggioMigliore
+            raggioMigliore = r
+            interno = i
+        FINE SE
+    FINE SE
+FINE PER
+
+SE interno esiste
+    Accoppia[interno,INTERNA] = numeroCoppia
+    IndT1[numeroCoppia] = interno
+ALTRIMENTI
+    accoppiamento terminato
+FINE SE
+```
+
+È dunque una selezione ripetuta “dall'esterno verso il centro”. Non viene
+eseguito prima un sort completo: a ogni coppia il massimo viene cercato con
+una nuova scansione lineare. Due interni allo stesso raggio sono trattati
+nell'ordine di enumerazione di `CoorInMem`.
+
+## 6.5 Generazione di tutti i candidati esterni
+
+Fissato l'interno `I`, il codice spazzola l'intero set esterno. Un foro `E` è
+candidato se non è ancora assegnato. Esiste inoltre il controllo legacy
+`indiceEsterno <> indiceInterno`: confronta identificativi appartenenti a due
+array distinti e non una posizione geometrica; va preservato nei test di
+regressione, ma non va interpretato come filtro di distanza.
+
+Per ogni candidato calcola:
+
+```text
+d       = sqrt((E.x-I.x)² + (E.y-I.y)²)
+rI      = sqrt(I.x² + I.y²)
+angRad  = 0                         se rI è circa zero
+          arco(I.x/rI, I.y/rI)      altrimenti
+angIE   = arco((E.x-I.x)/d, (E.y-I.y)/d)
+delta   = abs(angIE-angRad)
+SE delta > PI: delta = 2*PI-delta
+
+J(E|I) = d * (1 + Fact * delta/(2*PI))
+```
+
+`delta` è quindi la deviazione minima, compresa fra `0` e `π`, fra la
+direzione radiale uscente dall'origine attraverso `I` e il segmento `I→E`.
+Con `Fact = 2`, la penalità moltiplicativa varia da `1` (direzione radiale) a
+`2` (direzione opposta). L'algoritmo favorisce collegamenti corti e radiali,
+ma una maggiore radialità può compensare una distanza geometrica maggiore.
+
+## 6.6 “Ordina” non ordina l'array: estrae il minimo successivo
+
+La funzione legacy `Ordina` esegue una scansione di `NewDist` e restituisce la
+posizione del più piccolo valore strettamente positivo. Subito dopo ne cambia
+il segno. Le chiamate successive ignorano quindi i candidati già provati.
+
+```text
+FUNZIONE ProssimoCandidato(mode)
+    SE mode = RESET
+        PER ogni k: SE NewDist[k] < 0: NewDist[k] = -NewDist[k]
+    FINE SE
+
+    minimo = +infinito
+    posizione = 0
+    PER k = 1 .. numeroCandidati
+        SE NewDist[k] > 0 E NewDist[k] < minimo
+            minimo = NewDist[k]
+            posizione = k
+        FINE SE
+    FINE PER
+    NewDist[posizione] = -NewDist[posizione]
+    RITORNA posizione
+FINE FUNZIONE
+```
+
+È una enumerazione lazy per costo crescente, equivalente a ripetere una
+selezione del minimo. A parità esatta di costo vince il primo candidato
+inserito, quindi il primo nell'ordine esterno di `CoorInMem`.
+
+## 6.7 Primo filtro: `Sorvolo`
+
+Per la coppia provvisoria `I→E`, `Sorvolo` considera **entrambi i dataset** e
+scandisce tutti i fori ancora liberi, esclusi i due estremi attuali. Per ogni
+foro libero `P` calcola la proiezione lungo il segmento e la distanza
+perpendicolare dalla sua retta.
+
+```text
+L = lunghezza(I,E)
+PER zona = ESTERNA, INTERNA
+    PER ogni foro libero P della zona, P diverso dall'estremo corrente
+        s = proiezione di (P-I) sulla direzione unitaria I→E
+        SE 0 < s < L                       // P cade fra i due estremi
+            h = distanza(P, retta I→E)
+            soglia = dtubo(zona) - Interf(zona)
+            SE h < soglia
+                RIFIUTA: la coppia sorvola P
+            FINE SE
+        FINE SE
+    FINE PER
+FINE PER
+ACCETTA IL FILTRO
+```
+
+Il confronto nel sorgente è
+`h < (dtubo/2)*2 - Interf`, quindi esattamente `dtubo - Interf`. I fori già
+assegnati non sono controllati qui; lo scopo specifico è non chiudere o
+ostruire, in proiezione, un foro che deve ancora essere utilizzato. Se il
+candidato fallisce, viene richiesto a `Ordina` il successivo costo positivo e
+l'intera scansione ricomincia.
+
+## 6.8 Secondo filtro: `VerifInters`
+
+Questo nome può trarre in inganno: nella versione corrente non confronta il
+segmento con tutte le coppie precedenti. Controlla se `I→E` attraversa la zona
+circolare centrale, modellata dalla circonferenza di raggio `cinter` con una
+fascia legata a `dtubo/2`.
+
+```text
+SE cinter < dtubo/2
+    RITORNA valido
+FINE SE
+
+intersezioni = intersezioni(retta E→I,
+                            cerchio centrato in (0,0),
+                            raggio cinter,
+                            fascia dtubo/2)
+valido = vero
+
+PER ciascuna intersezione Q restituita
+    a = dot(Q-E, direzione E→I)
+    b = dot(Q-I, direzione E→I)
+    SE a*b < 0       // Q è internamente al segmento E-I
+        valido = falso
+    FINE SE
+FINE PER
+RITORNA valido
+```
+
+La coppia è ammessa solo se `Sorvolo = 0` **e** `VerifInters = vero`.
+
+## 6.9 Cosa succede quando nessun candidato è valido
+
+Esistono due livelli di recupero:
+
+1. **alternativa per lo stesso interno:** finché esistono costi positivi,
+   prova il candidato successivo. Esauriti i candidati, `Ordina(mode=1)`
+   ripristina i segni e restituisce nuovamente il minimo, che viene fatto
+   transitare nel ramo di fallimento;
+2. **backtracking sulle coppie:** il programma arretra nelle coppie già
+   create, cerca una posizione precedente compatibile con l'interno rimasto
+   intrappolato, cancella graficamente e logicamente le assegnazioni dalla
+   profondità scelta in avanti, colloca l'interno nella coppia arretrata e
+   riprende la costruzione.
+
+Pseudocodice strutturale del recupero:
+
+```text
+SE candidato fallisce definitivamente
+    evidenzia interno intrappolato
+    SE utente annulla: termina senza soluzione
+
+    coppiaOriginale = coppiaCorrente
+    SE profonditaBacktracking > 0
+        coppiaCorrente = profonditaBacktracking
+
+    RIPETI
+        coppiaCorrente--
+        SE coppiaCorrente = 1: termina senza soluzione
+
+        esternoPrecedente = IndT2[coppiaCorrente]
+        SE VerifInters(esternoPrecedente, internoIntrappolato)
+           E la profondità consente di arretrare
+            PER c = coppiaCorrente .. coppiaOriginale-1
+                libera l'interno di c
+                per c successive libera anche l'esterno di c
+                cancella il collegamento disegnato
+            FINE PER
+            libera l'interno della coppia originale
+            assegna internoIntrappolato alla coppia arretrata
+            SE Sorvolo(internoIntrappolato, esternoPrecedente) = 0
+                profonditaBacktracking = coppiaCorrente
+                riprendi dalla coppia successiva
+            FINE SE
+        FINE SE
+    FINCHÉ non trova un punto di ripresa
+FINE SE
+```
+
+Se invece una scansione globale resta incompleta, il codice diminuisce
+`Fact` di `0,25`, rigenera la tracciatura esterna (`SubTraccia(0)` e
+`datiout(0)`) e ricomincia da zero. Partendo da `2`, sono possibili i valori
+`1,75, 1,50, …, -0,25`; quando la riduzione porta `Fact <= -0,5`, termina con
+“Non è stato possibile trovare una soluzione”. Un `Fact` progressivamente
+più piccolo riduce il peso della direzione angolare rispetto alla distanza.
+
+## 6.10 Registrazione della coppia e scansione completa
+
+Superati i filtri:
+
+```text
+Accoppia[esterno,ESTERNA] = numeroCoppia
+IndT2[numeroCoppia] = esterno
+disegna segmento interno→esterno
+passa alla coppia successiva
+```
+
+Il ciclo termina quando non esiste più un interno libero. Il file `.COO`
+registra per ogni coppia: numero, coordinate interne ed esterne, fila e
+posizione `bu` dei due estremi e identificativi `IndT1`/`IndT2`. Se un `.COO`
+preesistente viene accettato dall'utente, il programma recupera direttamente
+gli identificativi e non riesegue il matching.
+
+## 6.11 Esempio numerico della graduatoria
+
+Si consideri l'interno `I=(30,40) mm`: il suo raggio è `50 mm` e la direzione
+radiale vale `53,13°`. Tre esterni liberi, tutti a distanza `50 mm`, danno con
+`Fact=2`:
+
+| Candidato | Direzione `I→E` | `Δθ` | Costo `J` |
+|---|---:|---:|---:|
+| A `(60,80)` | `53,13°` | `0°` | `50,00` |
+| C `(30,90)` | `90°` | `36,87°` | `60,24` |
+| B `(80,40)` | `0°` | `53,13°` | `64,76` |
+
+L'ordine di prova è A, C, B. Se A sorvola un foro libero, A viene marcato come
+provato e si passa a C; non si modifica l'interno corrente. Se anche tutti gli
+altri falliscono, scatta il recupero descritto sopra.
+
+## 6.12 Complessità e limiti osservabili
+
+Con `N` fori per corona, la scelta ripetuta degli interni è `O(N²)`. Per ogni
+interno si generano fino a `N` candidati; ogni estrazione del minimo è lineare
+e ogni `Sorvolo` scandisce fino a `2N` fori. Nel caso sfavorevole il solo
+matching è quindi dell'ordine di `O(N³)`, prima del backtracking. Questo spiega
+parte della lentezza sui fasci grandi.
+
+Il controllo di non-sorvolo non dimostra da solo la montabilità
+tridimensionale. Quest'ultima viene affrontata successivamente da `Infila`.
+Inoltre l'algoritmo greedy non garantisce il matching globalmente minimo:
+l'ordine di enumerazione e le scelte precedenti possono influire sul risultato.
 
 # 7. Fontana: algoritmo di infilaggio
 
@@ -220,7 +551,7 @@ L'infilaggio simula l'introduzione successiva delle forcine. Il codice è nel
 modulo `Infila`; riceve diametro, sovraltezza, interferenza ammessa, altezza
 minima, precisione e gap delle curve.
 
-![Simulazione di infilaggio](diagrams/traccia-infilaggio.svg)
+![Simulazione di infilaggio](diagrams/traccia-infilaggio.png)
 
 ## 7.1 Preparazione
 

@@ -1,0 +1,10 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.2, nodesep=0.35];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  enumerate [label="1. ENUMERAZIONE\ncorona → settore → fila → posizione\nproduce gli ID dei fori"];
+  match [label="2. MATCHING\ninterno: raggio massimo\nesterno: J minimo + filtri"];
+  sequence [label="3. SEQUENZA FINALE\nangolo corretto crescente\nparità: raggio decrescente"];
+  enumerate -> match [label="PuntiD / ID"];
+  match -> sequence [label="IndT1 / IndT2"];
+}
