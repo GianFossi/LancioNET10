@@ -1,0 +1,17 @@
+digraph G {
+  graph [bgcolor="transparent", pad=0.15];
+  node [shape=plain, fontname="Arial"];
+  form [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" BGCOLOR="#eef2f5">
+      <TR><TD COLSPAN="2"><B>Dati iniziali — contorno e processo</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Diametro interno mantello [mm]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>di0 = dt(2)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">D.I. bocchello ingresso [mm]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>dtin = dt(3)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">D.I. bocchello uscita [mm]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>dtout = dt(4)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">Densità ingresso [kg/m³]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>roin = dt(5)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">Portata ingresso [kg/h]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>win = dt(6)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">Densità uscita [kg/m³]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>roout = dt(7)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">Portata uscita [kg/h]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>wout = dt(8)</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">Zona libera ingresso / uscita [mm]</TD><TD BORDER="1" BGCOLOR="white"><FONT COLOR="#174a7e"><B>y0in=dt(9); y0out=dt(10)</B></FONT></TD></TR>
+    </TABLE>
+  >];
+}

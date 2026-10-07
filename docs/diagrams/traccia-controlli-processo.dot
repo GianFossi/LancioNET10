@@ -1,0 +1,31 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.15, nodesep=0.25, ranksep=0.3];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=9];
+  edge [color="#52677d", fontname="Arial", fontsize=8];
+  input [label="Maschera dt(n)\nconversione in typDaTos"];
+  valid [shape=diamond, fillcolor="#fff7d6", label="Enumerazioni, limiti e\ndipendenze validi?"];
+  invalid [fillcolor="#fee2e2", label="IDH_ERR_*\ncalcolo bloccato"];
+  stale [shape=diamond, fillcolor="#fff7d6", label="Dati finali esistenti\nma input modificati?"];
+  invalidate [label="Conferma, salva/elimina\ne invalida ILFINAL"];
+  layout [label="Generazione iterativa\nreticolo, contorno, setti, OTL"];
+  family [shape=diamond, fillcolor="#fff7d6", label="Tipo fascio"];
+  straight [label="Diritti\nconteggi e contorno"];
+  utube [label="U\nradiu, passaggi, curve"];
+  fountain [label="Fontana\ncorone, bilancio, aggancio"];
+  insertion [label="Infila\n.COO, incroci, DistMin, altezze"];
+  sequence [label="Riordino / SorvoloRX\nsequenza, varco, pause"];
+  output [fillcolor="#e6f7ee", label="Output verificati\n.RES .MTO .SEQ DXF/RTF"];
+  input -> valid;
+  valid -> invalid [label="no"];
+  valid -> stale [label="sì"];
+  stale -> invalidate [label="sì"];
+  stale -> layout [label="no"];
+  invalidate -> layout;
+  layout -> family;
+  family -> straight [label="diritti"];
+  family -> utube [label="U"];
+  family -> fountain [label="fontana"];
+  straight -> output;
+  utube -> output;
+  fountain -> insertion -> sequence -> output;
+}

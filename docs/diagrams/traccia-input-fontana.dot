@@ -1,0 +1,17 @@
+digraph G {
+  graph [bgcolor="transparent", pad=0.15]; node [shape=plain, fontname="Arial"];
+  form [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" BGCOLOR="#eef2f5">
+      <TR><TD COLSPAN="2"><B>Parametri specifici — tubi a fontana</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Diametro interno corona esterna [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>cinter = dt(34)/2</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Diametro esterno corona interna [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>coriext = dt(44)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Diametro interno corona interna [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>coriint = dt(42)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Passo corona esterna [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>Passo = dt(16)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Passo corona interna [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>passoint = dt(43)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Interferenza ammessa [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>Interf = dt(47)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Gioco nelle chiome [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>GapCurve = dt(48)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Varco libero RX [°]</TD><TD BORDER="1" BGCOLOR="white"><B>Varco = dt(49)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Anomalia media varco [°]</TD><TD BORDER="1" BGCOLOR="white"><B>Anomal0 = dt(50)</B></TD></TR>
+    </TABLE>
+  >];
+}

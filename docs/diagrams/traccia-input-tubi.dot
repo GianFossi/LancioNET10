@@ -1,0 +1,18 @@
+digraph G {
+  graph [bgcolor="transparent", pad=0.15]; node [shape=plain, fontname="Arial"];
+  form [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#eef2f5">
+      <TR><TD COLSPAN="2"><B>Dati del fascio e dei tubi</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Numero tubi</TD><TD BORDER="1" BGCOLOR="white"><B>ntubi = dt(11)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Tipo passo / tracciatura / fascio</TD><TD BORDER="1" BGCOLOR="white"><B>TipoPasso=dt(12); PassoFascio=dt(13); TipoFascio=dt(14)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Diametro esterno tubo [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>dtubo = dt(15)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Passo tubi [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>Passo = dt(16)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Passo diaframmi / primo diaframma [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>pdiaf=dt(17); p1=dt(18)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Materiale tubo</TD><TD BORDER="1" BGCOLOR="white"><B>matub = dt(19)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Raggio tubi U [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>radiu = dt(21)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Passo iterazioni [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>IncrementoDiametro = dt(22)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Cava / spessore / BWG / lunghezza</TD><TD BORDER="1" BGCOLOR="white"><B>tcava=dt(23); Spmm=dt(24); Spbwg=dt(25); Tublu=dt(26)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Tolleranza / giunto tubo-piastra</TD><TD BORDER="1" BGCOLOR="white"><B>TipoTolleranza=dt(27); TipoGiunto=dt(28)</B></TD></TR>
+    </TABLE>
+  >];
+}

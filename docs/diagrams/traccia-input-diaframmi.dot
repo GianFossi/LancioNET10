@@ -1,0 +1,15 @@
+digraph G {
+  graph [bgcolor="transparent", pad=0.15]; node [shape=plain, fontname="Arial"];
+  form [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#eef2f5">
+      <TR><TD COLSPAN="2"><B>Diaframmi, contorni e accessori</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Taglio / angolo / tipo diaframma</TD><TD BORDER="1" BGCOLOR="white"><B>dt(30); dt(31); dt(32)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Piatto d'urto</TD><TD BORDER="1" BGCOLOR="white"><B>EsistePiatto = (dt(33)=1)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Eventuale diametro interno corona [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>cinter = dt(34)/2</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Sealing strips / rod runners</TD><TD BORDER="1" BGCOLOR="white"><B>ISEAL=dt(35); Nrod=dt(36)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Tacche</TD><TD BORDER="1" BGCOLOR="white"><B>dt(37)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Distanza file su setto H/V [mm]</TD><TD BORDER="1" BGCOLOR="white"><B>DistSuSettoHor=dt(38); DistSuSettoVer=dt(39)</B></TD></TR>
+      <TR><TD ALIGN="LEFT">Calcolo OTL minimo/massimo</TD><TD BORDER="1" BGCOLOR="white"><B>MassimizzaOTL = (dt(40)&gt;0)</B></TD></TR>
+    </TABLE>
+  >];
+}

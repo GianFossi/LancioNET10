@@ -18,4 +18,9 @@ adapter segnalano API o librerie originali ancora mancanti.
 [Debugger ASME e progetto del futuro core F#](docs/engineering-debug-and-new-core.md).
 
 [Modulo Tracciatura: funzionamento, algoritmi e flowchart](docs/Tracciatura-funzionamento-e-algoritmi.pdf)
+
+- [Tracciatura — tubi diritti](docs/Tracciatura-tubi-diritti.pdf)
+- [Tracciatura — tubi a U](docs/Tracciatura-tubi-U.pdf)
+- [Tracciatura — tubi a fontana](docs/Tracciatura-tubi-fontana.pdf)
+- [Tracciatura — controlli di processo](docs/Tracciatura-controlli-processo.pdf)
 ([sorgente modificabile](docs/tracciatura-algoritmi.md)).
