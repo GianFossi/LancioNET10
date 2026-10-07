@@ -1724,7 +1724,7 @@ Cont:
             Case 3 : sql = sql & " ORDER BY Product,Mat,Ordinamento"
             Case 4 : sql = sql & " ORDER BY AlloyUNS,Mat,Ordinamento"
         End Select
-        Dim lv As New Windows.Forms.ListView
+        Dim lv As New System.Windows.Forms.ListView
         Dim lb As New ListBox
         Select Case Bas
             Case 0 : lv = _List1_0

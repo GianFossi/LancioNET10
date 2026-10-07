@@ -4,7 +4,7 @@ Imports System.Windows.Forms
 
 ' Storage is a normal Dictionary; event subscriptions belong to the form.
 Friend Module IndexedControls
-    Public Function IndexOf(Of T As Control)(controls As Dictionary(Of Integer, T), sender As Object) As Short
+    Public Function IndexOf(Of T As Class)(controls As Dictionary(Of Integer, T), sender As Object) As Short
         For Each pair In controls
             If Object.ReferenceEquals(pair.Value, sender) Then Return CShort(pair.Key)
         Next

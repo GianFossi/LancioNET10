@@ -1050,4 +1050,74 @@ Fine:
             MsgBox(e.Message + vbCrLf + e.StackTrace)
         End Try
     End Sub
+    Public Function SuperStampa(ByRef File As String, ByVal VersOffice As Integer, _
+                                Optional ByRef NonAttivare As Boolean = False) As Integer
+        Dim Errore As Boolean = False
+        Dim Cera As Boolean = True
+        If VersOffice = 0 Then Exit Function
+        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
+        Try
+            prApp = CType(GetObject(, "Word.Application"), Word.Application)   '"Word.Application"
+        Catch
+            Cera = False
+            Try
+                If VersOffice = 9 Then
+                    prApp = New Word.Application
+                Else
+                    prApp = CType(CreateObject("Word.Application"), Word.Application) '"Word.Application"
+                End If
+            Catch ex As Exception
+                Errore = True
+            End Try
+        End Try
+        If Errore Then
+            '         Testo = "Impossibile lanciare Word." + vbCrLf
+            ' Testo = Testo + "(" + Err.Description + ")"
+            ' MsgBox Testo, vbCritical + vbOKOnly
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            Return 1
+            '    Motore.MostraAiuto(-IDHS.IDH_WORD_ASSENTE, CType(ChiaviMess.MessCritical + ChiaviMess.MessHelpButton + ChiaviMess.MessOkOnly, ChiaviMess), Err.Description)
+            Exit Function
+        End If
+        Try
+7:          If Not NonAttivare Then
+                prApp.Visible = True
+                prApp.WindowState = Word.WdWindowState.wdWindowStateMaximize
+                If Not Cera Then AppActivate(prApp.Application.Caption)
+            End If
+        Catch
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            Return 2
+        End Try
+        If File.Trim.Length > 0 Then
+            If System.IO.File.Exists(File) Then
+                sOpen(File)
+            Else
+                sOpen("")
+                sSaveAs(File)
+            End If
+        Else
+            sOpen("")
+        End If
+        If Err.Number > 0 Then
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            Return 3
+            '    Testo = "Impossibile aprire " & File & vbCrLf
+            '    Testo = Testo & "(" & Err.Description & ";" & Str(Erl()) & ")"
+            '    MsgBox(Testo, CType(MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, MsgBoxStyle))
+            '    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            '    Stub = Nothing 'Doc = Nothing
+        End If
+        If Not NonAttivare Then sView()
+        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+    End Function
+    Public Sub sLogo(ByRef t As String, Optional ByRef bm As String = "logo")
+        On Error GoTo Fine
+        If Not bm = "fermo" Then
+            prRange = prDoc.Bookmarks.Item(CStr(bm)).Range
+            prRange.Text = ""
+        End If
+        Dim Logo As Word.InlineShape = prRange.InlineShapes.AddPicture(FileName:=t, LinkToFile:=False, SaveWithDocument:=True)
+Fine:
+    End Sub
 End Class

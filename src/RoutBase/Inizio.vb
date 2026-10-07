@@ -195,7 +195,13 @@ Public Class clsInizio
         End If
         Firma = Fir
     End Function
-    Public Sub Immatricolazione(ByRef Documento As StubW2000.clsSW2000, ByRef Comm As String, ByRef numero As String)
+    Public Overloads Sub Immatricolazione(ByRef Documento As StubW2000.clsSW2000, ByRef Comm As String, ByRef numero As String)
+        If Len(numero) <> 5 Then numero = "SC001"
+        Documento.Riempi("NoFBM", Comm, numero)
+        Documento.Riempi("CarInt1", Comm, numero)
+        Documento.NienteGrammatica()
+    End Sub
+    Public Overloads Sub Immatricolazione(ByRef Documento As StubW9.clsSW9, ByRef Comm As String, ByRef numero As String)
         If Len(numero) <> 5 Then numero = "SC001"
         Documento.Riempi("NoFBM", Comm, numero)
         Documento.Riempi("CarInt1", Comm, numero)
@@ -972,6 +978,15 @@ ErrMode:
         End With
     End Sub
     Private Function FileIni() As String
+        ' Explicit local configuration for modern installations; historical fallback remains.
+        Dim configured = Environment.GetEnvironmentVariable("LANCIO_INI")
+        If Not String.IsNullOrWhiteSpace(configured) Then
+            Dim path = System.IO.Path.GetFullPath(configured)
+            If Not System.IO.File.Exists(path) Then
+                Throw New System.IO.FileNotFoundException("LANCIO_INI indica un file di configurazione inesistente.", path)
+            End If
+            Return path
+        End If
         WinSys = Environment.SystemDirectory & gstrSEP_DIR
         If Len(WinSys) = 0 Then Return ""
         ProgMain = "LancioNET" ' GetFileName(QuestoProgramma)

@@ -6,12 +6,16 @@ Public Class frmTira
     Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
     Public Sub New()
+        Me.New(True)
+    End Sub
+    ' Construct controls separately from database initialization for Windows UI checks.
+    Friend Sub New(initializeData As Boolean)
         MyBase.New()
         'Chiamata richiesta dalla progettazione Windows Form.
         Inizializzando = True
         InitializeComponent()
         Inizializzando = False
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -46,8 +50,8 @@ Public Class frmTira
     Public WithEvents _Label1_2 As System.Windows.Forms.Label
     Public WithEvents _Label1_1 As System.Windows.Forms.Label
     Public WithEvents _Label1_0 As System.Windows.Forms.Label
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -77,10 +81,6 @@ Public Class frmTira
         Me._Label1_2 = New System.Windows.Forms.Label
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Text = "Libreria tiranti"
@@ -489,26 +489,34 @@ Public Class frmTira
         Me.Controls.Add(_Label1_2)
         Me.Controls.Add(_Label1_1)
         Me.Controls.Add(_Label1_0)
-        Me.Label1.SetIndex(_Label1_6, CType(6, Short))
-        Me.Label1.SetIndex(_Label1_9, CType(9, Short))
-        Me.Label1.SetIndex(_Label1_8, CType(8, Short))
-        Me.Label1.SetIndex(_Label1_7, CType(7, Short))
-        Me.Label1.SetIndex(_Label1_5, CType(5, Short))
-        Me.Label1.SetIndex(_Label1_4, CType(4, Short))
-        Me.Label1.SetIndex(_Label1_3, CType(3, Short))
-        Me.Label1.SetIndex(_Label1_2, CType(2, Short))
-        Me.Label1.SetIndex(_Label1_1, CType(1, Short))
-        Me.Label1.SetIndex(_Label1_0, CType(0, Short))
-        Me.Text1.SetIndex(_Text1_7, CType(7, Short))
-        Me.Text1.SetIndex(_Text1_6, CType(6, Short))
-        Me.Text1.SetIndex(_Text1_5, CType(5, Short))
-        Me.Text1.SetIndex(_Text1_4, CType(4, Short))
-        Me.Text1.SetIndex(_Text1_3, CType(3, Short))
-        Me.Text1.SetIndex(_Text1_2, CType(2, Short))
-        Me.Text1.SetIndex(_Text1_1, CType(1, Short))
-        Me.Text1.SetIndex(_Text1_0, CType(0, Short))
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Label1.Add(6, _Label1_6)
+        Me.Label1.Add(9, _Label1_9)
+        Me.Label1.Add(8, _Label1_8)
+        Me.Label1.Add(7, _Label1_7)
+        Me.Label1.Add(5, _Label1_5)
+        Me.Label1.Add(4, _Label1_4)
+        Me.Label1.Add(3, _Label1_3)
+        Me.Label1.Add(2, _Label1_2)
+        Me.Label1.Add(1, _Label1_1)
+        Me.Label1.Add(0, _Label1_0)
+        Me.Text1.Add(7, _Text1_7)
+        Me.Text1.Add(6, _Text1_6)
+        Me.Text1.Add(5, _Text1_5)
+        Me.Text1.Add(4, _Text1_4)
+        Me.Text1.Add(3, _Text1_3)
+        Me.Text1.Add(2, _Text1_2)
+        Me.Text1.Add(1, _Text1_1)
+        Me.Text1.Add(0, _Text1_0)
+        For Each control In Text1.Values
+            AddHandler control.KeyDown, AddressOf Text1_KeyDown
+        Next
+        For Each control In Text1.Values
+            AddHandler control.KeyPress, AddressOf Text1_KeyPress
+        Next
+        For Each control In Text1.Values
+            AddHandler control.KeyUp, AddressOf Text1_KeyUp
+        Next
+
     End Sub
 #End Region
     Public iCurr As Short
@@ -584,26 +592,26 @@ Public Class frmTira
         Retri()
         Tirante.Transfer()
     End Sub
-    Private Sub Text1_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text1.KeyDown
+    Private Sub Text1_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Integer = eventArgs.KeyData \ &H10000
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
-    Private Sub Text1_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text1.KeyPress
+    Private Sub Text1_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Short = CShort(Asc(eventArgs.KeyChar))
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
         Stop
     End Sub
-    Private Sub Text1_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text1.KeyUp
+    Private Sub Text1_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Short = CShort(eventArgs.KeyCode)
         Dim Shift As Integer = eventArgs.KeyData \ &H10000
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, KeyCode, Text1(Index), TextArr, Nc)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
+        Call TrattaCar(Index, KeyCode, (Text1(Index)), TextArr, Nc)
     End Sub
     Private Sub Check()
         Dim Autorizz As Boolean

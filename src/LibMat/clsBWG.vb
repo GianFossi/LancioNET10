@@ -1,6 +1,13 @@
 Option Strict On
 Option Explicit On
 Public Class clsBWG
+    ' The calling datasheet expects an API absent from the supplied LibMat version.
+    ' Do not silently return inch thickness as a metric value.
+    Public WriteOnly Property UniMis As Short
+        Set(value As Short)
+            Throw New NotSupportedException("La versione originale di clsBWG.UniMis manca nei sorgenti forniti. Verificare la conversione mm/pollici prima di usare la selezione BWG dal datasheet.")
+        End Set
+    End Property
     Public TipoMat As Short '0,1,2
     Public Diam As Single
     Public BWG As Short

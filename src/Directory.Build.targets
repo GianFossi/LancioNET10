@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup Condition="'$(UseWindowsForms)' == 'true' And '$(GenerateAssemblyInfo)' == 'false'">
+    <Compile Include="$(MSBuildThisFileDirectory)Migration/LegacyWindowsPlatform.vb" Link="Migration/LegacyWindowsPlatform.vb" />
+  </ItemGroup>
+</Project>

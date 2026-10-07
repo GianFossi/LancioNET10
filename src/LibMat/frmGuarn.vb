@@ -9,6 +9,10 @@ Friend Class frmGuarn
     Private gPicture(8) As Drawing.Graphics
 #Region "Codice generato dalla finestra di progettazione Windows Form "
     Public Sub New()
+        Me.New(True)
+    End Sub
+    ' Construct controls separately from database initialization for Windows UI checks.
+    Friend Sub New(initializeData As Boolean)
         MyBase.New()
         Dim j As Short
         'Chiamata richiesta dalla progettazione Windows Form.
@@ -18,7 +22,7 @@ Friend Class frmGuarn
             gPicture(j) = Graphics.FromHwnd(Picture1(j).Handle)
         Next
         IsInitializing = False
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -52,10 +56,10 @@ Friend Class frmGuarn
     Public WithEvents _Label2_0 As System.Windows.Forms.Label
     Public WithEvents _Label1_1 As System.Windows.Forms.Label
     Public WithEvents _Label1_0 As System.Windows.Forms.Label
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Picture1 As Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Picture1 As New System.Collections.Generic.Dictionary(Of Integer, PictureBox)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -106,9 +110,6 @@ Friend Class frmGuarn
         Me._Label2_0 = New System.Windows.Forms.Label
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Picture1 = New Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(Me.components)
         Me._Picture1_8 = New System.Windows.Forms.PictureBox
         Me._Picture1_7 = New System.Windows.Forms.PictureBox
         Me._Picture1_6 = New System.Windows.Forms.PictureBox
@@ -127,7 +128,6 @@ Friend Class frmGuarn
         Me._SSRibbon1_2 = New System.Windows.Forms.Button
         Me._SSRibbon1_1 = New System.Windows.Forms.Button
         Me._SSRibbon1_0 = New System.Windows.Forms.Button
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me._Text1_5 = New System.Windows.Forms.TextBox
         Me._Text1_4 = New System.Windows.Forms.TextBox
         Me._Text1_3 = New System.Windows.Forms.TextBox
@@ -137,10 +137,6 @@ Friend Class frmGuarn
         Me._Label2_4 = New System.Windows.Forms.Label
         Me._Label2_3 = New System.Windows.Forms.Label
         Me.SSFrame10 = New System.Windows.Forms.GroupBox
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Picture1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SSFrame11.SuspendLayout()
         Me.SSFrame10.SuspendLayout()
         Me.SuspendLayout()
@@ -152,7 +148,7 @@ Friend Class frmGuarn
         Me._Text1_7.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_7, CType(7, Short))
+        Me.Text1.Add(7, Me._Text1_7)
         Me._Text1_7.Location = New System.Drawing.Point(198, 224)
         Me._Text1_7.MaxLength = 0
         Me._Text1_7.Name = "_Text1_7"
@@ -169,7 +165,7 @@ Friend Class frmGuarn
         Me._Text1_6.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_6, CType(6, Short))
+        Me.Text1.Add(6, Me._Text1_6)
         Me._Text1_6.Location = New System.Drawing.Point(198, 192)
         Me._Text1_6.MaxLength = 0
         Me._Text1_6.Name = "_Text1_6"
@@ -199,7 +195,7 @@ Friend Class frmGuarn
         Me._Text1_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_2.Enabled = False
         Me._Text1_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_2, CType(2, Short))
+        Me.Text1.Add(2, Me._Text1_2)
         Me._Text1_2.Location = New System.Drawing.Point(198, 158)
         Me._Text1_2.MaxLength = 0
         Me._Text1_2.Name = "_Text1_2"
@@ -216,7 +212,7 @@ Friend Class frmGuarn
         Me._Text1_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_1.Enabled = False
         Me._Text1_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_1, CType(1, Short))
+        Me.Text1.Add(1, Me._Text1_1)
         Me._Text1_1.Location = New System.Drawing.Point(198, 78)
         Me._Text1_1.MaxLength = 0
         Me._Text1_1.Multiline = True
@@ -235,7 +231,7 @@ Friend Class frmGuarn
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_0.Enabled = False
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(198, 46)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Multiline = True
@@ -275,7 +271,7 @@ Friend Class frmGuarn
         Me._Label2_7.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_7, CType(7, Short))
+        Me.Label2.Add(7, Me._Label2_7)
         Me._Label2_7.Location = New System.Drawing.Point(8, 224)
         Me._Label2_7.Name = "_Label2_7"
         Me._Label2_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -289,7 +285,7 @@ Friend Class frmGuarn
         Me._Label2_6.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_6, CType(6, Short))
+        Me.Label2.Add(6, Me._Label2_6)
         Me._Label2_6.Location = New System.Drawing.Point(8, 192)
         Me._Label2_6.Name = "_Label2_6"
         Me._Label2_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -317,7 +313,7 @@ Friend Class frmGuarn
         Me._Label2_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_2, CType(2, Short))
+        Me.Label2.Add(2, Me._Label2_2)
         Me._Label2_2.Location = New System.Drawing.Point(6, 158)
         Me._Label2_2.Name = "_Label2_2"
         Me._Label2_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -330,7 +326,7 @@ Friend Class frmGuarn
         Me._Label2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_1, CType(1, Short))
+        Me.Label2.Add(1, Me._Label2_1)
         Me._Label2_1.Location = New System.Drawing.Point(6, 80)
         Me._Label2_1.Name = "_Label2_1"
         Me._Label2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -343,7 +339,7 @@ Friend Class frmGuarn
         Me._Label2_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_0, CType(0, Short))
+        Me.Label2.Add(0, Me._Label2_0)
         Me._Label2_0.Location = New System.Drawing.Point(8, 46)
         Me._Label2_0.Name = "_Label2_0"
         Me._Label2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -356,7 +352,7 @@ Friend Class frmGuarn
         Me._Label1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_1, CType(1, Short))
+        Me.Label1.Add(1, Me._Label1_1)
         Me._Label1_1.Location = New System.Drawing.Point(0, 19)
         Me._Label1_1.Name = "_Label1_1"
         Me._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -369,7 +365,7 @@ Friend Class frmGuarn
         Me._Label1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_0, CType(0, Short))
+        Me.Label1.Add(0, Me._Label1_0)
         Me._Label1_0.Location = New System.Drawing.Point(0, 0)
         Me._Label1_0.Name = "_Label1_0"
         Me._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -383,7 +379,7 @@ Friend Class frmGuarn
         Me._Picture1_8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_8, CType(8, Short))
+        Me.Picture1.Add(8, Me._Picture1_8)
         Me._Picture1_8.Location = New System.Drawing.Point(8, 464)
         Me._Picture1_8.Name = "_Picture1_8"
         Me._Picture1_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -398,7 +394,7 @@ Friend Class frmGuarn
         Me._Picture1_7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_7, CType(7, Short))
+        Me.Picture1.Add(7, Me._Picture1_7)
         Me._Picture1_7.Location = New System.Drawing.Point(8, 408)
         Me._Picture1_7.Name = "_Picture1_7"
         Me._Picture1_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -413,7 +409,7 @@ Friend Class frmGuarn
         Me._Picture1_6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_6, CType(6, Short))
+        Me.Picture1.Add(6, Me._Picture1_6)
         Me._Picture1_6.Location = New System.Drawing.Point(8, 352)
         Me._Picture1_6.Name = "_Picture1_6"
         Me._Picture1_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -428,7 +424,7 @@ Friend Class frmGuarn
         Me._Picture1_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_5, CType(5, Short))
+        Me.Picture1.Add(5, Me._Picture1_5)
         Me._Picture1_5.Location = New System.Drawing.Point(8, 296)
         Me._Picture1_5.Name = "_Picture1_5"
         Me._Picture1_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -443,7 +439,7 @@ Friend Class frmGuarn
         Me._Picture1_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_4, CType(4, Short))
+        Me.Picture1.Add(4, Me._Picture1_4)
         Me._Picture1_4.Location = New System.Drawing.Point(8, 240)
         Me._Picture1_4.Name = "_Picture1_4"
         Me._Picture1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -458,7 +454,7 @@ Friend Class frmGuarn
         Me._Picture1_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_3, CType(3, Short))
+        Me.Picture1.Add(3, Me._Picture1_3)
         Me._Picture1_3.Location = New System.Drawing.Point(8, 184)
         Me._Picture1_3.Name = "_Picture1_3"
         Me._Picture1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -473,7 +469,7 @@ Friend Class frmGuarn
         Me._Picture1_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_2, CType(2, Short))
+        Me.Picture1.Add(2, Me._Picture1_2)
         Me._Picture1_2.Location = New System.Drawing.Point(8, 128)
         Me._Picture1_2.Name = "_Picture1_2"
         Me._Picture1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -488,7 +484,7 @@ Friend Class frmGuarn
         Me._Picture1_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_1, CType(1, Short))
+        Me.Picture1.Add(1, Me._Picture1_1)
         Me._Picture1_1.Location = New System.Drawing.Point(8, 72)
         Me._Picture1_1.Name = "_Picture1_1"
         Me._Picture1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -503,7 +499,7 @@ Friend Class frmGuarn
         Me._Picture1_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me._Picture1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Picture1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Picture1.SetIndex(Me._Picture1_0, CType(0, Short))
+        Me.Picture1.Add(0, Me._Picture1_0)
         Me._Picture1_0.Location = New System.Drawing.Point(8, 16)
         Me._Picture1_0.Name = "_Picture1_0"
         Me._Picture1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -586,7 +582,7 @@ Friend Class frmGuarn
         Me._Text1_5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_5.Enabled = False
         Me._Text1_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_5, CType(5, Short))
+        Me.Text1.Add(5, Me._Text1_5)
         Me._Text1_5.Location = New System.Drawing.Point(180, 265)
         Me._Text1_5.MaxLength = 0
         Me._Text1_5.Multiline = True
@@ -605,7 +601,7 @@ Friend Class frmGuarn
         Me._Text1_4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_4.Enabled = False
         Me._Text1_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_4, CType(4, Short))
+        Me.Text1.Add(4, Me._Text1_4)
         Me._Text1_4.Location = New System.Drawing.Point(180, 233)
         Me._Text1_4.MaxLength = 0
         Me._Text1_4.Multiline = True
@@ -624,7 +620,7 @@ Friend Class frmGuarn
         Me._Text1_3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_3.Enabled = False
         Me._Text1_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_3, CType(3, Short))
+        Me.Text1.Add(3, Me._Text1_3)
         Me._Text1_3.Location = New System.Drawing.Point(180, 201)
         Me._Text1_3.MaxLength = 0
         Me._Text1_3.Multiline = True
@@ -761,10 +757,12 @@ Friend Class frmGuarn
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Libreria guarnizioni"
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Picture1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
         Me.SSFrame11.ResumeLayout(False)
         Me.SSFrame10.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -900,8 +898,8 @@ Rifai:  Try
         If Guarniz.[Class] = 0 Then Guarniz.[Class] = 1
         cmbClass.SelectedIndex = Guarniz.[Class] - 1
     End Sub
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         Select Case Index
             Case 3 : Guarniz.Alfa = Funzioni.ValVir(Text1(Index).Text)
             Case 4, 6 : Guarniz.Height = Funzioni.ValVir(Text1(Index).Text)

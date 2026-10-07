@@ -6,6 +6,10 @@ Friend Class frmUpdate
     Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
     Public Sub New()
+        Me.New(True)
+    End Sub
+    ' Construct controls separately from database initialization for Windows UI checks.
+    Friend Sub New(initializeData As Boolean)
         MyBase.New()
         If m_vb6FormDefInstance Is Nothing Then
             If m_InitializingDefInstance Then
@@ -22,7 +26,7 @@ Friend Class frmUpdate
         End If
         'Chiamata richiesta dalla progettazione Windows Form.
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -63,11 +67,11 @@ Friend Class frmUpdate
     Public WithEvents _Label2_1 As System.Windows.Forms.Label
     Public WithEvents _Label2_0 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label3 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents chkScelta As Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray
-    Public WithEvents cmdCil As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents txtLibmat As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label3 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public chkScelta As New System.Collections.Generic.Dictionary(Of Integer, CheckBox)
+    Public cmdCil As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public txtLibmat As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -113,11 +117,6 @@ Friend Class frmUpdate
         Me._Label2_1 = New System.Windows.Forms.Label
         Me._Label2_0 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Label3 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.chkScelta = New Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray(Me.components)
-        Me.cmdCil = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.txtLibmat = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.CheckBox1 = New System.Windows.Forms.CheckBox
         Me.CommonDialog1 = New System.Windows.Forms.OpenFileDialog
         Me.RadioButton1 = New System.Windows.Forms.RadioButton
@@ -129,11 +128,6 @@ Friend Class frmUpdate
         Me.txti = New System.Windows.Forms.TextBox
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.txtMat = New System.Windows.Forms.TextBox
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chkScelta, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmdCil, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtLibmat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmdEU
@@ -165,7 +159,7 @@ Friend Class frmUpdate
         Me._chkScelta_0.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_0, CType(0, Short))
+        Me.chkScelta.Add(0, Me._chkScelta_0)
         Me._chkScelta_0.Location = New System.Drawing.Point(328, 216)
         Me._chkScelta_0.Name = "_chkScelta_0"
         Me._chkScelta_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -191,7 +185,7 @@ Friend Class frmUpdate
         Me._cmdCil_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._cmdCil_1.ForeColor = System.Drawing.SystemColors.ControlText
         Me._cmdCil_1.Image = CType(resources.GetObject("_cmdCil_1.Image"), System.Drawing.Image)
-        Me.cmdCil.SetIndex(Me._cmdCil_1, CType(1, Short))
+        Me.cmdCil.Add(1, Me._cmdCil_1)
         Me._cmdCil_1.Location = New System.Drawing.Point(440, 272)
         Me._cmdCil_1.Name = "_cmdCil_1"
         Me._cmdCil_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -207,7 +201,7 @@ Friend Class frmUpdate
         Me._txtLibmat_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtLibmat_1.Enabled = False
         Me._txtLibmat_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtLibmat.SetIndex(Me._txtLibmat_1, CType(1, Short))
+        Me.txtLibmat.Add(1, Me._txtLibmat_1)
         Me._txtLibmat_1.Location = New System.Drawing.Point(128, 272)
         Me._txtLibmat_1.MaxLength = 0
         Me._txtLibmat_1.Name = "_txtLibmat_1"
@@ -222,7 +216,7 @@ Friend Class frmUpdate
         Me._cmdCil_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._cmdCil_0.ForeColor = System.Drawing.SystemColors.ControlText
         Me._cmdCil_0.Image = CType(resources.GetObject("_cmdCil_0.Image"), System.Drawing.Image)
-        Me.cmdCil.SetIndex(Me._cmdCil_0, CType(0, Short))
+        Me.cmdCil.Add(0, Me._cmdCil_0)
         Me._cmdCil_0.Location = New System.Drawing.Point(440, 248)
         Me._cmdCil_0.Name = "_cmdCil_0"
         Me._cmdCil_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -238,7 +232,7 @@ Friend Class frmUpdate
         Me._txtLibmat_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtLibmat_0.Enabled = False
         Me._txtLibmat_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtLibmat.SetIndex(Me._txtLibmat_0, CType(0, Short))
+        Me.txtLibmat.Add(0, Me._txtLibmat_0)
         Me._txtLibmat_0.Location = New System.Drawing.Point(128, 248)
         Me._txtLibmat_0.MaxLength = 0
         Me._txtLibmat_0.Name = "_txtLibmat_0"
@@ -264,7 +258,7 @@ Friend Class frmUpdate
         Me._chkScelta_25.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_25.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_25.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_25, CType(25, Short))
+        Me.chkScelta.Add(25, Me._chkScelta_25)
         Me._chkScelta_25.Location = New System.Drawing.Point(376, 96)
         Me._chkScelta_25.Name = "_chkScelta_25"
         Me._chkScelta_25.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -277,7 +271,7 @@ Friend Class frmUpdate
         Me._chkScelta_24.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_24.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_24.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_24, CType(24, Short))
+        Me.chkScelta.Add(24, Me._chkScelta_24)
         Me._chkScelta_24.Location = New System.Drawing.Point(280, 96)
         Me._chkScelta_24.Name = "_chkScelta_24"
         Me._chkScelta_24.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -290,7 +284,7 @@ Friend Class frmUpdate
         Me._chkScelta_23.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_23.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_23.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_23, CType(23, Short))
+        Me.chkScelta.Add(23, Me._chkScelta_23)
         Me._chkScelta_23.Location = New System.Drawing.Point(144, 216)
         Me._chkScelta_23.Name = "_chkScelta_23"
         Me._chkScelta_23.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -303,7 +297,7 @@ Friend Class frmUpdate
         Me._chkScelta_22.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_22.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_22.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_22, CType(22, Short))
+        Me.chkScelta.Add(22, Me._chkScelta_22)
         Me._chkScelta_22.Location = New System.Drawing.Point(144, 120)
         Me._chkScelta_22.Name = "_chkScelta_22"
         Me._chkScelta_22.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -316,7 +310,7 @@ Friend Class frmUpdate
         Me._chkScelta_21.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_21.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_21, CType(21, Short))
+        Me.chkScelta.Add(21, Me._chkScelta_21)
         Me._chkScelta_21.Location = New System.Drawing.Point(144, 96)
         Me._chkScelta_21.Name = "_chkScelta_21"
         Me._chkScelta_21.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -329,7 +323,7 @@ Friend Class frmUpdate
         Me._chkScelta_8.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_8, CType(8, Short))
+        Me.chkScelta.Add(8, Me._chkScelta_8)
         Me._chkScelta_8.Location = New System.Drawing.Point(8, 216)
         Me._chkScelta_8.Name = "_chkScelta_8"
         Me._chkScelta_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -342,7 +336,7 @@ Friend Class frmUpdate
         Me._chkScelta_6.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_6, CType(6, Short))
+        Me.chkScelta.Add(6, Me._chkScelta_6)
         Me._chkScelta_6.Location = New System.Drawing.Point(8, 192)
         Me._chkScelta_6.Name = "_chkScelta_6"
         Me._chkScelta_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -355,7 +349,7 @@ Friend Class frmUpdate
         Me._chkScelta_4.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_4, CType(4, Short))
+        Me.chkScelta.Add(4, Me._chkScelta_4)
         Me._chkScelta_4.Location = New System.Drawing.Point(8, 168)
         Me._chkScelta_4.Name = "_chkScelta_4"
         Me._chkScelta_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -368,7 +362,7 @@ Friend Class frmUpdate
         Me._chkScelta_7.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_7, CType(7, Short))
+        Me.chkScelta.Add(7, Me._chkScelta_7)
         Me._chkScelta_7.Location = New System.Drawing.Point(8, 144)
         Me._chkScelta_7.Name = "_chkScelta_7"
         Me._chkScelta_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -381,7 +375,7 @@ Friend Class frmUpdate
         Me._chkScelta_2.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_2, CType(2, Short))
+        Me.chkScelta.Add(2, Me._chkScelta_2)
         Me._chkScelta_2.Location = New System.Drawing.Point(8, 120)
         Me._chkScelta_2.Name = "_chkScelta_2"
         Me._chkScelta_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -394,7 +388,7 @@ Friend Class frmUpdate
         Me._chkScelta_1.BackColor = System.Drawing.SystemColors.Control
         Me._chkScelta_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._chkScelta_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkScelta.SetIndex(Me._chkScelta_1, CType(1, Short))
+        Me.chkScelta.Add(1, Me._chkScelta_1)
         Me._chkScelta_1.Location = New System.Drawing.Point(8, 96)
         Me._chkScelta_1.Name = "_chkScelta_1"
         Me._chkScelta_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -407,7 +401,7 @@ Friend Class frmUpdate
         Me._Label3_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_1, CType(1, Short))
+        Me.Label3.Add(1, Me._Label3_1)
         Me._Label3_1.Location = New System.Drawing.Point(8, 272)
         Me._Label3_1.Name = "_Label3_1"
         Me._Label3_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -420,7 +414,7 @@ Friend Class frmUpdate
         Me._Label3_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_0, CType(0, Short))
+        Me.Label3.Add(0, Me._Label3_0)
         Me._Label3_0.Location = New System.Drawing.Point(8, 248)
         Me._Label3_0.Name = "_Label3_0"
         Me._Label3_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -433,7 +427,7 @@ Friend Class frmUpdate
         Me._Label2_3.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_3.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.Label2.SetIndex(Me._Label2_3, CType(3, Short))
+        Me.Label2.Add(3, Me._Label2_3)
         Me._Label2_3.Location = New System.Drawing.Point(384, 64)
         Me._Label2_3.Name = "_Label2_3"
         Me._Label2_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -446,7 +440,7 @@ Friend Class frmUpdate
         Me._Label2_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_2.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.Label2.SetIndex(Me._Label2_2, CType(2, Short))
+        Me.Label2.Add(2, Me._Label2_2)
         Me._Label2_2.Location = New System.Drawing.Point(288, 64)
         Me._Label2_2.Name = "_Label2_2"
         Me._Label2_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -459,7 +453,7 @@ Friend Class frmUpdate
         Me._Label2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_1.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.Label2.SetIndex(Me._Label2_1, CType(1, Short))
+        Me.Label2.Add(1, Me._Label2_1)
         Me._Label2_1.Location = New System.Drawing.Point(168, 64)
         Me._Label2_1.Name = "_Label2_1"
         Me._Label2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -472,7 +466,7 @@ Friend Class frmUpdate
         Me._Label2_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_0.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.Label2.SetIndex(Me._Label2_0, CType(0, Short))
+        Me.Label2.Add(0, Me._Label2_0)
         Me._Label2_0.Location = New System.Drawing.Point(32, 64)
         Me._Label2_0.Name = "_Label2_0"
         Me._Label2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -628,11 +622,18 @@ Friend Class frmUpdate
         Me.Name = "frmUpdate"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "Aggiornamento materiali"
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chkScelta, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmdCil, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtLibmat, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+        For Each control In chkScelta.Values
+            AddHandler control.CheckStateChanged, AddressOf chkScelta_CheckStateChanged
+        Next
+        For Each control In cmdCil.Values
+            AddHandler control.Click, AddressOf cmdCil_Click
+        Next
+        For Each control In cmdCil.Values
+            AddHandler control.DockChanged, AddressOf cmdCil_DockChanged
+        Next
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -658,13 +659,13 @@ Friend Class frmUpdate
     Public Mat As MaterialeNew1
     Public newmode As Boolean
     'UPGRADE_WARNING: L'evento chkScelta.CheckStateChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub chkScelta_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles chkScelta.CheckStateChanged
-        Dim Index As Short = chkScelta.GetIndex(CType(eventSender, CheckBox))
+    Private Sub chkScelta_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(chkScelta, CType(eventSender, CheckBox))
         chk(Index) = CShort(chkScelta(Index).CheckState)
         If Index < 8 And Index > 1 Then chk(Index + 10) = chk(Index)
     End Sub
-    Private Sub cmdCil_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdCil.Click
-        Dim Index As Short = cmdCil.GetIndex(CType(eventSender, Button))
+    Private Sub cmdCil_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(cmdCil, CType(eventSender, Button))
         With CommonDialog1
             .Filter = "Data Base di Access (*.mdb)|*.mdb"
             .InitialDirectory = Monitor.Motore.Inizio.Archdir
@@ -783,7 +784,7 @@ Friend Class frmUpdate
         rinnovo = chkRinnovo.Checked
     End Sub
 
-    Private Sub cmdCil_DockChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmdCil.DockChanged
+    Private Sub cmdCil_DockChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
     End Sub
 End Class

@@ -16,3 +16,29 @@ indent_size = 2
 # Keep this designer diagnostic visible while migrating initialization by hand.
 [src/RoutBase/*.vb]
 dotnet_diagnostic.WFO1000.severity = warning
+
+# Manually initialized VB WithEvents properties; same temporary designer policy as RoutBase.
+[src/LibMat/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+# The remaining migrated VB forms use the same manual-initialization designer policy.
+[src/{Orecchia,Traccia,Saddles,Tiranti,Grafic2,Wrcb}/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/{AsmeVip,Lancion}/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/DataShDll/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/{Wald,VapAcqua,BreLock}/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/Ppgas/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/{HTRI,Ventil}/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning
+
+[src/SurriscDll/*.vb]
+dotnet_diagnostic.WFO1000.severity = warning

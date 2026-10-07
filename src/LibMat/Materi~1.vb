@@ -1617,7 +1617,7 @@ ErrLM:
         Else
             Table = Me.AlfaYoung.tblCond
         End If
-        Valor = clsTrigon.kWATT * PhysAlt(CSng(1.8 * Temp + 32), ConducTer, Table, RigaValori, Me)
+        Valor = LegacyMaterialMetadata.ThermalConductivityFactor * PhysAlt(CSng(1.8 * Temp + 32), ConducTer, Table, RigaValori, Me)
         If Valor = 0 Then
             If Indmat = 0 Then
                 If Not Silente Then Monitor.Motore.MostraAiuto(IDHS.IDH_ERR_LIBMAT_NOINDMAT, , , Monitor.Motore.HelpStringaG("TitLibmat"))

@@ -109,7 +109,7 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
     <PackageReference Include="System.Data.OleDb" Version="10.0.0" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="stdole" />
+    <ProjectReference Include="../StubW9/StubW9.vbproj" />
     <Reference Include="Interop.AutoCAD">
       <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>

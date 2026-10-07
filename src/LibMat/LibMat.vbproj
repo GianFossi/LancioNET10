@@ -26,6 +26,10 @@
   </ItemGroup>
   <Import Project="LegacySources.props" />
   <ItemGroup>
+    <Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" />
+    <Compile Include="LegacyMaterialMetadata.vb" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../RoutBase2/RoutBase2.vbproj" />
     <ProjectReference Include="../RoutBase3/RoutBase3.vbproj" />

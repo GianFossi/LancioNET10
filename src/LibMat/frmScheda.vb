@@ -2151,7 +2151,7 @@ Friend Class frmScheda
     Private Sub TabControl1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles TabControl1.MouseUp
         Dim m As LibMat.MaterialeNew1
         Dim Rect As Rectangle
-        If Not e.Button = Windows.Forms.MouseButtons.Right Or consult Then Exit Sub
+        If Not e.Button = System.Windows.Forms.MouseButtons.Right Or consult Then Exit Sub
         cambiocodice = False
         m = MatElem()
         If m Is Nothing Then Exit Sub
