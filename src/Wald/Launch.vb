@@ -468,23 +468,23 @@ Module modMain
         Dim Riga As String
         With ProblWLD
             If .Variab(0) = 0 Then .Variab(0) = 100
-            Riga = Funzioni.Adjust(VB6.Format(.Variab(0), "#.####E+##"), -10)
+            Riga = Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(0), "#.####E+##"), -10)
             Riga = Riga & Trim(Str(.iPond))
             '.Variab(1) = 0
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(1), "####.##"), 6) 'T
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(2), "#.####E+##"), -10) & Trim(Str(.iAbs)) 'P
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(3), "#.####"), 5) 'V/F
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(1), "####.##"), 6) 'T
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(2), "#.####E+##"), -10) & Trim(Str(.iAbs)) 'P
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(3), "#.####"), 5) 'V/F
             If .iCode < 8 Or .iCode > 32 Then
                 .Variab(6) = 0
                 .Variab(8) = 0
             End If
             '.Variab(4) = 1
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(4), "#.####"), 5) 'LH/F
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(5), "#.####"), 5) 'LW/F
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(6) * .Variab(0), "#.####E+##"), -10) 'Entalpia
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(4), "#.####"), 5) 'LH/F
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(5), "#.####"), 5) 'LW/F
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(6) * .Variab(0), "#.####E+##"), -10) 'Entalpia
             If ProblWLD.precEntalp Then Riga = Riga & "1" Else Riga = Riga & "0"
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(7), "#.####E+##"), -10) 'Q
-            Riga = Riga & Funzioni.Adjust(VB6.Format(.Variab(8) * .Variab(0), "#.####E+##"), -10) 'Entropia
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(7), "#.####E+##"), -10) 'Q
+            Riga = Riga & Funzioni.Adjust(Microsoft.VisualBasic.Strings.Format(.Variab(8) * .Variab(0), "#.####E+##"), -10) 'Entropia
             If .precEntrop Then Riga = Riga & "1" Else Riga = Riga & "0"
             Schede.Sk(iScheda) = Riga
             iScheda = 4

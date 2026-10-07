@@ -53,10 +53,10 @@ Friend Class frmApert
 	Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
 		Hide()
 	End Sub
-    Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option2.CheckedChanged
+    Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
         If eventSender.Checked Then
-            Dim Index As Short = Option2.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option2, eventSender)
             Dim Tempb As Boolean
             Select Case Index
                 Case 0 'temp
@@ -76,8 +76,8 @@ Friend Class frmApert
             End Select
         End If
     End Sub
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-        Dim Index As Short = Text1.GetIndex(eventSender)
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, eventSender)
         If Inizializzando Then Exit Sub
         If Not Text1(Index).Enabled Then Exit Sub
         Select Case Index
@@ -144,9 +144,9 @@ Friend Class frmApert
         End Select
         Label2(11).Text = Funzioni.myStr(H, 5, 2, False)
         Label2(10).Text = Funzioni.myStr(Cp, 5, 2, False)
-        Label2(9).Text = VB6.Format(V, "#.####E+##")
-        Label2(8).Text = VB6.Format(1 / V, "#.####E+##")
-        Label2(7).Text = VB6.Format(E, "#.####E+##")
+        Label2(9).Text = Microsoft.VisualBasic.Strings.Format(V, "#.####E+##")
+        Label2(8).Text = Microsoft.VisualBasic.Strings.Format(1 / V, "#.####E+##")
+        Label2(7).Text = Microsoft.VisualBasic.Strings.Format(E, "#.####E+##")
         Label2(6).Text = Funzioni.myStr(k, 1, 5, False)
 
     End Sub
@@ -179,9 +179,9 @@ Friend Class frmApert
         End Select
         Label2(0).Text = Funzioni.myStr(H, 5, 2, False)
         Label2(1).Text = Funzioni.myStr(Cp, 5, 2, False)
-        Label2(2).Text = VB6.Format(V, "#.####E+##")
-        Label2(3).Text = VB6.Format(1 / V, "#.####E+##")
-        Label2(4).Text = VB6.Format(E, "#.####E+##")
+        Label2(2).Text = Microsoft.VisualBasic.Strings.Format(V, "#.####E+##")
+        Label2(3).Text = Microsoft.VisualBasic.Strings.Format(1 / V, "#.####E+##")
+        Label2(4).Text = Microsoft.VisualBasic.Strings.Format(E, "#.####E+##")
         Label2(5).Text = Funzioni.myStr(k, 1, 5, False)
     End Sub
 

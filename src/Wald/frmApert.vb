@@ -7,17 +7,17 @@ Friend Class frmApert
     Private Bianco As Color
     Private Gialli As New Collection
     Private Inizializzando As Boolean
-    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Check1.CheckStateChanged
+    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If inizializzando Then Exit Sub
-        Dim Index As Short = Check1.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Check1, eventSender)
         Select Case Index
             Case 0 : ProblWLD.precEntalp = Check1(Index).CheckState = 1
             Case 1 : ProblWLD.precEntrop = Check1(Index).CheckState = 1
         End Select
     End Sub
-    Private Sub Check2_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Check2.CheckStateChanged
+    Private Sub Check2_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = Check2.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Check2, eventSender)
         Select Case Index
             Case 0 : If Check2(Index).CheckState = 1 Then ProblWLD.Tequi = 0 Else ProblWLD.Tequi = 1
             Case 1 : If Check2(Index).CheckState = 1 Then ProblWLD.Pequi = 0 Else ProblWLD.Pequi = 1
@@ -425,8 +425,8 @@ Friend Class frmApert
         Bianco = Text1(0).BackColor
         Carica()
     End Sub
-    Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnufile.Click
-        Dim Index As Short = mnufile.GetIndex(eventSender)
+    Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnufile, eventSender)
         Dim icome As String = ""
         Select Case Index
             Case 1
@@ -453,8 +453,8 @@ Friend Class frmApert
         End Select
     End Sub
 
-    Public Sub mnuPref_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPref.Click
-        Dim Index As Short = mnuPref.GetIndex(eventSender)
+    Public Sub mnuPref_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuPref, eventSender)
         Select Case Index
             Case 0
                 mnuPref(0).Checked = Not mnuPref(0).Checked
@@ -467,9 +467,9 @@ Friend Class frmApert
     End Sub
 
     'UPGRADE_WARNING: L'evento optAbs.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optAbs_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optAbs.CheckedChanged
+    Private Sub optAbs_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optAbs.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optAbs, eventSender)
             AzzeraRisultati()
             With ProblWLD
                 If .iUnit = 1 Then
@@ -485,18 +485,18 @@ Friend Class frmApert
     End Sub
 
     'UPGRADE_WARNING: L'evento optAcq.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optAcq_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optAcq.CheckedChanged
+    Private Sub optAcq_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optAcq.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optAcq, eventSender)
             AzzeraRisultati()
             ProblWLD.iAcqua = Index + 1
         End If
     End Sub
 
     'UPGRADE_WARNING: L'evento optCost.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optCost_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optCost.CheckedChanged
+    Private Sub optCost_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optCost.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optCost, eventSender)
             AzzeraRisultati()
             ProblWLD.iEquil = Index + 1
             AggCostanti()
@@ -504,36 +504,36 @@ Friend Class frmApert
     End Sub
 
     'UPGRADE_WARNING: L'evento optCrit.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optCrit_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optCrit.CheckedChanged
+    Private Sub optCrit_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optCrit.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optCrit, eventSender)
             AzzeraRisultati()
             ProblWLD.iCost = Index + 1
         End If
     End Sub
 
     'UPGRADE_WARNING: L'evento optHC.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optHC_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optHC.CheckedChanged
+    Private Sub optHC_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optHC.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optHC, eventSender)
             AzzeraRisultati()
             ProblWLD.iHc = Index + 1
         End If
     End Sub
 
     'UPGRADE_WARNING: L'evento optId.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optId_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optId.CheckedChanged
+    Private Sub optId_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optId.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optId, eventSender)
             AzzeraRisultati()
             ProblWLD.iIdeal = Index + 1
         End If
     End Sub
 
     'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             AzzeraRisultati()
             ProblWLD.iUnit = Index + 1
             AggUnit()
@@ -541,9 +541,9 @@ Friend Class frmApert
     End Sub
 
     'UPGRADE_WARNING: L'evento optPort.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub optPort_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optPort.CheckedChanged
+    Private Sub optPort_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optPort.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optPort, eventSender)
             ProblWLD.iPond = Index
             AzzeraRisultati()
             AggUnit()
@@ -622,8 +622,8 @@ Friend Class frmApert
     End Sub
 
     'UPGRADE_WARNING: L'evento Text1.TextChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-        Dim Index As Short = Text1.GetIndex(eventSender)
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, eventSender)
         With ProblWLD
             Select Case Index
                 Case 10 : .deltaT = Val(Text1(Index).Text)

@@ -604,7 +604,7 @@ Module modCurva
         Dim i As Short
         For i = 1 To 8
             'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Monitor.Motore.inputforms().prisposte. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-            Risp(i) = Trim(Monitor.Motore.inputforms.Item(1).prisposte(i))
+            Risp(i) = Trim(DirectCast(Monitor.Motore.inputforms.Item(1), RoutBase1.frmInput).prisposte(i))
         Next
         'secondo
         Prev = Risp(1)
@@ -654,7 +654,7 @@ Module modCurva
         Dim i As Short
         For i = 1 To 8
             'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Monitor.Motore.inputforms().prisposte. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-            Risp(i) = Trim(Monitor.Motore.inputforms.Item(2).prisposte(i))
+            Risp(i) = Trim(DirectCast(Monitor.Motore.inputforms.Item(2), RoutBase1.frmInput).prisposte(i))
         Next
         OKFin2 = True
         Girante = Risp(1) 'modello girante
@@ -691,7 +691,7 @@ Module modCurva
         Dim i As Short
         Dim yStr As String = ""
         For i = 1 To 6
-            Risp(i) = Trim(Monitor.Motore.InputForms.Item(3).prisposte(i))
+            Risp(i) = Trim(DirectCast(Monitor.Motore.InputForms.Item(3), RoutBase1.frmInput).prisposte(i))
         Next
         For i = 0 To 1
             If Trim(Tirag(i)) = Trim(Risp(1)) Then

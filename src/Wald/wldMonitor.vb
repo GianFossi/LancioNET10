@@ -11,13 +11,13 @@ Public Class wldMonitor
                 If ProblWLD.Tequi = 1 Then
                     Nfin = Nfin + 1
                     For i = 1 To ProblWLD.Npun - 1
-                        Tpun(i + 1) = Val(Motore.InputForms.Item(Nfin).pRisposte(i))
+                        Tpun(i + 1) = Val(DirectCast(Motore.InputForms.Item(Nfin), RoutBase1.frmInput).pRisposte(i))
                     Next
                 End If
                 If ProblWLD.Pequi = 1 Then
                     Nfin = Nfin + 1
                     For i = 1 To ProblWLD.Npun - 1
-                        Ppun(i + 1) = Val(Motore.InputForms.Item(Nfin).pRisposte(i))
+                        Ppun(i + 1) = Val(DirectCast(Motore.InputForms.Item(Nfin), RoutBase1.frmInput).pRisposte(i))
                     Next
                 End If
                 mioApert.Enabled = True

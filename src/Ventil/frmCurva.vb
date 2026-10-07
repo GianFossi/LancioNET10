@@ -11,7 +11,7 @@ Friend Class frmCurva
         Dim FileDWG As String
         Dim InsertPoint(2) As Double
         Dim scalefactor, rotationAngle As Double
-        Dim rasterObj As Autodesk.AutoCAD.Interop.Common.AcadRasterImage
+        Dim rasterObj As AutoCAD.AcadRasterImage
         Dim imageName As String
         Dim Lung As Single
         Dim minext, maxext As Object

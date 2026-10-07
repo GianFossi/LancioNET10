@@ -31,12 +31,12 @@ Friend Class clsMonitor
             Case 1
                 If Index = 3 Then
                     'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Motore.inputforms().pCombolist. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-                    UNITA = Motore.inputforms.Item(1).pCombolist(3) + 1
+                    UNITA = DirectCast(Motore.inputforms.Item(1), RoutBase1.frmInput).pCombolist(3) + 1
                     If UNITA = 0 Then UNITA = 1
                 End If
                 If Index = 4 Then
                     'UPGRADE_WARNING: Impossibile risolvere la proprietà predefinita dell'oggetto Motore.inputforms().pCombolist. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-                    z1 = Motore.inputforms.Item(1).pCombolist(4)
+                    z1 = DirectCast(Motore.inputforms.Item(1), RoutBase1.frmInput).pCombolist(4)
                 End If
                 If Index = 3 Or Index = 4 Then
                     For i = Motore.inputforms.Count To 2 Step -1

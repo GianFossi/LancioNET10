@@ -192,7 +192,7 @@ Module GenVentil
     Private Const HH_DISPLAY_INDEX As Short = &H2S ' WinHelp equivalent
     Public RadiceHelp As String '= "C:\BASE\ESEGUI\BIN\AiutoISA.chm"
     '==============================================================
-    Public Disegno As Autodesk.AutoCAD.Interop.AcadDocument
+    Public Disegno As AutoCAD.AcadDocument
     Public AcadApp As Object
     Public Const IDH_VEN_NOCALC As Short = 1260
     Public Const IDH_STR_AT13 As Integer = 1313
@@ -1109,7 +1109,7 @@ Fine:
         File = Monitor.Motore.Inizio.Archdir & "\AERFIB.DAT"
         FileDB = Monitor.Motore.Inizio.Archdir & "\AERFIB.mdb"
         myDataBase = DAOEngine.OpenDatabase(FileDB)
-        objDatBase = New RoutBase1.DatBase(Monitor.Motore)
+        objDatBase = New RoutBase1.DatBase()
         objDatBase.objInizio = Monitor.Motore.Inizio
         tabella = myDataBase.OpenRecordset("SELECT * FROM Parabole")
         With tabella

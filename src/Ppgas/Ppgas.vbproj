@@ -66,6 +66,6 @@
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../StubW9/StubW9.vbproj" />
     <ProjectReference Include="../Wald/Wald.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
 </Project>

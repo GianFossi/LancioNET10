@@ -57,6 +57,7 @@
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../StubW9/StubW9.vbproj" />
     <Reference Include="XSteam" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup><Compile Include="LegacySteamLibrary.vb" /></ItemGroup>
 </Project>

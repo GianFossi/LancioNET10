@@ -26,8 +26,8 @@
 	Public WithEvents _Label2_2 As System.Windows.Forms.Label
 	Public WithEvents _Label2_4 As System.Windows.Forms.Label
 	Public WithEvents _Label2_5 As System.Windows.Forms.Label
-	Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -44,12 +44,8 @@
 		Me._Label2_2 = New System.Windows.Forms.Label
 		Me._Label2_4 = New System.Windows.Forms.Label
 		Me._Label2_5 = New System.Windows.Forms.Label
-		Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-		Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
 		Me.SuspendLayout()
 		Me.ToolTip1.Active = True
-		CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.Text = "Programma Wald"
 		Me.ClientSize = New System.Drawing.Size(471, 190)
 		Me.Location = New System.Drawing.Point(4, 23)
@@ -238,16 +234,16 @@
 		Me.Controls.Add(_Label2_2)
 		Me.Controls.Add(_Label2_4)
 		Me.Controls.Add(_Label2_5)
-		Me.Label2.SetIndex(_Label2_1, CType(1, Short))
-		Me.Label2.SetIndex(_Label2_2, CType(2, Short))
-		Me.Label2.SetIndex(_Label2_4, CType(4, Short))
-		Me.Label2.SetIndex(_Label2_5, CType(5, Short))
-		Me.Text1.SetIndex(_Text1_1, CType(1, Short))
-		Me.Text1.SetIndex(_Text1_3, CType(3, Short))
-		Me.Text1.SetIndex(_Text1_2, CType(2, Short))
-		Me.Text1.SetIndex(_Text1_4, CType(4, Short))
-		CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.Label2.Add(1, _Label2_1)
+		Me.Label2.Add(2, _Label2_2)
+		Me.Label2.Add(4, _Label2_4)
+		Me.Label2.Add(5, _Label2_5)
+		Me.Text1.Add(1, _Text1_1)
+		Me.Text1.Add(3, _Text1_3)
+		Me.Text1.Add(2, _Text1_2)
+		Me.Text1.Add(4, _Text1_4)
+
+
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 	End Sub

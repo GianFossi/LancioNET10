@@ -55,11 +55,11 @@
 	Public WithEvents _Text1_0 As System.Windows.Forms.TextBox
 	Public WithEvents _Label1_1 As System.Windows.Forms.Label
 	Public WithEvents _Label1_0 As System.Windows.Forms.Label
-	Public WithEvents Frame2 As Microsoft.VisualBasic.Compatibility.VB6.GroupBoxArray
-	Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Option2 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-	Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public Frame2 As New System.Collections.Generic.Dictionary(Of Integer, GroupBox)
+	Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Option2 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+	Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -102,22 +102,12 @@
         Me._Text1_0 = New System.Windows.Forms.TextBox
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Frame2 = New Microsoft.VisualBasic.Compatibility.VB6.GroupBoxArray(Me.components)
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Option2 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.RadioButton2 = New System.Windows.Forms.RadioButton
         Me.RadioButton1 = New System.Windows.Forms.RadioButton
         Me._Frame2_1.SuspendLayout()
         Me._Frame2_0.SuspendLayout()
         Me.Frame1.SuspendLayout()
-        CType(Me.Frame2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -163,7 +153,7 @@
         Me._Frame2_1.Controls.Add(Me._Label2_6)
         Me._Frame2_1.Controls.Add(Me._Label1_8)
         Me._Frame2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Frame2.SetIndex(Me._Frame2_1, CType(1, Short))
+        Me.Frame2.Add(1, Me._Frame2_1)
         Me._Frame2_1.Location = New System.Drawing.Point(287, 117)
         Me._Frame2_1.Name = "_Frame2_1"
         Me._Frame2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -178,7 +168,7 @@
         Me._Label2_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_11, CType(11, Short))
+        Me.Label2.Add(11, Me._Label2_11)
         Me._Label2_11.Location = New System.Drawing.Point(180, 18)
         Me._Label2_11.Name = "_Label2_11"
         Me._Label2_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -190,7 +180,7 @@
         Me._Label1_13.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_13, CType(13, Short))
+        Me.Label1.Add(13, Me._Label1_13)
         Me._Label1_13.Location = New System.Drawing.Point(9, 18)
         Me._Label1_13.Name = "_Label1_13"
         Me._Label1_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -204,7 +194,7 @@
         Me._Label2_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_10, CType(10, Short))
+        Me.Label2.Add(10, Me._Label2_10)
         Me._Label2_10.Location = New System.Drawing.Point(180, 36)
         Me._Label2_10.Name = "_Label2_10"
         Me._Label2_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -216,7 +206,7 @@
         Me._Label1_12.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_12, CType(12, Short))
+        Me.Label1.Add(12, Me._Label1_12)
         Me._Label1_12.Location = New System.Drawing.Point(9, 36)
         Me._Label1_12.Name = "_Label1_12"
         Me._Label1_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -230,7 +220,7 @@
         Me._Label2_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_9, CType(9, Short))
+        Me.Label2.Add(9, Me._Label2_9)
         Me._Label2_9.Location = New System.Drawing.Point(180, 54)
         Me._Label2_9.Name = "_Label2_9"
         Me._Label2_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -242,7 +232,7 @@
         Me._Label1_11.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_11, CType(11, Short))
+        Me.Label1.Add(11, Me._Label1_11)
         Me._Label1_11.Location = New System.Drawing.Point(9, 54)
         Me._Label1_11.Name = "_Label1_11"
         Me._Label1_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -256,7 +246,7 @@
         Me._Label2_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_8, CType(8, Short))
+        Me.Label2.Add(8, Me._Label2_8)
         Me._Label2_8.Location = New System.Drawing.Point(180, 72)
         Me._Label2_8.Name = "_Label2_8"
         Me._Label2_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -268,7 +258,7 @@
         Me._Label1_10.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_10, CType(10, Short))
+        Me.Label1.Add(10, Me._Label1_10)
         Me._Label1_10.Location = New System.Drawing.Point(9, 72)
         Me._Label1_10.Name = "_Label1_10"
         Me._Label1_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -282,7 +272,7 @@
         Me._Label2_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_7, CType(7, Short))
+        Me.Label2.Add(7, Me._Label2_7)
         Me._Label2_7.Location = New System.Drawing.Point(180, 90)
         Me._Label2_7.Name = "_Label2_7"
         Me._Label2_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -294,7 +284,7 @@
         Me._Label1_9.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_9.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_9, CType(9, Short))
+        Me.Label1.Add(9, Me._Label1_9)
         Me._Label1_9.Location = New System.Drawing.Point(9, 90)
         Me._Label1_9.Name = "_Label1_9"
         Me._Label1_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -308,7 +298,7 @@
         Me._Label2_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_6, CType(6, Short))
+        Me.Label2.Add(6, Me._Label2_6)
         Me._Label2_6.Location = New System.Drawing.Point(180, 108)
         Me._Label2_6.Name = "_Label2_6"
         Me._Label2_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -320,7 +310,7 @@
         Me._Label1_8.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_8, CType(8, Short))
+        Me.Label1.Add(8, Me._Label1_8)
         Me._Label1_8.Location = New System.Drawing.Point(9, 108)
         Me._Label1_8.Name = "_Label1_8"
         Me._Label1_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -344,7 +334,7 @@
         Me._Frame2_0.Controls.Add(Me._Label1_2)
         Me._Frame2_0.Controls.Add(Me._Label2_0)
         Me._Frame2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Frame2.SetIndex(Me._Frame2_0, CType(0, Short))
+        Me.Frame2.Add(0, Me._Frame2_0)
         Me._Frame2_0.Location = New System.Drawing.Point(8, 117)
         Me._Frame2_0.Name = "_Frame2_0"
         Me._Frame2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -358,7 +348,7 @@
         Me._Label1_7.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_7, CType(7, Short))
+        Me.Label1.Add(7, Me._Label1_7)
         Me._Label1_7.Location = New System.Drawing.Point(9, 108)
         Me._Label1_7.Name = "_Label1_7"
         Me._Label1_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -372,7 +362,7 @@
         Me._Label2_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_5, CType(5, Short))
+        Me.Label2.Add(5, Me._Label2_5)
         Me._Label2_5.Location = New System.Drawing.Point(180, 108)
         Me._Label2_5.Name = "_Label2_5"
         Me._Label2_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -384,7 +374,7 @@
         Me._Label1_6.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_6, CType(6, Short))
+        Me.Label1.Add(6, Me._Label1_6)
         Me._Label1_6.Location = New System.Drawing.Point(9, 90)
         Me._Label1_6.Name = "_Label1_6"
         Me._Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -398,7 +388,7 @@
         Me._Label2_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_4, CType(4, Short))
+        Me.Label2.Add(4, Me._Label2_4)
         Me._Label2_4.Location = New System.Drawing.Point(180, 90)
         Me._Label2_4.Name = "_Label2_4"
         Me._Label2_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -410,7 +400,7 @@
         Me._Label1_5.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_5, CType(5, Short))
+        Me.Label1.Add(5, Me._Label1_5)
         Me._Label1_5.Location = New System.Drawing.Point(9, 72)
         Me._Label1_5.Name = "_Label1_5"
         Me._Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -424,7 +414,7 @@
         Me._Label2_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_3, CType(3, Short))
+        Me.Label2.Add(3, Me._Label2_3)
         Me._Label2_3.Location = New System.Drawing.Point(180, 72)
         Me._Label2_3.Name = "_Label2_3"
         Me._Label2_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -436,7 +426,7 @@
         Me._Label1_4.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_4, CType(4, Short))
+        Me.Label1.Add(4, Me._Label1_4)
         Me._Label1_4.Location = New System.Drawing.Point(9, 54)
         Me._Label1_4.Name = "_Label1_4"
         Me._Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -450,7 +440,7 @@
         Me._Label2_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_2, CType(2, Short))
+        Me.Label2.Add(2, Me._Label2_2)
         Me._Label2_2.Location = New System.Drawing.Point(180, 54)
         Me._Label2_2.Name = "_Label2_2"
         Me._Label2_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -462,7 +452,7 @@
         Me._Label1_3.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_3, CType(3, Short))
+        Me.Label1.Add(3, Me._Label1_3)
         Me._Label1_3.Location = New System.Drawing.Point(9, 36)
         Me._Label1_3.Name = "_Label1_3"
         Me._Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -476,7 +466,7 @@
         Me._Label2_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_1, CType(1, Short))
+        Me.Label2.Add(1, Me._Label2_1)
         Me._Label2_1.Location = New System.Drawing.Point(180, 36)
         Me._Label2_1.Name = "_Label2_1"
         Me._Label2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -488,7 +478,7 @@
         Me._Label1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_2, CType(2, Short))
+        Me.Label1.Add(2, Me._Label1_2)
         Me._Label1_2.Location = New System.Drawing.Point(9, 18)
         Me._Label1_2.Name = "_Label1_2"
         Me._Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -502,7 +492,7 @@
         Me._Label2_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.SetIndex(Me._Label2_0, CType(0, Short))
+        Me.Label2.Add(0, Me._Label2_0)
         Me._Label2_0.Location = New System.Drawing.Point(180, 18)
         Me._Label2_0.Name = "_Label2_0"
         Me._Label2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -542,7 +532,7 @@
         Me._Option2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Option2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_1, CType(1, Short))
+        Me.Option2.Add(1, Me._Option2_1)
         Me._Option2_1.Location = New System.Drawing.Point(9, 36)
         Me._Option2_1.Name = "_Option2_1"
         Me._Option2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -558,7 +548,7 @@
         Me._Option2_0.Checked = True
         Me._Option2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_0, CType(0, Short))
+        Me.Option2.Add(0, Me._Option2_0)
         Me._Option2_0.Location = New System.Drawing.Point(9, 18)
         Me._Option2_0.Name = "_Option2_0"
         Me._Option2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -574,7 +564,7 @@
         Me._Text1_1.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_1, CType(1, Short))
+        Me.Text1.Add(1, Me._Text1_1)
         Me._Text1_1.Location = New System.Drawing.Point(188, 90)
         Me._Text1_1.MaxLength = 0
         Me._Text1_1.Name = "_Text1_1"
@@ -588,7 +578,7 @@
         Me._Text1_0.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(188, 72)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Name = "_Text1_0"
@@ -601,7 +591,7 @@
         Me._Label1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_1, CType(1, Short))
+        Me.Label1.Add(1, Me._Label1_1)
         Me._Label1_1.Location = New System.Drawing.Point(8, 90)
         Me._Label1_1.Name = "_Label1_1"
         Me._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -614,7 +604,7 @@
         Me._Label1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_0, CType(0, Short))
+        Me.Label1.Add(0, Me._Label1_0)
         Me._Label1_0.Location = New System.Drawing.Point(8, 72)
         Me._Label1_0.Name = "_Label1_0"
         Me._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -688,11 +678,15 @@
         Me._Frame2_1.ResumeLayout(False)
         Me._Frame2_0.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
-        CType(Me.Frame2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+
+        For Each control In Option2.Values
+            AddHandler control.CheckedChanged, AddressOf Option2_CheckedChanged
+        Next
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

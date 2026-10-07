@@ -115,7 +115,7 @@
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../StubW9/StubW9.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup><Compile Include="../Grafic2/LegacyUiUnits.vb" Link="Migration/LegacyUiUnits.vb" /></ItemGroup>
 </Project>

@@ -184,9 +184,9 @@ Friend Class Apert
         Dispose()
         'eventArgs.Cancel = Cancel
     End Sub
-    Public Sub mnuCompos_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuCompos.Click
+    Public Sub mnuCompos_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         Try
-            Dim Index As Short = mnuCompos.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(mnuCompos, eventSender)
             Dim i As Short
             If mnuCompos(Index).Checked Then Exit Sub
             For i = 0 To 2 : mnuCompos(i).Checked = False : Next
@@ -223,8 +223,8 @@ Friend Class Apert
         End Try
     End Sub
 	
-	Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFile.Click
-		Dim Index As Short = mnuFile.GetIndex(eventSender)
+	Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(mnuFile, eventSender)
 		Dim Nome As String
 		Select Case Index
 			Case 1 'apri
@@ -250,9 +250,9 @@ Friend Class Apert
 ErrCC:
     End Sub
     'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             Ogg.prIppgas65 = Index
         End If
     End Sub
@@ -279,16 +279,16 @@ ErrCC:
 		txtDen.Text = Ogg.prFluido
 	End Sub
 	'UPGRADE_WARNING: L'evento Option2.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-	Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option2.CheckedChanged
+	Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
 		If eventSender.Checked Then
-			Dim Index As Short = Option2.GetIndex(eventSender)
+			Dim Index As Short = IndexedControls.IndexOf(Option2, eventSender)
 			Ogg.prPercVol = Index
 		End If
 	End Sub
 	'UPGRADE_WARNING: L'evento optLG.CheckedChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-	Private Sub optLG_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optLG.CheckedChanged
+	Private Sub optLG_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
 		If eventSender.Checked Then
-			Dim Index As Short = optLG.GetIndex(eventSender)
+			Dim Index As Short = IndexedControls.IndexOf(optLG, eventSender)
 			If optLG(0).Checked Then
 				Frame5(3).Visible = True
 				Frame5(4).Visible = False
@@ -304,9 +304,9 @@ ErrCC:
         If Inizializzando Then Exit Sub
         Ogg.prFluido = txtDen.Text
     End Sub
-    Private Sub txtMan_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtMan.TextChanged
+    Private Sub txtMan_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtMan.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtMan, eventSender)
         Dim i As Short
         i = Index
         If Ifluide = 2 And Index > 12 Then i = i - 3
@@ -315,7 +315,7 @@ ErrCC:
             If Ifluide = 2 And Index > 12 Then
                 .prE3(26) = -999
                 If .prE3(23) > 0 Then Ogg.prPesoMoc(0) = .prE3(22) * 22.4 * (273.15 + .prE3(21)) * 1.01325 / 273.15 / .prE3(23)
-                txtTemp1(15).Text = VB6.Format(Ogg.prPesoMoc(0), FormDen)
+                txtTemp1(15).Text = Microsoft.VisualBasic.Strings.Format(Ogg.prPesoMoc(0), FormDen)
             End If
         End With
     End Sub
@@ -323,9 +323,9 @@ ErrCC:
         If Inizializzando Then Exit Sub
         Ogg.prPressione = Funzioni.ValVir(txtPress.Text)
     End Sub
-    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtTemp.TextChanged
+    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtTemp.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtTemp, eventSender)
         Select Case Index
             Case 0 : Ogg.prTmin = Funzioni.ValVir(txtTemp(Index).Text)
             Case 1 : Ogg.prTmax = Funzioni.ValVir(txtTemp(Index).Text)
@@ -345,24 +345,24 @@ ErrCC:
                     Case Else : f = FormDen
                 End Select
                 If Ifluide = 2 And i = 12 Then
-                    txtTemp1(15).Text = VB6.Format(Ogg.prPesoMoc(0), FormCp)
+                    txtTemp1(15).Text = Microsoft.VisualBasic.Strings.Format(Ogg.prPesoMoc(0), FormCp)
                 ElseIf Ifluide = 2 And i = 11 Then
                     'txtTemp1(14) = Format(.prE3(2 * i - 1), FormCp)
                 Else
-                    txtMan(i - 1).Text = VB6.Format(.prE3(2 * i), f)
-                    txtTemp1(i - 1).Text = VB6.Format(.prE3(2 * i - 1), FormCp)
+                    txtMan(i - 1).Text = Microsoft.VisualBasic.Strings.Format(.prE3(2 * i), f)
+                    txtTemp1(i - 1).Text = Microsoft.VisualBasic.Strings.Format(.prE3(2 * i - 1), FormCp)
                 End If
             Next
             If Ifluide = 2 Then
-                txtMan(13).Text = VB6.Format(.prE3(22), FormDen)
-                txtTemp1(13).Text = VB6.Format(.prE3(23), FormDen)
-                txtTemp1(14).Text = VB6.Format(.prE3(21), FormDen)
+                txtMan(13).Text = Microsoft.VisualBasic.Strings.Format(.prE3(22), FormDen)
+                txtTemp1(13).Text = Microsoft.VisualBasic.Strings.Format(.prE3(23), FormDen)
+                txtTemp1(14).Text = Microsoft.VisualBasic.Strings.Format(.prE3(21), FormDen)
             End If
         End With
     End Sub
     'UPGRADE_WARNING: L'evento txtTemp1.TextChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub txtTemp1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtTemp1.TextChanged
-        Dim Index As Short = txtTemp1.GetIndex(eventSender)
+    Private Sub txtTemp1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(txtTemp1, eventSender)
         Dim i As Short
         i = Index
         If Ifluide = 2 And Index > 12 Then i = i - 3
@@ -376,7 +376,7 @@ ErrCC:
                 End Select
                 .prE3(26) = -999
                 If .prE3(23) > 0 Then Ogg.prPesoMoc(0) = .prE3(22) * 22.4 * (273.15 + .prE3(21)) * 1.01325 / 273.15 / .prE3(23)
-                txtTemp1(15).Text = VB6.Format(Ogg.prPesoMoc(0), FormDen)
+                txtTemp1(15).Text = Microsoft.VisualBasic.Strings.Format(Ogg.prPesoMoc(0), FormDen)
             Else
                 .prE3(2 * (i + 1) - 1) = Funzioni.ValVir(txtTemp1(Index).Text)
             End If

@@ -258,8 +258,8 @@ Friend Class frmDB
 	Private Sub Command1_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles Command1.MouseMove
 		Dim Button As Short = eventArgs.Button \ &H100000
 		Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-		Dim X As Single = VB6.PixelsToTwipsX(eventArgs.X)
-		Dim Y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+		Dim X As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+		Dim Y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
 		PictHelp.Visible = False
 	End Sub
     Private Sub Command2_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command2.Click
@@ -271,8 +271,8 @@ Friend Class frmDB
     Private Sub Command2_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles Command2.MouseMove
         Dim Button As Short = eventArgs.Button \ &H100000
         Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-        Dim X As Single = VB6.PixelsToTwipsX(eventArgs.X)
-        Dim Y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+        Dim X As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+        Dim Y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
         PictHelp.Visible = False
     End Sub
     Private Sub frmDB_Activated(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Activated
@@ -307,8 +307,8 @@ Friend Class frmDB
 		Combo1.Items.Add("Viscosità")
 		Grafico = New RoutBase1.clsGrafico
 		Grafico.Motore = Monitor.Motore
-		pictWidth = VB6.PixelsToTwipsX(Picture1.ClientRectangle.Width)
-		pictHeight = VB6.PixelsToTwipsY(Picture1.ClientRectangle.Height)
+		pictWidth = LegacyUiUnits.PixelsToTwipsX(Picture1.ClientRectangle.Width)
+		pictHeight = LegacyUiUnits.PixelsToTwipsY(Picture1.ClientRectangle.Height)
 		Combo1.SelectedIndex = 2
 		'Rinfresca
 	End Sub
@@ -316,8 +316,8 @@ Friend Class frmDB
 	Private Sub frmDB_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
 		Dim Button As Short = eventArgs.Button \ &H100000
 		Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-		Dim X As Single = VB6.PixelsToTwipsX(eventArgs.X)
-		Dim Y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+		Dim X As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+		Dim Y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
 		PictHelp.Visible = False
 	End Sub
 	
@@ -351,8 +351,8 @@ Friend Class frmDB
     Private Sub Picture1_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs)
         Dim Button As Short = eventArgs.Button \ &H100000
         Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-        Dim X As Single = VB6.PixelsToTwipsX(eventArgs.X)
-        Dim Y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+        Dim X As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+        Dim Y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
         Dim i As Short
         Dim DT As Single
         Dim Testo As String = ""
@@ -379,8 +379,8 @@ Friend Class frmDB
             End If
         Next
         If Testo = "" Then PictHelp.Visible = False : Exit Sub
-        cDummy.Top = VB6.TwipsToPixelsY(Y)
-        cDummy.Left = VB6.TwipsToPixelsX(X)
+        cDummy.Top = LegacyUiUnits.TwipsToPixelsY(Y)
+        cDummy.Left = LegacyUiUnits.TwipsToPixelsX(X)
         Routines.DisplayHelp(PictHelp, Me.Picture1, Testo, 0, 0, True)
     End Sub
     Private Function Rinfresca() As Boolean
@@ -397,12 +397,12 @@ Friend Class frmDB
         ' DBGrid1.ReBind()
         For i = DBGrid1.Columns.Count - 1 To 0 Step -1
             c = DBGrid1.Columns(i)
-            'c.Width = VB6.TwipsToPixelsX(700)
+            'c.Width = LegacyUiUnits.TwipsToPixelsX(700)
             Select Case i 'c.ColIndex
                 Case 0
                     c.Visible = False
                 Case 1
-                    c.Width = VB6.TwipsToPixelsX(400)
+                    c.Width = LegacyUiUnits.TwipsToPixelsX(400)
                 Case 2 'T
                     'c.NumberFormat = "Standard"
                     Select Case ProblWLD.iUnit
@@ -511,7 +511,7 @@ Friend Class frmDB
                             Case 3
                                 c.HeaderText = "Cp liq" & vbCrLf & "[kJ/kg°C]"
                         End Select
-                        c.Width = VB6.TwipsToPixelsX(800)
+                        c.Width = LegacyUiUnits.TwipsToPixelsX(800)
                     Else
                         c.Visible = False
                     End If
@@ -525,9 +525,9 @@ Friend Class frmDB
                         Case 3
                             c.HeaderText = "Cp vap" & vbCrLf & "[kJ/kg°C]"
                     End Select
-                    c.Width = VB6.TwipsToPixelsX(800)
+                    c.Width = LegacyUiUnits.TwipsToPixelsX(800)
                 Case 16, 17 'viscosità
-                    c.Width = VB6.TwipsToPixelsX(900)
+                    c.Width = LegacyUiUnits.TwipsToPixelsX(900)
                     'c.NumberFormat = "0.000E+00"
                     l = InStr(c.HeaderText, "[")
                     If l > 0 Then c.HeaderText = VB.Left(c.HeaderText, l - 1)
