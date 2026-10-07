@@ -925,7 +925,17 @@ Friend Class Apert
         If AddDistinta = 1 And Gia Then Exit Sub
         Gia = True
         mnuChiudi_Click(mnuChiudi, New System.EventArgs)   'ChiudeFileU
-        Res = ApriLeggiU()
+        Dim previousStatus = StatusBarPanel1.Text
+        UseWaitCursor = True
+        StatusBarPanel1.Text = "Caricamento file AsmeVip in corso..."
+        StatusBar1.Refresh()
+        Try
+            Res = ApriLeggiU()
+        Finally
+            UseWaitCursor = False
+            Cursor.Current = Cursors.Default
+            StatusBarPanel1.Text = previousStatus
+        End Try
         If Not Res Then
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
             Exit Sub
@@ -983,7 +993,8 @@ Friend Class Apert
         mioGen = New frmGen
         mioGen.Inizializza()
         AggDatiGenerali()
-        mioGen.ShowDialog()
+        mioGen.StartPosition = FormStartPosition.CenterParent
+        mioGen.ShowDialog(Me)
         mioGen.Dispose()
         Espanso = True
         EspCom()
@@ -1171,7 +1182,8 @@ ErrH:
         mioGen = New frmGen
         mioGen.Inizializza()
         AggDatiGenerali()
-        mioGen.ShowDialog()
+        mioGen.StartPosition = FormStartPosition.CenterParent
+        mioGen.ShowDialog(Me)
         mioGen.Dispose()
     End Sub
     Public Sub mnuDatiElem_Popup(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuDatiElem.DropDownOpening

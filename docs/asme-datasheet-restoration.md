@@ -11,6 +11,13 @@ directory mancanti vengono create. I vecchi ritorni a `BaseDir\Dll`, directory
 non presente nell'installazione .NET 10, usano ora la directory effettiva
 dell'eseguibile.
 
+Dopo l'apertura, la finestra dei dati generali viene mostrata come dialogo
+figlio centrato sulla finestra AsmeVip. Questo evita che il dialogo modale resti
+nascosto dietro la finestra principale facendo apparire l'applicazione bloccata.
+Durante la selezione e lettura del file la barra di stato mostra inoltre che il
+caricamento è in corso. Annullamento ed errori della finestra di selezione non
+vengono più interpretati come un caricamento riuscito.
+
 AsmeVip usa il bridge di serializzazione isolato e namespace WinForms espliciti.
 RichiaTir assegna Diam e chiama la ricerca esistente Cerca("Diam"), coerente con
 la firma LibMat fornita. I corpi delle routine Calcoli.vb non sono stati cambiati.

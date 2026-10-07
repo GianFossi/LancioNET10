@@ -64,7 +64,7 @@ Module Output
             clsProblem.nonSciolto = False
             Ext = "VIP"
             icome = ""
-            Call CaricaFile(icome, Ext)
+            ApriLeggiU = CaricaFile(icome, Ext)
         End If
         Exit Function
         '--------------------------------------------------
