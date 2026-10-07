@@ -259,28 +259,30 @@ Public Class clsInizio
     Public Sub SuperStampa(ByRef File As String, Optional ByRef Stub As StubW2000.clsSW2000 = Nothing, _
                            Optional ByRef NonAttivare As Boolean = False, Optional ByVal wordPanel As Lancio.Office.Word.WinForms.WordReportPanel = Nothing)
         Dim Testo As String ', Stub As Object
-        Dim Errore As Boolean = False
         If VersOffice = 0 Then Exit Sub
+        If File Is Nothing Then File = ""
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
         Dim Vecchio As Boolean = wordPanel Is Nothing
         If Not Vecchio Then Vecchio = Not wordPanel.Enabled
         If Vecchio Then
+            lApp = Nothing
             Try
-                lApp = CType(GetObject(, "Word.Application"), Word.Application)   '"Word.Application"
+                lApp = CType(GetObject(, "Word.Application"), Word.Application)
             Catch
-                Try
-                    lApp = CType(CreateObject("Word.Application"), Word.Application) '"Word.Application"
-                Catch ex As Exception
-                    Errore = True
-                End Try
+                ' No running Word instance: attempt COM activation below.
             End Try
-            If Errore Then
-                '         Testo = "Impossibile lanciare Word." + vbCrLf
-                ' Testo = Testo + "(" + Err.Description + ")"
-                ' MsgBox Testo, vbCritical + vbOKOnly
-                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
-                Motore.MostraAiuto(-IDHS.IDH_WORD_ASSENTE, CType(ChiaviMess.MessCritical + ChiaviMess.MessHelpButton + ChiaviMess.MessOkOnly, ChiaviMess), Err.Description)
-                Exit Sub
+            If lApp Is Nothing Then
+                Try
+                    Dim wordType = Type.GetTypeFromProgID("Word.Application", throwOnError:=True)
+                    lApp = CType(Activator.CreateInstance(wordType), Word.Application)
+                    If lApp Is Nothing Then Throw New InvalidOperationException("Word.Application non disponibile.")
+                Catch ex As Exception
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+                    Stub = Nothing
+                    MessageBox.Show("Impossibile avviare Microsoft Word desktop." & vbCrLf & ex.Message,
+                                    "Stampa Word", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
+                End Try
             End If
             Try
 7:              If Not NonAttivare Then
