@@ -2304,7 +2304,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
                     wnrota = False
                     Exit Function
                 End If
-                Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
+                RestoreApplicationDirectory()
                 ROTFLFOR(objROTFL)
                 J1 = 0 ' objROTFL.J1
                 rapp = objROTFL.rapp
@@ -2317,7 +2317,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
                         wnrota = False
                         Exit Function
                     End If
-                    Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
+                    RestoreApplicationDirectory()
                     ROTFLFOR(objROTFL)
 23074:              R1 = b / 2
                     R2 = a / 2
@@ -2357,7 +2357,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
                     J1 = 109.4 * mm / E / t ^ 3 / 0.2 / System.Math.Log(a / b)
                     Z0 = 180 * ZZ / pi
                     If Not ROTFL(objROTFL) Then Exit Function
-                    Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
+                    RestoreApplicationDirectory()
                     ROTFLFOR(objROTFL)
                     J1 = objROTFL.J1
                     rapp = objROTFL.rapp

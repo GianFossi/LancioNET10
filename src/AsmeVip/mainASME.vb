@@ -401,7 +401,16 @@ Module mainASME
         FractSyPI = 0.9
         CondizioniCorrose = 1
         Config(0).lkStr = "Design Condition"
-        If Not indici Is Nothing Then indici.RemoveAll()
+        If indici Is Nothing Then
+            indici = New LinkListSh
+        Else
+            indici.RemoveAll()
+        End If
+        If indiciAttivi Is Nothing Then
+            indiciAttivi = New LinkListSh
+        Else
+            indiciAttivi.RemoveAll()
+        End If
     End Sub
     Public Sub Ridimensiona(ByRef n As Short)
         Dim i, j As Short
@@ -1055,6 +1064,7 @@ Rif:        For kk = 1 To Config(0).NumeroLati
     End Sub
     Public Sub PulisciIndici()
         Dim i, j, indice, ind1, ind2 As Short
+        If indici Is Nothing Then indici = New LinkListSh
         Try
 Rif:        For i = 1 To indici.Count
                 For j = 1 To indici.Count
@@ -1065,8 +1075,10 @@ Rif:        For i = 1 To indici.Count
                             indici.Remove(j)
                             GoTo Rif
                         End If
-                        If Not Matdim(ind1) Is Nothing And Not Matdim(ind2) Is Nothing Then
-                            If Not Matdim(ind1).MatStr Is Nothing And Not Matdim(ind2).MatStr Is Nothing Then
+                        If ind1 >= 0 AndAlso ind1 <= UBound(Matdim) AndAlso
+                           ind2 >= 0 AndAlso ind2 <= UBound(Matdim) AndAlso
+                           Matdim(ind1) IsNot Nothing AndAlso Matdim(ind2) IsNot Nothing Then
+                            If Matdim(ind1).MatStr IsNot Nothing AndAlso Matdim(ind2).MatStr IsNot Nothing Then
                                 If Matdim(ind1).Indmat = Matdim(ind2).Indmat And _
                                    (Matdim(ind1).Agganciato And Matdim(ind2).Agganciato Or _
                                    Not Matdim(ind1).Agganciato And Not Matdim(ind2).Agganciato And _
@@ -1090,6 +1102,12 @@ Rif:        For i = 1 To indici.Count
         Catch e As Exception
             MsgBox(e.Message + vbCrLf + e.StackTrace)
         End Try
+    End Sub
+    Public Sub RestoreApplicationDirectory()
+        Dim applicationDirectory = AppContext.BaseDirectory
+        If IO.Directory.Exists(applicationDirectory) Then
+            Environment.CurrentDirectory = applicationDirectory
+        End If
     End Sub
     Public Sub SelPopMat(ByVal c As ComboBox, ByRef indice As Short, ByVal inv As Boolean, ByRef nuovoSelect As Short)
         Dim Selected As Short = c.SelectedIndex

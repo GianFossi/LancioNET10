@@ -1856,7 +1856,7 @@ Rif:
         AA24 = True
         If ptTipoAA > 99 And A02 = 0 Then A02 = 4
         Try
-            Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
+            RestoreApplicationDirectory()
             For Corroso = 0 To 1
                 If Not Abbassa(2 - Corroso) Then AA24 = False : Exit Function
                 ic = 0

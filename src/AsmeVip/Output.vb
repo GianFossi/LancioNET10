@@ -1147,23 +1147,30 @@ Module Output
         Dim i As Short
         Dim Nnozz, k As Short
         If icome.Trim.Length = 0 Then Exit Sub
-        Dim fs As New FileStream(icome, FileMode.OpenOrCreate)
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Not nuovoINP Then
             If MostraAiuto(2101, ChiaviMess.MessQuestion + ChiaviMess.MessYesNo) = ChiaviMess.Messno Then Exit Sub
         End If
+        If job Is Nothing Then Throw New InvalidOperationException("Impossibile salvare AsmeVip: commessa non inizializzata.")
+        If indici Is Nothing Then indici = New LinkListSh
+        Dim outputDirectory = Path.GetDirectoryName(Path.GetFullPath(icome))
+        If Not Directory.Exists(outputDirectory) Then Directory.CreateDirectory(outputDirectory)
+        Dim temporaryFile = Path.Combine(outputDirectory, Path.GetFileName(icome) & ".tmp-" & Guid.NewGuid().ToString("N"))
+        Dim previousInputFormat = nuovoINP
+        Dim saveCompleted As Boolean = False
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
         Config(0).Versione = 25
         Try
-            bf.Serialize(fs, Config(0))
-            bf.Serialize(fs, job)
-            nuovoINP = True
-            For k = 1 To Config(0).NumeroLati + 1
-                Config(k).Versione = Config(0).Versione
-                bf.Serialize(fs, Config(k))
-                For i = 1 To Config(k).Ninvolucri
-                    bf.Serialize(fs, Involucr(k, i))
-                    Select Case Involucr(k, i).Tipo
+            Using fs As New FileStream(temporaryFile, FileMode.CreateNew, FileAccess.Write, FileShare.None)
+                bf.Serialize(fs, Config(0))
+                bf.Serialize(fs, job)
+                nuovoINP = True
+                For k = 1 To Config(0).NumeroLati + 1
+                    Config(k).Versione = Config(0).Versione
+                    bf.Serialize(fs, Config(k))
+                    For i = 1 To Config(k).Ninvolucri
+                        bf.Serialize(fs, Involucr(k, i))
+                        Select Case Involucr(k, i).Tipo
                         Case 2, 3
                             bf.Serialize(fs, AdditCono(k, i))
                         Case 5 ' Flangione
@@ -1178,35 +1185,39 @@ Module Output
                         Case 9 ' pass partition
                             kLato = k : jInvolucr = i
                             CType(objMemb(Involucr(k, i).IndObject), wn_Part).Salva(fs)
-                    End Select
-                Next
-                Nnozz = NumBocch(k) + NumBocch2(k)
+                        End Select
+                    Next
+                    Nnozz = NumBocch(k) + NumBocch2(k)
 111:            For i = 1 To Nnozz
-                    If Nozzles(k, i).SWR < 9 Then Nozzles(k, i).SWR = Nozzles(k, i).SWR + 10
-                    bf.Serialize(fs, Nozzles(k, i))
-                    If Nozzles(k, i).IndObject > 0 Then
-                        kLato = k : kNozzle = i
-                        CType(objMemb(Nozzles(k, i).IndObject), wn_flan).Salva(fs)
-                    End If
-                    bf.Serialize(fs, NozzAdd(k, i))
+                        If Nozzles(k, i).SWR < 9 Then Nozzles(k, i).SWR = Nozzles(k, i).SWR + 10
+                        bf.Serialize(fs, Nozzles(k, i))
+                        If Nozzles(k, i).IndObject > 0 Then
+                            kLato = k : kNozzle = i
+                            CType(objMemb(Nozzles(k, i).IndObject), wn_flan).Salva(fs)
+                        End If
+                        bf.Serialize(fs, NozzAdd(k, i))
+                    Next
                 Next
-            Next
-            bf.Serialize(fs, indici)
-            For i = 1 To indici.Count
-                If Matdim(indici(i).TextData) Is Nothing Then Matdim(indici(i).TextData) = New LibMat.MaterialeNew1
-                bf.Serialize(fs, Matdim(indici(i).TextData))
-                bf.Serialize(fs, Matdim(indici(i).TextData).AlfaYoung)
-            Next
-            fs.Close()
-        Catch e As Exception
-            MsgBox(e.Message + vbCrLf + e.StackTrace)
+                bf.Serialize(fs, indici)
+                For i = 1 To indici.Count
+                    If Matdim(indici(i).TextData) Is Nothing Then Matdim(indici(i).TextData) = New LibMat.MaterialeNew1
+                    If Matdim(indici(i).TextData).AlfaYoung Is Nothing Then Matdim(indici(i).TextData).AlfaYoung = New LibMat.clsAlfaYoung
+                    bf.Serialize(fs, Matdim(indici(i).TextData))
+                    bf.Serialize(fs, Matdim(indici(i).TextData).AlfaYoung)
+                Next
+            End Using
+            File.Move(temporaryFile, icome, True)
+            saveCompleted = True
+        Finally
+            If File.Exists(temporaryFile) Then File.Delete(temporaryFile)
+            If Not saveCompleted Then nuovoINP = previousInputFormat
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            RestoreApplicationDirectory()
         End Try
         'If Not job Is Nothing Then
         'job.Comm.SalvaCom()
         ''            job.Salva()
         'End If
-        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
-        Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
         ModifiedData = False
     End Sub
     Public Sub TransWND()

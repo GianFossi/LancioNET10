@@ -1302,7 +1302,7 @@ Finisci:
             MessageBox.Show(e.Message + vbCrLf + e.StackTrace)
             junk = DialogResult.No
         End Try
-        Environment.CurrentDirectory = Monitor.Motore.Inizio.Basedir & "\Dll"
+        RestoreApplicationDirectory()
 ExDes:
         If nuovoINP Then fs.Close() Else FileClose(ifl)
         If Not sonda Then
