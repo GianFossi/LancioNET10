@@ -1,7 +1,7 @@
 Option Strict Off
 Option Explicit On
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports routbase1
 Friend Class DbaseSelle
     Inherits System.Windows.Forms.Form
@@ -127,9 +127,9 @@ Friend Class DbaseSelle
     Public WithEvents _Label1_2 As System.Windows.Forms.Label
     Public WithEvents _Label1_1 As System.Windows.Forms.Label
     Public WithEvents _Label1_0 As System.Windows.Forms.Label
-    Public WithEvents Image1 As Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Image1 As New System.Collections.Generic.Dictionary(Of Integer, PictureBox)
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -236,14 +236,8 @@ Friend Class DbaseSelle
         Me._Label1_2 = New System.Windows.Forms.Label
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Image1 = New Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(Me.components)
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.Frame2.SuspendLayout()
         Me.Frame1.SuspendLayout()
-        CType(Me.Image1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Check1
@@ -397,7 +391,7 @@ Friend Class DbaseSelle
         '
         Me._Image1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Image1_3.Image = CType(resources.GetObject("_Image1_3.Image"), System.Drawing.Image)
-        Me.Image1.SetIndex(Me._Image1_3, CType(3, Short))
+        Me.Image1.Add(3, Me._Image1_3)
         Me._Image1_3.Location = New System.Drawing.Point(8, 256)
         Me._Image1_3.Name = "_Image1_3"
         Me._Image1_3.Size = New System.Drawing.Size(79, 79)
@@ -409,7 +403,7 @@ Friend Class DbaseSelle
         '
         Me._Image1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Image1_2.Image = CType(resources.GetObject("_Image1_2.Image"), System.Drawing.Image)
-        Me.Image1.SetIndex(Me._Image1_2, CType(2, Short))
+        Me.Image1.Add(2, Me._Image1_2)
         Me._Image1_2.Location = New System.Drawing.Point(8, 176)
         Me._Image1_2.Name = "_Image1_2"
         Me._Image1_2.Size = New System.Drawing.Size(79, 79)
@@ -421,7 +415,7 @@ Friend Class DbaseSelle
         '
         Me._Image1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Image1_1.Image = CType(resources.GetObject("_Image1_1.Image"), System.Drawing.Image)
-        Me.Image1.SetIndex(Me._Image1_1, CType(1, Short))
+        Me.Image1.Add(1, Me._Image1_1)
         Me._Image1_1.Location = New System.Drawing.Point(8, 96)
         Me._Image1_1.Name = "_Image1_1"
         Me._Image1_1.Size = New System.Drawing.Size(79, 79)
@@ -433,7 +427,7 @@ Friend Class DbaseSelle
         '
         Me._Image1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Image1_0.Image = CType(resources.GetObject("_Image1_0.Image"), System.Drawing.Image)
-        Me.Image1.SetIndex(Me._Image1_0, CType(0, Short))
+        Me.Image1.Add(0, Me._Image1_0)
         Me._Image1_0.Location = New System.Drawing.Point(8, 16)
         Me._Image1_0.Name = "_Image1_0"
         Me._Image1_0.Size = New System.Drawing.Size(79, 79)
@@ -460,7 +454,7 @@ Friend Class DbaseSelle
         Me._Text1_36.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_36.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_36.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_36, CType(36, Short))
+        Me.Text1.Add(36, Me._Text1_36)
         Me._Text1_36.Location = New System.Drawing.Point(273, 365)
         Me._Text1_36.MaxLength = 0
         Me._Text1_36.Name = "_Text1_36"
@@ -476,7 +470,7 @@ Friend Class DbaseSelle
         Me._Text1_35.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_35.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_35.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_35, CType(35, Short))
+        Me.Text1.Add(35, Me._Text1_35)
         Me._Text1_35.Location = New System.Drawing.Point(273, 345)
         Me._Text1_35.MaxLength = 0
         Me._Text1_35.Name = "_Text1_35"
@@ -492,7 +486,7 @@ Friend Class DbaseSelle
         Me._Text1_34.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_34.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_34.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_34, CType(34, Short))
+        Me.Text1.Add(34, Me._Text1_34)
         Me._Text1_34.Location = New System.Drawing.Point(107, 365)
         Me._Text1_34.MaxLength = 0
         Me._Text1_34.Name = "_Text1_34"
@@ -508,7 +502,7 @@ Friend Class DbaseSelle
         Me._Text1_33.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_33.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_33.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_33, CType(33, Short))
+        Me.Text1.Add(33, Me._Text1_33)
         Me._Text1_33.Location = New System.Drawing.Point(107, 345)
         Me._Text1_33.MaxLength = 0
         Me._Text1_33.Name = "_Text1_33"
@@ -525,7 +519,7 @@ Friend Class DbaseSelle
         Me._Text1_31.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_31.Enabled = False
         Me._Text1_31.ForeColor = System.Drawing.Color.Red
-        Me.Text1.SetIndex(Me._Text1_31, CType(31, Short))
+        Me.Text1.Add(31, Me._Text1_31)
         Me._Text1_31.Location = New System.Drawing.Point(107, 293)
         Me._Text1_31.MaxLength = 0
         Me._Text1_31.Name = "_Text1_31"
@@ -541,7 +535,7 @@ Friend Class DbaseSelle
         Me._Text1_32.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_32.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_32.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_32, CType(32, Short))
+        Me.Text1.Add(32, Me._Text1_32)
         Me._Text1_32.Location = New System.Drawing.Point(273, 326)
         Me._Text1_32.MaxLength = 0
         Me._Text1_32.Name = "_Text1_32"
@@ -557,7 +551,7 @@ Friend Class DbaseSelle
         Me._Text1_30.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_30.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_30.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_30, CType(30, Short))
+        Me.Text1.Add(30, Me._Text1_30)
         Me._Text1_30.Location = New System.Drawing.Point(274, 293)
         Me._Text1_30.MaxLength = 0
         Me._Text1_30.Name = "_Text1_30"
@@ -573,7 +567,7 @@ Friend Class DbaseSelle
         Me._Text1_29.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_29.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_29.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_29, CType(29, Short))
+        Me.Text1.Add(29, Me._Text1_29)
         Me._Text1_29.Location = New System.Drawing.Point(274, 258)
         Me._Text1_29.MaxLength = 0
         Me._Text1_29.Name = "_Text1_29"
@@ -589,7 +583,7 @@ Friend Class DbaseSelle
         Me._Text1_28.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_28.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_28.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_28, CType(28, Short))
+        Me.Text1.Add(28, Me._Text1_28)
         Me._Text1_28.Location = New System.Drawing.Point(274, 240)
         Me._Text1_28.MaxLength = 0
         Me._Text1_28.Name = "_Text1_28"
@@ -605,7 +599,7 @@ Friend Class DbaseSelle
         Me._Text1_27.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_27.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_27.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_27, CType(27, Short))
+        Me.Text1.Add(27, Me._Text1_27)
         Me._Text1_27.Location = New System.Drawing.Point(274, 222)
         Me._Text1_27.MaxLength = 0
         Me._Text1_27.Name = "_Text1_27"
@@ -621,7 +615,7 @@ Friend Class DbaseSelle
         Me._Text1_26.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_26.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_26.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_26, CType(26, Short))
+        Me.Text1.Add(26, Me._Text1_26)
         Me._Text1_26.Location = New System.Drawing.Point(274, 204)
         Me._Text1_26.MaxLength = 0
         Me._Text1_26.Name = "_Text1_26"
@@ -637,7 +631,7 @@ Friend Class DbaseSelle
         Me._Text1_25.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_25.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_25.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_25, CType(25, Short))
+        Me.Text1.Add(25, Me._Text1_25)
         Me._Text1_25.Location = New System.Drawing.Point(274, 186)
         Me._Text1_25.MaxLength = 0
         Me._Text1_25.Name = "_Text1_25"
@@ -653,7 +647,7 @@ Friend Class DbaseSelle
         Me._Text1_24.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_24.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_24.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_24, CType(24, Short))
+        Me.Text1.Add(24, Me._Text1_24)
         Me._Text1_24.Location = New System.Drawing.Point(274, 168)
         Me._Text1_24.MaxLength = 0
         Me._Text1_24.Name = "_Text1_24"
@@ -669,7 +663,7 @@ Friend Class DbaseSelle
         Me._Text1_23.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_23.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_23.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_23, CType(23, Short))
+        Me.Text1.Add(23, Me._Text1_23)
         Me._Text1_23.Location = New System.Drawing.Point(274, 150)
         Me._Text1_23.MaxLength = 0
         Me._Text1_23.Name = "_Text1_23"
@@ -685,7 +679,7 @@ Friend Class DbaseSelle
         Me._Text1_22.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_22.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_22.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_22, CType(22, Short))
+        Me.Text1.Add(22, Me._Text1_22)
         Me._Text1_22.Location = New System.Drawing.Point(274, 132)
         Me._Text1_22.MaxLength = 0
         Me._Text1_22.Name = "_Text1_22"
@@ -701,7 +695,7 @@ Friend Class DbaseSelle
         Me._Text1_21.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_21.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_21.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_21, CType(21, Short))
+        Me.Text1.Add(21, Me._Text1_21)
         Me._Text1_21.Location = New System.Drawing.Point(274, 114)
         Me._Text1_21.MaxLength = 0
         Me._Text1_21.Name = "_Text1_21"
@@ -717,7 +711,7 @@ Friend Class DbaseSelle
         Me._Text1_20.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_20.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_20.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_20, CType(20, Short))
+        Me.Text1.Add(20, Me._Text1_20)
         Me._Text1_20.Location = New System.Drawing.Point(274, 96)
         Me._Text1_20.MaxLength = 0
         Me._Text1_20.Name = "_Text1_20"
@@ -733,7 +727,7 @@ Friend Class DbaseSelle
         Me._Text1_19.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_19.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_19.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_19, CType(19, Short))
+        Me.Text1.Add(19, Me._Text1_19)
         Me._Text1_19.Location = New System.Drawing.Point(274, 78)
         Me._Text1_19.MaxLength = 0
         Me._Text1_19.Name = "_Text1_19"
@@ -749,7 +743,7 @@ Friend Class DbaseSelle
         Me._Text1_18.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_18.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_18.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_18, CType(18, Short))
+        Me.Text1.Add(18, Me._Text1_18)
         Me._Text1_18.Location = New System.Drawing.Point(274, 60)
         Me._Text1_18.MaxLength = 0
         Me._Text1_18.Name = "_Text1_18"
@@ -765,7 +759,7 @@ Friend Class DbaseSelle
         Me._Text1_17.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_17.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_17.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_17, CType(17, Short))
+        Me.Text1.Add(17, Me._Text1_17)
         Me._Text1_17.Location = New System.Drawing.Point(274, 42)
         Me._Text1_17.MaxLength = 0
         Me._Text1_17.Name = "_Text1_17"
@@ -781,7 +775,7 @@ Friend Class DbaseSelle
         Me._Text1_16.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_16.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_16.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_16, CType(16, Short))
+        Me.Text1.Add(16, Me._Text1_16)
         Me._Text1_16.Location = New System.Drawing.Point(274, 24)
         Me._Text1_16.MaxLength = 0
         Me._Text1_16.Name = "_Text1_16"
@@ -797,7 +791,7 @@ Friend Class DbaseSelle
         Me._Text1_15.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_15.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_15, CType(15, Short))
+        Me.Text1.Add(15, Me._Text1_15)
         Me._Text1_15.Location = New System.Drawing.Point(274, 8)
         Me._Text1_15.MaxLength = 0
         Me._Text1_15.Name = "_Text1_15"
@@ -813,7 +807,7 @@ Friend Class DbaseSelle
         Me._Text1_13.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_13.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_13, CType(13, Short))
+        Me.Text1.Add(13, Me._Text1_13)
         Me._Text1_13.Location = New System.Drawing.Point(107, 246)
         Me._Text1_13.MaxLength = 0
         Me._Text1_13.Name = "_Text1_13"
@@ -829,7 +823,7 @@ Friend Class DbaseSelle
         Me._Text1_12.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_12.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_12, CType(12, Short))
+        Me.Text1.Add(12, Me._Text1_12)
         Me._Text1_12.Location = New System.Drawing.Point(107, 228)
         Me._Text1_12.MaxLength = 0
         Me._Text1_12.Name = "_Text1_12"
@@ -845,7 +839,7 @@ Friend Class DbaseSelle
         Me._Text1_11.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_11, CType(11, Short))
+        Me.Text1.Add(11, Me._Text1_11)
         Me._Text1_11.Location = New System.Drawing.Point(107, 210)
         Me._Text1_11.MaxLength = 0
         Me._Text1_11.Name = "_Text1_11"
@@ -861,7 +855,7 @@ Friend Class DbaseSelle
         Me._Text1_10.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_10, CType(10, Short))
+        Me.Text1.Add(10, Me._Text1_10)
         Me._Text1_10.Location = New System.Drawing.Point(107, 192)
         Me._Text1_10.MaxLength = 0
         Me._Text1_10.Name = "_Text1_10"
@@ -877,7 +871,7 @@ Friend Class DbaseSelle
         Me._Text1_9.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_9, CType(9, Short))
+        Me.Text1.Add(9, Me._Text1_9)
         Me._Text1_9.Location = New System.Drawing.Point(107, 174)
         Me._Text1_9.MaxLength = 0
         Me._Text1_9.Name = "_Text1_9"
@@ -893,7 +887,7 @@ Friend Class DbaseSelle
         Me._Text1_8.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_8, CType(8, Short))
+        Me.Text1.Add(8, Me._Text1_8)
         Me._Text1_8.Location = New System.Drawing.Point(107, 156)
         Me._Text1_8.MaxLength = 0
         Me._Text1_8.Name = "_Text1_8"
@@ -909,7 +903,7 @@ Friend Class DbaseSelle
         Me._Text1_7.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_7, CType(7, Short))
+        Me.Text1.Add(7, Me._Text1_7)
         Me._Text1_7.Location = New System.Drawing.Point(107, 138)
         Me._Text1_7.MaxLength = 0
         Me._Text1_7.Name = "_Text1_7"
@@ -925,7 +919,7 @@ Friend Class DbaseSelle
         Me._Text1_6.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_6, CType(6, Short))
+        Me.Text1.Add(6, Me._Text1_6)
         Me._Text1_6.Location = New System.Drawing.Point(107, 120)
         Me._Text1_6.MaxLength = 0
         Me._Text1_6.Name = "_Text1_6"
@@ -941,7 +935,7 @@ Friend Class DbaseSelle
         Me._Text1_5.BackColor = System.Drawing.SystemColors.Window
         Me._Text1_5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_5, CType(5, Short))
+        Me.Text1.Add(5, Me._Text1_5)
         Me._Text1_5.Location = New System.Drawing.Point(107, 102)
         Me._Text1_5.MaxLength = 0
         Me._Text1_5.Name = "_Text1_5"
@@ -958,7 +952,7 @@ Friend Class DbaseSelle
         Me._Text1_14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_14.Enabled = False
         Me._Text1_14.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_14, CType(14, Short))
+        Me.Text1.Add(14, Me._Text1_14)
         Me._Text1_14.Location = New System.Drawing.Point(107, 264)
         Me._Text1_14.MaxLength = 0
         Me._Text1_14.Name = "_Text1_14"
@@ -975,7 +969,7 @@ Friend Class DbaseSelle
         Me._Text1_4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_4.Enabled = False
         Me._Text1_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_4, CType(4, Short))
+        Me.Text1.Add(4, Me._Text1_4)
         Me._Text1_4.Location = New System.Drawing.Point(107, 84)
         Me._Text1_4.MaxLength = 0
         Me._Text1_4.Name = "_Text1_4"
@@ -992,7 +986,7 @@ Friend Class DbaseSelle
         Me._Text1_3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_3.Enabled = False
         Me._Text1_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_3, CType(3, Short))
+        Me.Text1.Add(3, Me._Text1_3)
         Me._Text1_3.Location = New System.Drawing.Point(107, 66)
         Me._Text1_3.MaxLength = 0
         Me._Text1_3.Name = "_Text1_3"
@@ -1009,7 +1003,7 @@ Friend Class DbaseSelle
         Me._Text1_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_2.Enabled = False
         Me._Text1_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_2, CType(2, Short))
+        Me.Text1.Add(2, Me._Text1_2)
         Me._Text1_2.Location = New System.Drawing.Point(107, 48)
         Me._Text1_2.MaxLength = 0
         Me._Text1_2.Name = "_Text1_2"
@@ -1026,7 +1020,7 @@ Friend Class DbaseSelle
         Me._Text1_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_1.Enabled = False
         Me._Text1_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_1, CType(1, Short))
+        Me.Text1.Add(1, Me._Text1_1)
         Me._Text1_1.Location = New System.Drawing.Point(107, 30)
         Me._Text1_1.MaxLength = 0
         Me._Text1_1.Name = "_Text1_1"
@@ -1043,7 +1037,7 @@ Friend Class DbaseSelle
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_0.Enabled = False
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(107, 8)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Name = "_Text1_0"
@@ -1079,7 +1073,7 @@ Friend Class DbaseSelle
         Me._Label1_35.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_35.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_35.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_35, CType(35, Short))
+        Me.Label1.Add(35, Me._Label1_35)
         Me._Label1_35.Location = New System.Drawing.Point(168, 345)
         Me._Label1_35.Name = "_Label1_35"
         Me._Label1_35.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1092,7 +1086,7 @@ Friend Class DbaseSelle
         Me._Label1_36.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_36.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_36.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_36, CType(36, Short))
+        Me.Label1.Add(36, Me._Label1_36)
         Me._Label1_36.Location = New System.Drawing.Point(168, 365)
         Me._Label1_36.Name = "_Label1_36"
         Me._Label1_36.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1105,7 +1099,7 @@ Friend Class DbaseSelle
         Me._Label1_34.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_34.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_34.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_34, CType(34, Short))
+        Me.Label1.Add(34, Me._Label1_34)
         Me._Label1_34.Location = New System.Drawing.Point(7, 365)
         Me._Label1_34.Name = "_Label1_34"
         Me._Label1_34.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1118,7 +1112,7 @@ Friend Class DbaseSelle
         Me._Label1_33.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_33.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_33.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_33, CType(33, Short))
+        Me.Label1.Add(33, Me._Label1_33)
         Me._Label1_33.Location = New System.Drawing.Point(7, 345)
         Me._Label1_33.Name = "_Label1_33"
         Me._Label1_33.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1131,7 +1125,7 @@ Friend Class DbaseSelle
         Me._Label1_31.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_31.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_31.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_31, CType(31, Short))
+        Me.Label1.Add(31, Me._Label1_31)
         Me._Label1_31.Location = New System.Drawing.Point(7, 293)
         Me._Label1_31.Name = "_Label1_31"
         Me._Label1_31.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1144,7 +1138,7 @@ Friend Class DbaseSelle
         Me._Label1_32.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_32.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_32.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_32, CType(32, Short))
+        Me.Label1.Add(32, Me._Label1_32)
         Me._Label1_32.Location = New System.Drawing.Point(168, 326)
         Me._Label1_32.Name = "_Label1_32"
         Me._Label1_32.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1157,7 +1151,7 @@ Friend Class DbaseSelle
         Me._Label1_30.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_30.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_30.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_30, CType(30, Short))
+        Me.Label1.Add(30, Me._Label1_30)
         Me._Label1_30.Location = New System.Drawing.Point(168, 293)
         Me._Label1_30.Name = "_Label1_30"
         Me._Label1_30.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1170,7 +1164,7 @@ Friend Class DbaseSelle
         Me._Label1_29.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_29.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_29.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_29, CType(29, Short))
+        Me.Label1.Add(29, Me._Label1_29)
         Me._Label1_29.Location = New System.Drawing.Point(168, 258)
         Me._Label1_29.Name = "_Label1_29"
         Me._Label1_29.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1183,7 +1177,7 @@ Friend Class DbaseSelle
         Me._Label1_28.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_28.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_28.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_28, CType(28, Short))
+        Me.Label1.Add(28, Me._Label1_28)
         Me._Label1_28.Location = New System.Drawing.Point(168, 240)
         Me._Label1_28.Name = "_Label1_28"
         Me._Label1_28.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1196,7 +1190,7 @@ Friend Class DbaseSelle
         Me._Label1_27.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_27.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_27.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_27, CType(27, Short))
+        Me.Label1.Add(27, Me._Label1_27)
         Me._Label1_27.Location = New System.Drawing.Point(168, 228)
         Me._Label1_27.Name = "_Label1_27"
         Me._Label1_27.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1209,7 +1203,7 @@ Friend Class DbaseSelle
         Me._Label1_26.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_26.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_26, CType(26, Short))
+        Me.Label1.Add(26, Me._Label1_26)
         Me._Label1_26.Location = New System.Drawing.Point(168, 210)
         Me._Label1_26.Name = "_Label1_26"
         Me._Label1_26.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1222,7 +1216,7 @@ Friend Class DbaseSelle
         Me._Label1_25.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_25.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_25.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_25, CType(25, Short))
+        Me.Label1.Add(25, Me._Label1_25)
         Me._Label1_25.Location = New System.Drawing.Point(168, 192)
         Me._Label1_25.Name = "_Label1_25"
         Me._Label1_25.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1235,7 +1229,7 @@ Friend Class DbaseSelle
         Me._Label1_24.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_24.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_24.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_24, CType(24, Short))
+        Me.Label1.Add(24, Me._Label1_24)
         Me._Label1_24.Location = New System.Drawing.Point(168, 174)
         Me._Label1_24.Name = "_Label1_24"
         Me._Label1_24.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1248,7 +1242,7 @@ Friend Class DbaseSelle
         Me._Label1_23.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_23.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_23.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_23, CType(23, Short))
+        Me.Label1.Add(23, Me._Label1_23)
         Me._Label1_23.Location = New System.Drawing.Point(168, 156)
         Me._Label1_23.Name = "_Label1_23"
         Me._Label1_23.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1261,7 +1255,7 @@ Friend Class DbaseSelle
         Me._Label1_22.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_22.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_22.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_22, CType(22, Short))
+        Me.Label1.Add(22, Me._Label1_22)
         Me._Label1_22.Location = New System.Drawing.Point(168, 132)
         Me._Label1_22.Name = "_Label1_22"
         Me._Label1_22.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1274,7 +1268,7 @@ Friend Class DbaseSelle
         Me._Label1_21.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_21.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_21, CType(21, Short))
+        Me.Label1.Add(21, Me._Label1_21)
         Me._Label1_21.Location = New System.Drawing.Point(168, 114)
         Me._Label1_21.Name = "_Label1_21"
         Me._Label1_21.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1287,7 +1281,7 @@ Friend Class DbaseSelle
         Me._Label1_20.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_20.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_20.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_20, CType(20, Short))
+        Me.Label1.Add(20, Me._Label1_20)
         Me._Label1_20.Location = New System.Drawing.Point(168, 96)
         Me._Label1_20.Name = "_Label1_20"
         Me._Label1_20.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1300,7 +1294,7 @@ Friend Class DbaseSelle
         Me._Label1_19.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_19.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_19.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_19, CType(19, Short))
+        Me.Label1.Add(19, Me._Label1_19)
         Me._Label1_19.Location = New System.Drawing.Point(168, 78)
         Me._Label1_19.Name = "_Label1_19"
         Me._Label1_19.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1313,7 +1307,7 @@ Friend Class DbaseSelle
         Me._Label1_18.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_18.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_18.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_18, CType(18, Short))
+        Me.Label1.Add(18, Me._Label1_18)
         Me._Label1_18.Location = New System.Drawing.Point(168, 60)
         Me._Label1_18.Name = "_Label1_18"
         Me._Label1_18.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1326,7 +1320,7 @@ Friend Class DbaseSelle
         Me._Label1_17.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_17.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_17.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_17, CType(17, Short))
+        Me.Label1.Add(17, Me._Label1_17)
         Me._Label1_17.Location = New System.Drawing.Point(168, 42)
         Me._Label1_17.Name = "_Label1_17"
         Me._Label1_17.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1339,7 +1333,7 @@ Friend Class DbaseSelle
         Me._Label1_16.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_16.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_16.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_16, CType(16, Short))
+        Me.Label1.Add(16, Me._Label1_16)
         Me._Label1_16.Location = New System.Drawing.Point(168, 24)
         Me._Label1_16.Name = "_Label1_16"
         Me._Label1_16.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1352,7 +1346,7 @@ Friend Class DbaseSelle
         Me._Label1_15.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_15.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_15.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_15, CType(15, Short))
+        Me.Label1.Add(15, Me._Label1_15)
         Me._Label1_15.Location = New System.Drawing.Point(168, 8)
         Me._Label1_15.Name = "_Label1_15"
         Me._Label1_15.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1365,7 +1359,7 @@ Friend Class DbaseSelle
         Me._Label1_13.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_13, CType(13, Short))
+        Me.Label1.Add(13, Me._Label1_13)
         Me._Label1_13.Location = New System.Drawing.Point(7, 246)
         Me._Label1_13.Name = "_Label1_13"
         Me._Label1_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1378,7 +1372,7 @@ Friend Class DbaseSelle
         Me._Label1_12.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_12, CType(12, Short))
+        Me.Label1.Add(12, Me._Label1_12)
         Me._Label1_12.Location = New System.Drawing.Point(7, 228)
         Me._Label1_12.Name = "_Label1_12"
         Me._Label1_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1391,7 +1385,7 @@ Friend Class DbaseSelle
         Me._Label1_11.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_11, CType(11, Short))
+        Me.Label1.Add(11, Me._Label1_11)
         Me._Label1_11.Location = New System.Drawing.Point(7, 210)
         Me._Label1_11.Name = "_Label1_11"
         Me._Label1_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1404,7 +1398,7 @@ Friend Class DbaseSelle
         Me._Label1_10.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_10, CType(10, Short))
+        Me.Label1.Add(10, Me._Label1_10)
         Me._Label1_10.Location = New System.Drawing.Point(7, 192)
         Me._Label1_10.Name = "_Label1_10"
         Me._Label1_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1417,7 +1411,7 @@ Friend Class DbaseSelle
         Me._Label1_9.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_9.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_9, CType(9, Short))
+        Me.Label1.Add(9, Me._Label1_9)
         Me._Label1_9.Location = New System.Drawing.Point(7, 174)
         Me._Label1_9.Name = "_Label1_9"
         Me._Label1_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1430,7 +1424,7 @@ Friend Class DbaseSelle
         Me._Label1_8.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_8, CType(8, Short))
+        Me.Label1.Add(8, Me._Label1_8)
         Me._Label1_8.Location = New System.Drawing.Point(7, 156)
         Me._Label1_8.Name = "_Label1_8"
         Me._Label1_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1443,7 +1437,7 @@ Friend Class DbaseSelle
         Me._Label1_7.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_7, CType(7, Short))
+        Me.Label1.Add(7, Me._Label1_7)
         Me._Label1_7.Location = New System.Drawing.Point(7, 138)
         Me._Label1_7.Name = "_Label1_7"
         Me._Label1_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1456,7 +1450,7 @@ Friend Class DbaseSelle
         Me._Label1_6.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_6, CType(6, Short))
+        Me.Label1.Add(6, Me._Label1_6)
         Me._Label1_6.Location = New System.Drawing.Point(7, 120)
         Me._Label1_6.Name = "_Label1_6"
         Me._Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1469,7 +1463,7 @@ Friend Class DbaseSelle
         Me._Label1_5.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_5, CType(5, Short))
+        Me.Label1.Add(5, Me._Label1_5)
         Me._Label1_5.Location = New System.Drawing.Point(7, 102)
         Me._Label1_5.Name = "_Label1_5"
         Me._Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1482,7 +1476,7 @@ Friend Class DbaseSelle
         Me._Label1_14.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_14.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_14, CType(14, Short))
+        Me.Label1.Add(14, Me._Label1_14)
         Me._Label1_14.Location = New System.Drawing.Point(7, 264)
         Me._Label1_14.Name = "_Label1_14"
         Me._Label1_14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1495,7 +1489,7 @@ Friend Class DbaseSelle
         Me._Label1_4.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_4, CType(4, Short))
+        Me.Label1.Add(4, Me._Label1_4)
         Me._Label1_4.Location = New System.Drawing.Point(7, 84)
         Me._Label1_4.Name = "_Label1_4"
         Me._Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1508,7 +1502,7 @@ Friend Class DbaseSelle
         Me._Label1_3.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_3, CType(3, Short))
+        Me.Label1.Add(3, Me._Label1_3)
         Me._Label1_3.Location = New System.Drawing.Point(7, 66)
         Me._Label1_3.Name = "_Label1_3"
         Me._Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1521,7 +1515,7 @@ Friend Class DbaseSelle
         Me._Label1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_2, CType(2, Short))
+        Me.Label1.Add(2, Me._Label1_2)
         Me._Label1_2.Location = New System.Drawing.Point(7, 48)
         Me._Label1_2.Name = "_Label1_2"
         Me._Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1534,7 +1528,7 @@ Friend Class DbaseSelle
         Me._Label1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_1, CType(1, Short))
+        Me.Label1.Add(1, Me._Label1_1)
         Me._Label1_1.Location = New System.Drawing.Point(7, 30)
         Me._Label1_1.Name = "_Label1_1"
         Me._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1547,7 +1541,7 @@ Friend Class DbaseSelle
         Me._Label1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_0, CType(0, Short))
+        Me.Label1.Add(0, Me._Label1_0)
         Me._Label1_0.Location = New System.Drawing.Point(7, 8)
         Me._Label1_0.Name = "_Label1_0"
         Me._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1652,9 +1646,9 @@ Friend Class DbaseSelle
         Me.Text = "DataBaseSelle"
         Me.Frame2.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
-        CType(Me.Image1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -1837,7 +1831,7 @@ Friend Class DbaseSelle
 
     Private Sub DbaseSelle_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
         Dim DiaMax, DiaMin As Integer
-        Me.SetBounds(GlobalRoutines.TwipsToPixelsX(100), GlobalRoutines.TwipsToPixelsY(600), 0, 0, Windows.Forms.BoundsSpecified.X Or Windows.Forms.BoundsSpecified.Y)
+        Me.SetBounds(GlobalRoutines.TwipsToPixelsX(100), GlobalRoutines.TwipsToPixelsY(600), 0, 0, System.Windows.Forms.BoundsSpecified.X Or System.Windows.Forms.BoundsSpecified.Y)
         Frame2.Visible = dBase
         Text1(0).Visible = dBase
         Label1(0).Visible = dBase
@@ -1967,23 +1961,23 @@ Friend Class DbaseSelle
             Text1(1).Text = .StandardStr
             Text1(2).Text = Str(.Serie)
             If .sempor Then Text1(3).Text = "SEM" Else Text1(3).Text = "POR"
-            Text1(5).Text = VB6.Format(.Altezza, StrForm)
-            Text1(6).Text = VB6.Format(.Larghezza, StrForm)
-            Text1(7).Text = VB6.Format(.LungBase, StrForm)
-            Text1(8).Text = VB6.Format(.LargBase, StrForm)
-            Text1(9).Text = VB6.Format(.LargRinfBase, StrForm)
-            Text1(10).Text = VB6.Format(.LargRinfShell, StrForm)
+            Text1(5).Text = Microsoft.VisualBasic.Strings.Format(.Altezza, StrForm)
+            Text1(6).Text = Microsoft.VisualBasic.Strings.Format(.Larghezza, StrForm)
+            Text1(7).Text = Microsoft.VisualBasic.Strings.Format(.LungBase, StrForm)
+            Text1(8).Text = Microsoft.VisualBasic.Strings.Format(.LargBase, StrForm)
+            Text1(9).Text = Microsoft.VisualBasic.Strings.Format(.LargRinfBase, StrForm)
+            Text1(10).Text = Microsoft.VisualBasic.Strings.Format(.LargRinfShell, StrForm)
             Text1(15).Text = Str(.nribs)
-            Text1(16).Text = VB6.Format(.DistRib1)
-            Text1(17).Text = VB6.Format(.DistRib2)
-            Text1(18).Text = VB6.Format(.DistRib3)
-            Text1(19).Text = VB6.Format(.SpCost, StrForm)
-            Text1(20).Text = VB6.Format(.SpRinf, StrForm)
-            Text1(21).Text = VB6.Format(.SpRibs, StrForm)
-            Text1(22).Text = VB6.Format(.SpesBase, StrForm)
+            Text1(16).Text = Microsoft.VisualBasic.Strings.Format(.DistRib1)
+            Text1(17).Text = Microsoft.VisualBasic.Strings.Format(.DistRib2)
+            Text1(18).Text = Microsoft.VisualBasic.Strings.Format(.DistRib3)
+            Text1(19).Text = Microsoft.VisualBasic.Strings.Format(.SpCost, StrForm)
+            Text1(20).Text = Microsoft.VisualBasic.Strings.Format(.SpRinf, StrForm)
+            Text1(21).Text = Microsoft.VisualBasic.Strings.Format(.SpRibs, StrForm)
+            Text1(22).Text = Microsoft.VisualBasic.Strings.Format(.SpesBase, StrForm)
             If .CI Then Text1(27).Text = "C" Else Text1(27).Text = "I"
-            Text1(29).Text = VB6.Format(.SorAngSel, StrForm)
-            Text1(32).Text = VB6.Format(.AltSopra + .Altezza, StrForm)
+            Text1(29).Text = Microsoft.VisualBasic.Strings.Format(.SorAngSel, StrForm)
+            Text1(32).Text = Microsoft.VisualBasic.Strings.Format(.AltSopra + .Altezza, StrForm)
             If .Storta Then Check1.CheckState = System.Windows.Forms.CheckState.Unchecked Else Check1.CheckState = System.Windows.Forms.CheckState.Checked
         End With
     End Sub

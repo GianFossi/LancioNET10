@@ -64,8 +64,8 @@ Friend Class frmMnuMemb
 	Public WithEvents _Option1_2 As System.Windows.Forms.RadioButton
 	Public WithEvents _Option1_1 As System.Windows.Forms.RadioButton
 	Public WithEvents _Option1_0 As System.Windows.Forms.RadioButton
-	Public WithEvents Command1 As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-	Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
+	Public Command1 As New System.Collections.Generic.Dictionary(Of Integer, Button)
+	Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -105,10 +105,6 @@ Friend Class frmMnuMemb
 		Me._Option1_2 = New System.Windows.Forms.RadioButton
 		Me._Option1_1 = New System.Windows.Forms.RadioButton
 		Me._Option1_0 = New System.Windows.Forms.RadioButton
-		Me.Command1 = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(components)
-		Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(components)
-		CType(Me.Command1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
 		Me.Text = "Inserimento nuova membratura"
@@ -702,39 +698,43 @@ Friend Class frmMnuMemb
 		Me.Controls.Add(_Option1_2)
 		Me.Controls.Add(_Option1_1)
 		Me.Controls.Add(_Option1_0)
-		Me.Command1.SetIndex(_Command1_2, CType(2, Short))
-		Me.Command1.SetIndex(_Command1_1, CType(1, Short))
-		Me.Command1.SetIndex(_Command1_0, CType(0, Short))
-		Me.Option1.SetIndex(_Option1_19, CType(19, Short))
-		Me.Option1.SetIndex(_Option1_27, CType(27, Short))
-		Me.Option1.SetIndex(_Option1_26, CType(26, Short))
-		Me.Option1.SetIndex(_Option1_25, CType(25, Short))
-		Me.Option1.SetIndex(_Option1_24, CType(24, Short))
-		Me.Option1.SetIndex(_Option1_23, CType(23, Short))
-		Me.Option1.SetIndex(_Option1_22, CType(22, Short))
-		Me.Option1.SetIndex(_Option1_21, CType(21, Short))
-		Me.Option1.SetIndex(_Option1_20, CType(20, Short))
-		Me.Option1.SetIndex(_Option1_18, CType(18, Short))
-		Me.Option1.SetIndex(_Option1_17, CType(17, Short))
-		Me.Option1.SetIndex(_Option1_16, CType(16, Short))
-		Me.Option1.SetIndex(_Option1_15, CType(15, Short))
-		Me.Option1.SetIndex(_Option1_14, CType(14, Short))
-		Me.Option1.SetIndex(_Option1_13, CType(13, Short))
-		Me.Option1.SetIndex(_Option1_12, CType(12, Short))
-		Me.Option1.SetIndex(_Option1_11, CType(11, Short))
-		Me.Option1.SetIndex(_Option1_10, CType(10, Short))
-		Me.Option1.SetIndex(_Option1_9, CType(9, Short))
-		Me.Option1.SetIndex(_Option1_8, CType(8, Short))
-		Me.Option1.SetIndex(_Option1_7, CType(7, Short))
-		Me.Option1.SetIndex(_Option1_6, CType(6, Short))
-		Me.Option1.SetIndex(_Option1_5, CType(5, Short))
-		Me.Option1.SetIndex(_Option1_4, CType(4, Short))
-		Me.Option1.SetIndex(_Option1_3, CType(3, Short))
-		Me.Option1.SetIndex(_Option1_2, CType(2, Short))
-		Me.Option1.SetIndex(_Option1_1, CType(1, Short))
-		Me.Option1.SetIndex(_Option1_0, CType(0, Short))
-		CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Command1, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.Command1.Add(2, _Command1_2)
+		Me.Command1.Add(1, _Command1_1)
+		Me.Command1.Add(0, _Command1_0)
+		Me.Option1.Add(19, _Option1_19)
+		Me.Option1.Add(27, _Option1_27)
+		Me.Option1.Add(26, _Option1_26)
+		Me.Option1.Add(25, _Option1_25)
+		Me.Option1.Add(24, _Option1_24)
+		Me.Option1.Add(23, _Option1_23)
+		Me.Option1.Add(22, _Option1_22)
+		Me.Option1.Add(21, _Option1_21)
+		Me.Option1.Add(20, _Option1_20)
+		Me.Option1.Add(18, _Option1_18)
+		Me.Option1.Add(17, _Option1_17)
+		Me.Option1.Add(16, _Option1_16)
+		Me.Option1.Add(15, _Option1_15)
+		Me.Option1.Add(14, _Option1_14)
+		Me.Option1.Add(13, _Option1_13)
+		Me.Option1.Add(12, _Option1_12)
+		Me.Option1.Add(11, _Option1_11)
+		Me.Option1.Add(10, _Option1_10)
+		Me.Option1.Add(9, _Option1_9)
+		Me.Option1.Add(8, _Option1_8)
+		Me.Option1.Add(7, _Option1_7)
+		Me.Option1.Add(6, _Option1_6)
+		Me.Option1.Add(5, _Option1_5)
+		Me.Option1.Add(4, _Option1_4)
+		Me.Option1.Add(3, _Option1_3)
+		Me.Option1.Add(2, _Option1_2)
+		Me.Option1.Add(1, _Option1_1)
+		Me.Option1.Add(0, _Option1_0)
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
+        For Each control In Command1.Values
+            AddHandler control.Click, AddressOf Command1_Click
+        Next
 	End Sub
 #End Region 
 #Region "Supporto aggiornamento "
@@ -754,8 +754,8 @@ Friend Class frmMnuMemb
 		End Set
 	End Property
 #End Region 
-	Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-		Dim Index As Short = Command1.GetIndex(eventSender)
+	Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(Command1, eventSender)
 		Select Case Index
 			Case 0 'OK
 			Case 1 'Annulla
@@ -772,9 +772,9 @@ Friend Class frmMnuMemb
 	End Sub
 	
 	'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
 		If eventSender.Checked Then
-			Dim Index As Short = Option1.GetIndex(eventSender)
+			Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
 			Funzioni.membratura = Val(option1(Index).Tag)
 			Funzioni.Lato = 0
 		End If

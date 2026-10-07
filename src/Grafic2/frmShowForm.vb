@@ -48,7 +48,7 @@ Friend Class frmShowForm
 	Public WithEvents _txtOid_0 As System.Windows.Forms.TextBox
 	Public WithEvents Label2 As System.Windows.Forms.Label
 	Public WithEvents framOid As System.Windows.Forms.GroupBox
-	Public WithEvents txtOid As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public txtOid As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -75,14 +75,12 @@ Friend Class frmShowForm
         Me._txtOid_1 = New System.Windows.Forms.TextBox
         Me._txtOid_0 = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.txtOid = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.TabStrip1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
         Me.TabPage2 = New System.Windows.Forms.TabPage
         Me.framSpicchi.SuspendLayout()
         Me.framOid.SuspendLayout()
         CType(Me.txtNumSal, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtOid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -229,7 +227,7 @@ Friend Class frmShowForm
         Me._txtOid_4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtOid_4.Enabled = False
         Me._txtOid_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOid.SetIndex(Me._txtOid_4, CType(4, Short))
+        Me.txtOid.Add(4, Me._txtOid_4)
         Me._txtOid_4.Location = New System.Drawing.Point(8, 95)
         Me._txtOid_4.MaxLength = 0
         Me._txtOid_4.Name = "_txtOid_4"
@@ -246,7 +244,7 @@ Friend Class frmShowForm
         Me._txtOid_3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtOid_3.Enabled = False
         Me._txtOid_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOid.SetIndex(Me._txtOid_3, CType(3, Short))
+        Me.txtOid.Add(3, Me._txtOid_3)
         Me._txtOid_3.Location = New System.Drawing.Point(8, 75)
         Me._txtOid_3.MaxLength = 0
         Me._txtOid_3.Name = "_txtOid_3"
@@ -263,7 +261,7 @@ Friend Class frmShowForm
         Me._txtOid_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtOid_2.Enabled = False
         Me._txtOid_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOid.SetIndex(Me._txtOid_2, CType(2, Short))
+        Me.txtOid.Add(2, Me._txtOid_2)
         Me._txtOid_2.Location = New System.Drawing.Point(8, 56)
         Me._txtOid_2.MaxLength = 0
         Me._txtOid_2.Name = "_txtOid_2"
@@ -280,7 +278,7 @@ Friend Class frmShowForm
         Me._txtOid_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtOid_1.Enabled = False
         Me._txtOid_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOid.SetIndex(Me._txtOid_1, CType(1, Short))
+        Me.txtOid.Add(1, Me._txtOid_1)
         Me._txtOid_1.Location = New System.Drawing.Point(8, 36)
         Me._txtOid_1.MaxLength = 0
         Me._txtOid_1.Name = "_txtOid_1"
@@ -297,7 +295,7 @@ Friend Class frmShowForm
         Me._txtOid_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtOid_0.Enabled = False
         Me._txtOid_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOid.SetIndex(Me._txtOid_0, CType(0, Short))
+        Me.txtOid.Add(0, Me._txtOid_0)
         Me._txtOid_0.Location = New System.Drawing.Point(8, 16)
         Me._txtOid_0.MaxLength = 0
         Me._txtOid_0.Name = "_txtOid_0"
@@ -366,7 +364,7 @@ Friend Class frmShowForm
         Me.framSpicchi.ResumeLayout(False)
         Me.framOid.ResumeLayout(False)
         CType(Me.txtNumSal, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtOid, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.TabStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 

@@ -2971,7 +2971,7 @@ FinSub:  'Erase Point3
         '       t.SelStart = 0
         '   End If
     End Sub
-    Public Overloads Sub TrattaCar(ByRef Index As Short, ByRef KeyAscii As Short, ByRef t As System.Windows.Forms.Control, ByRef Text1() As System.Windows.Forms.Control, ByRef Nc As Short)
+    Public Sub TrattaCar(ByRef Index As Short, ByRef KeyAscii As Short, ByRef t As System.Windows.Forms.Control, ByRef Text1() As System.Windows.Forms.Control, ByRef Nc As Short)
         Dim i As Short
         On Error Resume Next
         Select Case KeyAscii
@@ -3013,7 +3013,7 @@ FinSub:  'Erase Point3
         On Error GoTo 0
         Exit Sub
     End Sub
-    Public Overloads Sub TrattaCar(ByRef Index As Short, ByRef KeyAscii As Short, ByRef t As System.Windows.Forms.Control, ByRef Text1 As ControlArray, ByRef Nc As Short)
+    Public Sub TrattaCar(ByRef Index As Short, ByRef KeyAscii As Short, ByRef t As System.Windows.Forms.Control, ByRef Text1 As ControlArray, ByRef Nc As Short)
         Dim i As Short
         On Error Resume Next
         Select Case KeyAscii
@@ -7485,7 +7485,7 @@ ErrCercaInt: System.Diagnostics.Debug.WriteLine(Err.Description)
                 Apparecchio.Add(Membro)
                 GoTo FinePrematura
             End If
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 Apparecchio = CType(bf.Deserialize(Funzioni.iAPRn), clsApparecchio)
             Catch e As Exception
@@ -7650,14 +7650,14 @@ FinePrematura:
             System.Diagnostics.Debug.WriteLine("Raggio" & .Raggio & .RaggioR)
             System.Diagnostics.Debug.WriteLine("Anomal" & .Anomal & .AnomalR)
             System.Diagnostics.Debug.WriteLine("DirTraversa" & .DirTraversa)
-            System.Diagnostics.Debug.WriteLine(VB6.TabLayout(.Origine.X, .Origine.y & .Origine.Z))
+            System.Diagnostics.Debug.WriteLine(LegacyUiUnits.TabLayout(.Origine.X, .Origine.y & .Origine.Z))
         End With
         System.Diagnostics.Debug.WriteLine("---------")
         With Swap
-            System.Diagnostics.Debug.WriteLine(VB6.TabLayout(.Origine.X, .Origine.y & .Origine.Z))
-            System.Diagnostics.Debug.WriteLine(VB6.TabLayout(.CosDiritta.X, .CosDiritta.y & .CosDiritta.Z))
-            System.Diagnostics.Debug.WriteLine(VB6.TabLayout(.CosTraversa.X, .CosTraversa.y & .CosTraversa.Z))
-            System.Diagnostics.Debug.WriteLine(VB6.TabLayout(.CosTerza.X, .CosTerza.y & .CosTerza.Z))
+            System.Diagnostics.Debug.WriteLine(LegacyUiUnits.TabLayout(.Origine.X, .Origine.y & .Origine.Z))
+            System.Diagnostics.Debug.WriteLine(LegacyUiUnits.TabLayout(.CosDiritta.X, .CosDiritta.y & .CosDiritta.Z))
+            System.Diagnostics.Debug.WriteLine(LegacyUiUnits.TabLayout(.CosTraversa.X, .CosTraversa.y & .CosTraversa.Z))
+            System.Diagnostics.Debug.WriteLine(LegacyUiUnits.TabLayout(.CosTerza.X, .CosTerza.y & .CosTerza.Z))
         End With
         Stop
     End Sub
@@ -7779,15 +7779,15 @@ FinePrematura:
                     .TastoTab() '.MuoviCella 1
                     .Testo(g.MF)
                     .TastoTab() '.MuoviCella 1
-                    .Testo(VB6.Format(g.LireLETot, FormL))
+                    .Testo(Microsoft.VisualBasic.Strings.Format(g.LireLETot, FormL))
                     .TastoTab() '.MuoviCella 1
-                    .Testo(VB6.Format(g.PNET, Form))
+                    .Testo(Microsoft.VisualBasic.Strings.Format(g.PNET, Form))
                     .TastoTab() '.MuoviCella 1
-                    .Testo(VB6.Format(g.plor0, Form))
+                    .Testo(Microsoft.VisualBasic.Strings.Format(g.plor0, Form))
                     .TastoTab() '.MuoviCella 1
-                    .Testo(VB6.Format(g.LireKg1, FormL))
+                    .Testo(Microsoft.VisualBasic.Strings.Format(g.LireKg1, FormL))
                     .TastoTab() '.MuoviCella 1
-                    .Testo(VB6.Format(g.LireTot / 1000000.0#, Form))
+                    .Testo(Microsoft.VisualBasic.Strings.Format(g.LireTot / 1000000.0#, Form))
                 End If
                 n = n.Next
             End While
@@ -7796,9 +7796,9 @@ FinePrematura:
             .MuoviCella(1)
             .Testo("TOTALE")
             .MuoviCella(7)
-            .Testo(VB6.Format(Apparecchio.peso, Form))
+            .Testo(Microsoft.VisualBasic.Strings.Format(Apparecchio.peso, Form))
             .MuoviCella(3)
-            .Testo(VB6.Format(Apparecchio.CostoMat / 1000000.0#, Form))
+            .Testo(Microsoft.VisualBasic.Strings.Format(Apparecchio.CostoMat / 1000000.0#, Form))
         End With
         FileMate = Monitor.Motore.MatFile
         If Len(FileMate) = 0 Then

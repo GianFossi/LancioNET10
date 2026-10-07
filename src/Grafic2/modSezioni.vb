@@ -110,7 +110,7 @@ RifaiW:         PrepString()
             SalvaSezioni()
         Else
             Dim myFileStream As Stream = IO.File.OpenRead(File)
-            Dim deserializer As New BinaryFormatter
+            Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 sezioni = CType(deserializer.Deserialize(myFileStream), clsSezioni)
                 myFileStream.Close()
@@ -129,7 +129,7 @@ RifaiW:         PrepString()
         File = FunzLibgra.FileDes("SEZ")
         If File.Trim.Length = 0 Then Exit Sub
         Dim myFileStream As Stream = IO.File.OpenWrite(File)
-        Dim deserializer As New BinaryFormatter
+        Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         deserializer.Serialize(myFileStream, sezioni)
         myFileStream.Close()
     End Sub
@@ -160,7 +160,7 @@ RifaiW:         PrepString()
             Next
         Next ii
         With frmDistinta.DefInstance.pictAssieme
-            If xSezMax = -clsTrigon.Infinito Then xSezMax = .Left + .ClientRectangle.Width ' .ScaleLeft + VB6.PixelsToTwipsX(.ClientRectangle.Width)
+            If xSezMax = -clsTrigon.Infinito Then xSezMax = .Left + .ClientRectangle.Width ' .ScaleLeft + LegacyUiUnits.PixelsToTwipsX(.ClientRectangle.Width)
             If xSezMin = clsTrigon.Infinito Then xSezMin = .Top ' .ScaleTop
         End With
     End Sub

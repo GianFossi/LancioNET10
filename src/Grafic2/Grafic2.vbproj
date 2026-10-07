@@ -153,11 +153,14 @@
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../Traccia/Traccia.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="stdole" />
     <Reference Include="Interop.AutoCAD">
       <HintPath>../../legacy/DLL Extra/Interop.AutoCAD.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" />
+  </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /><Compile Include="LegacyUiUnits.vb" /></ItemGroup>
+  <ItemGroup><PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" /></ItemGroup>
 </Project>

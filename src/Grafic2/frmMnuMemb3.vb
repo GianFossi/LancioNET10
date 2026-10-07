@@ -122,9 +122,9 @@ Friend Class frmMnuMemb3
 	Public WithEvents _Command1_2 As System.Windows.Forms.Button
 	Public WithEvents _Command1_1 As System.Windows.Forms.Button
 	Public WithEvents _Command1_0 As System.Windows.Forms.Button
-	Public WithEvents Command1 As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-	Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-	Public WithEvents frmLato As Microsoft.VisualBasic.Compatibility.VB6.GroupBoxArray
+	Public Command1 As New System.Collections.Generic.Dictionary(Of Integer, Button)
+	Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+	Public frmLato As New System.Collections.Generic.Dictionary(Of Integer, GroupBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -220,16 +220,10 @@ Friend Class frmMnuMemb3
         Me._Command1_2 = New System.Windows.Forms.Button
         Me._Command1_1 = New System.Windows.Forms.Button
         Me._Command1_0 = New System.Windows.Forms.Button
-        Me.Command1 = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.frmLato = New Microsoft.VisualBasic.Compatibility.VB6.GroupBoxArray(Me.components)
         Me._frmLato_3.SuspendLayout()
         Me._frmLato_2.SuspendLayout()
         Me._frmLato_1.SuspendLayout()
         Me._frmLato_0.SuspendLayout()
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.frmLato, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_frmLato_3
@@ -247,7 +241,7 @@ Friend Class frmMnuMemb3
         Me._frmLato_3.Controls.Add(Me._Option1_85)
         Me._frmLato_3.Controls.Add(Me._Option1_84)
         Me._frmLato_3.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.frmLato.SetIndex(Me._frmLato_3, CType(3, Short))
+        Me.frmLato.Add(3, Me._frmLato_3)
         Me._frmLato_3.Location = New System.Drawing.Point(592, 0)
         Me._frmLato_3.Name = "_frmLato_3"
         Me._frmLato_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -262,7 +256,7 @@ Friend Class frmMnuMemb3
         Me._Option1_105.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_105.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_105.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_105, CType(105, Short))
+        Me.Option1.Add(105, Me._Option1_105)
         Me._Option1_105.Location = New System.Drawing.Point(8, 448)
         Me._Option1_105.Name = "_Option1_105"
         Me._Option1_105.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -277,7 +271,7 @@ Friend Class frmMnuMemb3
         Me._Option1_104.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_104.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_104.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_104, CType(104, Short))
+        Me.Option1.Add(104, Me._Option1_104)
         Me._Option1_104.Location = New System.Drawing.Point(8, 432)
         Me._Option1_104.Name = "_Option1_104"
         Me._Option1_104.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -292,7 +286,7 @@ Friend Class frmMnuMemb3
         Me._Option1_103.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_103.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_103.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_103, CType(103, Short))
+        Me.Option1.Add(103, Me._Option1_103)
         Me._Option1_103.Location = New System.Drawing.Point(8, 240)
         Me._Option1_103.Name = "_Option1_103"
         Me._Option1_103.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -307,7 +301,7 @@ Friend Class frmMnuMemb3
         Me._Option1_98.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_98.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_98.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_98, CType(98, Short))
+        Me.Option1.Add(98, Me._Option1_98)
         Me._Option1_98.Location = New System.Drawing.Point(8, 288)
         Me._Option1_98.Name = "_Option1_98"
         Me._Option1_98.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -322,7 +316,7 @@ Friend Class frmMnuMemb3
         Me._Option1_97.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_97.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_97.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_97, CType(97, Short))
+        Me.Option1.Add(97, Me._Option1_97)
         Me._Option1_97.Location = New System.Drawing.Point(8, 80)
         Me._Option1_97.Name = "_Option1_97"
         Me._Option1_97.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -337,7 +331,7 @@ Friend Class frmMnuMemb3
         Me._Option1_96.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_96.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_96.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_96, CType(96, Short))
+        Me.Option1.Add(96, Me._Option1_96)
         Me._Option1_96.Location = New System.Drawing.Point(8, 272)
         Me._Option1_96.Name = "_Option1_96"
         Me._Option1_96.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -352,7 +346,7 @@ Friend Class frmMnuMemb3
         Me._Option1_88.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_88.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_88.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_88, CType(88, Short))
+        Me.Option1.Add(88, Me._Option1_88)
         Me._Option1_88.Location = New System.Drawing.Point(8, 32)
         Me._Option1_88.Name = "_Option1_88"
         Me._Option1_88.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -367,7 +361,7 @@ Friend Class frmMnuMemb3
         Me._Option1_87.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_87.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_87.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_87, CType(87, Short))
+        Me.Option1.Add(87, Me._Option1_87)
         Me._Option1_87.Location = New System.Drawing.Point(8, 48)
         Me._Option1_87.Name = "_Option1_87"
         Me._Option1_87.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -382,7 +376,7 @@ Friend Class frmMnuMemb3
         Me._Option1_86.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_86.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_86.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_86, CType(86, Short))
+        Me.Option1.Add(86, Me._Option1_86)
         Me._Option1_86.Location = New System.Drawing.Point(8, 64)
         Me._Option1_86.Name = "_Option1_86"
         Me._Option1_86.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -397,7 +391,7 @@ Friend Class frmMnuMemb3
         Me._Option1_85.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_85.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_85.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_85, CType(85, Short))
+        Me.Option1.Add(85, Me._Option1_85)
         Me._Option1_85.Location = New System.Drawing.Point(8, 336)
         Me._Option1_85.Name = "_Option1_85"
         Me._Option1_85.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -412,7 +406,7 @@ Friend Class frmMnuMemb3
         Me._Option1_84.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_84.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_84.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_84, CType(84, Short))
+        Me.Option1.Add(84, Me._Option1_84)
         Me._Option1_84.Location = New System.Drawing.Point(8, 16)
         Me._Option1_84.Name = "_Option1_84"
         Me._Option1_84.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -451,7 +445,7 @@ Friend Class frmMnuMemb3
         Me._frmLato_2.Controls.Add(Me._Option1_58)
         Me._frmLato_2.Controls.Add(Me._Option1_56)
         Me._frmLato_2.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.frmLato.SetIndex(Me._frmLato_2, CType(2, Short))
+        Me.frmLato.Add(2, Me._frmLato_2)
         Me._frmLato_2.Location = New System.Drawing.Point(400, 0)
         Me._frmLato_2.Name = "_frmLato_2"
         Me._frmLato_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -466,7 +460,7 @@ Friend Class frmMnuMemb3
         Me._Option1_83.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_83.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_83.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_83, CType(83, Short))
+        Me.Option1.Add(83, Me._Option1_83)
         Me._Option1_83.Location = New System.Drawing.Point(8, 16)
         Me._Option1_83.Name = "_Option1_83"
         Me._Option1_83.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -481,7 +475,7 @@ Friend Class frmMnuMemb3
         Me._Option1_82.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_82.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_82.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_82, CType(82, Short))
+        Me.Option1.Add(82, Me._Option1_82)
         Me._Option1_82.Location = New System.Drawing.Point(8, 336)
         Me._Option1_82.Name = "_Option1_82"
         Me._Option1_82.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -496,7 +490,7 @@ Friend Class frmMnuMemb3
         Me._Option1_81.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_81.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_81.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_81, CType(81, Short))
+        Me.Option1.Add(81, Me._Option1_81)
         Me._Option1_81.Location = New System.Drawing.Point(8, 64)
         Me._Option1_81.Name = "_Option1_81"
         Me._Option1_81.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -511,7 +505,7 @@ Friend Class frmMnuMemb3
         Me._Option1_80.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_80.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_80.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_80, CType(80, Short))
+        Me.Option1.Add(80, Me._Option1_80)
         Me._Option1_80.Location = New System.Drawing.Point(8, 48)
         Me._Option1_80.Name = "_Option1_80"
         Me._Option1_80.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -526,7 +520,7 @@ Friend Class frmMnuMemb3
         Me._Option1_79.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_79.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_79.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_79, CType(79, Short))
+        Me.Option1.Add(79, Me._Option1_79)
         Me._Option1_79.Location = New System.Drawing.Point(8, 32)
         Me._Option1_79.Name = "_Option1_79"
         Me._Option1_79.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -541,7 +535,7 @@ Friend Class frmMnuMemb3
         Me._Option1_78.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_78.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_78.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_78, CType(78, Short))
+        Me.Option1.Add(78, Me._Option1_78)
         Me._Option1_78.Location = New System.Drawing.Point(8, 208)
         Me._Option1_78.Name = "_Option1_78"
         Me._Option1_78.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -556,7 +550,7 @@ Friend Class frmMnuMemb3
         Me._Option1_77.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_77.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_77.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_77, CType(77, Short))
+        Me.Option1.Add(77, Me._Option1_77)
         Me._Option1_77.Location = New System.Drawing.Point(8, 224)
         Me._Option1_77.Name = "_Option1_77"
         Me._Option1_77.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -571,7 +565,7 @@ Friend Class frmMnuMemb3
         Me._Option1_76.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_76.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_76.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_76, CType(76, Short))
+        Me.Option1.Add(76, Me._Option1_76)
         Me._Option1_76.Location = New System.Drawing.Point(8, 160)
         Me._Option1_76.Name = "_Option1_76"
         Me._Option1_76.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -586,7 +580,7 @@ Friend Class frmMnuMemb3
         Me._Option1_75.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_75.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_75.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_75, CType(75, Short))
+        Me.Option1.Add(75, Me._Option1_75)
         Me._Option1_75.Location = New System.Drawing.Point(8, 96)
         Me._Option1_75.Name = "_Option1_75"
         Me._Option1_75.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -601,7 +595,7 @@ Friend Class frmMnuMemb3
         Me._Option1_74.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_74.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_74.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_74, CType(74, Short))
+        Me.Option1.Add(74, Me._Option1_74)
         Me._Option1_74.Location = New System.Drawing.Point(8, 112)
         Me._Option1_74.Name = "_Option1_74"
         Me._Option1_74.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -616,7 +610,7 @@ Friend Class frmMnuMemb3
         Me._Option1_73.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_73.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_73.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_73, CType(73, Short))
+        Me.Option1.Add(73, Me._Option1_73)
         Me._Option1_73.Location = New System.Drawing.Point(8, 128)
         Me._Option1_73.Name = "_Option1_73"
         Me._Option1_73.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -631,7 +625,7 @@ Friend Class frmMnuMemb3
         Me._Option1_72.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_72.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_72.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_72, CType(72, Short))
+        Me.Option1.Add(72, Me._Option1_72)
         Me._Option1_72.Location = New System.Drawing.Point(8, 176)
         Me._Option1_72.Name = "_Option1_72"
         Me._Option1_72.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -646,7 +640,7 @@ Friend Class frmMnuMemb3
         Me._Option1_71.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_71.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_71.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_71, CType(71, Short))
+        Me.Option1.Add(71, Me._Option1_71)
         Me._Option1_71.Location = New System.Drawing.Point(8, 272)
         Me._Option1_71.Name = "_Option1_71"
         Me._Option1_71.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -661,7 +655,7 @@ Friend Class frmMnuMemb3
         Me._Option1_70.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_70.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_70.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_70, CType(70, Short))
+        Me.Option1.Add(70, Me._Option1_70)
         Me._Option1_70.Location = New System.Drawing.Point(8, 80)
         Me._Option1_70.Name = "_Option1_70"
         Me._Option1_70.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -676,7 +670,7 @@ Friend Class frmMnuMemb3
         Me._Option1_69.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_69.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_69.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_69, CType(69, Short))
+        Me.Option1.Add(69, Me._Option1_69)
         Me._Option1_69.Location = New System.Drawing.Point(8, 288)
         Me._Option1_69.Name = "_Option1_69"
         Me._Option1_69.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -691,7 +685,7 @@ Friend Class frmMnuMemb3
         Me._Option1_68.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_68.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_68.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_68, CType(68, Short))
+        Me.Option1.Add(68, Me._Option1_68)
         Me._Option1_68.Location = New System.Drawing.Point(8, 304)
         Me._Option1_68.Name = "_Option1_68"
         Me._Option1_68.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -706,7 +700,7 @@ Friend Class frmMnuMemb3
         Me._Option1_67.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_67.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_67.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_67, CType(67, Short))
+        Me.Option1.Add(67, Me._Option1_67)
         Me._Option1_67.Location = New System.Drawing.Point(8, 256)
         Me._Option1_67.Name = "_Option1_67"
         Me._Option1_67.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -721,7 +715,7 @@ Friend Class frmMnuMemb3
         Me._Option1_65.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_65.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_65.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_65, CType(65, Short))
+        Me.Option1.Add(65, Me._Option1_65)
         Me._Option1_65.Location = New System.Drawing.Point(8, 352)
         Me._Option1_65.Name = "_Option1_65"
         Me._Option1_65.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -736,7 +730,7 @@ Friend Class frmMnuMemb3
         Me._Option1_64.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_64.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_64.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_64, CType(64, Short))
+        Me.Option1.Add(64, Me._Option1_64)
         Me._Option1_64.Location = New System.Drawing.Point(8, 240)
         Me._Option1_64.Name = "_Option1_64"
         Me._Option1_64.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -751,7 +745,7 @@ Friend Class frmMnuMemb3
         Me._Option1_63.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_63.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_63.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_63, CType(63, Short))
+        Me.Option1.Add(63, Me._Option1_63)
         Me._Option1_63.Location = New System.Drawing.Point(8, 432)
         Me._Option1_63.Name = "_Option1_63"
         Me._Option1_63.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -766,7 +760,7 @@ Friend Class frmMnuMemb3
         Me._Option1_61.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_61.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_61.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_61, CType(61, Short))
+        Me.Option1.Add(61, Me._Option1_61)
         Me._Option1_61.Location = New System.Drawing.Point(8, 192)
         Me._Option1_61.Name = "_Option1_61"
         Me._Option1_61.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -781,7 +775,7 @@ Friend Class frmMnuMemb3
         Me._Option1_60.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_60.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_60.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_60, CType(60, Short))
+        Me.Option1.Add(60, Me._Option1_60)
         Me._Option1_60.Location = New System.Drawing.Point(8, 384)
         Me._Option1_60.Name = "_Option1_60"
         Me._Option1_60.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -796,7 +790,7 @@ Friend Class frmMnuMemb3
         Me._Option1_59.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_59.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_59.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_59, CType(59, Short))
+        Me.Option1.Add(59, Me._Option1_59)
         Me._Option1_59.Location = New System.Drawing.Point(8, 400)
         Me._Option1_59.Name = "_Option1_59"
         Me._Option1_59.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -811,7 +805,7 @@ Friend Class frmMnuMemb3
         Me._Option1_58.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_58.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_58.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_58, CType(58, Short))
+        Me.Option1.Add(58, Me._Option1_58)
         Me._Option1_58.Location = New System.Drawing.Point(8, 144)
         Me._Option1_58.Name = "_Option1_58"
         Me._Option1_58.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -826,7 +820,7 @@ Friend Class frmMnuMemb3
         Me._Option1_56.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_56.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_56.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_56, CType(56, Short))
+        Me.Option1.Add(56, Me._Option1_56)
         Me._Option1_56.Location = New System.Drawing.Point(8, 368)
         Me._Option1_56.Name = "_Option1_56"
         Me._Option1_56.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -864,7 +858,7 @@ Friend Class frmMnuMemb3
         Me._frmLato_1.Controls.Add(Me._Option1_29)
         Me._frmLato_1.Controls.Add(Me._Option1_28)
         Me._frmLato_1.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.frmLato.SetIndex(Me._frmLato_1, CType(1, Short))
+        Me.frmLato.Add(1, Me._frmLato_1)
         Me._frmLato_1.Location = New System.Drawing.Point(208, 0)
         Me._frmLato_1.Name = "_frmLato_1"
         Me._frmLato_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -879,7 +873,7 @@ Friend Class frmMnuMemb3
         Me._Option1_55.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_55.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_55.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_55, CType(55, Short))
+        Me.Option1.Add(55, Me._Option1_55)
         Me._Option1_55.Location = New System.Drawing.Point(8, 368)
         Me._Option1_55.Name = "_Option1_55"
         Me._Option1_55.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -894,7 +888,7 @@ Friend Class frmMnuMemb3
         Me._Option1_54.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_54.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_54.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_54, CType(54, Short))
+        Me.Option1.Add(54, Me._Option1_54)
         Me._Option1_54.Location = New System.Drawing.Point(8, 416)
         Me._Option1_54.Name = "_Option1_54"
         Me._Option1_54.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -909,7 +903,7 @@ Friend Class frmMnuMemb3
         Me._Option1_53.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_53.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_53.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_53, CType(53, Short))
+        Me.Option1.Add(53, Me._Option1_53)
         Me._Option1_53.Location = New System.Drawing.Point(8, 144)
         Me._Option1_53.Name = "_Option1_53"
         Me._Option1_53.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -924,7 +918,7 @@ Friend Class frmMnuMemb3
         Me._Option1_52.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_52.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_52.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_52, CType(52, Short))
+        Me.Option1.Add(52, Me._Option1_52)
         Me._Option1_52.Location = New System.Drawing.Point(8, 400)
         Me._Option1_52.Name = "_Option1_52"
         Me._Option1_52.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -939,7 +933,7 @@ Friend Class frmMnuMemb3
         Me._Option1_51.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_51.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_51.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_51, CType(51, Short))
+        Me.Option1.Add(51, Me._Option1_51)
         Me._Option1_51.Location = New System.Drawing.Point(8, 384)
         Me._Option1_51.Name = "_Option1_51"
         Me._Option1_51.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -954,7 +948,7 @@ Friend Class frmMnuMemb3
         Me._Option1_48.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_48.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_48.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_48, CType(48, Short))
+        Me.Option1.Add(48, Me._Option1_48)
         Me._Option1_48.Location = New System.Drawing.Point(8, 432)
         Me._Option1_48.Name = "_Option1_48"
         Me._Option1_48.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -969,7 +963,7 @@ Friend Class frmMnuMemb3
         Me._Option1_47.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_47.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_47.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_47, CType(47, Short))
+        Me.Option1.Add(47, Me._Option1_47)
         Me._Option1_47.Location = New System.Drawing.Point(8, 240)
         Me._Option1_47.Name = "_Option1_47"
         Me._Option1_47.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -984,7 +978,7 @@ Friend Class frmMnuMemb3
         Me._Option1_46.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_46.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_46.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_46, CType(46, Short))
+        Me.Option1.Add(46, Me._Option1_46)
         Me._Option1_46.Location = New System.Drawing.Point(8, 352)
         Me._Option1_46.Name = "_Option1_46"
         Me._Option1_46.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -999,7 +993,7 @@ Friend Class frmMnuMemb3
         Me._Option1_45.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_45.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_45.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_45, CType(45, Short))
+        Me.Option1.Add(45, Me._Option1_45)
         Me._Option1_45.Location = New System.Drawing.Point(8, 320)
         Me._Option1_45.Name = "_Option1_45"
         Me._Option1_45.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1014,7 +1008,7 @@ Friend Class frmMnuMemb3
         Me._Option1_44.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_44.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_44.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_44, CType(44, Short))
+        Me.Option1.Add(44, Me._Option1_44)
         Me._Option1_44.Location = New System.Drawing.Point(8, 256)
         Me._Option1_44.Name = "_Option1_44"
         Me._Option1_44.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1029,7 +1023,7 @@ Friend Class frmMnuMemb3
         Me._Option1_43.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_43.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_43.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_43, CType(43, Short))
+        Me.Option1.Add(43, Me._Option1_43)
         Me._Option1_43.Location = New System.Drawing.Point(8, 304)
         Me._Option1_43.Name = "_Option1_43"
         Me._Option1_43.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1044,7 +1038,7 @@ Friend Class frmMnuMemb3
         Me._Option1_42.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_42.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_42.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_42, CType(42, Short))
+        Me.Option1.Add(42, Me._Option1_42)
         Me._Option1_42.Location = New System.Drawing.Point(8, 288)
         Me._Option1_42.Name = "_Option1_42"
         Me._Option1_42.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1059,7 +1053,7 @@ Friend Class frmMnuMemb3
         Me._Option1_41.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_41.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_41.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_41, CType(41, Short))
+        Me.Option1.Add(41, Me._Option1_41)
         Me._Option1_41.Location = New System.Drawing.Point(8, 80)
         Me._Option1_41.Name = "_Option1_41"
         Me._Option1_41.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1074,7 +1068,7 @@ Friend Class frmMnuMemb3
         Me._Option1_40.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_40.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_40.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_40, CType(40, Short))
+        Me.Option1.Add(40, Me._Option1_40)
         Me._Option1_40.Location = New System.Drawing.Point(8, 272)
         Me._Option1_40.Name = "_Option1_40"
         Me._Option1_40.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1089,7 +1083,7 @@ Friend Class frmMnuMemb3
         Me._Option1_39.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_39.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_39.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_39, CType(39, Short))
+        Me.Option1.Add(39, Me._Option1_39)
         Me._Option1_39.Location = New System.Drawing.Point(8, 176)
         Me._Option1_39.Name = "_Option1_39"
         Me._Option1_39.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1104,7 +1098,7 @@ Friend Class frmMnuMemb3
         Me._Option1_38.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_38.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_38.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_38, CType(38, Short))
+        Me.Option1.Add(38, Me._Option1_38)
         Me._Option1_38.Location = New System.Drawing.Point(8, 128)
         Me._Option1_38.Name = "_Option1_38"
         Me._Option1_38.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1119,7 +1113,7 @@ Friend Class frmMnuMemb3
         Me._Option1_37.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_37.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_37.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_37, CType(37, Short))
+        Me.Option1.Add(37, Me._Option1_37)
         Me._Option1_37.Location = New System.Drawing.Point(8, 112)
         Me._Option1_37.Name = "_Option1_37"
         Me._Option1_37.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1134,7 +1128,7 @@ Friend Class frmMnuMemb3
         Me._Option1_36.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_36.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_36.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_36, CType(36, Short))
+        Me.Option1.Add(36, Me._Option1_36)
         Me._Option1_36.Location = New System.Drawing.Point(8, 96)
         Me._Option1_36.Name = "_Option1_36"
         Me._Option1_36.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1149,7 +1143,7 @@ Friend Class frmMnuMemb3
         Me._Option1_35.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_35.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_35.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_35, CType(35, Short))
+        Me.Option1.Add(35, Me._Option1_35)
         Me._Option1_35.Location = New System.Drawing.Point(8, 160)
         Me._Option1_35.Name = "_Option1_35"
         Me._Option1_35.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1164,7 +1158,7 @@ Friend Class frmMnuMemb3
         Me._Option1_32.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_32.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_32.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_32, CType(32, Short))
+        Me.Option1.Add(32, Me._Option1_32)
         Me._Option1_32.Location = New System.Drawing.Point(8, 32)
         Me._Option1_32.Name = "_Option1_32"
         Me._Option1_32.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1179,7 +1173,7 @@ Friend Class frmMnuMemb3
         Me._Option1_31.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_31.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_31.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_31, CType(31, Short))
+        Me.Option1.Add(31, Me._Option1_31)
         Me._Option1_31.Location = New System.Drawing.Point(8, 48)
         Me._Option1_31.Name = "_Option1_31"
         Me._Option1_31.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1194,7 +1188,7 @@ Friend Class frmMnuMemb3
         Me._Option1_30.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_30.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_30.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_30, CType(30, Short))
+        Me.Option1.Add(30, Me._Option1_30)
         Me._Option1_30.Location = New System.Drawing.Point(8, 64)
         Me._Option1_30.Name = "_Option1_30"
         Me._Option1_30.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1209,7 +1203,7 @@ Friend Class frmMnuMemb3
         Me._Option1_29.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_29.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_29.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_29, CType(29, Short))
+        Me.Option1.Add(29, Me._Option1_29)
         Me._Option1_29.Location = New System.Drawing.Point(8, 336)
         Me._Option1_29.Name = "_Option1_29"
         Me._Option1_29.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1224,7 +1218,7 @@ Friend Class frmMnuMemb3
         Me._Option1_28.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_28.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_28.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_28, CType(28, Short))
+        Me.Option1.Add(28, Me._Option1_28)
         Me._Option1_28.Location = New System.Drawing.Point(8, 16)
         Me._Option1_28.Name = "_Option1_28"
         Me._Option1_28.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1260,7 +1254,7 @@ Friend Class frmMnuMemb3
         Me._frmLato_0.Controls.Add(Me._Option1_26)
         Me._frmLato_0.Controls.Add(Me._Option1_19)
         Me._frmLato_0.ForeColor = System.Drawing.Color.FromArgb(CType(192, Byte), CType(64, Byte), CType(0, Byte))
-        Me.frmLato.SetIndex(Me._frmLato_0, CType(0, Short))
+        Me.frmLato.Add(0, Me._frmLato_0)
         Me._frmLato_0.Location = New System.Drawing.Point(8, 0)
         Me._frmLato_0.Name = "_frmLato_0"
         Me._frmLato_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1275,7 +1269,7 @@ Friend Class frmMnuMemb3
         Me._Option1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_0, CType(0, Short))
+        Me.Option1.Add(0, Me._Option1_0)
         Me._Option1_0.Location = New System.Drawing.Point(8, 16)
         Me._Option1_0.Name = "_Option1_0"
         Me._Option1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1290,7 +1284,7 @@ Friend Class frmMnuMemb3
         Me._Option1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_1, CType(1, Short))
+        Me.Option1.Add(1, Me._Option1_1)
         Me._Option1_1.Location = New System.Drawing.Point(8, 336)
         Me._Option1_1.Name = "_Option1_1"
         Me._Option1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1305,7 +1299,7 @@ Friend Class frmMnuMemb3
         Me._Option1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_2, CType(2, Short))
+        Me.Option1.Add(2, Me._Option1_2)
         Me._Option1_2.Location = New System.Drawing.Point(8, 64)
         Me._Option1_2.Name = "_Option1_2"
         Me._Option1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1320,7 +1314,7 @@ Friend Class frmMnuMemb3
         Me._Option1_3.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_3, CType(3, Short))
+        Me.Option1.Add(3, Me._Option1_3)
         Me._Option1_3.Location = New System.Drawing.Point(8, 48)
         Me._Option1_3.Name = "_Option1_3"
         Me._Option1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1335,7 +1329,7 @@ Friend Class frmMnuMemb3
         Me._Option1_4.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_4, CType(4, Short))
+        Me.Option1.Add(4, Me._Option1_4)
         Me._Option1_4.Location = New System.Drawing.Point(8, 32)
         Me._Option1_4.Name = "_Option1_4"
         Me._Option1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1350,7 +1344,7 @@ Friend Class frmMnuMemb3
         Me._Option1_7.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_7, CType(7, Short))
+        Me.Option1.Add(7, Me._Option1_7)
         Me._Option1_7.Location = New System.Drawing.Point(8, 160)
         Me._Option1_7.Name = "_Option1_7"
         Me._Option1_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1365,7 +1359,7 @@ Friend Class frmMnuMemb3
         Me._Option1_8.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_8, CType(8, Short))
+        Me.Option1.Add(8, Me._Option1_8)
         Me._Option1_8.Location = New System.Drawing.Point(8, 96)
         Me._Option1_8.Name = "_Option1_8"
         Me._Option1_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1380,7 +1374,7 @@ Friend Class frmMnuMemb3
         Me._Option1_9.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_9.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_9, CType(9, Short))
+        Me.Option1.Add(9, Me._Option1_9)
         Me._Option1_9.Location = New System.Drawing.Point(8, 112)
         Me._Option1_9.Name = "_Option1_9"
         Me._Option1_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1395,7 +1389,7 @@ Friend Class frmMnuMemb3
         Me._Option1_10.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_10, CType(10, Short))
+        Me.Option1.Add(10, Me._Option1_10)
         Me._Option1_10.Location = New System.Drawing.Point(8, 128)
         Me._Option1_10.Name = "_Option1_10"
         Me._Option1_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1410,7 +1404,7 @@ Friend Class frmMnuMemb3
         Me._Option1_11.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_11, CType(11, Short))
+        Me.Option1.Add(11, Me._Option1_11)
         Me._Option1_11.Location = New System.Drawing.Point(8, 176)
         Me._Option1_11.Name = "_Option1_11"
         Me._Option1_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1425,7 +1419,7 @@ Friend Class frmMnuMemb3
         Me._Option1_12.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_12, CType(12, Short))
+        Me.Option1.Add(12, Me._Option1_12)
         Me._Option1_12.Location = New System.Drawing.Point(8, 272)
         Me._Option1_12.Name = "_Option1_12"
         Me._Option1_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1440,7 +1434,7 @@ Friend Class frmMnuMemb3
         Me._Option1_13.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_13, CType(13, Short))
+        Me.Option1.Add(13, Me._Option1_13)
         Me._Option1_13.Location = New System.Drawing.Point(8, 80)
         Me._Option1_13.Name = "_Option1_13"
         Me._Option1_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1455,7 +1449,7 @@ Friend Class frmMnuMemb3
         Me._Option1_14.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_14.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_14, CType(14, Short))
+        Me.Option1.Add(14, Me._Option1_14)
         Me._Option1_14.Location = New System.Drawing.Point(8, 288)
         Me._Option1_14.Name = "_Option1_14"
         Me._Option1_14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1470,7 +1464,7 @@ Friend Class frmMnuMemb3
         Me._Option1_15.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_15.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_15.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_15, CType(15, Short))
+        Me.Option1.Add(15, Me._Option1_15)
         Me._Option1_15.Location = New System.Drawing.Point(8, 304)
         Me._Option1_15.Name = "_Option1_15"
         Me._Option1_15.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1485,7 +1479,7 @@ Friend Class frmMnuMemb3
         Me._Option1_16.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_16.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_16.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_16, CType(16, Short))
+        Me.Option1.Add(16, Me._Option1_16)
         Me._Option1_16.Location = New System.Drawing.Point(8, 256)
         Me._Option1_16.Name = "_Option1_16"
         Me._Option1_16.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1500,7 +1494,7 @@ Friend Class frmMnuMemb3
         Me._Option1_18.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_18.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_18.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_18, CType(18, Short))
+        Me.Option1.Add(18, Me._Option1_18)
         Me._Option1_18.Location = New System.Drawing.Point(8, 352)
         Me._Option1_18.Name = "_Option1_18"
         Me._Option1_18.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1515,7 +1509,7 @@ Friend Class frmMnuMemb3
         Me._Option1_20.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_20.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_20.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_20, CType(20, Short))
+        Me.Option1.Add(20, Me._Option1_20)
         Me._Option1_20.Location = New System.Drawing.Point(8, 240)
         Me._Option1_20.Name = "_Option1_20"
         Me._Option1_20.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1530,7 +1524,7 @@ Friend Class frmMnuMemb3
         Me._Option1_21.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_21.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_21, CType(21, Short))
+        Me.Option1.Add(21, Me._Option1_21)
         Me._Option1_21.Location = New System.Drawing.Point(8, 432)
         Me._Option1_21.Name = "_Option1_21"
         Me._Option1_21.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1545,7 +1539,7 @@ Friend Class frmMnuMemb3
         Me._Option1_24.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_24.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_24.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_24, CType(24, Short))
+        Me.Option1.Add(24, Me._Option1_24)
         Me._Option1_24.Location = New System.Drawing.Point(8, 384)
         Me._Option1_24.Name = "_Option1_24"
         Me._Option1_24.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1560,7 +1554,7 @@ Friend Class frmMnuMemb3
         Me._Option1_25.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_25.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_25.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_25, CType(25, Short))
+        Me.Option1.Add(25, Me._Option1_25)
         Me._Option1_25.Location = New System.Drawing.Point(8, 400)
         Me._Option1_25.Name = "_Option1_25"
         Me._Option1_25.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1575,7 +1569,7 @@ Friend Class frmMnuMemb3
         Me._Option1_26.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_26.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_26, CType(26, Short))
+        Me.Option1.Add(26, Me._Option1_26)
         Me._Option1_26.Location = New System.Drawing.Point(8, 144)
         Me._Option1_26.Name = "_Option1_26"
         Me._Option1_26.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1590,7 +1584,7 @@ Friend Class frmMnuMemb3
         Me._Option1_19.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_19.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_19.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_19, CType(19, Short))
+        Me.Option1.Add(19, Me._Option1_19)
         Me._Option1_19.Location = New System.Drawing.Point(8, 368)
         Me._Option1_19.Name = "_Option1_19"
         Me._Option1_19.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1605,7 +1599,7 @@ Friend Class frmMnuMemb3
         Me._Command1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_2, CType(2, Short))
+        Me.Command1.Add(2, Me._Command1_2)
         Me._Command1_2.Location = New System.Drawing.Point(720, 480)
         Me._Command1_2.Name = "_Command1_2"
         Me._Command1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1618,7 +1612,7 @@ Friend Class frmMnuMemb3
         Me._Command1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_1, CType(1, Short))
+        Me.Command1.Add(1, Me._Command1_1)
         Me._Command1_1.Location = New System.Drawing.Point(640, 480)
         Me._Command1_1.Name = "_Command1_1"
         Me._Command1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1631,7 +1625,7 @@ Friend Class frmMnuMemb3
         Me._Command1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Command1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Command1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.SetIndex(Me._Command1_0, CType(0, Short))
+        Me.Command1.Add(0, Me._Command1_0)
         Me._Command1_0.Location = New System.Drawing.Point(560, 480)
         Me._Command1_0.Name = "_Command1_0"
         Me._Command1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1672,9 +1666,13 @@ Friend Class frmMnuMemb3
         Me._frmLato_2.ResumeLayout(False)
         Me._frmLato_1.ResumeLayout(False)
         Me._frmLato_0.ResumeLayout(False)
-        CType(Me.Command1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.frmLato, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In Command1.Values
+            AddHandler control.Click, AddressOf Command1_Click
+        Next
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -1696,8 +1694,8 @@ Friend Class frmMnuMemb3
 		End Set
 	End Property
 #End Region 
-	Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-		Dim Index As Short = Command1.GetIndex(eventSender)
+	Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(Command1, eventSender)
 		Select Case Index
 			Case 0 'OK
 			Case 1 'Annulla
@@ -1714,15 +1712,15 @@ Friend Class frmMnuMemb3
 	End Sub
 	
 	'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
 		If eventSender.Checked Then
-			Dim Index As Short = Option1.GetIndex(eventSender)
+			Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
 			Dim f As System.Windows.Forms.GroupBox
 			Dim opt As System.Windows.Forms.RadioButton
 			Funzioni.membratura = Val(option1(Index).Tag)
 			f = option1(Index).Parent
             Funzioni.Lato = f.Tag
-			For	Each opt In option1
+			For Each opt In option1.Values
 				If Not opt.Parent Is f Then
 					opt.Checked = False
 				End If

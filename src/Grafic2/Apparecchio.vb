@@ -256,7 +256,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
         Catch e As Exception
             MsgBox(e.Message + vbCrLf + e.StackTrace)
         End Try
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(Funzioni.iAPRn, Me)
         If final Then
             Funzioni.iAPRn.Close()

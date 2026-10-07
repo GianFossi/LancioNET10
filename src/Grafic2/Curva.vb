@@ -139,11 +139,11 @@ Imports System.Math
         Select Case TipoS
             Case 0
                 If GenMem.Classe1 = 6 Then 'pipe
-                    Dstr = LTrim(VB6.Format(Diametro, "####.##"))
-                    T1str = LTrim(VB6.Format(SpessBase, "####.##"))
-                    T2str = VB6.Format(SpessRive, "####.##")
-                    AngStr = VB6.Format(Apertura, "####.##")
-                    Rstr = LTrim(VB6.Format(Raggio, "####.##"))
+                    Dstr = LTrim(Microsoft.VisualBasic.Strings.Format(Diametro, "####.##"))
+                    T1str = LTrim(Microsoft.VisualBasic.Strings.Format(SpessBase, "####.##"))
+                    T2str = Microsoft.VisualBasic.Strings.Format(SpessRive, "####.##")
+                    AngStr = Microsoft.VisualBasic.Strings.Format(Apertura, "####.##")
+                    Rstr = LTrim(Microsoft.VisualBasic.Strings.Format(Raggio, "####.##"))
                     If TipoMat > 1 Then
                         Note(2) = "De" & Dstr & " sp." & T1str & "+" & T2str & "ap." & AngStr & "° R." & Rstr
                     Else

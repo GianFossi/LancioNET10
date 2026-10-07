@@ -59,8 +59,8 @@ Friend Class frmScelFla
     Public WithEvents Label2 As System.Windows.Forms.Label
     Public WithEvents Label5 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-    Public WithEvents Option2 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
+    Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+    Public Option2 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -90,13 +90,9 @@ Friend Class frmScelFla
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.Option2 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
         Me.Frame3.SuspendLayout()
         Me.Frame2.SuspendLayout()
         Me.Frame1.SuspendLayout()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Frame3
@@ -143,7 +139,7 @@ Friend Class frmScelFla
         Me._Option2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Option2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_1, CType(1, Short))
+        Me.Option2.Add(1, Me._Option2_1)
         Me._Option2_1.Location = New System.Drawing.Point(16, 32)
         Me._Option2_1.Name = "_Option2_1"
         Me._Option2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -157,7 +153,7 @@ Friend Class frmScelFla
         Me._Option2_0.BackColor = System.Drawing.SystemColors.Control
         Me._Option2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_0, CType(0, Short))
+        Me.Option2.Add(0, Me._Option2_0)
         Me._Option2_0.Location = New System.Drawing.Point(16, 16)
         Me._Option2_0.Name = "_Option2_0"
         Me._Option2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -224,7 +220,7 @@ Friend Class frmScelFla
         Me._Option1_4.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_4, CType(4, Short))
+        Me.Option1.Add(4, Me._Option1_4)
         Me._Option1_4.Location = New System.Drawing.Point(16, 80)
         Me._Option1_4.Name = "_Option1_4"
         Me._Option1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -237,7 +233,7 @@ Friend Class frmScelFla
         Me._Option1_3.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_3, CType(3, Short))
+        Me.Option1.Add(3, Me._Option1_3)
         Me._Option1_3.Location = New System.Drawing.Point(16, 64)
         Me._Option1_3.Name = "_Option1_3"
         Me._Option1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -250,7 +246,7 @@ Friend Class frmScelFla
         Me._Option1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_2, CType(2, Short))
+        Me.Option1.Add(2, Me._Option1_2)
         Me._Option1_2.Location = New System.Drawing.Point(16, 48)
         Me._Option1_2.Name = "_Option1_2"
         Me._Option1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -263,7 +259,7 @@ Friend Class frmScelFla
         Me._Option1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_1, CType(1, Short))
+        Me.Option1.Add(1, Me._Option1_1)
         Me._Option1_1.Location = New System.Drawing.Point(16, 32)
         Me._Option1_1.Name = "_Option1_1"
         Me._Option1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -276,7 +272,7 @@ Friend Class frmScelFla
         Me._Option1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_0, CType(0, Short))
+        Me.Option1.Add(0, Me._Option1_0)
         Me._Option1_0.Location = New System.Drawing.Point(16, 16)
         Me._Option1_0.Name = "_Option1_0"
         Me._Option1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -421,8 +417,8 @@ Friend Class frmScelFla
         Me.Frame3.ResumeLayout(False)
         Me.Frame2.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).EndInit()
+
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -477,7 +473,7 @@ Friend Class frmScelFla
     Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
         Dim i As Short
         For i = 0 To Nome.Items.Count - 1
-            If VB6.GetItemString(Nome, i) = Nome.Text Then
+            If Nome.GetItemText(Nome.Items(i)) = Nome.Text Then
                 MsgBox("Il nome dato al nuovo blocco esiste già. Cambiarlo", MsgBoxStyle.Exclamation + MsgBoxStyle.OKOnly)
                 Exit Sub
             End If

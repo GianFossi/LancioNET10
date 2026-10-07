@@ -22,7 +22,7 @@ Public Class LibGra
             File = FileDes("DES")
             If Len(File) = 0 Or InStr(File, "?") Then Exit Sub
             Dim myFileStream As Stream = IO.File.OpenWrite(File)
-            Dim deserializer As New BinaryFormatter
+            Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             Try
                 deserializer.Serialize(myFileStream, DataSheet)
             Catch e As SerializationException
@@ -58,7 +58,7 @@ Public Class LibGra
             If InStr(File, "?") Or Len(File) = 0 Then Exit Sub
             If System.IO.File.Exists(File) Then
                 Dim myFileStream As Stream = IO.File.OpenRead(File)
-                Dim deserializer As New BinaryFormatter
+                Dim deserializer As New Lancio.Legacy.Serialization.LegacyBinarySerializer
                 DataSheet = CType(deserializer.Deserialize(myFileStream), RoutBase1.clsDatiDes)
                 myFileStream.Close()
             End If

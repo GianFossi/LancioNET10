@@ -47,8 +47,8 @@ Friend Class frmForature
 	Public WithEvents _Label1_2 As System.Windows.Forms.Label
 	Public WithEvents _Label1_1 As System.Windows.Forms.Label
 	Public WithEvents _Label1_0 As System.Windows.Forms.Label
-	Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -71,10 +71,6 @@ Friend Class frmForature
 		Me._Label1_2 = New System.Windows.Forms.Label
 		Me._Label1_1 = New System.Windows.Forms.Label
 		Me._Label1_0 = New System.Windows.Forms.Label
-		Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-		Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-		CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
 		Me.Text = "F"
 		Me.ClientSize = New System.Drawing.Size(182, 190)
@@ -349,20 +345,22 @@ Friend Class frmForature
 		Me.Controls.Add(_Label1_2)
 		Me.Controls.Add(_Label1_1)
 		Me.Controls.Add(_Label1_0)
-		Me.Label1.SetIndex(_Label1_5, CType(5, Short))
-		Me.Label1.SetIndex(_Label1_4, CType(4, Short))
-		Me.Label1.SetIndex(_Label1_3, CType(3, Short))
-		Me.Label1.SetIndex(_Label1_2, CType(2, Short))
-		Me.Label1.SetIndex(_Label1_1, CType(1, Short))
-		Me.Label1.SetIndex(_Label1_0, CType(0, Short))
-		Me.Text1.SetIndex(_Text1_5, CType(5, Short))
-		Me.Text1.SetIndex(_Text1_4, CType(4, Short))
-		Me.Text1.SetIndex(_Text1_3, CType(3, Short))
-		Me.Text1.SetIndex(_Text1_2, CType(2, Short))
-		Me.Text1.SetIndex(_Text1_1, CType(1, Short))
-		Me.Text1.SetIndex(_Text1_0, CType(0, Short))
-		CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.Label1.Add(5, _Label1_5)
+		Me.Label1.Add(4, _Label1_4)
+		Me.Label1.Add(3, _Label1_3)
+		Me.Label1.Add(2, _Label1_2)
+		Me.Label1.Add(1, _Label1_1)
+		Me.Label1.Add(0, _Label1_0)
+		Me.Text1.Add(5, _Text1_5)
+		Me.Text1.Add(4, _Text1_4)
+		Me.Text1.Add(3, _Text1_3)
+		Me.Text1.Add(2, _Text1_2)
+		Me.Text1.Add(1, _Text1_1)
+		Me.Text1.Add(0, _Text1_0)
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
+
 	End Sub
 #End Region 
 #Region "Supporto aggiornamento "
@@ -396,8 +394,8 @@ Friend Class frmForature
 		Text = CStr(CDbl("Foratura ") + ctype(Membro.Genmem,clsGenmem).Denom)
 	End Sub
 	'UPGRADE_WARNING: L'evento Text1.TextChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-	Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-		Dim Index As Short = Text1.GetIndex(eventSender)
+	Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(Text1, eventSender)
 		Select Case Index
 			Case 4
 				Text1(5).Text = GlobalRoutines.myStr(Val(Text1(3).Text) * Val(Text1(4).Text) / 1000000#, 4, 1, False)

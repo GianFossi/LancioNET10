@@ -49,12 +49,12 @@ Friend Class FormRibs
     Public WithEvents Labely As System.Windows.Forms.Label
     Public WithEvents Labelx As System.Windows.Forms.Label
     Public WithEvents _Label1_0 As System.Windows.Forms.Label
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label3 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text2 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text3 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label3 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text2 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text3 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -76,18 +76,6 @@ Friend Class FormRibs
         Me.Labely = New System.Windows.Forms.Label
         Me.Labelx = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Label3 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        Me.Text2 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        Me.Text3 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Text = "Forature piastra di base"
         Me.ClientSize = New System.Drawing.Size(249, 265)
         Me.Location = New System.Drawing.Point(4, 23)
@@ -317,18 +305,24 @@ Friend Class FormRibs
         Me.Controls.Add(Labely)
         Me.Controls.Add(Labelx)
         Me.Controls.Add(_Label1_0)
-        Me.Label1.SetIndex(_Label1_0, CType(0, Short))
-        Me.Label2.SetIndex(_Label2_0, CType(0, Short))
-        Me.Label3.SetIndex(_Label3_0, CType(0, Short))
-        Me.Text1.SetIndex(_Text1_0, CType(0, Short))
-        Me.Text2.SetIndex(_Text2_0, CType(0, Short))
-        Me.Text3.SetIndex(_Text3_0, CType(0, Short))
-        CType(Me.Text3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Label1.Add(0, _Label1_0)
+        Me.Label2.Add(0, _Label2_0)
+        Me.Label3.Add(0, _Label3_0)
+        Me.Text1.Add(0, _Text1_0)
+        Me.Text2.Add(0, _Text2_0)
+        Me.Text3.Add(0, _Text3_0)
+        For Each control In Text3.Values
+            AddHandler control.TextChanged, AddressOf Text3_TextChanged
+        Next
+        For Each control In Text2.Values
+            AddHandler control.TextChanged, AddressOf Text2_TextChanged
+        Next
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
+
+
+
     End Sub
 #End Region 
 #Region "Supporto aggiornamento "
@@ -391,7 +385,7 @@ Friend Class FormRibs
         Dim Ribbs, Foris As Short
         Timer1.Interval = 1000
         Timer1.Enabled = True
-        Me.SetBounds(GlobalRoutines.TwipsToPixelsX(5300), GlobalRoutines.TwipsToPixelsY(3000), 0, 0, Windows.Forms.BoundsSpecified.X Or Windows.Forms.BoundsSpecified.Y)
+        Me.SetBounds(GlobalRoutines.TwipsToPixelsX(5300), GlobalRoutines.TwipsToPixelsY(3000), 0, 0, System.Windows.Forms.BoundsSpecified.X Or System.Windows.Forms.BoundsSpecified.Y)
         With CType(Membro, Sella)
             If .nribs Mod 2 = 0 Then
                 i = 1
@@ -402,8 +396,8 @@ Friend Class FormRibs
             End If
             Ribbs = .nribs \ 2
             For j = 1 To Ribbs - i
-                Label1.Load(j)
-                Text1.Load(j)
+                LoadLabel1(j)
+                LoadText1(j)
                 Text1(j).Top = Text1(0).Top + j * Text1(0).Height + GlobalRoutines.TwipsToPixelsY(20)
                 Label1(j).Top = Text1(j).Top + GlobalRoutines.TwipsToPixelsY(50)
                 Label1(j).Left = Label1(0).Left
@@ -416,7 +410,7 @@ Friend Class FormRibs
             i = 0
             If .nribs Mod 2 = 1 Then i = 1
             For j1 = j To Ribbs - i
-                Text1.Load(j1)
+                LoadText1(j1)
                 Text1(j1).Top = Text1(0).Top + ((j1 - j + i) * Text1(0).Height) + GlobalRoutines.TwipsToPixelsY(20)
                 Text1(j1).Left = Text1(0).Left + Text1(0).Width + GlobalRoutines.TwipsToPixelsX(380)
                 Text1(j1).Visible = True
@@ -446,7 +440,7 @@ Friend Class FormRibs
             Label2(0).Visible = True
             Label4.Visible = True
             Text2(0).Visible = True
-            k = VB6.PixelsToTwipsY(Text1(j1 - 1).Top) + 700
+            k = LegacyUiUnits.PixelsToTwipsY(Text1(j1 - 1).Top) + 700
             Label4.Top = GlobalRoutines.TwipsToPixelsY(k)
             Label4.Left = GlobalRoutines.TwipsToPixelsX(500)
             Label4.Text = "INTERASSE FORI BASE INFERIORE"
@@ -468,10 +462,10 @@ Friend Class FormRibs
             End If
             Foris = Nfori(1) \ 2
             For j = 1 To Foris - i
-                Label2.Load(j)
-                Text2.Load(j)
-                Text2(j).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text2(0).Top) + (j * VB6.PixelsToTwipsY(Text1(0).Height)) + 20)
-                Label2(j).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text2(j).Top) + 50)
+                LoadLabel2(j)
+                LoadText2(j)
+                Text2(j).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text2(0).Top) + (j * LegacyUiUnits.PixelsToTwipsY(Text1(0).Height)) + 20)
+                Label2(j).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text2(j).Top) + 50)
                 Label2(j).Left = GlobalRoutines.TwipsToPixelsX(Label1(0).Left)
                 Text2(j).Left = GlobalRoutines.TwipsToPixelsX(Text1(0).Left)
                 Label2(j).Text = "Fori  " & j * 2 + i & " / " & j * 2 + i + 1
@@ -482,9 +476,9 @@ Friend Class FormRibs
             Foris = (j - 1) * 2 + 1
             i = 0 : If Nfori(1) Mod 2 = 1 Then i = 1
             For j1 = j To Foris - i
-                Text2.Load(j1)
-                Text2(j1).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text2(0).Top) + ((j1 - j + i) * VB6.PixelsToTwipsY(Text1(0).Height)) + 20)
-                Text2(j1).Left = GlobalRoutines.TwipsToPixelsX(VB6.PixelsToTwipsX(Text2(0).Left) + VB6.PixelsToTwipsX(Text1(0).Width) + 380)
+                LoadText2(j1)
+                Text2(j1).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text2(0).Top) + ((j1 - j + i) * LegacyUiUnits.PixelsToTwipsY(Text1(0).Height)) + 20)
+                Text2(j1).Left = GlobalRoutines.TwipsToPixelsX(LegacyUiUnits.PixelsToTwipsX(Text2(0).Left) + LegacyUiUnits.PixelsToTwipsX(Text1(0).Width) + 380)
                 Text2(j1).Visible = True
                 Text2(j1).Enabled = False
             Next
@@ -497,14 +491,14 @@ Friend Class FormRibs
                 Text2(1).Text = Text2(0).Text
             End If
 
-            Me.Height = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text2(j1 - 1).Top) + VB6.PixelsToTwipsY(Text1(0).Height) + 600)
+            Me.Height = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text2(j1 - 1).Top) + LegacyUiUnits.PixelsToTwipsY(Text1(0).Height) + 600)
 fori2:
             '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FORI2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             If Nfori(2) \ 2 < 2 Then Exit Sub
             Label5.Visible = True
             Label3(0).Visible = True
             Text3(0).Visible = True
-            k = VB6.PixelsToTwipsY(Text2(j1 - 1).Top) + 700
+            k = LegacyUiUnits.PixelsToTwipsY(Text2(j1 - 1).Top) + 700
             Label5.Top = GlobalRoutines.TwipsToPixelsY(k)
             Label5.Left = GlobalRoutines.TwipsToPixelsX(500)
             Label5.Text = "INTERASSE FORI BASE SUPERIORE"
@@ -526,10 +520,10 @@ fori2:
             End If
             Foris = Nfori(2) \ 2
             For j = 1 To Foris - i
-                Label3.Load(j)
-                Text3.Load(j)
-                Text3(j).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text3(0).Top) + (j * VB6.PixelsToTwipsY(Text1(0).Height)) + 20)
-                Label3(j).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text3(j).Top) + 50)
+                LoadLabel3(j)
+                LoadText3(j)
+                Text3(j).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text3(0).Top) + (j * LegacyUiUnits.PixelsToTwipsY(Text1(0).Height)) + 20)
+                Label3(j).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text3(j).Top) + 50)
                 Label3(j).Left = GlobalRoutines.TwipsToPixelsX(Label1(0).Left)
                 Text3(j).Left = GlobalRoutines.TwipsToPixelsX(Text1(0).Left)
                 Label3(j).Text = "Fori  " & j * 2 + i & " / " & j * 2 + i + 1
@@ -540,9 +534,9 @@ fori2:
             Foris = (j - 1) * 2 + 1
             i = 0 : If Nfori(2) Mod 2 = 1 Then i = 1
             For j1 = j To Foris - i
-                Text3.Load(j1)
-                Text3(j1).Top = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text3(0).Top) + ((j1 - j + i) * VB6.PixelsToTwipsY(Text1(0).Height)) + 20)
-                Text3(j1).Left = GlobalRoutines.TwipsToPixelsX(VB6.PixelsToTwipsX(Text3(0).Left) + VB6.PixelsToTwipsX(Text1(0).Width) + 380)
+                LoadText3(j1)
+                Text3(j1).Top = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text3(0).Top) + ((j1 - j + i) * LegacyUiUnits.PixelsToTwipsY(Text1(0).Height)) + 20)
+                Text3(j1).Left = GlobalRoutines.TwipsToPixelsX(LegacyUiUnits.PixelsToTwipsX(Text3(0).Left) + LegacyUiUnits.PixelsToTwipsX(Text1(0).Width) + 380)
                 Text3(j1).Visible = True
                 Text3(j1).Enabled = False
             Next
@@ -555,11 +549,11 @@ fori2:
                 Text3(1).Text = Text3(0).Text
             End If
         End With
-        Me.Height = GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(Text3(j1 - 1).Top) + VB6.PixelsToTwipsY(Text1(0).Height) + 600)
+        Me.Height = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Text3(j1 - 1).Top) + LegacyUiUnits.PixelsToTwipsY(Text1(0).Height) + 600)
     End Sub
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = Text1.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, eventSender)
         Dim nl As Short
         With CType(Membro, Sella)
             nl = .nribs Mod 2
@@ -573,9 +567,9 @@ fori2:
             End If
         End With
     End Sub
-    Private Sub Text2_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text2.TextChanged
+    Private Sub Text2_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = Text2.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Text2, eventSender)
         Dim nl As Short
         nl = Nfori(1) Mod 2
         If Index <= Nfori(1) \ 2 - 1 + nl Then
@@ -587,9 +581,9 @@ fori2:
             End If
         End If
     End Sub
-    Private Sub Text3_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text3.TextChanged
+    Private Sub Text3_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = Text3.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Text3, eventSender)
         Dim nl As Short
         nl = Nfori(2) Mod 2
         If Index <= Nfori(2) \ 2 - 1 + nl Then
@@ -610,5 +604,27 @@ fori2:
                 Timer1.Enabled = False
             End If
         End If
+    End Sub
+
+    Private Sub LoadLabel1(index As Integer)
+        IndexedControls.AddClone(Label1, index)
+    End Sub
+    Private Sub LoadLabel2(index As Integer)
+        IndexedControls.AddClone(Label2, index)
+    End Sub
+    Private Sub LoadLabel3(index As Integer)
+        IndexedControls.AddClone(Label3, index)
+    End Sub
+    Private Sub LoadText1(index As Integer)
+        IndexedControls.AddClone(Text1, index)
+        AddHandler Text1(index).TextChanged, AddressOf Text1_TextChanged
+    End Sub
+    Private Sub LoadText2(index As Integer)
+        IndexedControls.AddClone(Text2, index)
+        AddHandler Text2(index).TextChanged, AddressOf Text2_TextChanged
+    End Sub
+    Private Sub LoadText3(index As Integer)
+        IndexedControls.AddClone(Text3, index)
+        AddHandler Text3(index).TextChanged, AddressOf Text3_TextChanged
     End Sub
 End Class

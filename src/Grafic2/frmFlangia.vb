@@ -7,6 +7,9 @@ Public Class frmFlange
     Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
     Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
         MyBase.New()
         'If m_vb6FormDefInstance Is Nothing Then
         'If m_InitializingDefInstance Then
@@ -25,7 +28,7 @@ Public Class frmFlange
         Inizializzando = True
         InitializeComponent()
         Inizializzando = False
-        Inizializza()
+        If initializeData Then Inizializza()
     End Sub
     'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -86,14 +89,14 @@ Public Class frmFlange
     Public WithEvents _Label3_0 As System.Windows.Forms.Label
     Public WithEvents Label2 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
-    Public WithEvents Label3 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-    Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text2 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text3 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text4 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents Text5 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents lblTipo As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
+    Public Label3 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+    Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text2 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text3 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text4 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public Text5 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public lblTipo As New System.Collections.Generic.Dictionary(Of Integer, Label)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -196,14 +199,6 @@ Public Class frmFlange
         Me._Label3_0 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Label3 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.Text2 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.Text3 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.Text4 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.Text5 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.lblTipo = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.QuerySelect = New System.Data.OleDb.OleDbCommand
         Me.cnQuery = New System.Data.OleDb.OleDbConnection
         Me.QueryInsert = New System.Data.OleDb.OleDbCommand
@@ -250,14 +245,6 @@ Public Class frmFlange
         Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand
         Me.Picture1 = New System.Windows.Forms.PictureBox
         CType(Me.dsFlange, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lblTipo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmdVista
@@ -314,7 +301,7 @@ Public Class frmFlange
         Me._Option1_4.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_4, CType(4, Short))
+        Me.Option1.Add(4, Me._Option1_4)
         Me._Option1_4.Location = New System.Drawing.Point(413, 24)
         Me._Option1_4.Name = "_Option1_4"
         Me._Option1_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -327,7 +314,7 @@ Public Class frmFlange
         Me._Option1_3.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_3, CType(3, Short))
+        Me.Option1.Add(3, Me._Option1_3)
         Me._Option1_3.Location = New System.Drawing.Point(365, 24)
         Me._Option1_3.Name = "_Option1_3"
         Me._Option1_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -340,7 +327,7 @@ Public Class frmFlange
         Me._Option1_2.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_2, CType(2, Short))
+        Me.Option1.Add(2, Me._Option1_2)
         Me._Option1_2.Location = New System.Drawing.Point(317, 24)
         Me._Option1_2.Name = "_Option1_2"
         Me._Option1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -353,7 +340,7 @@ Public Class frmFlange
         Me._Option1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_1, CType(1, Short))
+        Me.Option1.Add(1, Me._Option1_1)
         Me._Option1_1.Location = New System.Drawing.Point(269, 24)
         Me._Option1_1.Name = "_Option1_1"
         Me._Option1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -366,7 +353,7 @@ Public Class frmFlange
         Me._Option1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Option1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option1.SetIndex(Me._Option1_0, CType(0, Short))
+        Me.Option1.Add(0, Me._Option1_0)
         Me._Option1_0.Location = New System.Drawing.Point(221, 24)
         Me._Option1_0.Name = "_Option1_0"
         Me._Option1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -452,7 +439,7 @@ Public Class frmFlange
         Me._Text5_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Text5_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text5_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text5.SetIndex(Me._Text5_0, CType(0, Short))
+        Me.Text5.Add(0, Me._Text5_0)
         Me._Text5_0.Location = New System.Drawing.Point(398, 58)
         Me._Text5_0.MaxLength = 0
         Me._Text5_0.Multiline = True
@@ -471,7 +458,7 @@ Public Class frmFlange
         Me._Text4_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Text4_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text4_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text4.SetIndex(Me._Text4_0, CType(0, Short))
+        Me.Text4.Add(0, Me._Text4_0)
         Me._Text4_0.Location = New System.Drawing.Point(347, 58)
         Me._Text4_0.MaxLength = 0
         Me._Text4_0.Multiline = True
@@ -490,7 +477,7 @@ Public Class frmFlange
         Me._Text3_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Text3_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text3_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text3.SetIndex(Me._Text3_0, CType(0, Short))
+        Me.Text3.Add(0, Me._Text3_0)
         Me._Text3_0.Location = New System.Drawing.Point(297, 58)
         Me._Text3_0.MaxLength = 0
         Me._Text3_0.Multiline = True
@@ -509,7 +496,7 @@ Public Class frmFlange
         Me._Text2_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Text2_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text2_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text2.SetIndex(Me._Text2_0, CType(0, Short))
+        Me.Text2.Add(0, Me._Text2_0)
         Me._Text2_0.Location = New System.Drawing.Point(247, 58)
         Me._Text2_0.MaxLength = 0
         Me._Text2_0.Multiline = True
@@ -528,7 +515,7 @@ Public Class frmFlange
         Me._Text1_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Text1_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Text1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Text1.SetIndex(Me._Text1_0, CType(0, Short))
+        Me.Text1.Add(0, Me._Text1_0)
         Me._Text1_0.Location = New System.Drawing.Point(196, 58)
         Me._Text1_0.MaxLength = 0
         Me._Text1_0.Multiline = True
@@ -582,7 +569,7 @@ Public Class frmFlange
         Me._Label3_17.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_17.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_17.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_17, CType(17, Short))
+        Me.Label3.Add(17, Me._Label3_17)
         Me._Label3_17.Location = New System.Drawing.Point(0, 384)
         Me._Label3_17.Name = "_Label3_17"
         Me._Label3_17.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -607,7 +594,7 @@ Public Class frmFlange
         Me._lblTipo_4.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(192, Byte), CType(128, Byte))
         Me._lblTipo_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblTipo_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblTipo.SetIndex(Me._lblTipo_4, CType(4, Short))
+        Me.lblTipo.Add(4, Me._lblTipo_4)
         Me._lblTipo_4.Location = New System.Drawing.Point(398, 38)
         Me._lblTipo_4.Name = "_lblTipo_4"
         Me._lblTipo_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -619,7 +606,7 @@ Public Class frmFlange
         Me._lblTipo_3.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(192, Byte), CType(128, Byte))
         Me._lblTipo_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblTipo_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblTipo.SetIndex(Me._lblTipo_3, CType(3, Short))
+        Me.lblTipo.Add(3, Me._lblTipo_3)
         Me._lblTipo_3.Location = New System.Drawing.Point(347, 38)
         Me._lblTipo_3.Name = "_lblTipo_3"
         Me._lblTipo_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -631,7 +618,7 @@ Public Class frmFlange
         Me._lblTipo_2.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(192, Byte), CType(128, Byte))
         Me._lblTipo_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblTipo_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblTipo.SetIndex(Me._lblTipo_2, CType(2, Short))
+        Me.lblTipo.Add(2, Me._lblTipo_2)
         Me._lblTipo_2.Location = New System.Drawing.Point(297, 38)
         Me._lblTipo_2.Name = "_lblTipo_2"
         Me._lblTipo_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -643,7 +630,7 @@ Public Class frmFlange
         Me._lblTipo_1.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(192, Byte), CType(128, Byte))
         Me._lblTipo_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblTipo_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblTipo.SetIndex(Me._lblTipo_1, CType(1, Short))
+        Me.lblTipo.Add(1, Me._lblTipo_1)
         Me._lblTipo_1.Location = New System.Drawing.Point(247, 38)
         Me._lblTipo_1.Name = "_lblTipo_1"
         Me._lblTipo_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -655,7 +642,7 @@ Public Class frmFlange
         Me._lblTipo_0.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(192, Byte), CType(128, Byte))
         Me._lblTipo_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblTipo_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblTipo.SetIndex(Me._lblTipo_0, CType(0, Short))
+        Me.lblTipo.Add(0, Me._lblTipo_0)
         Me._lblTipo_0.Location = New System.Drawing.Point(196, 38)
         Me._lblTipo_0.Name = "_lblTipo_0"
         Me._lblTipo_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -667,7 +654,7 @@ Public Class frmFlange
         Me._Label3_16.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_16.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_16.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_16, CType(16, Short))
+        Me.Label3.Add(16, Me._Label3_16)
         Me._Label3_16.Location = New System.Drawing.Point(0, 365)
         Me._Label3_16.Name = "_Label3_16"
         Me._Label3_16.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -680,7 +667,7 @@ Public Class frmFlange
         Me._Label3_15.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_15.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_15.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_15, CType(15, Short))
+        Me.Label3.Add(15, Me._Label3_15)
         Me._Label3_15.Location = New System.Drawing.Point(0, 346)
         Me._Label3_15.Name = "_Label3_15"
         Me._Label3_15.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -693,7 +680,7 @@ Public Class frmFlange
         Me._Label3_14.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_14.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_14, CType(14, Short))
+        Me.Label3.Add(14, Me._Label3_14)
         Me._Label3_14.Location = New System.Drawing.Point(0, 327)
         Me._Label3_14.Name = "_Label3_14"
         Me._Label3_14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -706,7 +693,7 @@ Public Class frmFlange
         Me._Label3_13.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_13, CType(13, Short))
+        Me.Label3.Add(13, Me._Label3_13)
         Me._Label3_13.Location = New System.Drawing.Point(0, 308)
         Me._Label3_13.Name = "_Label3_13"
         Me._Label3_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -719,7 +706,7 @@ Public Class frmFlange
         Me._Label3_12.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_12, CType(12, Short))
+        Me.Label3.Add(12, Me._Label3_12)
         Me._Label3_12.Location = New System.Drawing.Point(0, 288)
         Me._Label3_12.Name = "_Label3_12"
         Me._Label3_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -732,7 +719,7 @@ Public Class frmFlange
         Me._Label3_11.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_11, CType(11, Short))
+        Me.Label3.Add(11, Me._Label3_11)
         Me._Label3_11.Location = New System.Drawing.Point(0, 269)
         Me._Label3_11.Name = "_Label3_11"
         Me._Label3_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -745,7 +732,7 @@ Public Class frmFlange
         Me._Label3_10.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_10, CType(10, Short))
+        Me.Label3.Add(10, Me._Label3_10)
         Me._Label3_10.Location = New System.Drawing.Point(0, 250)
         Me._Label3_10.Name = "_Label3_10"
         Me._Label3_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -758,7 +745,7 @@ Public Class frmFlange
         Me._Label3_9.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_9.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_9, CType(9, Short))
+        Me.Label3.Add(9, Me._Label3_9)
         Me._Label3_9.Location = New System.Drawing.Point(0, 231)
         Me._Label3_9.Name = "_Label3_9"
         Me._Label3_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -771,7 +758,7 @@ Public Class frmFlange
         Me._Label3_8.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_8, CType(8, Short))
+        Me.Label3.Add(8, Me._Label3_8)
         Me._Label3_8.Location = New System.Drawing.Point(0, 212)
         Me._Label3_8.Name = "_Label3_8"
         Me._Label3_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -784,7 +771,7 @@ Public Class frmFlange
         Me._Label3_7.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_7, CType(7, Short))
+        Me.Label3.Add(7, Me._Label3_7)
         Me._Label3_7.Location = New System.Drawing.Point(0, 192)
         Me._Label3_7.Name = "_Label3_7"
         Me._Label3_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -797,7 +784,7 @@ Public Class frmFlange
         Me._Label3_6.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_6, CType(6, Short))
+        Me.Label3.Add(6, Me._Label3_6)
         Me._Label3_6.Location = New System.Drawing.Point(0, 173)
         Me._Label3_6.Name = "_Label3_6"
         Me._Label3_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -810,7 +797,7 @@ Public Class frmFlange
         Me._Label3_5.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_5, CType(5, Short))
+        Me.Label3.Add(5, Me._Label3_5)
         Me._Label3_5.Location = New System.Drawing.Point(0, 154)
         Me._Label3_5.Name = "_Label3_5"
         Me._Label3_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -823,7 +810,7 @@ Public Class frmFlange
         Me._Label3_4.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_4, CType(4, Short))
+        Me.Label3.Add(4, Me._Label3_4)
         Me._Label3_4.Location = New System.Drawing.Point(0, 135)
         Me._Label3_4.Name = "_Label3_4"
         Me._Label3_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -836,7 +823,7 @@ Public Class frmFlange
         Me._Label3_3.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_3, CType(3, Short))
+        Me.Label3.Add(3, Me._Label3_3)
         Me._Label3_3.Location = New System.Drawing.Point(0, 116)
         Me._Label3_3.Name = "_Label3_3"
         Me._Label3_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -849,7 +836,7 @@ Public Class frmFlange
         Me._Label3_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_2, CType(2, Short))
+        Me.Label3.Add(2, Me._Label3_2)
         Me._Label3_2.Location = New System.Drawing.Point(0, 96)
         Me._Label3_2.Name = "_Label3_2"
         Me._Label3_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -862,7 +849,7 @@ Public Class frmFlange
         Me._Label3_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_1, CType(1, Short))
+        Me.Label3.Add(1, Me._Label3_1)
         Me._Label3_1.Location = New System.Drawing.Point(0, 77)
         Me._Label3_1.Name = "_Label3_1"
         Me._Label3_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -875,7 +862,7 @@ Public Class frmFlange
         Me._Label3_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label3_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label3_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.SetIndex(Me._Label3_0, CType(0, Short))
+        Me.Label3.Add(0, Me._Label3_0)
         Me._Label3_0.Location = New System.Drawing.Point(0, 58)
         Me._Label3_0.Name = "_Label3_0"
         Me._Label3_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1759,14 +1746,80 @@ Public Class frmFlange
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Libreria flange"
         CType(Me.dsFlange, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lblTipo, System.ComponentModel.ISupportInitialize).EndInit()
+
+        For Each control In Option1.Values
+            AddHandler control.Click, AddressOf Option1_Click
+        Next
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
+        For Each control In Text1.Values
+            AddHandler control.Enter, AddressOf Text1_Enter
+        Next
+        For Each control In Text1.Values
+            AddHandler control.KeyDown, AddressOf Text1_KeyDown
+        Next
+        For Each control In Text1.Values
+            AddHandler control.KeyPress, AddressOf Text1_KeyPress
+        Next
+        For Each control In Text1.Values
+            AddHandler control.KeyUp, AddressOf Text1_KeyUp
+        Next
+        For Each control In Text1.Values
+            AddHandler control.Validated, AddressOf Text1_Validated
+        Next
+        For Each control In Text2.Values
+            AddHandler control.Enter, AddressOf Text2_Enter
+        Next
+        For Each control In Text2.Values
+            AddHandler control.KeyDown, AddressOf Text2_KeyDown
+        Next
+        For Each control In Text2.Values
+            AddHandler control.KeyPress, AddressOf Text2_KeyPress
+        Next
+        For Each control In Text2.Values
+            AddHandler control.KeyUp, AddressOf Text2_KeyUp
+        Next
+        For Each control In Text3.Values
+            AddHandler control.Enter, AddressOf Text3_Enter
+        Next
+        For Each control In Text3.Values
+            AddHandler control.KeyDown, AddressOf Text3_KeyDown
+        Next
+        For Each control In Text3.Values
+            AddHandler control.KeyPress, AddressOf Text3_KeyPress
+        Next
+        For Each control In Text3.Values
+            AddHandler control.KeyUp, AddressOf Text3_KeyUp
+        Next
+        For Each control In Text4.Values
+            AddHandler control.TextChanged, AddressOf Text4_TextChanged
+        Next
+        For Each control In Text4.Values
+            AddHandler control.Enter, AddressOf Text4_Enter
+        Next
+        For Each control In Text4.Values
+            AddHandler control.KeyDown, AddressOf Text4_KeyDown
+        Next
+        For Each control In Text4.Values
+            AddHandler control.KeyPress, AddressOf Text4_KeyPress
+        Next
+        For Each control In Text4.Values
+            AddHandler control.KeyUp, AddressOf Text4_KeyUp
+        Next
+        For Each control In Text5.Values
+            AddHandler control.Enter, AddressOf Text5_Enter
+        Next
+        For Each control In Text5.Values
+            AddHandler control.KeyDown, AddressOf Text5_KeyDown
+        Next
+        For Each control In Text5.Values
+            AddHandler control.KeyPress, AddressOf Text5_KeyPress
+        Next
+        For Each control In Text5.Values
+            AddHandler control.KeyUp, AddressOf Text5_KeyUp
+        Next
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -1851,19 +1904,19 @@ Public Class frmFlange
             For k = 0 To 17
                 Try
                     Select Case i
-                        Case 1 : If k > 0 Then Text1.Load(k)
+                        Case 1 : If k > 0 Then LoadText1(k)
                             txt = Text1(k)
                             txt.Name = "_Text1_" + k.ToString
-                        Case 2 : If k > 0 Then Text2.Load(k)
+                        Case 2 : If k > 0 Then LoadText2(k)
                             txt = Text2(k)
                             txt.Name = "_Text2_" + k.ToString
-                        Case 3 : If k > 0 Then Text3.Load(k)
+                        Case 3 : If k > 0 Then LoadText3(k)
                             txt = Text3(k)
                             txt.Name = "_Text3_" + k.ToString
-                        Case 4 : If k > 0 Then Text4.Load(k)
+                        Case 4 : If k > 0 Then LoadText4(k)
                             txt = Text4(k)
                             txt.Name = "_Text4_" + k.ToString
-                        Case 5 : If k > 0 Then Text5.Load(k)
+                        Case 5 : If k > 0 Then LoadText5(k)
                             txt = Text5(k)
                             txt.Name = "_Text5_" + k.ToString
                     End Select
@@ -2395,8 +2448,8 @@ Cont:       Next
         Text4(9).Text = Str(R)
     End Sub
     'UPGRADE_WARNING: L'evento Text1.TextChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         Select Case Index
             Case 0, 1, 2, 3, 10, 11, 12, 13, 14
                 Text2(Index).Text = Text1(Index).Text
@@ -2422,22 +2475,22 @@ Cont:       Next
                 Text4(7).Text = Str(CShort((GlobalRoutines.ValVir(Text4(5).Text) - GlobalRoutines.ValVir(Text4(8).Text)) / 2))
         End Select
     End Sub
-    Private Sub Text1_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.Enter
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text1_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         'If Focalizza Then txtFocus = Text1(Index)
         '   Call SetInsert(Text1(Index))
     End Sub
-    Private Sub Text1_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text1.KeyDown
+    Private Sub Text1_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         '   Call TrattaCar(Index, KeyCode, Text1(Index))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
 
-    Private Sub Text1_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text1.KeyPress
+    Private Sub Text1_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Short = CShort(Asc(eventArgs.KeyChar))
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
         ' Stop '  Call TrattaCar(Index, KeyAscii, Text1(Index))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
@@ -2445,122 +2498,122 @@ Cont:       Next
         End If
     End Sub
 
-    Private Sub Text1_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text1.KeyUp
+    Private Sub Text1_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text1.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, CShort(KeyCode), Text1(Index), TextArr, nArr)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(eventSender, TextBox))
+        Call TrattaCar(Index, CShort(KeyCode), (Text1(Index)), TextArr, nArr)
     End Sub
-    Private Sub Text2_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text2.Enter
-        Dim Index As Short = Text2.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text2_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text2, CType(eventSender, TextBox))
         ' If Focalizza Then txtFocus = Text2(Index)
         '        Call SetInsert(Text2(Index))
     End Sub
-    Private Sub Text2_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text2.KeyDown
+    Private Sub Text2_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text2.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text2, CType(eventSender, TextBox))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
-    Private Sub Text2_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text2.KeyPress
+    Private Sub Text2_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Short = CShort(Asc(eventArgs.KeyChar))
-        Dim Index As Short = Text2.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text2, CType(eventSender, TextBox))
         '   Call TrattaCar(Index, KeyAscii, Text2(Index))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
     End Sub
-    Private Sub Text2_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text2.KeyUp
+    Private Sub Text2_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Short = CShort(eventArgs.KeyCode)
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text2.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, KeyCode, Text2(Index), TextArr, nArr)
+        Dim Index As Short = IndexedControls.IndexOf(Text2, CType(eventSender, TextBox))
+        Call TrattaCar(Index, KeyCode, (Text2(Index)), TextArr, nArr)
     End Sub
-    Private Sub Text3_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text3.Enter
-        Dim Index As Short = Text3.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text3_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text3, CType(eventSender, TextBox))
         ' If Focalizza Then txtFocus = Text3(Index)
         ' Call SetInsert(Text3(Index))
     End Sub
-    Private Sub Text3_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text3.KeyDown
+    Private Sub Text3_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Short = CShort(eventArgs.KeyCode)
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text3.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text3, CType(eventSender, TextBox))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = CShort(System.Windows.Forms.Keys.Down)
     End Sub
-    Private Sub Text3_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text3.KeyPress
+    Private Sub Text3_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Short = CShort(Asc(eventArgs.KeyChar))
-        Dim Index As Short = Text3.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text3, CType(eventSender, TextBox))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
     End Sub
-    Private Sub Text3_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text3.KeyUp
+    Private Sub Text3_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Short = CShort(eventArgs.KeyCode)
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text3.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, KeyCode, Text3(Index), TextArr, nArr)
+        Dim Index As Short = IndexedControls.IndexOf(Text3, CType(eventSender, TextBox))
+        Call TrattaCar(Index, KeyCode, (Text3(Index)), TextArr, nArr)
     End Sub
-    Private Sub Text4_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text4.TextChanged
+    Private Sub Text4_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Loading Then Exit Sub
-        Dim Index As Short = Text4.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text4, CType(eventSender, TextBox))
         If Index = 8 Then
             Text4(7).Text = Str((GlobalRoutines.ValVir(Text4(6).Text) - GlobalRoutines.ValVir(Text4(8).Text)) / 2)
         End If
     End Sub
-    Private Sub Text4_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text4.Enter
-        Dim Index As Short = Text4.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text4_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text4, CType(eventSender, TextBox))
         ' If Focalizza Then txtFocus = Text4(Index)
         'Call SetInsert(Text4(Index))
     End Sub
-    Private Sub Text4_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text4.KeyDown
+    Private Sub Text4_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Short = CShort(eventArgs.KeyData \ &H10000)
-        Dim Index As Short = Text4.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text4, CType(eventSender, TextBox))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
 
-    Private Sub Text4_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text4.KeyPress
+    Private Sub Text4_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Integer = Asc(eventArgs.KeyChar)
-        Dim Index As Short = Text4.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text4, CType(eventSender, TextBox))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
 
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
     End Sub
-    Private Sub Text4_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text4.KeyUp
+    Private Sub Text4_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Integer = eventArgs.KeyData \ &H10000
-        Dim Index As Short = Text4.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, CShort(KeyCode), Text4(Index), TextArr, nArr)
+        Dim Index As Short = IndexedControls.IndexOf(Text4, CType(eventSender, TextBox))
+        Call TrattaCar(Index, CShort(KeyCode), (Text4(Index)), TextArr, nArr)
     End Sub
-    Private Sub Text5_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text5.Enter
-        Dim Index As Short = Text5.GetIndex(CType(eventSender, TextBox))
+    Private Sub Text5_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text5, CType(eventSender, TextBox))
         ' If Focalizza Then txtFocus = Text5(Index)
         'Call SetInsert(Text5(Index))
 
     End Sub
-    Private Sub Text5_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text5.KeyDown
+    Private Sub Text5_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Integer = eventArgs.KeyData \ &H10000
-        Dim Index As Short = Text5.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text5, CType(eventSender, TextBox))
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
-    Private Sub Text5_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles Text5.KeyPress
+    Private Sub Text5_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Integer = Asc(eventArgs.KeyChar)
-        Dim Index As Short = Text5.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(Text5, CType(eventSender, TextBox))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
     End Sub
-    Private Sub Text5_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles Text5.KeyUp
+    Private Sub Text5_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Keys = eventArgs.KeyCode
         Dim Shift As Integer = eventArgs.KeyData \ &H10000
-        Dim Index As Short = Text5.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, CShort(KeyCode), Text5(Index), TextArr, nArr)
+        Dim Index As Short = IndexedControls.IndexOf(Text5, CType(eventSender, TextBox))
+        Call TrattaCar(Index, CShort(KeyCode), (Text5(Index)), TextArr, nArr)
     End Sub
     Private Sub frmFlange_Closed(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Closed
         dsFlange.Dispose()
@@ -2572,8 +2625,8 @@ Cont:       Next
         Ratings.Dispose()
         Tipi.Dispose()
     End Sub
-    Private Sub Text1_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles Text1.Validated
-        Dim Index As Short = Text1.GetIndex(CType(sender, TextBox))
+    Private Sub Text1_Validated(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, CType(sender, TextBox))
         If Text2(Index).BackColor.Equals(Color.Yellow) Then
             BindingContext(CatalogoR2).EndCurrentEdit()
         End If
@@ -2587,7 +2640,7 @@ Cont:       Next
             BindingContext(CatalogoR5).EndCurrentEdit()
         End If
     End Sub
-    Private Sub Option1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Option1.Click
+    Private Sub Option1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         DisegnaVista()
     End Sub
     Private Sub chkReg_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkReg.CheckedChanged
@@ -2605,5 +2658,44 @@ Cont:       Next
     End Sub
     Private Sub cmbRating_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbRating.Click
         ButtonClick = True
+    End Sub
+
+    Private Sub LoadText1(index As Integer)
+        IndexedControls.AddClone(Text1, index)
+        AddHandler Text1(index).TextChanged, AddressOf Text1_TextChanged
+        AddHandler Text1(index).Enter, AddressOf Text1_Enter
+        AddHandler Text1(index).KeyDown, AddressOf Text1_KeyDown
+        AddHandler Text1(index).KeyPress, AddressOf Text1_KeyPress
+        AddHandler Text1(index).KeyUp, AddressOf Text1_KeyUp
+        AddHandler Text1(index).Validated, AddressOf Text1_Validated
+    End Sub
+    Private Sub LoadText2(index As Integer)
+        IndexedControls.AddClone(Text2, index)
+        AddHandler Text2(index).Enter, AddressOf Text2_Enter
+        AddHandler Text2(index).KeyDown, AddressOf Text2_KeyDown
+        AddHandler Text2(index).KeyPress, AddressOf Text2_KeyPress
+        AddHandler Text2(index).KeyUp, AddressOf Text2_KeyUp
+    End Sub
+    Private Sub LoadText3(index As Integer)
+        IndexedControls.AddClone(Text3, index)
+        AddHandler Text3(index).Enter, AddressOf Text3_Enter
+        AddHandler Text3(index).KeyDown, AddressOf Text3_KeyDown
+        AddHandler Text3(index).KeyPress, AddressOf Text3_KeyPress
+        AddHandler Text3(index).KeyUp, AddressOf Text3_KeyUp
+    End Sub
+    Private Sub LoadText4(index As Integer)
+        IndexedControls.AddClone(Text4, index)
+        AddHandler Text4(index).TextChanged, AddressOf Text4_TextChanged
+        AddHandler Text4(index).Enter, AddressOf Text4_Enter
+        AddHandler Text4(index).KeyDown, AddressOf Text4_KeyDown
+        AddHandler Text4(index).KeyPress, AddressOf Text4_KeyPress
+        AddHandler Text4(index).KeyUp, AddressOf Text4_KeyUp
+    End Sub
+    Private Sub LoadText5(index As Integer)
+        IndexedControls.AddClone(Text5, index)
+        AddHandler Text5(index).Enter, AddressOf Text5_Enter
+        AddHandler Text5(index).KeyDown, AddressOf Text5_KeyDown
+        AddHandler Text5(index).KeyPress, AddressOf Text5_KeyPress
+        AddHandler Text5(index).KeyUp, AddressOf Text5_KeyUp
     End Sub
 End Class

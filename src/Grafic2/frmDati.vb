@@ -126,9 +126,9 @@ Friend Class frmDati
     Public WithEvents lblTipo As System.Windows.Forms.Label
     Public WithEvents lblDen As System.Windows.Forms.Label
     Public WithEvents _lblMat_0 As System.Windows.Forms.Label
-    Public WithEvents Option2 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-    Public WithEvents txtMat As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents txtPsp As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public Option2 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+    Public txtMat As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public txtPsp As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -243,9 +243,6 @@ Friend Class frmDati
         Me.lblTipo = New System.Windows.Forms.Label
         Me.lblDen = New System.Windows.Forms.Label
         Me._lblMat_0 = New System.Windows.Forms.Label
-        Me.Option2 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.txtMat = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.txtPsp = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.DBCmbTipo = New System.Windows.Forms.ComboBox
         Me.Picture1 = New System.Windows.Forms.PictureBox
         Me.Frame5.SuspendLayout()
@@ -257,9 +254,6 @@ Friend Class frmDati
         Me.Frame3.SuspendLayout()
         Me.Frame1.SuspendLayout()
         Me.Frame6.SuspendLayout()
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtMat, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtPsp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_cmdMat_1
@@ -333,7 +327,7 @@ Friend Class frmDati
         Me._Option2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_0.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Option2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_0, CType(0, Short))
+        Me.Option2.Add(0, Me._Option2_0)
         Me._Option2_0.Location = New System.Drawing.Point(16, 16)
         Me._Option2_0.Name = "_Option2_0"
         Me._Option2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -348,7 +342,7 @@ Friend Class frmDati
         Me._Option2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option2_1.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Option2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Option2.SetIndex(Me._Option2_1, CType(1, Short))
+        Me.Option2.Add(1, Me._Option2_1)
         Me._Option2_1.Location = New System.Drawing.Point(16, 32)
         Me._Option2_1.Name = "_Option2_1"
         Me._Option2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -439,7 +433,7 @@ Friend Class frmDati
         Me._txtPsp_14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_14.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_14.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_14, CType(14, Short))
+        Me.txtPsp.Add(14, Me._txtPsp_14)
         Me._txtPsp_14.Location = New System.Drawing.Point(352, 80)
         Me._txtPsp_14.MaxLength = 0
         Me._txtPsp_14.Multiline = True
@@ -459,7 +453,7 @@ Friend Class frmDati
         Me._txtPsp_13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_13.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_13.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_13, CType(13, Short))
+        Me.txtPsp.Add(13, Me._txtPsp_13)
         Me._txtPsp_13.Location = New System.Drawing.Point(352, 64)
         Me._txtPsp_13.MaxLength = 0
         Me._txtPsp_13.Multiline = True
@@ -479,7 +473,7 @@ Friend Class frmDati
         Me._txtPsp_12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_12.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_12.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_12, CType(12, Short))
+        Me.txtPsp.Add(12, Me._txtPsp_12)
         Me._txtPsp_12.Location = New System.Drawing.Point(352, 48)
         Me._txtPsp_12.MaxLength = 0
         Me._txtPsp_12.Multiline = True
@@ -499,7 +493,7 @@ Friend Class frmDati
         Me._txtPsp_11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_11.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_11, CType(11, Short))
+        Me.txtPsp.Add(11, Me._txtPsp_11)
         Me._txtPsp_11.Location = New System.Drawing.Point(184, 80)
         Me._txtPsp_11.MaxLength = 0
         Me._txtPsp_11.Multiline = True
@@ -519,7 +513,7 @@ Friend Class frmDati
         Me._txtPsp_10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_10.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_10, CType(10, Short))
+        Me.txtPsp.Add(10, Me._txtPsp_10)
         Me._txtPsp_10.Location = New System.Drawing.Point(136, 80)
         Me._txtPsp_10.MaxLength = 0
         Me._txtPsp_10.Multiline = True
@@ -539,7 +533,7 @@ Friend Class frmDati
         Me._txtPsp_9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_9.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_9, CType(9, Short))
+        Me.txtPsp.Add(9, Me._txtPsp_9)
         Me._txtPsp_9.Location = New System.Drawing.Point(88, 80)
         Me._txtPsp_9.MaxLength = 0
         Me._txtPsp_9.Multiline = True
@@ -559,7 +553,7 @@ Friend Class frmDati
         Me._txtPsp_8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_8.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_8, CType(8, Short))
+        Me.txtPsp.Add(8, Me._txtPsp_8)
         Me._txtPsp_8.Location = New System.Drawing.Point(184, 64)
         Me._txtPsp_8.MaxLength = 0
         Me._txtPsp_8.Multiline = True
@@ -579,7 +573,7 @@ Friend Class frmDati
         Me._txtPsp_7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_7.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_7, CType(7, Short))
+        Me.txtPsp.Add(7, Me._txtPsp_7)
         Me._txtPsp_7.Location = New System.Drawing.Point(136, 64)
         Me._txtPsp_7.MaxLength = 0
         Me._txtPsp_7.Multiline = True
@@ -599,7 +593,7 @@ Friend Class frmDati
         Me._txtPsp_6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_6.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_6, CType(6, Short))
+        Me.txtPsp.Add(6, Me._txtPsp_6)
         Me._txtPsp_6.Location = New System.Drawing.Point(88, 64)
         Me._txtPsp_6.MaxLength = 0
         Me._txtPsp_6.Multiline = True
@@ -619,7 +613,7 @@ Friend Class frmDati
         Me._txtPsp_5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_5.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_5, CType(5, Short))
+        Me.txtPsp.Add(5, Me._txtPsp_5)
         Me._txtPsp_5.Location = New System.Drawing.Point(184, 48)
         Me._txtPsp_5.MaxLength = 0
         Me._txtPsp_5.Multiline = True
@@ -639,7 +633,7 @@ Friend Class frmDati
         Me._txtPsp_4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_4.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_4, CType(4, Short))
+        Me.txtPsp.Add(4, Me._txtPsp_4)
         Me._txtPsp_4.Location = New System.Drawing.Point(136, 48)
         Me._txtPsp_4.MaxLength = 0
         Me._txtPsp_4.Multiline = True
@@ -659,7 +653,7 @@ Friend Class frmDati
         Me._txtPsp_3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_3.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_3, CType(3, Short))
+        Me.txtPsp.Add(3, Me._txtPsp_3)
         Me._txtPsp_3.Location = New System.Drawing.Point(88, 48)
         Me._txtPsp_3.MaxLength = 0
         Me._txtPsp_3.Multiline = True
@@ -679,7 +673,7 @@ Friend Class frmDati
         Me._txtPsp_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_2.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_2, CType(2, Short))
+        Me.txtPsp.Add(2, Me._txtPsp_2)
         Me._txtPsp_2.Location = New System.Drawing.Point(184, 32)
         Me._txtPsp_2.MaxLength = 0
         Me._txtPsp_2.Multiline = True
@@ -699,7 +693,7 @@ Friend Class frmDati
         Me._txtPsp_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_1.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_1, CType(1, Short))
+        Me.txtPsp.Add(1, Me._txtPsp_1)
         Me._txtPsp_1.Location = New System.Drawing.Point(136, 32)
         Me._txtPsp_1.MaxLength = 0
         Me._txtPsp_1.Multiline = True
@@ -719,7 +713,7 @@ Friend Class frmDati
         Me._txtPsp_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtPsp_0.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtPsp_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtPsp.SetIndex(Me._txtPsp_0, CType(0, Short))
+        Me.txtPsp.Add(0, Me._txtPsp_0)
         Me._txtPsp_0.Location = New System.Drawing.Point(88, 32)
         Me._txtPsp_0.MaxLength = 0
         Me._txtPsp_0.Multiline = True
@@ -1003,7 +997,7 @@ Friend Class frmDati
         Me._txtMat_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtMat_1.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtMat_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtMat.SetIndex(Me._txtMat_1, CType(1, Short))
+        Me.txtMat.Add(1, Me._txtMat_1)
         Me._txtMat_1.Location = New System.Drawing.Point(92, 5)
         Me._txtMat_1.MaxLength = 0
         Me._txtMat_1.Name = "_txtMat_1"
@@ -1701,7 +1695,7 @@ Friend Class frmDati
         Me._txtMat_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._txtMat_0.Font = New System.Drawing.Font("Arial", 8.4!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._txtMat_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtMat.SetIndex(Me._txtMat_0, CType(0, Short))
+        Me.txtMat.Add(0, Me._txtMat_0)
         Me._txtMat_0.Location = New System.Drawing.Point(96, 0)
         Me._txtMat_0.MaxLength = 0
         Me._txtMat_0.Name = "_txtMat_0"
@@ -1864,9 +1858,31 @@ Friend Class frmDati
         Me.Frame3.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
         Me.Frame6.ResumeLayout(False)
-        CType(Me.Option2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtMat, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtPsp, System.ComponentModel.ISupportInitialize).EndInit()
+
+        For Each control In txtMat.Values
+            AddHandler control.MouseDown, AddressOf txtMat_MouseDown
+        Next
+        For Each control In txtMat.Values
+            AddHandler control.MouseMove, AddressOf txtMat_MouseMove
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.TextChanged, AddressOf txtPsp_TextChanged
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.Enter, AddressOf txtPsp_Enter
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.KeyDown, AddressOf txtPsp_KeyDown
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.KeyPress, AddressOf txtPsp_KeyPress
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.KeyUp, AddressOf txtPsp_KeyUp
+        Next
+        For Each control In txtPsp.Values
+            AddHandler control.MouseDown, AddressOf txtPsp_MouseDown
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -2476,7 +2492,7 @@ Friend Class frmDati
         Next
         GiaSpecial = False
         Try
-            txtPsp.Unload(15)
+            UnloadtxtPsp(15)
             _lblPsp_15.Visible = False
         Catch e As Exception
         End Try
@@ -3203,12 +3219,12 @@ Friend Class frmDati
         ' Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         AltroClick = True
     End Sub
-    Private Sub txtMat_MouseDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles txtMat.MouseDown
+    Private Sub txtMat_MouseDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs)
         'Dim Button As Short = eventArgs.Button \ &H100000
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         AltroClick = True
     End Sub
-    Private Sub txtMat_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles txtMat.MouseMove
+    Private Sub txtMat_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs)
         'Dim Button As Short = eventArgs.Button \ &H100000
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         PictHelp.Visible = False
@@ -3287,8 +3303,8 @@ Friend Class frmDati
     Public Sub Text_MouseDown(ByVal Nome As String, ByVal eventArgs As System.Windows.Forms.MouseEventArgs)
         'Dim Button As Short = eventArgs.Button \ &H100000
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-        'Dim x As Single = VB6.PixelsToTwipsX(eventArgs.X)
-        'Dim y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+        'Dim x As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+        'Dim y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
         Dim s() As String = Nome.Split(CChar("_"))
         Dim Textnum As String = s(1)
         Dim Index As Short = CShort(s(2))
@@ -3310,9 +3326,9 @@ Friend Class frmDati
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         AltroClick = True
     End Sub
-    Private Sub txtPsp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtPsp.TextChanged
+    Private Sub txtPsp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtPsp.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(txtPsp, CType(eventSender, TextBox))
         Dim i As Short
         Dim g As clsGenMem
         If Not txtPsp(Index).Enabled Or Not txtPsp(Index).Visible Then Exit Sub
@@ -3510,11 +3526,11 @@ Friend Class frmDati
     Private Sub PrezzoCorpo(ByRef si As Boolean)
         If si Then
             Try
-1:              txtPsp.Load(15)
+1:              LoadtxtPsp(15)
             Catch
                 txtPsp(15).Visible = True
             Finally
-                txtPsp(15).Text = VB6.Format(Membro.GenMem.LireLETot, "##0.00")
+                txtPsp(15).Text = Microsoft.VisualBasic.Strings.Format(Membro.GenMem.LireLETot, "##0.00")
             End Try
             txtPsp(15).Top = cmbLE.Top + cmbLE.Height 'txtPsp(11).Top
             txtPsp(15).Left = cmbLE.Left + cmbLE.Width - txtPsp(15).Width ' txtPsp(11).Left
@@ -3560,8 +3576,8 @@ Friend Class frmDati
         End While
         CheckPos = True
     End Function
-    Private Sub txtPsp_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtPsp.Enter
-        Dim Index As Short = txtPsp.GetIndex(CType(eventSender, TextBox))
+    Private Sub txtPsp_Enter(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(txtPsp, CType(eventSender, TextBox))
         Dim f As Foratura
         Dim t As Piastrone
         Dim n As Integer
@@ -3623,28 +3639,28 @@ Friend Class frmDati
         End Select
     End Sub
 
-    Private Sub txtPsp_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles txtPsp.KeyDown
+    Private Sub txtPsp_KeyDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Integer = eventArgs.KeyCode
         'Dim Shift As Short = eventArgs.KeyData \ &H10000
-        'Dim Index As Short = txtPsp.GetIndex(eventSender)
+        'Dim Index As Short = IndexedControls.IndexOf(txtPsp, eventSender)
         If KeyCode = System.Windows.Forms.Keys.Return Then KeyCode = System.Windows.Forms.Keys.Down
     End Sub
-    Private Sub txtPsp_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs) Handles txtPsp.KeyPress
+    Private Sub txtPsp_KeyPress(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyPressEventArgs)
         Dim KeyAscii As Short = CShort(Asc(eventArgs.KeyChar))
-        Dim Index As Short = txtPsp.GetIndex(CType(eventSender, TextBox))
+        Dim Index As Short = IndexedControls.IndexOf(txtPsp, CType(eventSender, TextBox))
         If KeyAscii = System.Windows.Forms.Keys.Return Then KeyAscii = 0
         If KeyAscii = 0 Then
             eventArgs.Handled = True
         End If
     End Sub
-    Private Sub txtPsp_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs) Handles txtPsp.KeyUp
+    Private Sub txtPsp_KeyUp(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.KeyEventArgs)
         Dim KeyCode As Short = CShort(eventArgs.KeyCode)
         '  Dim Shift As Short = eventArgs.KeyData \ &H10000
-        Dim Index As Short = txtPsp.GetIndex(CType(eventSender, TextBox))
-        Call TrattaCar(Index, KeyCode, txtPsp(Index), TextArs, 14)
+        Dim Index As Short = IndexedControls.IndexOf(txtPsp, CType(eventSender, TextBox))
+        Call TrattaCar(Index, KeyCode, (txtPsp(Index)), TextArs, 14)
     End Sub
 
-    Private Sub txtPsp_MouseDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles txtPsp.MouseDown
+    Private Sub txtPsp_MouseDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs)
         'Dim Button As Short = eventArgs.Button \ &H100000
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         AltroClick = True
@@ -4794,8 +4810,8 @@ Friend Class frmDati
                 If Not GiaSpecial Then
                     GiaSpecial = True
                 End If
-                Librerie(0).Top = CInt(GlobalRoutines.TwipsToPixelsY(VB6.PixelsToTwipsY(TextArr(4).Top)))
-                Librerie(0).Left = CInt(GlobalRoutines.TwipsToPixelsX(VB6.PixelsToTwipsX(TextArr(4).Left) + VB6.PixelsToTwipsX(TextArr(4).Width)))
+                Librerie(0).Top = CInt(GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(TextArr(4).Top)))
+                Librerie(0).Left = CInt(GlobalRoutines.TwipsToPixelsX(LegacyUiUnits.PixelsToTwipsX(TextArr(4).Left) + LegacyUiUnits.PixelsToTwipsX(TextArr(4).Width)))
                 If Membro.GenMem.Tipo = -19 Then
                     Librerie.Load(1)
                     Librerie(1).Top = TextArr(8).Top
@@ -4954,8 +4970,8 @@ ErrSpec: If Err.Number = 360 Then
     Private Sub txtTipo_MouseDown(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles txtTipo.MouseDown
         'Dim Button As Short = eventArgs.Button \ &H100000
         'Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
-        'Dim x As Single = VB6.PixelsToTwipsX(eventArgs.X)
-        'Dim y As Single = VB6.PixelsToTwipsY(eventArgs.Y)
+        'Dim x As Single = LegacyUiUnits.PixelsToTwipsX(eventArgs.X)
+        'Dim y As Single = LegacyUiUnits.PixelsToTwipsY(eventArgs.Y)
         AltroClick = True
     End Sub
     Private Function SetCoordN() As Boolean
@@ -6827,5 +6843,20 @@ Incompleto:
             gm.Denom = txtDen.Text
             gm.keyG = txtDen.Text
         End If
+    End Sub
+
+    Private Sub LoadtxtPsp(index As Integer)
+        IndexedControls.AddClone(txtPsp, index)
+        AddHandler txtPsp(index).TextChanged, AddressOf txtPsp_TextChanged
+        AddHandler txtPsp(index).Enter, AddressOf txtPsp_Enter
+        AddHandler txtPsp(index).KeyDown, AddressOf txtPsp_KeyDown
+        AddHandler txtPsp(index).KeyPress, AddressOf txtPsp_KeyPress
+        AddHandler txtPsp(index).KeyUp, AddressOf txtPsp_KeyUp
+        AddHandler txtPsp(index).MouseDown, AddressOf txtPsp_MouseDown
+    End Sub
+    Private Sub UnloadtxtPsp(index As Integer)
+        Dim control = txtPsp(index)
+        txtPsp.Remove(index)
+        control.Dispose()
     End Sub
 End Class

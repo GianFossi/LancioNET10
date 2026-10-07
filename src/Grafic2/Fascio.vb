@@ -143,7 +143,7 @@ ErrS:   Resume ExS
         If FileTrac.Length Then Exit Sub
         If Not IO.File.Exists(FileTrac) Then Exit Sub
         Dim fs As New FileStream(FileTrac, FileMode.Open)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Try
             Dim p As RoutBase1.clsProblem = CType(bf.Deserialize(fs), RoutBase1.clsProblem)
             DaTos = CType(bf.Deserialize(fs), traccia.clsTracciatura.typDaTos)
@@ -567,7 +567,7 @@ ErrS:   Resume ExS
     Public Sub Genera(ByRef File As String)
         Trasferisci()
         Dim fs As New FileStream(File, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Try
             bf.Serialize(fs, Monitor.Motore.Problem)
             bf.Serialize(fs, DaTos)

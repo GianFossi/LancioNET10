@@ -58,8 +58,8 @@ Friend Class frmDistinta
     Public WithEvents Frame1 As System.Windows.Forms.GroupBox
     Public WithEvents Listj As System.Windows.Forms.ListBox
     Public WithEvents Label1 As System.Windows.Forms.Label
-	Public WithEvents Combo1 As Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray
-	Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
+	Public Combo1 As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
+	Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
 	Public WithEvents mnuFileNew As System.Windows.Forms.MenuItem
 	Public WithEvents mnuFileOpen As System.Windows.Forms.MenuItem
 	Public WithEvents mnuFileClose As System.Windows.Forms.MenuItem
@@ -129,8 +129,6 @@ Friend Class frmDistinta
         Me.cmdCreaDaProto = New System.Windows.Forms.Button
         Me.Listj = New System.Windows.Forms.ListBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Combo1 = New Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray(Me.components)
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.MainMenu1 = New System.Windows.Forms.MainMenu
         Me.mnuFile = New System.Windows.Forms.MenuItem
         Me.mnuFileNew = New System.Windows.Forms.MenuItem
@@ -158,8 +156,6 @@ Friend Class frmDistinta
         Me.Frame3.SuspendLayout()
         Me.Frame2.SuspendLayout()
         Me.Frame1.SuspendLayout()
-        CType(Me.Combo1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pictVirtual.SuspendLayout()
         Me.Frame4.SuspendLayout()
         Me.SuspendLayout()
@@ -341,7 +337,7 @@ Friend Class frmDistinta
         Me._Combo1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Combo1_0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._Combo1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Combo1.SetIndex(Me._Combo1_0, CType(0, Short))
+        Me.Combo1.Add(0, Me._Combo1_0)
         Me._Combo1_0.Location = New System.Drawing.Point(89, 16)
         Me._Combo1_0.Name = "_Combo1_0"
         Me._Combo1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -354,7 +350,7 @@ Friend Class frmDistinta
         Me._Combo1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Combo1_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._Combo1_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Combo1.SetIndex(Me._Combo1_1, CType(1, Short))
+        Me.Combo1.Add(1, Me._Combo1_1)
         Me._Combo1_1.Location = New System.Drawing.Point(89, 34)
         Me._Combo1_1.Name = "_Combo1_1"
         Me._Combo1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -383,7 +379,7 @@ Friend Class frmDistinta
         Me._Label2_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_0, CType(0, Short))
+        Me.Label2.Add(0, Me._Label2_0)
         Me._Label2_0.Location = New System.Drawing.Point(8, 16)
         Me._Label2_0.Name = "_Label2_0"
         Me._Label2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -396,7 +392,7 @@ Friend Class frmDistinta
         Me._Label2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_1, CType(1, Short))
+        Me.Label2.Add(1, Me._Label2_1)
         Me._Label2_1.Location = New System.Drawing.Point(8, 35)
         Me._Label2_1.Name = "_Label2_1"
         Me._Label2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -421,7 +417,7 @@ Friend Class frmDistinta
         Me._Label2_2.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_2, CType(2, Short))
+        Me.Label2.Add(2, Me._Label2_2)
         Me._Label2_2.Location = New System.Drawing.Point(8, 56)
         Me._Label2_2.Name = "_Label2_2"
         Me._Label2_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -749,8 +745,10 @@ Friend Class frmDistinta
         Me.Frame3.ResumeLayout(False)
         Me.Frame2.ResumeLayout(False)
         Me.Frame1.ResumeLayout(False)
-        CType(Me.Combo1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In Combo1.Values
+            AddHandler control.TextChanged, AddressOf Combo1_TextChanged
+        Next
+
         Me.pictVirtual.ResumeLayout(False)
         Me.Frame4.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -876,9 +874,9 @@ Friend Class frmDistinta
         End If
         GenMem = Ind.GenMem
         Testo = Str(GenMem.PosDis) & " " & RTrim(GenMem.Denom)
-        Testo = Testo & "|" & "x=" & VB6.Format(GenMem.posizione.Origine.X, "#####.0")
-        Testo = Testo & "|" & "y=" & VB6.Format(GenMem.posizione.Origine.y, "#####.0")
-        Testo = Testo & "|" & "z=" & VB6.Format(GenMem.posizione.Origine.Z, "#####.0")
+        Testo = Testo & "|" & "x=" & Microsoft.VisualBasic.Strings.Format(GenMem.posizione.Origine.X, "#####.0")
+        Testo = Testo & "|" & "y=" & Microsoft.VisualBasic.Strings.Format(GenMem.posizione.Origine.y, "#####.0")
+        Testo = Testo & "|" & "z=" & Microsoft.VisualBasic.Strings.Format(GenMem.posizione.Origine.Z, "#####.0")
         Funzioni.DisRut.DisplayHelp(PictHelp, pictAssieme, Testo, x, y, False)
     End Sub
     Private Sub chkListaCompleta_CheckStateChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles chkListaCompleta.CheckStateChanged
@@ -953,8 +951,8 @@ Friend Class frmDistinta
             MsgBox(e.Message + vbCrLf + e.StackTrace)
         End Try
     End Sub
-    Private Sub Combo1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Combo1.TextChanged
-        Dim Index As Short = Combo1.GetIndex(eventSender)
+    Private Sub Combo1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Combo1, eventSender)
         Dim i As Short
         If Not Combo1(Index).Enabled Then Exit Sub
         Apparecchio.ScaricaApparecchio()
