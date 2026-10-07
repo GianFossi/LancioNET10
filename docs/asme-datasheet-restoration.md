@@ -52,3 +52,18 @@ I vecchi resx restano presenti: la risorsa duplicata str7278 di HelpTopics e'
 segnalata dal build, senza scegliere automaticamente una nuova traduzione.
 
 [Avvio e limiti della verifica funzionale](full-application-restoration.md).
+
+# Inserimento dei componenti ASME
+
+Il comando `Inserisci...` richiede ora il tipo di membratura prima di creare
+l'elemento. La scelta usa le routine legacy esistenti e comprende cilindri,
+fondi formati, coni, conoidi, belt, flange/coperchi piani, piastre tubiere,
+tubi di scambio, dilatatori e setti partitori. La creazione continua a usare
+`Introduci`, `CreaOggetto` e le finestre dati originali, senza duplicare le
+formule di calcolo.
+
+I bocchelli non sono elementi indipendenti nel modello legacy: appartengono a
+una virola, un fondo o un altro elemento portante. Si creano aprendo `Dati`
+dell'elemento e impostando `Number of openings`; ASMEVIP genera quindi i nodi
+nozzle collegati all'elemento. Il materiale si seleziona dalla finestra dati
+del componente tramite il pulsante a fianco del campo materiale.

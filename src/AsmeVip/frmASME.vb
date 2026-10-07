@@ -462,7 +462,7 @@ Friend Class Apert
         Me.cmdInserisci.Name = "cmdInserisci"
         Me.cmdInserisci.Size = New System.Drawing.Size(72, 25)
         Me.cmdInserisci.TabIndex = 17
-        Me.cmdInserisci.Text = "Inserisci"
+        Me.cmdInserisci.Text = "Inserisci..."
         Me.cmdInserisci.Enabled = False
         '
         '_mnuAiuto_0
@@ -1276,6 +1276,10 @@ ErrH:
     Public Sub mnuInseElem_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuInseElem.Click
         Dim k As String
         Dim n As Short
+        Dim nomiTipo(20) As String
+        Dim numeroTipi As Short = -1
+        Dim sceltaTipo As Short
+        Dim tipoElemento As Short = -1
         jInvolucr = 1
         kNozzle = 1
         If SelNode Is Nothing Then
@@ -1305,7 +1309,11 @@ ErrH:
                     mnuInseElem.Enabled = False
                 End If
         End Select
-Fai:    InseElemento(kLato)
+Fai:    AcqNomi(nomiTipo, numeroTipi, sceltaTipo, tipoElemento)
+        If sceltaTipo = 0 Or tipoElemento < 0 Then Exit Sub
+        InseElemento(kLato)
+        Involucr(kLato, jInvolucr).Tipo = tipoElemento
+        CreaOggetto(jInvolucr)
         DatiInputC(1)
     End Sub
 
