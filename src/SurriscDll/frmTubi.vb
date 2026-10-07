@@ -44,8 +44,8 @@ Friend Class frmTubi
     End Sub
 
     'UPGRADE_WARNING: L'evento txtTemp.TextChanged può essere generato quando il form è inizializzato. Fare clic per ulteriori informazioni: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtTemp.TextChanged
-        Dim Index As Short = txtTemp.GetIndex(eventSender)
+    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(txtTemp, eventSender)
         Select Case Index
             Case 0 : DesignData.PTubi = Val(txtTemp(0).Text)
                 SigmaAmm()

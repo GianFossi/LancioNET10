@@ -43,9 +43,9 @@
 	Public WithEvents _Label3_0 As System.Windows.Forms.Label
 	Public WithEvents _Label1_8 As System.Windows.Forms.Label
 	Public WithEvents _Label3_9 As System.Windows.Forms.Label
-	Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Label3 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents txtTemp As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Label3 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public txtTemp As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -79,14 +79,8 @@
 		Me._Label3_0 = New System.Windows.Forms.Label
 		Me._Label1_8 = New System.Windows.Forms.Label
 		Me._Label3_9 = New System.Windows.Forms.Label
-		Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-		Me.Label3 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-		Me.txtTemp = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
 		Me.SuspendLayout()
 		Me.ToolTip1.Active = True
-		CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.Label3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.txtTemp, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.Text = "Verifica spessore tubi"
 		Me.ClientSize = New System.Drawing.Size(312, 213)
 		Me.Location = New System.Drawing.Point(4, 23)
@@ -573,33 +567,35 @@
 		Me.Controls.Add(_Label3_0)
 		Me.Controls.Add(_Label1_8)
 		Me.Controls.Add(_Label3_9)
-		Me.Label1.SetIndex(_Label1_6, CType(6, Short))
-		Me.Label1.SetIndex(_Label1_5, CType(5, Short))
-		Me.Label1.SetIndex(_Label1_4, CType(4, Short))
-		Me.Label1.SetIndex(_Label1_3, CType(3, Short))
-		Me.Label1.SetIndex(_Label1_2, CType(2, Short))
-		Me.Label1.SetIndex(_Label1_1, CType(1, Short))
-		Me.Label1.SetIndex(_Label1_0, CType(0, Short))
-		Me.Label1.SetIndex(_Label1_8, CType(8, Short))
-		Me.Label3.SetIndex(_Label3_6, CType(6, Short))
-		Me.Label3.SetIndex(_Label3_5, CType(5, Short))
-		Me.Label3.SetIndex(_Label3_4, CType(4, Short))
-		Me.Label3.SetIndex(_Label3_3, CType(3, Short))
-		Me.Label3.SetIndex(_Label3_2, CType(2, Short))
-		Me.Label3.SetIndex(_Label3_1, CType(1, Short))
-		Me.Label3.SetIndex(_Label3_0, CType(0, Short))
-		Me.Label3.SetIndex(_Label3_9, CType(9, Short))
-		Me.txtTemp.SetIndex(_txtTemp_6, CType(6, Short))
-		Me.txtTemp.SetIndex(_txtTemp_5, CType(5, Short))
-		Me.txtTemp.SetIndex(_txtTemp_4, CType(4, Short))
-		Me.txtTemp.SetIndex(_txtTemp_3, CType(3, Short))
-		Me.txtTemp.SetIndex(_txtTemp_2, CType(2, Short))
-		Me.txtTemp.SetIndex(_txtTemp_1, CType(1, Short))
-		Me.txtTemp.SetIndex(_txtTemp_0, CType(0, Short))
-		Me.txtTemp.SetIndex(_txtTemp_8, CType(8, Short))
-		CType(Me.txtTemp, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Label3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.Label1.Add(6, _Label1_6)
+		Me.Label1.Add(5, _Label1_5)
+		Me.Label1.Add(4, _Label1_4)
+		Me.Label1.Add(3, _Label1_3)
+		Me.Label1.Add(2, _Label1_2)
+		Me.Label1.Add(1, _Label1_1)
+		Me.Label1.Add(0, _Label1_0)
+		Me.Label1.Add(8, _Label1_8)
+		Me.Label3.Add(6, _Label3_6)
+		Me.Label3.Add(5, _Label3_5)
+		Me.Label3.Add(4, _Label3_4)
+		Me.Label3.Add(3, _Label3_3)
+		Me.Label3.Add(2, _Label3_2)
+		Me.Label3.Add(1, _Label3_1)
+		Me.Label3.Add(0, _Label3_0)
+		Me.Label3.Add(9, _Label3_9)
+		Me.txtTemp.Add(6, _txtTemp_6)
+		Me.txtTemp.Add(5, _txtTemp_5)
+		Me.txtTemp.Add(4, _txtTemp_4)
+		Me.txtTemp.Add(3, _txtTemp_3)
+		Me.txtTemp.Add(2, _txtTemp_2)
+		Me.txtTemp.Add(1, _txtTemp_1)
+		Me.txtTemp.Add(0, _txtTemp_0)
+		Me.txtTemp.Add(8, _txtTemp_8)
+        For Each control In txtTemp.Values
+            AddHandler control.TextChanged, AddressOf txtTemp_TextChanged
+        Next
+
+
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 	End Sub

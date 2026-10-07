@@ -11,6 +11,9 @@
     <AssemblyName>LancioHTRI</AssemblyName>
     <RootNamespace>LancioHTRI</RootNamespace>
     <OutputType>WinExe</OutputType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
     <StartupObject>Sub Main</StartupObject>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
     <UseWindowsForms>true</UseWindowsForms>
@@ -51,6 +54,6 @@
     <ProjectReference Include="../LibMat/LibMat.vbproj" />
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../Ventil/Ventil.vbproj" />
-    <Reference Include="System.Deployment" />
   </ItemGroup>
+  <ItemGroup><Compile Include="LegacyStartup.vb" /><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
 </Project>

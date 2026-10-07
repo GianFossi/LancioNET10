@@ -112,7 +112,7 @@ ErrOpFin:
         Dim j As Short
         Dim Help As String
         If Num(y) = 28 Then
-            With Monitor.Motore.InputForms(1 - 1)
+            With CObj(Monitor.Motore.InputForms(1 - 1))
                 Risp1(2) = Str(Val(.prisposte(y)))
                 Risp1(1) = Space(0)
                 Dom1(2) = Dom(y)
@@ -167,21 +167,21 @@ rifa1:
         Dim Testo As String
         Dim iFin As Short
         iFin = 1
-        If Left(Monitor.Motore.InputForms(1 - 1).ComboFisso(3 + icdum).Text, 2) = "YE" Then
+        If Left(CObj(Monitor.Motore.InputForms(1 - 1)).ComboFisso(3 + icdum).Text, 2) = "YE" Then
             iF3 = FreeFile()
             FileOpen(iF3, "TEGE" & RTrim(job.Contratto), OpenMode.Output)
             iFin = iFin + 1
             For j = 1 To 4
-                PrintLine(iF3, CStr(Monitor.Motore.InputForms(iFin - 1).prisposte(j)).PadRight(64))
+                PrintLine(iF3, CStr(CObj(Monitor.Motore.InputForms(iFin - 1)).prisposte(j)).PadRight(64))
             Next j
             FileClose(iF3)
         End If
-        If Left(Monitor.Motore.InputForms(1 - 1).ComboFisso(4 + icdum).Text, 2) = "YE" Then
+        If Left(CObj(Monitor.Motore.InputForms(1 - 1)).ComboFisso(4 + icdum).Text, 2) = "YE" Then
             iF3 = FreeFile()
             FileOpen(iF3, "TENB" & job.Contratto.Trim, OpenMode.Output)
             iFin = iFin + 1
             For j = 1 To 4
-                PrintLine(iF3, CStr(Monitor.Motore.InputForms(iFin - 1).prisposte(j)).PadRight(64))
+                PrintLine(iF3, CStr(CObj(Monitor.Motore.InputForms(iFin - 1)).prisposte(j)).PadRight(64))
             Next j
             FileClose(iF3)
         End If
@@ -203,7 +203,7 @@ Uscita:
         Dim iFin As Short
         iF3 = FreeFile
         FileOpen(iF3, Monitor.Motore.Inizio.DiscoTem & RTrim(job.Contratto), OpenMode.Output)
-        With Monitor.Motore.InputForms(1 - 1)
+        With CObj(Monitor.Motore.InputForms(1 - 1))
             For i = 1 To iC
                 Risp(i) = .prisposte(i)
             Next
@@ -274,8 +274,8 @@ Uscita:
 			For i = .InputForms.Count To 2 Step -1
                 .InputForms(i - 1).close()
                 .InputForms.Remove(i - 1)
-                .InputForms(i - 1 - 1).Command1(0).Visible = True
-                .InputForms(i - 1 - 1).Command1(1).Visible = True
+                CObj(.InputForms(i - 1 - 1)).Command1(0).Visible = True
+                CObj(.InputForms(i - 1 - 1)).Command1(1).Visible = True
             Next
 		End With
 		OkOpFin1()

@@ -2002,7 +2002,7 @@ Module vecchiFORTRAN
                 If (IC2 < 79) Then
                     ' DO 6112 J=1,NWD
                     '6112    COMLIN(IC+4+2*(J-1)+1:IC+4+2*J)=IBA(J)
-                    COMLIN = GlobalRoutines.Str3Cifre(NR) + IBA
+                    COMLIN = NR.ToString("000", System.Globalization.CultureInfo.InvariantCulture) + IBA
                     IC = IC2 + 1
                 Else
                     'WRITE(1,6114)COMLIN
@@ -2011,7 +2011,7 @@ Module vecchiFORTRAN
                     IC2 = IC + 5 + 2 * NWD - 1
                     '        DO 6113 J=1,NWD
                     '6113    COMLIN(IC+4+2*(J-1)+1:IC+4+2*J)=IBA(J)
-                    COMLIN = GlobalRoutines.Str4Cifre(NR) + IBA
+                    COMLIN = NR.ToString("0000", System.Globalization.CultureInfo.InvariantCulture) + IBA
                     IC = IC2 + 1
                 End If
             Loop
@@ -2035,7 +2035,7 @@ Module vecchiFORTRAN
 5:          NRC = 0
             For I = 2 To NRT
                 '  READ(K2, 1000, REC = I)(IBA(J), J = 1, NWD)
-                IBA = rmHelpStrings.GetString(ARCH5 + GlobalRoutines.Str4Cifre(I))
+                IBA = rmHelpStrings.GetString(ARCH5 + I.ToString("0000", System.Globalization.CultureInfo.InvariantCulture))
                 ICON = "YE"
                 '  DO 110 J=1,NWD                                             
                 '110  IF(IBUF(J).NE.IBA(J)) ICON='NO'      

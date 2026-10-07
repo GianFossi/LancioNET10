@@ -20,8 +20,8 @@ Module modPropos
     Private CH3(30, 3) As String
     Private CH4(30, 3) As String
     Private CH2(12) As String
-    Private block As Autodesk.AutoCAD.Interop.Common.AcadBlock
-    Private BlockRef As Autodesk.AutoCAD.Interop.Common.AcadBlockReference
+    Private block As AutoCAD.AcadBlock
+    Private BlockRef As AutoCAD.AcadBlockReference
 	Private InLinea As Boolean
 	Private inspoint(2) As Double
 	Private PAS(7) As String
@@ -2021,7 +2021,7 @@ ErrPRO: leggi = False
         PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), NumBank, NumB))
         Form = Skippa(iF1, iF2)
         For i = 1 To 4
-            PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), Monitor.Motore.InputForms(1 - 1).prisposte(i))) : Next
+            PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(i))) : Next
         '------------------------------- OUT SEZIONE 1 ------------------------------
         Form = LineInput(iF1) : PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), Cust))
         Form = LineInput(iF1) : PrintLine(iF2, Mid(Form, 1, 127))
@@ -2037,7 +2037,7 @@ ErrPRO: leggi = False
         '------------------------------- OUT SEZIONE 2 ------------------------------
         Risp(1) = ""
         For i = 1 To 11
-            If Monitor.Motore.InputForms(2 - 1).Check1(i - 1) = 1 Then Risp(i + 1) = "SI" Else Risp(i + 1) = "NO"
+            If CObj(Monitor.Motore.InputForms(2 - 1)).Check1(i - 1) = 1 Then Risp(i + 1) = "SI" Else Risp(i + 1) = "NO"
         Next
 395:    PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), UCase(Risp(2)), UCase(Risp(3)), UCase(Risp(4))))
         Form = LineInput(iF1) : PrintLine(iF2, GlobalRoutines.FormatS(Mid(Form, 1, 127), UCase(Risp(5)), UCase(Risp(6)), UCase(Risp(7))))
@@ -2047,14 +2047,14 @@ ErrPRO: leggi = False
         Next j
 397:    Form = Skippa(iF1, iF2)
         If Monitor.Motore.InputForms.Count > 2 Then
-            With Monitor.Motore.InputForms(3 - 1)
+            With CObj(Monitor.Motore.InputForms(3 - 1))
                 IgapVent = Val(.prisposte(1))
                 IgapLung = Val(.prisposte(2))
                 MaxSizeBank = Val(.prisposte(3))
                 LargBundle = Val(.prisposte(4))
                 IHBundle = Val(.prisposte(5))
             End With
-            If Monitor.Motore.InputForms(4 - 1).Check1(0) = 1 Then
+            If CObj(Monitor.Motore.InputForms(4 - 1)).Check1(0) = 1 Then
                 NoVisu = 1
             Else
                 System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor

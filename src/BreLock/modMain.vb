@@ -163,7 +163,8 @@ Module modMain
         End With
     End Sub
     Public Function apri(Optional ByRef icome As String = "") As Boolean
-        Dim bf As New BinaryFormatter
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Not objBre.Sciolto And Not DaASME Then nomefile = icome
         Try
             Dim fs As FileStream = New FileStream(nomefile, FileMode.OpenOrCreate)
@@ -175,7 +176,8 @@ Module modMain
         apri = True
     End Function
     Public Function scrivi() As Boolean
-        Dim bf As New BinaryFormatter
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If nomefile Is Nothing Then Exit Function
         If Len(nomefile) = 0 Then Exit Function
         scrivi = True
@@ -1784,20 +1786,20 @@ Module modMain
             Monitor.Motore.Problem.Doc = IO.Path.GetFileNameWithoutExtension(nomefile)
 1:          If Not Monitor.Motore.PrepRapp(FileStampa) Then Return False
         End If
-        Monitor.Motore.Testata(NumeraPagine:=NumeriPagine)
+        LegacyReportCompatibility.Testata(Monitor.Motore, NumeriPagine)
         Select Case objBre.iStampa
             Case 1 : STP(FromASMEVIP)
             Case 2 : STPASM()
             Case 3
                 Call STP(FromASMEVIP)
                 Monitor.Motore.Problem.FileStream.Write("\page ")
-                Monitor.Motore.Testata(NumeraPagine:=NumeriPagine)
+                LegacyReportCompatibility.Testata(Monitor.Motore, NumeriPagine)
                 Call STPASM()
         End Select
         If Conto = 1 Then Return True
         Monitor.Motore.Problem.FineRapp()
         IO.File.Delete(FileStampa)
-        Monitor.Motore.Problem.pagtot = Monitor.Motore.Problem.pag
+        LegacyReportCompatibility.SetTotalPages(Monitor.Motore, Monitor.Motore.Problem.pag)
 7:      Conto = 1
         GoTo 1
     End Function
@@ -1839,7 +1841,7 @@ Module modMain
                         Risposta(2 - .Ipres), Risposta(.Considera + 1), _
                         Risposta(2 + CInt(.SuperSafe))))
                 If (.TipoBL = TipiBL.BL_HL) Then GoTo 8880
-                Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+                LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 If DaAsme Then GoTo 9131
                 Formato = FormatStringa(6)  '1 - SHELL
                 Chapter += 1
@@ -1880,7 +1882,7 @@ Module modMain
                 p.Printa(String.Format(Formato, "", _
                         .AreqScrDesign, .AreqScrSeating, .AReqScrTest, .AreqScr, _
                         .AactScr, .WplasticBox))
-                Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+                LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 Formato = FormatStringa(51) '5 internal ring & split rring
                 Chapter += 1
                 p.Printa(String.Format(Formato, "", _
@@ -1908,7 +1910,7 @@ Module modMain
                       .S2bearSR, .Mater(CodMAT.MAT_PUSHRING).SY0, _
                       .SobearSR, .Mater(CodMAT.MAT_PUSHRING).SY0))
                 'perché SR?
-                Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+                LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 Formato = FormatStringa(49)
                 p.Printa(String.Format(Formato, "", _
                       .Mater(CodMAT.MAT_FL_CASSON).Mat, .Mater(CodMAT.MAT_FL_CASSON).S, .Mater(CodMAT.MAT_FL_CASSON).S0, .Mater(CodMAT.MAT_FL_CASSON).SY, _
@@ -1934,7 +1936,7 @@ Module modMain
                 'If (.Considera = 0) Then p.Printa(String.Format(Formato, "", _
                 '    .WplasticBox, .WplasticBox, .WplasticBox))
                 '!-----------6.- CHANNEL BARREL-------
-10670:          If (.TipoBL <> TipiBL.BL_HL) Then Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+10670:          If (.TipoBL <> TipiBL.BL_HL) Then LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 If Not DaAsme Then
                     Formato = FormatStringa(46)
                     Chapter += 1
@@ -1991,7 +1993,7 @@ Module modMain
                       .Filetto.DMaxAn, .Filetto.DMaxCas, _
                       .Filetto.Dmed, .Filetto.DMinCas, .Filetto.DNocAn))
                 'C--------------------------------
-                Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+                LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 Formato = FormatStringa(29)
                 p.Printa(String.Format(Formato, "", Chapter))
                 Formato = FormatStringa(30)
@@ -2024,7 +2026,7 @@ Module modMain
                 p.Printa(String.Format(Formato, "", _
                 .SChanLongMembAccident, .AmmissAccident, _
                 .SChanLongBendAccident, .ThrEndLongStressAccident, 1.5 * .AmmissAccident))
-                Monitor.Motore.Testata(NumeraPagine:=Not DaAsme)
+                LegacyReportCompatibility.Testata(Monitor.Motore, Not DaAsme)
                 Formato = FormatStringa(52)
                 p.Printa(String.Format(Formato, "", Chapter))
                 Formato = FormatStringa(53)
@@ -2073,7 +2075,7 @@ Module modMain
     End Sub
     Public Function FormatStringa(ByVal id As Integer) As String
         Dim Outstr As String
-        Dim Nome As String = "stop" + GlobalRoutines.Str3Cifre(id)
+        Dim Nome As String = "stop" + id.ToString("000", System.Globalization.CultureInfo.InvariantCulture)
         Outstr = rmHelpStrings.GetString(Nome)
         If Outstr Is Nothing Then Return (Nome)
         If Outstr.IndexOf("$"c) = 0 Then Return Outstr.Substring(1)
@@ -2081,7 +2083,7 @@ Module modMain
     End Function
     Public Function HelpStringa(ByVal id As Integer) As String
         Dim Outstr As String
-        Dim Nome As String = "str" + GlobalRoutines.Str5Cifre(id)
+        Dim Nome As String = "str" + id.ToString("00000", System.Globalization.CultureInfo.InvariantCulture)
         Outstr = rmHelpStrings.GetString(Nome)
         If Outstr Is Nothing Then Return (Nome)
         If Outstr.IndexOf("$"c) = 0 Then Return Outstr.Substring(1)

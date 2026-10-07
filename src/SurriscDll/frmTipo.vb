@@ -12,9 +12,9 @@ Friend Class frmTipo
 		If Config.Tipo = 0 Then Config.Tipo = 1
         TabControl1.SelectedIndex = Config.Tipo - 1
 	End Sub
-    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Text1.TextChanged
+    Private Sub Text1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = Text1.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(Text1, eventSender)
         Select Case Index
             Case 0
                 If Not _UpDown1_0.Enabled Then Exit Sub

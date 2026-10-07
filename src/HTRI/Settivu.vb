@@ -1041,15 +1041,15 @@ Redo:
 
     Public Sub DatiCassaOut()
         Dim i, n As Short
-        n = Monitor.Motore.InputForms(1 - 1).pNinput
+        n = CObj(Monitor.Motore.InputForms(1 - 1)).pNinput
         For i = 1 To n
-            Risp(i) = Monitor.Motore.InputForms(1 - 1).prisposte(i)
+            Risp(i) = CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(i)
         Next
         RegistraInq(n, 1)
         UPMPLT(iCassa)
-        n = Monitor.Motore.InputForms(2 - 1).pNinput
+        n = CObj(Monitor.Motore.InputForms(2 - 1)).pNinput
         For i = 1 To n
-            Risp(i) = Monitor.Motore.InputForms(2 - 1).prisposte(i)
+            Risp(i) = CObj(Monitor.Motore.InputForms(2 - 1)).prisposte(i)
         Next
         RegistraInq(n, 2)
         Call SettiVuoti(iCassa)
@@ -1062,7 +1062,7 @@ Redo:
         Dim yAll As Short
         If (Y >= 5 + iDisp And Y <= 5 + iDisp + nmat) Or Y = iMat Then
             If iCode = 3 Then iC = 1 Else iC = 2
-            Matt = Monitor.Motore.InputForms(1 - 1).prisposte(Y)
+            Matt = CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(Y)
             If Y = iMat Then
                 indice = MecData(0).iMATSE
             ElseIf nmat = 1 Then
@@ -1076,11 +1076,11 @@ Redo:
             End If
             Matt = MatTesLam(S, MecData(iCassa).T, iC, 0, k, Matt)
             If Len(Matt) > 0 Then
-                Monitor.Motore.InputForms(1 - 1).prisposte(Y) = Matt
+                CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(Y) = Matt
                 yAll = Y + nmat : If Y = iMat Then yAll = Y + 1
-                Monitor.Motore.InputForms(1 - 1).prisposte(yAll) = GlobalRoutines.myStr(S, 4, 3, False)
+                CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(yAll) = GlobalRoutines.myStr(S, 4, 3, False)
                 If iDisp = 1 Then
-                    Monitor.Motore.InputForms(1 - 1).prisposte(Y + 2 * nmat) = GlobalRoutines.myStr(Stress(20.0!, iC, k), 4, 3, False)
+                    CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(Y + 2 * nmat) = GlobalRoutines.myStr(Stress(20.0!, iC, k), 4, 3, False)
                 End If
             End If
             If Apert._Option1_1.Checked Then

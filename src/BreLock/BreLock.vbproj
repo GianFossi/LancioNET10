@@ -82,7 +82,8 @@
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
     <ProjectReference Include="../StubW9/StubW9.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="stdole" />
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
+  <ItemGroup><Compile Include="LegacyBreLockLicense.vb" /><Compile Include="LegacyReportCompatibility.vb" /></ItemGroup>
 </Project>

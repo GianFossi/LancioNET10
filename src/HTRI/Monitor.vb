@@ -48,13 +48,13 @@ Friend Class clsMonitor
             Nome1 = Monitor.Motore.Inizio.Workdir & "\" & job.Contratto & ".TE1"
             If IO.File.Exists(Nome1) Then
                 Try
-                    job.AggiungiCom(job.Contratto, True)
-                    job.RetrieveCom(1, True) ' = Monitor.Motore.Retrievejob(job.Contratto, Nome1)
+                    LegacyRoutBaseContract.InvokeRequired(job, "AggiungiCom", job.Contratto, True)
+                    LegacyRoutBaseContract.InvokeRequired(job, "RetrieveCom", CShort(1), True) ' = Monitor.Motore.Retrievejob(job.Contratto, Nome1)
                 Catch e As Exception
                     Stop
                     ' job.Salva()
                 End Try
-                job.Comm.SalvaCom("DATI", True) '              job.Salva(Monitor.Motore.Inizio.Gancio)
+                LegacyRoutBaseContract.InvokeRequired(job.Comm, "SalvaCom", "DATI", True) '              LegacyRoutBaseContract.InvokeRequired(job, "Salva", Monitor.Motore.Inizio.Gancio)
             End If
             ApriPRV(Monitor.Motore.Inizio.Workdir & "\" & job.Contratto & ".PRV", actPRV, iErr)
         ElseIf Monitor.Motore.Problem.Extension = ".MEC" Then
@@ -99,9 +99,9 @@ Friend Class clsMonitor
             Case 3
                 Select Case Index
                     Case 2 'Autom
-                        Risp = UCase(Motore.InputForms(1 - 1).ComboFisso(Index - 1))
-                        If Val(Motore.InputForms(1 - 1).prisposte(1)) = 1 Then
-                            Motore.InputForms(1 - 1).prisposte(2) = "SI"
+                        Risp = UCase(CObj(Motore.InputForms(1 - 1)).ComboFisso(Index - 1))
+                        If Val(CObj(Motore.InputForms(1 - 1)).prisposte(1)) = 1 Then
+                            CObj(Motore.InputForms(1 - 1)).prisposte(2) = "SI"
                             Exit Sub
                         End If
                         If Trim(Risp) = "SI" Then Ir = 1 Else Ir = 0
@@ -110,7 +110,7 @@ Friend Class clsMonitor
             Case 1
                 Select Case Index
                     Case 7
-                        Select Case Trim(Motore.InputForms(1 - 1).prisposte(7)) 'Trim(Rispv.Rispv(ic(7, 1)).St)
+                        Select Case Trim(CObj(Motore.InputForms(1 - 1)).prisposte(7)) 'Trim(Rispv.Rispv(ic(7, 1)).St)
                             Case "YES"
                                 Contin = True
                                 Prepara(4)
@@ -120,49 +120,49 @@ Friend Class clsMonitor
                                     '    Unload(Motore.InputForms(4))
                                     Motore.InputForms(4 - 1).close()
                                     Motore.InputForms.Remove(4 - 1)
-                                    Motore.InputForms(3 - 1).Command1(0).Visible = True
-                                    Motore.InputForms(3 - 1).Command1(1).Visible = True
+                                    CObj(Motore.InputForms(3 - 1)).Command1(0).Visible = True
+                                    CObj(Motore.InputForms(3 - 1)).Command1(1).Visible = True
                                 End If
                         End Select
                 End Select
             Case 5
                 Select Case Index
                     Case 1 'click diatubo
-                        Xtub(1) = Motore.InputForms(1 - 1).pComboListL(Index) + 1
+                        Xtub(1) = CObj(Motore.InputForms(1 - 1)).pComboListL(Index) + 1
                         AggiornaListaAlette(1)
-                        CType(Motore.InputForms(1 - 1).Combolibero(7 + UpmHtr - 1), ComboBox).SelectedIndex = 0
+                        CType(CObj(Motore.InputForms(1 - 1)).Combolibero(7 + UpmHtr - 1), ComboBox).SelectedIndex = 0
                     Case 2, 3
                         AggiornaSpessore(1)
                     Case 5 'Mat
                         If Not UpmHtr Then
-                            iMatS = Motore.InputForms(1 - 1).pComboList(5) + 2 ' iMat(Xalt)
+                            iMatS = CObj(Motore.InputForms(1 - 1)).pComboList(5) + 2 ' iMat(Xalt)
                             ifl = FreeFile()
                             FileOpen(ifl, CStr(Motore.Inizio.Archdir + "\ARCH23.DAT"), OpenMode.Random, , OpenShare.Shared, 34)
                             FileGet(ifl, Rig, iMatS)
                             FileClose(ifl)
-                            Motore.InputForms(1 - 1).prisposte(6) = Str(objDatBase.CVI(Right(Rig, 2)))
+                            CObj(Motore.InputForms(1 - 1)).prisposte(6) = Str(objDatBase.CVI(Right(Rig, 2)))
                         End If
                     Case 7 + UpmHtr 'alette
-                        Xalett(1) = Motore.InputForms(1 - 1).pComboListL(Index) + 1
+                        Xalett(1) = CObj(Motore.InputForms(1 - 1)).pComboListL(Index) + 1
                         AggiornaListaPassi(1)
-                        CType(Motore.InputForms(1 - 1).Combolibero(8 + UpmHtr - 1), ComboBox).SelectedIndex = 0
+                        CType(CObj(Motore.InputForms(1 - 1)).Combolibero(8 + UpmHtr - 1), ComboBox).SelectedIndex = 0
                     Case 8 + UpmHtr 'passo
                     Case 13 + UpmHtr 'turbol
-                        Xturb(1) = CType(Motore.InputForms(1 - 1).ComboFisso(13 + UpmHtr - 1), ComboBox).SelectedIndex
+                        Xturb(1) = CType(CObj(Motore.InputForms(1 - 1)).ComboFisso(13 + UpmHtr - 1), ComboBox).SelectedIndex
                     Case 14 + UpmHtr 'giunto
-                        xGiun(1) = CType(Motore.InputForms(1 - 1).ComboFisso(14 + UpmHtr - 1), ComboBox).SelectedIndex
+                        xGiun(1) = CType(CObj(Motore.InputForms(1 - 1)).ComboFisso(14 + UpmHtr - 1), ComboBox).SelectedIndex
                 End Select
             Case 7
                 NoteSiNo()
             Case 9 'Bocchhll
                 Select Case Index
                     Case 1, 2
-                        iMatS = CType(Motore.InputForms(1 - 1).ComboFisso(Index - 1), ComboBox).SelectedIndex
+                        iMatS = CType(CObj(Motore.InputForms(1 - 1)).ComboFisso(Index - 1), ComboBox).SelectedIndex
                         MinSpan(Index, iMatS, 1)
-                        Motore.InputForms(1 - 1).HelpFile(Index - 1).Visible = iMatS <> 1
+                        CObj(Motore.InputForms(1 - 1)).HelpFile(Index - 1).Visible = iMatS <> 1
                 End Select
             Case 14
-                iCassa = CType(Motore.InputForms(1 - 1).ComboFisso(Index - 1), ComboBox).SelectedIndex + 1
+                iCassa = CType(CObj(Motore.InputForms(1 - 1)).ComboFisso(Index - 1), ComboBox).SelectedIndex + 1
                 ifl = FreeFile()
                 FileOpen(ifl, FileMec, OpenMode.Random, , , Len(MecData(0)))
                 FileGet(ifl, MecData(iCassa), iCassa)
@@ -176,24 +176,24 @@ Friend Class clsMonitor
             Case 5
                 Select Case Index
                     Case 1 'tubo
-                        Xtub(2) = Motore.InputForms(2 - 1).pComboListL(Index) + 1
+                        Xtub(2) = CObj(Motore.InputForms(2 - 1)).pComboListL(Index) + 1
                         AggiornaListaAlette(2)
-                        Motore.InputForms(2 - 1).Combolibero(7 + UpmHtr - 1).ListIndex = 0
+                        CObj(Motore.InputForms(2 - 1)).Combolibero(7 + UpmHtr - 1).SelectedIndex = 0
                     Case 2, 3
                         AggiornaSpessore(2)
                     Case 5 'Mat
                         If Not UpmHtr Then
-                            iMatS = Motore.InputForms(2 - 1).pComboList(5) + 2 ' iMat(Xalt)
+                            iMatS = CObj(Motore.InputForms(2 - 1)).pComboList(5) + 2 ' iMat(Xalt)
                             ifl = FreeFile()
                             FileOpen(ifl, CStr(Motore.Inizio.Archdir + "\ARCH23.DAT"), OpenMode.Random, , OpenShare.Shared, 34)
                             FileGet(ifl, Rig, iMatS)
                             FileClose(ifl)
-                            Motore.InputForms(2 - 1).prisposte(6) = Str(objDatBase.CVI(Right(Rig, 2)))
+                            CObj(Motore.InputForms(2 - 1)).prisposte(6) = Str(objDatBase.CVI(Right(Rig, 2)))
                         End If
                     Case 7 + UpmHtr 'alette
-                        Xalett(2) = Motore.InputForms(2 - 1).pComboListL(Index) + 1
+                        Xalett(2) = CObj(Motore.InputForms(2 - 1)).pComboListL(Index) + 1
                         AggiornaListaPassi(2)
-                        Motore.InputForms(1 - 1).Combolibero(8 + UpmHtr - 1).ListIndex = 0
+                        CObj(Motore.InputForms(1 - 1)).Combolibero(8 + UpmHtr - 1).SelectedIndex = 0
                     Case 8 + UpmHtr 'passo
                 End Select
         End Select
@@ -209,7 +209,7 @@ Friend Class clsMonitor
             Case 9
                 Select Case Index
                     Case 1, 2
-                        iMatS = Motore.InputForms(1 - 1).ComboFisso(Index - 1).ListIndex
+                        iMatS = CObj(Motore.InputForms(1 - 1)).ComboFisso(Index - 1).SelectedIndex
                         MinSpan(Index, iMatS, 0)
                 End Select
             Case 10
@@ -255,7 +255,7 @@ Friend Class clsMonitor
             Case 1
                 For k = 1 To j
 2050:               For i = 1 To Dati.iC1(13, k)
-                        Rispv.Rispv(Dati.iC1(i, k)).St = Motore.InputForms(k - 1).prisposte(i)
+                        Rispv.Rispv(Dati.iC1(i, k)).St = CObj(Motore.InputForms(k - 1)).prisposte(i)
                     Next i
                     Select Case k
                         Case 1
@@ -306,14 +306,14 @@ Friend Class clsMonitor
                     SalvaNITE()
                 End If
             Case 2
-                For jj = 1 To Motore.InputForms(2 - 1).pNinput
+                For jj = 1 To CObj(Motore.InputForms(2 - 1)).pNinput
                     iVal = iVal + 1
-                    Valor(LungStt(iVal)) = Val(Motore.InputForms(2 - 1).prisposte(jj)) ' Val(Risp(jj))
+                    Valor(LungStt(iVal)) = Val(CObj(Motore.InputForms(2 - 1)).prisposte(jj)) ' Val(Risp(jj))
                 Next
-                For jj = 1 To Motore.InputForms(3 - 1).pNinput * 2
+                For jj = 1 To CObj(Motore.InputForms(3 - 1)).pNinput * 2
                     iVal = iVal + 1
                     If LungStt(iVal) > 0 Then
-                        Valor(LungStt(iVal)) = Val(Motore.InputForms(3 - 1).prisposte(jj)) ' Val(Risp(jj))
+                        Valor(LungStt(iVal)) = Val(CObj(Motore.InputForms(3 - 1)).prisposte(jj)) ' Val(Risp(jj))
                     End If
                 Next
                 For jj = 1 To 64
@@ -362,9 +362,9 @@ Friend Class clsMonitor
                 With ProblWLD
                     For jj = 1 To .NZONE - 1
                         If Ir = 0 Then
-                            .Tzone(jj) = Val(Motore.InputForms(2 - 1).prisposte(.NZONE + jj + 1))
+                            .Tzone(jj) = Val(CObj(Motore.InputForms(2 - 1)).prisposte(.NZONE + jj + 1))
                         Else
-                            .Tzone(jj) = Val(Motore.InputForms(2 - 1).prisposte(jj))
+                            .Tzone(jj) = Val(CObj(Motore.InputForms(2 - 1)).prisposte(jj))
                         End If
                     Next
                     .Tzone(.NZONE + 1) = RDUT.TOut
@@ -372,7 +372,7 @@ Friend Class clsMonitor
                 End With
                 For i = 1 To ProblWLD.NZONE
                     If Motore.InputForms.Count >= 3 Then
-                        If Motore.InputForms(3 - 1).pRisult(i) Then
+                        If CObj(Motore.InputForms(3 - 1)).pRisult(i) Then
                             Ib.Ialt(i) = 1
                             ProblWLD.TipZone(i) = "C"
                         Else
@@ -397,8 +397,8 @@ Friend Class clsMonitor
                 End If
             Case 4
                 For jj = 1 To 3
-                    For y = 1 To Motore.InputForms(jj - 1).pNinput
-                        Risp1(y) = Motore.InputForms(jj - 1).prisposte(y)
+                    For y = 1 To CObj(Motore.InputForms(jj - 1)).pNinput
+                        Risp1(y) = CObj(Motore.InputForms(jj - 1)).prisposte(y)
                     Next
                     Select Case jj
                         Case 1
@@ -438,7 +438,7 @@ Friend Class clsMonitor
                     End If
                 Next
                 Ntipi = Val(Risp(14)) 'tipi di tubo
-                If j >= 4 Then Risp(1) = LTrim(UCase(Motore.InputForms(4 - 1).prisposte(1)))
+                If j >= 4 Then Risp(1) = LTrim(UCase(CObj(Motore.InputForms(4 - 1)).prisposte(1)))
                 iF2 = FreeFile()
                 FileOpen(iF2, Monitor.Motore.Inizio.DiscoTem & RTrim(job.Contratto), OpenMode.Output)
                 For i = 1 To 27
@@ -457,7 +457,7 @@ Friend Class clsMonitor
                 nFin = Motore.InputForms.Count
                 FileOpen(iF3, Monitor.Motore.Inizio.DiscoTem & RTrim(job.Contratto), OpenMode.Output)
                 For jj = 1 To Npass '- 1
-                    PrintLine(iF3, Motore.InputForms(nFin - 1).prisposte(jj).padleft(12))
+                    PrintLine(iF3, CObj(Motore.InputForms(nFin - 1)).prisposte(jj).padleft(12))
                 Next jj
                 FileClose(iF3)
                 On Error Resume Next
@@ -526,8 +526,8 @@ Friend Class clsMonitor
                 OkGuar()
                 Ritorna()
             Case 14
-                For i = 1 To Monitor.Motore.InputForms(1 - 1).pNinput
-                    Risp(i) = Monitor.Motore.InputForms(1 - 1).prisposte(i)
+                For i = 1 To CObj(Monitor.Motore.InputForms(1 - 1)).pNinput
+                    Risp(i) = CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(i)
                 Next
                 Ritorna()
         End Select
@@ -545,7 +545,7 @@ Friend Class clsMonitor
                 n = Val(job.Comm.Ind(2).Data.Assieme)
                 If iQ > 1 And n = 0 Then
                     MostraAiuto(IDH_PROC_ERRNOALT)
-                    Monitor.Motore.InputForms(1 - 1).Option1(0).Value = True
+                    CObj(Monitor.Motore.InputForms(1 - 1)).Option1(0).Value = True
                     Exit Sub
                 End If
                 iQv = objDatBase.CVI(objDatBase.DatBase(4, 74, Nrdit \ 2, n, itp, 0)) + 1
@@ -607,19 +607,19 @@ Friend Class clsMonitor
             Case 3
                 Select Case Index
                     Case 1 'n° di zone
-                        Nzz = Val(Motore.InputForms(1 - 1).prisposte(Index))
+                        Nzz = Val(CObj(Motore.InputForms(1 - 1)).prisposte(Index))
                         If Nzz < 1 Then Exit Sub
                         If Nzz > 12 Then
                             MsgBox("Il numero di zone è compreso tra 1 e 12", MsgBoxStyle.Critical)
-                            Motore.InputForms(1 - 1).prisposte(Index) = Str(ProblWLD.NZONE)
+                            CObj(Motore.InputForms(1 - 1)).prisposte(Index) = Str(ProblWLD.NZONE)
                             Exit Sub
                         End If
                         If Nzz = 1 Then
-                            If UCase(Motore.InputForms(1 - 1).prisposte(2)) <> "SI" Then
-                                Motore.InputForms(1 - 1).ComboFisso(1).ListIndex = 0
-                                Motore.InputForms(1 - 1).ComboFisso(1).Enabled = False
+                            If UCase(CObj(Motore.InputForms(1 - 1)).prisposte(2)) <> "SI" Then
+                                CObj(Motore.InputForms(1 - 1)).ComboFisso(1).SelectedIndex = 0
+                                CObj(Motore.InputForms(1 - 1)).ComboFisso(1).Enabled = False
                             Else
-                                Motore.InputForms(1 - 1).ComboFisso(1).Enabled = True
+                                CObj(Motore.InputForms(1 - 1)).ComboFisso(1).Enabled = True
                             End If
                         End If
                         Apert._Frames_4.Visible = Nzz > 1
@@ -630,7 +630,7 @@ Friend Class clsMonitor
                 Select Case Index
                     Case 9 'numero setti
                         If Monitor.Motore.Problem.Extension = ".MEC" Then
-                            Dim Ns As Integer = Val(Motore.InputForms(1 - 1).prisposte(Index))
+                            Dim Ns As Integer = Val(CObj(Motore.InputForms(1 - 1)).prisposte(Index))
                             If Ns = 0 Or Ns = MecData(iCassa).NS Then Exit Sub
                             MecData(iCassa).NS = Ns
                             SETGET(iCassa, 0)
@@ -653,14 +653,14 @@ Friend Class clsMonitor
             Case 2
                 Select Case Index
                     Case 4, 5, 6, 7
-                        nVal = Val(Motore.InputForms(2 - 1).prisposte(Index))
+                        nVal = Val(CObj(Motore.InputForms(2 - 1)).prisposte(Index))
                         vVal = Valor(LungStt(Index))
                         Valor(LungStt(Index)) = nVal
                         If nVal = 0 And vVal <> 0 Or nVal <> 0 And vVal = 0 Then
                             Motore.InputForms(3 - 1).close()
                             Motore.InputForms.Remove(3 - 1)
                             SottoDatiFun(1)
-                            AppActivate(Motore.InputForms(2 - 1).Caption)
+                            AppActivate(Motore.InputForms(2 - 1).Text)
                         End If
                 End Select
             Case 3

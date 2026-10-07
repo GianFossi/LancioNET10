@@ -111,7 +111,7 @@ Module DataSh
         Monitor.Motore.QualeM(1, 3, Helpstringa(1251), Dom, "", 3) ' "Scelta unità di misura", Dom, "", 3)
         Monitor.Motore.InputForms(1 - 1).Top = 40
         Monitor.Motore.InputForms(1 - 1).Left = Apert._Frames_1.Width
-        Monitor.Motore.InputForms(1 - 1).Option1(2) = True
+        CObj(Monitor.Motore.InputForms(1 - 1)).Option1(2).Checked = True
         '       For j = 1 To NumIt
         '           n = Val(Risp$(j))
         '           If n > 0 Then
@@ -167,7 +167,7 @@ Module DataSh
         Monitor.Motore.Chiamante = Monitor
         Monitor.Motore.InputDatiM(2, 8, Testo, Dom1, Risp1, "", Archiv, dAiu)
         For i = 1 To 8
-            Monitor.Motore.InputForms(2 - 1).ComboFisso(i - 1).ListIndex = 3
+            CObj(Monitor.Motore.InputForms(2 - 1)).ComboFisso(i - 1).SelectedIndex = 3
         Next
     End Sub
 
@@ -483,7 +483,7 @@ Riordina:
         Dim u As String
         Dim Testo, NewF As String
         For i = 0 To 2
-            If Monitor.Motore.InputForms(1 - 1).Option1(i) Then
+            If CObj(Monitor.Motore.InputForms(1 - 1)).Option1(i) Then
                 x = i + 1
             End If
         Next
@@ -494,7 +494,7 @@ Riordina:
             Case 3 : IUNIUNSt = "SI"
         End Select
         For y = 1 To 8
-            x = Monitor.Motore.InputForms(2 - 1).ComboFisso(y - 1).ListIndex + 1
+            x = CObj(Monitor.Motore.InputForms(2 - 1)).ComboFisso(y - 1).SelectedIndex + 1
             If y < 5 Then
                 Liq(y) = x - 1
             Else

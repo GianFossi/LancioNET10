@@ -107,12 +107,10 @@
       <HintPath>../../legacy/DLL Extra/Interop.Word.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Microsoft.Office.Core">
       <HintPath>../../legacy/DLL Extra/Interop.Microsoft.Office.Core.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
-    <Reference Include="stdole" />
     <Reference Include="VBIDE">
       <HintPath>../../legacy/DLL Extra/Interop.VBIDE.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
@@ -122,4 +120,7 @@
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
+  <ItemGroup><Compile Include="LegacyTracciaExport.vb" /></ItemGroup>
 </Project>

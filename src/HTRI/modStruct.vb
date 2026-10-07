@@ -2479,7 +2479,7 @@ OKItem:
             Monitor.Motore.InputForms(2 - 1).close()
             Monitor.Motore.InputForms.Remove(2 - 1)
         End If
-        With Monitor.Motore.InputForms(1 - 1)
+        With CObj(Monitor.Motore.InputForms(1 - 1))
             Mecdata0.NsPad = Val(.prisposte(1))
             NumFil = Val(.prisposte(2))
             Mecdata0.DO_Renamed = Val(.prisposte(3))
@@ -2521,7 +2521,7 @@ OKItem:
     End Sub
 
     Public Sub LarghCassa2()
-        With Monitor.Motore.InputForms(2 - 1)
+        With CObj(Monitor.Motore.InputForms(2 - 1))
             Mecdata0.LarghIntTel = Val(.prisposte(1))
             Mecdata0.Largf = Val(.prisposte(2))
             Mecdata0.HX3 = Val(.prisposte(3))

@@ -371,7 +371,7 @@ Friend Class frmHTRI
         Dim FirmaAz, HelpFile As Str40
         Dim Fir As String
         Try
-            objDatBase = New RoutBase1.DatBase(Monitor.Motore)
+            objDatBase = New LegacyEstimateDatabase(Monitor.Motore)
             objVentil = New Ventil.clsVentil
             With objVentil
                 .DoveDatBase = objDatBase
@@ -923,7 +923,7 @@ Friend Class frmHTRI
         Dim i As Short
         Dim Key As String
         Dim pt As Point = CType(eventSender, TreeView).PointToClient(New Point(eventArgs.X, eventArgs.Y))
-        If eventArgs.Button = Windows.Forms.MouseButtons.Right Then
+        If eventArgs.Button = System.Windows.Forms.MouseButtons.Right Then
             DragNode = TreeView1.GetNodeAt(pt) 'TreeView1.SelectedItem
         Else
             indrag = False
@@ -979,7 +979,7 @@ No1:                    Ammazza()
     Private Sub TreeView1_MouseMove(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.MouseEventArgs) Handles TreeView1.MouseMove
         Dim Shift As Short = System.Windows.Forms.Control.ModifierKeys \ &H10000
         Dim pt As Point = CType(eventSender, TreeView).PointToClient(New Point(eventArgs.X, eventArgs.Y))
-        If eventArgs.Button = Windows.Forms.MouseButtons.Right Then
+        If eventArgs.Button = System.Windows.Forms.MouseButtons.Right Then
             If TreeView1.SelectedNode Is Nothing Then Exit Sub
             indrag = True
             TreeView1.SelectedNode = TreeView1.GetNodeAt(pt)

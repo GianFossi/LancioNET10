@@ -713,9 +713,9 @@ Rifac:
         Dim FileStam As String = Monitor.Motore.Inizio.DiscoTem & job.Contratto & "Stampa"
         If iCassa <= 1 Then
             Monitor.Motore.PrepRapp(FileStam)
-            Monitor.Motore.Problem.pagtot = nto
+            LegacyReportCompatibility.SetTotalPages(Monitor.Motore, nto)
         End If
-        Monitor.Motore.Testata(NumeraPagine:=True)
+        LegacyReportCompatibility.Testata(Monitor.Motore, True)
         With Monitor.Motore.Problem
             Dim Riga, Rig1 As String
             '   Riga = LineInput(ifl) : .printa( Riga) ' "* Program name: STUD    rev.1 (Date: Aug-18-1995) *"
@@ -798,7 +798,7 @@ Rifac:
                 Monitor.Motore.ProgrAmmazza()
                 Documento.Visible = True
                 Dim NewFile As String = IO.Path.GetFullPath(FileMec) + "/" + IO.Path.GetFileNameWithoutExtension(FileMec) + ".DOC"
-                Dim Ris As Windows.Forms.DialogResult
+                Dim Ris As System.Windows.Forms.DialogResult
                 Do
                     Ris = DialogResult.OK
                     Try
@@ -827,7 +827,7 @@ Rifac:
         nFin = nFin + 1
         Monitor.Motore.Chiamante = Monitor
         Monitor.Motore.InputDatiM(nFin, 3, "Ammissibili bulloni", Dom, Risp, "", Archiv, dAiu)
-        With Monitor.Motore.InputForms(2 - 1)
+        With CObj(Monitor.Motore.InputForms(2 - 1))
             .Text1(0).Enabled = C4 > 2
             .Text1(1).Enabled = C4 > 2
             .Text1(2).Enabled = C4 > 2
@@ -916,7 +916,7 @@ Rifac:
                 C4 = i
                 MecData(iCassa).Ricorda(1 - 1) = C4
                 AmmissBull()
-                With Monitor.Motore.InputForms(2 - 1)
+                With CObj(Monitor.Motore.InputForms(2 - 1))
                     .Text1(0).Enabled = C4 > 2
                     .Text1(1).Enabled = C4 > 2
                     .Text1(2).Enabled = C4 > 2
@@ -925,7 +925,7 @@ Rifac:
                 iDBull = i
                 MecData(iCassa).Ricorda(2 - 1) = iDBull
                 AreBull()
-                With Monitor.Motore.InputForms(4 - 1)
+                With CObj(Monitor.Motore.InputForms(4 - 1))
                     .prisposte(1) = BU
                     .prisposte(2) = GlobalRoutines.myStr(BoltArea, 6, 2, False)
                     .Text1(0).Enabled = iDBull > 7
@@ -945,7 +945,7 @@ Rifac:
     End Sub
 
     Public Sub OkBull()
-        With Monitor.Motore.InputForms(2 - 1)
+        With CObj(Monitor.Motore.InputForms(2 - 1))
             Bull = .prisposte(1)
             AmmBull = Val(.prisposte(2))
             AmmBull0 = Val(.prisposte(3))
@@ -953,7 +953,7 @@ Rifac:
             MecData(iCassa).BF(5 - 1) = AmmBull0
             MecData(iCassa).MATTAP = Bull
         End With
-        With Monitor.Motore.InputForms(4 - 1)
+        With CObj(Monitor.Motore.InputForms(4 - 1))
             BU = .prisposte(1)
             BoltArea = Val(.prisposte(2))
             MecData(iCassa).MATTP = BU
@@ -963,7 +963,7 @@ Rifac:
         End With
     End Sub
     Public Sub OkGuar()
-        With Monitor.Motore.InputForms(2 - 1)
+        With CObj(Monitor.Motore.InputForms(2 - 1))
             GUARN = .prisposte(1)
             mGask = Val(.prisposte(2))
             YGask = Val(.prisposte(3))
@@ -986,7 +986,7 @@ Rifac:
         nFin = nFin + 1
         Monitor.Motore.Chiamante = Monitor
         Monitor.Motore.InputDatiM(nFin, 3, "Geometria bulloni", Dom, Risp, "", Archiv, dAiu)
-        With Monitor.Motore.InputForms(4 - 1)
+        With CObj(Monitor.Motore.InputForms(4 - 1))
             .Text1(0).Enabled = iDBull > 7
             .Text1(1).Enabled = iDBull > 7
         End With
@@ -1000,7 +1000,7 @@ Rifac:
                 C5 = i
                 MecData(iCassa).Ricorda(3 - 1) = C5
                 GuarnCar()
-                With Monitor.Motore.InputForms(2 - 1)
+                With CObj(Monitor.Motore.InputForms(2 - 1))
                     .prisposte(1) = GUARN
                     .prisposte(2) = GlobalRoutines.myStr(mGask, 2, 2, False)
                     .prisposte(3) = GlobalRoutines.myStr(YGask, 3, 2, False)

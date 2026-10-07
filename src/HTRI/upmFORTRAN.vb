@@ -244,20 +244,20 @@ Module upmFORTRAN
                 .LUNGF = actAltern.LunghezzaFascio * 12 * INC ' DG(62) * 304.8
                 .Largf = actAltern.LarghezzaFascio * 12 * INC ' DG(63) * 304.8
                 If (ICASSA = 1) Then
-                    .MATUG = rmHelpStrings.GetString("ARCH14_" + GlobalRoutines.Str3Cifre(CShort(actItem.codMaterTestate))).Split(CChar("|"))(0)
+                    .MATUG = rmHelpStrings.GetString("ARCH14_" + CShort(actItem.codMaterTestate).ToString("000", System.Globalization.CultureInfo.InvariantCulture)).Split(CChar("|"))(0)
                     'OPEN(13,RECL=34,FORM='FORMATTED',ACCESS='DIRECT'
                     '    $     ,FILE=ARCHD(1:LEN_TRIM(ARCHD))//'\ARCH14.DAT'
                     '   $     ,STATUS='OLD',BLOCKSIZE=32,MODE='READ')
                     '             READ(13, REC = IBI(48), FMT = 990)(MATUG(I), I = 1, 9)
                     '            CLOSE(13)
-                    .MATTAP = rmHelpStrings.GetString("ARCH15_" + GlobalRoutines.Str3Cifre(CShort(actItem.codmaterTappi))).Split(CChar("|"))(0)
+                    .MATTAP = rmHelpStrings.GetString("ARCH15_" + CShort(actItem.codmaterTappi).ToString("000", System.Globalization.CultureInfo.InvariantCulture)).Split(CChar("|"))(0)
                     '   OPEN(13,RECL=18,FORM='FORMATTED',ACCESS='DIRECT'
                     '$     ,FILE=ARCHD(1:LEN_TRIM(ARCHD))//'\ARCH15.DAT'
                     '$     ,STATUS='OLD',BLOCKSIZE=32,MODE='READ')
                     '           READ(13, REC = IBI(49), FMT = 990)(MATTAP(I), I = 1, 8)
                     '    MATTAP(9)='  '
                     '           CLOSE(13)
-                    .MATTUB = rmHelpStrings.GetString("ARCH23_" + GlobalRoutines.Str3Cifre(CShort(actAltern.codMater(1)))).Split(CChar("|"))(0)
+                    .MATTUB = rmHelpStrings.GetString("ARCH23_" + CShort(actAltern.codMater(1)).ToString("000", System.Globalization.CultureInfo.InvariantCulture)).Split(CChar("|"))(0)
                     'OPEN(13,RECL=34,FORM='FORMATTED',ACCESS='DIRECT'
                     '$     ,FILE=ARCHD(1:LEN_TRIM(ARCHD))//'\ARCH23.DAT'
                     '$     ,STATUS='OLD',MODE='READ')

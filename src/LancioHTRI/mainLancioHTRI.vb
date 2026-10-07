@@ -13,12 +13,13 @@ Module mainLancioHTRI
         Dim DataScad As Date
         Public QuestoComputer As String
     End Structure
+    <System.STAThread()>
     Public Sub Main()
         Threading.Thread.CurrentThread.CurrentCulture = New _
         System.Globalization.CultureInfo(Threading.Thread.CurrentThread.CurrentCulture.Name, False)
         Monitor = New clsMonitor
         With Monitor.Motore.Inizio
-            EsitoStd = .Standard(System.Reflection.Assembly.GetAssembly(Monitor.GetType))
+            EsitoStd = LegacyStartup.Initialize(Monitor.Motore.Inizio)
             If EsitoStd = 3 Then
                 .InRete = False
             ElseIf EsitoStd = 1 Then
@@ -68,6 +69,7 @@ Module mainLancioHTRI
         objHTRI.Esegui()
     End Sub
     Public Function CheckLicenza() As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         Dim Lic As Licenza ', Lic0 As ValueType
         Dim Scad As Date
@@ -78,7 +80,7 @@ Module mainLancioHTRI
         'ifl = FreeFile()
         Dim Esiste As Boolean = IO.File.Exists(File)
         Dim fs As New FileStream(File, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Not Esiste Then
             Lic.Provvisorio = True
             Scad = DateAdd(Microsoft.VisualBasic.DateInterval.Month, 1, Now)

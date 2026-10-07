@@ -24,9 +24,9 @@
 	Public WithEvents _Label1_1 As System.Windows.Forms.Label
 	Public WithEvents _Label2_0 As System.Windows.Forms.Label
 	Public WithEvents _Label1_0 As System.Windows.Forms.Label
-	Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Label2 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-	Public WithEvents Text1 As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+	Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Label2 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+	Public Text1 As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -38,18 +38,12 @@
         Me._Label1_1 = New System.Windows.Forms.Label
         Me._Label2_0 = New System.Windows.Forms.Label
         Me._Label1_0 = New System.Windows.Forms.Label
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Label2 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Text1 = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me._UpDown1_0 = New System.Windows.Forms.NumericUpDown
         Me._UpDown1_1 = New System.Windows.Forms.NumericUpDown
         Me.TabControl1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
         Me.TabPage2 = New System.Windows.Forms.TabPage
         Me.TabPage3 = New System.Windows.Forms.TabPage
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._UpDown1_0, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._UpDown1_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -73,7 +67,7 @@
         Me._Label2_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_1, CType(1, Short))
+        Me.Label2.Add(1, Me._Label2_1)
         Me._Label2_1.Location = New System.Drawing.Point(208, 392)
         Me._Label2_1.Name = "_Label2_1"
         Me._Label2_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -86,7 +80,7 @@
         Me._Label1_1.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_1, CType(1, Short))
+        Me.Label1.Add(1, Me._Label1_1)
         Me._Label1_1.Location = New System.Drawing.Point(8, 392)
         Me._Label1_1.Name = "_Label1_1"
         Me._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -99,7 +93,7 @@
         Me._Label2_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label2_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label2_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.SetIndex(Me._Label2_0, CType(0, Short))
+        Me.Label2.Add(0, Me._Label2_0)
         Me._Label2_0.Location = New System.Drawing.Point(208, 368)
         Me._Label2_0.Name = "_Label2_0"
         Me._Label2_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -112,7 +106,7 @@
         Me._Label1_0.BackColor = System.Drawing.SystemColors.Control
         Me._Label1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label1_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.SetIndex(Me._Label1_0, CType(0, Short))
+        Me.Label1.Add(0, Me._Label1_0)
         Me._Label1_0.Location = New System.Drawing.Point(8, 368)
         Me._Label1_0.Name = "_Label1_0"
         Me._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -203,9 +197,11 @@
         Me.Name = "frmTipo"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "Configurazione"
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Text1, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+        For Each control In Text1.Values
+            AddHandler control.TextChanged, AddressOf Text1_TextChanged
+        Next
         CType(Me._UpDown1_0, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._UpDown1_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)

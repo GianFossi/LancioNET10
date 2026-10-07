@@ -138,7 +138,7 @@ Friend Class frmApert
             txtMat(4).Text = GlobalRoutines.myStr(.SY0, 4, 2, False)
             txtMat(5).Text = GlobalRoutines.myStr(.E, 6, 0, False)
             txtMat(6).Text = GlobalRoutines.myStr(.E0, 6, 0, False)
-            txtMat(7).Text = VB6.Format(.Alfa, "#.###E-00")
+            txtMat(7).Text = Microsoft.VisualBasic.Strings.Format(.Alfa, "#.###E-00")
             For i = 0 To 7
                 If .Autom(i) Then
                     txtMat(i).BackColor = System.Drawing.Color.Yellow
@@ -226,35 +226,7 @@ Friend Class frmApert
     Private Function CheckLicenza() As Boolean
         Dim DllDir As String = Monitor.Motore.Inizio.Basedir & "\Dll" 'Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)
         Dim licenseFile As String = DllDir + "\LicensedApp\BreLock.lic"
-        Dim sProvider As New EncryptedLicenseProvider
-        Dim sLicense As EncryptedLicense = sProvider.GetLicense(LICENSE_PARAMETERS, licenseFile)
-        If sLicense Is Nothing Then
-            ' if there is no valid license then display the standard license install form 
-            ' to allow the user to enter a license key
-            '
-            Dim licenseForm As New LicenseInstallForm
-            sLicense = licenseForm.ShowDialog("BreLock", "www.ssap.biz", licenseFile)
-        End If
-
-        ' if there is still no license check for evaluation mode
-        '
-        If sLicense Is Nothing Then
-
-            ' use the EvaluationMonitor class to check whether the evaluation has expired
-            '
-            '' Dim monitor As New EvaluationMonitor("BreLock")
-
-            ''If monitor.DaysInUse > 30 Or monitor.Invalid Then
-            ''MessageBox.Show("Your evaluation has expired")
-            ''Return False 'Application.Exit()
-            ''Else
-            ''MessageBox.Show(String.Format("You are on day {0} of your 30 day evaluation", Monitor.DaysInUse))
-            ''Return True
-            ''End If
-            Return False
-        Else
-            Return True
-        End If
+        Return LegacyBreLockLicense.ValidateLicense(LICENSE_PARAMETERS, licenseFile)
     End Function
     Private Sub cmdCalc_Click(ByVal Index As Short)
         Dim iTir As Integer
@@ -566,8 +538,8 @@ Friend Class frmApert
         Resetting = False
     End Sub
 
-    Private Sub cmdtir_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdtir.Click
-        Dim Index As Short = cmdtir.GetIndex(eventSender)
+    Private Sub cmdtir_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(cmdtir, eventSender)
         Dim area As Single
         Dim Index1 As Integer
         With objBre
@@ -1748,9 +1720,9 @@ Friend Class frmApert
                 objBre.offG2out = 0
         End Select
     End Sub
-    Private Sub txtDes_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtDes.TextChanged
+    Private Sub txtDes_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtDes.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtDes, eventSender)
         Dim i As Short
         If Antiripeti Or Aggiornando Then Exit Sub
         ModifiedData = True
@@ -1954,9 +1926,9 @@ Friend Class frmApert
         InizShell()
         AggText(txtShell(Index))
     End Sub
-    Private Sub txtSplit_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtSplit.TextChanged
+    Private Sub txtSplit_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtSplit.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtSplit, eventSender)
         With objBre
             Select Case Index
                 Case 0 : .ODSplitRing = GlobalRoutines.ValVir(txtSplit(Index).Text)
@@ -1970,9 +1942,9 @@ Friend Class frmApert
             End Select
         End With
     End Sub
-    Private Sub txtViti_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtViti.TextChanged
+    Private Sub txtViti_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtViti.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtViti, eventSender)
         With objBre
             Select Case Index
                 Case 0 : .DNStr1 = txtViti(Index).Text '.DNIntScr = Val(txtViti(Index))
@@ -1987,9 +1959,9 @@ Friend Class frmApert
             End Select
         End With
     End Sub
-    Private Sub txtVitiExt_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtVitiExt.TextChanged
+    Private Sub txtVitiExt_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtVitiExt.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtVitiExt, eventSender)
         ModifiedData = True
         With objBre
             Select Case Index
@@ -2005,9 +1977,9 @@ Friend Class frmApert
         End With
 
     End Sub
-    Private Sub txtVitiInt_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtVitiInt.TextChanged
+    Private Sub txtVitiInt_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtVitiInt.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtVitiInt, eventSender)
         ModifiedData = True
         With objBre
             Select Case Index

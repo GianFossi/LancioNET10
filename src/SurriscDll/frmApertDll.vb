@@ -62,8 +62,8 @@ Friend Class Apert
 		Config.VariabIndProg = cmbVarDip.SelectedIndex + 1
 		cmbInc_SelectedIndexChanged(cmbInc, New System.EventArgs())
 	End Sub
-	Private Sub cmdBWG_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdBWG.Click
-		Dim Index As Short = cmdBWG.GetIndex(eventSender)
+	Private Sub cmdBWG_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(cmdBWG, eventSender)
 		Dim objBWG As LibMat.clsBWG
 		objBWG = New LibMat.clsBWG
         objBWG.DoveMotore = Monitor.Motore
@@ -91,8 +91,8 @@ Friend Class Apert
 	Private Sub cmdDS_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdDS.Click
         ScriviDS()
     End Sub
-	Private Sub cmdMat_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdMat.Click
-		Dim Index As Short = cmdMat.GetIndex(eventSender)
+	Private Sub cmdMat_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(cmdMat, eventSender)
 		Select Case Index
 			Case 0
                 MatTubi.Scelta(4, Monitor.Motore.Inizio.Archdir, Monitor.Motore.Inizio.DiscoRam)
@@ -112,8 +112,8 @@ Friend Class Apert
         End If
     End Sub
 	
-	Public Sub cmdReg_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdReg.Click
-		Dim Index As Short = cmdReg.GetIndex(eventSender)
+	Public Sub cmdReg_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+		Dim Index As Short = IndexedControls.IndexOf(cmdReg, eventSender)
 		Dim savGeom As typGeom
 		Dim Angol() As Single
 		Dim i As Short
@@ -245,7 +245,7 @@ Cont:
             Genera(File)
         End If
         objTraccia.Esegui(1, File)
-        objTraccia.Scrivi(FileTrac)
+        LegacyTracciaExport.Scrivi(objTraccia, FileTrac)
         LeggiDT(FileTrac)
         'objTraccia.Class_Terminate()
         Monitor.Motore.Ammazza("TRAC")
@@ -395,7 +395,7 @@ Cont:
         cmbVarDip.Items.Add("Portata vapore")
         cmbVarDip.Items.Add("Temp usc. gas")
         cmbVarDip.Items.Add("Temp usc. vap")
-        For Each c In txtTemp
+        For Each c In txtTemp.Values
             c.BackColor = System.Drawing.Color.White
         Next c
         VisualizzaFase(0)
@@ -414,8 +414,8 @@ Cont:
         Prop = Nothing
         Surr = Nothing
     End Sub
-    Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuFile.Click
-        Dim Index As Short = mnuFile.GetIndex(eventSender)
+    Public Sub mnuFile_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(mnuFile, eventSender)
         Dim Nome, Vecchia As String
         Dim Res As Integer
         Try
@@ -447,10 +447,10 @@ Cont:
     Public Sub mnuPropaga_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuPropaga.Click
         Propaga()
     End Sub
-    Private Sub optAut_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optAut.CheckedChanged
+    Private Sub optAut_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
         If eventSender.Checked Then
-            Dim Index As Short = optAut.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optAut, eventSender)
             If Index = 1 Then
                 nomeGas.Visible = False
                 Config.Autom = False
@@ -461,26 +461,26 @@ Cont:
             End If
         End If
     End Sub
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             Geom.TipoPassoInt = Index
             CalcCieco()
         End If
     End Sub
-    Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option2.CheckedChanged
+    Private Sub Option2_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
         If eventSender.Checked Then
-            Dim Index As Short = Option2.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option2, eventSender)
             Geom.TipoPassoExt = Index
             CalcFasciame()
         End If
     End Sub
-    Private Sub optRug_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optRug.CheckedChanged
+    Private Sub optRug_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
         If eventSender.Checked Then
-            Dim Index As Short = optRug.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optRug, eventSender)
             Problem.Smooth = Index = 0
         End If
     End Sub
@@ -488,9 +488,9 @@ Cont:
         If Inizializzando Then Exit Sub
         Config.DescrAlt = txtDescr.Text
     End Sub
-    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles txtTemp.TextChanged
+    Private Sub txtTemp_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If Inizializzando Then Exit Sub
-        Dim Index As Short = txtTemp.GetIndex(eventSender)
+        Dim Index As Short = IndexedControls.IndexOf(txtTemp, eventSender)
         Dim u As Short
         Dim d, l As Single
         Select Case Index
@@ -706,12 +706,12 @@ ErrAgg: MsgBox("Il file di input non è valido", MsgBoxStyle.Critical)
 		Dim Log2 As Boolean
 		Select Case Fase
 			Case 0
-				For	Each f In Frames : f.Visible = False : Next f
+				For	Each f In Frames.Values : f.Visible = False : Next f
 				Frames(1).Visible = True
                 Frames(1).Top = 26
 				Command1.Enabled = False
 			Case 1 'Bilancio
-				For	Each f In Frames : f.Visible = False : Next f
+				For	Each f In Frames.Values : f.Visible = False : Next f
 				Frames(Fase).Visible = True
                 Frames(Fase).Top = 26
 			Case 2

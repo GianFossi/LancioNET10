@@ -3211,10 +3211,11 @@ ErrDT:
         '    DaTos.Varco 'DaTos(0).dt(49)
     End Sub
     Public Sub LeggiDT(ByRef FileTrac As String)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         If FileTrac.Length = 0 Then Exit Sub
         If Not IO.File.Exists(FileTrac) Then Exit Sub
         Dim fs As New FileStream(FileTrac, FileMode.Open)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Try
             Dim p As RoutBase1.clsProblem = CType(bf.Deserialize(fs), RoutBase1.clsProblem)
             DaTos = CType(bf.Deserialize(fs), traccia.clsTracciatura.typDaTos)

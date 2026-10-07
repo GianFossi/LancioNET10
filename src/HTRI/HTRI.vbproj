@@ -182,4 +182,10 @@
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
+  <ItemGroup><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="LegacyRoutBaseContract.vb" />
+    <Compile Include="../BreLock/LegacyBreLockLicense.vb" Link="Migration/LegacyBreLockLicense.vb" />
+    <Compile Include="../BreLock/LegacyReportCompatibility.vb" Link="Migration/LegacyReportCompatibility.vb" />
+  </ItemGroup>
 </Project>

@@ -405,11 +405,13 @@ Imports System.math
         '        Tir2 = New LibMat.clsTira
     End Sub
     Public Sub Salva(ByVal fs As FileStream)
-        Dim bf As New BinaryFormatter
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Me)
     End Sub
     Public Function Leggi(ByVal fs As FileStream) As Boolean
-        Dim bf As New BinaryFormatter
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Dim obj As clsBreLoc = CType(bf.Deserialize(fs), clsBreLoc)
         With obj
             Sciolto = .Sciolto

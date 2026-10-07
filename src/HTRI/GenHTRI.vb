@@ -209,8 +209,8 @@ Module GenHTRI
     Public GlobalRoutines As RoutBase1.clsTrigon
     Public objBWG As LibMat.clsBWG
     Public Flangia As Grafica.Flangia
-    Public ACADApp As Autodesk.AutoCAD.Interop.AcadApplication
-    Public ACADobj As Autodesk.AutoCAD.Interop.AcadDocument
+    Public ACADApp As AutoCAD.AcadApplication
+    Public ACADobj As AutoCAD.AcadDocument
     Friend DAODBEngine As New dao.DBEngine
     '    Friend AutoCADAcadApplication_definst As New AutoCAD.AcadApplication
     Public ActivItem As Short
@@ -247,7 +247,7 @@ Module GenHTRI
     Public Esp(14) As Short
     Public InputDaBanco As Boolean
     'Public objLstItm As typLstItm
-    Public objDatBase As RoutBase1.DatBase
+    Public objDatBase As LegacyEstimateDatabase
     Public objDatiFun As typDatiFun ', macr As Integer
     Public iMatS, Npass As Short
     Public RifCli As String
@@ -308,7 +308,7 @@ Module GenHTRI
     End Function
     Public Function FormatStringa(ByVal id As Integer) As String
         Dim Outstr As String
-        Dim Nome As String = "stop" + GlobalRoutines.Str5Cifre(id)
+        Dim Nome As String = "stop" + id.ToString("00000", System.Globalization.CultureInfo.InvariantCulture)
         Outstr = rmHelpStrings.GetString(Nome)
         If Outstr Is Nothing Then Return (Nome)
         If Outstr.IndexOf("$"c) = 0 Then Return Outstr.Substring(1)
@@ -316,7 +316,7 @@ Module GenHTRI
     End Function
     Public Function Helpstringa(ByVal id As Integer) As String
         Dim Outstr As String
-        Dim Nome As String = "str" + GlobalRoutines.Str5Cifre(id)
+        Dim Nome As String = "str" + id.ToString("00000", System.Globalization.CultureInfo.InvariantCulture)
         Outstr = rmHelpStrings.GetString(Nome)
         If Outstr Is Nothing Then Return (Nome)
         If Outstr.IndexOf("$"c) = 0 Then Return Outstr.Substring(1)
@@ -358,7 +358,7 @@ Module GenHTRI
                 Testo = "        LAVORO CORRENTE:  " & vbCrLf & vbCrLf
                 Testo = Testo & " Numero Preventivo: " & job.Contratto & "|"
                 Testo = Testo & " Cliente          : " & job.Comm.Clie & "|"
-                Testo = Testo & " Indirizzo        : " & job.Comm.Indirizzo & "|"
+                Testo = Testo & " Indirizzo        : " & LegacyRoutBaseContract.GetAddress(job.Comm) & "|"
                 Testo = Testo & " Luogo impianto   : " & job.Comm.Impianto & "|"
                 '   Testo = Testo + at1(111) + job.contratto + vbCrLf
                 '   Testo = Testo + at1(112) + Lav(0).Clie + vbCrLf
@@ -397,35 +397,7 @@ Lista:
     Friend Function CheckLicenza() As Boolean
         Dim DllDir As String = Monitor.Motore.Inizio.Basedir & "\Dll" 'Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)
         Dim licenseFile As String = DllDir + "\LicensedApp\HTRI.lic"
-        Dim sProvider As New EncryptedLicenseProvider
-        Dim sLicense As EncryptedLicense = sProvider.GetLicense(LICENSE_PARAMETERS, licenseFile)
-        If sLicense Is Nothing Then
-            ' if there is no valid license then display the standard license install form 
-            ' to allow the user to enter a license key
-            '
-            Dim licenseForm As New LicenseInstallForm
-            sLicense = licenseForm.ShowDialog("ISA", "www.ssap.biz", licenseFile)
-        End If
-
-        ' if there is still no license check for evaluation mode
-        '
-        If sLicense Is Nothing Then
-
-            ' use the EvaluationMonitor class to check whether the evaluation has expired
-            '
-            '' Dim monitor As New EvaluationMonitor("BreLock")
-
-            ''If monitor.DaysInUse > 30 Or monitor.Invalid Then
-            ''MessageBox.Show("Your evaluation has expired")
-            ''Return False 'Application.Exit()
-            ''Else
-            ''MessageBox.Show(String.Format("You are on day {0} of your 30 day evaluation", Monitor.DaysInUse))
-            ''Return True
-            ''End If
-            Return False
-        Else
-            Return True
-        End If
+        Return LegacyBreLockLicense.ValidateLicense(LICENSE_PARAMETERS, licenseFile, "HTRI", "LANCIO_HTRI_LICENSE_DLL")
     End Function
     Sub Apri1(ByRef File As String, ByRef iErr As Integer)
         objDatBase.Arch = File
@@ -449,7 +421,7 @@ Lista:
             If job.Contratto.Length > 0 Then
                 File = Monitor.Motore.Inizio.Workdir & "\" & job.Contratto & ".TE1"
                 Try
-                    job.Salva(File)
+                    LegacyRoutBaseContract.InvokeRequired(job, "Salva", File)
                 Catch ex As Exception
                     Testo = Monitor.Motore.Inizio.ConvertiCr(GlobalRoutines.FormatS _
                     (Helpstringa(800), File, ex.Message))
@@ -489,7 +461,7 @@ Lista:
 
     Sub Prendi()
         job.Comm.Clie = actPRV.NomeClien
-        job.Comm.Indirizzo = actPRV.IndirClie
+        LegacyRoutBaseContract.SetAddress(job.Comm, actPRV.IndirClie)
         job.Comm.Impianto = actPRV.LuogoImpi
     End Sub
     Public Sub FineCarica()
@@ -499,10 +471,10 @@ Lista:
         job.Comm.Ind(2).Data.Assieme = "0"
         Try
             job.Salva()
-            job.Comm.SalvaCom(, True)
+            LegacyRoutBaseContract.InvokeRequired(job.Comm, "SalvaCom", "", True)
         Catch ex As Exception
             Monitor.Motore.Inizio.Gancio = RTrim(Monitor.Motore.Inizio.Workdir) & "\DATI.TE1"
-            job.Salva(Monitor.Motore.Inizio.Gancio)
+            LegacyRoutBaseContract.InvokeRequired(job, "Salva", Monitor.Motore.Inizio.Gancio)
         Finally
             objDatBase.Arch = Monitor.Motore.Inizio.Workdir + "\" + job.Contratto + ".PRV"
         End Try
@@ -759,7 +731,7 @@ Lista:
         FillTree(1)
         job.Comm.Ind(1).Data.Assieme = Chr(36)
         job.Comm.Ind(2).Data.Assieme = Chr(48)
-        job.Salva(Monitor.Motore.Inizio.Workdir & "\" & job.Contratto & ".TE1")
+        LegacyRoutBaseContract.InvokeRequired(job, "Salva", Monitor.Motore.Inizio.Workdir & "\" & job.Contratto & ".TE1")
     End Sub
 
     Sub EliPre()
@@ -1643,20 +1615,22 @@ RifRif:
         '   Catena "LIBR"
     End Sub
     Public Sub SalvaPRVas(ByVal NomeFile As String, ByRef objPRV As clsPRV)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim fs As FileStream = New FileStream(NomeFile, FileMode.OpenOrCreate, FileAccess.ReadWrite)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, objPRV)
         objPRV.prNomeFile = NomeFile
         fs.Close()
     End Sub
     Public Sub ApriPRV(ByVal NomeFile As String, ByRef objPRV As clsPRV, ByRef iErr As Integer)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim itp As String = ""
         Dim VecchioInput As Boolean = False
         Dim fs As FileStream
         objPRV = New clsPRV(job.Contratto)
         fs = New FileStream(NomeFile, FileMode.Open, FileAccess.Read)
         Try
-            Dim bf As New BinaryFormatter
+            Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
             objPRV = CType(bf.Deserialize(fs), clsPRV)
         Catch ex As Exception
             VecchioInput = True
@@ -2534,8 +2508,8 @@ Rif1:
             .InputForms(1 - 1).Top = 40
             .InputForms(1 - 1).Left = Apert._Frames_1.Width
             If Val(Risp(1)) = 1 Then
-                .InputForms(1 - 1).ComboFisso(1).ListIndex = 0
-                .InputForms(1 - 1).ComboFisso(1).Enabled = False
+                CObj(.InputForms(1 - 1)).ComboFisso(1).SelectedIndex = 0
+                CObj(.InputForms(1 - 1)).ComboFisso(1).Enabled = False
             End If
         End With
         'If Val(Lav(0).Assieme(4 + Nrdit \ 2 - 1)) > 0 Then Monitor.Motore.InputForms(1).Enabled = False
@@ -2922,7 +2896,7 @@ ErrUniv:
             If j = 1 Then
                 .InputForms(1 - 1).Top = 40
                 .InputForms(1 - 1).Left = Apert._Frames_1.Width
-                If InputDaBanco Then .InputForms(1 - 1).ComboFisso(0).Enabled = False
+                If InputDaBanco Then CObj(.InputForms(1 - 1)).ComboFisso(0).Enabled = False
             End If
         End With
     End Sub
@@ -2945,7 +2919,7 @@ ErrUniv:
         If ModeFun = 1 Then n = -nFin Else n = nFin
         If nFin = 3 Then
             nCol = 2
-            iVal = Monitor.Motore.InputForms(2 - 1).pNinput
+            iVal = CObj(Monitor.Motore.InputForms(2 - 1)).pNinput
             For j = iC To 1 Step -1
                 Dom(j + 1) = Dom(j)
                 Risp(j + 1) = Risp(j)
@@ -3061,7 +3035,7 @@ Cont:   Next i
             nFin = nFin + 1
             InputD(Tit, iC, nFin)
         End If
-        Monitor.Motore.InputForms(1 - 1).Rinfresca()
+        CObj(Monitor.Motore.InputForms(1 - 1)).Rinfresca()
         If ModeFun = 1 And Not Monitor.Motore.InputForms Is Nothing Then Monitor.Motore_OkInput(Monitor.Motore.InputForms.Count)
     End Sub
     Public Sub TempZone()
@@ -3140,7 +3114,7 @@ Cont:   Next i
             Aiuto = RadiceHelp & "::/ZoneAutomatiche.htm"
             Monitor.Motore.Chiamante = Monitor
             Monitor.Motore.InputDatiM(2, iC, "Dati di zona", Dom, Risp, Aiuto, Archiv, Help)
-            If ProblWLD.NZONE = 1 Then Monitor.Motore.InputForms(2 - 1)._Text1_0.Enabled = False
+            If ProblWLD.NZONE = 1 Then CObj(Monitor.Motore.InputForms(2 - 1))._Text1_0.Enabled = False
         End If
         Exit Sub
     End Sub
@@ -3294,13 +3268,13 @@ Errore:
                 Monitor.Motore.InputForms(1 - 1).Top = 40
                 Monitor.Motore.InputForms(1 - 1).Left = Apert._Frames_1.Width
             End If
-            If Not UpmHtr Then Monitor.Motore.InputForms(i - 1).Text1(6 - 1).Enabled = False
-            Testo = Monitor.Motore.InputForms(i - 1).Combolibero(7 + UpmHtr - 1).Text
+            If Not UpmHtr Then CObj(Monitor.Motore.InputForms(i - 1)).Text1(6 - 1).Enabled = False
+            Testo = CObj(Monitor.Motore.InputForms(i - 1)).Combolibero(7 + UpmHtr - 1).Text
             AggiornaListaAlette(i)
-            Monitor.Motore.InputForms(i - 1).Combolibero(7 + UpmHtr - 1).Text = Testo
-            Testo = Monitor.Motore.InputForms(i - 1).Combolibero(8 + UpmHtr - 1).Text
+            CObj(Monitor.Motore.InputForms(i - 1)).Combolibero(7 + UpmHtr - 1).Text = Testo
+            Testo = CObj(Monitor.Motore.InputForms(i - 1)).Combolibero(8 + UpmHtr - 1).Text
             AggiornaListaPassi(i)
-            Monitor.Motore.InputForms(i - 1).Combolibero(8 + UpmHtr - 1).Text = Testo
+            CObj(Monitor.Motore.InputForms(i - 1)).Combolibero(8 + UpmHtr - 1).Text = Testo
             AggiornaSpessore(i)
         Next i
         FaseDati = 5
@@ -3326,7 +3300,7 @@ Errore:
             Monitor.Motore.InputDatiM(iMostra * (Ntipi + 1), ProblWLD.NZONE, Testo, Dom, Risp, RadiceHelp & "::/ZoneLung.htm", Archiv, Aiuto, , 2)
             If Ir = 0 Then
                 For i = ProblWLD.NZONE + 1 To 2 * ProblWLD.NZONE
-                    Monitor.Motore.InputForms(Ntipi + 1 - 1).Text1(i - 1).Visible = False
+                    CObj(Monitor.Motore.InputForms(Ntipi + 1 - 1)).Text1(i - 1).Visible = False
                 Next
             End If
             nFin = nFin + 1
@@ -3438,17 +3412,17 @@ Errore:
         FileOpen(iF4, "TEX1" & RTrim(job.Contratto), OpenMode.Output)
         With Monitor.Motore
             For i = 1 To Ntipi
-                TubeTk(i).Diam = Val(.InputForms(i - 1).prisposte(1))
-                TubeTk(i).Dial = Val(.InputForms(i - 1).prisposte(7 + UpmHtr))
-                TubeTk(i).PAS = Val(.InputForms(i - 1).prisposte(8 + UpmHtr))
-                TubeTk(i).TIPAL = .InputForms(i - 1).prisposte(9 + UpmHtr)
-                TubeTk(i).FinInch = Val(.InputForms(i - 1).prisposte(10 + UpmHtr))
-                SpAl = Val(.InputForms(i - 1).prisposte(11 + UpmHtr))
+                TubeTk(i).Diam = Val(CObj(.InputForms(i - 1)).prisposte(1))
+                TubeTk(i).Dial = Val(CObj(.InputForms(i - 1)).prisposte(7 + UpmHtr))
+                TubeTk(i).PAS = Val(CObj(.InputForms(i - 1)).prisposte(8 + UpmHtr))
+                TubeTk(i).TIPAL = CObj(.InputForms(i - 1)).prisposte(9 + UpmHtr)
+                TubeTk(i).FinInch = Val(CObj(.InputForms(i - 1)).prisposte(10 + UpmHtr))
+                SpAl = Val(CObj(.InputForms(i - 1)).prisposte(11 + UpmHtr))
                 If SpAl = 0.0! Then SpAl = 0.4 / 25.4
                 TubeTk(i).SpAl = SpAl
-                iMatS = .InputForms(i - 1).pComboList(5) + 2
+                iMatS = CObj(.InputForms(i - 1)).pComboList(5) + 2
                 For i1 = 1 To Ndom
-                    Risp1(Esp(i1)) = .InputForms(i - 1).prisposte(i1) : Next
+                    Risp1(Esp(i1)) = CObj(.InputForms(i - 1)).prisposte(i1) : Next
                 For i1 = 4 To 12 : Risp1(i1) = Risp1(i1 + 1) : Next i1
                 For i1 = 1 To 12
                     If i1 <> 5 Then
@@ -3471,11 +3445,11 @@ Errore:
             ' Apri(Trim(job.Contratto))
             i1 = Ntipi + 1
             For i = 1 To ProblWLD.NZONE - 1
-                PrintLine(iF4, CStr(.InputForms(i1 - 1).prisposte(i + 1)).PadRight(12))
+                PrintLine(iF4, CStr(CObj(.InputForms(i1 - 1)).prisposte(i + 1)).PadRight(12))
             Next
             For i = 1 To ProblWLD.NZONE - 1
-                PrintLine(iF4, Int(.InputForms(i1 - 1).prisposte(ProblWLD.NZONE + i + 1)).ToString.PadLeft(3))
-                ProblWLD.PassZone(i) = Int(.InputForms(i1 - 1).prisposte(ProblWLD.NZONE + i + 1))
+                PrintLine(iF4, Int(CObj(.InputForms(i1 - 1)).prisposte(ProblWLD.NZONE + i + 1)).ToString.PadLeft(3))
+                ProblWLD.PassZone(i) = Int(CObj(.InputForms(i1 - 1)).prisposte(ProblWLD.NZONE + i + 1))
             Next
             FileClose(iF4)
         End With
@@ -3485,9 +3459,9 @@ Errore:
         Dim ALt(5) As String
         Dim Nalt, i As Short
         Dialett(ALt, Nalt, nFin)
-        Monitor.Motore.InputForms(nFin - 1).Combolibero(7 + UpmHtr - 1).Clear()
+        CObj(Monitor.Motore.InputForms(nFin - 1)).Combolibero(7 + UpmHtr - 1).Clear()
         For i = 1 To Nalt
-            Monitor.Motore.InputForms(nFin - 1).Combolibero(7 + UpmHtr - 1).AddItem(ALt(i))
+            CObj(Monitor.Motore.InputForms(nFin - 1)).Combolibero(7 + UpmHtr - 1).AddItem(ALt(i))
         Next
     End Sub
     Public Sub AggiornaListaPassi(ByRef nFin As Short)
@@ -3495,25 +3469,25 @@ Errore:
         Dim Nalt, i As Short
         SetXAlette(nFin)
         Alette(ALt, Nalt, nFin)
-        Monitor.Motore.InputForms(nFin - 1).Combolibero(8 + UpmHtr - 1).Clear()
+        CObj(Monitor.Motore.InputForms(nFin - 1)).Combolibero(8 + UpmHtr - 1).Clear()
         For i = 1 To Nalt
-            Monitor.Motore.InputForms(nFin - 1).Combolibero(8 + UpmHtr - 1).AddItem(ALt(i))
+            CObj(Monitor.Motore.InputForms(nFin - 1)).Combolibero(8 + UpmHtr - 1).AddItem(ALt(i))
         Next
     End Sub
     Public Sub SetXAlette(ByRef i As Short)
         Dim i1 As Short
         Dim Testo As String
         Xalett(i) = 0
-        Testo = Monitor.Motore.InputForms(i - 1).prisposte(7 + UpmHtr)
+        Testo = CObj(Monitor.Motore.InputForms(i - 1)).prisposte(7 + UpmHtr)
         For i1 = 1 To Dati.Ndial
             If Len(Trim(Testo)) > 0 And System.Math.Abs(Val(Testo) - Dati.Dial(i1)) < 0.1 Then Xalett(i) = i1
         Next i1
     End Sub
     Public Sub AggiornaSpessore(ByRef i As Short)
-        TubeTk(i).bwg = Monitor.Motore.InputForms(i - 1).prisposte(2) ' Risp(2)
-        TubeTk(i).TOL = Monitor.Motore.InputForms(i - 1).prisposte(3) 'Risp(3)
+        TubeTk(i).bwg = CObj(Monitor.Motore.InputForms(i - 1)).prisposte(2) ' Risp(2)
+        TubeTk(i).TOL = CObj(Monitor.Motore.InputForms(i - 1)).prisposte(3) 'Risp(3)
         TubeTk(i).SP = objBWG.SpFinale(TubeTk(i).bwg, TubeTk(i).TOL)
-        Monitor.Motore.InputForms(i - 1).prisposte(4) = GlobalRoutines.myStr(TubeTk(i).SP, 1, 5, False) + " in"
+        CObj(Monitor.Motore.InputForms(i - 1)).prisposte(4) = GlobalRoutines.myStr(TubeTk(i).SP, 1, 5, False) + " in"
     End Sub
     Sub Ventil1()
         Dim Testo As String
@@ -3793,7 +3767,7 @@ Errore:
             .InputForms.Remove(2 - 1)
             TempZone()
             ZONCOND()
-            AppActivate(.InputForms(1 - 1).Caption)
+            AppActivate(.InputForms(1 - 1).Text)
         End With
     End Sub
 
@@ -3809,8 +3783,8 @@ Errore:
                 Next
             Else
                 For jj = 1 To ProblWLD.NZONE - 1
-                    For k = 1 To Monitor.Motore.InputForms(2 - 1).nCol
-                        PrintLine(iF1, Format(Val(Monitor.Motore.InputForms(2 - 1).prisposte((k - 1) * ProblWLD.NZONE + jj + 1)), "##.#########E+00"))
+                    For k = 1 To CObj(Monitor.Motore.InputForms(2 - 1)).nCol
+                        PrintLine(iF1, Format(Val(CObj(Monitor.Motore.InputForms(2 - 1)).prisposte((k - 1) * ProblWLD.NZONE + jj + 1)), "##.#########E+00"))
                     Next
                 Next
             End If

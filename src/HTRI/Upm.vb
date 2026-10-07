@@ -1027,8 +1027,8 @@ Rifai:
         Monitor.Motore.InputDatiM(1, 13, Tit, Dom, Risp, "", Archiv, dAiu)
         Monitor.Motore.InputForms(1 - 1).Top = 40
         Monitor.Motore.InputForms(1 - 1).Left = Apert._Frames_1.Width
-        If TipIn = 1 Then Monitor.Motore.InputForms(1 - 1).HelpFile(0).Visible = False
-        If TipOut = 1 Then Monitor.Motore.InputForms(1 - 1).HelpFile(1).Visible = False
+        If TipIn = 1 Then CObj(Monitor.Motore.InputForms(1 - 1)).HelpFile(0).Visible = False
+        If TipOut = 1 Then CObj(Monitor.Motore.InputForms(1 - 1)).HelpFile(1).Visible = False
         MinSpan(1, TipIn, 1)
         MinSpan(2, TipOut, 1)
         AcqDati()
@@ -2715,17 +2715,17 @@ ErrUPM:
         For i = 1 To 10
             Select Case i
                 Case 1, 2
-                    Risp(i) = CStr(Val(Monitor.Motore.InputForms(1 - 1).ComboFisso(i - 1).ListIndex))
+                    Risp(i) = CStr(Val(CObj(Monitor.Motore.InputForms(1 - 1)).ComboFisso(i - 1).SelectedIndex))
                 Case 4, 6, 8, 10
-                    l = Monitor.Motore.InputForms(1 - 1).ComboFisso(i - 1).ListIndex
-                    Select Case Monitor.Motore.InputForms(1 - 1).ComboFisso(i - 1).ListIndex
+                    l = CObj(Monitor.Motore.InputForms(1 - 1)).ComboFisso(i - 1).SelectedIndex
+                    Select Case CObj(Monitor.Motore.InputForms(1 - 1)).ComboFisso(i - 1).SelectedIndex
                         Case 0 'manicotti
                             Risp(i) = Str(l + 4)
                         Case 1 'bocchelli
                             Risp(i) = Chr(65 + l)
                     End Select
                 Case Else
-                    Risp(i) = Monitor.Motore.InputForms(1 - 1).prisposte(i)
+                    Risp(i) = CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(i)
             End Select
         Next
         For i = 4 To 10 Step 2
@@ -2792,7 +2792,7 @@ ErrUPM:
         '===========================================================
         'CLOSPREV
         For i = 1 To 6
-            Risp(i) = Monitor.Motore.InputForms(2 - 1).prisposte(i)
+            Risp(i) = CObj(Monitor.Motore.InputForms(2 - 1)).prisposte(i)
         Next
         u = objDatBase.PutBasCh(3, 24, Nrdit \ 2, 1, objDatBase.MKS(Val(Risp(1))), 0)
         u = objDatBase.PutBasCh(3, 25, Nrdit \ 2, 1, objDatBase.MKS(Val(Risp(2))), 0)
@@ -2800,7 +2800,7 @@ ErrUPM:
         u = objDatBase.PutBasCh(3, 9, Nrdit \ 2, 1, objDatBase.MKS(Val(Risp(4))), 0)
         u = objDatBase.PutBasCh(3, 26, Nrdit \ 2, 1, objDatBase.MKS(Val(Risp(5))), 0)
         u = objDatBase.PutBasCh(3, 23, Nrdit \ 2, 1, objDatBase.MKS(Val(Risp(6))), 0)
-        x = Monitor.Motore.InputForms(2 - 1).ComboFisso(6).ListIndex + 2
+        x = CObj(Monitor.Motore.InputForms(2 - 1)).ComboFisso(6).SelectedIndex + 2
         u = objDatBase.PutBasCh(4, 16, Nrdit \ 2, 1, objDatBase.MKI(x), 1)
         '        Apri(Trim(job.contratto))
     End Sub
@@ -2824,7 +2824,7 @@ ErrUPM:
                     MecData(0).DInmm = D
                     MecData(0).SpInmm = SP
                 End If
-                Monitor.Motore.InputForms(1 - 1).prisposte(12) = Str(Int(HH))
+                CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(12) = Str(Int(HH))
             Case 2
                 If iCode = 1 Then 'Boccaglio
 143:                HH1 = ReadLib(2 + CShort(MecData(0).DBocOut / 2), 4)
@@ -2836,7 +2836,7 @@ ErrUPM:
                     MecData(0).DOutmm = D
                     MecData(0).SpOutmm = SP
                 End If
-                Monitor.Motore.InputForms(1 - 1).prisposte(13) = Str(Int(HH1))
+                CObj(Monitor.Motore.InputForms(1 - 1)).prisposte(13) = Str(Int(HH1))
         End Select
         FilePut(33, MecData(0), 1)
     End Sub

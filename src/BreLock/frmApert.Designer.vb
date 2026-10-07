@@ -485,12 +485,12 @@
     Public WithEvents _Label_41 As System.Windows.Forms.Label
     Public WithEvents framSplit As System.Windows.Forms.GroupBox
     Public WithEvents _pctFrames_4 As System.Windows.Forms.Panel
-    Public WithEvents cmdtir As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents txtDes As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents txtSplit As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents txtViti As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents txtVitiExt As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents txtVitiInt As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public cmdtir As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public txtDes As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public txtSplit As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public txtViti As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public txtVitiExt As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public txtVitiInt As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     Public WithEvents mennuovo As System.Windows.Forms.ToolStripMenuItem
     Public WithEvents menapri As System.Windows.Forms.ToolStripMenuItem
     Public WithEvents menSalva As System.Windows.Forms.ToolStripMenuItem
@@ -1036,12 +1036,6 @@ Me._lblMis_33 = New System.Windows.Forms.Label
 Me._Label_42 = New System.Windows.Forms.Label
 Me._lblMis_32 = New System.Windows.Forms.Label
 Me._Label_41 = New System.Windows.Forms.Label
-Me.cmdtir = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-Me.txtDes = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-Me.txtSplit = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-Me.txtViti = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-Me.txtVitiExt = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-Me.txtVitiInt = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
 Me.MainMenu1 = New System.Windows.Forms.MenuStrip
 Me.menfile = New System.Windows.Forms.ToolStripMenuItem
 Me.mennuovo = New System.Windows.Forms.ToolStripMenuItem
@@ -1200,7 +1194,7 @@ Me._cmdtir_0.BackColor = System.Drawing.SystemColors.Control
 Me._cmdtir_0.Cursor = System.Windows.Forms.Cursors.Default
 Me._cmdtir_0.ForeColor = System.Drawing.SystemColors.ControlText
 Me._cmdtir_0.Image = CType(resources.GetObject("_cmdtir_0.Image"),System.Drawing.Image)
-Me.cmdtir.SetIndex(Me._cmdtir_0, CType(0,Short))
+Me.cmdtir.Add(0, Me._cmdtir_0)
 Me._cmdtir_0.Location = New System.Drawing.Point(256, 16)
 Me._cmdtir_0.Name = "_cmdtir_0"
 Me._cmdtir_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1233,7 +1227,7 @@ Me._cmdtir_2.BackColor = System.Drawing.SystemColors.Control
 Me._cmdtir_2.Cursor = System.Windows.Forms.Cursors.Default
 Me._cmdtir_2.ForeColor = System.Drawing.SystemColors.ControlText
 Me._cmdtir_2.Image = CType(resources.GetObject("_cmdtir_2.Image"),System.Drawing.Image)
-Me.cmdtir.SetIndex(Me._cmdtir_2, CType(2,Short))
+Me.cmdtir.Add(2, Me._cmdtir_2)
 Me._cmdtir_2.Location = New System.Drawing.Point(264, 16)
 Me._cmdtir_2.Name = "_cmdtir_2"
 Me._cmdtir_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1250,7 +1244,7 @@ Me._cmdtir_1.BackColor = System.Drawing.SystemColors.Control
 Me._cmdtir_1.Cursor = System.Windows.Forms.Cursors.Default
 Me._cmdtir_1.ForeColor = System.Drawing.SystemColors.ControlText
 Me._cmdtir_1.Image = CType(resources.GetObject("_cmdtir_1.Image"),System.Drawing.Image)
-Me.cmdtir.SetIndex(Me._cmdtir_1, CType(1,Short))
+Me.cmdtir.Add(1, Me._cmdtir_1)
 Me._cmdtir_1.Location = New System.Drawing.Point(264, 16)
 Me._cmdtir_1.Name = "_cmdtir_1"
 Me._cmdtir_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1686,7 +1680,7 @@ Me._txtDes_0.AcceptsReturn = true
 Me._txtDes_0.BackColor = System.Drawing.Color.White
 Me._txtDes_0.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_0.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_0, CType(0,Short))
+Me.txtDes.Add(0, Me._txtDes_0)
 Me._txtDes_0.Location = New System.Drawing.Point(168, 16)
 Me._txtDes_0.MaxLength = 0
 Me._txtDes_0.Name = "_txtDes_0"
@@ -1851,7 +1845,7 @@ Me._txtDes_1.AcceptsReturn = true
 Me._txtDes_1.BackColor = System.Drawing.Color.White
 Me._txtDes_1.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_1.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_1, CType(1,Short))
+Me.txtDes.Add(1, Me._txtDes_1)
 Me._txtDes_1.Location = New System.Drawing.Point(168, 32)
 Me._txtDes_1.MaxLength = 0
 Me._txtDes_1.Name = "_txtDes_1"
@@ -1867,7 +1861,7 @@ Me._txtDes_2.AcceptsReturn = true
 Me._txtDes_2.BackColor = System.Drawing.Color.White
 Me._txtDes_2.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_2.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_2, CType(2,Short))
+Me.txtDes.Add(2, Me._txtDes_2)
 Me._txtDes_2.Location = New System.Drawing.Point(168, 48)
 Me._txtDes_2.MaxLength = 0
 Me._txtDes_2.Name = "_txtDes_2"
@@ -1881,7 +1875,7 @@ Me._txtDes_3.AcceptsReturn = true
 Me._txtDes_3.BackColor = System.Drawing.Color.White
 Me._txtDes_3.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_3.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_3, CType(3,Short))
+Me.txtDes.Add(3, Me._txtDes_3)
 Me._txtDes_3.Location = New System.Drawing.Point(168, 64)
 Me._txtDes_3.MaxLength = 0
 Me._txtDes_3.Name = "_txtDes_3"
@@ -1897,7 +1891,7 @@ Me._txtDes_4.AcceptsReturn = true
 Me._txtDes_4.BackColor = System.Drawing.Color.White
 Me._txtDes_4.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_4.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_4, CType(4,Short))
+Me.txtDes.Add(4, Me._txtDes_4)
 Me._txtDes_4.Location = New System.Drawing.Point(168, 80)
 Me._txtDes_4.MaxLength = 0
 Me._txtDes_4.Name = "_txtDes_4"
@@ -1913,7 +1907,7 @@ Me._txtDes_5.AcceptsReturn = true
 Me._txtDes_5.BackColor = System.Drawing.Color.White
 Me._txtDes_5.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtDes_5.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtDes.SetIndex(Me._txtDes_5, CType(5,Short))
+Me.txtDes.Add(5, Me._txtDes_5)
 Me._txtDes_5.Location = New System.Drawing.Point(168, 96)
 Me._txtDes_5.MaxLength = 0
 Me._txtDes_5.Name = "_txtDes_5"
@@ -3278,7 +3272,7 @@ Me._txtViti_7.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_7.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_7.Enabled = false
 Me._txtViti_7.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_7, CType(7,Short))
+Me.txtViti.Add(7, Me._txtViti_7)
 Me._txtViti_7.Location = New System.Drawing.Point(168, 80)
 Me._txtViti_7.MaxLength = 0
 Me._txtViti_7.Name = "_txtViti_7"
@@ -3294,7 +3288,7 @@ Me._txtViti_6.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_6.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_6.Enabled = false
 Me._txtViti_6.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_6, CType(6,Short))
+Me.txtViti.Add(6, Me._txtViti_6)
 Me._txtViti_6.Location = New System.Drawing.Point(168, 48)
 Me._txtViti_6.MaxLength = 0
 Me._txtViti_6.Name = "_txtViti_6"
@@ -3310,7 +3304,7 @@ Me._txtViti_5.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_5.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_5.Enabled = false
 Me._txtViti_5.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_5, CType(5,Short))
+Me.txtViti.Add(5, Me._txtViti_5)
 Me._txtViti_5.Location = New System.Drawing.Point(168, 32)
 Me._txtViti_5.MaxLength = 0
 Me._txtViti_5.Name = "_txtViti_5"
@@ -3326,7 +3320,7 @@ Me._txtViti_4.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_4.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_4.Enabled = false
 Me._txtViti_4.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_4, CType(4,Short))
+Me.txtViti.Add(4, Me._txtViti_4)
 Me._txtViti_4.Location = New System.Drawing.Point(168, 16)
 Me._txtViti_4.MaxLength = 0
 Me._txtViti_4.Name = "_txtViti_4"
@@ -3486,7 +3480,7 @@ Me._txtViti_9.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_9.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_9.Enabled = false
 Me._txtViti_9.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_9, CType(9,Short))
+Me.txtViti.Add(9, Me._txtViti_9)
 Me._txtViti_9.Location = New System.Drawing.Point(160, 96)
 Me._txtViti_9.MaxLength = 0
 Me._txtViti_9.Name = "_txtViti_9"
@@ -3502,7 +3496,7 @@ Me._txtViti_8.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_8.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_8.Enabled = false
 Me._txtViti_8.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_8, CType(8,Short))
+Me.txtViti.Add(8, Me._txtViti_8)
 Me._txtViti_8.Location = New System.Drawing.Point(160, 80)
 Me._txtViti_8.MaxLength = 0
 Me._txtViti_8.Name = "_txtViti_8"
@@ -3517,7 +3511,7 @@ Me._txtViti_10.AcceptsReturn = true
 Me._txtViti_10.BackColor = System.Drawing.Color.White
 Me._txtViti_10.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_10.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_10, CType(10,Short))
+Me.txtViti.Add(10, Me._txtViti_10)
 Me._txtViti_10.Location = New System.Drawing.Point(160, 64)
 Me._txtViti_10.MaxLength = 0
 Me._txtViti_10.Name = "_txtViti_10"
@@ -3533,7 +3527,7 @@ Me._txtViti_3.BackColor = System.Drawing.Color.Yellow
 Me._txtViti_3.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_3.Enabled = false
 Me._txtViti_3.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_3, CType(3,Short))
+Me.txtViti.Add(3, Me._txtViti_3)
 Me._txtViti_3.Location = New System.Drawing.Point(160, 48)
 Me._txtViti_3.MaxLength = 0
 Me._txtViti_3.Name = "_txtViti_3"
@@ -3548,7 +3542,7 @@ Me._txtViti_2.AcceptsReturn = true
 Me._txtViti_2.BackColor = System.Drawing.Color.White
 Me._txtViti_2.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_2.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_2, CType(2,Short))
+Me.txtViti.Add(2, Me._txtViti_2)
 Me._txtViti_2.Location = New System.Drawing.Point(160, 32)
 Me._txtViti_2.MaxLength = 0
 Me._txtViti_2.Name = "_txtViti_2"
@@ -3563,7 +3557,7 @@ Me._txtViti_1.AcceptsReturn = true
 Me._txtViti_1.BackColor = System.Drawing.Color.White
 Me._txtViti_1.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_1.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_1, CType(1,Short))
+Me.txtViti.Add(1, Me._txtViti_1)
 Me._txtViti_1.Location = New System.Drawing.Point(160, 120)
 Me._txtViti_1.MaxLength = 0
 Me._txtViti_1.Name = "_txtViti_1"
@@ -3578,7 +3572,7 @@ Me._txtViti_0.AcceptsReturn = true
 Me._txtViti_0.BackColor = System.Drawing.Color.White
 Me._txtViti_0.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtViti_0.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtViti.SetIndex(Me._txtViti_0, CType(0,Short))
+Me.txtViti.Add(0, Me._txtViti_0)
 Me._txtViti_0.Location = New System.Drawing.Point(160, 16)
 Me._txtViti_0.MaxLength = 0
 Me._txtViti_0.Name = "_txtViti_0"
@@ -4514,7 +4508,7 @@ Me._txtVitiInt_7.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiInt_7.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_7.Enabled = false
 Me._txtVitiInt_7.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_7, CType(7,Short))
+Me.txtVitiInt.Add(7, Me._txtVitiInt_7)
 Me._txtVitiInt_7.Location = New System.Drawing.Point(176, 48)
 Me._txtVitiInt_7.MaxLength = 0
 Me._txtVitiInt_7.Name = "_txtVitiInt_7"
@@ -4560,7 +4554,7 @@ Me._txtVitiInt_8.AcceptsReturn = true
 Me._txtVitiInt_8.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_8.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_8.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_8, CType(8,Short))
+Me.txtVitiInt.Add(8, Me._txtVitiInt_8)
 Me._txtVitiInt_8.Location = New System.Drawing.Point(168, 32)
 Me._txtVitiInt_8.MaxLength = 0
 Me._txtVitiInt_8.Name = "_txtVitiInt_8"
@@ -4575,7 +4569,7 @@ Me._txtVitiInt_5.AcceptsReturn = true
 Me._txtVitiInt_5.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_5.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_5.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_5, CType(5,Short))
+Me.txtVitiInt.Add(5, Me._txtVitiInt_5)
 Me._txtVitiInt_5.Location = New System.Drawing.Point(168, 16)
 Me._txtVitiInt_5.MaxLength = 0
 Me._txtVitiInt_5.Name = "_txtVitiInt_5"
@@ -4662,7 +4656,7 @@ Me._txtVitiExt_5.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_5.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_5.Enabled = false
 Me._txtVitiExt_5.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_5, CType(5,Short))
+Me.txtVitiExt.Add(5, Me._txtVitiExt_5)
 Me._txtVitiExt_5.Location = New System.Drawing.Point(168, 16)
 Me._txtVitiExt_5.MaxLength = 0
 Me._txtVitiExt_5.Name = "_txtVitiExt_5"
@@ -4678,7 +4672,7 @@ Me._txtVitiExt_6.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_6.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_6.Enabled = false
 Me._txtVitiExt_6.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_6, CType(6,Short))
+Me.txtVitiExt.Add(6, Me._txtVitiExt_6)
 Me._txtVitiExt_6.Location = New System.Drawing.Point(168, 32)
 Me._txtVitiExt_6.MaxLength = 0
 Me._txtVitiExt_6.Name = "_txtVitiExt_6"
@@ -4694,7 +4688,7 @@ Me._txtVitiExt_7.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_7.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_7.Enabled = false
 Me._txtVitiExt_7.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_7, CType(7,Short))
+Me.txtVitiExt.Add(7, Me._txtVitiExt_7)
 Me._txtVitiExt_7.Location = New System.Drawing.Point(168, 48)
 Me._txtVitiExt_7.MaxLength = 0
 Me._txtVitiExt_7.Name = "_txtVitiExt_7"
@@ -4819,7 +4813,7 @@ Me._txtVitiExt_8.AcceptsReturn = true
 Me._txtVitiExt_8.BackColor = System.Drawing.Color.White
 Me._txtVitiExt_8.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_8.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_8, CType(8,Short))
+Me.txtVitiExt.Add(8, Me._txtVitiExt_8)
 Me._txtVitiExt_8.Location = New System.Drawing.Point(168, 128)
 Me._txtVitiExt_8.MaxLength = 0
 Me._txtVitiExt_8.Name = "_txtVitiExt_8"
@@ -4834,7 +4828,7 @@ Me._txtVitiExt_4.AcceptsReturn = true
 Me._txtVitiExt_4.BackColor = System.Drawing.Color.White
 Me._txtVitiExt_4.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_4.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_4, CType(4,Short))
+Me.txtVitiExt.Add(4, Me._txtVitiExt_4)
 Me._txtVitiExt_4.Location = New System.Drawing.Point(168, 112)
 Me._txtVitiExt_4.MaxLength = 0
 Me._txtVitiExt_4.Name = "_txtVitiExt_4"
@@ -4850,7 +4844,7 @@ Me._txtVitiExt_10.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_10.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_10.Enabled = false
 Me._txtVitiExt_10.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_10, CType(10,Short))
+Me.txtVitiExt.Add(10, Me._txtVitiExt_10)
 Me._txtVitiExt_10.Location = New System.Drawing.Point(168, 96)
 Me._txtVitiExt_10.MaxLength = 0
 Me._txtVitiExt_10.Name = "_txtVitiExt_10"
@@ -4866,7 +4860,7 @@ Me._txtVitiExt_9.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_9.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_9.Enabled = false
 Me._txtVitiExt_9.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_9, CType(9,Short))
+Me.txtVitiExt.Add(9, Me._txtVitiExt_9)
 Me._txtVitiExt_9.Location = New System.Drawing.Point(168, 80)
 Me._txtVitiExt_9.MaxLength = 0
 Me._txtVitiExt_9.Name = "_txtVitiExt_9"
@@ -4881,7 +4875,7 @@ Me._txtVitiExt_3.AcceptsReturn = true
 Me._txtVitiExt_3.BackColor = System.Drawing.Color.White
 Me._txtVitiExt_3.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_3.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_3, CType(3,Short))
+Me.txtVitiExt.Add(3, Me._txtVitiExt_3)
 Me._txtVitiExt_3.Location = New System.Drawing.Point(168, 64)
 Me._txtVitiExt_3.MaxLength = 0
 Me._txtVitiExt_3.Name = "_txtVitiExt_3"
@@ -4897,7 +4891,7 @@ Me._txtVitiExt_2.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiExt_2.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_2.Enabled = false
 Me._txtVitiExt_2.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_2, CType(2,Short))
+Me.txtVitiExt.Add(2, Me._txtVitiExt_2)
 Me._txtVitiExt_2.Location = New System.Drawing.Point(168, 48)
 Me._txtVitiExt_2.MaxLength = 0
 Me._txtVitiExt_2.Name = "_txtVitiExt_2"
@@ -4912,7 +4906,7 @@ Me._txtVitiExt_1.AcceptsReturn = true
 Me._txtVitiExt_1.BackColor = System.Drawing.Color.White
 Me._txtVitiExt_1.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_1.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_1, CType(1,Short))
+Me.txtVitiExt.Add(1, Me._txtVitiExt_1)
 Me._txtVitiExt_1.Location = New System.Drawing.Point(168, 32)
 Me._txtVitiExt_1.MaxLength = 0
 Me._txtVitiExt_1.Name = "_txtVitiExt_1"
@@ -4927,7 +4921,7 @@ Me._txtVitiExt_0.AcceptsReturn = true
 Me._txtVitiExt_0.BackColor = System.Drawing.Color.White
 Me._txtVitiExt_0.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiExt_0.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiExt.SetIndex(Me._txtVitiExt_0, CType(0,Short))
+Me.txtVitiExt.Add(0, Me._txtVitiExt_0)
 Me._txtVitiExt_0.Location = New System.Drawing.Point(168, 16)
 Me._txtVitiExt_0.MaxLength = 0
 Me._txtVitiExt_0.Name = "_txtVitiExt_0"
@@ -5153,7 +5147,7 @@ Me._txtVitiInt_6.AcceptsReturn = true
 Me._txtVitiInt_6.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_6.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_6.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_6, CType(6,Short))
+Me.txtVitiInt.Add(6, Me._txtVitiInt_6)
 Me._txtVitiInt_6.Location = New System.Drawing.Point(168, 128)
 Me._txtVitiInt_6.MaxLength = 0
 Me._txtVitiInt_6.Name = "_txtVitiInt_6"
@@ -5168,7 +5162,7 @@ Me._txtVitiInt_4.AcceptsReturn = true
 Me._txtVitiInt_4.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_4.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_4.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_4, CType(4,Short))
+Me.txtVitiInt.Add(4, Me._txtVitiInt_4)
 Me._txtVitiInt_4.Location = New System.Drawing.Point(168, 112)
 Me._txtVitiInt_4.MaxLength = 0
 Me._txtVitiInt_4.Name = "_txtVitiInt_4"
@@ -5184,7 +5178,7 @@ Me._txtVitiInt_10.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiInt_10.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_10.Enabled = false
 Me._txtVitiInt_10.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_10, CType(10,Short))
+Me.txtVitiInt.Add(10, Me._txtVitiInt_10)
 Me._txtVitiInt_10.Location = New System.Drawing.Point(168, 96)
 Me._txtVitiInt_10.MaxLength = 0
 Me._txtVitiInt_10.Name = "_txtVitiInt_10"
@@ -5200,7 +5194,7 @@ Me._txtVitiInt_9.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiInt_9.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_9.Enabled = false
 Me._txtVitiInt_9.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_9, CType(9,Short))
+Me.txtVitiInt.Add(9, Me._txtVitiInt_9)
 Me._txtVitiInt_9.Location = New System.Drawing.Point(168, 80)
 Me._txtVitiInt_9.MaxLength = 0
 Me._txtVitiInt_9.Name = "_txtVitiInt_9"
@@ -5215,7 +5209,7 @@ Me._txtVitiInt_3.AcceptsReturn = true
 Me._txtVitiInt_3.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_3.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_3.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_3, CType(3,Short))
+Me.txtVitiInt.Add(3, Me._txtVitiInt_3)
 Me._txtVitiInt_3.Location = New System.Drawing.Point(168, 64)
 Me._txtVitiInt_3.MaxLength = 0
 Me._txtVitiInt_3.Name = "_txtVitiInt_3"
@@ -5231,7 +5225,7 @@ Me._txtVitiInt_2.BackColor = System.Drawing.Color.Yellow
 Me._txtVitiInt_2.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_2.Enabled = false
 Me._txtVitiInt_2.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_2, CType(2,Short))
+Me.txtVitiInt.Add(2, Me._txtVitiInt_2)
 Me._txtVitiInt_2.Location = New System.Drawing.Point(168, 48)
 Me._txtVitiInt_2.MaxLength = 0
 Me._txtVitiInt_2.Name = "_txtVitiInt_2"
@@ -5246,7 +5240,7 @@ Me._txtVitiInt_1.AcceptsReturn = true
 Me._txtVitiInt_1.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_1.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_1.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_1, CType(1,Short))
+Me.txtVitiInt.Add(1, Me._txtVitiInt_1)
 Me._txtVitiInt_1.Location = New System.Drawing.Point(168, 32)
 Me._txtVitiInt_1.MaxLength = 0
 Me._txtVitiInt_1.Name = "_txtVitiInt_1"
@@ -5261,7 +5255,7 @@ Me._txtVitiInt_0.AcceptsReturn = true
 Me._txtVitiInt_0.BackColor = System.Drawing.Color.White
 Me._txtVitiInt_0.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtVitiInt_0.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtVitiInt.SetIndex(Me._txtVitiInt_0, CType(0,Short))
+Me.txtVitiInt.Add(0, Me._txtVitiInt_0)
 Me._txtVitiInt_0.Location = New System.Drawing.Point(168, 16)
 Me._txtVitiInt_0.MaxLength = 0
 Me._txtVitiInt_0.Name = "_txtVitiInt_0"
@@ -7996,7 +7990,7 @@ Me._txtSplit_9.AcceptsReturn = true
 Me._txtSplit_9.BackColor = System.Drawing.Color.White
 Me._txtSplit_9.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_9.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_9, CType(9,Short))
+Me.txtSplit.Add(9, Me._txtSplit_9)
 Me._txtSplit_9.Location = New System.Drawing.Point(168, 24)
 Me._txtSplit_9.MaxLength = 0
 Me._txtSplit_9.Name = "_txtSplit_9"
@@ -8051,7 +8045,7 @@ Me._txtSplit_8.AcceptsReturn = true
 Me._txtSplit_8.BackColor = System.Drawing.Color.White
 Me._txtSplit_8.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_8.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_8, CType(8,Short))
+Me.txtSplit.Add(8, Me._txtSplit_8)
 Me._txtSplit_8.Location = New System.Drawing.Point(168, 16)
 Me._txtSplit_8.MaxLength = 0
 Me._txtSplit_8.Name = "_txtSplit_8"
@@ -8151,7 +8145,7 @@ Me._txtSplit_10.BackColor = System.Drawing.Color.White
 Me._txtSplit_10.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_10.Enabled = false
 Me._txtSplit_10.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_10, CType(10,Short))
+Me.txtSplit.Add(10, Me._txtSplit_10)
 Me._txtSplit_10.Location = New System.Drawing.Point(168, 96)
 Me._txtSplit_10.MaxLength = 0
 Me._txtSplit_10.Name = "_txtSplit_10"
@@ -8241,7 +8235,7 @@ Me._txtSplit_5.AcceptsReturn = true
 Me._txtSplit_5.BackColor = System.Drawing.Color.White
 Me._txtSplit_5.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_5.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_5, CType(5,Short))
+Me.txtSplit.Add(5, Me._txtSplit_5)
 Me._txtSplit_5.Location = New System.Drawing.Point(168, 64)
 Me._txtSplit_5.MaxLength = 0
 Me._txtSplit_5.Name = "_txtSplit_5"
@@ -8257,7 +8251,7 @@ Me._txtSplit_7.BackColor = System.Drawing.Color.Yellow
 Me._txtSplit_7.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_7.Enabled = false
 Me._txtSplit_7.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_7, CType(7,Short))
+Me.txtSplit.Add(7, Me._txtSplit_7)
 Me._txtSplit_7.Location = New System.Drawing.Point(168, 48)
 Me._txtSplit_7.MaxLength = 0
 Me._txtSplit_7.Name = "_txtSplit_7"
@@ -8272,7 +8266,7 @@ Me._txtSplit_4.AcceptsReturn = true
 Me._txtSplit_4.BackColor = System.Drawing.Color.White
 Me._txtSplit_4.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_4.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_4, CType(4,Short))
+Me.txtSplit.Add(4, Me._txtSplit_4)
 Me._txtSplit_4.Location = New System.Drawing.Point(168, 32)
 Me._txtSplit_4.MaxLength = 0
 Me._txtSplit_4.Name = "_txtSplit_4"
@@ -8287,7 +8281,7 @@ Me._txtSplit_3.AcceptsReturn = true
 Me._txtSplit_3.BackColor = System.Drawing.Color.White
 Me._txtSplit_3.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_3.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_3, CType(3,Short))
+Me.txtSplit.Add(3, Me._txtSplit_3)
 Me._txtSplit_3.Location = New System.Drawing.Point(168, 16)
 Me._txtSplit_3.MaxLength = 0
 Me._txtSplit_3.Name = "_txtSplit_3"
@@ -8426,7 +8420,7 @@ Me._txtSplit_6.AcceptsReturn = true
 Me._txtSplit_6.BackColor = System.Drawing.Color.White
 Me._txtSplit_6.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_6.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_6, CType(6,Short))
+Me.txtSplit.Add(6, Me._txtSplit_6)
 Me._txtSplit_6.Location = New System.Drawing.Point(168, 64)
 Me._txtSplit_6.MaxLength = 0
 Me._txtSplit_6.Name = "_txtSplit_6"
@@ -8442,7 +8436,7 @@ Me._txtSplit_2.BackColor = System.Drawing.Color.Yellow
 Me._txtSplit_2.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_2.Enabled = false
 Me._txtSplit_2.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_2, CType(2,Short))
+Me.txtSplit.Add(2, Me._txtSplit_2)
 Me._txtSplit_2.Location = New System.Drawing.Point(168, 48)
 Me._txtSplit_2.MaxLength = 0
 Me._txtSplit_2.Name = "_txtSplit_2"
@@ -8457,7 +8451,7 @@ Me._txtSplit_1.AcceptsReturn = true
 Me._txtSplit_1.BackColor = System.Drawing.Color.White
 Me._txtSplit_1.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_1.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_1, CType(1,Short))
+Me.txtSplit.Add(1, Me._txtSplit_1)
 Me._txtSplit_1.Location = New System.Drawing.Point(168, 32)
 Me._txtSplit_1.MaxLength = 0
 Me._txtSplit_1.Name = "_txtSplit_1"
@@ -8472,7 +8466,7 @@ Me._txtSplit_0.AcceptsReturn = true
 Me._txtSplit_0.BackColor = System.Drawing.Color.White
 Me._txtSplit_0.Cursor = System.Windows.Forms.Cursors.IBeam
 Me._txtSplit_0.ForeColor = System.Drawing.SystemColors.WindowText
-Me.txtSplit.SetIndex(Me._txtSplit_0, CType(0,Short))
+Me.txtSplit.Add(0, Me._txtSplit_0)
 Me._txtSplit_0.Location = New System.Drawing.Point(168, 16)
 Me._txtSplit_0.MaxLength = 0
 Me._txtSplit_0.Name = "_txtSplit_0"
