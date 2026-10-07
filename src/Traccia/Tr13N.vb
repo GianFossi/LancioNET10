@@ -271,6 +271,7 @@ Module Tr13
         End Try
     End Sub
     Public Sub Carica(Optional ByRef Modo As Integer = 0)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim Res As Boolean
         Dim icome1 As String
         DaTos(iDat).ILFINAL = 0
@@ -355,6 +356,7 @@ Module Tr13
         Return junk
     End Function
     Public Sub SaveAll()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim icome1 As String
         If gencommes.Trim.Length = 0 Then
             MainForm.mnuSalvaCome_Click(New Object, New EventArgs)

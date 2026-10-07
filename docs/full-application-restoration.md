@@ -150,3 +150,28 @@ Non abilita automaticamente la serializzazione legacy. Le cartelle e gli archivi
 richiesti dall'INI, la licenza e le integrazioni devono essere presenti sul PC.
 La configurazione VS Code "Lancion complete VB GUI (Windows x86)" chiede il
 percorso INI, compila App.slnx e avvia l'eseguibile a 32 bit.
+
+## Serializzazione: verificare il consenso prima di aprire file
+
+Le 50 routine che costruiscono LegacyBinarySerializer verificano EnsureEnabled
+**prima** di aprire stream o file. Senza opt-in, una scrittura/licenza non crea un
+file vuoto e non tronca un documento. La licenza Lancion usa un file dati con
+estensione HELICG.EXE; non e' un eseguibile da lanciare. Il formato originale
+richiede il bridge anche durante questo controllo: in assenza di opt-in Lancion
+mostra il motivo e termina, senza disattivare la licenza.
+
+Per il debugger Visual Studio, solo con i propri file originali fidati, impostare
+anche LANCIO_ENABLE_LEGACY_BINARY_FORMATTER=1 nell'ambiente ereditato dall'IDE.
+Il launcher PowerShell offre la scelta esplicita:
+
+```powershell
+.\tools\run-lancion.ps1 -IniPath "C:\Percorso\LancioNET.ini" -EnableTrustedLegacySerialization
+```
+
+Il flag vale solo per il processo avviato. La futura versione F# deve usare un
+formato nuovo; il bridge non rende sicuro BinaryFormatter.
+
+Per HTRI/Ventil/Wald risultano ancora assenti le DLL native WaldLib, MathVentil,
+HtriLib, HtriSub e DAO36; recuperare le versioni della propria installazione o
+migrare il relativo motore con casi di confronto. FormatFORTRAN.dll e Dforrt.dll
+sono presenti, ma questo non sostituisce le librerie di calcolo mancanti.

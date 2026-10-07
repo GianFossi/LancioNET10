@@ -137,6 +137,7 @@ ErrS:   Resume ExS
     Public Overrides Sub CalcGrezzi()
     End Sub
     Public Sub LeggiDT(Optional ByRef Mode As Short = 0)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         If Mode = 1 Then Gialetto = False
         If Gialetto Then Exit Sub
         Gialetto = True
@@ -565,6 +566,7 @@ ErrS:   Resume ExS
     End Function
 
     Public Sub Genera(ByRef File As String)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Trasferisci()
         Dim fs As New FileStream(File, FileMode.OpenOrCreate)
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer

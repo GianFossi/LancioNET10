@@ -320,6 +320,7 @@ Module Aprileg
         End If
     End Function
     Public Function LeggiW(ByVal sonda As Boolean) As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim j As Short
         Dim Indmat As Short
         Dim fs As New FileStream(objWRCB.commessa, FileMode.Open)

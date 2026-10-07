@@ -1770,6 +1770,7 @@ Module saddles
         End Try
     End Function
     Function LeggiData() As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim iCalc As Short
         Dim i As Short
         LeggiData = False
@@ -2218,6 +2219,7 @@ Module saddles
         End With
     End Sub
     Sub SaveData()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim i, iCalc As Short
         Dim Logic As Boolean
         For iCalc = 1 To 3

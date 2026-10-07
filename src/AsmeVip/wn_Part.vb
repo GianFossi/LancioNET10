@@ -88,6 +88,7 @@ Friend Class wn_Part
         Transfer()
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Leggi = True
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Problem = CType(bf.Deserialize(fs), typProblem)
@@ -110,6 +111,7 @@ Friend Class wn_Part
         End With
     End Sub
     Public Sub Salva(ByRef fs As FileStream)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         With Problem
             .pass_partition = pass_partition
             .Materiale = Materiale

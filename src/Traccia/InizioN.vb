@@ -1804,6 +1804,7 @@ Fine:   Try
         End Try
     End Sub
     Private Sub RiordB2()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Try
             Dim FileRB2 As String = gencommes.Trim & ".RB2"
             Dim fs As New FileStream(FileRB2, FileMode.Open)

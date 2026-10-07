@@ -100,7 +100,15 @@ Module GenLancio
             End If
             '   If Not .CheckDir Then NonValido = True: Exit Sub
             If Not .ReadIniFile("", "Avvio", "CheckLicenza") = "No" Then
-                If Not Licenza_Renamed() Then
+                Dim licensed As Boolean
+                Try
+                    licensed = Licenza_Renamed()
+                Catch ex As System.Runtime.Serialization.SerializationException
+                    MsgBox(ex.Message, MsgBoxStyle.Critical, "Avvio Lancion: formato originale disabilitato")
+                    NonValido = True
+                    Exit Sub
+                End Try
+                If Not licensed Then
                     NonValido = True
                     Monitor = Nothing
                     Exit Sub
@@ -145,6 +153,7 @@ Module GenLancio
         End Try
     End Sub
     Public Function Licenza_Renamed() As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         Dim Lic As Licenza ', Lic0 As ValueType
         Dim Scad As Date

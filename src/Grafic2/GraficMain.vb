@@ -7456,6 +7456,7 @@ ErrCercaInt: System.Diagnostics.Debug.WriteLine(Err.Description)
         End With
     End Sub
     Public Sub GeneraApparecchio()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim Mat As LibMat.MaterialeNew1
         Mat = New LibMat.MaterialeNew1
         Try

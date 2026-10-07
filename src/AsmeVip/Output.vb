@@ -1143,6 +1143,7 @@ Module Output
         End Try
     End Sub
     Sub SalvaU()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim i As Short
         Dim Nnozz, k As Short
         If icome.Trim.Length = 0 Then Exit Sub

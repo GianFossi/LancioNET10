@@ -15,6 +15,7 @@ Public Class LibGra
     Public Lato As Short
     Public OKfrmDati As Boolean
     Public Sub PutDes(Optional ByVal j As clsjob = Nothing, Optional ByRef d As clsDatiDes = Nothing)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         If Not j Is Nothing Then job = j
         If Not d Is Nothing Then DataSheet = d
@@ -52,6 +53,7 @@ Public Class LibGra
         End Try
     End Function
     Public Sub GetDes(Optional ByRef d As clsDatiDes = Nothing)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         Try
             File = FileDes("DES")

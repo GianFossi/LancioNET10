@@ -292,6 +292,7 @@ Friend Class frmDis3D
         Help.ShowHelp(Me, RadiceHelp, HelpNavigator.Topic, HelpTopic(IDH_HID_AUTOCAD1))
     End Sub
     Private Sub cmdProcedi_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdProcedi.Click
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         'GeneraTubo 1, 1, 800, 85
         Dim i As Integer
         Dim nrec As Integer

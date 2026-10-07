@@ -1835,12 +1835,14 @@ RedoDil:
         FileGet(ifl, Dilat(2))
     End Function
     Public Overloads Function Leggi(ByVal fs As FileStream) As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Leggi = True
         Dilat(1) = CType(bf.Deserialize(fs), strDilat)
         Dilat(2) = CType(bf.Deserialize(fs), strDilat)
     End Function
     Public Sub Scrivi(ByVal fs As FileStream)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Dilat(1))
         bf.Serialize(fs, Dilat(2))

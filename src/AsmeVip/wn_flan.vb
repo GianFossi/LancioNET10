@@ -2393,6 +2393,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
         End With
     End Sub
     Sub Salva(ByRef fs As FileStream)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Str(Mem.M(165)) = " 25.4" And Str(Mem.Z(165)) = " 645.16" Then Mem.M(165) = 0 : Mem.Z(165) = 0
         bf.Serialize(fs, Mem)
@@ -2454,6 +2455,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
         End If
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Dim nomefile As String
         Mem = CType(bf.Deserialize(fs), typMemoryBank)

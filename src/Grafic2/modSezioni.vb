@@ -100,6 +100,7 @@ RifaiW:         PrepString()
         If EditingSezioni Then NumIt1 = 5
     End Sub
     Public Sub LeggiSezioni()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         Dim ce As Boolean
         File = FunzLibgra.FileDes("SEZ")
@@ -125,6 +126,7 @@ RifaiW:         PrepString()
         sezvec = sezioni
     End Sub
     Public Sub SalvaSezioni()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         File = FunzLibgra.FileDes("SEZ")
         If File.Trim.Length = 0 Then Exit Sub

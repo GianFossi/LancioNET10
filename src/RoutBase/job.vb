@@ -41,6 +41,7 @@ Imports RoutBase1
         Next
     End Sub
     Public Sub Salva()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Try
             Dim Nome As String = Motore.Inizio.Workdir & "\" & Contratto & ".JOB"
             Dim myFileStream As Stream = File.OpenWrite(Nome)

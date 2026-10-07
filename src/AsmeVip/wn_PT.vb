@@ -1363,6 +1363,7 @@ ErrPr:      R = 0
         End With
     End Sub
     Public Sub Salva(ByVal fs As FileStream)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, TipoPT)
         Select Case TipoPT

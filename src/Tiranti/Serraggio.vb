@@ -506,6 +506,7 @@ Public Class Serraggio
         End With
     End Sub
     Public Function apri(Optional ByRef icome As String = "") As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         If Not Sciolto Then nomefile = icome
         Dim fs As New FileStream(nomefile, FileMode.Open)
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
@@ -526,6 +527,7 @@ Public Class Serraggio
         apri = True
     End Function
     Public Sub scrivi(Optional ByRef icome As String = "")
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Problem.intestazione = intestazione
         If Not Sciolto Then nomefile = icome
         Dim fs As New FileStream(nomefile, FileMode.OpenOrCreate)

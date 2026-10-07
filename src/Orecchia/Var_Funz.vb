@@ -1352,6 +1352,7 @@ ExitSub:
     End Sub
 
     Public Sub Salva()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         'Dim i As Short
         If Len(nomefile) = 0 Then nomefile = Monitor.Motore.Inizio.Datidir & "\" & Orecchia.Sigla & ".ORE"
         Dim fs As New FileStream(nomefile, FileMode.OpenOrCreate)
@@ -1368,6 +1369,7 @@ ExitSub:
     End Sub
 
     Public Function Leggi() As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Leggi = False
         If Not File.Exists(nomefile) Then Exit Function
         Dim fs As New FileStream(nomefile, FileMode.Open)

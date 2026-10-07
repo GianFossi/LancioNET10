@@ -248,6 +248,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
         Return f
     End Function
     Public Sub ScaricaApparecchio(Optional ByVal final As Boolean = True)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         If Elementi.Count() = 0 Then Exit Sub
         IUNL = 0
         ScaricaGrezzi()

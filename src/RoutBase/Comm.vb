@@ -39,6 +39,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
         Comp = "XX"
     End Sub
     Public Sub SalvaCom(Optional ByRef Nome As String = "")
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim n As String
         Dim FileTem As String
         Try

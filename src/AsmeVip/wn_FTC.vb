@@ -567,6 +567,7 @@ Friend Class wn_FTC
         Return 0
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim NumCond As Short
         Leggi = True
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
@@ -588,6 +589,7 @@ Friend Class wn_FTC
         NumCond = Mem.Z(1, 261)
     End Function
     Public Sub Salva(ByRef fs As FileStream)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         '---------------------------- e la piastra B?
         Try

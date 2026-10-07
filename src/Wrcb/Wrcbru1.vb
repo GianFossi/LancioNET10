@@ -1525,6 +1525,7 @@ FineCalc:
         End Try
     End Sub
     Sub SalvaW()
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim j As Short
         Try
             Config.Versione = 2

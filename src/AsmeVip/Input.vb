@@ -893,6 +893,7 @@ ExDil:
         End With
     End Sub
     Sub Design(ByRef junk As DialogResult, ByVal sonda As Boolean)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim Confi1 As asConfig
         Dim Testo As String
         Dim Dimen, j, i, ii, ifl As Short

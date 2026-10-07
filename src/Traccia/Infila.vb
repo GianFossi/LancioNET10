@@ -261,6 +261,7 @@ Module Infila
         Franco.Manici.nRB1.RemoveAll()
     End Function
     Function ChiuB2() As Short
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim FileRB2 As String = gencommes.Trim & ".RB2"
         File.Delete(FileRB2)
         Dim fs As New FileStream(gencommes.Trim & ".RB2", FileMode.Create)
@@ -614,6 +615,7 @@ Module Infila
         Incrocio = Ugu
     End Function
     Sub Infilaggio(ByRef Sw As String, ByRef Diametro As Single, ByRef SovrAlt As Single, ByRef Interf As Single, ByRef AltMin As Single, ByRef Preciso As Single, ByRef GapCurve As Single)
+        Lancio.Legacy.Serialization.LegacyBinarySerializer.EnsureEnabled()
         Dim File As String
         Dim Risposta As Short
         Dim Riga As String
