@@ -6,6 +6,9 @@ Friend Class Tir1
     Inherits System.Windows.Forms.Form
 #Region "Codice generato dalla finestra di progettazione Windows Form "
 	Public Sub New()
+        Me.New(True)
+    End Sub
+    Friend Sub New(initializeData As Boolean)
 		MyBase.New()
 		If m_vb6FormDefInstance Is Nothing Then
 			If m_InitializingDefInstance Then
@@ -22,7 +25,7 @@ Friend Class Tir1
 		End If
 		'Chiamata richiesta dalla progettazione Windows Form.
         InitializeComponent()
-        Inizializza()
+        If initializeData Then Inizializza()
 	End Sub
 	'Il form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
 	Protected Overloads Overrides Sub Dispose(ByVal Disposing As Boolean)
@@ -159,13 +162,13 @@ Friend Class Tir1
 	'Non modificarla mediante l'editor di codice.
     Friend WithEvents O_S As System.Windows.Forms.OpenFileDialog
     Friend WithEvents S_S As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents ToolBar2 As System.Windows.Forms.ToolBar
-    Friend WithEvents Nuovo As System.Windows.Forms.ToolBarButton
+    Friend WithEvents ToolBar2 As System.Windows.Forms.ToolStrip
+    Friend WithEvents Nuovo As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolBarImageList As System.Windows.Forms.ImageList
-    Friend WithEvents Apri As System.Windows.Forms.ToolBarButton
-    Friend WithEvents Salva As System.Windows.Forms.ToolBarButton
-    Friend WithEvents Stampa As System.Windows.Forms.ToolBarButton
-    Friend WithEvents Esci As System.Windows.Forms.ToolBarButton
+    Friend WithEvents Apri As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Salva As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Stampa As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Esci As System.Windows.Forms.ToolStripButton
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Tir1))
@@ -290,12 +293,12 @@ Friend Class Tir1
         Me.menEsci = New System.Windows.Forms.ToolStripMenuItem
         Me.O_S = New System.Windows.Forms.OpenFileDialog
         Me.S_S = New System.Windows.Forms.SaveFileDialog
-        Me.ToolBar2 = New System.Windows.Forms.ToolBar
-        Me.Nuovo = New System.Windows.Forms.ToolBarButton
-        Me.Apri = New System.Windows.Forms.ToolBarButton
-        Me.Salva = New System.Windows.Forms.ToolBarButton
-        Me.Stampa = New System.Windows.Forms.ToolBarButton
-        Me.Esci = New System.Windows.Forms.ToolBarButton
+        Me.ToolBar2 = New System.Windows.Forms.ToolStrip
+        Me.Nuovo = New System.Windows.Forms.ToolStripButton
+        Me.Apri = New System.Windows.Forms.ToolStripButton
+        Me.Salva = New System.Windows.Forms.ToolStripButton
+        Me.Stampa = New System.Windows.Forms.ToolStripButton
+        Me.Esci = New System.Windows.Forms.ToolStripButton
         Me.ToolBarImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.Frame4.SuspendLayout()
         Me.Frame3.SuspendLayout()
@@ -1954,12 +1957,11 @@ Friend Class Tir1
         '
         'ToolBar2
         '
-        Me.ToolBar2.Buttons.AddRange(New System.Windows.Forms.ToolBarButton() {Me.Nuovo, Me.Apri, Me.Salva, Me.Stampa, Me.Esci})
-        Me.ToolBar2.DropDownArrows = True
+        Me.ToolBar2.Items.AddRange(New System.Windows.Forms.ToolStripButton() {Me.Nuovo, Me.Apri, Me.Salva, Me.Stampa, Me.Esci})
         Me.ToolBar2.ImageList = Me.ToolBarImageList
         Me.ToolBar2.Location = New System.Drawing.Point(0, 0)
         Me.ToolBar2.Name = "ToolBar2"
-        Me.ToolBar2.ShowToolTips = True
+        Me.ToolBar2.ShowItemToolTips = True
         Me.ToolBar2.Size = New System.Drawing.Size(613, 28)
         Me.ToolBar2.TabIndex = 112
         '
@@ -2170,7 +2172,7 @@ Cont:   Next
         NormalColor = System.Drawing.ColorTranslator.ToOle(Frame1.BackColor)
         CommentoC = ""
         menstampa.Enabled = False
-        ToolBar2.Buttons.Item(3).Enabled = False
+        ToolBar2.Items.Item(3).Enabled = False
         _Coeff_0.Items.Add("A secco: 0.31")
         _Coeff_0.Items.Add("Gr. ordinario: 0.17")
         _Coeff_0.Items.Add("Gr. al Molicote: 0.08")
@@ -2187,10 +2189,10 @@ Cont:   Next
         Set(ByVal Value As String)
             Labelcom1.Text = Value
             If Len(Labelcom1.Text) = 0 Then
-                ToolBar2.Buttons.Item(3).Enabled = True
+                ToolBar2.Items.Item(3).Enabled = True
                 menstampa.Enabled = True
             Else
-                ToolBar2.Buttons.Item(3).Enabled = False
+                ToolBar2.Items.Item(3).Enabled = False
                 menstampa.Enabled = False
             End If
         End Set
@@ -2619,8 +2621,8 @@ EventExitSub:
         End If
     End Sub
 
-    Private Sub ToolBar2_ButtonClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolBarButtonClickEventArgs) Handles ToolBar2.ButtonClick
-        Select Case CStr(e.Button.Tag)
+    Private Sub ToolBar2_ButtonClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles ToolBar2.ItemClicked
+        Select Case CStr(e.ClickedItem.Tag)
             Case "Nuovo"
                 Azzera()
                 CommentoC = ""
@@ -2631,7 +2633,7 @@ EventExitSub:
                 menSalva_Click(menSalva, New System.EventArgs)
             Case "Stampa"
                 StampaRapp()
-            Case "esci"
+            Case "Esci"
                 menEsci_Click(menEsci, New System.EventArgs)
         End Select
     End Sub
