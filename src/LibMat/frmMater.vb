@@ -103,15 +103,14 @@ Friend Class frmMater
     Friend WithEvents ColumnHeader8 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Gridprezzi As System.Windows.Forms.DataGrid
+    Friend WithEvents Gridprezzi As System.Windows.Forms.DataGridView
     Friend WithEvents cmdStampa1Listino As System.Windows.Forms.Button
-    Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn5 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -175,14 +174,13 @@ Friend Class frmMater
         Me.ColumnHeader8 = New System.Windows.Forms.ColumnHeader
         Me.ColumnHeader9 = New System.Windows.Forms.ColumnHeader
         Me.ColumnHeader10 = New System.Windows.Forms.ColumnHeader
-        Me.Gridprezzi = New System.Windows.Forms.DataGrid
-        Me.DataGridTableStyle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn5 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn6 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.Gridprezzi = New System.Windows.Forms.DataGridView
+        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Frame3D1.SuspendLayout()
         Me.frmLE.SuspendLayout()
         Me.Frame3D2.SuspendLayout()
@@ -937,70 +935,66 @@ Friend Class frmMater
         '
         'Gridprezzi
         '
-        Me.Gridprezzi.CaptionVisible = False
         Me.Gridprezzi.DataMember = ""
-        Me.Gridprezzi.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gridprezzi.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Gridprezzi.Location = New System.Drawing.Point(0, 648)
         Me.Gridprezzi.Name = "Gridprezzi"
         Me.Gridprezzi.Size = New System.Drawing.Size(592, 96)
         Me.Gridprezzi.TabIndex = 42
-        Me.Gridprezzi.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.DataGridTableStyle1})
         '
         'DataGridTableStyle1
         '
-        Me.DataGridTableStyle1.DataGrid = Me.Gridprezzi
-        Me.DataGridTableStyle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6})
-        Me.DataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGridTableStyle1.MappingName = "tabPrezzi"
+        Me.Gridprezzi.AutoGenerateColumns = False
+        Me.Gridprezzi.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3, Me.DataGridTextBoxColumn4, Me.DataGridTextBoxColumn5, Me.DataGridTextBoxColumn6})
         '
         'DataGridTextBoxColumn1
         '
-        Me.DataGridTextBoxColumn1.Format = ""
-        Me.DataGridTextBoxColumn1.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn1.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn1.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn1.HeaderText = "Materiale"
-        Me.DataGridTextBoxColumn1.MappingName = "Mat"
+        Me.DataGridTextBoxColumn1.DataPropertyName = "Mat"
         Me.DataGridTextBoxColumn1.ReadOnly = True
         Me.DataGridTextBoxColumn1.Width = 200
         '
         'DataGridTextBoxColumn2
         '
-        Me.DataGridTextBoxColumn2.Alignment = System.Windows.Forms.HorizontalAlignment.Right
-        Me.DataGridTextBoxColumn2.Format = "####.00"
-        Me.DataGridTextBoxColumn2.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn2.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridTextBoxColumn2.DefaultCellStyle.Format = "####.00"
+        Me.DataGridTextBoxColumn2.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn2.HeaderText = "Costo (€/kg)"
-        Me.DataGridTextBoxColumn2.MappingName = "PrezzoLkg"
+        Me.DataGridTextBoxColumn2.DataPropertyName = "PrezzoLkg"
         Me.DataGridTextBoxColumn2.Width = 80
         '
         'DataGridTextBoxColumn3
         '
-        Me.DataGridTextBoxColumn3.Format = ""
-        Me.DataGridTextBoxColumn3.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn3.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn3.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn3.HeaderText = "Descrizione dell'offerta"
-        Me.DataGridTextBoxColumn3.MappingName = "NoteMie"
+        Me.DataGridTextBoxColumn3.DataPropertyName = "NoteMie"
         Me.DataGridTextBoxColumn3.Width = 950
         '
         'DataGridTextBoxColumn4
         '
-        Me.DataGridTextBoxColumn4.Format = ""
-        Me.DataGridTextBoxColumn4.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn4.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn4.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn4.HeaderText = "Firma"
-        Me.DataGridTextBoxColumn4.MappingName = "Firmato"
+        Me.DataGridTextBoxColumn4.DataPropertyName = "Firmato"
         Me.DataGridTextBoxColumn4.Width = 50
         '
         'DataGridTextBoxColumn5
         '
-        Me.DataGridTextBoxColumn5.Format = "dd-MMM-yy"
-        Me.DataGridTextBoxColumn5.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn5.DefaultCellStyle.Format = "dd-MMM-yy"
+        Me.DataGridTextBoxColumn5.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn5.HeaderText = "Data"
-        Me.DataGridTextBoxColumn5.MappingName = "DataRev"
+        Me.DataGridTextBoxColumn5.DataPropertyName = "DataRev"
         Me.DataGridTextBoxColumn5.Width = 75
         '
         'DataGridTextBoxColumn6
         '
-        Me.DataGridTextBoxColumn6.Format = ""
-        Me.DataGridTextBoxColumn6.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn6.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn6.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn6.HeaderText = "Fornitore"
-        Me.DataGridTextBoxColumn6.MappingName = "Fornitore"
+        Me.DataGridTextBoxColumn6.DataPropertyName = "Fornitore"
         Me.DataGridTextBoxColumn6.Width = 75
         '
         'frmMater
@@ -1391,9 +1385,9 @@ Friend Class frmMater
             Else
                 Genprezzi1(i)
             End If
-            .SetDataBinding(dvprezzi, "")
-            Dim delta As Integer = .Width - .GetCellBounds(0, 5).Left - .GetCellBounds(0, 5).Width
-            .TableStyles(0).GridColumnStyles(2).Width += delta
+            .DataSource = dvprezzi
+            Dim delta As Integer = .Width - .GetCellDisplayRectangle(5, 0, False).Left - .GetCellDisplayRectangle(5, 0, False).Width
+            .Columns(2).Width += delta
         End With
         cmdStampa1Listino.Visible = True
     End Sub

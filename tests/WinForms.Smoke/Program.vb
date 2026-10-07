@@ -47,6 +47,15 @@ Module Program
             Dim lines = DirectCast(aboutType.GetField("Line1").GetValue(form), Dictionary(Of Integer, Label))
             Check(lines.Count > 0)
         End Using
+        Dim materialFormType = GetType(LibMat.clsBWG).Assembly.GetType("LibMat.frmMater", throwOnError:=True)
+        Using form = DirectCast(Activator.CreateInstance(materialFormType, nonPublic:=True), Form)
+            Dim grid = DirectCast(materialFormType.GetField("Gridprezzi", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic).GetValue(form), DataGridView)
+            Check(grid.Columns.Count = 6 AndAlso Not grid.AutoGenerateColumns)
+            Check(grid.Columns(0).DataPropertyName = "Mat" AndAlso grid.Columns(0).ReadOnly)
+            Check(grid.Columns(1).DataPropertyName = "PrezzoLkg" AndAlso Not grid.Columns(1).ReadOnly)
+            Check(grid.Columns(1).DefaultCellStyle.Format = "####.00")
+            Check(grid.Columns(4).DataPropertyName = "DataRev" AndAlso grid.Columns(4).DefaultCellStyle.Format = "dd-MMM-yy")
+        End Using
         ' Construct representative migrated forms without triggering Load/database workflows.
         For Each assemblyAndForms In New (Reflection.Assembly, String())() {
             (GetType(LibMat.clsBWG).Assembly, {"LibMat.frmGuarn", "LibMat.frmTira", "LibMat.frmUpdate"}),
