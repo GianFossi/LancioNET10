@@ -22,8 +22,10 @@ lang: it-IT
 6. Fontana: aggancio
 7. Fontana: infilaggio
 8. Sequenza e output
-9. Percorso consigliato nel debugger
-10. Mappa del codice e rischi della futura riscrittura
+9. Evoluzione dell'algoritmo: matching, A* e accessibilità
+10. Percorso consigliato nel debugger
+11. Mappa del codice
+12. Rischi della futura riscrittura
 
 # 1. Che cosa fa il modulo
 
@@ -222,6 +224,41 @@ backtracking locale**. Questa distinzione è importante quando si confronta il
 risultato del programma con un algoritmo moderno di matching.
 
 ![Algoritmo di aggancio](diagrams/traccia-aggancio.png)
+
+## 6.0 Nomenclatura matematica e legacy
+
+| Simbolo | Nome | Significato matematico | Nome nel VB legacy |
+|---|---|---|---|
+| `I={Iᵢ}` | corona interna | insieme dei centri dei fori interni | `PuntiD(i,1)` |
+| `E={Eⱼ}` | corona esterna | insieme dei centri dei fori esterni | `PuntiD(j,0)` |
+| `i`, `j` | indici | identificativo enumerato del foro interno/esterno | `iTubo1`, `iTubo2`/`iTubo` |
+| `(x,y)` | coordinate | centro del foro nel piano della piastra | `.X`, `.y` |
+| `rᵢ` | raggio polare | `sqrt(xᵢ²+yᵢ²)` | `Raggio`, `Raggiol`, `DistCentro` |
+| `θᵢ` | angolo polare | `atan2(yᵢ,xᵢ)`, normalizzato | `Anomal(i,zona)`, `arco(...)` |
+| `dᵢⱼ` | distanza | lunghezza della corda `Iᵢ→Eⱼ` | `Distl` |
+| `φᵢⱼ` | direzione collegamento | angolo del vettore `Eⱼ-Iᵢ` | `Ang1` |
+| `Δθᵢⱼ` | deviazione radiale | distanza angolare minima tra `θᵢ` e `φᵢⱼ` | `DAng` |
+| `F` | peso angolare | bilancia distanza e radialità | `Fact`, inizialmente `2` |
+| `Jᵢⱼ` | funzione costo | priorità con cui provare `Eⱼ` per `Iᵢ` | valore inserito in `NewDist` |
+| `D` | diametro tubo | ingombro planare nominale | `dtubo` |
+| `ε` | interferenza ammessa | riduce la distanza libera richiesta | `Interf` |
+| `A(i,z)` | stato assegnazione | `0` libero, altrimenti numero coppia | `Accoppia(i,z)` |
+| `Cₖ=(i,j)` | coppia k | collegamento interno-esterno registrato | `IndT1(k)`, `IndT2(k)` |
+| `k` | indice coppia | profondità corrente della costruzione | `iCoppia` |
+| `p` | profondità ritorno | livello da cui riprendere il backtracking | `iProfond` |
+
+La funzione costo corrente è:
+
+`Jᵢⱼ = dᵢⱼ × [1 + F × Δθᵢⱼ/(2π)]`
+
+con:
+
+`dᵢⱼ = ||Eⱼ-Iᵢ||₂`
+
+`Δθᵢⱼ = min(|φᵢⱼ-θᵢ|, 2π-|φᵢⱼ-θᵢ|)`.
+
+`J` non è il costo complessivo della configurazione: serve soltanto a stabilire
+in quale ordine il greedy prova i candidati per l'interno corrente.
 
 ## 6.1 Le tre nozioni di “ordine” non vanno confuse
 
@@ -518,9 +555,9 @@ gli identificativi e non riesegue il matching.
 
 ## 6.11 Esempio numerico della graduatoria
 
-Si consideri l'interno `I=(30,40) mm`: il suo raggio è `50 mm` e la direzione
-radiale vale `53,13°`. Tre esterni liberi, tutti a distanza `50 mm`, danno con
-`Fact=2`:
+Si consideri l'interno `I₁=(30,40) mm`: il suo raggio è `50 mm` e la direzione
+radiale vale `θ₁=53,13°`. Tre esterni liberi, tutti a distanza `50 mm`, danno
+con `Fact=2`:
 
 | Candidato | Direzione `I→E` | `Δθ` | Costo `J` |
 |---|---:|---:|---:|
@@ -532,6 +569,45 @@ L'ordine di prova è A, C, B. Se A sorvola un foro libero, A viene marcato come
 provato e si passa a C; non si modifica l'interno corrente. Se anche tutti gli
 altri falliscono, scatta il recupero descritto sopra.
 
+### Esempio completo: scelta, scarto, registrazione e ritorno
+
+Supponiamo inoltre `dtubo=20 mm`, `Interf=2 mm`; la distanza minima planare
+richiesta da `Sorvolo` è quindi `20-2=18 mm`.
+
+1. **Scelta interno.** Fra gli interni liberi `I₁`, `I₂`, `I₃`, i raggi sono
+   `50`, `42`, `30 mm`: viene scelto `I₁`. Il programma registra
+   provvisoriamente `Accoppia(I₁,1)=1` e `IndT1(1)=I₁`.
+2. **Graduatoria.** `NewInd=[A,C,B]` nell'ordine di scansione originario e
+   `NewDist` contiene i rispettivi costi. `Ordina` trova il minimo A e cambia
+   il suo costo da `+50,00` a `-50,00`.
+3. **Scarto A.** Un foro libero `P` ha proiezione `s=22 mm`, compresa fra `0`
+   e `L=50 mm`, e distanza perpendicolare `h=12 mm`. Poiché `12<18`,
+   `Sorvolo` restituisce vero: A è scartato.
+4. **Prova C.** `Ordina` ignora il costo negativo di A, seleziona C e lo rende
+   negativo. Nessun foro libero cade nella fascia del segmento e
+   `VerifInters` non trova attraversamenti della zona centrale: C è valido.
+5. **Registrazione.** Il programma scrive `Accoppia(C,0)=1`,
+   `IndT2(1)=C` e disegna `I₁→C`. Passa quindi a `k=2`.
+6. **Nuovo interno.** Il massimo raggio libero è ora `I₂=42 mm`. Ricostruisce
+   da zero la lista dei soli esterni ancora liberi; C non compare più.
+7. **Intrappolamento ipotetico.** Se per `I₃` tutti gli esterni rimasti
+   falliscono, il codice segnala la coppia corrente, arretra a una coppia
+   precedente e verifica se il suo esterno può essere conservato sostituendo
+   l'interno precedente con `I₃`.
+8. **Liberazione.** Se arretra alla coppia 1, azzera gli `Accoppia` degli
+   interni dalla coppia 1 in avanti, azzera gli esterni delle coppie
+   successive, cancella i relativi `IndT1`/`IndT2` e le linee disegnate.
+   L'esterno della coppia di innesto può essere temporaneamente conservato.
+9. **Configurazione alternativa.** Assegna `I₃` a quella coppia, ripete
+   `Sorvolo` sul collegamento conservato e, se valido, ricomincia a scegliere
+   gli interni liberi dal livello seguente. Non genera tutte le permutazioni:
+   esplora soltanto i rami raggiungibili da questa politica di ritorno.
+
+Questo esempio mostra perché una scelta localmente economica può produrre un
+vicolo cieco: usare C per `I₁` potrebbe sottrarre a `I₃` il suo unico esterno
+ammissibile. Il backtracking tenta di correggere la decisione, ma non possiede
+una funzione euristica globale che riconosca anticipatamente tale scarsità.
+
 ## 6.12 Complessità e limiti osservabili
 
 Con `N` fori per corona, la scelta ripetuta degli interni è `O(N²)`. Per ogni
@@ -539,6 +615,21 @@ interno si generano fino a `N` candidati; ogni estrazione del minimo è lineare
 e ogni `Sorvolo` scandisce fino a `2N` fori. Nel caso sfavorevole il solo
 matching è quindi dell'ordine di `O(N³)`, prima del backtracking. Questo spiega
 parte della lentezza sui fasci grandi.
+
+Con il backtracking il limite teorico diventa esponenziale: nel caso peggiore
+si possono esplorare molte delle permutazioni degli esterni, fino a un ordine
+di grandezza `O(N!)`. Il legacy non memorizza gli stati già falliti e può
+ripetere configurazioni equivalenti. Le principali cause concrete di lentezza
+sono:
+
+- scansioni lineari ripetute per massimo raggio e minimo costo;
+- `Sorvolo` che riesamina tutti i fori liberi per ogni candidato;
+- assenza di indice spaziale per interrogare soltanto i fori vicini al segmento;
+- backtracking senza cache, euristica globale o bound sul costo residuo;
+- rigenerazione completa con `SubTraccia` quando cambia `Fact`;
+- disegno immediato, `Refresh`, aggiornamento della status bar e
+  `Application.DoEvents` nel ciclo numerico;
+- successiva verifica tridimensionale dell'infilaggio, a sua volta iterativa.
 
 Il controllo di non-sorvolo non dimostra da solo la montabilità
 tridimensionale. Quest'ultima viene affrontata successivamente da `Infila`.
@@ -601,7 +692,227 @@ Gli output osservati nel codice comprendono:
 | DXF/DGE | geometria per AutoCAD |
 | RTF/Word | relazioni, tabelle e richiesta materiali |
 
-# 9. Percorso consigliato nel debugger
+# 9. Come migliorare l'algoritmo
+
+L'evoluzione dovrebbe separare esplicitamente tre problemi oggi intrecciati:
+
+1. **matching:** trovare la migliore corrispondenza biunivoca `I↔E`;
+2. **fattibilità geometrica:** escludere sorvoli, zona centrale, incroci e
+   distanze insufficienti;
+3. **sequenza di montaggio:** ordinare le forcine in un verso scelto lasciando
+   accessibile il giunto tubo-piastra e le zone da controllare.
+
+![Architettura proposta dell'ottimizzatore](diagrams/traccia-ottimizzazione.png)
+
+## 9.1 Funzione obiettivo moderna
+
+Per ogni arco candidato `(i,j)` si può definire un costo normalizzato:
+
+```text
+c(i,j) = wd * d(i,j)/dRif
+       + wa * deltaTheta(i,j)/PI
+       + wx * penalitaIncrocio(i,j)
+       + wc * penalitaClearance(i,j)
+       + ww * penalitaFinestra(i,j)
+       + ws * penalitaScarsita(i,j)
+```
+
+dove:
+
+- `wd`, `wa` controllano lunghezza e radialità;
+- `penalitaIncrocio` è infinita per una violazione rigida, oppure graduata se
+  si vuole lasciare la verifica tridimensionale alla fase successiva;
+- `penalitaClearance` cresce quando la distanza minima si avvicina a
+  `dtubo-Interf`;
+- `penalitaFinestra` proibisce o scoraggia segmenti dentro il settore che deve
+  restare accessibile;
+- `penalitaScarsita` protegge un esterno che rappresenta una delle poche
+  opzioni ammissibili per un altro interno.
+
+Prima dell'ottimizzazione conviene costruire un **grafo bipartito sparso**:
+un nodo per ogni interno, un nodo per ogni esterno e un arco solo se supera i
+filtri geometrici statici. Per ridurre l'ampiezza della ricerca, per ogni
+interno si mantengono soltanto, per esempio, i `K` migliori candidati entro una
+finestra angolare e di distanza; `K` deve però poter crescere automaticamente
+se il grafo non ammette un matching completo.
+
+## 9.2 Algoritmi candidati e loro ruolo
+
+| Metodo | Uso appropriato | Pregi | Limiti |
+|---|---|---|---|
+| Hungarian / min-cost matching | coppie uno-a-uno con costi indipendenti | ottimo globale polinomiale | non rappresenta bene vincoli fra segmenti |
+| Min-cost max-flow | matching con capacità, classi o penalità aggiuntive | flessibile e ottimo sul grafo | vincoli geometrici fra coppie richiedono iterazioni/cut |
+| CP-SAT / MILP | matching con incroci vietati, finestre e regole logiche | modello dichiarativo, prova di ottimalità o gap | costo elevato sui casi grandi |
+| A* | costruzione con ordine, accessibilità e stato dipendente dalla storia | usa un'euristica e può trovare l'ottimo | memoria elevata; serve euristica ammissibile |
+| Beam search | approssimazione di A* mantenendo solo `B` stati | memoria e tempi controllabili | non garantisce l'ottimo |
+| DFS + branch-and-bound | evoluzione naturale del backtracking legacy | semplice, riproducibile | può esplodere senza buoni bound |
+
+Per il solo matching, A* non è la prima scelta: Hungarian o min-cost flow
+risolvono direttamente la corrispondenza. Se però la validità della prossima
+coppia dipende da quali forcine sono già montate e dalla zona ancora
+accessibile, lo stato diventa sequenziale e A* è appropriato.
+
+## 9.3 Proposta A* per matching e montaggio congiunti
+
+Uno stato può essere definito come:
+
+```text
+S = (coppieScelte,
+     interniLiberi,
+     esterniLiberi,
+     ordineMontaggio,
+     frontieraAngolare,
+     verso,
+     finestraAccessoResidua)
+```
+
+Un'azione aggiunge una coppia fattibile alla prossima posizione di montaggio.
+Il costo accumulato `g(S)` somma i costi delle coppie e le penalità di
+montaggio già certe. L'euristica `h(S)` deve sottostimare il costo residuo; un
+buon bound è il costo del matching minimo fra i fori rimasti ignorando le
+interferenze dinamiche. La priorità è `f(S)=g(S)+h(S)`.
+
+```text
+OPEN = coda con priorità contenente stato iniziale
+CLOSED = mappa stato -> miglior g noto
+
+MENTRE OPEN non è vuota
+    S = estrai stato con f minimo
+    SE S è completo: ritorna soluzione
+    SE esiste in CLOSED un costo <= g(S): continua
+    CLOSED[S] = g(S)
+
+    i = scegli interno più vincolato
+        // minimo numero di esterni ancora ammissibili, non raggio massimo
+
+    PER ogni esterno j candidato, ordinato per costo incrementale
+        SE viola matching uno-a-uno: scarta
+        SE viola Sorvolo/clearance/zona centrale: scarta
+        SE incrocia una coppia incompatibile: scarta
+        SE chiude la finestra di accesso prima del controllo: scarta
+        SE rende un altro interno privo di candidati: scarta
+
+        S2 = applica coppia (i,j) e aggiorna frontiera/accessibilità
+        g(S2) = g(S) + costoIncrementale
+        h(S2) = lowerBoundMatching(fori rimasti)
+        inserisci S2 in OPEN
+    FINE PER
+FINE MENTRE
+
+ritorna nessuna soluzione
+```
+
+La scelta “interno più vincolato” è la strategia MRV (*minimum remaining
+values*): tratta prima il foro con meno alternative. È spesso più efficace
+del raggio massimo nel prevenire gli intrappolamenti osservati nel legacy.
+
+## 9.4 Montaggio orario o antiorario
+
+Si introduce un angolo di riferimento `θ₀`, normalmente al centro del varco,
+e una coordinata angolare orientata:
+
+```text
+alphaCW(i)  = mod(θ₀ - θi, 2π)
+alphaCCW(i) = mod(θi - θ₀, 2π)
+```
+
+L'utente seleziona `verso=CW` oppure `CCW`. La sequenza deve rispettare una
+frontiera monotona, salvo una tolleranza o un numero massimo di inversioni:
+
+```text
+SE verso = CW:  alphaCW(nuova)  >= frontiera - tolleranza
+SE verso = CCW: alphaCCW(nuova) >= frontiera - tolleranza
+```
+
+È utile calcolare entrambe le soluzioni e confrontare costo, altezza massima,
+numero di pause e qualità dell'accesso. Il verso non dovrebbe cambiare le
+coppie se il matching e la sequenza sono risolti separatamente; può invece
+influenzarle nell'ottimizzazione congiunta.
+
+## 9.5 Finestra libera per accesso e controllo del giunto
+
+La finestra deve essere un vincolo geometrico esplicito, non soltanto una
+preferenza grafica. Si definiscono:
+
+- settore angolare `[θstart, θend]`;
+- raggio minimo/massimo della zona operativa;
+- larghezza utensile o sonda più margine;
+- fase fino alla quale la finestra deve restare libera;
+- eventuali corridoi radiali di ingresso e uscita.
+
+Una coppia è vietata durante la fase protetta se la sua **capsula geometrica**
+(segmento dilatato del raggio di ingombro) interseca il settore/corridoio.
+Questo è più sicuro che controllare soltanto la linea centrale.
+
+```text
+funzione Accessibile(coppieMontate, finestra, utensile):
+    ostacoli = capsule(coppieMontate, raggioIngombro)
+    corridoio = settoreFinestra eroso del margine utensile
+    ritorna esistePercorsoLibero(ingresso, giuntiDaControllare,
+                                corridoio - ostacoli)
+```
+
+`esistePercorsoLibero` può usare A* su una griglia 2D/3D o, meglio, su un
+grafo di visibilità/configuration space. Qui il pathfinding è applicato al
+percorso della sonda/utensile, non al matching astratto dei fori.
+
+Si possono imporre due modalità:
+
+1. **finestra permanente:** nessuna forcina può invaderla;
+2. **finestra temporanea:** resta libera fino al controllo, poi le ultime
+   forcine possono chiuderla. Queste vengono marcate come gruppo finale.
+
+## 9.6 Riduzione della ricerca senza perdere soluzioni importanti
+
+Filtri consigliati, nell'ordine:
+
+1. limiti radiali e angolari economici;
+2. `Sorvolo` con indice spaziale invece di scansione totale;
+3. verifica zona centrale;
+4. controllo che ogni nodo rimasto abbia almeno un arco;
+5. test rapido di esistenza di matching completo;
+6. interferenze segmento-segmento tramite R-tree/k-d tree;
+7. verifica tridimensionale soltanto sui candidati sopravvissuti.
+
+La lista dei candidati può partire con `K=8` o con una semiampiezza angolare
+limitata. Se non esiste un matching completo, si amplia progressivamente
+`K`/finestra; in questo modo la riduzione non diventa un rifiuto definitivo
+arbitrario.
+
+## 9.7 Complessità prevista della soluzione moderna
+
+- costruire ingenuamente tutti i costi richiede `O(N²)`; un k-d tree limita
+  la ricerca dei vicini, ma i casi densi restano quadratici;
+- Hungarian è `O(N³)` con memoria `O(N²)`;
+- min-cost flow dipende da vertici, archi e implementazione, ma sul grafo
+  sparso con `K` candidati usa circa `O(NK)` archi;
+- CP-SAT/MILP e A* hanno complessità esponenziale nel caso peggiore;
+- A* consuma memoria proporzionale agli stati aperti; beam search la limita a
+  `B` stati per livello, al prezzo della garanzia di ottimalità;
+- i controlli geometrici passano da scansioni `O(N)` per candidato a query
+  circa `O(log N + risultati)` usando un indice spaziale.
+
+La strategia pratica suggerita è: matching min-cost sul grafo sparso, verifica
+geometrica, aggiunta iterativa di *cut* per combinazioni incompatibili, quindi
+beam search/A* per la sequenza e la finestra di accesso. Per casi piccoli o di
+certificazione, CP-SAT può fungere da soluzione di riferimento.
+
+## 9.8 Migrazione sicura e validazione
+
+Il nuovo algoritmo non deve sostituire subito il legacy. Va introdotto dietro
+un'interfaccia comune e confrontato su commesse reali:
+
+```text
+PairingResult Solve(Layout interno, Layout esterno, Constraints, Strategy)
+```
+
+Per ogni caso si devono conservare: `.COO` legacy, soluzione nuova, costo,
+clearance minima, attraversamenti, altezza massima, ordine, verso, finestra
+libera e tempo di calcolo. I golden test devono verificare prima la
+fattibilità; l'ottimalità viene valutata soltanto dopo aver dimostrato che non
+sono cambiate le convenzioni geometriche.
+
+# 10. Percorso consigliato nel debugger
 
 ## Layout ordinario
 
@@ -623,7 +934,7 @@ Gli output osservati nel codice comprendono:
    altezza, distanza minima e forcina limitante;
 7. verificare `.COO`, `.RES`, `.MTO` e `.SEQ` prodotti nella commessa.
 
-# 10. Mappa del codice
+# 11. Mappa del codice
 
 | File | Responsabilità principale |
 |---|---|
@@ -634,7 +945,7 @@ Gli output osservati nel codice comprendono:
 | `Tr13N.vb` | inizializzazione, caricamento e collegamento con Lancio/PPSM |
 | `OpFin.vb`, `frmDatiOut.vb` | opzioni e presentazione degli output |
 
-# 11. Rischi tecnici da preservare nella futura riscrittura
+# 12. Rischi tecnici da preservare nella futura riscrittura
 
 - distinguere sempre **numero tubi**, **numero fori** e **numero gambe**;
 - preservare convenzioni `bu=0/1/9`, indici base 1 e simmetrie `hsym`;

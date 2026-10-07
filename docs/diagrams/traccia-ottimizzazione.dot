@@ -1,0 +1,18 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.2, nodesep=0.35];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5ff", color="#315b8a", fontname="Arial", fontsize=10];
+  edge [color="#52677d", fontname="Arial", fontsize=9];
+  input [label="Fori I/E + vincoli\nverso + finestra accesso"];
+  candidates [label="Grafo bipartito sparso\nK candidati per interno"];
+  match [label="Matching min-cost / CP-SAT\ncoppie uno-a-uno"];
+  geometry [label="Verifica geometrica\nclearance, incroci, centro"];
+  cuts [label="Aggiunge cut / amplia K", fillcolor="#fff7d6"];
+  order [label="A* / beam search\nsequenza CW o CCW"];
+  access [label="Pathfinding utensile/sonda\nfinestra libera"];
+  result [label="Soluzione verificata\n.COO + sequenza + metriche", fillcolor="#e6f7ee"];
+  input -> candidates -> match -> geometry;
+  geometry -> cuts [label="non fattibile"];
+  cuts -> candidates;
+  geometry -> order [label="fattibile"];
+  order -> access -> result;
+}
