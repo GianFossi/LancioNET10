@@ -47,6 +47,10 @@ Public Class WordReportPanel
     End Sub
 
     Public Sub SetTemplate(path As String)
+        If String.IsNullOrWhiteSpace(path) Then
+            templatePath = Nothing
+            Return
+        End If
         If Not File.Exists(path) Then Throw New FileNotFoundException("Word template not found.", path)
         templatePath = System.IO.Path.GetFullPath(path)
     End Sub

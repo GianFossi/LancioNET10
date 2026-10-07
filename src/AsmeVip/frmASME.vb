@@ -490,6 +490,8 @@ Friend Class Apert
         'MainMenu1
         '
         Me.MainMenu1.Items.AddRange(New System.Windows.Forms.ToolStripMenuItem() {Me.bigMenu, Me.mnuDati, Me.mnuCalc, Me.mnuCompil, Me.mnuDis0, Me.mnuPref, Me._mnuAiuto_0})
+        Me.MainMenu1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MainMenu1.Visible = True
         '
         'bigMenu
         '
@@ -903,6 +905,8 @@ Friend Class Apert
         Dim y As Integer = CInt((ClientRectangle.Height - bm.Height) / 2)
         g.DrawImage(bm, x, y, CInt(bm.Width), CInt(bm.Height))
         PictureBox1.Image = doveBitmap
+        PictureBox1.SendToBack()
+        MainMenu1.BringToFront()
     End Sub
     Private Sub Apert_Closed(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Closed
         ChiudeFileU()
@@ -3019,7 +3023,14 @@ Cont:       Next
             If OptWordIn Then
                 Testo = "Si"
                 wordPanel.EnsureStarted()
-                wordPanel.SetTemplate(Monitor.Motore.Inizio.Archdir + "\mioTemplate.dot")
+                Dim templatePath = IO.Path.Combine(Monitor.Motore.Inizio.Archdir, "mioTemplate.dot")
+                If IO.File.Exists(templatePath) Then
+                    wordPanel.SetTemplate(templatePath)
+                Else
+                    ' The original WinWordControl accepted a machine-local template.
+                    ' Use Word's normal template when that optional file is absent.
+                    wordPanel.SetTemplate(Nothing)
+                End If
                 TabRapporto.Enabled = True
             Else
                 Testo = "No"
