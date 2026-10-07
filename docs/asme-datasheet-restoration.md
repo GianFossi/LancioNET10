@@ -24,6 +24,17 @@ inserire i componenti, vengono resi visibili e portati esplicitamente in primo
 piano. Alla chiusura del progetto i pannelli vengono nascosti e la schermata
 iniziale viene ripristinata.
 
+Un progetto senza componenti mantiene ora abilitato `Inserisci elemento` e
+mostra anche un pulsante `Inserisci` nel pannello sinistro. Selezionando
+`LatoMant`, `LatoTubi` o `Fra i due`, il pulsante crea il primo elemento; lo
+stato riporta il percorso del file anche quando il modello è ancora vuoto.
+
+Ogni avvio registra i tempi cumulativi di costruttore, dipendenze, commessa,
+costruzione e visualizzazione della finestra in
+`%LOCALAPPDATA%\LancioNET10-Debug\asme-startup.log`. Il report permette di
+distinguere il costo dell'avvio del modulo da quello dell'apertura di un file
+VIP, incluso un file collocato in una cartella OneDrive.
+
 AsmeVip usa il bridge di serializzazione isolato e namespace WinForms espliciti.
 RichiaTir assegna Diam e chiama la ricerca esistente Cerca("Diam"), coerente con
 la firma LibMat fornita. I corpi delle routine Calcoli.vb non sono stati cambiati.

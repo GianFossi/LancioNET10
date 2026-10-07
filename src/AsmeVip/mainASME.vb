@@ -339,7 +339,9 @@ Module mainASME
                 .cmdDati.Enabled = True
                 .cmdCalc.Enabled = True
                 .Command1.Enabled = True
+                .cmdInserisci.Enabled = True
             ElseIf Asc(icome) > 32 And NumInvTot() = 0 Then
+                Testo = icome
                 .mnuChiudi.Enabled = True
                 .mnuSalva.Enabled = False
                 .mnuSalvaCome.Enabled = False
@@ -347,11 +349,12 @@ Module mainASME
                 .mnuDati.Enabled = True
                 .mnuDatiElem.Enabled = False
                 .mnuConvElem.Enabled = False
-                .mnuInseElem.Enabled = False
+                .mnuInseElem.Enabled = True
                 .mnuElimElemento.Enabled = False
                 .cmdDati.Enabled = False
                 .cmdCalc.Enabled = False
                 .Command1.Enabled = False
+                .cmdInserisci.Enabled = True
             Else
                 .mnuChiudi.Enabled = False
                 .mnuCalc.Enabled = False
@@ -365,6 +368,7 @@ Module mainASME
                 .cmdDati.Enabled = False
                 .cmdCalc.Enabled = False
                 .Command1.Enabled = False
+                .cmdInserisci.Enabled = False
             End If
             Testo = " File corrente = " & Testo
             .StatusBar1.Items(1).Text = Testo

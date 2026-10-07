@@ -35,6 +35,7 @@ Friend Class Apert
     Public WithEvents cmdDati As System.Windows.Forms.Button
 	Public WithEvents cmdCalc As System.Windows.Forms.Button
 	Public WithEvents Command1 As System.Windows.Forms.Button
+	Public WithEvents cmdInserisci As System.Windows.Forms.Button
 	Public WithEvents _Frames_1 As System.Windows.Forms.GroupBox
     Public WithEvents mnuApri As System.Windows.Forms.ToolStripMenuItem
 	Public WithEvents mnuSalva As System.Windows.Forms.ToolStripMenuItem
@@ -131,6 +132,7 @@ Friend Class Apert
         Me.cmdDati = New System.Windows.Forms.Button
         Me.cmdCalc = New System.Windows.Forms.Button
         Me.Command1 = New System.Windows.Forms.Button
+        Me.cmdInserisci = New System.Windows.Forms.Button
         Me._mnuAiuto_0 = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem
         Me.mnuInf = New System.Windows.Forms.ToolStripMenuItem
@@ -388,6 +390,7 @@ Friend Class Apert
         Me._Frames_1.Controls.Add(Me.cmdDati)
         Me._Frames_1.Controls.Add(Me.cmdCalc)
         Me._Frames_1.Controls.Add(Me.Command1)
+        Me._Frames_1.Controls.Add(Me.cmdInserisci)
         Me._Frames_1.ForeColor = System.Drawing.Color.Yellow
         Me._Frames_1.Location = New System.Drawing.Point(0, 0)
         Me._Frames_1.Name = "_Frames_1"
@@ -447,9 +450,20 @@ Friend Class Apert
         Me.Command1.Location = New System.Drawing.Point(120, 16)
         Me.Command1.Name = "Command1"
         Me.Command1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Command1.Size = New System.Drawing.Size(73, 25)
+        Me.Command1.Size = New System.Drawing.Size(60, 25)
         Me.Command1.TabIndex = 2
         Me.Command1.Text = "Espandi"
+        '
+        'cmdInserisci
+        '
+        Me.cmdInserisci.BackColor = System.Drawing.SystemColors.Control
+        Me.cmdInserisci.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.cmdInserisci.Location = New System.Drawing.Point(180, 16)
+        Me.cmdInserisci.Name = "cmdInserisci"
+        Me.cmdInserisci.Size = New System.Drawing.Size(72, 25)
+        Me.cmdInserisci.TabIndex = 17
+        Me.cmdInserisci.Text = "Inserisci"
+        Me.cmdInserisci.Enabled = False
         '
         '_mnuAiuto_0
         '
@@ -825,6 +839,9 @@ Friend Class Apert
     End Sub
     Private Sub cmdDati_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdDati.Click
         mnuDatiElem_Click(mnuDatiElem, New System.EventArgs)
+    End Sub
+    Private Sub cmdInserisci_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdInserisci.Click
+        mnuInseElem_Click(mnuInseElem, New System.EventArgs)
     End Sub
     Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
         EspCom()
@@ -1262,15 +1279,21 @@ ErrH:
         jInvolucr = 1
         kNozzle = 1
         If SelNode Is Nothing Then
-            If Config(0).NumeroLati = 1 Then GoTo Fai
+            If Config(0).NumeroLati = 1 Then
+                kLato = 1
+                jInvolucr = Config(kLato).Ninvolucri + 1
+                GoTo Fai
+            End If
             Beep()
             mnuInseElem.Enabled = False
+            cmdInserisci.Enabled = False
+            Exit Sub
         End If
         k = SelNode.Tag
         Select Case k
-            Case "LT" : kLato = 2
-            Case "LL" : kLato = 3
-            Case "LM" : kLato = 1
+            Case "LT" : kLato = 2 : jInvolucr = Config(kLato).Ninvolucri + 1
+            Case "LL" : kLato = 3 : jInvolucr = Config(kLato).Ninvolucri + 1
+            Case "LM" : kLato = 1 : jInvolucr = Config(kLato).Ninvolucri + 1
             Case Else
                 If InStr(k, "Inv") > 0 Then
                     k = VB.Right(k, Len(k) - 3)
@@ -2761,6 +2784,7 @@ Cont:       Next
             '  mnuRapp.Enabled = True
             cmdCalc.Enabled = True
             cmdDati.Enabled = True
+            cmdInserisci.Enabled = True
         End If
         If InStr(eventargs.Node.Tag, "Noz") > 0 Then
             k = VB.Right(eventargs.Node.Tag, Len(eventargs.Node.Tag) - 3)
@@ -2777,6 +2801,14 @@ Cont:       Next
             cmdDati.Enabled = True
             mnuConvElem.Enabled = False
             mnuInseElem.Enabled = False
+            cmdInserisci.Enabled = False
+        End If
+        If eventargs.Node.Tag = "LM" OrElse eventargs.Node.Tag = "LT" OrElse eventargs.Node.Tag = "LL" Then
+            mnuInseElem.Text = "&Inserisci elemento"
+            mnuInseElem.Enabled = True
+            cmdInserisci.Enabled = True
+            cmdCalc.Enabled = False
+            cmdDati.Enabled = False
         End If
         'TreeView1.SelectedNode = eventargs.Node
         'TreeView1.DropHighlight = eventargs.Node

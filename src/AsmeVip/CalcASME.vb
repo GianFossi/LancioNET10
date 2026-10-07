@@ -3,6 +3,8 @@ Option Explicit On
 Imports System.Windows.Forms
 Public Class CalcASME
     Public Out As Boolean
+    Private ReadOnly startupTimer As System.Diagnostics.Stopwatch = System.Diagnostics.Stopwatch.StartNew()
+    Private ReadOnly startupStages As New System.Collections.Generic.List(Of String)
     Public Sub New()
         MyBase.New()
         Monitor = New clsMonitor
@@ -17,6 +19,7 @@ Public Class CalcASME
           System.Resources.ResourceManager("AsmeVip.HelpTopics", myAssembly)
         GlobalRoutines = New RoutBase1.clsTrigon
         objASME = Me
+        RecordStartupStage("costruttore")
     End Sub
     Public Sub Dispose()
         myAssembly = Nothing
@@ -55,6 +58,7 @@ Public Class CalcASME
             inizio = Monitor.Motore.Inizio
             RadiceHelp = inizio.AppLancio & rmHelpStrings.GetString("Helpfile") '"\BIN\AsmeVip.chm"
             Dim InitLibmat As LibMat.clsInitLibMat = New LibMat.clsInitLibMat(Monitor.Motore)
+            RecordStartupStage("dipendenze")
         End Set
     End Property
     Public Sub EseguiSciolto()
@@ -69,9 +73,28 @@ Public Class CalcASME
         job.Comm.Ind(1).Data.File = "$"
         job.Comm.peso = 0.0!
         job.AggiungiCom("Sciolt")
+        RecordStartupStage("commessa iniziale")
         'Monitor.Motore.inizio.LavoriSciolti = True
         mioApert = New Apert
+        RecordStartupStage("costruzione finestra")
         mioApert.Show()
+        RecordStartupStage("visualizzazione finestra")
+        WriteStartupReport()
+    End Sub
+    Private Sub RecordStartupStage(name As String)
+        startupStages.Add(name & "=" & startupTimer.ElapsedMilliseconds.ToString() & "ms")
+    End Sub
+    Private Sub WriteStartupReport()
+        Try
+            Dim reportDirectory = IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "LancioNET10-Debug")
+            IO.Directory.CreateDirectory(reportDirectory)
+            Dim reportPath = IO.Path.Combine(reportDirectory, "asme-startup.log")
+            Dim line = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") & " " & String.Join("; ", startupStages)
+            IO.File.AppendAllText(reportPath, line & Environment.NewLine)
+            System.Diagnostics.Trace.WriteLine("AsmeVip startup: " & line)
+        Catch ex As Exception
+            System.Diagnostics.Trace.WriteLine("AsmeVip startup diagnostics: " & ex.Message)
+        End Try
     End Sub
     Public Sub EseguiAutom()
         Dim Res As Short
