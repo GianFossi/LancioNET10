@@ -96,9 +96,8 @@
     <ProjectReference Include="../RoutBase/RoutBase1.vbproj" />
     <ProjectReference Include="../Traccia/Traccia.vbproj" />
     <ProjectReference Include="../StubW2000/StubW2000.vbproj" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="stdole" />
     <Reference Include="StdFormat" />
-    <Reference Include="StdType" />
   </ItemGroup>
+  <ItemGroup><Compile Include="../RoutBase/IndexedControls.vb" Link="Migration/IndexedControls.vb" /></ItemGroup>
+  <ItemGroup><Compile Include="../Grafic2/LegacyUiUnits.vb" Link="Migration/LegacyUiUnits.vb" /></ItemGroup>
 </Project>

@@ -1869,7 +1869,7 @@ Friend Class frmGen
                 Testo = "Così facendo andranno persi i dati relativi|"
                 Testo = Testo & "alle membrature sul secondo e terzo lato.||Continuare ?"
                 Testo = clsInizio.ConvertiCr(Testo)
-                If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.No Then Exit Sub
+                If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = System.Windows.Forms.DialogResult.No Then Exit Sub
             End If
             Config(0).NumeroLati = n
             _Frames_1.Visible = n = 3

@@ -82,11 +82,11 @@ Friend Class DataShee
     Public WithEvents LabImp As System.Windows.Forms.Label
     Public WithEvents LabClie As System.Windows.Forms.Label
     Public WithEvents LabTEMA As System.Windows.Forms.Label
-    Public WithEvents LabFlui As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label1 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-    Public WithEvents ValorM As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents ValorT As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public LabFlui As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label1 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+    Public ValorM As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public ValorT As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -144,16 +144,6 @@ Friend Class DataShee
         Me.LabImp = New System.Windows.Forms.Label
         Me.LabClie = New System.Windows.Forms.Label
         Me.LabTEMA = New System.Windows.Forms.Label
-        Me.LabFlui = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(components)
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(components)
-        Me.ValorM = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        Me.ValorT = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(components)
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ValorM, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ValorT, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -866,36 +856,45 @@ Friend Class DataShee
         Me.Frame1.Controls.Add(_Option1_2)
         Me.Frame1.Controls.Add(_Option1_1)
         Me.Frame1.Controls.Add(_Option1_0)
-        Me.LabFlui.SetIndex(_LabFlui_8, CType(8, Short))
-        Me.LabFlui.SetIndex(_LabFlui_5, CType(5, Short))
-        Me.LabFlui.SetIndex(_LabFlui_4, CType(4, Short))
-        Me.LabFlui.SetIndex(_LabFlui_3, CType(3, Short))
-        Me.LabFlui.SetIndex(_LabFlui_2, CType(2, Short))
-        Me.LabFlui.SetIndex(_LabFlui_1, CType(1, Short))
-        Me.LabFlui.SetIndex(_LabFlui_0, CType(0, Short))
-        Me.Label1.SetIndex(_Label1_2, CType(2, Short))
-        Me.Label1.SetIndex(_Label1_0, CType(0, Short))
-        Me.Label1.SetIndex(_Label1_1, CType(1, Short))
-        Me.Option1.SetIndex(_Option1_2, CType(2, Short))
-        Me.Option1.SetIndex(_Option1_1, CType(1, Short))
-        Me.Option1.SetIndex(_Option1_0, CType(0, Short))
-        Me.ValorM.SetIndex(_ValorM_5, CType(5, Short))
-        Me.ValorM.SetIndex(_ValorM_4, CType(4, Short))
-        Me.ValorM.SetIndex(_ValorM_3, CType(3, Short))
-        Me.ValorM.SetIndex(_ValorM_2, CType(2, Short))
-        Me.ValorM.SetIndex(_ValorM_1, CType(1, Short))
-        Me.ValorM.SetIndex(_ValorM_0, CType(0, Short))
-        Me.ValorT.SetIndex(_ValorT_5, CType(5, Short))
-        Me.ValorT.SetIndex(_ValorT_4, CType(4, Short))
-        Me.ValorT.SetIndex(_ValorT_3, CType(3, Short))
-        Me.ValorT.SetIndex(_ValorT_2, CType(2, Short))
-        Me.ValorT.SetIndex(_ValorT_1, CType(1, Short))
-        Me.ValorT.SetIndex(_ValorT_0, CType(0, Short))
-        CType(Me.ValorT, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ValorM, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.LabFlui.Add(8, _LabFlui_8)
+        Me.LabFlui.Add(5, _LabFlui_5)
+        Me.LabFlui.Add(4, _LabFlui_4)
+        Me.LabFlui.Add(3, _LabFlui_3)
+        Me.LabFlui.Add(2, _LabFlui_2)
+        Me.LabFlui.Add(1, _LabFlui_1)
+        Me.LabFlui.Add(0, _LabFlui_0)
+        Me.Label1.Add(2, _Label1_2)
+        Me.Label1.Add(0, _Label1_0)
+        Me.Label1.Add(1, _Label1_1)
+        Me.Option1.Add(2, _Option1_2)
+        Me.Option1.Add(1, _Option1_1)
+        Me.Option1.Add(0, _Option1_0)
+        Me.ValorM.Add(5, _ValorM_5)
+        Me.ValorM.Add(4, _ValorM_4)
+        Me.ValorM.Add(3, _ValorM_3)
+        Me.ValorM.Add(2, _ValorM_2)
+        Me.ValorM.Add(1, _ValorM_1)
+        Me.ValorM.Add(0, _ValorM_0)
+        Me.ValorT.Add(5, _ValorT_5)
+        Me.ValorT.Add(4, _ValorT_4)
+        Me.ValorT.Add(3, _ValorT_3)
+        Me.ValorT.Add(2, _ValorT_2)
+        Me.ValorT.Add(1, _ValorT_1)
+        Me.ValorT.Add(0, _ValorT_0)
+        For Each control In ValorT.Values
+            AddHandler control.TextChanged, AddressOf ValorT_Change
+        Next
+        For Each control In ValorM.Values
+            AddHandler control.TextChanged, AddressOf ValorM_Change
+        Next
+        For Each control In ValorM.Values
+            AddHandler control.KeyPress, AddressOf ValorM_KeyPressEvent
+        Next
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
+
+
     End Sub
 #End Region 
 #Region "Supporto aggiornamento "
@@ -972,9 +971,9 @@ Friend Class DataShee
     End Sub
 
     'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             Call Convert(Index + 1)
             DataSheet.DatiPrg.UniMis = Index + 1
             DataShe1.DefInstance.Option1(Index).Checked = True
@@ -1006,18 +1005,18 @@ Friend Class DataShee
         DataSheet.DatiSh0.Impianto = TexImp.Text
     End Sub
 
-    Private Sub ValorM_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ValorM.TextChanged
-        Dim Index As Short = ValorM.GetIndex(eventSender)
+    Private Sub ValorM_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ValorM, eventSender)
         DataSheet.DatiS2.ValorM(Index + 1) = Val(DataShee.DefInstance.ValorM(Index).Text)
     End Sub
 
-    Private Sub ValorM_KeyPressEvent(ByVal eventSender As System.Object, ByVal e As KeyPressEventArgs) Handles ValorM.KeyPress
-        Dim Index As Short = ValorM.GetIndex(eventSender)
+    Private Sub ValorM_KeyPressEvent(ByVal eventSender As System.Object, ByVal e As KeyPressEventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ValorM, eventSender)
         ModifiedData = True
     End Sub
 
-    Private Sub ValorT_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ValorT.TextChanged
-        Dim Index As Short = ValorT.GetIndex(eventSender)
+    Private Sub ValorT_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ValorT, eventSender)
         DataSheet.DatiS2.ValorT(Index + 1) = Val(DataShee.DefInstance.ValorT(Index).Text)
     End Sub
 End Class

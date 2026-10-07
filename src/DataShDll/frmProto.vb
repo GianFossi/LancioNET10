@@ -335,19 +335,19 @@ Friend Class frmProto
             'Routines.DoveDisegnog.Clear(Color.White)
             Return False
         End Try
-        H1 = VB6.PixelsToTwipsY(Picture1.Height)
-        W1 = VB6.PixelsToTwipsX(Picture1.Width)
+        H1 = LegacyUiUnits.PixelsToTwipsY(Picture1.Height)
+        W1 = LegacyUiUnits.PixelsToTwipsX(Picture1.Width)
         Factor = H1 / H
         If W1 / W > Factor Then Factor = W1 / W
-        Picture1.Height = VB6.TwipsToPixelsY(VB6.PixelsToTwipsY(Picture1.Height) / Factor)
-        Picture1.Width = VB6.TwipsToPixelsX(VB6.PixelsToTwipsX(Picture1.Width) / Factor)
-        Picture1.Top = VB6.TwipsToPixelsY(TopFig + H - VB6.PixelsToTwipsY(Picture1.Height))
+        Picture1.Height = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Picture1.Height) / Factor)
+        Picture1.Width = GlobalRoutines.TwipsToPixelsX(LegacyUiUnits.PixelsToTwipsX(Picture1.Width) / Factor)
+        Picture1.Top = GlobalRoutines.TwipsToPixelsY(TopFig + H - LegacyUiUnits.PixelsToTwipsY(Picture1.Height))
         Picture1.Visible = True
-        If VB6.PixelsToTwipsY(Picture1.Top) + VB6.PixelsToTwipsY(Picture1.Height) > VB6.PixelsToTwipsY(Height) - 200 Then Height = VB6.TwipsToPixelsY(VB6.PixelsToTwipsY(Picture1.Top) + VB6.PixelsToTwipsY(Picture1.Height) + 200)
+        If LegacyUiUnits.PixelsToTwipsY(Picture1.Top) + LegacyUiUnits.PixelsToTwipsY(Picture1.Height) > LegacyUiUnits.PixelsToTwipsY(Height) - 200 Then Height = GlobalRoutines.TwipsToPixelsY(LegacyUiUnits.PixelsToTwipsY(Picture1.Top) + LegacyUiUnits.PixelsToTwipsY(Picture1.Height) + 200)
         ' Grid1.Col = 0
         ' Clas = LTrim(RTrim(Grid1.CtlText))
         For i = 0 To ListClasse.Items.Count - 1
-            If VB.Left(LTrim(VB6.GetItemString(ListClasse, i)), 1) = Clas Then
+            If VB.Left(LTrim(ListClasse.GetItemText(ListClasse.Items(i))), 1) = Clas Then
                 LabClasse.Text = Clas
                 Exit For
             End If
@@ -427,9 +427,9 @@ Friend Class frmProto
         Dim n As Short
         Inizializza1 = True
         ProtoVec = ProtoTyp
-        H = VB6.PixelsToTwipsY(Picture1.Height)
-        W = VB6.PixelsToTwipsX(Picture1.Width)
-        TopFig = VB6.PixelsToTwipsY(Picture1.Top)
+        H = LegacyUiUnits.PixelsToTwipsY(Picture1.Height)
+        W = LegacyUiUnits.PixelsToTwipsX(Picture1.Width)
+        TopFig = LegacyUiUnits.PixelsToTwipsY(Picture1.Top)
         LabClasse.Text = mioApert.cmbClasse.Text
         TEMA.Text = mioApert.TEMA.Text
         Nome = mioApert.FBMLabel.Text

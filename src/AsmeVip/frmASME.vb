@@ -960,7 +960,7 @@ Friend Class Apert
                 Testo = Testo & "esiste già alla Rev. " & MaxRev & "." & vbCrLf
                 Testo = Testo & "Vuoi sovrascriverlo (Si) o vuoi passare (No)" & vbCrLf
                 Testo = Testo & "alla revisione successiva ?"
-                If MessageBox.Show(Me, Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.No Then
+                If MessageBox.Show(Me, Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.No Then
                     Testo = documenti.Item(MaxRev)
                     MaxRev = Trim(Str(Val(MaxRev) + 1))
                     Mid(Testo, Len(Testo) - 4, 1) = MaxRev
@@ -1543,7 +1543,7 @@ Fine:
                 Testo = Testo & "Volete ricompilarla comunque?" & vbCrLf
                 Testo = Testo & "(N.B.: La nuova redazione si aggiungerà alla vecchia" & vbCrLf
                 Testo = Testo & "redazione, senza sostituzione delle parti obsolete)."
-                If MessageBox.Show(Me, Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.No Then Exit Sub
+                If MessageBox.Show(Me, Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.No Then Exit Sub
             End If
             Documento.Visible = False
             Monitor.Motore.ProgrInizio("Attendere la compilazione della tabella materiali", "AsmeVip")

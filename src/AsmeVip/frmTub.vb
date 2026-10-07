@@ -1475,7 +1475,7 @@ Friend Class frmTub
     End Function
 
     Private Function GeneraTracciatura(ByVal objtraccia As traccia.clsTracciatura, ByVal File As String) As Short
-        If MessageBox.Show(Me, "La tracciatura " & File & " non è stata trovata. Vuoi generarla?", "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+        If MessageBox.Show(Me, "La tracciatura " & File & " non è stata trovata. Vuoi generarla?", "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then
             With Involucr(kLatoLoc, jInvolucrLoc)
                 objtraccia.DiametroTubo = .dns
                 objtraccia.SpessoreTubo = .Spess

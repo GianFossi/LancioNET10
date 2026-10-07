@@ -2393,7 +2393,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
         End With
     End Sub
     Sub Salva(ByRef fs As FileStream)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Str(Mem.M(165)) = " 25.4" And Str(Mem.Z(165)) = " 645.16" Then Mem.M(165) = 0 : Mem.Z(165) = 0
         bf.Serialize(fs, Mem)
         If Configwn.BoltLoadDetail And Serr Is Nothing Then Configwn.BoltLoadDetail = False
@@ -2454,7 +2454,7 @@ ErrCope:    If Err.Number = 6 Or Err.Number = 11 Then
         End If
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Dim nomefile As String
         Mem = CType(bf.Deserialize(fs), typMemoryBank)
         Leggi = True
@@ -5429,7 +5429,7 @@ Rif:        Call Caract(nn)
         Tira.Xfil = Mem.XFil
         If Mem.M(14) > 0 Then
             Tira.Diam = Mem.M(14)
-            Tira.Cerca()
+            Tira.Cerca("Diam")
         Else
             Tira.DN = Mem.TIR
             Tira.CercaDN()

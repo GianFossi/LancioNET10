@@ -1259,7 +1259,7 @@ Friend Class frmTab
             Testo1 = Testo1 & "N.B.: In caso di risposta affermativa saranno uguagliati anche" & vbCrLf
             Testo1 = Testo1 & "tutti i rimanenti dati geometrici relativi ai tiranti."
             If Not ContinuoAuto Then
-                If MessageBox.Show(Me, Testo1, "AsmeVip - Grandi Fucinati", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                If MessageBox.Show(Me, Testo1, "AsmeVip - Grandi Fucinati", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then
                     QuestaFlangia.Mp(4) = QuellaFlangia.Mp(4)
                     QuestaFlangia.Zp(4) = QuellaFlangia.Zp(4)
                     For i = 13 To 21
@@ -1296,7 +1296,7 @@ Friend Class frmTab
                 PrintlstRes(Testo1)
                 nIndent = 0
             Else
-                If MessageBox.Show(Me, Testo1, "AsmeVip - Grandi Fucinati", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                If MessageBox.Show(Me, Testo1, "AsmeVip - Grandi Fucinati", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then
                     QuestaFlangia.Mp(5) = QuellaFlangia.Mp(5)
                     QuestaFlangia.Zp(5) = QuellaFlangia.Zp(5)
                     For i = 26 To 31

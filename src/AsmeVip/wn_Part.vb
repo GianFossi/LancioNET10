@@ -89,7 +89,7 @@ Friend Class wn_Part
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
         Leggi = True
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Problem = CType(bf.Deserialize(fs), typProblem)
         Transfer()
     End Function
@@ -124,7 +124,7 @@ Friend Class wn_Part
             .longdim = longdim
             .transvdim = transvdim
         End With
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Problem)
     End Sub
 

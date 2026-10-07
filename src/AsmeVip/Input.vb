@@ -897,7 +897,7 @@ ExDil:
         Dim Testo As String
         Dim Dimen, j, i, ii, ifl As Short
         Dim NumLati, Nnozz, k As Short
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Dim fs As FileStream = Nothing
         indici = New LinkListSh
         indiciAttivi = New LinkListSh

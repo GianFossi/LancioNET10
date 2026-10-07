@@ -132,10 +132,10 @@ Friend Class DataShe2
     Public WithEvents _LabFlui_2 As System.Windows.Forms.Label
     Public WithEvents _LabFlui_1 As System.Windows.Forms.Label
     Public WithEvents _LabFlui_0 As System.Windows.Forms.Label
-    Public WithEvents LabFlui As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Label0 As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Mater As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents cmdMater As Microsoft.VisualBasic.Compatibility.vb6.ButtonArray
+    Public LabFlui As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Label0 As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Mater As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public cmdMater As New System.Collections.Generic.Dictionary(Of Integer, Button)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -242,14 +242,6 @@ Friend Class DataShe2
         Me._LabFlui_2 = New System.Windows.Forms.Label
         Me._LabFlui_1 = New System.Windows.Forms.Label
         Me._LabFlui_0 = New System.Windows.Forms.Label
-        Me.LabFlui = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Label0 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Mater = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.cmdMater = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Label0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Mater, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmdMater, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_Mater_27
@@ -260,7 +252,7 @@ Friend Class DataShe2
         Me._Mater_27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_27.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_27.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_27, CType(27, Short))
+        Me.Mater.Add(27, Me._Mater_27)
         Me._Mater_27.Location = New System.Drawing.Point(430, 340)
         Me._Mater_27.MaxLength = 0
         Me._Mater_27.Name = "_Mater_27"
@@ -278,7 +270,7 @@ Friend Class DataShe2
         Me._Mater_26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_26.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_26.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_26, CType(26, Short))
+        Me.Mater.Add(26, Me._Mater_26)
         Me._Mater_26.Location = New System.Drawing.Point(430, 320)
         Me._Mater_26.MaxLength = 0
         Me._Mater_26.Name = "_Mater_26"
@@ -295,7 +287,7 @@ Friend Class DataShe2
         Me._Mater_25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_25.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_25.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_25, CType(25, Short))
+        Me.Mater.Add(25, Me._Mater_25)
         Me._Mater_25.Location = New System.Drawing.Point(430, 300)
         Me._Mater_25.MaxLength = 0
         Me._Mater_25.Name = "_Mater_25"
@@ -312,7 +304,7 @@ Friend Class DataShe2
         Me._Mater_24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_24.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_24.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_24, CType(24, Short))
+        Me.Mater.Add(24, Me._Mater_24)
         Me._Mater_24.Location = New System.Drawing.Point(430, 280)
         Me._Mater_24.MaxLength = 0
         Me._Mater_24.Name = "_Mater_24"
@@ -329,7 +321,7 @@ Friend Class DataShe2
         Me._Mater_23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_23.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_23.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_23, CType(23, Short))
+        Me.Mater.Add(23, Me._Mater_23)
         Me._Mater_23.Location = New System.Drawing.Point(430, 260)
         Me._Mater_23.MaxLength = 0
         Me._Mater_23.Name = "_Mater_23"
@@ -346,7 +338,7 @@ Friend Class DataShe2
         Me._Mater_22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_22.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_22.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_22, CType(22, Short))
+        Me.Mater.Add(22, Me._Mater_22)
         Me._Mater_22.Location = New System.Drawing.Point(430, 240)
         Me._Mater_22.MaxLength = 0
         Me._Mater_22.Name = "_Mater_22"
@@ -363,7 +355,7 @@ Friend Class DataShe2
         Me._Mater_21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_21.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_21.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_21, CType(21, Short))
+        Me.Mater.Add(21, Me._Mater_21)
         Me._Mater_21.Location = New System.Drawing.Point(430, 220)
         Me._Mater_21.MaxLength = 0
         Me._Mater_21.Name = "_Mater_21"
@@ -380,7 +372,7 @@ Friend Class DataShe2
         Me._Mater_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_20.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_20.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_20, CType(20, Short))
+        Me.Mater.Add(20, Me._Mater_20)
         Me._Mater_20.Location = New System.Drawing.Point(430, 200)
         Me._Mater_20.MaxLength = 0
         Me._Mater_20.Name = "_Mater_20"
@@ -397,7 +389,7 @@ Friend Class DataShe2
         Me._Mater_19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_19.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_19.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_19, CType(19, Short))
+        Me.Mater.Add(19, Me._Mater_19)
         Me._Mater_19.Location = New System.Drawing.Point(430, 180)
         Me._Mater_19.MaxLength = 0
         Me._Mater_19.Name = "_Mater_19"
@@ -414,7 +406,7 @@ Friend Class DataShe2
         Me._Mater_18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_18.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_18.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_18, CType(18, Short))
+        Me.Mater.Add(18, Me._Mater_18)
         Me._Mater_18.Location = New System.Drawing.Point(430, 160)
         Me._Mater_18.MaxLength = 0
         Me._Mater_18.Name = "_Mater_18"
@@ -431,7 +423,7 @@ Friend Class DataShe2
         Me._Mater_17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_17.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_17.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_17, CType(17, Short))
+        Me.Mater.Add(17, Me._Mater_17)
         Me._Mater_17.Location = New System.Drawing.Point(430, 140)
         Me._Mater_17.MaxLength = 0
         Me._Mater_17.Name = "_Mater_17"
@@ -448,7 +440,7 @@ Friend Class DataShe2
         Me._Mater_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_16.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_16.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_16, CType(16, Short))
+        Me.Mater.Add(16, Me._Mater_16)
         Me._Mater_16.Location = New System.Drawing.Point(430, 120)
         Me._Mater_16.MaxLength = 0
         Me._Mater_16.Name = "_Mater_16"
@@ -465,7 +457,7 @@ Friend Class DataShe2
         Me._Mater_15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_15.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_15, CType(15, Short))
+        Me.Mater.Add(15, Me._Mater_15)
         Me._Mater_15.Location = New System.Drawing.Point(430, 100)
         Me._Mater_15.MaxLength = 0
         Me._Mater_15.Name = "_Mater_15"
@@ -482,7 +474,7 @@ Friend Class DataShe2
         Me._Mater_14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_14.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_14, CType(14, Short))
+        Me.Mater.Add(14, Me._Mater_14)
         Me._Mater_14.Location = New System.Drawing.Point(430, 80)
         Me._Mater_14.MaxLength = 0
         Me._Mater_14.Name = "_Mater_14"
@@ -499,7 +491,7 @@ Friend Class DataShe2
         Me._Mater_13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_13.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_13, CType(13, Short))
+        Me.Mater.Add(13, Me._Mater_13)
         Me._Mater_13.Location = New System.Drawing.Point(120, 340)
         Me._Mater_13.MaxLength = 0
         Me._Mater_13.Name = "_Mater_13"
@@ -516,7 +508,7 @@ Friend Class DataShe2
         Me._Mater_12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_12.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_12, CType(12, Short))
+        Me.Mater.Add(12, Me._Mater_12)
         Me._Mater_12.Location = New System.Drawing.Point(120, 320)
         Me._Mater_12.MaxLength = 0
         Me._Mater_12.Name = "_Mater_12"
@@ -533,7 +525,7 @@ Friend Class DataShe2
         Me._Mater_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_11, CType(11, Short))
+        Me.Mater.Add(11, Me._Mater_11)
         Me._Mater_11.Location = New System.Drawing.Point(120, 300)
         Me._Mater_11.MaxLength = 0
         Me._Mater_11.Name = "_Mater_11"
@@ -550,7 +542,7 @@ Friend Class DataShe2
         Me._Mater_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_10, CType(10, Short))
+        Me.Mater.Add(10, Me._Mater_10)
         Me._Mater_10.Location = New System.Drawing.Point(120, 280)
         Me._Mater_10.MaxLength = 0
         Me._Mater_10.Name = "_Mater_10"
@@ -567,7 +559,7 @@ Friend Class DataShe2
         Me._Mater_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_9, CType(9, Short))
+        Me.Mater.Add(9, Me._Mater_9)
         Me._Mater_9.Location = New System.Drawing.Point(120, 260)
         Me._Mater_9.MaxLength = 0
         Me._Mater_9.Name = "_Mater_9"
@@ -584,7 +576,7 @@ Friend Class DataShe2
         Me._Mater_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_8, CType(8, Short))
+        Me.Mater.Add(8, Me._Mater_8)
         Me._Mater_8.Location = New System.Drawing.Point(120, 240)
         Me._Mater_8.MaxLength = 0
         Me._Mater_8.Name = "_Mater_8"
@@ -601,7 +593,7 @@ Friend Class DataShe2
         Me._Mater_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_7, CType(7, Short))
+        Me.Mater.Add(7, Me._Mater_7)
         Me._Mater_7.Location = New System.Drawing.Point(120, 220)
         Me._Mater_7.MaxLength = 0
         Me._Mater_7.Name = "_Mater_7"
@@ -618,7 +610,7 @@ Friend Class DataShe2
         Me._Mater_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_6, CType(6, Short))
+        Me.Mater.Add(6, Me._Mater_6)
         Me._Mater_6.Location = New System.Drawing.Point(120, 200)
         Me._Mater_6.MaxLength = 0
         Me._Mater_6.Name = "_Mater_6"
@@ -635,7 +627,7 @@ Friend Class DataShe2
         Me._Mater_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_5, CType(5, Short))
+        Me.Mater.Add(5, Me._Mater_5)
         Me._Mater_5.Location = New System.Drawing.Point(120, 180)
         Me._Mater_5.MaxLength = 0
         Me._Mater_5.Name = "_Mater_5"
@@ -652,7 +644,7 @@ Friend Class DataShe2
         Me._Mater_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_4, CType(4, Short))
+        Me.Mater.Add(4, Me._Mater_4)
         Me._Mater_4.Location = New System.Drawing.Point(120, 160)
         Me._Mater_4.MaxLength = 0
         Me._Mater_4.Name = "_Mater_4"
@@ -669,7 +661,7 @@ Friend Class DataShe2
         Me._Mater_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_3, CType(3, Short))
+        Me.Mater.Add(3, Me._Mater_3)
         Me._Mater_3.Location = New System.Drawing.Point(120, 140)
         Me._Mater_3.MaxLength = 0
         Me._Mater_3.Name = "_Mater_3"
@@ -686,7 +678,7 @@ Friend Class DataShe2
         Me._Mater_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_2, CType(2, Short))
+        Me.Mater.Add(2, Me._Mater_2)
         Me._Mater_2.Location = New System.Drawing.Point(120, 120)
         Me._Mater_2.MaxLength = 0
         Me._Mater_2.Name = "_Mater_2"
@@ -703,7 +695,7 @@ Friend Class DataShe2
         Me._Mater_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_1, CType(1, Short))
+        Me.Mater.Add(1, Me._Mater_1)
         Me._Mater_1.Location = New System.Drawing.Point(120, 100)
         Me._Mater_1.MaxLength = 0
         Me._Mater_1.Name = "_Mater_1"
@@ -720,7 +712,7 @@ Friend Class DataShe2
         Me._Mater_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Mater_0.Cursor = System.Windows.Forms.Cursors.IBeam
         Me._Mater_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Mater.SetIndex(Me._Mater_0, CType(0, Short))
+        Me.Mater.Add(0, Me._Mater_0)
         Me._Mater_0.Location = New System.Drawing.Point(120, 80)
         Me._Mater_0.MaxLength = 0
         Me._Mater_0.Name = "_Mater_0"
@@ -824,7 +816,7 @@ Friend Class DataShe2
         '_cmdMater_26
         '
         Me._cmdMater_26.Image = CType(resources.GetObject("_cmdMater_26.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_26, CType(26, Short))
+        Me.cmdMater.Add(26, Me._cmdMater_26)
         Me._cmdMater_26.Location = New System.Drawing.Point(600, 320)
         Me._cmdMater_26.Name = "_cmdMater_26"
         Me._cmdMater_26.Size = New System.Drawing.Size(21, 21)
@@ -833,7 +825,7 @@ Friend Class DataShe2
         '_cmdMater_25
         '
         Me._cmdMater_25.Image = CType(resources.GetObject("_cmdMater_25.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_25, CType(25, Short))
+        Me.cmdMater.Add(25, Me._cmdMater_25)
         Me._cmdMater_25.Location = New System.Drawing.Point(600, 300)
         Me._cmdMater_25.Name = "_cmdMater_25"
         Me._cmdMater_25.Size = New System.Drawing.Size(21, 21)
@@ -842,7 +834,7 @@ Friend Class DataShe2
         '_cmdMater_24
         '
         Me._cmdMater_24.Image = CType(resources.GetObject("_cmdMater_24.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_24, CType(24, Short))
+        Me.cmdMater.Add(24, Me._cmdMater_24)
         Me._cmdMater_24.Location = New System.Drawing.Point(600, 280)
         Me._cmdMater_24.Name = "_cmdMater_24"
         Me._cmdMater_24.Size = New System.Drawing.Size(21, 21)
@@ -851,7 +843,7 @@ Friend Class DataShe2
         '_cmdMater_23
         '
         Me._cmdMater_23.Image = CType(resources.GetObject("_cmdMater_23.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_23, CType(23, Short))
+        Me.cmdMater.Add(23, Me._cmdMater_23)
         Me._cmdMater_23.Location = New System.Drawing.Point(600, 260)
         Me._cmdMater_23.Name = "_cmdMater_23"
         Me._cmdMater_23.Size = New System.Drawing.Size(21, 21)
@@ -860,7 +852,7 @@ Friend Class DataShe2
         '_cmdMater_22
         '
         Me._cmdMater_22.Image = CType(resources.GetObject("_cmdMater_22.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_22, CType(22, Short))
+        Me.cmdMater.Add(22, Me._cmdMater_22)
         Me._cmdMater_22.Location = New System.Drawing.Point(600, 240)
         Me._cmdMater_22.Name = "_cmdMater_22"
         Me._cmdMater_22.Size = New System.Drawing.Size(21, 21)
@@ -869,7 +861,7 @@ Friend Class DataShe2
         '_cmdMater_21
         '
         Me._cmdMater_21.Image = CType(resources.GetObject("_cmdMater_21.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_21, CType(21, Short))
+        Me.cmdMater.Add(21, Me._cmdMater_21)
         Me._cmdMater_21.Location = New System.Drawing.Point(600, 220)
         Me._cmdMater_21.Name = "_cmdMater_21"
         Me._cmdMater_21.Size = New System.Drawing.Size(21, 21)
@@ -878,7 +870,7 @@ Friend Class DataShe2
         '_cmdMater_20
         '
         Me._cmdMater_20.Image = CType(resources.GetObject("_cmdMater_20.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_20, CType(20, Short))
+        Me.cmdMater.Add(20, Me._cmdMater_20)
         Me._cmdMater_20.Location = New System.Drawing.Point(600, 200)
         Me._cmdMater_20.Name = "_cmdMater_20"
         Me._cmdMater_20.Size = New System.Drawing.Size(21, 21)
@@ -887,7 +879,7 @@ Friend Class DataShe2
         '_cmdMater_19
         '
         Me._cmdMater_19.Image = CType(resources.GetObject("_cmdMater_19.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_19, CType(19, Short))
+        Me.cmdMater.Add(19, Me._cmdMater_19)
         Me._cmdMater_19.Location = New System.Drawing.Point(600, 180)
         Me._cmdMater_19.Name = "_cmdMater_19"
         Me._cmdMater_19.Size = New System.Drawing.Size(21, 21)
@@ -896,7 +888,7 @@ Friend Class DataShe2
         '_cmdMater_18
         '
         Me._cmdMater_18.Image = CType(resources.GetObject("_cmdMater_18.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_18, CType(18, Short))
+        Me.cmdMater.Add(18, Me._cmdMater_18)
         Me._cmdMater_18.Location = New System.Drawing.Point(600, 160)
         Me._cmdMater_18.Name = "_cmdMater_18"
         Me._cmdMater_18.Size = New System.Drawing.Size(21, 21)
@@ -905,7 +897,7 @@ Friend Class DataShe2
         '_cmdMater_17
         '
         Me._cmdMater_17.Image = CType(resources.GetObject("_cmdMater_17.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_17, CType(17, Short))
+        Me.cmdMater.Add(17, Me._cmdMater_17)
         Me._cmdMater_17.Location = New System.Drawing.Point(600, 140)
         Me._cmdMater_17.Name = "_cmdMater_17"
         Me._cmdMater_17.Size = New System.Drawing.Size(21, 21)
@@ -914,7 +906,7 @@ Friend Class DataShe2
         '_cmdMater_16
         '
         Me._cmdMater_16.Image = CType(resources.GetObject("_cmdMater_16.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_16, CType(16, Short))
+        Me.cmdMater.Add(16, Me._cmdMater_16)
         Me._cmdMater_16.Location = New System.Drawing.Point(600, 120)
         Me._cmdMater_16.Name = "_cmdMater_16"
         Me._cmdMater_16.Size = New System.Drawing.Size(21, 21)
@@ -923,7 +915,7 @@ Friend Class DataShe2
         '_cmdMater_15
         '
         Me._cmdMater_15.Image = CType(resources.GetObject("_cmdMater_15.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_15, CType(15, Short))
+        Me.cmdMater.Add(15, Me._cmdMater_15)
         Me._cmdMater_15.Location = New System.Drawing.Point(600, 100)
         Me._cmdMater_15.Name = "_cmdMater_15"
         Me._cmdMater_15.Size = New System.Drawing.Size(21, 21)
@@ -932,7 +924,7 @@ Friend Class DataShe2
         '_cmdMater_14
         '
         Me._cmdMater_14.Image = CType(resources.GetObject("_cmdMater_14.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_14, CType(14, Short))
+        Me.cmdMater.Add(14, Me._cmdMater_14)
         Me._cmdMater_14.Location = New System.Drawing.Point(600, 80)
         Me._cmdMater_14.Name = "_cmdMater_14"
         Me._cmdMater_14.Size = New System.Drawing.Size(21, 21)
@@ -941,7 +933,7 @@ Friend Class DataShe2
         '_cmdMater_13
         '
         Me._cmdMater_13.Image = CType(resources.GetObject("_cmdMater_13.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_13, CType(13, Short))
+        Me.cmdMater.Add(13, Me._cmdMater_13)
         Me._cmdMater_13.Location = New System.Drawing.Point(290, 340)
         Me._cmdMater_13.Name = "_cmdMater_13"
         Me._cmdMater_13.Size = New System.Drawing.Size(21, 21)
@@ -950,7 +942,7 @@ Friend Class DataShe2
         '_cmdMater_12
         '
         Me._cmdMater_12.Image = CType(resources.GetObject("_cmdMater_12.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_12, CType(12, Short))
+        Me.cmdMater.Add(12, Me._cmdMater_12)
         Me._cmdMater_12.Location = New System.Drawing.Point(290, 320)
         Me._cmdMater_12.Name = "_cmdMater_12"
         Me._cmdMater_12.Size = New System.Drawing.Size(21, 21)
@@ -959,7 +951,7 @@ Friend Class DataShe2
         '_cmdMater_11
         '
         Me._cmdMater_11.Image = CType(resources.GetObject("_cmdMater_11.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_11, CType(11, Short))
+        Me.cmdMater.Add(11, Me._cmdMater_11)
         Me._cmdMater_11.Location = New System.Drawing.Point(290, 300)
         Me._cmdMater_11.Name = "_cmdMater_11"
         Me._cmdMater_11.Size = New System.Drawing.Size(21, 21)
@@ -968,7 +960,7 @@ Friend Class DataShe2
         '_cmdMater_10
         '
         Me._cmdMater_10.Image = CType(resources.GetObject("_cmdMater_10.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_10, CType(10, Short))
+        Me.cmdMater.Add(10, Me._cmdMater_10)
         Me._cmdMater_10.Location = New System.Drawing.Point(290, 280)
         Me._cmdMater_10.Name = "_cmdMater_10"
         Me._cmdMater_10.Size = New System.Drawing.Size(21, 21)
@@ -977,7 +969,7 @@ Friend Class DataShe2
         '_cmdMater_9
         '
         Me._cmdMater_9.Image = CType(resources.GetObject("_cmdMater_9.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_9, CType(9, Short))
+        Me.cmdMater.Add(9, Me._cmdMater_9)
         Me._cmdMater_9.Location = New System.Drawing.Point(290, 260)
         Me._cmdMater_9.Name = "_cmdMater_9"
         Me._cmdMater_9.Size = New System.Drawing.Size(21, 21)
@@ -986,7 +978,7 @@ Friend Class DataShe2
         '_cmdMater_8
         '
         Me._cmdMater_8.Image = CType(resources.GetObject("_cmdMater_8.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_8, CType(8, Short))
+        Me.cmdMater.Add(8, Me._cmdMater_8)
         Me._cmdMater_8.Location = New System.Drawing.Point(290, 240)
         Me._cmdMater_8.Name = "_cmdMater_8"
         Me._cmdMater_8.Size = New System.Drawing.Size(21, 21)
@@ -995,7 +987,7 @@ Friend Class DataShe2
         '_cmdMater_7
         '
         Me._cmdMater_7.Image = CType(resources.GetObject("_cmdMater_7.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_7, CType(7, Short))
+        Me.cmdMater.Add(7, Me._cmdMater_7)
         Me._cmdMater_7.Location = New System.Drawing.Point(290, 220)
         Me._cmdMater_7.Name = "_cmdMater_7"
         Me._cmdMater_7.Size = New System.Drawing.Size(21, 21)
@@ -1004,7 +996,7 @@ Friend Class DataShe2
         '_cmdMater_6
         '
         Me._cmdMater_6.Image = CType(resources.GetObject("_cmdMater_6.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_6, CType(6, Short))
+        Me.cmdMater.Add(6, Me._cmdMater_6)
         Me._cmdMater_6.Location = New System.Drawing.Point(290, 200)
         Me._cmdMater_6.Name = "_cmdMater_6"
         Me._cmdMater_6.Size = New System.Drawing.Size(21, 21)
@@ -1013,7 +1005,7 @@ Friend Class DataShe2
         '_cmdMater_5
         '
         Me._cmdMater_5.Image = CType(resources.GetObject("_cmdMater_5.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_5, CType(5, Short))
+        Me.cmdMater.Add(5, Me._cmdMater_5)
         Me._cmdMater_5.Location = New System.Drawing.Point(290, 180)
         Me._cmdMater_5.Name = "_cmdMater_5"
         Me._cmdMater_5.Size = New System.Drawing.Size(21, 21)
@@ -1022,7 +1014,7 @@ Friend Class DataShe2
         '_cmdMater_4
         '
         Me._cmdMater_4.Image = CType(resources.GetObject("_cmdMater_4.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_4, CType(4, Short))
+        Me.cmdMater.Add(4, Me._cmdMater_4)
         Me._cmdMater_4.Location = New System.Drawing.Point(290, 160)
         Me._cmdMater_4.Name = "_cmdMater_4"
         Me._cmdMater_4.Size = New System.Drawing.Size(21, 21)
@@ -1031,7 +1023,7 @@ Friend Class DataShe2
         '_cmdMater_3
         '
         Me._cmdMater_3.Image = CType(resources.GetObject("_cmdMater_3.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_3, CType(3, Short))
+        Me.cmdMater.Add(3, Me._cmdMater_3)
         Me._cmdMater_3.Location = New System.Drawing.Point(290, 140)
         Me._cmdMater_3.Name = "_cmdMater_3"
         Me._cmdMater_3.Size = New System.Drawing.Size(21, 21)
@@ -1040,7 +1032,7 @@ Friend Class DataShe2
         '_cmdMater_2
         '
         Me._cmdMater_2.Image = CType(resources.GetObject("_cmdMater_2.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_2, CType(2, Short))
+        Me.cmdMater.Add(2, Me._cmdMater_2)
         Me._cmdMater_2.Location = New System.Drawing.Point(290, 120)
         Me._cmdMater_2.Name = "_cmdMater_2"
         Me._cmdMater_2.Size = New System.Drawing.Size(21, 21)
@@ -1049,7 +1041,7 @@ Friend Class DataShe2
         '_cmdMater_1
         '
         Me._cmdMater_1.Image = CType(resources.GetObject("_cmdMater_1.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_1, CType(1, Short))
+        Me.cmdMater.Add(1, Me._cmdMater_1)
         Me._cmdMater_1.Location = New System.Drawing.Point(290, 100)
         Me._cmdMater_1.Name = "_cmdMater_1"
         Me._cmdMater_1.Size = New System.Drawing.Size(21, 21)
@@ -1058,7 +1050,7 @@ Friend Class DataShe2
         '_cmdMater_0
         '
         Me._cmdMater_0.Image = CType(resources.GetObject("_cmdMater_0.Image"), System.Drawing.Image)
-        Me.cmdMater.SetIndex(Me._cmdMater_0, CType(0, Short))
+        Me.cmdMater.Add(0, Me._cmdMater_0)
         Me._cmdMater_0.Location = New System.Drawing.Point(290, 80)
         Me._cmdMater_0.Name = "_cmdMater_0"
         Me._cmdMater_0.Size = New System.Drawing.Size(21, 21)
@@ -1144,7 +1136,7 @@ Friend Class DataShe2
         Me._LabFlui_26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_26.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_26.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_26, CType(26, Short))
+        Me.LabFlui.Add(26, Me._LabFlui_26)
         Me._LabFlui_26.Location = New System.Drawing.Point(310, 320)
         Me._LabFlui_26.Name = "_LabFlui_26"
         Me._LabFlui_26.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1158,7 +1150,7 @@ Friend Class DataShe2
         Me._LabFlui_25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_25.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_25.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_25, CType(25, Short))
+        Me.LabFlui.Add(25, Me._LabFlui_25)
         Me._LabFlui_25.Location = New System.Drawing.Point(350, 300)
         Me._LabFlui_25.Name = "_LabFlui_25"
         Me._LabFlui_25.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1173,7 +1165,7 @@ Friend Class DataShe2
         Me._LabFlui_24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_24.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_24.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_24, CType(24, Short))
+        Me.LabFlui.Add(24, Me._LabFlui_24)
         Me._LabFlui_24.Location = New System.Drawing.Point(350, 280)
         Me._LabFlui_24.Name = "_LabFlui_24"
         Me._LabFlui_24.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1188,7 +1180,7 @@ Friend Class DataShe2
         Me._LabFlui_23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_23.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_23.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_23, CType(23, Short))
+        Me.LabFlui.Add(23, Me._LabFlui_23)
         Me._LabFlui_23.Location = New System.Drawing.Point(350, 260)
         Me._LabFlui_23.Name = "_LabFlui_23"
         Me._LabFlui_23.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1203,7 +1195,7 @@ Friend Class DataShe2
         Me._LabFlui_22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_22.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_22.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_22, CType(22, Short))
+        Me.LabFlui.Add(22, Me._LabFlui_22)
         Me._LabFlui_22.Location = New System.Drawing.Point(350, 240)
         Me._LabFlui_22.Name = "_LabFlui_22"
         Me._LabFlui_22.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1218,7 +1210,7 @@ Friend Class DataShe2
         Me._Label0_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label0_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label0_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label0.SetIndex(Me._Label0_4, CType(4, Short))
+        Me.Label0.Add(4, Me._Label0_4)
         Me._Label0_4.Location = New System.Drawing.Point(310, 240)
         Me._Label0_4.Name = "_Label0_4"
         Me._Label0_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1232,7 +1224,7 @@ Friend Class DataShe2
         Me._LabFlui_21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_21.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_21.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_21, CType(21, Short))
+        Me.LabFlui.Add(21, Me._LabFlui_21)
         Me._LabFlui_21.Location = New System.Drawing.Point(350, 220)
         Me._LabFlui_21.Name = "_LabFlui_21"
         Me._LabFlui_21.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1247,7 +1239,7 @@ Friend Class DataShe2
         Me._LabFlui_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_20.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_20.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_20, CType(20, Short))
+        Me.LabFlui.Add(20, Me._LabFlui_20)
         Me._LabFlui_20.Location = New System.Drawing.Point(350, 200)
         Me._LabFlui_20.Name = "_LabFlui_20"
         Me._LabFlui_20.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1262,7 +1254,7 @@ Friend Class DataShe2
         Me._Label0_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label0_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label0_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label0.SetIndex(Me._Label0_3, CType(3, Short))
+        Me.Label0.Add(3, Me._Label0_3)
         Me._Label0_3.Location = New System.Drawing.Point(310, 200)
         Me._Label0_3.Name = "_Label0_3"
         Me._Label0_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1277,7 +1269,7 @@ Friend Class DataShe2
         Me._LabFlui_19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_19.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_19.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_19, CType(19, Short))
+        Me.LabFlui.Add(19, Me._LabFlui_19)
         Me._LabFlui_19.Location = New System.Drawing.Point(350, 180)
         Me._LabFlui_19.Name = "_LabFlui_19"
         Me._LabFlui_19.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1291,7 +1283,7 @@ Friend Class DataShe2
         Me._LabFlui_18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_18.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_18.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_18, CType(18, Short))
+        Me.LabFlui.Add(18, Me._LabFlui_18)
         Me._LabFlui_18.Location = New System.Drawing.Point(350, 160)
         Me._LabFlui_18.Name = "_LabFlui_18"
         Me._LabFlui_18.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1306,7 +1298,7 @@ Friend Class DataShe2
         Me._LabFlui_17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_17.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_17.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_17, CType(17, Short))
+        Me.LabFlui.Add(17, Me._LabFlui_17)
         Me._LabFlui_17.Location = New System.Drawing.Point(350, 140)
         Me._LabFlui_17.Name = "_LabFlui_17"
         Me._LabFlui_17.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1321,7 +1313,7 @@ Friend Class DataShe2
         Me._Label0_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label0_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label0_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label0.SetIndex(Me._Label0_2, CType(2, Short))
+        Me.Label0.Add(2, Me._Label0_2)
         Me._Label0_2.Location = New System.Drawing.Point(310, 140)
         Me._Label0_2.Name = "_Label0_2"
         Me._Label0_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1335,7 +1327,7 @@ Friend Class DataShe2
         Me._LabFlui_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_16.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_16.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_16, CType(16, Short))
+        Me.LabFlui.Add(16, Me._LabFlui_16)
         Me._LabFlui_16.Location = New System.Drawing.Point(350, 120)
         Me._LabFlui_16.Name = "_LabFlui_16"
         Me._LabFlui_16.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1350,7 +1342,7 @@ Friend Class DataShe2
         Me._LabFlui_15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_15.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_15.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_15, CType(15, Short))
+        Me.LabFlui.Add(15, Me._LabFlui_15)
         Me._LabFlui_15.Location = New System.Drawing.Point(350, 100)
         Me._LabFlui_15.Name = "_LabFlui_15"
         Me._LabFlui_15.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1365,7 +1357,7 @@ Friend Class DataShe2
         Me._LabFlui_14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_14.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_14.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_14, CType(14, Short))
+        Me.LabFlui.Add(14, Me._LabFlui_14)
         Me._LabFlui_14.Location = New System.Drawing.Point(350, 80)
         Me._LabFlui_14.Name = "_LabFlui_14"
         Me._LabFlui_14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1380,7 +1372,7 @@ Friend Class DataShe2
         Me._Label0_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label0_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label0_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label0.SetIndex(Me._Label0_1, CType(1, Short))
+        Me.Label0.Add(1, Me._Label0_1)
         Me._Label0_1.Location = New System.Drawing.Point(310, 80)
         Me._Label0_1.Name = "_Label0_1"
         Me._Label0_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1394,7 +1386,7 @@ Friend Class DataShe2
         Me._LabFlui_13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_13.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_13, CType(13, Short))
+        Me.LabFlui.Add(13, Me._LabFlui_13)
         Me._LabFlui_13.Location = New System.Drawing.Point(40, 340)
         Me._LabFlui_13.Name = "_LabFlui_13"
         Me._LabFlui_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1409,7 +1401,7 @@ Friend Class DataShe2
         Me._LabFlui_12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_12.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_12, CType(12, Short))
+        Me.LabFlui.Add(12, Me._LabFlui_12)
         Me._LabFlui_12.Location = New System.Drawing.Point(40, 320)
         Me._LabFlui_12.Name = "_LabFlui_12"
         Me._LabFlui_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1424,7 +1416,7 @@ Friend Class DataShe2
         Me._LabFlui_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_11, CType(11, Short))
+        Me.LabFlui.Add(11, Me._LabFlui_11)
         Me._LabFlui_11.Location = New System.Drawing.Point(40, 300)
         Me._LabFlui_11.Name = "_LabFlui_11"
         Me._LabFlui_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1439,7 +1431,7 @@ Friend Class DataShe2
         Me._LabFlui_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_10, CType(10, Short))
+        Me.LabFlui.Add(10, Me._LabFlui_10)
         Me._LabFlui_10.Location = New System.Drawing.Point(0, 280)
         Me._LabFlui_10.Name = "_LabFlui_10"
         Me._LabFlui_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1453,7 +1445,7 @@ Friend Class DataShe2
         Me._LabFlui_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_9, CType(9, Short))
+        Me.LabFlui.Add(9, Me._LabFlui_9)
         Me._LabFlui_9.Location = New System.Drawing.Point(0, 260)
         Me._LabFlui_9.Name = "_LabFlui_9"
         Me._LabFlui_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1467,7 +1459,7 @@ Friend Class DataShe2
         Me._LabFlui_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_8, CType(8, Short))
+        Me.LabFlui.Add(8, Me._LabFlui_8)
         Me._LabFlui_8.Location = New System.Drawing.Point(0, 240)
         Me._LabFlui_8.Name = "_LabFlui_8"
         Me._LabFlui_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1481,7 +1473,7 @@ Friend Class DataShe2
         Me._LabFlui_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_7, CType(7, Short))
+        Me.LabFlui.Add(7, Me._LabFlui_7)
         Me._LabFlui_7.Location = New System.Drawing.Point(0, 220)
         Me._LabFlui_7.Name = "_LabFlui_7"
         Me._LabFlui_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1495,7 +1487,7 @@ Friend Class DataShe2
         Me._LabFlui_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_6, CType(6, Short))
+        Me.LabFlui.Add(6, Me._LabFlui_6)
         Me._LabFlui_6.Location = New System.Drawing.Point(0, 200)
         Me._LabFlui_6.Name = "_LabFlui_6"
         Me._LabFlui_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1509,7 +1501,7 @@ Friend Class DataShe2
         Me._Label0_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._Label0_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Label0_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label0.SetIndex(Me._Label0_6, CType(6, Short))
+        Me.Label0.Add(6, Me._Label0_6)
         Me._Label0_6.Location = New System.Drawing.Point(0, 300)
         Me._Label0_6.Name = "_Label0_6"
         Me._Label0_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1523,7 +1515,7 @@ Friend Class DataShe2
         Me._LabFlui_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_5, CType(5, Short))
+        Me.LabFlui.Add(5, Me._LabFlui_5)
         Me._LabFlui_5.Location = New System.Drawing.Point(0, 180)
         Me._LabFlui_5.Name = "_LabFlui_5"
         Me._LabFlui_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1537,7 +1529,7 @@ Friend Class DataShe2
         Me._LabFlui_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_4, CType(4, Short))
+        Me.LabFlui.Add(4, Me._LabFlui_4)
         Me._LabFlui_4.Location = New System.Drawing.Point(0, 160)
         Me._LabFlui_4.Name = "_LabFlui_4"
         Me._LabFlui_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1551,7 +1543,7 @@ Friend Class DataShe2
         Me._LabFlui_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_3, CType(3, Short))
+        Me.LabFlui.Add(3, Me._LabFlui_3)
         Me._LabFlui_3.Location = New System.Drawing.Point(0, 140)
         Me._LabFlui_3.Name = "_LabFlui_3"
         Me._LabFlui_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1565,7 +1557,7 @@ Friend Class DataShe2
         Me._LabFlui_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_2, CType(2, Short))
+        Me.LabFlui.Add(2, Me._LabFlui_2)
         Me._LabFlui_2.Location = New System.Drawing.Point(0, 120)
         Me._LabFlui_2.Name = "_LabFlui_2"
         Me._LabFlui_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1579,7 +1571,7 @@ Friend Class DataShe2
         Me._LabFlui_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_1, CType(1, Short))
+        Me.LabFlui.Add(1, Me._LabFlui_1)
         Me._LabFlui_1.Location = New System.Drawing.Point(0, 100)
         Me._LabFlui_1.Name = "_LabFlui_1"
         Me._LabFlui_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1593,7 +1585,7 @@ Friend Class DataShe2
         Me._LabFlui_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_0, CType(0, Short))
+        Me.LabFlui.Add(0, Me._LabFlui_0)
         Me._LabFlui_0.Location = New System.Drawing.Point(0, 80)
         Me._LabFlui_0.Name = "_LabFlui_0"
         Me._LabFlui_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1720,10 +1712,12 @@ Friend Class DataShe2
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Foglio dati - Materiali"
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Label0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Mater, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmdMater, System.ComponentModel.ISupportInitialize).EndInit()
+
+
+
+        For Each control In cmdMater.Values
+            AddHandler control.Click, AddressOf cmdMater_ClickEvent
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -1776,8 +1770,8 @@ Friend Class DataShe2
 		End Select
 		iC = DisplayCl(Index, Ind)
 	End Sub
-    Private Sub cmdMater_ClickEvent(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdMater.Click
-        Dim Index As Short = cmdMater.GetIndex(eventSender)
+    Private Sub cmdMater_ClickEvent(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(cmdMater, eventSender)
         Call DisplayMat(Index)
         ModifiedData = True
     End Sub

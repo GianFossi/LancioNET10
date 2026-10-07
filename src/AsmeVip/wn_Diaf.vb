@@ -160,7 +160,7 @@ Friend Class wn_Diaf
         LeggiMateriali()
     End Function
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Leggi = True
         Problem = CType(bf.Deserialize(fs), typProblemDF)
         If Config(0).Versione > 23 Then
@@ -177,7 +177,7 @@ Friend Class wn_Diaf
         LeggiMateriali()
     End Function
     Public Sub Salva(ByRef fs As FileStream)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Problem)
         bf.Serialize(fs, Matdim(Problem.indiceD))
         bf.Serialize(fs, Matdim(Problem.indiceW))

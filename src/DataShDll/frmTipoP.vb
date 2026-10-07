@@ -42,8 +42,8 @@ Friend Class frmTipoP
 	Public WithEvents _Option1_2 As System.Windows.Forms.RadioButton
 	Public WithEvents _Option1_1 As System.Windows.Forms.RadioButton
 	Public WithEvents _Option1_0 As System.Windows.Forms.RadioButton
-	Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-	Public WithEvents Picture1 As Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray
+	Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+	Public Picture1 As New System.Collections.Generic.Dictionary(Of Integer, PictureBox)
 	'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
 	'Può essere modificata utilizzando la finestra di progettazione Windows Form.
 	'Non modificarla mediante l'editor di codice.
@@ -61,10 +61,6 @@ Friend Class frmTipoP
 		Me._Option1_2 = New System.Windows.Forms.RadioButton
 		Me._Option1_1 = New System.Windows.Forms.RadioButton
 		Me._Option1_0 = New System.Windows.Forms.RadioButton
-		Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(components)
-		Me.Picture1 = New Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(components)
-		CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.Picture1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
 		Me.BackColor = System.Drawing.SystemColors.Window
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -235,16 +231,18 @@ Friend Class frmTipoP
 		Me.Controls.Add(_Option1_2)
 		Me.Controls.Add(_Option1_1)
 		Me.Controls.Add(_Option1_0)
-		Me.Option1.SetIndex(_Option1_3, CType(3, Short))
-		Me.Option1.SetIndex(_Option1_2, CType(2, Short))
-		Me.Option1.SetIndex(_Option1_1, CType(1, Short))
-		Me.Option1.SetIndex(_Option1_0, CType(0, Short))
-		Me.Picture1.SetIndex(_Picture1_3, CType(3, Short))
-		Me.Picture1.SetIndex(_Picture1_2, CType(2, Short))
-		Me.Picture1.SetIndex(_Picture1_1, CType(1, Short))
-		Me.Picture1.SetIndex(_Picture1_0, CType(0, Short))
-		CType(Me.Picture1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.Option1.Add(3, _Option1_3)
+		Me.Option1.Add(2, _Option1_2)
+		Me.Option1.Add(1, _Option1_1)
+		Me.Option1.Add(0, _Option1_0)
+		Me.Picture1.Add(3, _Picture1_3)
+		Me.Picture1.Add(2, _Picture1_2)
+		Me.Picture1.Add(1, _Picture1_1)
+		Me.Picture1.Add(0, _Picture1_0)
+
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
 	End Sub
 #End Region 
 #Region "Supporto aggiornamento "
@@ -278,9 +276,9 @@ Friend Class frmTipoP
 	End Sub
 	
 	'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+	Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
 		If eventSender.Checked Then
-			Dim Index As Short = Option1.GetIndex(eventSender)
+			Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
 			DataSheet.DatiPrg.TubiInform.TipoP = Index
 			DataShe1.DefInstance.TipoP.Image = System.Drawing.Image.FromFile(RTrim(Monitor.Motore.Inizio.Archdir) & "\TIPOP" & LTrim(Str(Index)) & ".BMP")
 		End If

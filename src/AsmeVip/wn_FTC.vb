@@ -569,7 +569,7 @@ Friend Class wn_FTC
     Public Overloads Function Leggi(ByRef fs As FileStream) As Boolean
         Dim NumCond As Short
         Leggi = True
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         pt_Config = CType(bf.Deserialize(fs), ptConfig)
 		pt_Config.Side = 1
         If pt_Config.Rear = 1 Or pt_Config.SoloDilat Then
@@ -588,7 +588,7 @@ Friend Class wn_FTC
         NumCond = Mem.Z(1, 261)
     End Function
     Public Sub Salva(ByRef fs As FileStream)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         '---------------------------- e la piastra B?
         Try
             Problem(Indprobl1).TExtThk = Mem.Z(1, 288)

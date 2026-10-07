@@ -772,8 +772,6 @@
     <ProjectReference Include="../Wrcb/Wrcb.vbproj" />
     <ProjectReference Include="../Tiranti/Tiranti.vbproj" />
     <ProjectReference Include="../Traccia/Traccia.vbproj" />
-    <Reference Include="stdole" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Office">
       <HintPath>../../legacy/DLL Extra/Interop.Office.dll</HintPath>
       <EmbedInteropTypes>false</EmbedInteropTypes>
@@ -788,4 +786,5 @@
     </Reference>
     <ProjectReference Include="../Lancio.Office.Word.WinForms/Lancio.Office.Word.WinForms.vbproj" />
   </ItemGroup>
+  <ItemGroup><ProjectReference Include="../Lancio.Legacy.Serialization/Lancio.Legacy.Serialization.vbproj" /></ItemGroup>
 </Project>

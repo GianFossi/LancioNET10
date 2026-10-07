@@ -259,7 +259,7 @@ Module DATASHEE1
         dvClassi = tbClassi.DefaultView
         If Len(Trim(ProtoTyp)) = 0 Then
             CalcNumjob(numjob)
-            ProtoTyp = VB6.Format(numjob + 1, "0000") & "01"
+            ProtoTyp = Microsoft.VisualBasic.Strings.Format(numjob + 1, "0000") & "01"
             dvClassi.RowFilter = "Codice=" & Str(Val(DataSheet.DatiSh0.IndCodice))
             dvClassi.RowFilter = "Categoria='" & DataSheet.DatiSh0.FBMLetter & "'"
             If dvClassi.Count = 0 Then
@@ -281,7 +281,7 @@ Module DATASHEE1
                 FormProto.Oper = 1
                 CalcNumjob(numjob)
                 CalcIndice(dvClassi, IndCodice)
-                ProtoTyp = VB6.Format(numjob + 1, "0000") & "01"
+                ProtoTyp = Microsoft.VisualBasic.Strings.Format(numjob + 1, "0000") & "01"
                 If Not FormProto.Inizializza1() Then
                     MsgBox("Huhm Huhm")
                 End If

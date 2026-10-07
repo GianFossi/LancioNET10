@@ -128,12 +128,12 @@ Friend Class DataShe1
     Public WithEvents _LabFlui_0 As System.Windows.Forms.Label
     Public WithEvents Label1 As System.Windows.Forms.Label
     Public WithEvents LabServ As System.Windows.Forms.Label
-    Public WithEvents ComboM As Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray
-    Public WithEvents ComboT As Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray
-    Public WithEvents LabFlui As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents Option1 As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-    Public WithEvents ValorM As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-    Public WithEvents ValorT As Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
+    Public ComboM As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
+    Public ComboT As New System.Collections.Generic.Dictionary(Of Integer, ComboBox)
+    Public LabFlui As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public Option1 As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
+    Public ValorM As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
+    Public ValorT As New System.Collections.Generic.Dictionary(Of Integer, TextBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -236,19 +236,7 @@ Friend Class DataShe1
         Me._LabFlui_0 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.LabServ = New System.Windows.Forms.Label
-        Me.ComboM = New Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray(Me.components)
-        Me.ComboT = New Microsoft.VisualBasic.Compatibility.VB6.ComboBoxArray(Me.components)
-        Me.LabFlui = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.Option1 = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
-        Me.ValorM = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
-        Me.ValorT = New Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray(Me.components)
         Me.Frame1.SuspendLayout()
-        CType(Me.ComboM, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboT, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ValorM, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ValorT, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TipoP
@@ -445,7 +433,7 @@ Friend Class DataShe1
         Me._ComboM_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboM_5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboM_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboM.SetIndex(Me._ComboM_5, CType(5, Short))
+        Me.ComboM.Add(5, Me._ComboM_5)
         Me._ComboM_5.Location = New System.Drawing.Point(260, 404)
         Me._ComboM_5.Name = "_ComboM_5"
         Me._ComboM_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -459,7 +447,7 @@ Friend Class DataShe1
         Me._ComboT_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboT_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboT_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboT.SetIndex(Me._ComboT_3, CType(3, Short))
+        Me.ComboT.Add(3, Me._ComboT_3)
         Me._ComboT_3.Location = New System.Drawing.Point(380, 220)
         Me._ComboT_3.Name = "_ComboT_3"
         Me._ComboT_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -473,7 +461,7 @@ Friend Class DataShe1
         Me._ComboM_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboM_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboM_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboM.SetIndex(Me._ComboM_3, CType(3, Short))
+        Me.ComboM.Add(3, Me._ComboM_3)
         Me._ComboM_3.Location = New System.Drawing.Point(250, 220)
         Me._ComboM_3.Name = "_ComboM_3"
         Me._ComboM_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -487,7 +475,7 @@ Friend Class DataShe1
         Me._ComboT_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboT_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboT_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboT.SetIndex(Me._ComboT_2, CType(2, Short))
+        Me.ComboT.Add(2, Me._ComboT_2)
         Me._ComboT_2.Location = New System.Drawing.Point(320, 364)
         Me._ComboT_2.Name = "_ComboT_2"
         Me._ComboT_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -501,7 +489,7 @@ Friend Class DataShe1
         Me._ComboM_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboM_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboM_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboM.SetIndex(Me._ComboM_2, CType(2, Short))
+        Me.ComboM.Add(2, Me._ComboM_2)
         Me._ComboM_2.Location = New System.Drawing.Point(190, 364)
         Me._ComboM_2.Name = "_ComboM_2"
         Me._ComboM_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -515,7 +503,7 @@ Friend Class DataShe1
         Me._ComboT_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboT_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboT_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboT.SetIndex(Me._ComboT_1, CType(1, Short))
+        Me.ComboT.Add(1, Me._ComboT_1)
         Me._ComboT_1.Location = New System.Drawing.Point(380, 280)
         Me._ComboT_1.Name = "_ComboT_1"
         Me._ComboT_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -529,7 +517,7 @@ Friend Class DataShe1
         Me._ComboT_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboT_0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboT_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboT.SetIndex(Me._ComboT_0, CType(0, Short))
+        Me.ComboT.Add(0, Me._ComboT_0)
         Me._ComboT_0.Location = New System.Drawing.Point(320, 280)
         Me._ComboT_0.Name = "_ComboT_0"
         Me._ComboT_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -543,7 +531,7 @@ Friend Class DataShe1
         Me._ComboM_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboM_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboM_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboM.SetIndex(Me._ComboM_1, CType(1, Short))
+        Me.ComboM.Add(1, Me._ComboM_1)
         Me._ComboM_1.Location = New System.Drawing.Point(250, 280)
         Me._ComboM_1.Name = "_ComboM_1"
         Me._ComboM_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -557,7 +545,7 @@ Friend Class DataShe1
         Me._ComboM_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._ComboM_0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me._ComboM_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.ComboM.SetIndex(Me._ComboM_0, CType(0, Short))
+        Me.ComboM.Add(0, Me._ComboM_0)
         Me._ComboM_0.Location = New System.Drawing.Point(190, 280)
         Me._ComboM_0.Name = "_ComboM_0"
         Me._ComboM_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -609,7 +597,7 @@ Friend Class DataShe1
         Me._Option1_2.BackColor = System.Drawing.SystemColors.Window
         Me._Option1_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Option1.SetIndex(Me._Option1_2, CType(2, Short))
+        Me.Option1.Add(2, Me._Option1_2)
         Me._Option1_2.Location = New System.Drawing.Point(152, 20)
         Me._Option1_2.Name = "_Option1_2"
         Me._Option1_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -622,7 +610,7 @@ Friend Class DataShe1
         Me._Option1_1.BackColor = System.Drawing.SystemColors.Window
         Me._Option1_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Option1.SetIndex(Me._Option1_1, CType(1, Short))
+        Me.Option1.Add(1, Me._Option1_1)
         Me._Option1_1.Location = New System.Drawing.Point(80, 20)
         Me._Option1_1.Name = "_Option1_1"
         Me._Option1_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -635,7 +623,7 @@ Friend Class DataShe1
         Me._Option1_0.BackColor = System.Drawing.SystemColors.Window
         Me._Option1_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Option1_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Option1.SetIndex(Me._Option1_0, CType(0, Short))
+        Me.Option1.Add(0, Me._Option1_0)
         Me._Option1_0.Location = New System.Drawing.Point(10, 20)
         Me._Option1_0.Name = "_Option1_0"
         Me._Option1_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -661,7 +649,7 @@ Friend Class DataShe1
         '
         '_ValorM_5
         '
-        Me.ValorM.SetIndex(Me._ValorM_5, CType(5, Short))
+        Me.ValorM.Add(5, Me._ValorM_5)
         Me._ValorM_5.Location = New System.Drawing.Point(250, 200)
         Me._ValorM_5.Name = "_ValorM_5"
         Me._ValorM_5.Size = New System.Drawing.Size(131, 21)
@@ -669,7 +657,7 @@ Friend Class DataShe1
         '
         '_ValorM_16
         '
-        Me.ValorM.SetIndex(Me._ValorM_16, CType(16, Short))
+        Me.ValorM.Add(16, Me._ValorM_16)
         Me._ValorM_16.Location = New System.Drawing.Point(90, 404)
         Me._ValorM_16.Name = "_ValorM_16"
         Me._ValorM_16.Size = New System.Drawing.Size(51, 21)
@@ -677,7 +665,7 @@ Friend Class DataShe1
         '
         '_ValorM_15
         '
-        Me.ValorM.SetIndex(Me._ValorM_15, CType(15, Short))
+        Me.ValorM.Add(15, Me._ValorM_15)
         Me._ValorM_15.Location = New System.Drawing.Point(110, 424)
         Me._ValorM_15.Name = "_ValorM_15"
         Me._ValorM_15.Size = New System.Drawing.Size(51, 21)
@@ -685,7 +673,7 @@ Friend Class DataShe1
         '
         '_ValorM_14
         '
-        Me.ValorM.SetIndex(Me._ValorM_14, CType(14, Short))
+        Me.ValorM.Add(14, Me._ValorM_14)
         Me._ValorM_14.Location = New System.Drawing.Point(240, 384)
         Me._ValorM_14.Name = "_ValorM_14"
         Me._ValorM_14.Size = New System.Drawing.Size(41, 21)
@@ -693,7 +681,7 @@ Friend Class DataShe1
         '
         '_ValorM_13
         '
-        Me.ValorM.SetIndex(Me._ValorM_13, CType(13, Short))
+        Me.ValorM.Add(13, Me._ValorM_13)
         Me._ValorM_13.Location = New System.Drawing.Point(140, 384)
         Me._ValorM_13.Name = "_ValorM_13"
         Me._ValorM_13.Size = New System.Drawing.Size(51, 21)
@@ -701,7 +689,7 @@ Friend Class DataShe1
         '
         '_ValorM_12
         '
-        Me.ValorM.SetIndex(Me._ValorM_12, CType(12, Short))
+        Me.ValorM.Add(12, Me._ValorM_12)
         Me._ValorM_12.Location = New System.Drawing.Point(50, 384)
         Me._ValorM_12.Name = "_ValorM_12"
         Me._ValorM_12.Size = New System.Drawing.Size(41, 21)
@@ -709,7 +697,7 @@ Friend Class DataShe1
         '
         '_ValorT_11
         '
-        Me.ValorT.SetIndex(Me._ValorT_11, CType(11, Short))
+        Me.ValorT.Add(11, Me._ValorT_11)
         Me._ValorT_11.Location = New System.Drawing.Point(320, 300)
         Me._ValorT_11.Name = "_ValorT_11"
         Me._ValorT_11.Size = New System.Drawing.Size(131, 21)
@@ -717,7 +705,7 @@ Friend Class DataShe1
         '
         '_ValorM_11
         '
-        Me.ValorM.SetIndex(Me._ValorM_11, CType(11, Short))
+        Me.ValorM.Add(11, Me._ValorM_11)
         Me._ValorM_11.Location = New System.Drawing.Point(190, 300)
         Me._ValorM_11.Name = "_ValorM_11"
         Me._ValorM_11.Size = New System.Drawing.Size(131, 21)
@@ -725,7 +713,7 @@ Friend Class DataShe1
         '
         '_ValorT_10
         '
-        Me.ValorT.SetIndex(Me._ValorT_10, CType(10, Short))
+        Me.ValorT.Add(10, Me._ValorT_10)
         Me._ValorT_10.Location = New System.Drawing.Point(380, 320)
         Me._ValorT_10.Name = "_ValorT_10"
         Me._ValorT_10.Size = New System.Drawing.Size(71, 21)
@@ -733,7 +721,7 @@ Friend Class DataShe1
         '
         '_ValorT_9
         '
-        Me.ValorT.SetIndex(Me._ValorT_9, CType(9, Short))
+        Me.ValorT.Add(9, Me._ValorT_9)
         Me._ValorT_9.Location = New System.Drawing.Point(320, 320)
         Me._ValorT_9.Name = "_ValorT_9"
         Me._ValorT_9.Size = New System.Drawing.Size(61, 21)
@@ -741,7 +729,7 @@ Friend Class DataShe1
         '
         '_ValorM_10
         '
-        Me.ValorM.SetIndex(Me._ValorM_10, CType(10, Short))
+        Me.ValorM.Add(10, Me._ValorM_10)
         Me._ValorM_10.Location = New System.Drawing.Point(250, 320)
         Me._ValorM_10.Name = "_ValorM_10"
         Me._ValorM_10.Size = New System.Drawing.Size(71, 21)
@@ -749,7 +737,7 @@ Friend Class DataShe1
         '
         '_ValorM_9
         '
-        Me.ValorM.SetIndex(Me._ValorM_9, CType(9, Short))
+        Me.ValorM.Add(9, Me._ValorM_9)
         Me._ValorM_9.Location = New System.Drawing.Point(190, 320)
         Me._ValorM_9.Name = "_ValorM_9"
         Me._ValorM_9.Size = New System.Drawing.Size(61, 21)
@@ -757,7 +745,7 @@ Friend Class DataShe1
         '
         '_ValorT_7
         '
-        Me.ValorT.SetIndex(Me._ValorT_7, CType(7, Short))
+        Me.ValorT.Add(7, Me._ValorT_7)
         Me._ValorT_7.Location = New System.Drawing.Point(320, 240)
         Me._ValorT_7.Name = "_ValorT_7"
         Me._ValorT_7.Size = New System.Drawing.Size(131, 21)
@@ -765,7 +753,7 @@ Friend Class DataShe1
         '
         '_ValorT_6
         '
-        Me.ValorT.SetIndex(Me._ValorT_6, CType(6, Short))
+        Me.ValorT.Add(6, Me._ValorT_6)
         Me._ValorT_6.Location = New System.Drawing.Point(320, 220)
         Me._ValorT_6.Name = "_ValorT_6"
         Me._ValorT_6.Size = New System.Drawing.Size(61, 21)
@@ -773,7 +761,7 @@ Friend Class DataShe1
         '
         '_ValorT_5
         '
-        Me.ValorT.SetIndex(Me._ValorT_5, CType(5, Short))
+        Me.ValorT.Add(5, Me._ValorT_5)
         Me._ValorT_5.Location = New System.Drawing.Point(330, 200)
         Me._ValorT_5.Name = "_ValorT_5"
         Me._ValorT_5.Size = New System.Drawing.Size(121, 21)
@@ -782,7 +770,7 @@ Friend Class DataShe1
         '
         '_ValorT_4
         '
-        Me.ValorT.SetIndex(Me._ValorT_4, CType(4, Short))
+        Me.ValorT.Add(4, Me._ValorT_4)
         Me._ValorT_4.Location = New System.Drawing.Point(320, 180)
         Me._ValorT_4.Name = "_ValorT_4"
         Me._ValorT_4.Size = New System.Drawing.Size(131, 21)
@@ -790,7 +778,7 @@ Friend Class DataShe1
         '
         '_ValorT_3
         '
-        Me.ValorT.SetIndex(Me._ValorT_3, CType(3, Short))
+        Me.ValorT.Add(3, Me._ValorT_3)
         Me._ValorT_3.Location = New System.Drawing.Point(320, 160)
         Me._ValorT_3.Name = "_ValorT_3"
         Me._ValorT_3.Size = New System.Drawing.Size(131, 21)
@@ -798,7 +786,7 @@ Friend Class DataShe1
         '
         '_ValorM_7
         '
-        Me.ValorM.SetIndex(Me._ValorM_7, CType(7, Short))
+        Me.ValorM.Add(7, Me._ValorM_7)
         Me._ValorM_7.Location = New System.Drawing.Point(190, 240)
         Me._ValorM_7.Name = "_ValorM_7"
         Me._ValorM_7.Size = New System.Drawing.Size(131, 21)
@@ -806,7 +794,7 @@ Friend Class DataShe1
         '
         '_ValorM_6
         '
-        Me.ValorM.SetIndex(Me._ValorM_6, CType(6, Short))
+        Me.ValorM.Add(6, Me._ValorM_6)
         Me._ValorM_6.Location = New System.Drawing.Point(190, 220)
         Me._ValorM_6.Name = "_ValorM_6"
         Me._ValorM_6.Size = New System.Drawing.Size(61, 21)
@@ -814,7 +802,7 @@ Friend Class DataShe1
         '
         '_ValorM_4
         '
-        Me.ValorM.SetIndex(Me._ValorM_4, CType(4, Short))
+        Me.ValorM.Add(4, Me._ValorM_4)
         Me._ValorM_4.Location = New System.Drawing.Point(190, 180)
         Me._ValorM_4.Name = "_ValorM_4"
         Me._ValorM_4.Size = New System.Drawing.Size(131, 21)
@@ -822,7 +810,7 @@ Friend Class DataShe1
         '
         '_ValorM_3
         '
-        Me.ValorM.SetIndex(Me._ValorM_3, CType(3, Short))
+        Me.ValorM.Add(3, Me._ValorM_3)
         Me._ValorM_3.Location = New System.Drawing.Point(190, 160)
         Me._ValorM_3.Name = "_ValorM_3"
         Me._ValorM_3.Size = New System.Drawing.Size(131, 21)
@@ -830,7 +818,7 @@ Friend Class DataShe1
         '
         '_ValorT_2
         '
-        Me.ValorT.SetIndex(Me._ValorT_2, CType(2, Short))
+        Me.ValorT.Add(2, Me._ValorT_2)
         Me._ValorT_2.Location = New System.Drawing.Point(320, 140)
         Me._ValorT_2.Name = "_ValorT_2"
         Me._ValorT_2.Size = New System.Drawing.Size(131, 21)
@@ -838,7 +826,7 @@ Friend Class DataShe1
         '
         '_ValorT_1
         '
-        Me.ValorT.SetIndex(Me._ValorT_1, CType(1, Short))
+        Me.ValorT.Add(1, Me._ValorT_1)
         Me._ValorT_1.Location = New System.Drawing.Point(320, 120)
         Me._ValorT_1.Name = "_ValorT_1"
         Me._ValorT_1.Size = New System.Drawing.Size(131, 21)
@@ -846,7 +834,7 @@ Friend Class DataShe1
         '
         '_ValorM_2
         '
-        Me.ValorM.SetIndex(Me._ValorM_2, CType(2, Short))
+        Me.ValorM.Add(2, Me._ValorM_2)
         Me._ValorM_2.Location = New System.Drawing.Point(190, 140)
         Me._ValorM_2.Name = "_ValorM_2"
         Me._ValorM_2.Size = New System.Drawing.Size(131, 21)
@@ -854,7 +842,7 @@ Friend Class DataShe1
         '
         '_ValorM_1
         '
-        Me.ValorM.SetIndex(Me._ValorM_1, CType(1, Short))
+        Me.ValorM.Add(1, Me._ValorM_1)
         Me._ValorM_1.Location = New System.Drawing.Point(190, 120)
         Me._ValorM_1.Name = "_ValorM_1"
         Me._ValorM_1.Size = New System.Drawing.Size(131, 21)
@@ -862,7 +850,7 @@ Friend Class DataShe1
         '
         '_ValorT_0
         '
-        Me.ValorT.SetIndex(Me._ValorT_0, CType(0, Short))
+        Me.ValorT.Add(0, Me._ValorT_0)
         Me._ValorT_0.Location = New System.Drawing.Point(320, 100)
         Me._ValorT_0.Name = "_ValorT_0"
         Me._ValorT_0.Size = New System.Drawing.Size(131, 21)
@@ -870,7 +858,7 @@ Friend Class DataShe1
         '
         '_ValorM_0
         '
-        Me.ValorM.SetIndex(Me._ValorM_0, CType(0, Short))
+        Me.ValorM.Add(0, Me._ValorM_0)
         Me._ValorM_0.Location = New System.Drawing.Point(190, 100)
         Me._ValorM_0.Name = "_ValorM_0"
         Me._ValorM_0.Size = New System.Drawing.Size(131, 21)
@@ -878,7 +866,7 @@ Friend Class DataShe1
         '
         '_ValorT_8
         '
-        Me.ValorT.SetIndex(Me._ValorT_8, CType(8, Short))
+        Me.ValorT.Add(8, Me._ValorT_8)
         Me._ValorT_8.Location = New System.Drawing.Point(322, 340)
         Me._ValorT_8.Name = "_ValorT_8"
         Me._ValorT_8.Size = New System.Drawing.Size(131, 21)
@@ -886,7 +874,7 @@ Friend Class DataShe1
         '
         '_ValorM_8
         '
-        Me.ValorM.SetIndex(Me._ValorM_8, CType(8, Short))
+        Me.ValorM.Add(8, Me._ValorM_8)
         Me._ValorM_8.Location = New System.Drawing.Point(192, 340)
         Me._ValorM_8.Name = "_ValorM_8"
         Me._ValorM_8.Size = New System.Drawing.Size(131, 21)
@@ -899,7 +887,7 @@ Friend Class DataShe1
         Me._LabFlui_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_20.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_20.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_20, CType(20, Short))
+        Me.LabFlui.Add(20, Me._LabFlui_20)
         Me._LabFlui_20.Location = New System.Drawing.Point(0, 340)
         Me._LabFlui_20.Name = "_LabFlui_20"
         Me._LabFlui_20.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -913,7 +901,7 @@ Friend Class DataShe1
         Me._LabFlui_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_16.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_16.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_16, CType(16, Short))
+        Me.LabFlui.Add(16, Me._LabFlui_16)
         Me._LabFlui_16.Location = New System.Drawing.Point(30, 424)
         Me._LabFlui_16.Name = "_LabFlui_16"
         Me._LabFlui_16.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -927,7 +915,7 @@ Friend Class DataShe1
         Me._LabFlui_19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_19.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_19.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_19, CType(19, Short))
+        Me.LabFlui.Add(19, Me._LabFlui_19)
         Me._LabFlui_19.Location = New System.Drawing.Point(220, 404)
         Me._LabFlui_19.Name = "_LabFlui_19"
         Me._LabFlui_19.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1053,7 +1041,7 @@ Friend Class DataShe1
         Me._LabFlui_18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_18.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_18.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_18, CType(18, Short))
+        Me.LabFlui.Add(18, Me._LabFlui_18)
         Me._LabFlui_18.Location = New System.Drawing.Point(140, 404)
         Me._LabFlui_18.Name = "_LabFlui_18"
         Me._LabFlui_18.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1067,7 +1055,7 @@ Friend Class DataShe1
         Me._LabFlui_17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_17.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_17.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_17, CType(17, Short))
+        Me.LabFlui.Add(17, Me._LabFlui_17)
         Me._LabFlui_17.Location = New System.Drawing.Point(30, 404)
         Me._LabFlui_17.Name = "_LabFlui_17"
         Me._LabFlui_17.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1081,7 +1069,7 @@ Friend Class DataShe1
         Me._LabFlui_15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_15.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_15.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_15, CType(15, Short))
+        Me.LabFlui.Add(15, Me._LabFlui_15)
         Me._LabFlui_15.Location = New System.Drawing.Point(190, 384)
         Me._LabFlui_15.Name = "_LabFlui_15"
         Me._LabFlui_15.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1095,7 +1083,7 @@ Friend Class DataShe1
         Me._LabFlui_14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_14.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_14.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_14, CType(14, Short))
+        Me.LabFlui.Add(14, Me._LabFlui_14)
         Me._LabFlui_14.Location = New System.Drawing.Point(90, 384)
         Me._LabFlui_14.Name = "_LabFlui_14"
         Me._LabFlui_14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1109,7 +1097,7 @@ Friend Class DataShe1
         Me._LabFlui_13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_13.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_13.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_13, CType(13, Short))
+        Me.LabFlui.Add(13, Me._LabFlui_13)
         Me._LabFlui_13.Location = New System.Drawing.Point(30, 384)
         Me._LabFlui_13.Name = "_LabFlui_13"
         Me._LabFlui_13.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1136,7 +1124,7 @@ Friend Class DataShe1
         Me._LabFlui_12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_12.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_12.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_12, CType(12, Short))
+        Me.LabFlui.Add(12, Me._LabFlui_12)
         Me._LabFlui_12.Location = New System.Drawing.Point(150, 364)
         Me._LabFlui_12.Name = "_LabFlui_12"
         Me._LabFlui_12.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1150,7 +1138,7 @@ Friend Class DataShe1
         Me._LabFlui_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_11.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_11.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_11, CType(11, Short))
+        Me.LabFlui.Add(11, Me._LabFlui_11)
         Me._LabFlui_11.Location = New System.Drawing.Point(0, 300)
         Me._LabFlui_11.Name = "_LabFlui_11"
         Me._LabFlui_11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1164,7 +1152,7 @@ Friend Class DataShe1
         Me._LabFlui_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_10.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_10.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_10, CType(10, Short))
+        Me.LabFlui.Add(10, Me._LabFlui_10)
         Me._LabFlui_10.Location = New System.Drawing.Point(0, 320)
         Me._LabFlui_10.Name = "_LabFlui_10"
         Me._LabFlui_10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1178,7 +1166,7 @@ Friend Class DataShe1
         Me._LabFlui_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_9.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_9.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_9, CType(9, Short))
+        Me.LabFlui.Add(9, Me._LabFlui_9)
         Me._LabFlui_9.Location = New System.Drawing.Point(0, 280)
         Me._LabFlui_9.Name = "_LabFlui_9"
         Me._LabFlui_9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1192,7 +1180,7 @@ Friend Class DataShe1
         Me._LabFlui_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_8, CType(8, Short))
+        Me.LabFlui.Add(8, Me._LabFlui_8)
         Me._LabFlui_8.Location = New System.Drawing.Point(40, 260)
         Me._LabFlui_8.Name = "_LabFlui_8"
         Me._LabFlui_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1206,7 +1194,7 @@ Friend Class DataShe1
         Me._LabFlui_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_7, CType(7, Short))
+        Me.LabFlui.Add(7, Me._LabFlui_7)
         Me._LabFlui_7.Location = New System.Drawing.Point(40, 240)
         Me._LabFlui_7.Name = "_LabFlui_7"
         Me._LabFlui_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1220,7 +1208,7 @@ Friend Class DataShe1
         Me._LabFlui_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_6, CType(6, Short))
+        Me.LabFlui.Add(6, Me._LabFlui_6)
         Me._LabFlui_6.Location = New System.Drawing.Point(40, 220)
         Me._LabFlui_6.Name = "_LabFlui_6"
         Me._LabFlui_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1288,7 +1276,7 @@ Friend Class DataShe1
         Me._LabFlui_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_5, CType(5, Short))
+        Me.LabFlui.Add(5, Me._LabFlui_5)
         Me._LabFlui_5.Location = New System.Drawing.Point(40, 200)
         Me._LabFlui_5.Name = "_LabFlui_5"
         Me._LabFlui_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1302,7 +1290,7 @@ Friend Class DataShe1
         Me._LabFlui_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_4, CType(4, Short))
+        Me.LabFlui.Add(4, Me._LabFlui_4)
         Me._LabFlui_4.Location = New System.Drawing.Point(40, 180)
         Me._LabFlui_4.Name = "_LabFlui_4"
         Me._LabFlui_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1316,7 +1304,7 @@ Friend Class DataShe1
         Me._LabFlui_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_3, CType(3, Short))
+        Me.LabFlui.Add(3, Me._LabFlui_3)
         Me._LabFlui_3.Location = New System.Drawing.Point(40, 160)
         Me._LabFlui_3.Name = "_LabFlui_3"
         Me._LabFlui_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1330,7 +1318,7 @@ Friend Class DataShe1
         Me._LabFlui_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_2, CType(2, Short))
+        Me.LabFlui.Add(2, Me._LabFlui_2)
         Me._LabFlui_2.Location = New System.Drawing.Point(40, 140)
         Me._LabFlui_2.Name = "_LabFlui_2"
         Me._LabFlui_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1344,7 +1332,7 @@ Friend Class DataShe1
         Me._LabFlui_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_1, CType(1, Short))
+        Me.LabFlui.Add(1, Me._LabFlui_1)
         Me._LabFlui_1.Location = New System.Drawing.Point(40, 120)
         Me._LabFlui_1.Name = "_LabFlui_1"
         Me._LabFlui_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1358,7 +1346,7 @@ Friend Class DataShe1
         Me._LabFlui_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._LabFlui_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._LabFlui_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabFlui.SetIndex(Me._LabFlui_0, CType(0, Short))
+        Me.LabFlui.Add(0, Me._LabFlui_0)
         Me._LabFlui_0.Location = New System.Drawing.Point(40, 100)
         Me._LabFlui_0.Name = "_LabFlui_0"
         Me._LabFlui_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1513,12 +1501,22 @@ Friend Class DataShe1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Foglio dati - Dati di progetto"
         Me.Frame1.ResumeLayout(False)
-        CType(Me.ComboM, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboT, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LabFlui, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Option1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ValorM, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ValorT, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In ComboM.Values
+            AddHandler control.SelectedIndexChanged, AddressOf ComboM_SelectedIndexChanged
+        Next
+        For Each control In ComboT.Values
+            AddHandler control.SelectedIndexChanged, AddressOf ComboT_SelectedIndexChanged
+        Next
+
+        For Each control In Option1.Values
+            AddHandler control.CheckedChanged, AddressOf Option1_CheckedChanged
+        Next
+        For Each control In ValorM.Values
+            AddHandler control.TextChanged, AddressOf ValorM_Change
+        Next
+        For Each control In ValorT.Values
+            AddHandler control.TextChanged, AddressOf ValorT_Change
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -1596,8 +1594,8 @@ Friend Class DataShe1
     End Sub
 
     'UPGRADE_WARNING: L'evento ComboM.SelectedIndexChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub ComboM_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ComboM.SelectedIndexChanged
-        Dim Index As Short = ComboM.GetIndex(eventSender)
+    Private Sub ComboM_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ComboM, eventSender)
         Dim dummy As Short
         Select Case Index
             Case 0 'PHWT
@@ -1651,8 +1649,8 @@ Friend Class DataShe1
     End Sub
 
     'UPGRADE_WARNING: L'evento ComboT.SelectedIndexChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub ComboT_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ComboT.SelectedIndexChanged
-        Dim Index As Short = ComboT.GetIndex(eventSender)
+    Private Sub ComboT_SelectedIndexChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ComboT, eventSender)
         Dim dummy As Short
         Select Case Index
             Case 0 'PHWT
@@ -1709,14 +1707,14 @@ Friend Class DataShe1
             .Diam = Val(DataShe1.DefInstance.ValorM(13).Text)
             .Spess = Val(DataShe1.DefInstance.ValorM(14).Text)
             .TextBWG = DataShe1.DefInstance.TextBWG.Text
-            .BWG_Renamed = Val(.TextBWG)
+            .BWG = Val(.TextBWG)
             .UniMis = DataSheet.DatiPrg.UniMis
             .Mostra()
             DataSheet.DatiPrg.TubiInform.Diam = .Diam
             DataShe1.DefInstance.ValorM(13).Text = Str(.Diam)
             DataSheet.DatiPrg.TubiInform.Spess = .Spess
             DataShe1.DefInstance.ValorM(14).Text = Str(.Spess)
-            DataSheet.DatiPrg.TubiInform.BWG = .BWG_Renamed
+            DataSheet.DatiPrg.TubiInform.BWG = .BWG
             DataShe1.DefInstance.TextBWG.Text = .TextBWG
         End With
         objBWG = Nothing
@@ -1739,9 +1737,9 @@ Friend Class DataShe1
     End Sub
 
     'UPGRADE_WARNING: L'evento Option1.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Option1.CheckedChanged
+    Private Sub Option1_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = Option1.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(Option1, eventSender)
             DataShee.DefInstance.Option1(Index).Checked = True
         End If
     End Sub
@@ -1763,8 +1761,8 @@ Friend Class DataShe1
         DataSheet.DatiPrg.TubiInform.Toller = Toller.SelectedIndex
     End Sub
 
-    Private Sub ValorM_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ValorM.TextChanged
-        Dim Index As Short = ValorM.GetIndex(eventSender)
+    Private Sub ValorM_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ValorM, eventSender)
         Dim Valor As Single
         Valor = Val(DataShe1.DefInstance.ValorM(Index).Text)
         Select Case Index
@@ -1788,8 +1786,8 @@ Friend Class DataShe1
         End Select
     End Sub
 
-    Private Sub ValorT_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles ValorT.TextChanged
-        Dim Index As Short = ValorT.GetIndex(eventSender)
+    Private Sub ValorT_Change(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(ValorT, eventSender)
         Dim Valor As Single
         Valor = Val(DataShe1.DefInstance.ValorT(Index).Text)
         Select Case Index

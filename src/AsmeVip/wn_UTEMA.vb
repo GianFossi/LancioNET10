@@ -3480,7 +3480,7 @@ cont3:  Next rtx
         FileGet(ifl, DatiInt(IndProbl))
     End Function
     Public Overloads Function Leggi(ByVal fs As FileStream) As Boolean
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         Leggi = True
         Problem(IndProbl) = CType(bf.Deserialize(fs), DatiGeneral)
         FlShel(IndProbl) = CType(bf.Deserialize(fs), datiFlangia)
@@ -3488,7 +3488,7 @@ cont3:  Next rtx
         DatiInt(IndProbl) = CType(bf.Deserialize(fs), DatiCalc)
     End Function
     Public Sub Salva(ByVal fs As FileStream)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         bf.Serialize(fs, Problem(IndProbl))
         bf.Serialize(fs, FlShel(IndProbl))
         bf.Serialize(fs, FlChan(IndProbl))

@@ -1419,7 +1419,7 @@ Friend Class frmFlanAn
                                 Testo = Testo & "Vuoi correggere il materiale dei tiranti di " & Trim(Involucr(k, j).Mark) & "?" & vbCrLf
                                 Testo = Testo & "N.B.: Se si vuole correggere il materiale di " & Involucr(kLato, jInvolucr).Mark.Trim & vbCrLf
                                 Testo = Testo & "rispondere no e selezionare nuovamente il materiale."
-                                If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then Uniforma1(k, j, indice)
+                                If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then Uniforma1(k, j, indice)
                             Else
                                 Uniforma1(k, j, indice)
                             End If

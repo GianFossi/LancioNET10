@@ -1147,7 +1147,7 @@ Module Output
         Dim Nnozz, k As Short
         If icome.Trim.Length = 0 Then Exit Sub
         Dim fs As New FileStream(icome, FileMode.OpenOrCreate)
-        Dim bf As New BinaryFormatter
+        Dim bf As New Lancio.Legacy.Serialization.LegacyBinarySerializer
         If Not nuovoINP Then
             If MostraAiuto(2101, ChiaviMess.MessQuestion + ChiaviMess.MessYesNo) = ChiaviMess.Messno Then Exit Sub
         End If

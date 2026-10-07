@@ -897,7 +897,7 @@ Friend Class Apert
             End If
             jj = jj + 1
         Next
-        tbClassi.Close()
+        tbClassi.Dispose()
         dbClassi.Close()
     End Sub
     Private Sub AggiorFBM()

@@ -45,7 +45,7 @@ Friend Class frmForm
     Public WithEvents pctForm As System.Windows.Forms.PictureBox
     Public WithEvents _ListViewSpess_0 As System.windows.forms.ListView
     'Public WithEvents ListViewSpess As Microsoft.VisualBasic.Compatibility.VB6.lis
-    Public WithEvents optOrd As Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
+    Public optOrd As New System.Collections.Generic.Dictionary(Of Integer, RadioButton)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -62,11 +62,9 @@ Friend Class frmForm
         Me.pctForm = New System.Windows.Forms.PictureBox
         Me._ListViewSpess_0 = New System.windows.forms.ListView
         '    Me.ListViewSpess = New AxListViewArray.AxListViewArray(Me.components)
-        Me.optOrd = New Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray(Me.components)
         Me.Frame1.SuspendLayout()
         CType(Me._ListViewSpess_0, System.ComponentModel.ISupportInitialize).BeginInit()
         '     CType(Me.ListViewSpess, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.optOrd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Procedi
@@ -107,7 +105,7 @@ Friend Class frmForm
         Me._optOrd_1.BackColor = System.Drawing.SystemColors.Control
         Me._optOrd_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._optOrd_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.optOrd.SetIndex(Me._optOrd_1, CType(1, Short))
+        Me.optOrd.Add(1, Me._optOrd_1)
         Me._optOrd_1.Location = New System.Drawing.Point(8, 32)
         Me._optOrd_1.Name = "_optOrd_1"
         Me._optOrd_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -121,7 +119,7 @@ Friend Class frmForm
         Me._optOrd_0.BackColor = System.Drawing.SystemColors.Control
         Me._optOrd_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._optOrd_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.optOrd.SetIndex(Me._optOrd_0, CType(0, Short))
+        Me.optOrd.Add(0, Me._optOrd_0)
         Me._optOrd_0.Location = New System.Drawing.Point(8, 16)
         Me._optOrd_0.Name = "_optOrd_0"
         Me._optOrd_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -190,7 +188,9 @@ Friend Class frmForm
         Me.Frame1.ResumeLayout(False)
         CType(Me._ListViewSpess_0, System.ComponentModel.ISupportInitialize).EndInit()
         '  CType(Me.ListViewSpess, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.optOrd, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In optOrd.Values
+            AddHandler control.CheckedChanged, AddressOf optOrd_CheckedChanged
+        Next
         Me.ResumeLayout(False)
 
     End Sub
@@ -298,9 +298,9 @@ Friend Class frmForm
         DisegnaLamiere()
     End Sub
     'UPGRADE_WARNING: L'evento optOrd.CheckedChanged può essere generato quando il form è inizializzato. Fare clic qui per ulteriori informazioni: 'ms-help://MS.VSCC.2003/commoner/redir/redirect.htm?keyword="vbup2075"'
-    Private Sub optOrd_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles optOrd.CheckedChanged
+    Private Sub optOrd_CheckedChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
         If eventSender.Checked Then
-            Dim Index As Short = optOrd.GetIndex(eventSender)
+            Dim Index As Short = IndexedControls.IndexOf(optOrd, eventSender)
             PrimaLungDopoLarg = optOrd(0).Checked
             Riordina()
         End If

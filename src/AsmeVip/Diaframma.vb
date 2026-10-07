@@ -2087,7 +2087,7 @@ Friend Class frmDiaf
                         Testo = "Non hai richiesto il riversamento dei risultati" & vbCrLf
                         Testo = Testo & "del calcolo del coperchio." & vbCrLf
                         Testo = Testo & "Vuoi farlo ora?"
-                        If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then Call Clicka()
+                        If MessageBox.Show(Testo, "AsmeVip", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then Call Clicka()
                     End If
                     Recupera()
                     .Calcolo()

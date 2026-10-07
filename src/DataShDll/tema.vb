@@ -70,12 +70,12 @@ Friend Class frmTEMA
     Public WithEvents _lblSpiega_2 As System.Windows.Forms.Label
     Public WithEvents _lblSpiega_1 As System.Windows.Forms.Label
     Public WithEvents _lblSpiega_0 As System.Windows.Forms.Label
-    Public WithEvents Due As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents Tre As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents Uno As Microsoft.VisualBasic.Compatibility.VB6.ButtonArray
-    Public WithEvents lblLettera As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents lblSpiega As Microsoft.VisualBasic.Compatibility.VB6.LabelArray
-    Public WithEvents pctFig As Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray
+    Public Due As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public Tre As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public Uno As New System.Collections.Generic.Dictionary(Of Integer, Button)
+    Public lblLettera As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public lblSpiega As New System.Collections.Generic.Dictionary(Of Integer, Label)
+    Public pctFig As New System.Collections.Generic.Dictionary(Of Integer, PictureBox)
     'NOTA: la routine seguente è richiesta dalla progettazione Windows Form.
     'Può essere modificata utilizzando la finestra di progettazione Windows Form.
     'Non modificarla mediante l'editor di codice.
@@ -125,24 +125,12 @@ Friend Class frmTEMA
         Me._lblSpiega_2 = New System.Windows.Forms.Label
         Me._lblSpiega_1 = New System.Windows.Forms.Label
         Me._lblSpiega_0 = New System.Windows.Forms.Label
-        Me.Due = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Tre = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.Uno = New Microsoft.VisualBasic.Compatibility.VB6.ButtonArray(Me.components)
-        Me.lblLettera = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.lblSpiega = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.pctFig = New Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(Me.components)
         Me.cmd1Up = New System.Windows.Forms.Button
         Me.cmd2Up = New System.Windows.Forms.Button
         Me.cmd3Up = New System.Windows.Forms.Button
         Me.cmd1Down = New System.Windows.Forms.Button
         Me.cmd2Down = New System.Windows.Forms.Button
         Me.cmd3Down = New System.Windows.Forms.Button
-        CType(Me.Due, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tre, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Uno, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lblLettera, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lblSpiega, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctFig, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '_Tre_8
@@ -150,7 +138,7 @@ Friend Class frmTEMA
         Me._Tre_8.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_8.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_8, CType(8, Short))
+        Me.Tre.Add(8, Me._Tre_8)
         Me._Tre_8.Location = New System.Drawing.Point(520, 310)
         Me._Tre_8.Name = "_Tre_8"
         Me._Tre_8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -163,7 +151,7 @@ Friend Class frmTEMA
         Me._Tre_7.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_7, CType(7, Short))
+        Me.Tre.Add(7, Me._Tre_7)
         Me._Tre_7.Location = New System.Drawing.Point(480, 310)
         Me._Tre_7.Name = "_Tre_7"
         Me._Tre_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -176,7 +164,7 @@ Friend Class frmTEMA
         Me._Tre_6.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_6, CType(6, Short))
+        Me.Tre.Add(6, Me._Tre_6)
         Me._Tre_6.Location = New System.Drawing.Point(440, 310)
         Me._Tre_6.Name = "_Tre_6"
         Me._Tre_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -189,7 +177,7 @@ Friend Class frmTEMA
         Me._Tre_5.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_5, CType(5, Short))
+        Me.Tre.Add(5, Me._Tre_5)
         Me._Tre_5.Location = New System.Drawing.Point(520, 270)
         Me._Tre_5.Name = "_Tre_5"
         Me._Tre_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -202,7 +190,7 @@ Friend Class frmTEMA
         Me._Tre_4.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_4, CType(4, Short))
+        Me.Tre.Add(4, Me._Tre_4)
         Me._Tre_4.Location = New System.Drawing.Point(480, 270)
         Me._Tre_4.Name = "_Tre_4"
         Me._Tre_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -215,7 +203,7 @@ Friend Class frmTEMA
         Me._Tre_3.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_3, CType(3, Short))
+        Me.Tre.Add(3, Me._Tre_3)
         Me._Tre_3.Location = New System.Drawing.Point(440, 270)
         Me._Tre_3.Name = "_Tre_3"
         Me._Tre_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -228,7 +216,7 @@ Friend Class frmTEMA
         Me._Tre_2.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_2, CType(2, Short))
+        Me.Tre.Add(2, Me._Tre_2)
         Me._Tre_2.Location = New System.Drawing.Point(520, 230)
         Me._Tre_2.Name = "_Tre_2"
         Me._Tre_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -241,7 +229,7 @@ Friend Class frmTEMA
         Me._Tre_1.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_1, CType(1, Short))
+        Me.Tre.Add(1, Me._Tre_1)
         Me._Tre_1.Location = New System.Drawing.Point(480, 230)
         Me._Tre_1.Name = "_Tre_1"
         Me._Tre_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -254,7 +242,7 @@ Friend Class frmTEMA
         Me._Tre_0.BackColor = System.Drawing.SystemColors.Control
         Me._Tre_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Tre_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Tre.SetIndex(Me._Tre_0, CType(0, Short))
+        Me.Tre.Add(0, Me._Tre_0)
         Me._Tre_0.Location = New System.Drawing.Point(440, 230)
         Me._Tre_0.Name = "_Tre_0"
         Me._Tre_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -275,7 +263,7 @@ Friend Class frmTEMA
         Me._Due_7.BackColor = System.Drawing.SystemColors.Control
         Me._Due_7.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_7, CType(7, Short))
+        Me.Due.Add(7, Me._Due_7)
         Me._Due_7.Location = New System.Drawing.Point(340, 270)
         Me._Due_7.Name = "_Due_7"
         Me._Due_7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -288,7 +276,7 @@ Friend Class frmTEMA
         Me._Due_6.BackColor = System.Drawing.SystemColors.Control
         Me._Due_6.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_6, CType(6, Short))
+        Me.Due.Add(6, Me._Due_6)
         Me._Due_6.Location = New System.Drawing.Point(300, 270)
         Me._Due_6.Name = "_Due_6"
         Me._Due_6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -301,7 +289,7 @@ Friend Class frmTEMA
         Me._Due_5.BackColor = System.Drawing.SystemColors.Control
         Me._Due_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_5, CType(5, Short))
+        Me.Due.Add(5, Me._Due_5)
         Me._Due_5.Location = New System.Drawing.Point(260, 270)
         Me._Due_5.Name = "_Due_5"
         Me._Due_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -314,7 +302,7 @@ Friend Class frmTEMA
         Me._Due_4.BackColor = System.Drawing.SystemColors.Control
         Me._Due_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_4, CType(4, Short))
+        Me.Due.Add(4, Me._Due_4)
         Me._Due_4.Location = New System.Drawing.Point(220, 270)
         Me._Due_4.Name = "_Due_4"
         Me._Due_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -327,7 +315,7 @@ Friend Class frmTEMA
         Me._Due_3.BackColor = System.Drawing.SystemColors.Control
         Me._Due_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_3, CType(3, Short))
+        Me.Due.Add(3, Me._Due_3)
         Me._Due_3.Location = New System.Drawing.Point(340, 230)
         Me._Due_3.Name = "_Due_3"
         Me._Due_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -340,7 +328,7 @@ Friend Class frmTEMA
         Me._Due_2.BackColor = System.Drawing.SystemColors.Control
         Me._Due_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_2, CType(2, Short))
+        Me.Due.Add(2, Me._Due_2)
         Me._Due_2.Location = New System.Drawing.Point(300, 230)
         Me._Due_2.Name = "_Due_2"
         Me._Due_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -353,7 +341,7 @@ Friend Class frmTEMA
         Me._Due_1.BackColor = System.Drawing.SystemColors.Control
         Me._Due_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_1, CType(1, Short))
+        Me.Due.Add(1, Me._Due_1)
         Me._Due_1.Location = New System.Drawing.Point(260, 230)
         Me._Due_1.Name = "_Due_1"
         Me._Due_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -366,7 +354,7 @@ Friend Class frmTEMA
         Me._Due_0.BackColor = System.Drawing.SystemColors.Control
         Me._Due_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Due_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Due.SetIndex(Me._Due_0, CType(0, Short))
+        Me.Due.Add(0, Me._Due_0)
         Me._Due_0.Location = New System.Drawing.Point(220, 230)
         Me._Due_0.Name = "_Due_0"
         Me._Due_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -379,7 +367,7 @@ Friend Class frmTEMA
         Me._Uno_5.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_5.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_5, CType(5, Short))
+        Me.Uno.Add(5, Me._Uno_5)
         Me._Uno_5.Location = New System.Drawing.Point(120, 270)
         Me._Uno_5.Name = "_Uno_5"
         Me._Uno_5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -392,7 +380,7 @@ Friend Class frmTEMA
         Me._Uno_4.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_4.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_4, CType(4, Short))
+        Me.Uno.Add(4, Me._Uno_4)
         Me._Uno_4.Location = New System.Drawing.Point(80, 270)
         Me._Uno_4.Name = "_Uno_4"
         Me._Uno_4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -405,7 +393,7 @@ Friend Class frmTEMA
         Me._Uno_3.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_3.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_3, CType(3, Short))
+        Me.Uno.Add(3, Me._Uno_3)
         Me._Uno_3.Location = New System.Drawing.Point(40, 270)
         Me._Uno_3.Name = "_Uno_3"
         Me._Uno_3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -418,7 +406,7 @@ Friend Class frmTEMA
         Me._Uno_2.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_2, CType(2, Short))
+        Me.Uno.Add(2, Me._Uno_2)
         Me._Uno_2.Location = New System.Drawing.Point(120, 230)
         Me._Uno_2.Name = "_Uno_2"
         Me._Uno_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -431,7 +419,7 @@ Friend Class frmTEMA
         Me._Uno_1.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_1, CType(1, Short))
+        Me.Uno.Add(1, Me._Uno_1)
         Me._Uno_1.Location = New System.Drawing.Point(80, 230)
         Me._Uno_1.Name = "_Uno_1"
         Me._Uno_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -444,7 +432,7 @@ Friend Class frmTEMA
         Me._Uno_0.BackColor = System.Drawing.SystemColors.Control
         Me._Uno_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._Uno_0.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Uno.SetIndex(Me._Uno_0, CType(0, Short))
+        Me.Uno.Add(0, Me._Uno_0)
         Me._Uno_0.Location = New System.Drawing.Point(40, 230)
         Me._Uno_0.Name = "_Uno_0"
         Me._Uno_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -471,7 +459,7 @@ Friend Class frmTEMA
         Me._pctFig_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._pctFig_2.ForeColor = System.Drawing.SystemColors.WindowText
         Me._pctFig_2.Image = CType(resources.GetObject("_pctFig_2.Image"), System.Drawing.Image)
-        Me.pctFig.SetIndex(Me._pctFig_2, CType(2, Short))
+        Me.pctFig.Add(2, Me._pctFig_2)
         Me._pctFig_2.Location = New System.Drawing.Point(400, 0)
         Me._pctFig_2.Name = "_pctFig_2"
         Me._pctFig_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -486,7 +474,7 @@ Friend Class frmTEMA
         Me._pctFig_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._pctFig_1.ForeColor = System.Drawing.SystemColors.WindowText
         Me._pctFig_1.Image = CType(resources.GetObject("_pctFig_1.Image"), System.Drawing.Image)
-        Me.pctFig.SetIndex(Me._pctFig_1, CType(1, Short))
+        Me.pctFig.Add(1, Me._pctFig_1)
         Me._pctFig_1.Location = New System.Drawing.Point(180, 0)
         Me._pctFig_1.Name = "_pctFig_1"
         Me._pctFig_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -501,7 +489,7 @@ Friend Class frmTEMA
         Me._pctFig_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._pctFig_0.ForeColor = System.Drawing.SystemColors.WindowText
         Me._pctFig_0.Image = CType(resources.GetObject("_pctFig_0.Image"), System.Drawing.Image)
-        Me.pctFig.SetIndex(Me._pctFig_0, CType(0, Short))
+        Me.pctFig.Add(0, Me._pctFig_0)
         Me._pctFig_0.Location = New System.Drawing.Point(0, 0)
         Me._pctFig_0.Name = "_pctFig_0"
         Me._pctFig_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -531,7 +519,7 @@ Friend Class frmTEMA
         Me._lblLettera_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblLettera_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblLettera_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblLettera.SetIndex(Me._lblLettera_2, CType(2, Short))
+        Me.lblLettera.Add(2, Me._lblLettera_2)
         Me._lblLettera_2.Location = New System.Drawing.Point(400, 170)
         Me._lblLettera_2.Name = "_lblLettera_2"
         Me._lblLettera_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -545,7 +533,7 @@ Friend Class frmTEMA
         Me._lblLettera_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblLettera_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblLettera_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblLettera.SetIndex(Me._lblLettera_1, CType(1, Short))
+        Me.lblLettera.Add(1, Me._lblLettera_1)
         Me._lblLettera_1.Location = New System.Drawing.Point(180, 170)
         Me._lblLettera_1.Name = "_lblLettera_1"
         Me._lblLettera_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -559,7 +547,7 @@ Friend Class frmTEMA
         Me._lblLettera_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblLettera_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblLettera_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblLettera.SetIndex(Me._lblLettera_0, CType(0, Short))
+        Me.lblLettera.Add(0, Me._lblLettera_0)
         Me._lblLettera_0.Location = New System.Drawing.Point(0, 170)
         Me._lblLettera_0.Name = "_lblLettera_0"
         Me._lblLettera_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -573,7 +561,7 @@ Friend Class frmTEMA
         Me._lblSpiega_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblSpiega_2.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblSpiega_2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblSpiega.SetIndex(Me._lblSpiega_2, CType(2, Short))
+        Me.lblSpiega.Add(2, Me._lblSpiega_2)
         Me._lblSpiega_2.Location = New System.Drawing.Point(430, 170)
         Me._lblSpiega_2.Name = "_lblSpiega_2"
         Me._lblSpiega_2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -586,7 +574,7 @@ Friend Class frmTEMA
         Me._lblSpiega_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblSpiega_1.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblSpiega_1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblSpiega.SetIndex(Me._lblSpiega_1, CType(1, Short))
+        Me.lblSpiega.Add(1, Me._lblSpiega_1)
         Me._lblSpiega_1.Location = New System.Drawing.Point(210, 170)
         Me._lblSpiega_1.Name = "_lblSpiega_1"
         Me._lblSpiega_1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -599,7 +587,7 @@ Friend Class frmTEMA
         Me._lblSpiega_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me._lblSpiega_0.Cursor = System.Windows.Forms.Cursors.Default
         Me._lblSpiega_0.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lblSpiega.SetIndex(Me._lblSpiega_0, CType(0, Short))
+        Me.lblSpiega.Add(0, Me._lblSpiega_0)
         Me._lblSpiega_0.Location = New System.Drawing.Point(30, 170)
         Me._lblSpiega_0.Name = "_lblSpiega_0"
         Me._lblSpiega_0.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -728,12 +716,18 @@ Friend Class frmTEMA
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Classe TEMA"
-        CType(Me.Due, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tre, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Uno, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lblLettera, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lblSpiega, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctFig, System.ComponentModel.ISupportInitialize).EndInit()
+        For Each control In Due.Values
+            AddHandler control.Click, AddressOf Due_Click
+        Next
+        For Each control In Tre.Values
+            AddHandler control.Click, AddressOf Tre_Click
+        Next
+        For Each control In Uno.Values
+            AddHandler control.Click, AddressOf Uno_Click
+        Next
+
+
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -781,8 +775,8 @@ Friend Class frmTEMA
         mioApert.TEMA.Text = DataSheet.DatiSh0.TEMALetter(1) & DataSheet.DatiSh0.TEMALetter(2) & DataSheet.DatiSh0.TEMALetter(3)
     End Sub
 
-    Private Sub Due_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Due.Click
-        Dim Index As Short = Due.GetIndex(eventSender)
+    Private Sub Due_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Due, eventSender)
         iScelta(2) = Index + 1
         Call AggiorPic(2)
 
@@ -820,13 +814,13 @@ Cont:
             Call AggiorPic(i)
         Next
     End Sub
-    Private Sub Tre_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Tre.Click
-        Dim Index As Short = Tre.GetIndex(eventSender)
+    Private Sub Tre_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Tre, eventSender)
         iScelta(3) = Index + 1
         Call AggiorPic(3)
     End Sub
-    Private Sub Uno_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Uno.Click
-        Dim Index As Short = Uno.GetIndex(eventSender)
+    Private Sub Uno_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs)
+        Dim Index As Short = IndexedControls.IndexOf(Uno, eventSender)
         iScelta(1) = Index + 1
         Call AggiorPic(1)
     End Sub
