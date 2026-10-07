@@ -44,7 +44,7 @@ Friend Class Apert
     Public WithEvents Oggetto As System.Windows.Forms.TextBox
     Public WithEvents Cliente As System.Windows.Forms.TextBox
     Public WithEvents cmdProto As System.Windows.Forms.Button
-    Public WithEvents Grid1 As DataGrid
+    Public WithEvents Grid1 As DataGridView
     Public WithEvents lblProto As System.Windows.Forms.Label
     Public WithEvents LabHV As System.Windows.Forms.Label
     Public WithEvents FBMLabel As System.Windows.Forms.Label
@@ -84,10 +84,9 @@ Friend Class Apert
     Friend WithEvents StatusBar1 As System.Windows.Forms.StatusStrip
     Friend WithEvents StatusBarPanel1 As Global.LancioMigration.LegacyStatusLabel
     Friend WithEvents StatusBarPanel2 As Global.LancioMigration.LegacyStatusLabel
-    Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
-    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
-    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuDataSheet As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuDistinta As System.Windows.Forms.ToolStripMenuItem
@@ -116,11 +115,10 @@ Friend Class Apert
         Me.Oggetto = New System.Windows.Forms.TextBox
         Me.Cliente = New System.Windows.Forms.TextBox
         Me.cmdProto = New System.Windows.Forms.Button
-        Me.Grid1 = New System.Windows.Forms.DataGrid
-        Me.DataGridTableStyle1 = New System.Windows.Forms.DataGridTableStyle
-        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.Grid1 = New System.Windows.Forms.DataGridView
+        Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.lblProto = New System.Windows.Forms.Label
         Me.LabHV = New System.Windows.Forms.Label
         Me.FBMLabel = New System.Windows.Forms.Label
@@ -421,45 +419,41 @@ Friend Class Apert
         '
         'Grid1
         '
-        Me.Grid1.CaptionVisible = False
         Me.Grid1.DataMember = ""
-        Me.Grid1.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.Grid1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Grid1.Location = New System.Drawing.Point(70, 164)
         Me.Grid1.Name = "Grid1"
         Me.Grid1.Size = New System.Drawing.Size(311, 121)
         Me.Grid1.TabIndex = 28
-        Me.Grid1.TableStyles.AddRange(New System.Windows.Forms.DataGridTableStyle() {Me.DataGridTableStyle1})
         Me.Grid1.Visible = False
         '
         'DataGridTableStyle1
         '
-        Me.DataGridTableStyle1.DataGrid = Me.Grid1
-        Me.DataGridTableStyle1.GridColumnStyles.AddRange(New System.Windows.Forms.DataGridColumnStyle() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3})
-        Me.DataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGridTableStyle1.MappingName = ""
-        Me.DataGridTableStyle1.RowHeaderWidth = 25
+        Me.Grid1.AutoGenerateColumns = False
+        Me.Grid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridTextBoxColumn1, Me.DataGridTextBoxColumn2, Me.DataGridTextBoxColumn3})
+        Me.Grid1.RowHeadersWidth = 25
         '
         'DataGridTextBoxColumn1
         '
-        Me.DataGridTextBoxColumn1.Format = ""
-        Me.DataGridTextBoxColumn1.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn1.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn1.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn1.HeaderText = "Descrizione"
-        Me.DataGridTextBoxColumn1.MappingName = ""
+        Me.DataGridTextBoxColumn1.DataPropertyName = ""
         Me.DataGridTextBoxColumn1.Width = 141
         '
         'DataGridTextBoxColumn2
         '
-        Me.DataGridTextBoxColumn2.Format = ""
-        Me.DataGridTextBoxColumn2.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn2.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn2.DefaultCellStyle.FormatProvider = Nothing
         Me.DataGridTextBoxColumn2.HeaderText = "Dettagli"
-        Me.DataGridTextBoxColumn2.MappingName = ""
+        Me.DataGridTextBoxColumn2.DataPropertyName = ""
         Me.DataGridTextBoxColumn2.Width = 133
         '
         'DataGridTextBoxColumn3
         '
-        Me.DataGridTextBoxColumn3.Format = ""
-        Me.DataGridTextBoxColumn3.FormatInfo = Nothing
-        Me.DataGridTextBoxColumn3.MappingName = ""
+        Me.DataGridTextBoxColumn3.DefaultCellStyle.Format = ""
+        Me.DataGridTextBoxColumn3.DefaultCellStyle.FormatProvider = Nothing
+        Me.DataGridTextBoxColumn3.DataPropertyName = ""
         Me.DataGridTextBoxColumn3.Width = 17
         '
         'lblProto
@@ -977,13 +971,13 @@ Friend Class Apert
             'Grid1.Row = 1 : Grid1.Col = 0
             If NRows > 7 Then
                 NRows = 7
-                Grid1.TableStyles(0).GridColumnStyles(0).Width = Grid1.Width - Grid1.TableStyles(0).GridColumnStyles(1).Width - _
-                                                                 Grid1.TableStyles(0).GridColumnStyles(2).Width - _
-                                                                 Grid1.TableStyles(0).RowHeaderWidth * (-CShort(Grid1.TableStyles(0).RowHeadersVisible)) - 20
+                Grid1.Columns(0).Width = Grid1.Width - Grid1.Columns(1).Width - _
+                                                                 Grid1.Columns(2).Width - _
+                                                                 Grid1.RowHeadersWidth * (-CShort(Grid1.RowHeadersVisible)) - 20
             Else
-                Grid1.TableStyles(0).GridColumnStyles(0).Width = Grid1.Width - Grid1.TableStyles(0).GridColumnStyles(1).Width - _
-                                                                 Grid1.TableStyles(0).GridColumnStyles(2).Width - _
-                                                                 Grid1.TableStyles(0).RowHeaderWidth * (-CShort(Grid1.TableStyles(0).RowHeadersVisible)) - 4
+                Grid1.Columns(0).Width = Grid1.Width - Grid1.Columns(1).Width - _
+                                                                 Grid1.Columns(2).Width - _
+                                                                 Grid1.RowHeadersWidth * (-CShort(Grid1.RowHeadersVisible)) - 4
             End If
             'Grid1.Height = System.Math.Max(3, (NRows + 1)) * Grid1.PreferredRowHeight ' VB6.TwipsToPixelsY(NRows * (Grid1.get_RowHeight(0) + 30)) '???
             AggiorLabel()
@@ -1503,11 +1497,10 @@ Friend Class Apert
         tbGrid.Columns.Add(New DataColumn("Col2", GetType(String)))
         tbGrid.Columns.Add(New DataColumn("Col3", GetType(String)))
         dvGrid = New DataView(tbGrid)
-        Grid1.TableStyles(0).MappingName = "Lista"
-        Grid1.TableStyles(0).GridColumnStyles(0).MappingName = "Col1"
-        Grid1.TableStyles(0).GridColumnStyles(1).MappingName = "Col2"
-        Grid1.TableStyles(0).GridColumnStyles(2).MappingName = "Col3"
-        Grid1.SetDataBinding(dvGrid, "")
+        Grid1.Columns(0).DataPropertyName = "Col1"
+        Grid1.Columns(1).DataPropertyName = "Col2"
+        Grid1.Columns(2).DataPropertyName = "Col3"
+        Grid1.DataSource = dvGrid
         Color13 = System.Drawing.ColorTranslator.ToOle(Label13.BackColor)
         Call AggiorProto()
         Text = Text & " (Vers." & Monitor.Motore.About.ProgVers & ", " & Monitor.Motore.About.ProgDate & ")"
@@ -1516,7 +1509,11 @@ Friend Class Apert
         Dim Text1 As String
         ' If Grid1.Row = 0 Then Exit Sub
         ' Grid1.Col = 0
-        Dim i As Short = Grid1.CurrentRowIndex
+        If Grid1.CurrentRow Is Nothing OrElse Grid1.CurrentRow.IsNewRow Then Exit Sub
+        Dim selected = TryCast(Grid1.CurrentRow.DataBoundItem, DataRowView)
+        If selected Is Nothing Then Exit Sub
+        Dim i As Short = CShort(DirectCast(dvGrid, System.Collections.IList).IndexOf(selected))
+        If i < 0 Then Exit Sub
         Text1 = dvGrid(i)(0) & " ; "
         'Grid1.Col = 1
         Text1 = Text1 & dvGrid(i)(1)
